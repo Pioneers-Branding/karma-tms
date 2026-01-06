@@ -744,10 +744,10 @@ const HelpingVeteransPTSDBlogPostPage = () => {
                     <Link to="/contact">Schedule Free Consultation</Link>
                   </Button>
                   <Button asChild size="lg" variant="outline" className="border-white text-white hover:bg-white/10">
-                    <a href="tel:760-449-8185" className="inline-flex items-center gap-2">
-                      <Phone className="w-4 h-4" />
-                      (760) 449-8185
-                    </a>
+                    
+
+
+
                   </Button>
                 </div>
               </CardContent>
