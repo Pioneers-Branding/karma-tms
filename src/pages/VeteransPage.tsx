@@ -71,7 +71,7 @@ const VeteransPage = () => {
       {/* Hero Section */}
       <div className="relative bg-gradient-to-br from-blue-900 via-blue-800 to-teal-700 text-white py-20">
         <div className="absolute inset-0 opacity-10">
-          <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1627994094951-8ce028677fc8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MTg3MTl8MHwxfHNlYXJjaHwxfHxBJTIwc2VyZW5lJTIwYW5kJTIwcHJvZmVzc2lvbmFsJTIwaW1hZ2UlMjByZXByZXNlbnRpbmclMjBtZW50YWwlMjBoZWFsdGglMjBzZXJ2aWNlcyUyMGZvciUyMHZldGVyYW5zJTJDJTIwZmVhdHVyaW5nJTIwYSUyMGNhbG0lMjBhbmQlMjBzdXBwb3J0aXZlJTIwZW52aXJvbm1lbnQufGVufDB8fHx8MTc2MjQ5OTQyOXww&ixlib=rb-4.1.0&q=80&w=200$w=1920')] bg-cover bg-center" />
+          <div className="absolute inset-0 bg-[url('https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/157c49b6-b322-4aa5-b8d6-8ee41dc03a43.webp')] bg-cover bg-center" />
         </div>
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-3xl">
