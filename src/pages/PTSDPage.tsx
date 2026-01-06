@@ -368,7 +368,7 @@ const PTSDPage = () => {
             </div>
             <div className="relative">
               <img
-                src="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/9a1c77b8-54bb-4045-996a-4002e008a037.webp"
+                src="https://res.cloudinary.com/de4kw1t2i/image/upload/v1763029481/Exomind_PIC_Female-Model1_0961_ENUS100_zflpcx.jpg"
                 alt="Safe and supportive treatment environment"
                 className="rounded-lg shadow-lg" />
 
