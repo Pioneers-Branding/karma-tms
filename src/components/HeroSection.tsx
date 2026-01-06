@@ -173,7 +173,7 @@ const HeroSection = () => {
             <div className="w-full flex flex-col ">
               <div className="bg-gradient-to-br from-blue-magenta via-blue-magenta/70 to-blue-magenta rounded-3xl max-w-xl w-full ml-auto p-6 flex flex-col">
                 {/* Contact Form */}
-                <form method="post" accept-charset="UTF-8" action='https://app.formester.com/forms/3KjFtZ7yT/submissions' autoComplete="on" className="bg-white/95 backdrop-blur-lg rounded-3xl w-full p-6 shadow-2xl border border-white/20">
+                <form method="post" acceptCharset="UTF-8" action='https://app.formester.com/forms/3KjFtZ7yT/submissions' autoComplete="on" className="bg-white/95 backdrop-blur-lg rounded-3xl w-full p-6 shadow-2xl border border-white/20">
                   <div className="flex justify-between items-center mb-4 lg:mb-6">
                     <h2 className="text-xl lg:text-2xl font-bold text-gray-900 flex items-center">
                       <Heart className="w-5 h-5 lg:w-6 lg:h-6 text-violet-600 mr-2" />

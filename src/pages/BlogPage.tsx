@@ -33,6 +33,22 @@ const blogCategories = [
 // Blog posts - Veterans TMS Therapy with fixed images
 const allBlogPosts: BlogPost[] = [
 {
+  id: 36,
+  title: 'Is TMS Therapy Covered by Insurance? What You Should Know',
+  excerpt: 'Is TMS therapy covered by insurance? Learn eligibility, approval criteria, costs, and coverage details to access effective TMS treatment.',
+  category: 'tms-therapy',
+  author: 'Dr. Keerthy Sunder',
+  date: new Date(2025, 0, 15).toLocaleDateString('en-US', {
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric'
+  }),
+  readTime: '15 min read',
+  image: 'https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=1200',
+  featured: false,
+  rating: 5
+},
+{
   id: 35,
   title: 'Can You Get Disability for Depression? Understanding Your Rights, Benefits, and Treatment Options',
   excerpt: 'Complete guide to disability benefits for depression, covering SSDI and SSI eligibility, application process, documentation requirements, and treatment options including TMS therapy.',
@@ -792,6 +808,7 @@ const BlogPage = () => {
                     33: '/blog/does-tms-therapy-work-for-anxiety',
                     34: '/blog/is-depression-a-disability',
                     35: '/blog/can-you-get-disability-for-depression',
+                    36: '/blog/is-tms-therapy-covered-by-insurance',
                     2: '/blog/va-veterans-ptsd-tms-treatment',
                     3: '/blog/va-disability-benefits-depression-anxiety-ptsd',
                     4: '/blog/tms-vs-medication-veterans-depression',

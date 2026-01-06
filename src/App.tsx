@@ -75,6 +75,7 @@ import HowToAvoidStressDuringHolidaysBlogPostPage from "./pages/blogs/HowToAvoid
 import DoesTMSTherapyWorkForAnxiety from "./pages/blogs/DoesTMSTherapyWorkForAnxiety";
 import IsDepressionADisabilityBlogPostPage from "./pages/blogs/IsDepressionADisabilityBlogPostPage";
 import CanYouGetDisabilityForDepressionBlogPostPage from "./pages/blogs/CanYouGetDisabilityForDepressionBlogPostPage";
+import IsTMSTherapyInsuranceCoverageBlogPostPage from "./pages/blogs/IsTMSTherapyInsuranceCoverageBlogPostPage";
 import DisclaimerPage from "./pages/DisclaimerPage";
 import ExomindKarmaTMSPage from "./pages/resources/ExomindKarmaTMSPage";
 import PatientOnboardingPage from "./pages/PatientOnboardingPage";

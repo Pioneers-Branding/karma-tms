@@ -144,7 +144,7 @@ const ContactPage = () => {
                 </CardTitle>
               </CardHeader>
               <CardContent className="p-6">
-                <form accept-charset="UTF-8" action='https://app.formester.com/forms/3KjFtZ7yT/submissions' autoComplete="on" className="space-y-6" method="POST">
+                <form acceptCharset="UTF-8" action='https://app.formester.com/forms/3KjFtZ7yT/submissions' autoComplete="on" className="space-y-6" method="POST">
                   <div className="grid md:grid-cols-2 gap-4">
                     <div>
                       <Label htmlFor="name">Full Name *</Label>
