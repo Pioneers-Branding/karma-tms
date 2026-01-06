@@ -208,10 +208,10 @@ const Navigation = () => {
                       </Link>
 
                       <Link to="/patient-onboarding" onClick={handleLinkClick}>
-                        <Button variant="ghost" className="w-full justify-start text-base py-3 hover:bg-[#572670]/10">
-                          <ClipboardCheck className="h-5 w-5 mr-3 text-[#572670]" />
-                          Patient Onboarding
-                        </Button>
+                        
+
+
+
                       </Link>
 
                       <Link to="/contact" onClick={handleLinkClick}>
