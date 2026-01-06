@@ -285,7 +285,7 @@ const IsTMSTherapyLegitimateBlogPostPage = () => {
             {/* Introduction */}
             <div className="mb-12">
               <img
-                src="https://images.unsplash.com/photo-1701120285820-976b36f4e5a4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MTg3MTl8MHwxfHNlYXJjaHwxfHxBJTIwaGlnaC1xdWFsaXR5JTIwaW1hZ2UlMjBvZiUyMGElMjBUTVMlMjB0aGVyYXB5JTIwbWVkaWNhbCUyMGRldmljZSUyQyUyMHNob3djYXNpbmclMjBpdHMlMjBkZXNpZ24lMjBhbmQlMjBmdW5jdGlvbmFsaXR5LnxlbnwwfHx8fDE3NjMzNjU0ODl8MA&ixlib=rb-4.1.0&q=80&w=200$w=1920"
+                src="https://res.cloudinary.com/de4kw1t2i/image/upload/v1763376733/14_dszfwi.png"
                 alt="TMS therapy medical device"
                 className="w-full h-64 md:h-96 object-cover rounded-lg mb-6" />
 
