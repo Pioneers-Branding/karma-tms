@@ -768,8 +768,8 @@ const VAVeteransPTSDTMSBlogPostPage = () => {
               name="Dr. Apollo Thomas"
               role="Board-Certified Psychiatrist | Medical Director at KarmaTMS"
               bio="Dr. Thomas has dedicated his career to advancing mental health care for veterans, specializing in innovative treatments for PTSD and treatment-resistant depression. He works closely with VA programs and has trained numerous healthcare providers in TMS therapy protocols."
-              image="https://images.unsplash.com/photo-1748288166888-f1bd5d6ef9ed?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MTg3MTl8MHwxfHNlYXJjaHwxfHxBJTIwcHJvZmVzc2lvbmFsJTIwcG9ydHJhaXQlMjBvZiUyMERyLiUyMEFwb2xsbyUyMFRob21hcyUyQyUyME1lZGljYWwlMjBEaXJlY3RvciUyQyUyMGRpc3BsYXllZCUyMGluJTIwYSUyMGNpcmN1bGFyJTIwZnJhbWUufGVufDB8fHx8MTc2Mjc3MjI1N3ww&ixlib=rb-4.1.0&q=80&w=200$w=800"
-            />
+              image="https://images.unsplash.com/photo-1748288166888-f1bd5d6ef9ed?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MTg3MTl8MHwxfHNlYXJjaHwxfHxBJTIwcHJvZmVzc2lvbmFsJTIwcG9ydHJhaXQlMjBvZiUyMERyLiUyMEFwb2xsbyUyMFRob21hcyUyQyUyME1lZGljYWwlMjBEaXJlY3RvciUyQyUyMGRpc3BsYXllZCUyMGluJTIwYSUyMGNpcmN1bGFyJTIwZnJhbWUufGVufDB8fHx8MTc2Mjc3MjI1N3ww&ixlib=rb-4.1.0&q=80&w=200$w=800" />
+
 
             {/* FAQ Section */}
             <section ref={(el) => sectionsRef.current['faqs'] = el} className="mb-12">

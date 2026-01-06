@@ -18,8 +18,8 @@ const AuthorBox = ({ name, role, bio, image }: AuthorBoxProps) => {
             src={image || defaultImage}
             alt={`${name}, ${role}`}
             className="w-32 h-32 rounded-full object-cover border-4 border-[#572670]/20"
-            loading="lazy"
-          />
+            loading="lazy" />
+
           <div className="flex-1">
             <h3 className="text-2xl font-bold text-[#572670] mb-2">About the Author</h3>
             <p className="text-xl font-semibold mb-2">{name}</p>
@@ -28,8 +28,8 @@ const AuthorBox = ({ name, role, bio, image }: AuthorBoxProps) => {
           </div>
         </div>
       </CardContent>
-    </Card>
-  );
+    </Card>);
+
 };
 
 export default AuthorBox;
