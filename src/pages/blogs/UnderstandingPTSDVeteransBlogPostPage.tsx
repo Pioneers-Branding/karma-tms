@@ -413,10 +413,7 @@ export default function UnderstandingPTSDVeteransBlogPostPage() {
             {/* Section 3: War Veterans */}
             <section ref={(el) => sectionsRef.current['war-veterans'] = el} className="mb-12">
               <h2 className="text-3xl font-bold text-[#572670] mb-6">PTSD in War Veterans: Special Considerations</h2>
-              <img
-                src="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/0a00bae7-03d4-4867-b6ee-a18528b1c447.webp"
-                alt="PTSD in war veterans"
-                className="w-full  md:h-80 object-cover rounded-lg mb-6" />
+            
 
 
               <Card className="border-l-4 border-[#572670] mb-6">
