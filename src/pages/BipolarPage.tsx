@@ -39,7 +39,7 @@ const BipolarPage = () => {
             </div>
             <div className="relative">
               <img
-                src="https://images.unsplash.com/photo-1581333100576-b73befd79a9b?q=80&w=800"
+                src="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/8131cc49-7899-46f0-abe3-cdbb89395242.webp"
                 alt="Bipolar disorder brain activity"
                 className="rounded-lg shadow-2xl" />
 
@@ -82,7 +82,7 @@ const BipolarPage = () => {
             </div>
             <div className="relative">
               <img
-                src="https://images.unsplash.com/photo-1711409664431-4e7914ac2370?q=80&w=800"
+                src="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/a8f14621-4fc8-4a11-8fdc-19637df2d5cb.webp"
                 alt="Brain patterns in bipolar disorder"
                 className="rounded-lg shadow-lg" />
 
