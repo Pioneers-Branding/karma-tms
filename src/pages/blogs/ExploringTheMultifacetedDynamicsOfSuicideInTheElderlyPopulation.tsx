@@ -262,7 +262,7 @@ const ExploringTheMultifacetedDynamicsOfSuicideInTheElderlyPopulation = () => {
                     <Link to="/contact">Schedule Consultation</Link>
                   </Button>
                   <Button asChild size="lg" variant="outline" className="border-white text-white hover:bg-white/10">
-                    <a href="tel:988">Call 988 - Suicide & Crisis Lifeline</a>
+                    
                   </Button>
                 </div>
               </CardContent>
