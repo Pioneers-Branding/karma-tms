@@ -10,16 +10,16 @@ import {
   BreadcrumbLink,
   BreadcrumbList,
   BreadcrumbPage,
-  BreadcrumbSeparator
-} from '@/components/ui/breadcrumb';
+  BreadcrumbSeparator } from
+'@/components/ui/breadcrumb';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import {
   Accordion,
   AccordionContent,
   AccordionItem,
-  AccordionTrigger
-} from '@/components/ui/accordion';
+  AccordionTrigger } from
+'@/components/ui/accordion';
 import { Calendar, Clock, User, CheckCircle2, ArrowRight } from 'lucide-react';
 import AuthorBox from '@/components/AuthorBox';
 
@@ -28,13 +28,13 @@ const PsychiatristsBoostWellBeingThroughExpertCareForMentalHealth = () => {
   const sectionsRef = useRef<{[key: string]: HTMLElement | null;}>({});
 
   const tocItems = [
-    { id: 'comprehensive-role', label: 'Comprehensive Role of Psychiatrists' },
-    { id: 'treatment-approaches', label: 'Evidence-Based Treatment Approaches' },
-    { id: 'tms-therapy', label: 'TMS Therapy Innovation' },
-    { id: 'personalized-care', label: 'Personalized Care' },
-    { id: 'when-to-seek', label: 'When to Seek Psychiatric Care' },
-    { id: 'faqs', label: 'Frequently Asked Questions' }
-  ];
+  { id: 'comprehensive-role', label: 'Comprehensive Role of Psychiatrists' },
+  { id: 'treatment-approaches', label: 'Evidence-Based Treatment Approaches' },
+  { id: 'tms-therapy', label: 'TMS Therapy Innovation' },
+  { id: 'personalized-care', label: 'Personalized Care' },
+  { id: 'when-to-seek', label: 'When to Seek Psychiatric Care' },
+  { id: 'faqs', label: 'Frequently Asked Questions' }];
+
 
   useEffect(() => {
     const handleScroll = () => {
@@ -67,52 +67,52 @@ const PsychiatristsBoostWellBeingThroughExpertCareForMentalHealth = () => {
   };
 
   const faqs = [
-    {
-      question: 'What is the difference between a psychiatrist and a psychologist?',
-      answer: 'Psychiatrists are medical doctors who can prescribe medication and provide therapy, while psychologists focus primarily on psychotherapy and cannot prescribe medications in most states. Psychiatrists have a comprehensive medical background that allows them to address both physical and mental health aspects of conditions.'
-    },
-    {
-      question: 'How do I know if I need to see a psychiatrist?',
-      answer: 'Consider seeing a psychiatrist if you experience persistent depression, anxiety, significant mood swings, thoughts of self-harm, difficulty functioning in daily life, or if you haven\'t found relief with therapy alone. A psychiatrist can provide comprehensive assessment and determine if medication or other medical interventions might be helpful.'
-    },
-    {
-      question: 'What can I expect during my first psychiatrist appointment?',
-      answer: 'Your first appointment will typically involve a comprehensive evaluation including your medical history, current symptoms, medication history, family history, and lifestyle factors. The psychiatrist will work with you to develop a personalized treatment plan that may include medication, therapy, or innovative treatments like TMS.'
-    },
-    {
-      question: 'Is TMS therapy safe and effective?',
-      answer: 'Yes, TMS therapy is FDA-approved and has been proven safe and effective for treatment-resistant depression. Clinical studies show 50-60% of patients experience significant improvement, with minimal side effects. Unlike medications, TMS doesn\'t cause weight gain, sexual dysfunction, or cognitive impairment.'
-    },
-    {
-      question: 'How long does psychiatric treatment typically last?',
-      answer: 'Treatment duration varies based on individual needs and conditions. Some patients may need short-term treatment for a few months, while others benefit from ongoing care. Your psychiatrist will regularly assess your progress and adjust the treatment plan as needed to ensure optimal outcomes.'
-    },
-    {
-      question: 'Does insurance cover psychiatric care and TMS therapy?',
-      answer: 'Most insurance plans cover psychiatric consultations and treatments. TMS therapy is covered by many insurance providers for treatment-resistant depression. We recommend contacting your insurance provider or our office to verify your specific coverage and benefits.'
-    }
-  ];
+  {
+    question: 'What is the difference between a psychiatrist and a psychologist?',
+    answer: 'Psychiatrists are medical doctors who can prescribe medication and provide therapy, while psychologists focus primarily on psychotherapy and cannot prescribe medications in most states. Psychiatrists have a comprehensive medical background that allows them to address both physical and mental health aspects of conditions.'
+  },
+  {
+    question: 'How do I know if I need to see a psychiatrist?',
+    answer: 'Consider seeing a psychiatrist if you experience persistent depression, anxiety, significant mood swings, thoughts of self-harm, difficulty functioning in daily life, or if you haven\'t found relief with therapy alone. A psychiatrist can provide comprehensive assessment and determine if medication or other medical interventions might be helpful.'
+  },
+  {
+    question: 'What can I expect during my first psychiatrist appointment?',
+    answer: 'Your first appointment will typically involve a comprehensive evaluation including your medical history, current symptoms, medication history, family history, and lifestyle factors. The psychiatrist will work with you to develop a personalized treatment plan that may include medication, therapy, or innovative treatments like TMS.'
+  },
+  {
+    question: 'Is TMS therapy safe and effective?',
+    answer: 'Yes, TMS therapy is FDA-approved and has been proven safe and effective for treatment-resistant depression. Clinical studies show 50-60% of patients experience significant improvement, with minimal side effects. Unlike medications, TMS doesn\'t cause weight gain, sexual dysfunction, or cognitive impairment.'
+  },
+  {
+    question: 'How long does psychiatric treatment typically last?',
+    answer: 'Treatment duration varies based on individual needs and conditions. Some patients may need short-term treatment for a few months, while others benefit from ongoing care. Your psychiatrist will regularly assess your progress and adjust the treatment plan as needed to ensure optimal outcomes.'
+  },
+  {
+    question: 'Does insurance cover psychiatric care and TMS therapy?',
+    answer: 'Most insurance plans cover psychiatric consultations and treatments. TMS therapy is covered by many insurance providers for treatment-resistant depression. We recommend contacting your insurance provider or our office to verify your specific coverage and benefits.'
+  }];
+
 
   const relatedPosts = [
-    {
-      title: 'TMS Therapy for Treatment Resistant Depression',
-      excerpt: 'Discover how TMS offers new hope for those who haven\'t found relief with traditional treatments.',
-      link: '/blogs/TMSTherapyForTreatmentResistantDepression',
-      image: 'https://images.unsplash.com/photo-1688126507367-b7cb61e19f30?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MTg3MTl8MHwxfHNlYXJjaHwxfHxBJTIwd2VicCUyMGltYWdlJTIwaG9zdGVkJTIwb24lMjBhJTIwc2VydmVyJTJDJTIwcG9zc2libHklMjByZWxhdGVkJTIwdG8lMjBtZW50YWwlMjBoZWFsdGglMjBvciUyMHBzeWNoaWF0cnkufGVufDB8fHx8MTc2NDEzNzk4N3ww&ixlib=rb-4.1.0&q=80&w=200$w=800'
-    },
-    {
-      title: 'Understanding Depression Treatment',
-      excerpt: 'Comprehensive guide to depression symptoms and treatment options.',
-      link: '/depression',
-      image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/2ddc8d69-b09a-4f1d-bd47-6d783ceefbd1.webp'
-    },
-    {
-      title: 'Anxiety Treatment Options',
-      excerpt: 'Learn about effective approaches to managing anxiety disorders.',
-      link: '/anxiety',
-      image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/9705b922-d0fc-4d29-be10-acd507ce308c.webp'
-    }
-  ];
+  {
+    title: 'TMS Therapy for Treatment Resistant Depression',
+    excerpt: 'Discover how TMS offers new hope for those who haven\'t found relief with traditional treatments.',
+    link: '/blogs/TMSTherapyForTreatmentResistantDepression',
+    image: 'https://images.unsplash.com/photo-1688126507367-b7cb61e19f30?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MTg3MTl8MHwxfHNlYXJjaHwxfHxBJTIwd2VicCUyMGltYWdlJTIwaG9zdGVkJTIwb24lMjBhJTIwc2VydmVyJTJDJTIwcG9zc2libHklMjByZWxhdGVkJTIwdG8lMjBtZW50YWwlMjBoZWFsdGglMjBvciUyMHBzeWNoaWF0cnkufGVufDB8fHx8MTc2NDEzNzk4N3ww&ixlib=rb-4.1.0&q=80&w=200$w=800'
+  },
+  {
+    title: 'Understanding Depression Treatment',
+    excerpt: 'Comprehensive guide to depression symptoms and treatment options.',
+    link: '/depression',
+    image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/2ddc8d69-b09a-4f1d-bd47-6d783ceefbd1.webp'
+  },
+  {
+    title: 'Anxiety Treatment Options',
+    excerpt: 'Learn about effective approaches to managing anxiety disorders.',
+    link: '/anxiety',
+    image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/9705b922-d0fc-4d29-be10-acd507ce308c.webp'
+  }];
+
 
   const articleSchema = {
     '@context': 'https://schema.org',
@@ -171,10 +171,10 @@ const PsychiatristsBoostWellBeingThroughExpertCareForMentalHealth = () => {
       <StructuredData
         type="breadcrumb"
         breadcrumbs={[
-          { name: 'Home', url: '/' },
-          { name: 'Blog', url: '/blog' },
-          { name: 'Psychiatrists Expert Care', url: '/blogs/PsychiatristsBoostWellBeingThroughExpertCareForMentalHealth' }
-        ]} />
+        { name: 'Home', url: '/' },
+        { name: 'Blog', url: '/blog' },
+        { name: 'Psychiatrists Expert Care', url: '/blogs/PsychiatristsBoostWellBeingThroughExpertCareForMentalHealth' }]
+        } />
 
       <script type="application/ld+json">
         {JSON.stringify(articleSchema)}
@@ -258,18 +258,18 @@ const PsychiatristsBoostWellBeingThroughExpertCareForMentalHealth = () => {
                 <CardContent className="p-6">
                   <h3 className="font-bold text-lg mb-4 text-[#572670]">Table of Contents</h3>
                   <nav className="space-y-2">
-                    {tocItems.map((item) => (
-                      <button
-                        key={item.id}
-                        onClick={() => scrollToSection(item.id)}
-                        className={`block w-full text-left px-3 py-2 rounded-md text-sm transition-all ${
-                          activeSection === item.id
-                            ? 'bg-[#572670] text-white font-medium'
-                            : 'text-gray-700 hover:bg-[#572670]/10'
-                        }`}>
+                    {tocItems.map((item) =>
+                    <button
+                      key={item.id}
+                      onClick={() => scrollToSection(item.id)}
+                      className={`block w-full text-left px-3 py-2 rounded-md text-sm transition-all ${
+                      activeSection === item.id ?
+                      'bg-[#572670] text-white font-medium' :
+                      'text-gray-700 hover:bg-[#572670]/10'}`
+                      }>
                         {item.label}
                       </button>
-                    ))}
+                    )}
                   </nav>
                   <div className="mt-6 pt-6 border-t">
                     <Button asChild className="w-full bg-[#572670] hover:bg-[#7B3FA0]">
@@ -482,11 +482,11 @@ const PsychiatristsBoostWellBeingThroughExpertCareForMentalHealth = () => {
               <h2 className="text-3xl font-bold text-[#572670] mb-6">Frequently Asked Questions</h2>
               
               <Accordion type="single" collapsible className="w-full space-y-2">
-                {faqs.map((faq, index) => (
-                  <AccordionItem
-                    key={index}
-                    value={`item-${index}`}
-                    className="border border-gray-200 rounded-lg px-4 data-[state=open]:border-[#572670]">
+                {faqs.map((faq, index) =>
+                <AccordionItem
+                  key={index}
+                  value={`item-${index}`}
+                  className="border border-gray-200 rounded-lg px-4 data-[state=open]:border-[#572670]">
                     <AccordionTrigger className="text-left font-semibold hover:text-[#572670] hover:no-underline">
                       {faq.question}
                     </AccordionTrigger>
@@ -494,7 +494,7 @@ const PsychiatristsBoostWellBeingThroughExpertCareForMentalHealth = () => {
                       {faq.answer}
                     </AccordionContent>
                   </AccordionItem>
-                ))}
+                )}
               </Accordion>
             </section>
 
@@ -522,12 +522,12 @@ const PsychiatristsBoostWellBeingThroughExpertCareForMentalHealth = () => {
             <section className="mb-12">
               <h2 className="text-3xl font-bold text-[#572670] mb-6">Related Articles</h2>
               <div className="grid md:grid-cols-3 gap-6">
-                {relatedPosts.map((post, index) => (
-                  <Card key={index} className="border-[#572670]/20 overflow-hidden hover:shadow-lg transition-shadow">
+                {relatedPosts.map((post, index) =>
+                <Card key={index} className="border-[#572670]/20 overflow-hidden hover:shadow-lg transition-shadow">
                     <img
-                      src={post.image}
-                      alt={post.title}
-                      className="w-full object-cover" />
+                    src={post.image}
+                    alt={post.title}
+                    className="w-full object-cover" />
                     <CardContent className="p-6">
                       <h3 className="font-bold text-lg mb-2 hover:text-[#572670] transition-colors">
                         <Link to={post.link}>{post.title}</Link>
@@ -540,7 +540,7 @@ const PsychiatristsBoostWellBeingThroughExpertCareForMentalHealth = () => {
                       </Button>
                     </CardContent>
                   </Card>
-                ))}
+                )}
               </div>
             </section>
           </article>
@@ -548,8 +548,8 @@ const PsychiatristsBoostWellBeingThroughExpertCareForMentalHealth = () => {
       </div>
 
       <FooterSection />
-    </>
-  );
+    </>);
+
 };
 
 export default PsychiatristsBoostWellBeingThroughExpertCareForMentalHealth;

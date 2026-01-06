@@ -10,16 +10,16 @@ import {
   BreadcrumbLink,
   BreadcrumbList,
   BreadcrumbPage,
-  BreadcrumbSeparator
-} from '@/components/ui/breadcrumb';
+  BreadcrumbSeparator } from
+'@/components/ui/breadcrumb';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import {
   Accordion,
   AccordionContent,
   AccordionItem,
-  AccordionTrigger
-} from '@/components/ui/accordion';
+  AccordionTrigger } from
+'@/components/ui/accordion';
 import { Calendar, Clock, User, CheckCircle2, ArrowRight } from 'lucide-react';
 import AuthorBox from '@/components/AuthorBox';
 
@@ -28,14 +28,14 @@ const TMSTherapyForTreatmentResistantDepression = () => {
   const sectionsRef = useRef<{[key: string]: HTMLElement | null;}>({});
 
   const tocItems = [
-    { id: 'understanding-trd', label: 'Understanding Treatment-Resistant Depression' },
-    { id: 'how-tms-works', label: 'How TMS Works' },
-    { id: 'benefits', label: 'Benefits of TMS' },
-    { id: 'success-rates', label: 'Success Rates' },
-    { id: 'treatment-process', label: 'Treatment Process' },
-    { id: 'good-candidate', label: 'Who is a Good Candidate' },
-    { id: 'faqs', label: 'Frequently Asked Questions' }
-  ];
+  { id: 'understanding-trd', label: 'Understanding Treatment-Resistant Depression' },
+  { id: 'how-tms-works', label: 'How TMS Works' },
+  { id: 'benefits', label: 'Benefits of TMS' },
+  { id: 'success-rates', label: 'Success Rates' },
+  { id: 'treatment-process', label: 'Treatment Process' },
+  { id: 'good-candidate', label: 'Who is a Good Candidate' },
+  { id: 'faqs', label: 'Frequently Asked Questions' }];
+
 
   useEffect(() => {
     const handleScroll = () => {
@@ -68,52 +68,52 @@ const TMSTherapyForTreatmentResistantDepression = () => {
   };
 
   const faqs = [
-    {
-      question: 'What is treatment-resistant depression?',
-      answer: 'Treatment-resistant depression (TRD) is diagnosed when symptoms persist despite trying at least two different antidepressant medications at adequate doses and durations. It affects approximately 30-40% of people with major depressive disorder and requires alternative treatment approaches like TMS therapy.'
-    },
-    {
-      question: 'How effective is TMS therapy for treatment-resistant depression?',
-      answer: 'Clinical studies show that 50-60% of patients with treatment-resistant depression experience significant symptom improvement with TMS therapy, and about 30-40% achieve complete remission. These results are particularly impressive given that these patients haven\'t responded to traditional treatments.'
-    },
-    {
-      question: 'Does TMS therapy hurt?',
-      answer: 'Most patients describe TMS as a tapping sensation on the scalp. Some people experience mild discomfort or headache during the first few sessions, but this typically subsides quickly. TMS is non-invasive and doesn\'t require anesthesia or sedation.'
-    },
-    {
-      question: 'How long do TMS results last?',
-      answer: 'Many patients maintain improvements for a year or longer after completing TMS treatment. Studies show that approximately 70% of patients maintain their improvement at one-year follow-up. Some patients may benefit from occasional maintenance sessions to sustain results.'
-    },
-    {
-      question: 'Can I continue my medications during TMS treatment?',
-      answer: 'Yes, most patients continue their current medications during TMS therapy. Your psychiatrist will review your medication regimen and make any necessary adjustments. TMS can be used alongside medications or as a standalone treatment depending on your individual needs.'
-    },
-    {
-      question: 'Is TMS therapy covered by insurance?',
-      answer: 'Most major insurance providers cover TMS therapy for treatment-resistant depression when specific criteria are met. Coverage typically requires documentation of prior antidepressant trials. Our team can help verify your insurance benefits and navigate the approval process.'
-    }
-  ];
+  {
+    question: 'What is treatment-resistant depression?',
+    answer: 'Treatment-resistant depression (TRD) is diagnosed when symptoms persist despite trying at least two different antidepressant medications at adequate doses and durations. It affects approximately 30-40% of people with major depressive disorder and requires alternative treatment approaches like TMS therapy.'
+  },
+  {
+    question: 'How effective is TMS therapy for treatment-resistant depression?',
+    answer: 'Clinical studies show that 50-60% of patients with treatment-resistant depression experience significant symptom improvement with TMS therapy, and about 30-40% achieve complete remission. These results are particularly impressive given that these patients haven\'t responded to traditional treatments.'
+  },
+  {
+    question: 'Does TMS therapy hurt?',
+    answer: 'Most patients describe TMS as a tapping sensation on the scalp. Some people experience mild discomfort or headache during the first few sessions, but this typically subsides quickly. TMS is non-invasive and doesn\'t require anesthesia or sedation.'
+  },
+  {
+    question: 'How long do TMS results last?',
+    answer: 'Many patients maintain improvements for a year or longer after completing TMS treatment. Studies show that approximately 70% of patients maintain their improvement at one-year follow-up. Some patients may benefit from occasional maintenance sessions to sustain results.'
+  },
+  {
+    question: 'Can I continue my medications during TMS treatment?',
+    answer: 'Yes, most patients continue their current medications during TMS therapy. Your psychiatrist will review your medication regimen and make any necessary adjustments. TMS can be used alongside medications or as a standalone treatment depending on your individual needs.'
+  },
+  {
+    question: 'Is TMS therapy covered by insurance?',
+    answer: 'Most major insurance providers cover TMS therapy for treatment-resistant depression when specific criteria are met. Coverage typically requires documentation of prior antidepressant trials. Our team can help verify your insurance benefits and navigate the approval process.'
+  }];
+
 
   const relatedPosts = [
-    {
-      title: 'Psychiatrists Boost Well-Being Through Expert Care',
-      excerpt: 'Understanding the comprehensive role of psychiatrists in mental health treatment.',
-      link: '/blogs/PsychiatristsBoostWellBeingThroughExpertCareForMentalHealth',
-      image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/66e6e1ae-8cc3-4469-bfaf-b1f3f3d07006.webp'
-    },
-    {
-      title: 'Understanding Depression',
-      excerpt: 'Comprehensive guide to depression symptoms and available treatments.',
-      link: '/depression',
-      image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/2ddc8d69-b09a-4f1d-bd47-6d783ceefbd1.webp'
-    },
-    {
-      title: 'TMS Therapy for Veterans',
-      excerpt: 'How TMS helps veterans overcome PTSD, depression, and anxiety.',
-      link: '/blog/veterans-tms-therapy',
-      image: 'https://res.cloudinary.com/de4kw1t2i/image/upload/v1763036078/0_zutd9g.png'
-    }
-  ];
+  {
+    title: 'Psychiatrists Boost Well-Being Through Expert Care',
+    excerpt: 'Understanding the comprehensive role of psychiatrists in mental health treatment.',
+    link: '/blogs/PsychiatristsBoostWellBeingThroughExpertCareForMentalHealth',
+    image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/66e6e1ae-8cc3-4469-bfaf-b1f3f3d07006.webp'
+  },
+  {
+    title: 'Understanding Depression',
+    excerpt: 'Comprehensive guide to depression symptoms and available treatments.',
+    link: '/depression',
+    image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/2ddc8d69-b09a-4f1d-bd47-6d783ceefbd1.webp'
+  },
+  {
+    title: 'TMS Therapy for Veterans',
+    excerpt: 'How TMS helps veterans overcome PTSD, depression, and anxiety.',
+    link: '/blog/veterans-tms-therapy',
+    image: 'https://res.cloudinary.com/de4kw1t2i/image/upload/v1763036078/0_zutd9g.png'
+  }];
+
 
   const articleSchema = {
     '@context': 'https://schema.org',
@@ -172,10 +172,10 @@ const TMSTherapyForTreatmentResistantDepression = () => {
       <StructuredData
         type="breadcrumb"
         breadcrumbs={[
-          { name: 'Home', url: '/' },
-          { name: 'Blog', url: '/blog' },
-          { name: 'TMS for Treatment Resistant Depression', url: '/blogs/TMSTherapyForTreatmentResistantDepression' }
-        ]} />
+        { name: 'Home', url: '/' },
+        { name: 'Blog', url: '/blog' },
+        { name: 'TMS for Treatment Resistant Depression', url: '/blogs/TMSTherapyForTreatmentResistantDepression' }]
+        } />
 
       <script type="application/ld+json">
         {JSON.stringify(articleSchema)}
@@ -259,18 +259,18 @@ const TMSTherapyForTreatmentResistantDepression = () => {
                 <CardContent className="p-6">
                   <h3 className="font-bold text-lg mb-4 text-[#572670]">Table of Contents</h3>
                   <nav className="space-y-2">
-                    {tocItems.map((item) => (
-                      <button
-                        key={item.id}
-                        onClick={() => scrollToSection(item.id)}
-                        className={`block w-full text-left px-3 py-2 rounded-md text-sm transition-all ${
-                          activeSection === item.id
-                            ? 'bg-[#572670] text-white font-medium'
-                            : 'text-gray-700 hover:bg-[#572670]/10'
-                        }`}>
+                    {tocItems.map((item) =>
+                    <button
+                      key={item.id}
+                      onClick={() => scrollToSection(item.id)}
+                      className={`block w-full text-left px-3 py-2 rounded-md text-sm transition-all ${
+                      activeSection === item.id ?
+                      'bg-[#572670] text-white font-medium' :
+                      'text-gray-700 hover:bg-[#572670]/10'}`
+                      }>
                         {item.label}
                       </button>
-                    ))}
+                    )}
                   </nav>
                   <div className="mt-6 pt-6 border-t">
                     <Button asChild className="w-full bg-[#572670] hover:bg-[#7B3FA0]">
@@ -554,11 +554,11 @@ const TMSTherapyForTreatmentResistantDepression = () => {
               <h2 className="text-3xl font-bold text-[#572670] mb-6">Frequently Asked Questions</h2>
               
               <Accordion type="single" collapsible className="w-full space-y-2">
-                {faqs.map((faq, index) => (
-                  <AccordionItem
-                    key={index}
-                    value={`item-${index}`}
-                    className="border border-gray-200 rounded-lg px-4 data-[state=open]:border-[#572670]">
+                {faqs.map((faq, index) =>
+                <AccordionItem
+                  key={index}
+                  value={`item-${index}`}
+                  className="border border-gray-200 rounded-lg px-4 data-[state=open]:border-[#572670]">
                     <AccordionTrigger className="text-left font-semibold hover:text-[#572670] hover:no-underline">
                       {faq.question}
                     </AccordionTrigger>
@@ -566,7 +566,7 @@ const TMSTherapyForTreatmentResistantDepression = () => {
                       {faq.answer}
                     </AccordionContent>
                   </AccordionItem>
-                ))}
+                )}
               </Accordion>
             </section>
 
@@ -594,12 +594,12 @@ const TMSTherapyForTreatmentResistantDepression = () => {
             <section className="mb-12">
               <h2 className="text-3xl font-bold text-[#572670] mb-6">Related Articles</h2>
               <div className="grid md:grid-cols-3 gap-6">
-                {relatedPosts.map((post, index) => (
-                  <Card key={index} className="border-[#572670]/20 overflow-hidden hover:shadow-lg transition-shadow">
+                {relatedPosts.map((post, index) =>
+                <Card key={index} className="border-[#572670]/20 overflow-hidden hover:shadow-lg transition-shadow">
                     <img
-                      src={post.image}
-                      alt={post.title}
-                      className="w-full object-cover" />
+                    src={post.image}
+                    alt={post.title}
+                    className="w-full object-cover" />
                     <CardContent className="p-6">
                       <h3 className="font-bold text-lg mb-2 hover:text-[#572670] transition-colors">
                         <Link to={post.link}>{post.title}</Link>
@@ -612,7 +612,7 @@ const TMSTherapyForTreatmentResistantDepression = () => {
                       </Button>
                     </CardContent>
                   </Card>
-                ))}
+                )}
               </div>
             </section>
           </article>
@@ -620,8 +620,8 @@ const TMSTherapyForTreatmentResistantDepression = () => {
       </div>
 
       <FooterSection />
-    </>
-  );
+    </>);
+
 };
 
 export default TMSTherapyForTreatmentResistantDepression;

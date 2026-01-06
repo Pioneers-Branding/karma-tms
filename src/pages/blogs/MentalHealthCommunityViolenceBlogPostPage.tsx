@@ -289,7 +289,7 @@ const MentalHealthCommunityViolenceBlogPostPage = () => {
             {/* Introduction */}
             <div className="mb-12">
               <img
-                src="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/b3740a3e-1c6d-4eb7-8300-432f7cb4655c.webp"
+                src="https://res.cloudinary.com/de4kw1t2i/image/upload/v1764138577/26_yez4z4.png"
                 alt="Community support and mental health resources"
                 className="w-full object-cover rounded-lg mb-6" />
 
