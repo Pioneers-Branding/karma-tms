@@ -239,9 +239,6 @@ const TMSvsMedicationVeteransBlogPostPage = () => {
               <Button asChild size="lg" className="bg-white text-[#572670] hover:bg-gray-100">
                 <Link to="/contact">Start TMS Consultation</Link>
               </Button>
-              <Button asChild size="lg" variant="outline" className="border-white text-white hover:bg-white/10">
-                <Link to="/veterans">Veterans Program</Link>
-              </Button>
             </div>
           </div>
         </div>
@@ -814,9 +811,6 @@ const TMSvsMedicationVeteransBlogPostPage = () => {
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <Button asChild size="lg" className="bg-white text-[#572670] hover:bg-gray-100">
                     <Link to="/contact">Schedule Free TMS Consultation</Link>
-                  </Button>
-                  <Button asChild size="lg" variant="outline" className="border-white text-white hover:bg-white/10">
-                    <Link to="/veterans">Learn More About Veterans Program</Link>
                   </Button>
                 </div>
               </CardContent>
