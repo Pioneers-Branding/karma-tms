@@ -135,7 +135,7 @@ export const teamMembers: TeamMember[] = [
   title: 'TMS Neurotechnologist',
   specialization: 'TMS Technology & Patient Care',
   category: 'administrative',
-  image: 'https://res.cloudinary.com/de4kw1t2i/image/upload/v1763965637/charles_zqcauu.jpg', // drcharles
+  image: 'https://res.cloudinary.com/de4kw1t2i/image/upload/v1763966552/charles_x24lft.jpg', // drcharles
   bio: 'Charles Vigilia specializes in TMS therapy delivery and patient support throughout treatment. His technical expertise and compassionate care approach ensure patients receive optimal TMS treatments in a comfortable environment.',
   credentials: ['TMS Technician Certified', 'Neurostimulation Specialist', 'Patient Care Certified'],
   experience: '5+ years in TMS Technology',
