@@ -31,7 +31,7 @@ const LocationContactSection = () => {
             {[
                 {
                   label: "Address 1",
-                  lines: ["560 S. Paseo Dorotea #4B", "Palm Springs, CA 92264"]
+                  lines: ["560 S. Paseo Dorotea, Suite 4-B", "Palm Springs, CA 92264"]
                 },
                 {
                   label: "Address 2",
