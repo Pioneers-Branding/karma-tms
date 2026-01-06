@@ -17,8 +17,8 @@ const ExomindKarmaTMSPage = () => {
         title="Exomind TMS Rancho Mirage | Unlock Your Brain's Potential at KarmaTMS"
         description="Experience Exomind TMS at KarmaTMS Rancho Mirage - Advanced ExoTMS™ technology for brain fog, burnout, and cognitive enhancement. 30-minute sessions, FDA-cleared for MDD."
         keywords="Exomind TMS Rancho Mirage, KarmaTMS, Transcranial Magnetic Stimulation, brain fog treatment, cognitive enhancement TMS, ExoTMS technology, perimenopausal anxiety treatment"
-        canonical="https://www.karmatms.com/resources/exomind-karmatms"
-      />
+        canonical="https://www.karmatms.com/resources/exomind-karmatms" />
+
 
       <Navigation />
 
@@ -58,8 +58,8 @@ const ExomindKarmaTMSPage = () => {
               <img
                 src="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/031012db-9570-41de-bb30-96c6fa482330.png"
                 alt="Exomind TMS Chair at KarmaTMS Rancho Mirage - Advanced brain stimulation therapy"
-                className="rounded-lg shadow-2xl"
-              />
+                className="rounded-lg shadow-2xl" />
+
               <div className="absolute -bottom-6 -left-6 bg-white text-purple-600 p-6 rounded-lg shadow-xl hidden lg:block">
                 <div className="text-3xl font-bold">30 min</div>
                 <div className="text-sm">Per Session</div>
@@ -86,28 +86,28 @@ const ExomindKarmaTMSPage = () => {
               
               <div className="space-y-4 mb-8">
                 {[
-                  { 
-                    icon: Clock, 
-                    title: '30-Minute Sessions', 
-                    description: 'Quick, convenient treatments that fit your busy lifestyle'
-                  },
-                  { 
-                    icon: Zap, 
-                    title: 'No Downtime', 
-                    description: 'Return to work or daily activities immediately after treatment'
-                  },
-                  { 
-                    icon: Shield, 
-                    title: 'FDA-Cleared for MDD', 
-                    description: 'Proven safe and effective for Major Depressive Disorder'
-                  },
-                  { 
-                    icon: Brain, 
-                    title: 'DLPFC Stimulation', 
-                    description: 'Precision targeting of brain regions responsible for mood and cognition'
-                  }
-                ].map((item, index) => (
-                  <div key={index} className="flex gap-4 items-start">
+                {
+                  icon: Clock,
+                  title: '30-Minute Sessions',
+                  description: 'Quick, convenient treatments that fit your busy lifestyle'
+                },
+                {
+                  icon: Zap,
+                  title: 'No Downtime',
+                  description: 'Return to work or daily activities immediately after treatment'
+                },
+                {
+                  icon: Shield,
+                  title: 'FDA-Cleared for MDD',
+                  description: 'Proven safe and effective for Major Depressive Disorder'
+                },
+                {
+                  icon: Brain,
+                  title: 'DLPFC Stimulation',
+                  description: 'Precision targeting of brain regions responsible for mood and cognition'
+                }].
+                map((item, index) =>
+                <div key={index} className="flex gap-4 items-start">
                     <div className="flex-shrink-0">
                       <div className="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center">
                         <item.icon className="h-6 w-6 text-purple-600" />
@@ -118,15 +118,15 @@ const ExomindKarmaTMSPage = () => {
                       <p className="text-gray-700 text-sm">{item.description}</p>
                     </div>
                   </div>
-                ))}
+                )}
               </div>
             </div>
             <div className="relative">
               <img
                 src="https://images.unsplash.com/photo-1631563020941-c0c6bc534b8e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MTg3MTl8MHwxfHNlYXJjaHwxfHxBbiUyMGltYWdlJTIwc2hvd2Nhc2luZyUyMEV4b21pbmQlMjBUTVMlMjB0ZWNobm9sb2d5JTIwaW4lMjBhY3Rpb24ufGVufDB8fHx8MTc2Njc0OTMzOXww&ixlib=rb-4.1.0&q=80&w=200$w=800"
                 alt="Exomind TMS technology in action"
-                className="rounded-lg shadow-lg"
-              />
+                className="rounded-lg shadow-lg" />
+
             </div>
           </div>
         </div>
@@ -148,37 +148,37 @@ const ExomindKarmaTMSPage = () => {
           <Carousel className="w-full max-w-5xl mx-auto">
             <CarouselContent>
               {[
-                {
-                  name: 'Gwyneth Paltrow',
-                  title: 'Wellness Icon & Entrepreneur',
-                  condition: 'Brain Fog & Burnout',
-                  quote: 'Revolutionary approach to mental clarity and cognitive wellness',
-                  videoPlaceholder: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=800&h=600&fit=crop'
-                },
-                {
-                  name: 'Serena Williams',
-                  title: 'Champion Athlete',
-                  condition: 'Performance Optimization',
-                  quote: 'Game-changing technology for mental resilience and focus',
-                  videoPlaceholder: 'https://images.unsplash.com/photo-1587691592099-24045742c181?w=800&h=600&fit=crop'
-                },
-                {
-                  name: 'Wellness Leader',
-                  title: 'Health Advocate',
-                  condition: 'Perimenopausal Anxiety',
-                  quote: 'Natural solution for hormonal mood changes and anxiety',
-                  videoPlaceholder: 'https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=800&h=600&fit=crop'
-                }
-              ].map((testimonial, index) => (
-                <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
+              {
+                name: 'Gwyneth Paltrow',
+                title: 'Wellness Icon & Entrepreneur',
+                condition: 'Brain Fog & Burnout',
+                quote: 'Revolutionary approach to mental clarity and cognitive wellness',
+                videoPlaceholder: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=800&h=600&fit=crop'
+              },
+              {
+                name: 'Serena Williams',
+                title: 'Champion Athlete',
+                condition: 'Performance Optimization',
+                quote: 'Game-changing technology for mental resilience and focus',
+                videoPlaceholder: 'https://images.unsplash.com/photo-1587691592099-24045742c181?w=800&h=600&fit=crop'
+              },
+              {
+                name: 'Wellness Leader',
+                title: 'Health Advocate',
+                condition: 'Perimenopausal Anxiety',
+                quote: 'Natural solution for hormonal mood changes and anxiety',
+                videoPlaceholder: 'https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=800&h=600&fit=crop'
+              }].
+              map((testimonial, index) =>
+              <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
                   <Card className="h-full">
                     <CardContent className="p-6">
                       <div className="aspect-video bg-gradient-to-br from-purple-100 to-indigo-100 rounded-lg mb-4 flex items-center justify-center overflow-hidden">
-                        <img 
-                          src={testimonial.videoPlaceholder} 
-                          alt={testimonial.name}
-                          className="w-full h-full object-cover"
-                        />
+                        <img
+                        src={testimonial.videoPlaceholder}
+                        alt={testimonial.name}
+                        className="w-full h-full object-cover" />
+
                       </div>
                       <Badge className="mb-3">{testimonial.condition}</Badge>
                       <h3 className="font-bold text-lg mb-1">{testimonial.name}</h3>
@@ -187,7 +187,7 @@ const ExomindKarmaTMSPage = () => {
                     </CardContent>
                   </Card>
                 </CarouselItem>
-              ))}
+              )}
             </CarouselContent>
             <CarouselPrevious className="hidden md:flex" />
             <CarouselNext className="hidden md:flex" />
@@ -219,23 +219,23 @@ const ExomindKarmaTMSPage = () => {
               <h3 className="text-2xl font-bold text-gray-900 mb-6">Key Benefits</h3>
               <div className="space-y-4">
                 {[
-                  {
-                    icon: Heart,
-                    title: 'Emotional Resilience',
-                    description: 'Build lasting capacity to handle stress, setbacks, and daily challenges with greater ease'
-                  },
-                  {
-                    icon: TrendingUp,
-                    title: 'Cognitive Edge',
-                    description: 'Enhanced focus, memory, decision-making, and mental processing speed for peak performance'
-                  },
-                  {
-                    icon: Shield,
-                    title: 'Craving Control',
-                    description: 'Reduce impulse-driven behaviors and gain better control over cravings and urges'
-                  }
-                ].map((benefit, index) => (
-                  <div key={index} className="flex gap-4 items-start p-4 bg-gray-50 rounded-lg">
+                {
+                  icon: Heart,
+                  title: 'Emotional Resilience',
+                  description: 'Build lasting capacity to handle stress, setbacks, and daily challenges with greater ease'
+                },
+                {
+                  icon: TrendingUp,
+                  title: 'Cognitive Edge',
+                  description: 'Enhanced focus, memory, decision-making, and mental processing speed for peak performance'
+                },
+                {
+                  icon: Shield,
+                  title: 'Craving Control',
+                  description: 'Reduce impulse-driven behaviors and gain better control over cravings and urges'
+                }].
+                map((benefit, index) =>
+                <div key={index} className="flex gap-4 items-start p-4 bg-gray-50 rounded-lg">
                     <div className="flex-shrink-0">
                       <benefit.icon className="h-6 w-6 text-purple-600 mt-1" />
                     </div>
@@ -244,7 +244,7 @@ const ExomindKarmaTMSPage = () => {
                       <p className="text-gray-700 text-sm">{benefit.description}</p>
                     </div>
                   </div>
-                ))}
+                )}
               </div>
             </div>
 
@@ -296,34 +296,34 @@ const ExomindKarmaTMSPage = () => {
               <img
                 src="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/d85b7133-76b3-47d9-8904-c6b4ffc09e40.jpeg"
                 alt="KarmaTMS Rancho Mirage entrance"
-                className="rounded-lg shadow-xl"
-              />
+                className="rounded-lg shadow-xl" />
+
             </div>
             <div className="space-y-6">
               {[
-                {
-                  icon: MapPin,
-                  title: 'Rancho Mirage Location',
-                  description: 'Nestled in the heart of Coachella Valley, our premier location offers serene desert beauty and easy accessibility'
-                },
-                {
-                  icon: Award,
-                  title: 'Spa-Like Environment',
-                  description: 'Luxurious, calming treatment rooms designed for your comfort and relaxation during every session'
-                },
-                {
-                  icon: Users,
-                  title: 'Dr. Keerthy Sunder',
-                  description: 'Double board-certified psychiatrist with specialized expertise in advanced brain stimulation therapies',
-                  link: '/team'
-                },
-                {
-                  icon: CheckCircle,
-                  title: '15+ Years Valley Experience',
-                  description: 'Deep roots in Coachella Valley mental health care with thousands of successful patient outcomes'
-                }
-              ].map((item, index) => (
-                <div key={index} className="flex gap-4 items-start">
+              {
+                icon: MapPin,
+                title: 'Rancho Mirage Location',
+                description: 'Nestled in the heart of Coachella Valley, our premier location offers serene desert beauty and easy accessibility'
+              },
+              {
+                icon: Award,
+                title: 'Spa-Like Environment',
+                description: 'Luxurious, calming treatment rooms designed for your comfort and relaxation during every session'
+              },
+              {
+                icon: Users,
+                title: 'Dr. Keerthy Sunder',
+                description: 'Double board-certified psychiatrist with specialized expertise in advanced brain stimulation therapies',
+                link: '/team'
+              },
+              {
+                icon: CheckCircle,
+                title: '15+ Years Valley Experience',
+                description: 'Deep roots in Coachella Valley mental health care with thousands of successful patient outcomes'
+              }].
+              map((item, index) =>
+              <div key={index} className="flex gap-4 items-start">
                   <div className="flex-shrink-0">
                     <div className="w-12 h-12 bg-purple-600 text-white rounded-full flex items-center justify-center">
                       <item.icon className="h-6 w-6" />
@@ -332,14 +332,14 @@ const ExomindKarmaTMSPage = () => {
                   <div>
                     <h3 className="font-semibold text-gray-900 mb-2">{item.title}</h3>
                     <p className="text-gray-700 text-sm">{item.description}</p>
-                    {item.link && (
-                      <Link to={item.link} className="text-purple-600 text-sm font-medium hover:underline mt-1 inline-block">
+                    {item.link &&
+                  <Link to={item.link} className="text-purple-600 text-sm font-medium hover:underline mt-1 inline-block">
                         Meet the team →
                       </Link>
-                    )}
+                  }
                   </div>
                 </div>
-              ))}
+              )}
             </div>
           </div>
         </div>
@@ -359,32 +359,32 @@ const ExomindKarmaTMSPage = () => {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
-              {
-                step: '1',
-                title: 'Initial Consultation',
-                description: 'Comprehensive evaluation with Dr. Sunder to assess your needs, review history, and create your personalized treatment plan',
-                icon: Users
-              },
-              {
-                step: '2',
-                title: 'Personalized Protocol',
-                description: 'Custom-designed treatment parameters based on your unique brain mapping and specific wellness goals',
-                icon: Brain
-              },
-              {
-                step: '3',
-                title: 'The Session',
-                description: 'Relax in our spa-like environment during your comfortable 30-minute session. Read, listen to music, or simply unwind',
-                icon: Clock
-              },
-              {
-                step: '4',
-                title: 'Ongoing Support',
-                description: 'Regular progress monitoring, protocol adjustments, and continued care to ensure lasting results',
-                icon: Heart
-              }
-            ].map((item, index) => (
-              <Card key={index} className="text-center hover:shadow-lg transition-shadow">
+            {
+              step: '1',
+              title: 'Initial Consultation',
+              description: 'Comprehensive evaluation with Dr. Sunder to assess your needs, review history, and create your personalized treatment plan',
+              icon: Users
+            },
+            {
+              step: '2',
+              title: 'Personalized Protocol',
+              description: 'Custom-designed treatment parameters based on your unique brain mapping and specific wellness goals',
+              icon: Brain
+            },
+            {
+              step: '3',
+              title: 'The Session',
+              description: 'Relax in our spa-like environment during your comfortable 30-minute session. Read, listen to music, or simply unwind',
+              icon: Clock
+            },
+            {
+              step: '4',
+              title: 'Ongoing Support',
+              description: 'Regular progress monitoring, protocol adjustments, and continued care to ensure lasting results',
+              icon: Heart
+            }].
+            map((item, index) =>
+            <Card key={index} className="text-center hover:shadow-lg transition-shadow">
                 <CardContent className="p-6">
                   <div className="w-16 h-16 bg-purple-600 text-white rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold">
                     {item.step}
@@ -394,7 +394,7 @@ const ExomindKarmaTMSPage = () => {
                   <p className="text-gray-700 text-sm">{item.description}</p>
                 </CardContent>
               </Card>
-            ))}
+            )}
           </div>
 
           <div className="text-center mt-12">
@@ -564,11 +564,11 @@ const ExomindKarmaTMSPage = () => {
 
               {/* Location Image */}
               <div className="rounded-lg overflow-hidden shadow-lg">
-                <img
-                  src="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/b65c46ad-dd56-4c76-bfc8-9fbe25e9b7af.jpg"
-                  alt="Rancho Mirage Palm Springs sunset view"
-                  className="w-full h-64 object-cover"
-                />
+                
+
+
+
+
               </div>
             </div>
           </div>
@@ -601,8 +601,8 @@ const ExomindKarmaTMSPage = () => {
       </section>
 
       <FooterSection />
-    </div>
-  );
+    </div>);
+
 };
 
 export default ExomindKarmaTMSPage;
