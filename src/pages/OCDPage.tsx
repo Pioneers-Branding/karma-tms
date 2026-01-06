@@ -5,7 +5,7 @@ import { Badge } from '@/components/ui/badge';
 import { Link } from 'react-router-dom';
 import Navigation from '@/components/Navigation';
 import FooterSection from '@/components/FooterSection';
-import SEO from '@/components/SEO'
+import SEO from '@/components/SEO';
 import { Brain, RefreshCw, CheckCircle, ArrowRight, Calendar, Shield, Award, Zap } from 'lucide-react';
 
 const OCDPage = () => {
@@ -13,11 +13,11 @@ const OCDPage = () => {
     <div className="min-h-screen">
       <Navigation />
       <SEO
-  title="OCD Therapist in Palm Springs | Karma TMS PC"
-  description="Karma TMS PC offers expert OCD Therapist in Palm Springs services, providing personalized therapy to help you manage symptoms and regain control of your life."
-  keywords="ocd expert palm springs ca, ocd therapist palm springs ca"
-  canonical="https://www.karmatms.com/conditions/ocd"
-/>
+        title="OCD Therapist in Palm Springs | Karma TMS PC"
+        description="Karma TMS PC offers expert OCD Therapist in Palm Springs services, providing personalized therapy to help you manage symptoms and regain control of your life."
+        keywords="ocd expert palm springs ca, ocd therapist palm springs ca"
+        canonical="https://www.karmatms.com/conditions/ocd" />
+
       
       {/* Hero Section */}
       <section className="relative bg-gradient-to-r from-[#572670] to-[#7B4D9E] text-white py-20 px-4">
