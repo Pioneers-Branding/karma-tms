@@ -33,6 +33,22 @@ const blogCategories = [
 // Blog posts - Veterans TMS Therapy with fixed images
 const allBlogPosts: BlogPost[] = [
 {
+  id: 34,
+  title: 'Is Depression a Disability? Understanding Rights, Treatment, and Support Options',
+  excerpt: 'Comprehensive guide on depression as a disability, including legal rights, workplace accommodations, treatment options like TMS therapy, and support resources.',
+  category: 'mental-health',
+  author: 'Dr. Keerthy Sunder',
+  date: new Date(2025, 11, 1).toLocaleDateString('en-US', {
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric'
+  }),
+  readTime: '15 min read',
+  image: 'https://res.cloudinary.com/de4kw1t2i/image/upload/v1764569002/34_g1u7jn.png',
+  featured: false,
+  rating: 5
+},
+{
   id: 33,
   title: 'Does TMS Therapy Work for Anxiety?',
   excerpt: 'Discover how TMS therapy effectively treats anxiety disorders. Learn about success rates, benefits, treatment process, and what to expect from TMS for anxiety relief.',
@@ -758,6 +774,7 @@ const BlogPage = () => {
                     31: '/blog/how-does-adhd-treatment-work',
                     32: '/blog/how-to-avoid-stress-during-holidays',
                     33: '/blog/does-tms-therapy-work-for-anxiety',
+                    34: '/blog/is-depression-a-disability',
                     2: '/blog/va-veterans-ptsd-tms-treatment',
                     3: '/blog/va-disability-benefits-depression-anxiety-ptsd',
                     4: '/blog/tms-vs-medication-veterans-depression',
