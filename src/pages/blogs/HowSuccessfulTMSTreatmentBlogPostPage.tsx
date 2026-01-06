@@ -93,24 +93,24 @@ const HowSuccessfulTMSTreatmentBlogPostPage = () => {
   }];
 
 
-  const relatedPosts = [
+ const relatedPosts = [
   {
-    title: 'Is TMS Therapy Permanent?',
-    excerpt: 'Learn about the duration of TMS results and how to maintain long-term benefits.',
-    link: '/blog/is-tms-therapy-permanent',
-    image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/76caee2d-5629-4dc1-a3b4-8c5cea23ede6.webp'
+    title: 'TMS for Migraine Relief in Veterans',
+    excerpt: 'Learn how TMS helps veterans with migraines and comorbid conditions like PTSD and depression.',
+    link: '/blogs/tms-migraine-veterans',
+    image: 'https://res.cloudinary.com/de4kw1t2i/image/upload/v1763033673/7_lnxkrv.png'
   },
   {
-    title: 'Is TMS Therapy Legitimate?',
-    excerpt: 'Discover the FDA approval, scientific evidence, and expert endorsements behind TMS therapy.',
-    link: '/blog/is-tms-therapy-legitimate',
-    image: 'https://images.unsplash.com/photo-1620148222862-b95cf7405a7b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MTg3MTl8MHwxfHNlYXJjaHwxfHxBbiUyMGltYWdlJTIwZGVwaWN0aW5nJTIwdGhlJTIwc3VjY2VzcyUyMGFuZCUyMGVmZmVjdGl2ZW5lc3MlMjBvZiUyMFRNUyUyMHRoZXJhcHkufGVufDB8fHx8MTc2MzM2NTQ5MXww&ixlib=rb-4.1.0&q=80&w=200$w=800'
+    title: 'TMS for Anxiety in Veterans',
+    excerpt: 'Discover how TMS helps veterans manage anxiety beyond medication.',
+    link: '/blogs/tms-anxiety-veterans',
+    image: 'https://res.cloudinary.com/de4kw1t2i/image/upload/v1763033666/6_rrkhgo.png'
   },
   {
-    title: 'TMS Therapy: A Complete Guide',
-    excerpt: 'Everything you need to know about Transcranial Magnetic Stimulation therapy.',
-    link: '/tms-therapy',
-    image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/d3a1f368-2c44-4046-8568-532988b95c6d.webp'
+    title: 'Understanding PTSD in Veterans',
+    excerpt: 'Complete guide to PTSD signs, symptoms, and treatment paths including TMS therapy.',
+    link: '/blogs/understanding-ptsd-veterans',
+    image: 'https://res.cloudinary.com/de4kw1t2i/image/upload/v1763033666/5_kvtlku.png'
   }];
 
 
@@ -677,7 +677,7 @@ const HowSuccessfulTMSTreatmentBlogPostPage = () => {
                     <img
                     src={post.image}
                     alt={post.title}
-                    className="w-full h-48 object-cover" />
+                    className="w-full  object-cover" />
                     <CardContent className="p-6">
                       <h3 className="font-bold text-lg mb-2 hover:text-[#572670] transition-colors">
                         <Link to={post.link}>{post.title}</Link>
