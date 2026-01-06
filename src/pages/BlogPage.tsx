@@ -260,7 +260,7 @@ const BlogPage = () => {
 
       {/* Featured Article */}
       {featuredPost &&
-      <div className="py-8 bg-white border-b border-gray-100">
+      <div className="py-8 bg-white border-b border-gray-100 hidden">
           <div className="container mx-auto px-4">
             <div className="flex items-center gap-2 mb-6">
               <Star className="h-5 w-5 text-yellow-500 fill-current" />
