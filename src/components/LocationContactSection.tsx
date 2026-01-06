@@ -69,8 +69,8 @@ const LocationContactSection = () => {
               {
                 Icon: Mail,
                 label: "Email",
-                value: "info@karmatms.com",
-                href: "mailto:info@karmatms.com"
+                value: "contact@karmatms.com",
+                href: "mailto:contact@karmatms.com"
               }].
               map(({ Icon, label, value, href }, idx) =>
               <div key={idx} className="flex items-start gap-4 mb-6 last:mb-0">
