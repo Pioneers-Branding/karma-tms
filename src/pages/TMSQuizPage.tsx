@@ -87,7 +87,7 @@ const TMSQuizPage = () => {
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [answers, setAnswers] = useState<Record<string, string>>({});
   const [showFinalForm, setShowFinalForm] = useState(false);
-  
+
   // Final form state
   const [formData, setFormData] = useState({
     fullName: '',
@@ -97,7 +97,7 @@ const TMSQuizPage = () => {
     message: '',
     consent: false
   });
-  
+
   const [formErrors, setFormErrors] = useState<Record<string, string>>({});
   const [isSubmitting, setIsSubmitting] = useState(false);
 
@@ -123,7 +123,7 @@ const TMSQuizPage = () => {
       setCurrentQuestion(currentQuestion - 1);
     }
   };
-  
+
   const handleFormChange = (field: string, value: string | boolean) => {
     setFormData((prev) => ({ ...prev, [field]: value }));
     // Clear error for this field
@@ -135,64 +135,64 @@ const TMSQuizPage = () => {
       });
     }
   };
-  
+
   const validateForm = (): boolean => {
     const errors: Record<string, string> = {};
-    
+
     if (!formData.fullName.trim()) {
       errors.fullName = 'Full name is required';
     }
-    
+
     if (!formData.email.trim()) {
       errors.email = 'Email is required';
     } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email)) {
       errors.email = 'Please enter a valid email address';
     }
-    
+
     if (!formData.phone.trim()) {
       errors.phone = 'Phone number is required';
     }
-    
+
     if (!formData.condition) {
       errors.condition = 'Please select a condition';
     }
-    
+
     if (!formData.consent) {
       errors.consent = 'You must agree to receive communications';
     }
-    
+
     setFormErrors(errors);
     return Object.keys(errors).length === 0;
   };
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    
+
     if (!validateForm()) {
       toast({
         variant: "destructive",
         title: "Validation Error",
-        description: "Please fill in all required fields correctly.",
+        description: "Please fill in all required fields correctly."
       });
       return;
     }
-    
+
     setIsSubmitting(true);
-    
+
     try {
       // The form will submit naturally to Formester with all data
       // Let the native form submission handle it
       e.currentTarget.submit();
-      
+
       toast({
         title: "Assessment Submitted",
-        description: "Thank you! We'll be in touch soon.",
+        description: "Thank you! We'll be in touch soon."
       });
     } catch (error) {
       toast({
         variant: "destructive",
         title: "Submission Error",
-        description: "There was an error submitting your assessment. Please try again.",
+        description: "There was an error submitting your assessment. Please try again."
       });
       setIsSubmitting(false);
     }
@@ -200,7 +200,7 @@ const TMSQuizPage = () => {
 
   const totalSteps = quizQuestions.length + 1; // +1 for final form step
   const currentStep = showFinalForm ? totalSteps : currentQuestion + 1;
-  const progress = (currentStep / totalSteps) * 100;
+  const progress = currentStep / totalSteps * 100;
   const currentQ = quizQuestions[currentQuestion];
   const canProceed = !showFinalForm ? answers[currentQ?.id] : true;
   const isLastQuestion = currentQuestion === quizQuestions.length - 1 && !showFinalForm;
@@ -236,8 +236,8 @@ const TMSQuizPage = () => {
             {/* Redirect URL after form submission */}
             <input type="hidden" name="redirect_to" value="/thank-you" />
 
-            {!showFinalForm ? (
-              <Card>
+            {!showFinalForm ?
+          <Card>
                 <CardHeader>
                   <CardTitle className="text-xl">{currentQ.question}</CardTitle>
                 </CardHeader>
@@ -266,9 +266,9 @@ const TMSQuizPage = () => {
                     </Button>
                   </div>
                 </CardContent>
-              </Card>
-            ) : (
-              <Card>
+              </Card> :
+
+          <Card>
                 <CardHeader>
                   <CardTitle className="text-xl">Contact Information</CardTitle>
                   <p className="text-sm text-gray-600 mt-2">
@@ -284,18 +284,18 @@ const TMSQuizPage = () => {
                         Full Name <span className="text-red-500">*</span>
                       </Label>
                       <Input
-                        id="fullName"
-                        name="full_name"
-                        type="text"
-                        value={formData.fullName}
-                        onChange={(e) => handleFormChange('fullName', e.target.value)}
-                        placeholder="Enter your full name"
-                        className={formErrors.fullName ? 'border-red-500' : ''}
-                        required
-                      />
-                      {formErrors.fullName && (
-                        <p className="text-red-500 text-sm mt-1">{formErrors.fullName}</p>
-                      )}
+                    id="fullName"
+                    name="full_name"
+                    type="text"
+                    value={formData.fullName}
+                    onChange={(e) => handleFormChange('fullName', e.target.value)}
+                    placeholder="Enter your full name"
+                    className={formErrors.fullName ? 'border-red-500' : ''}
+                    required />
+
+                      {formErrors.fullName &&
+                  <p className="text-red-500 text-sm mt-1">{formErrors.fullName}</p>
+                  }
                     </div>
 
                     {/* Email */}
@@ -305,18 +305,18 @@ const TMSQuizPage = () => {
                         Email Address <span className="text-red-500">*</span>
                       </Label>
                       <Input
-                        id="email"
-                        name="email"
-                        type="email"
-                        value={formData.email}
-                        onChange={(e) => handleFormChange('email', e.target.value)}
-                        placeholder="your.email@example.com"
-                        className={formErrors.email ? 'border-red-500' : ''}
-                        required
-                      />
-                      {formErrors.email && (
-                        <p className="text-red-500 text-sm mt-1">{formErrors.email}</p>
-                      )}
+                    id="email"
+                    name="email"
+                    type="email"
+                    value={formData.email}
+                    onChange={(e) => handleFormChange('email', e.target.value)}
+                    placeholder="your.email@example.com"
+                    className={formErrors.email ? 'border-red-500' : ''}
+                    required />
+
+                      {formErrors.email &&
+                  <p className="text-red-500 text-sm mt-1">{formErrors.email}</p>
+                  }
                     </div>
 
                     {/* Phone */}
@@ -326,18 +326,18 @@ const TMSQuizPage = () => {
                         Phone Number <span className="text-red-500">*</span>
                       </Label>
                       <Input
-                        id="phone"
-                        name="phone"
-                        type="tel"
-                        value={formData.phone}
-                        onChange={(e) => handleFormChange('phone', e.target.value)}
-                        placeholder="(555) 123-4567"
-                        className={formErrors.phone ? 'border-red-500' : ''}
-                        required
-                      />
-                      {formErrors.phone && (
-                        <p className="text-red-500 text-sm mt-1">{formErrors.phone}</p>
-                      )}
+                    id="phone"
+                    name="phone"
+                    type="tel"
+                    value={formData.phone}
+                    onChange={(e) => handleFormChange('phone', e.target.value)}
+                    placeholder="(555) 123-4567"
+                    className={formErrors.phone ? 'border-red-500' : ''}
+                    required />
+
+                      {formErrors.phone &&
+                  <p className="text-red-500 text-sm mt-1">{formErrors.phone}</p>
+                  }
                     </div>
 
                     {/* Condition */}
@@ -346,12 +346,12 @@ const TMSQuizPage = () => {
                         <Brain className="h-4 w-4 text-[#572670]" />
                         Primary Condition <span className="text-red-500">*</span>
                       </Label>
-                      <Select 
-                        name="condition" 
-                        value={formData.condition}
-                        onValueChange={(value) => handleFormChange('condition', value)}
-                        required
-                      >
+                      <Select
+                    name="condition"
+                    value={formData.condition}
+                    onValueChange={(value) => handleFormChange('condition', value)}
+                    required>
+
                         <SelectTrigger className={formErrors.condition ? 'border-red-500' : ''}>
                           <SelectValue placeholder="Select your primary condition" />
                         </SelectTrigger>
@@ -367,9 +367,9 @@ const TMSQuizPage = () => {
                           <SelectItem value="Other">Other</SelectItem>
                         </SelectContent>
                       </Select>
-                      {formErrors.condition && (
-                        <p className="text-red-500 text-sm mt-1">{formErrors.condition}</p>
-                      )}
+                      {formErrors.condition &&
+                  <p className="text-red-500 text-sm mt-1">{formErrors.condition}</p>
+                  }
                     </div>
 
                     {/* Message */}
@@ -379,34 +379,34 @@ const TMSQuizPage = () => {
                         Additional Message (Optional)
                       </Label>
                       <Textarea
-                        id="message"
-                        name="message"
-                        value={formData.message}
-                        onChange={(e) => handleFormChange('message', e.target.value)}
-                        placeholder="Tell us more about your situation or any questions you have..."
-                        rows={4}
-                      />
+                    id="message"
+                    name="message"
+                    value={formData.message}
+                    onChange={(e) => handleFormChange('message', e.target.value)}
+                    placeholder="Tell us more about your situation or any questions you have..."
+                    rows={4} />
+
                     </div>
 
                     {/* Consent Checkbox */}
                     <div className="flex items-start space-x-3">
                       <Checkbox
-                        id="consent"
-                        checked={formData.consent}
-                        onCheckedChange={(checked) => handleFormChange('consent', checked as boolean)}
-                        className={formErrors.consent ? 'border-red-500' : ''}
-                        required
-                      />
+                    id="consent"
+                    checked={formData.consent}
+                    onCheckedChange={(checked) => handleFormChange('consent', checked as boolean)}
+                    className={formErrors.consent ? 'border-red-500' : ''}
+                    required />
+
                       <div className="flex-1">
-                        <Label 
-                          htmlFor="consent" 
-                          className="text-sm text-gray-700 cursor-pointer leading-relaxed font-normal"
-                        >
+                        <Label
+                      htmlFor="consent"
+                      className="text-sm text-gray-700 cursor-pointer leading-relaxed font-normal">
+
                           I understand that I will receive emails and calls from the Karma team after submitting this form. My data will be used for communication purposes only. <span className="text-red-500">*</span>
                         </Label>
-                        {formErrors.consent && (
-                          <p className="text-red-500 text-sm mt-1">{formErrors.consent}</p>
-                        )}
+                        {formErrors.consent &&
+                    <p className="text-red-500 text-sm mt-1">{formErrors.consent}</p>
+                    }
                       </div>
                     </div>
 
@@ -415,28 +415,28 @@ const TMSQuizPage = () => {
                   </div>
 
                   <div className="flex justify-between mt-8">
-                    <Button 
-                      type="button" 
-                      variant="outline" 
-                      onClick={handlePrevious}
-                      disabled={isSubmitting}
-                    >
+                    <Button
+                  type="button"
+                  variant="outline"
+                  onClick={handlePrevious}
+                  disabled={isSubmitting}>
+
                       <ArrowLeft className="h-4 w-4 mr-2" />
                       Back to Quiz
                     </Button>
                     
-                    <Button 
-                      type="submit" 
-                      disabled={isSubmitting}
-                      className="bg-[#572670] hover:bg-[#572670]/90"
-                    >
+                    <Button
+                  type="submit"
+                  disabled={isSubmitting}
+                  className="bg-[#572670] hover:bg-[#572670]/90">
+
                       {isSubmitting ? 'Submitting...' : 'Submit Assessment'}
                       <ArrowRight className="h-4 w-4 ml-2" />
                     </Button>
                   </div>
                 </CardContent>
               </Card>
-            )}
+          }
           </form>
 
           <div className="mt-6 text-center text-sm text-gray-600">
