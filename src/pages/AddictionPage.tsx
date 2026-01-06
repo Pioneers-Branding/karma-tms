@@ -92,7 +92,7 @@ const AddictionPage = () => {
             </div>
             <div className="relative">
               <img
-                src="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/b8e4fadb-8922-451e-acf8-84c5fae922ad.webp"
+                src="https://res.cloudinary.com/de4kw1t2i/image/upload/v1765798136/neurocare-TMS3475_Coilholder_oqsanf.jpg"
                 alt="Brain pathways in addiction"
                 className="rounded-lg shadow-lg" />
 
