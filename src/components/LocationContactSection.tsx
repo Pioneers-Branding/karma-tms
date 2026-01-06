@@ -5,9 +5,9 @@ import { MapPin, Phone, Clock, Mail, Navigation } from 'lucide-react';
 
 const LocationContactSection = () => {
   const serviceAreas = [
-    "Palm Springs", "Desert Hot Springs", "Cathedral City", "Rancho Mirage",
-    "Palm Desert", "Indian Wells", "La Quinta", "Indio", "Coachella Valley"
-  ];
+  "Palm Springs", "Desert Hot Springs", "Cathedral City", "Rancho Mirage",
+  "Palm Desert", "Indian Wells", "La Quinta", "Indio", "Coachella Valley"];
+
 
   return (
     <section className="py-20 bg-white">
@@ -95,11 +95,11 @@ const LocationContactSection = () => {
                   Proudly serving patients throughout the Coachella Valley and surrounding communities:
                 </p>
                 <div className="flex flex-wrap gap-2">
-                  {serviceAreas.map((area, index) => (
-                    <Badge key={index} variant="outline" className="border-[#572670] text-[#572670]">
+                  {serviceAreas.map((area, index) =>
+                  <Badge key={index} variant="outline" className="border-[#572670] text-[#572670]">
                       {area}
                     </Badge>
-                  ))}
+                  )}
                 </div>
               </CardContent>
             </Card>
@@ -145,8 +145,8 @@ const LocationContactSection = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>);
+
 };
 
 export default LocationContactSection;

@@ -6,7 +6,6 @@ import HowTMSWorks from '@/components/HowTMSWorks';
 import TestimonialsSection from '@/components/TestimonialsSection';
 import DoctorSection from '@/components/DoctorSection';
 import TreatmentProcessSection from '@/components/TreatmentProcessSection';
-import InsuranceSection from '@/components/InsuranceSection';
 import LocationContactSection from '@/components/LocationContactSection';
 import QuickAccessSection from '@/components/QuickAccessSection';
 import FooterSection from '@/components/FooterSection';
@@ -22,7 +21,6 @@ const HomePage = () => {
       <TestimonialsSection />
       <DoctorSection />
       <TreatmentProcessSection />
-      <InsuranceSection />
       <LocationContactSection />
       <QuickAccessSection />
       <FooterSection />

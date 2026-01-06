@@ -4,45 +4,45 @@ import { BookOpen, FileText, Brain, Phone, ExternalLink, Clock } from 'lucide-re
 
 const QuickAccessSection = () => {
   const resources = [
-    {
-      icon: Brain,
-      title: "Research & Studies",
-      description: "Access published research and clinical studies on TMS therapy effectiveness",
-      cta: "View Research",
-      highlight: "Peer-reviewed studies",
-      color: "bg-blue-500"
-    },
-    {
-      icon: FileText,
-      title: "Patient Resources",
-      description: "Treatment guides, FAQs, and preparation materials for your TMS journey",
-      cta: "Download Guides",
-      highlight: "Free resources",
-      color: "bg-green-500"
-    },
-    {
-      icon: BookOpen,
-      title: "Mental Health Blog",
-      description: "Latest insights, tips, and news about mental health and TMS therapy",
-      cta: "Read Articles",
-      highlight: "Weekly updates",
-      color: "bg-purple-500"
-    },
-    {
-      icon: Phone,
-      title: "Emergency Resources",
-      description: "Crisis hotlines and immediate support resources available 24/7",
-      cta: "Get Help Now",
-      highlight: "Available 24/7",
-      color: "bg-red-500"
-    }
-  ];
+  {
+    icon: Brain,
+    title: "Research & Studies",
+    description: "Access published research and clinical studies on TMS therapy effectiveness",
+    cta: "View Research",
+    highlight: "Peer-reviewed studies",
+    color: "bg-blue-500"
+  },
+  {
+    icon: FileText,
+    title: "Patient Resources",
+    description: "Treatment guides, FAQs, and preparation materials for your TMS journey",
+    cta: "Download Guides",
+    highlight: "Free resources",
+    color: "bg-green-500"
+  },
+  {
+    icon: BookOpen,
+    title: "Mental Health Blog",
+    description: "Latest insights, tips, and news about mental health and TMS therapy",
+    cta: "Read Articles",
+    highlight: "Weekly updates",
+    color: "bg-purple-500"
+  },
+  {
+    icon: Phone,
+    title: "Emergency Resources",
+    description: "Crisis hotlines and immediate support resources available 24/7",
+    cta: "Get Help Now",
+    highlight: "Available 24/7",
+    color: "bg-red-500"
+  }];
+
 
   const emergencyNumbers = [
-    { name: "National Suicide Prevention Lifeline", number: "988", available: "24/7" },
-    { name: "Crisis Text Line", number: "Text HOME to 741741", available: "24/7" },
-    { name: "Karma TMS Emergency", number: "760-760-5675", available: "Business Hours" }
-  ];
+  { name: "National Suicide Prevention Lifeline", number: "988", available: "24/7" },
+  { name: "Crisis Text Line", number: "Text HOME to 741741", available: "24/7" },
+  { name: "Karma TMS Emergency", number: "760-760-5675", available: "Business Hours" }];
+
 
   return (
     <section className="py-20 bg-gray-50">
@@ -77,16 +77,16 @@ const QuickAccessSection = () => {
                   <p className="text-gray-600 text-sm leading-relaxed">
                     {resource.description}
                   </p>
-                  <Button 
-                    variant="outline" 
-                    className="w-full border-[#572670] text-[#572670] hover:bg-[#572670] hover:text-white group-hover:shadow-md transition-all"
-                  >
+                  <Button
+                    variant="outline"
+                    className="w-full border-[#572670] text-[#572670] hover:bg-[#572670] hover:text-white group-hover:shadow-md transition-all">
+
                     {resource.cta}
                     <ExternalLink className="h-4 w-4 ml-2" />
                   </Button>
                 </CardContent>
-              </Card>
-            );
+              </Card>);
+
           })}
         </div>
 
@@ -104,22 +104,22 @@ const QuickAccessSection = () => {
             </div>
 
             <div className="grid md:grid-cols-3 gap-6">
-              {emergencyNumbers.map((emergency, index) => (
-                <div key={index} className="bg-white rounded-lg p-6 shadow-md border border-red-200">
+              {emergencyNumbers.map((emergency, index) =>
+              <div key={index} className="bg-white rounded-lg p-6 shadow-md border border-red-200">
                   <h4 className="font-bold text-gray-900 mb-2">{emergency.name}</h4>
                   <div className="text-2xl font-bold text-red-600 mb-2">{emergency.number}</div>
                   <div className="flex items-center gap-2 text-sm text-gray-600">
                     <Clock className="h-4 w-4" />
                     <span>{emergency.available}</span>
                   </div>
-                  <Button 
-                    className="w-full mt-4 bg-red-600 hover:bg-red-700 text-white"
-                    onClick={() => emergency.number.includes('Text') ? null : window.open(`tel:${emergency.number.replace(/\D/g, '')}`, '_self')}
-                  >
+                  <Button
+                  className="w-full mt-4 bg-red-600 hover:bg-red-700 text-white"
+                  onClick={() => emergency.number.includes('Text') ? null : window.open(`tel:${emergency.number.replace(/\D/g, '')}`, '_self')}>
+
                     {emergency.number.includes('Text') ? 'Send Text' : 'Call Now'}
                   </Button>
                 </div>
-              ))}
+              )}
             </div>
 
             <div className="text-center mt-8 p-6 bg-white rounded-lg border border-red-200">
@@ -139,8 +139,8 @@ const QuickAccessSection = () => {
           </CardContent>
         </Card>
       </div>
-    </section>
-  );
+    </section>);
+
 };
 
 export default QuickAccessSection;

@@ -1,6 +1,6 @@
 import { Button } from '@/components/ui/button';
 import { Separator } from '@/components/ui/separator';
-import { Phone, Mail, MapPin, ExternalLink } from 'lucide-react';
+import { Phone, Mail, MapPin, ExternalLink, Calendar, Clock } from 'lucide-react';
 
 const FooterSection = () => {
   const quickLinks = [
@@ -23,7 +23,7 @@ const FooterSection = () => {
     { name: 'Anxiety', href: '/conditions/anxiety' },
     { name: 'OCD', href: '/conditions/ocd' },
     { name: 'PTSD', href: '/conditions/ptsd' },
-    { name: 'Women\'s Mood', href: '/conditions/womens-mood' }
+    { name: "Women's Mood", href: '/conditions/womens-mood' }
   ];
 
   const resources = [
@@ -49,144 +49,162 @@ const FooterSection = () => {
   ];
 
   return (
-    <footer className="bg-gray-900 text-white">
+    <footer className="relative bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white overflow-hidden">
+      {/* Background Elements */}
+      <div className="absolute top-0 left-0 w-64 h-64 bg-[#572670]/10 rounded-full blur-3xl"></div>
+      <div className="absolute bottom-0 right-0 w-96 h-96 bg-purple-600/5 rounded-full blur-3xl"></div>
+      
       {/* Main Footer Content */}
-      <div className="container mx-auto px-4 py-16">
+      <div className="container mx-auto px-4 py-16 relative z-10">
         <div className="grid lg:grid-cols-4 md:grid-cols-2 gap-12">
           {/* Company Info */}
-          <div className="lg:col-span-1">
-            <div className="flex items-center gap-2 mb-6">
+          <div className="lg:col-span-1 space-y-6">
+            <div className="flex items-center gap-3">
               <img
                 src="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/ebadb369-a58d-421c-b937-24f900be5867.png"
                 alt="Karma TMS"
-                className="h-10 w-auto brightness-0 invert"
+                className="h-12 w-auto brightness-0 invert"
               />
-              <span className="text-2xl font-bold">Karma TMS</span>
             </div>
-            <p className="text-gray-300 mb-6 leading-relaxed">
+            
+            <p className="text-gray-300 leading-relaxed">
               Leading TMS therapy provider in Palm Springs, transforming lives through 
               advanced transcranial magnetic stimulation treatment.
             </p>
             
             {/* Contact Info */}
             <div className="space-y-3">
-              <div className="flex items-center gap-3">
-                <MapPin className="h-5 w-5 text-[#572670]" />
-                <span className="text-sm">560 S. Paseo Dorotea #4B, Palm Springs, CA 92264</span>
+              <div className="flex items-start gap-3">
+                <MapPin className="h-5 w-5 text-[#572670] mt-1 flex-shrink-0" />
+                <div>
+                  <div className="text-sm font-medium text-white">Our Location</div>
+                  <div className="text-sm text-gray-300">560 S. Paseo Dorotea #4B<br/>Palm Springs, CA 92264</div>
+                </div>
               </div>
+              
               <div className="flex items-center gap-3">
                 <Phone className="h-5 w-5 text-[#572670]" />
-                <a href="tel:760-760-5675" className="text-sm hover:text-[#572670] transition-colors">
-                  760-760-5675
-                </a>
+                <div>
+                  <div className="text-sm font-medium text-white">Call Us</div>
+                  <a href="tel:760-760-5675" className="text-sm text-gray-300 hover:text-[#572670] transition-colors">
+                    760-760-5675
+                  </a>
+                </div>
               </div>
+              
               <div className="flex items-center gap-3">
                 <Mail className="h-5 w-5 text-[#572670]" />
-                <a href="mailto:info@karmatms.com" className="text-sm hover:text-[#572670] transition-colors">
-                  info@karmatms.com
-                </a>
+                <div>
+                  <div className="text-sm font-medium text-white">Email</div>
+                  <a href="mailto:info@karmatms.com" className="text-sm text-gray-300 hover:text-[#572670] transition-colors">
+                    info@karmatms.com
+                  </a>
+                </div>
+              </div>
+
+              <div className="flex items-center gap-3">
+                <Clock className="h-5 w-5 text-[#572670]" />
+                <div>
+                  <div className="text-sm font-medium text-white">Hours</div>
+                  <div className="text-sm text-gray-300">Mon-Fri: 8AM-6PM</div>
+                </div>
               </div>
             </div>
           </div>
 
-          {/* Quick Links */}
-          <div>
-            <h3 className="text-lg font-bold mb-6">Quick Links</h3>
-            <ul className="space-y-3">
-              {quickLinks.map((link, index) => (
-                <li key={index}>
-                  <a href={link.href} className="text-gray-300 hover:text-white transition-colors">
-                    {link.name}
-                  </a>
-                </li>
-              ))}
-            </ul>
+          {/* Quick Links & Services */}
+          <div className="space-y-8">
+            <div>
+              <h3 className="text-lg font-bold mb-6 text-white">Quick Links</h3>
+              <ul className="space-y-3">
+                {quickLinks.map((link, index) => (
+                  <li key={index}>
+                    <a href={link.href} className="text-gray-300 hover:text-[#572670] transition-colors text-sm">
+                      {link.name}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
             
-            <h4 className="text-md font-semibold mt-8 mb-4">Services</h4>
-            <ul className="space-y-2">
-              {services.map((link, index) => (
-                <li key={index}>
-                  <a href={link.href} className="text-sm text-gray-300 hover:text-white transition-colors">
-                    {link.name}
-                  </a>
-                </li>
-              ))}
-            </ul>
+            <div>
+              <h4 className="text-md font-semibold mb-4 text-gray-200">Our Services</h4>
+              <ul className="space-y-2">
+                {services.map((link, index) => (
+                  <li key={index}>
+                    <a href={link.href} className="text-sm text-gray-400 hover:text-[#572670] transition-colors">
+                      {link.name}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
           </div>
 
           {/* Conditions & Resources */}
-          <div>
-            <h3 className="text-lg font-bold mb-6">Conditions</h3>
-            <ul className="space-y-3">
-              {conditions.map((link, index) => (
-                <li key={index}>
-                  <a href={link.href} className="text-gray-300 hover:text-white transition-colors">
-                    {link.name}
-                  </a>
-                </li>
-              ))}
-            </ul>
+          <div className="space-y-8">
+            <div>
+              <h3 className="text-lg font-bold mb-6 text-white">Conditions We Treat</h3>
+              <ul className="space-y-3">
+                {conditions.map((link, index) => (
+                  <li key={index}>
+                    <a href={link.href} className="text-gray-300 hover:text-[#572670] transition-colors text-sm">
+                      {link.name}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
             
-            <h4 className="text-md font-semibold mt-8 mb-4">Resources</h4>
-            <ul className="space-y-2">
-              {resources.map((link, index) => (
-                <li key={index}>
-                  <a href={link.href} className="text-sm text-gray-300 hover:text-white transition-colors">
-                    {link.name}
-                  </a>
-                </li>
-              ))}
-            </ul>
+            <div>
+              <h4 className="text-md font-semibold mb-4 text-gray-200">Resources</h4>
+              <ul className="space-y-2">
+                {resources.map((link, index) => (
+                  <li key={index}>
+                    <a href={link.href} className="text-sm text-gray-400 hover:text-[#572670] transition-colors">
+                      {link.name}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
           </div>
 
-          {/* Business & Legal */}
-          <div>
-            <h3 className="text-lg font-bold mb-6">Patient Care</h3>
-            <ul className="space-y-3">
-              {businessLinks.map((link, index) => (
-                <li key={index}>
-                  <a href={link.href} className="text-gray-300 hover:text-white transition-colors">
-                    {link.name}
-                  </a>
-                </li>
-              ))}
-            </ul>
+          {/* Patient Care & Legal */}
+          <div className="space-y-8">
+            <div>
+              <h3 className="text-lg font-bold mb-6 text-white">Patient Care</h3>
+              <ul className="space-y-3">
+                {businessLinks.map((link, index) => (
+                  <li key={index}>
+                    <a href={link.href} className="text-gray-300 hover:text-[#572670] transition-colors text-sm">
+                      {link.name}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
             
-            <h4 className="text-md font-semibold mt-8 mb-4">Legal</h4>
-            <ul className="space-y-2">
-              {legalLinks.map((link, index) => (
-                <li key={index}>
-                  <a href={link.href} className="text-sm text-gray-300 hover:text-white transition-colors">
-                    {link.name}
-                  </a>
-                </li>
-              ))}
-            </ul>
+            <div>
+              <h4 className="text-md font-semibold mb-4 text-gray-200">Legal & Privacy</h4>
+              <ul className="space-y-2">
+                {legalLinks.map((link, index) => (
+                  <li key={index}>
+                    <a href={link.href} className="text-sm text-gray-400 hover:text-[#572670] transition-colors">
+                      {link.name}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
           </div>
         </div>
 
-        <Separator className="my-12 bg-gray-700" />
-
-        {/* Bottom CTA Section */}
-        <div className="text-center py-8 bg-gradient-to-r from-[#572670]/20 to-[#572670]/10 rounded-lg mb-12">
-          <h3 className="text-2xl font-bold mb-4">Ready to Start Your TMS Journey?</h3>
-          <p className="text-gray-300 mb-6 max-w-2xl mx-auto">
-            Take the first step toward mental wellness. Our team is here to help you determine 
-            if TMS therapy is right for you.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button className="bg-[#572670] hover:bg-[#572670]/90 text-white px-8">
-              Take Our Quiz
-            </Button>
-            <Button variant="outline" className="border-white text-white hover:bg-white hover:text-gray-900">
-              Schedule Consultation
-            </Button>
-          </div>
-        </div>
+        <Separator className="my-12 bg-gray-700/50" />
       </div>
 
       {/* Bottom Bar */}
-      <div className="border-t border-gray-700 bg-gray-950">
+      <div className="border-t border-gray-700/50 bg-gray-950/50 backdrop-blur-sm relative z-10">
         <div className="container mx-auto px-4 py-6">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <div className="text-sm text-gray-400">
@@ -196,9 +214,9 @@ const FooterSection = () => {
               <span className="text-xs text-gray-500">
                 FDA-Approved Treatment | Board-Certified Psychiatrist
               </span>
-              <a 
-                href="#" 
-                className="text-xs text-gray-400 hover:text-white transition-colors flex items-center gap-1"
+              <a
+                href="#"
+                className="text-xs text-gray-400 hover:text-[#572670] transition-colors flex items-center gap-1"
               >
                 Site Map <ExternalLink className="h-3 w-3" />
               </a>

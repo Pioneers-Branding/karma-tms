@@ -4,9 +4,9 @@ import { Shield, CheckCircle, Phone, FileText } from 'lucide-react';
 
 const InsuranceSection = () => {
   const insuranceProviders = [
-    "Aetna", "Blue Cross Blue Shield", "Cigna", "United Healthcare",
-    "Anthem", "Kaiser Permanente", "Medicare", "Tricare"
-  ];
+  "Aetna", "Blue Cross Blue Shield", "Cigna", "United Healthcare",
+  "Anthem", "Kaiser Permanente", "Medicare", "Tricare"];
+
 
   return (
     <section className="py-20 bg-gradient-to-br from-[#572670]/5 to-[#572670]/10">
@@ -74,12 +74,12 @@ const InsuranceSection = () => {
                   Accepted Insurance Providers
                 </h3>
                 <div className="grid grid-cols-2 gap-4 mb-8">
-                  {insuranceProviders.map((provider, index) => (
-                    <div key={index} className="flex items-center gap-3 p-3 bg-gray-50 rounded-lg">
+                  {insuranceProviders.map((provider, index) =>
+                  <div key={index} className="flex items-center gap-3 p-3 bg-gray-50 rounded-lg">
                       <CheckCircle className="h-5 w-5 text-[#572670]" />
                       <span className="font-medium text-gray-800">{provider}</span>
                     </div>
-                  ))}
+                  )}
                 </div>
                 <div className="text-center p-4 bg-[#572670]/10 rounded-lg">
                   <p className="text-sm text-gray-700 mb-2">
@@ -104,8 +104,8 @@ const InsuranceSection = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>);
+
 };
 
 export default InsuranceSection;
