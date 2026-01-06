@@ -93,24 +93,12 @@ const MentalHealthFirstAidBlogPostPage = () => {
   }];
 
 
-  const relatedPosts = [
+  const relatedPosts = [     
   {
-    title: 'Understanding Anxiety Disorders',
-    excerpt: 'Comprehensive guide to recognizing and treating anxiety disorders.',
-    link: '/anxiety',
-    image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/9705b922-d0fc-4d29-be10-acd507ce308c.webp'
-  },
-  {
-    title: 'How TMS Therapy Helps with Depression',
-    excerpt: 'Learn about innovative TMS treatment for depression and mental health conditions.',
-    link: '/depression',
-    image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/2ddc8d69-b09a-4f1d-bd47-6d783ceefbd1.webp'
-  },
-  {
-    title: 'Mindfulness Practices for Stress Management',
-    excerpt: 'Evidence-based mindfulness techniques to support mental wellbeing.',
-    link: '/blog/mindfulness-stress-management',
-    image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/6cfeb881-529d-42c6-875a-321eac7d440c.webp'
+    title: 'Stress Management: The Four A\'s Approach',
+    excerpt: 'Learn practical strategies for managing stress in our digital age.',
+    link: '/blog/four-as-stress-management',
+    image: 'https://res.cloudinary.com/de4kw1t2i/image/upload/v1763376733/12_t62v1m.png'
   }];
 
 
@@ -775,7 +763,7 @@ const MentalHealthFirstAidBlogPostPage = () => {
                     <img
                     src={post.image}
                     alt={post.title}
-                    className="w-full h-48 object-cover" />
+                    className="w-full object-cover" />
 
                     <CardContent className="p-6">
                       <h3 className="font-bold text-lg mb-2 hover:text-[#572670] transition-colors">

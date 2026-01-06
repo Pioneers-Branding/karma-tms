@@ -94,7 +94,7 @@ const ManagingAnxietyTriggersBlogPostPage = () => {
 
 
   const relatedPosts = [
- 
+
   {
     title: 'Stress Management: The Four A\'s Approach',
     excerpt: 'Learn practical strategies for managing stress in our digital age.',
