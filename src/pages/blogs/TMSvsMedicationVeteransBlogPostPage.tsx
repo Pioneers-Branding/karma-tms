@@ -285,7 +285,7 @@ const TMSvsMedicationVeteransBlogPostPage = () => {
               <img
                 src="https://res.cloudinary.com/de4kw1t2i/image/upload/v1763033665/3_zl830g.png"
                 alt="TMS therapy for veterans as alternative to medication"
-                className="w-full h-64 md:h-96 object-cover rounded-lg mb-6" />
+                className="w-full  md:h-96 object-cover rounded-lg mb-6" />
 
 
               <p className="text-xl text-gray-700 leading-relaxed">
@@ -374,7 +374,7 @@ const TMSvsMedicationVeteransBlogPostPage = () => {
               <img
                 src="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/7ace98a6-9efe-4403-aacf-892346fb07a8.webp"
                 alt="Veteran struggling with depression medication side effects"
-                className="w-full h-64 object-cover rounded-lg mb-6" />
+                className="w-full  object-cover rounded-lg mb-6" />
 
 
               <Card className="bg-blue-50 border-blue-200 mb-6">
@@ -422,7 +422,7 @@ const TMSvsMedicationVeteransBlogPostPage = () => {
               <img
                 src="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/76caee2d-5629-4dc1-a3b4-8c5cea23ede6.webp"
                 alt="TMS therapy equipment and treatment process"
-                className="w-full h-64 object-cover rounded-lg mb-6" />
+                className="w-full  object-cover rounded-lg mb-6" />
 
             </section>
 
@@ -664,7 +664,7 @@ const TMSvsMedicationVeteransBlogPostPage = () => {
               <img
                 src="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/dd7dd986-540f-4359-99af-39f398491cf0.webp"
                 alt="Veterans accessing mental health care and TMS therapy"
-                className="w-full h-64 object-cover rounded-lg mb-6" />
+                className="w-full  object-cover rounded-lg mb-6" />
 
 
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Private TMS Options for Veterans</h3>
@@ -825,7 +825,7 @@ const TMSvsMedicationVeteransBlogPostPage = () => {
                     <img
                     src={post.image}
                     alt={post.title}
-                    className="w-full h-48 object-cover" />
+                    className="w-full object-cover" />
 
                     <CardContent className="p-6">
                       <h3 className="font-bold text-lg mb-2 hover:text-[#572670] transition-colors">
