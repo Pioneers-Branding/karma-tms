@@ -63,7 +63,7 @@ const DoctorSection = () => {
                 <CardContent className="p-0">
                   <div className="aspect-[4/5] relative bg-gradient-to-br from-[#572670]/10 to-purple-100/20">
                     <img
-                      src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=600&h=750&fit=crop&crop=face"
+                      src="https://www.prtms.com/wp-content/uploads/2023/03/Dr.-Keerthy-Sunder-scaled.jpg"
                       alt="Dr. Keerthy Sunder - Psychiatrist"
                       className="w-full h-full object-cover" />
 
