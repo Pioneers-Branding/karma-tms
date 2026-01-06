@@ -45,13 +45,13 @@ const HeroSection = () => {
 
 
   return (
-    <div className=" bg-gradient-to-br from-violet-50 to-indigo-50 py-4 sm:py-6 lg:py-8 ">
+    <div className="py-4 ">
       <div className="max-w-[1500px] mx-auto w-full">
-        <div className="bg-white w-full rounded-3xl shadow-2xl overflow-hidden">
+        <div className="bg-white w-full  overflow-hidden">
           <div className="grid lg:grid-cols-2 xl:grid-cols-5 min-h-[800px] lg:min-h-[900px]">
             
             {/* Left Section - Content */}
-            <div className="xl:col-span-3 bg-gradient-to-br from-violet-50 via-indigo-50 to-purple-50 p-4 sm:p-6 md:p-8 lg:p-10 xl:p-12 flex flex-col justify-center">
+            <div className="xl:col-span-3 bg-gradient-to-br from-violet-50 via-indigo-50 to-purple-50 p-4  lg:p-6 xl:p-8 flex flex-col justify-center">
               <div className="space-y-6 lg:space-y-8">
                 
                 {/* Heading */}
@@ -130,16 +130,16 @@ const HeroSection = () => {
             </div>
 
             {/* Right Section - Form & Stats */}
-            <div className="xl:col-span-2 bg-gradient-to-br from-indigo-600 via-violet-600 to-purple-700 p-4 sm:p-6 md:p-8 lg:p-10 xl:p-12 flex flex-col">
+            <div className="xl:col-span-2 bg-gradient-to-br from-indigo-600 via-violet-600 to-purple-700 p-4 sm:p-4 md:p-4 lg:p-6 xl:p-8 flex flex-col">
               
               {/* Contact Form */}
-              <div className="bg-white/95 backdrop-blur-lg rounded-3xl p-6 lg:p-8 shadow-2xl flex-grow border border-white/20">
-                <div className="flex justify-between items-center mb-6 lg:mb-8">
+              <div className="bg-white/95 backdrop-blur-lg rounded-3xl p-4 shadow-2xl flex-grow border border-white/20">
+                <div className="flex justify-between items-center mb-4 lg:mb-8">
                   <h2 className="text-xl lg:text-2xl font-bold text-gray-900 flex items-center">
                     <Heart className="w-5 h-5 lg:w-6 lg:h-6 text-violet-600 mr-2" />
                     Get In Touch
                   </h2>
-                  <button className="bg-gradient-to-r from-indigo-600 to-violet-600 text-white font-semibold py-2.5 lg:py-3 px-6 lg:px-8 rounded-full shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all duration-300 text-sm lg:text-base hover:scale-105">
+                  <button className="bg-gradient-to-r from-indigo-600 to-violet-600 text-white font-semibold py-2 px-4 lg:px-6 rounded-full shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all duration-300 text-sm lg:text-base hover:scale-105">
                     Send
                   </button>
                 </div>
