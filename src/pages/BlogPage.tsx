@@ -188,7 +188,7 @@ const allBlogPosts: BlogPost[] = [
     day: 'numeric'
   }),
   readTime: '9 min read',
-  image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/76caee2d-5629-4dc1-a3b4-8c5cea23ede6.webp',
+  image: 'https://res.cloudinary.com/de4kw1t2i/image/upload/v1763376733/15_ym6n6b.png',
   featured: false,
   rating: 5
 },
