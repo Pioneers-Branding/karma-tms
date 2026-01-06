@@ -30,7 +30,7 @@ const blogCategories = [
 { id: 'wellness', label: 'Wellness Tips' }];
 
 
-// Single blog post - Veterans TMS Therapy
+// Blog posts - Veterans TMS Therapy
 const generateUniqueBlogPosts = (): BlogPost[] => {
   const posts: BlogPost[] = [
   {
@@ -47,6 +47,22 @@ const generateUniqueBlogPosts = (): BlogPost[] => {
     readTime: '8 min read',
     image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/157c49b6-b322-4aa5-b8d6-8ee41dc03a43.webp',
     featured: true,
+    rating: 5
+  },
+  {
+    id: 2,
+    title: 'Inside the VA & Veterans\' Mental Health: How TMS Fits Into Modern PTSD Treatment',
+    excerpt: 'Educational guide explaining the relationship between VA programs and TMS therapy, and how veterans can access care through VA-approved or private options like Karma TMS.',
+    category: 'mental-health',
+    author: 'Dr. Apollo Thomas',
+    date: new Date(2024, 0, 20).toLocaleDateString('en-US', {
+      year: 'numeric',
+      month: 'long',
+      day: 'numeric'
+    }),
+    readTime: '15 min read',
+    image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/dd7dd986-540f-4359-99af-39f398491cf0.webp',
+    featured: false,
     rating: 5
   }];
 
@@ -229,7 +245,10 @@ const BlogPage = () => {
                 {/* Posts Grid */}
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
                   {regularPosts.map((post) =>
-                <a key={post.id} href="/blog/veterans-tms-therapy">
+                <a 
+                  key={post.id} 
+                  href={post.id === 1 ? '/blog/veterans-tms-therapy' : '/blog/va-veterans-ptsd-tms-treatment'}
+                >
                   <Card className="group cursor-pointer hover:shadow-lg transition-all duration-300 border-gray-200 hover:border-[#572670]/30">
                       <div className="relative overflow-hidden rounded-t-lg">
                         <img

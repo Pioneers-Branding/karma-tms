@@ -94,16 +94,16 @@ const VeteransBlogPostPage = () => {
 
   const relatedPosts = [
   {
+    title: 'Inside the VA & Veterans\' Mental Health: How TMS Fits Into Modern PTSD Treatment',
+    excerpt: 'Learn about VA mental health programs, PTSD treatment options, and how veterans can access TMS therapy through VA or private providers.',
+    link: '/blog/va-veterans-ptsd-tms-treatment',
+    image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/dd7dd986-540f-4359-99af-39f398491cf0.webp'
+  },
+  {
     title: 'Understanding PTSD Treatment Options',
     excerpt: 'Comprehensive guide to PTSD treatment approaches including therapy, medication, and innovative treatments.',
     link: '/ptsd',
     image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/02c362bd-cde2-431d-8820-a07a14939638.webp'
-  },
-  {
-    title: 'Depression Treatment That Works',
-    excerpt: 'Explore effective depression treatment options including TMS therapy, medication, and therapy approaches.',
-    link: '/depression',
-    image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/2ddc8d69-b09a-4f1d-bd47-6d783ceefbd1.webp'
   },
   {
     title: 'TMS Therapy: A Complete Guide',

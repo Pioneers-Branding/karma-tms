@@ -41,6 +41,7 @@ import PalmSpringsPage from "./pages/PalmSpringsPage";
 import TwentyNinePalmsPage from "./pages/TwentyNinePalmsPage";
 import VeteransPage from "./pages/VeteransPage";
 import VeteransBlogPostPage from "./pages/VeteransBlogPostPage";
+import VAVeteransPTSDTMSBlogPostPage from "./pages/VAVeteransPTSDTMSBlogPostPage";
 import DisclaimerPage from "./pages/DisclaimerPage";
 
 const queryClient = new QueryClient();
@@ -100,6 +101,7 @@ const App = () =>
           <Route path="/testimonials" element={<TestimonialsPage />} />
           <Route path="/testimonials/" element={<TestimonialsPage />} />
           <Route path="/blog/veterans-tms-therapy" element={<VeteransBlogPostPage />} />
+          <Route path="/blog/va-veterans-ptsd-tms-treatment" element={<VAVeteransPTSDTMSBlogPostPage />} />
           <Route path="/blog" element={<BlogPage />} />
           <Route path="/blog/" element={<BlogPage />} />
           <Route path="/research-and-publications" element={<ResearchPage />} />
