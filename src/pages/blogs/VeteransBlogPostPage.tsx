@@ -243,10 +243,7 @@ const VeteransBlogPostPage = () => {
                 <Link to="/veterans">Learn About Our Veterans Program</Link>
               </Button>
               <Button asChild size="lg" variant="outline" className="border-white text-white hover:bg-white/10">
-                
-
-
-
+                <Link to="/contact">Contact Us</Link>
               </Button>
             </div>
           </div>
@@ -671,10 +668,7 @@ const VeteransBlogPostPage = () => {
                     <Link to="/contact">Schedule Free Consultation</Link>
                   </Button>
                   <Button asChild size="lg" variant="outline" className="border-white text-white hover:bg-white/10">
-                    
-
-
-
+                    <Link to="/veterans">Learn More</Link>
                   </Button>
                 </div>
               </CardContent>
