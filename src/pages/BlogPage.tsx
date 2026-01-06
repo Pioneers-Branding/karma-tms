@@ -32,135 +32,135 @@ const blogCategories = [
 
 // Blog posts - Veterans TMS Therapy with fixed images
 const allBlogPosts: BlogPost[] = [
-  {
-    id: 1,
-    title: 'How TMS Therapy Helps Veterans Heal: A New Hope for PTSD, Depression & Anxiety',
-    excerpt: 'Discover how TMS therapy offers new hope for veterans struggling with PTSD, depression, and anxiety. Learn about VA hospital availability and treatment success rates.',
-    category: 'tms-therapy',
-    author: 'Dr. Keerthy Sunder',
-    date: new Date(2024, 0, 15).toLocaleDateString('en-US', {
-      year: 'numeric',
-      month: 'long',
-      day: 'numeric'
-    }),
-    readTime: '12 min read',
-    image: 'https://res.cloudinary.com/de4kw1t2i/image/upload/v1762863798/blog_6_z1bbda.png',
-    featured: true,
-    rating: 5
-  },
-  {
-    id: 2,
-    title: 'Inside the VA & Veterans\' Mental Health: How TMS Fits Into Modern PTSD Treatment',
-    excerpt: 'Educational guide explaining the relationship between VA programs and TMS therapy, and how veterans can access care through VA-approved or private options.',
-    category: 'mental-health',
-    author: 'Dr. Keerthy Sunder',
-    date: new Date(2024, 0, 20).toLocaleDateString('en-US', {
-      year: 'numeric',
-      month: 'long',
-      day: 'numeric'
-    }),
-    readTime: '15 min read',
-    image: 'https://res.cloudinary.com/de4kw1t2i/image/upload/v1762863799/blog_10_bcw7ze.png',
-    featured: false,
-    rating: 5
-  },
-  {
-    id: 3,
-    title: 'Understanding VA Disability Benefits for Depression, Anxiety & PTSD',
-    excerpt: 'Complete guide to obtaining VA disability benefits for mental health conditions. Learn about eligibility, rating percentages, application process, and how much the VA pays.',
-    category: 'mental-health',
-    author: 'Dr. Keerthy Sunder',
-    date: new Date(2024, 0, 25).toLocaleDateString('en-US', {
-      year: 'numeric',
-      month: 'long',
-      day: 'numeric'
-    }),
-    readTime: '18 min read',
-    image: 'https://res.cloudinary.com/de4kw1t2i/image/upload/v1762863799/blog_9_oe8iur.png',
-    featured: false,
-    rating: 5
-  },
-  {
-    id: 4,
-    title: 'TMS vs Medication: Why Veterans Are Turning to Magnetic Stimulation for Depression Relief',
-    excerpt: 'Comprehensive comparison of TMS therapy and medication for veterans with depression. Discover why veterans are choosing magnetic stimulation over traditional antidepressants.',
-    category: 'tms-therapy',
-    author: 'Dr. Keerthy Sunder',
-    date: new Date(2024, 0, 28).toLocaleDateString('en-US', {
-      year: 'numeric',
-      month: 'long',
-      day: 'numeric'
-    }),
-    readTime: '16 min read',
-    image: 'https://res.cloudinary.com/de4kw1t2i/image/upload/v1762863799/blog_8_l0irim.png',
-    featured: false,
-    rating: 5
-  },
-  {
-    id: 5,
-    title: 'How to Help Veterans with PTSD: Therapy, TMS, and Beyond',
-    excerpt: 'Compassionate guide for helping veterans with PTSD, including therapy options, TMS treatment, local resources, and support strategies for families.',
-    category: 'mental-health',
-    author: 'Dr. Keerthy Sunder',
-    date: new Date(2024, 1, 1).toLocaleDateString('en-US', {
-      year: 'numeric',
-      month: 'long',
-      day: 'numeric'
-    }),
-    readTime: '17 min read',
-    image: 'https://res.cloudinary.com/de4kw1t2i/image/upload/v1762863798/blog_2_ahwkma.png',
-    featured: false,
-    rating: 5
-  },
-  {
-    id: 6,
-    title: 'Understanding PTSD in Veterans: Signs, Symptoms, and Treatment Paths',
-    excerpt: 'A comprehensive guide to recognizing PTSD in war veterans and Vietnam vets, with modern treatment options including TMS therapy.',
-    category: 'mental-health',
-    author: 'Dr. Keerthy Sunder',
-    date: new Date(2024, 1, 5).toLocaleDateString('en-US', {
-      year: 'numeric',
-      month: 'long',
-      day: 'numeric'
-    }),
-    readTime: '14 min read',
-    image: 'https://res.cloudinary.com/de4kw1t2i/image/upload/v1762863799/blog_11_uaebq0.png',
-    featured: false,
-    rating: 5
-  },
-  {
-    id: 7,
-    title: 'TMS for Anxiety in Veterans: A Promising Path Beyond Medication',
-    excerpt: 'Discover how TMS therapy helps veterans manage anxiety through brain regulation, offering hope beyond traditional medications.',
-    category: 'tms-therapy',
-    author: 'Dr. Keerthy Sunder',
-    date: new Date(2024, 1, 8).toLocaleDateString('en-US', {
-      year: 'numeric',
-      month: 'long',
-      day: 'numeric'
-    }),
-    readTime: '13 min read',
-    image: 'https://res.cloudinary.com/de4kw1t2i/image/upload/v1762863798/blog_5_jt2nzt.png',
-    featured: false,
-    rating: 5
-  },
-  {
-    id: 8,
-    title: 'TMS for Migraine Relief in Veterans: How Brain Stimulation Is Changing Lives',
-    excerpt: 'Learn how TMS addresses chronic migraines in veterans, including comorbidity with PTSD and depression, plus VA disability information.',
-    category: 'tms-therapy',
-    author: 'Dr. Keerthy Sunder',
-    date: new Date(2024, 1, 12).toLocaleDateString('en-US', {
-      year: 'numeric',
-      month: 'long',
-      day: 'numeric'
-    }),
-    readTime: '15 min read',
-    image: 'https://res.cloudinary.com/de4kw1t2i/image/upload/v1762863799/blog_4_hzwvvb.png',
-    featured: false,
-    rating: 5
-  }
-];
+{
+  id: 1,
+  title: 'How TMS Therapy Helps Veterans Heal: A New Hope for PTSD, Depression & Anxiety',
+  excerpt: 'Discover how TMS therapy offers new hope for veterans struggling with PTSD, depression, and anxiety. Learn about VA hospital availability and treatment success rates.',
+  category: 'tms-therapy',
+  author: 'Dr. Keerthy Sunder',
+  date: new Date(2024, 0, 15).toLocaleDateString('en-US', {
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric'
+  }),
+  readTime: '12 min read',
+  image: 'https://res.cloudinary.com/de4kw1t2i/image/upload/v1762863798/blog_6_z1bbda.png',
+  featured: true,
+  rating: 5
+},
+{
+  id: 2,
+  title: 'Inside the VA & Veterans\' Mental Health: How TMS Fits Into Modern PTSD Treatment',
+  excerpt: 'Educational guide explaining the relationship between VA programs and TMS therapy, and how veterans can access care through VA-approved or private options.',
+  category: 'mental-health',
+  author: 'Dr. Keerthy Sunder',
+  date: new Date(2024, 0, 20).toLocaleDateString('en-US', {
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric'
+  }),
+  readTime: '15 min read',
+  image: 'https://res.cloudinary.com/de4kw1t2i/image/upload/v1762863799/blog_10_bcw7ze.png',
+  featured: false,
+  rating: 5
+},
+{
+  id: 3,
+  title: 'Understanding VA Disability Benefits for Depression, Anxiety & PTSD',
+  excerpt: 'Complete guide to obtaining VA disability benefits for mental health conditions. Learn about eligibility, rating percentages, application process, and how much the VA pays.',
+  category: 'mental-health',
+  author: 'Dr. Keerthy Sunder',
+  date: new Date(2024, 0, 25).toLocaleDateString('en-US', {
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric'
+  }),
+  readTime: '18 min read',
+  image: 'https://res.cloudinary.com/de4kw1t2i/image/upload/v1762863799/blog_9_oe8iur.png',
+  featured: false,
+  rating: 5
+},
+{
+  id: 4,
+  title: 'TMS vs Medication: Why Veterans Are Turning to Magnetic Stimulation for Depression Relief',
+  excerpt: 'Comprehensive comparison of TMS therapy and medication for veterans with depression. Discover why veterans are choosing magnetic stimulation over traditional antidepressants.',
+  category: 'tms-therapy',
+  author: 'Dr. Keerthy Sunder',
+  date: new Date(2024, 0, 28).toLocaleDateString('en-US', {
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric'
+  }),
+  readTime: '16 min read',
+  image: 'https://res.cloudinary.com/de4kw1t2i/image/upload/v1762863799/blog_8_l0irim.png',
+  featured: false,
+  rating: 5
+},
+{
+  id: 5,
+  title: 'How to Help Veterans with PTSD: Therapy, TMS, and Beyond',
+  excerpt: 'Compassionate guide for helping veterans with PTSD, including therapy options, TMS treatment, local resources, and support strategies for families.',
+  category: 'mental-health',
+  author: 'Dr. Keerthy Sunder',
+  date: new Date(2024, 1, 1).toLocaleDateString('en-US', {
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric'
+  }),
+  readTime: '17 min read',
+  image: 'https://res.cloudinary.com/de4kw1t2i/image/upload/v1762863798/blog_2_ahwkma.png',
+  featured: false,
+  rating: 5
+},
+{
+  id: 6,
+  title: 'Understanding PTSD in Veterans: Signs, Symptoms, and Treatment Paths',
+  excerpt: 'A comprehensive guide to recognizing PTSD in war veterans and Vietnam vets, with modern treatment options including TMS therapy.',
+  category: 'mental-health',
+  author: 'Dr. Keerthy Sunder',
+  date: new Date(2024, 1, 5).toLocaleDateString('en-US', {
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric'
+  }),
+  readTime: '14 min read',
+  image: 'https://res.cloudinary.com/de4kw1t2i/image/upload/v1762863799/blog_11_uaebq0.png',
+  featured: false,
+  rating: 5
+},
+{
+  id: 7,
+  title: 'TMS for Anxiety in Veterans: A Promising Path Beyond Medication',
+  excerpt: 'Discover how TMS therapy helps veterans manage anxiety through brain regulation, offering hope beyond traditional medications.',
+  category: 'tms-therapy',
+  author: 'Dr. Keerthy Sunder',
+  date: new Date(2024, 1, 8).toLocaleDateString('en-US', {
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric'
+  }),
+  readTime: '13 min read',
+  image: 'https://res.cloudinary.com/de4kw1t2i/image/upload/v1762863798/blog_5_jt2nzt.png',
+  featured: false,
+  rating: 5
+},
+{
+  id: 8,
+  title: 'TMS for Migraine Relief in Veterans: How Brain Stimulation Is Changing Lives',
+  excerpt: 'Learn how TMS addresses chronic migraines in veterans, including comorbidity with PTSD and depression, plus VA disability information.',
+  category: 'tms-therapy',
+  author: 'Dr. Keerthy Sunder',
+  date: new Date(2024, 1, 12).toLocaleDateString('en-US', {
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric'
+  }),
+  readTime: '15 min read',
+  image: 'https://res.cloudinary.com/de4kw1t2i/image/upload/v1762863799/blog_4_hzwvvb.png',
+  featured: false,
+  rating: 5
+}];
+
 
 const BlogPage = () => {
   const [activeCategory, setActiveCategory] = useState('all');
@@ -304,10 +304,10 @@ const BlogPage = () => {
                 
                 <div className="relative h-64 lg:h-auto">
                   <img
-                    src={featuredPost.image}
-                    alt={featuredPost.title}
-                    className="absolute inset-0 w-full h-full object-cover"
-                  />
+                  src={featuredPost.image}
+                  alt={featuredPost.title}
+                  className="absolute inset-0 w-full h-full object-cover" />
+
                   <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent lg:hidden"></div>
                 </div>
               </div>
@@ -336,7 +336,7 @@ const BlogPage = () => {
             <TabsContent key={category.id} value={category.id} className="mt-0">
                 {/* Posts Grid */}
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
-                  {regularPosts.map((post) => {
+                  {regularPosts.map((post, index) => {
                   const postLinks: {[key: number]: string;} = {
                     1: '/blog/veterans-tms-therapy',
                     2: '/blog/va-veterans-ptsd-tms-treatment',
@@ -355,14 +355,14 @@ const BlogPage = () => {
                   <Card className="group cursor-pointer hover:shadow-lg transition-all duration-300 border-gray-200 hover:border-[#572670]/30 overflow-hidden">
                       <div className="relative overflow-hidden" style={{ aspectRatio: '1200/628' }}>
                         <img
-                          src={post.image}
-                          alt={post.title}
-                          className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                        />
+                            src={post.image}
+                            alt={post.title}
+                            className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
+
                         <div className="absolute top-4 left-4 z-10">
-                          <Badge variant="secondary" className="bg-white/90 text-gray-700 backdrop-blur-sm">
+                          {index !== 3 && index !== 2 && index !== 1 && index !== 4 && index !== 0 ? <Badge variant="secondary" className="bg-white/90 text-gray-700 backdrop-blur-sm">
                             {blogCategories.find((cat) => cat.id === post.category)?.label}
-                          </Badge>
+                          </Badge> : null}
                         </div>
                       </div>
                       
