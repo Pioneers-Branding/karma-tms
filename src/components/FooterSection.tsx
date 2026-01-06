@@ -70,66 +70,104 @@ const FooterSection = () => {
 
       {/* Main Footer Content */}
       <div className="container mx-auto px-4 py-16 relative z-10">
-        <div className="grid lg:grid-cols-5 md:grid-cols-2 gap-12">
+        <div className="grid lg:grid-cols-5 md:grid-cols-2 gap-10 lg:gap-12">
           {/* Company Info */}
           <div className="space-y-6">
             <div className="flex items-center gap-3">
               <img
                 src="https://res.cloudinary.com/de4kw1t2i/image/upload/v1759944699/karmatms_rp4lkn.png"
                 alt="Karma TMS"
-                className="h-12 w-auto brightness-0 invert" />
-
+                className="h-14 w-auto brightness-0 invert" />
             </div>
 
-            <p className="text-gray-300 leading-relaxed">
-              Leading mental health facilities in Palm Springs,  Rancho Mirage and Twentynine Palms transforming lives through advanced TMS therapy and comprehensive mental health in Palm Springs with expert mental health counselors in Palm Springs, CA providing exceptional care.
+            <p className="text-gray-300 leading-relaxed text-base max-w-sm">
+              Transforming lives through advanced TMS therapy and personalized mental health care in Southern California.
             </p>
+
+            <div className="pt-2">
+              <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-[#572670]/20 border border-[#572670]/30">
+                <div className="h-2 w-2 bg-[#572670] rounded-full animate-pulse"></div>
+                <span className="text-xs font-medium text-gray-300">FDA-Approved Treatment</span>
+              </div>
+            </div>
           </div>
 
           {/* Contact Info - Separate Column */}
           <div>
             <h3 className="text-lg font-bold mb-6 text-white">Contact Information</h3>
 
-            <div className="space-y-6 mb-8">
-              {locations.map((loc, idx) =>
-              <div key={idx} className="flex items-start gap-3">
-                  <MapPin className="h-5 w-5 text-[#572670] mt-1 flex-shrink-0" />
+            {/* Locations - Card Style */}
+            <div className="space-y-4 mb-8">
+              <div className="p-4 rounded-lg bg-white/5 border border-[#572670]/20 hover:border-[#572670]/40 transition-all duration-300">
+                <div className="flex items-start gap-3">
+                  <MapPin className="h-5 w-5 text-[#572670] mt-0.5 flex-shrink-0" />
                   <div>
-                    <div className="text-sm font-medium text-white">{loc.label}</div>
-                    <div className="text-sm text-gray-300 whitespace-pre-line">
-                      {loc.addressLines.join('\n')}
+                    <div className="text-sm font-bold text-white mb-1">Palm Springs</div>
+                    <div className="text-xs text-gray-300 leading-relaxed">
+                      560 S. Paseo Dorotea, Suite 4-B<br />Palm Springs, CA 92264
                     </div>
                   </div>
                 </div>
-              )}
+              </div>
+
+              <div className="p-4 rounded-lg bg-white/5 border border-[#572670]/20 hover:border-[#572670]/40 transition-all duration-300">
+                <div className="flex items-start gap-3">
+                  <MapPin className="h-5 w-5 text-[#572670] mt-0.5 flex-shrink-0" />
+                  <div>
+                    <div className="text-sm font-bold text-white mb-1">Rancho Mirage</div>
+                    <div className="text-xs text-gray-300 leading-relaxed">
+                      35400 Bob Hope Dr. Suite 206<br />Rancho Mirage, CA 92270
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="p-4 rounded-lg bg-white/5 border border-[#572670]/20 hover:border-[#572670]/40 transition-all duration-300">
+                <div className="flex items-start gap-3">
+                  <MapPin className="h-5 w-5 text-[#572670] mt-0.5 flex-shrink-0" />
+                  <div>
+                    <div className="text-sm font-bold text-white mb-1">Twentynine Palms</div>
+                    <div className="text-xs text-gray-300 leading-relaxed">
+                      72724 29 Palms Hwy. Suite 107<br />Twentynine Palms, CA 92277
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
 
-            <div className="space-y-3">
-              <div className="flex items-center gap-3">
-                <Phone className="h-5 w-5 text-[#572670]" />
-                <div>
-                  <div className="text-sm font-medium text-white">Call Us</div>
-                  <a href="tel:760-760-5675" className="text-sm text-gray-300 hover:text-[#572670] transition-colors">
-                    760-760-5675
-                  </a>
+            {/* Contact Details */}
+            <div className="space-y-4 pt-4 border-t border-gray-700/50">
+              <div className="group">
+                <div className="flex items-center gap-3 p-3 rounded-lg hover:bg-white/5 transition-all duration-200">
+                  <Phone className="h-5 w-5 text-[#572670] flex-shrink-0" />
+                  <div>
+                    <div className="text-xs font-semibold text-gray-400 uppercase tracking-wide mb-0.5">Call Us</div>
+                    <a href="tel:760-760-5675" className="text-sm font-medium text-white hover:text-[#572670] transition-colors">
+                      760-760-5675
+                    </a>
+                  </div>
                 </div>
               </div>
 
-              <div className="flex items-center gap-3">
-                <Mail className="h-5 w-5 text-[#572670]" />
-                <div>
-                  <div className="text-sm font-medium text-white">Email</div>
-                  <a href="mailto:contact@karmatms.com" className="text-sm text-gray-300 hover:text-[#572670] transition-colors">
-                    contact@karmatms.com
-                  </a>
+              <div className="group">
+                <div className="flex items-center gap-3 p-3 rounded-lg hover:bg-white/5 transition-all duration-200">
+                  <Mail className="h-5 w-5 text-[#572670] flex-shrink-0" />
+                  <div>
+                    <div className="text-xs font-semibold text-gray-400 uppercase tracking-wide mb-0.5">Email</div>
+                    <a href="mailto:contact@karmatms.com" className="text-sm font-medium text-white hover:text-[#572670] transition-colors break-all">
+                      contact@karmatms.com
+                    </a>
+                  </div>
                 </div>
               </div>
 
-              <div className="flex items-center gap-3">
-                <Clock className="h-5 w-5 text-[#572670]" />
-                <div>
-                  <div className="text-sm font-medium text-white">Hours</div>
-                  <div className="text-sm text-gray-300">Mon-Fri: 8AM-6PM</div>
+              <div className="group">
+                <div className="flex items-center gap-3 p-3 rounded-lg hover:bg-white/5 transition-all duration-200">
+                  <Clock className="h-5 w-5 text-[#572670] flex-shrink-0" />
+                  <div>
+                    <div className="text-xs font-semibold text-gray-400 uppercase tracking-wide mb-0.5">Hours</div>
+                    <div className="text-sm font-medium text-white">Mon-Fri: 8AM-6PM</div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -138,11 +176,11 @@ const FooterSection = () => {
           {/* Quick Links & Services */}
           <div className="space-y-8">
             <div>
-              <h3 className="text-lg font-bold mb-6 text-white">Quick Links</h3>
+              <h3 className="text-lg font-bold mb-6 text-white tracking-tight">Quick Links</h3>
               <ul className="space-y-3">
                 {quickLinks.map((link, index) =>
                 <li key={index}>
-                    <Link to={link.href} className="text-gray-300 hover:text-[#572670] transition-colors text-sm">
+                    <Link to={link.href} className="text-gray-300 hover:text-[#572670] hover:pl-1 transition-all duration-200 text-sm inline-block">
                       {link.name}
                     </Link>
                   </li>
@@ -150,12 +188,12 @@ const FooterSection = () => {
               </ul>
             </div>
 
-            <div>
+            <div className="pt-2">
               <h4 className="text-md font-semibold mb-4 text-gray-200">Our Services</h4>
-              <ul className="space-y-2">
+              <ul className="space-y-2.5">
                 {services.map((link, index) =>
                 <li key={index}>
-                    <Link to={link.href} className="text-sm text-gray-400 hover:text-[#572670] transition-colors">
+                    <Link to={link.href} className="text-sm text-gray-400 hover:text-[#572670] hover:pl-1 transition-all duration-200 inline-block">
                       {link.name}
                     </Link>
                   </li>
@@ -167,11 +205,11 @@ const FooterSection = () => {
           {/* Conditions & Resources */}
           <div className="space-y-8">
             <div>
-              <h3 className="text-lg font-bold mb-6 text-white">Conditions We Treat</h3>
+              <h3 className="text-lg font-bold mb-6 text-white tracking-tight">Conditions We Treat</h3>
               <ul className="space-y-3">
                 {conditions.map((link, index) =>
                 <li key={index}>
-                    <Link to={link.href} className="text-gray-300 hover:text-[#572670] transition-colors text-sm">
+                    <Link to={link.href} className="text-gray-300 hover:text-[#572670] hover:pl-1 transition-all duration-200 text-sm inline-block">
                       {link.name}
                     </Link>
                   </li>
@@ -179,12 +217,12 @@ const FooterSection = () => {
               </ul>
             </div>
 
-            <div>
+            <div className="pt-2">
               <h4 className="text-md font-semibold mb-4 text-gray-200">Resources</h4>
-              <ul className="space-y-2">
+              <ul className="space-y-2.5">
                 {resources.map((link, index) =>
                 <li key={index}>
-                    <Link to={link.href} className="text-sm text-gray-400 hover:text-[#572670] transition-colors">
+                    <Link to={link.href} className="text-sm text-gray-400 hover:text-[#572670] hover:pl-1 transition-all duration-200 inline-block">
                       {link.name}
                     </Link>
                   </li>
@@ -196,11 +234,11 @@ const FooterSection = () => {
           {/* Patient Care & Legal */}
           <div className="space-y-8">
             <div>
-              <h3 className="text-lg font-bold mb-6 text-white">Patient Care</h3>
+              <h3 className="text-lg font-bold mb-6 text-white tracking-tight">Patient Care</h3>
               <ul className="space-y-3">
                 {businessLinks.map((link, index) =>
                 <li key={index}>
-                    <Link to={link.href} className="text-gray-300 hover:text-[#572670] transition-colors text-sm">
+                    <Link to={link.href} className="text-gray-300 hover:text-[#572670] hover:pl-1 transition-all duration-200 text-sm inline-block">
                       {link.name}
                     </Link>
                   </li>
@@ -208,12 +246,12 @@ const FooterSection = () => {
               </ul>
             </div>
 
-            <div>
+            <div className="pt-2">
               <h4 className="text-md font-semibold mb-4 text-gray-200">Legal & Privacy</h4>
-              <ul className="space-y-2">
+              <ul className="space-y-2.5">
                 {legalLinks.map((link, index) =>
                 <li key={index}>
-                    <Link to={link.href} className="text-sm text-gray-400 hover:text-[#572670] transition-colors">
+                    <Link to={link.href} className="text-sm text-gray-400 hover:text-[#572670] hover:pl-1 transition-all duration-200 inline-block">
                       {link.name}
                     </Link>
                   </li>
@@ -228,12 +266,12 @@ const FooterSection = () => {
       <div className="border-t border-gray-700/50 bg-gray-950/50 backdrop-blur-sm relative z-10">
         <div className="container mx-auto px-4 py-6">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-            <div className="text-sm text-gray-400">
+            <div className="text-sm text-gray-400 text-center md:text-left">
               © {new Date().getFullYear()} Karma TMS. All rights reserved. Licensed medical facility providing TMS therapy in California.
             </div>
-            <div className="flex items-center gap-6">
-              <span className="text-xs text-gray-500">
-                FDA-Approved Treatment | Board-Certified Psychiatrist
+            <div className="flex flex-col sm:flex-row items-center gap-4 sm:gap-6">
+              <span className="text-xs text-gray-500 text-center">
+                Board-Certified Psychiatrists
               </span>
               <Link
                 to="/conditions"
