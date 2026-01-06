@@ -26,7 +26,7 @@ const TwentyNinePalmsPage = () => {
   },
   {
     q: 'Where is KarmaTMS Twentynine Palms located?',
-    a: 'We are conveniently located at 72724 29 Palms Hwy, Suite 107-B in Twentynine Palms, CA 92277. Our facility is easily accessible from the Marine Corps base and throughout the High Desert region.'
+    a: 'We are conveniently located at 72724 29 Palms Hwy, Suite 107 in Twentynine Palms, CA 92277. Our facility is easily accessible from the Marine Corps base and throughout the High Desert region.'
   },
   {
     q: 'How effective is TMS therapy for PTSD?',
@@ -69,7 +69,7 @@ const TwentyNinePalmsPage = () => {
         {
           name: 'KarmaTMS Twentynine Palms',
           address: {
-            streetAddress: '72724 29 Palms Hwy. Suite 107-B',
+            streetAddress: '72724 29 Palms Hwy. Suite 107',
             addressLocality: 'Twentynine Palms',
             addressRegion: 'CA',
             postalCode: '92277'
@@ -280,7 +280,7 @@ const TwentyNinePalmsPage = () => {
                   <div className="flex items-start gap-3">
                     <MapPin className="w-5 h-5 text-purple-600 mt-1 flex-shrink-0" />
                     <div>
-                      <p className="font-medium">72724 29 Palms Hwy. Suite 107-B</p>
+                      <p className="font-medium">72724 29 Palms Hwy. Suite 107</p>
                       <p className="text-gray-600">Twentynine Palms, CA 92277</p>
                     </div>
                   </div>
