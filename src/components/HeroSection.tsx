@@ -72,7 +72,7 @@ const HeroSection = () => {
               Effective<span className="bg-gradient-to-r from-blue-magenta via-blue-magenta/70 to-blue-magenta bg-clip-text text-transparent">TMS Therapy </span> for Depression
             </h1>
             <p className="text-base sm:text-lg lg:text-xl text-gray-700 leading-relaxed max-w-2xl">
-              Revolutionary FDA-approved treatment for depression, anxiety, OCD, and PTSD. Experience breakthrough results with our advanced Deep TMS technology at Karma TMS.
+              Revolutionary FDA-approved treatment for depression, anxiety, OCD, and PTSD. Experience breakthrough results with our advanced TMS technology at Karma TMS.
             </p>
           </div>
 
@@ -204,7 +204,7 @@ const HeroSection = () => {
                 <Shield className="w-3 h-3 lg:w-4 lg:h-4 text-green-500 mr-1" />
                 <span className="text-base lg:text-lg font-bold text-gray-800">FDA</span>
               </div>
-              <div className="text-[10px] lg:text-xs font-medium text-gray-600">Approved</div>
+              <div className="text-[10px] lg:text-xs font-medium text-gray-600">Cleared</div>
             </div>
             <div className="bg-white/80 backdrop-blur-lg rounded-xl lg:rounded-2xl p-3 lg:p-4 text-center shadow-lg border border-white/10 hover:bg-white/90 transition-all duration-300 hover:scale-105">
               <div className="flex items-center justify-center mb-1 lg:mb-2">
