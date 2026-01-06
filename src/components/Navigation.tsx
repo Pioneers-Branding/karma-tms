@@ -23,7 +23,6 @@ import {
   Heart,
   Shield,
   HandHelping,
-  Calendar,
   Wallet,
   BookA } from
 'lucide-react';
@@ -73,8 +72,7 @@ const Navigation = () => {
   const patientLinks = [
   { name: 'Affiliations', href: '/affiliations', icon: HandHelping },
   { name: 'Internships', href: '/interns', icon: BookA },
-  { name: 'Insurance & Pricing', href: '/insurance-pricing', icon: Wallet },
-  { name: 'Book Appointment', href: '/book', icon: Calendar }];
+  { name: 'Insurance & Pricing', href: '/insurance-pricing', icon: Wallet }];
 
 
   return (

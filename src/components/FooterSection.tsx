@@ -1,7 +1,7 @@
 import { Button } from '@/components/ui/button';
 import { Separator } from '@/components/ui/separator';
 import { Link } from 'react-router-dom';
-import { Phone, Mail, MapPin, ExternalLink, Calendar, Clock } from 'lucide-react';
+import { Phone, Mail, MapPin, ExternalLink, Clock } from 'lucide-react';
 
 const FooterSection = () => {
   const quickLinks = [
@@ -45,8 +45,7 @@ const FooterSection = () => {
   const businessLinks = [
   { name: 'Affiliations', href: '/affiliations' },
   { name: 'Internships', href: '/interns' },
-  { name: 'Insurance & Pricing', href: '/insurance-pricing' },
-  { name: 'Book Appointment', href: '/book' }];
+  { name: 'Insurance & Pricing', href: '/insurance-pricing' }];
 
 
   const locations = [

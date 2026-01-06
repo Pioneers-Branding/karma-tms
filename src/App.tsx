@@ -28,7 +28,7 @@ import InsurancePricingPage from "./pages/InsurancePricingPage";
 import TestimonialsPage from "./pages/TestimonialsPage";
 import BlogPage from "./pages/BlogPage";
 import ResearchPage from "./pages/ResearchPage";
-import BookPage from "./pages/BookPage";
+
 import ContactPage from "./pages/ContactPage";
 import FAQsPage from "./pages/FAQsPage";
 import HIPAAPage from "./pages/HIPAAPage";
@@ -107,7 +107,6 @@ const App = () =>
           <Route path="/faqs" element={<FAQsPage />} />
           
           {/* Action Routes - Sitemap URLs */}
-          <Route path="/book" element={<BookPage />} />
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/contact/" element={<ContactPage />} />
           <Route path="/quiz" element={<TMSQuizPage />} />
