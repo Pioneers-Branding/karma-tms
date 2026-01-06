@@ -280,7 +280,7 @@ const ManagingAnxietyTriggersBlogPostPage = () => {
             {/* Introduction */}
             <div className="mb-12">
               <img
-                src="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/9705b922-d0fc-4d29-be10-acd507ce308c.webp"
+                src="https://res.cloudinary.com/de4kw1t2i/image/upload/v1763376737/22_wiizht.png"
                 alt="Person managing anxiety in daily life"
                 className="w-full h-64 md:h-96 object-cover rounded-lg mb-6" />
 
