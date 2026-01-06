@@ -106,7 +106,7 @@ const TestimonialsSection = () => {
             Real Patient Stories from Our Mental Health Facilities in Palm Springs
           </h2>
           <p className="text-lg text-gray-600 leading-relaxed">
-            Hear from actual patients who have transformed their mental health in palm springs with TMS therapy from our mental health counselors in palm springs ca at Karma TMS.
+            Hear from actual patients who have transformed their mental health in Palm Springs with TMS therapy from our mental health counselors in Palm Springs, CA at Karma TMS.
           </p>
         </div>
 
