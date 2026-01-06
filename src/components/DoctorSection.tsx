@@ -186,7 +186,7 @@ const DoctorSection = () => {
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
               <Button className="bg-gradient-to-r from-[#572670] to-purple-600 hover:from-purple-600 hover:to-[#572670] text-white px-8 py-3 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
                 <Calendar className="h-4 w-4 mr-2" />
-                Schedule with Dr. Sunder
+                Schedule a Free Consultation 
               </Button>
               <Button
                 variant="outline"
