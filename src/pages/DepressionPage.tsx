@@ -100,7 +100,7 @@ const DepressionPage = () => {
               <img
                 src="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/460c9673-d421-40be-a576-8470fafd54e6.webp"
                 alt="Brain scan showing depression treatment"
-                className="rounded-lg shadow-lg" />
+                className="rounded-lg shadow-lg max-h-[600px]" />
 
               <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent rounded-lg"></div>
             </div>
