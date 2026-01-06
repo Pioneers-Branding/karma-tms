@@ -90,7 +90,7 @@ const DoctorSection = () => {
                 </CardContent>
               </Card>
 
-              <Card className="absolute -bottom-6 -left-6 bg-white shadow-xl border-2 border-[#572670]/20 lg:block hidden">
+              <Card className="absolute -bottom-8 -left-8 bg-white shadow-xl border-2 border-[#572670]/20 lg:block hidden">
                 <CardContent className="p-4 text-center">
                   <div className="flex items-center justify-center mb-2">
                     <Star className="h-6 w-6 text-yellow-400 fill-current" />
