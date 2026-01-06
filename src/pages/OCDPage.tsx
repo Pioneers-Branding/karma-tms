@@ -31,7 +31,7 @@ const OCDPage = () => {
                   Schedule Consultation
                 </Button>
                 <Link to="/tms-quiz">
-                  <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-[#572670]">
+                  <Button size="lg" variant="outline" className="border-white text-black hover:bg-white hover:text-[#572670]">
                     Take Assessment
                   </Button>
                 </Link>
