@@ -103,7 +103,7 @@ const HeroSection = () => {
                   {' '}
                   TMS Therapy{' '}
                 </span>
-                for Mental Health in California
+                for Mental Health in Palm Springs, CA
               </h1>
               <p className="text-sm sm:text-base lg:text-lg max-w-2xl">
                 Revolutionary FDA-cleared treatment for depression, anxiety, OCD,
