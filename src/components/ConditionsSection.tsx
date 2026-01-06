@@ -58,7 +58,7 @@ const ConditionsSection = () => {
             Conditions We Treat for Mental Health in Palm Springs
           </h2>
           <p className="text-lg text-gray-600 leading-relaxed">
-            Our TMS therapy programs at our mental health facilities in Palm Springs are designed to treat various mental health conditions with personalized, evidence-based approaches delivered by expert mental health counselors in Palm Springs, CA who deliver real results.
+        Karma TMS provides evidence-based TMS therapy programs in Palm Springs, CA, tailored to each individual’s needs and guided by expert mental health counselors for proven, lasting results.
           </p>
         </div>
 
