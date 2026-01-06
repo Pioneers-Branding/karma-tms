@@ -97,24 +97,24 @@ const VADisabilityBenefitsMentalHealthBlogPostPage = () => {
 
   const relatedPosts = [
   {
-    title: 'How TMS Therapy Helps Veterans Heal: A New Hope for PTSD',
-    excerpt: 'Discover how TMS therapy offers new hope for veterans struggling with PTSD, depression, and anxiety.',
-    link: '/blog/veterans-tms-therapy',
-    image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/f00dd3f4-cea1-4918-8fec-5976198e195f.webp'
+    title: 'TMS for Migraine Relief in Veterans',
+    excerpt: 'Learn how TMS helps veterans with migraines and comorbid conditions like PTSD and depression.',
+    link: '/blogs/tms-migraine-veterans',
+    image: 'https://res.cloudinary.com/de4kw1t2i/image/upload/v1762863799/blog_4_hzwvvb.png'
   },
   {
-    title: 'TMS vs Medication for Veterans',
-    excerpt: 'Learn why veterans are choosing TMS therapy over traditional medication for depression treatment.',
-    link: '/blog/tms-vs-medication-veterans-depression',
-    image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/dd7dd986-540f-4359-99af-39f398491cf0.webp'
+    title: 'TMS for Anxiety in Veterans',
+    excerpt: 'Discover how TMS helps veterans manage anxiety beyond medication.',
+    link: '/blogs/tms-anxiety-veterans',
+    image: 'https://res.cloudinary.com/de4kw1t2i/image/upload/v1762863798/blog_6_z1bbda.png'
   },
   {
-    title: 'Inside the VA & Veterans\' Mental Health',
-    excerpt: 'Understanding VA mental health programs and accessing TMS therapy for PTSD treatment.',
-    link: '/blog/va-veterans-ptsd-tms-treatment',
-    image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/7ace98a6-9efe-4403-aacf-892346fb07a8.webp'
-  }];
-
+    title: 'Understanding PTSD in Veterans',
+    excerpt: 'Complete guide to PTSD signs, symptoms, and treatment paths including TMS therapy.',
+    link: '/blogs/understanding-ptsd-veterans',
+    image: 'https://res.cloudinary.com/de4kw1t2i/image/upload/v1762863798/blog_2_ahwkma.png'
+  }
+];
 
   const articleSchema = {
     '@context': 'https://schema.org',
@@ -285,7 +285,7 @@ const VADisabilityBenefitsMentalHealthBlogPostPage = () => {
               <img
                 src="https://res.cloudinary.com/de4kw1t2i/image/upload/v1763033665/2_tv5b86.png"
                 alt="VA disability benefits for veterans with mental health conditions"
-                className="w-full h-64 md:h-96 object-cover rounded-lg mb-6" />
+                className="w-full  md:h-96 object-cover rounded-lg mb-6" />
 
 
               <p className="text-xl text-gray-700 leading-relaxed">
@@ -329,7 +329,7 @@ const VADisabilityBenefitsMentalHealthBlogPostPage = () => {
               <img
                 src="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/7ace98a6-9efe-4403-aacf-892346fb07a8.webp"
                 alt="Veterans dealing with depression and mental health challenges"
-                className="w-full h-64 object-cover rounded-lg mb-6" />
+                className="w-full  object-cover rounded-lg mb-6" />
 
 
               <p className="mb-6">
@@ -516,10 +516,7 @@ const VADisabilityBenefitsMentalHealthBlogPostPage = () => {
                 </Card>
               </div>
 
-              <img
-                src="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/f00dd3f4-cea1-4918-8fec-5976198e195f.webp"
-                alt="Veterans receiving mental health treatment and support"
-                className="w-full h-64 object-cover rounded-lg mb-6" />
+          
 
             </section>
 
@@ -703,10 +700,7 @@ const VADisabilityBenefitsMentalHealthBlogPostPage = () => {
                 </Card>
               </div>
 
-              <img
-                src="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/76caee2d-5629-4dc1-a3b4-8c5cea23ede6.webp"
-                alt="TMS therapy treatment for veterans with depression"
-                className="w-full h-64 object-cover rounded-lg mb-6" />
+            
 
 
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Why Veterans Choose KarmaTMS</h3>
@@ -806,7 +800,7 @@ const VADisabilityBenefitsMentalHealthBlogPostPage = () => {
                     <img
                     src={post.image}
                     alt={post.title}
-                    className="w-full h-48 object-cover" />
+                    className="w-full  object-cover" />
 
                     <CardContent className="p-6">
                       <h3 className="font-bold text-lg mb-2 hover:text-[#572670] transition-colors">
