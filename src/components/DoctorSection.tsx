@@ -112,7 +112,7 @@ const DoctorSection = () => {
                   <Award className="h-4 w-4 mr-2" />
                   Expert Care
                 </Badge>
-                <Badge className="bg-gradient-to-r from-purple-500/10 to-pink-500/10 text-purple-700 border-purple-200 px-4 py-2">
+                <Badge className="bg-gradient-to-r from-purple-500/10 to-pink-500/10 text-white border-purple-200 px-4 py-2">
                   <Brain className="h-4 w-4 mr-2" />
                   Integrative Approach
                 </Badge>
