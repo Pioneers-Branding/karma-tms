@@ -200,7 +200,7 @@ const FooterSection = () => {
           </div>
         </div>
 
-        <Separator className="my-12 bg-gray-700/50" />
+        // <Separator className="my-12 bg-gray-700/50" />
       </div>
 
       {/* Bottom Bar */}
