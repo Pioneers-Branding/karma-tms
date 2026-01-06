@@ -345,18 +345,6 @@ const TwentyNinePalmsPage = () => {
                 title="Map of KarmaTMS Twentynine Palms Location" />
 
             </div>
-
-            <Card className="bg-purple-50 border-purple-200">
-              <CardContent className="p-8">
-                <h3 className="text-xl font-bold mb-4">Driving Directions</h3>
-                <div className="space-y-3 text-gray-700">
-                  <p><strong>From MCAGCC Main Gate:</strong> Head north on Adobe Road to Highway 62, turn right (east), continue to 29 Palms Hwy, we're on the right in Suite 107-B.</p>
-                  <p><strong>From Yucca Valley:</strong> Take Highway 62 east toward Twentynine Palms, location is on 29 Palms Highway just past the main commercial district.</p>
-                  <p><strong>From Palm Springs:</strong> Take I-10 east to Highway 62 north, follow through Yucca Valley to Twentynine Palms.</p>
-                  <p className="text-sm italic mt-4">Ample free parking available • Easy access from base</p>
-                </div>
-              </CardContent>
-            </Card>
           </div>
         </div>
       </div>
