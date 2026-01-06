@@ -6,19 +6,19 @@ const HeroSection = () => {
 
   const slides = [
   {
-    title: "Advanced Deep TMS Technology",
-    image: "/api/placeholder/400/300",
-    alt: "Deep TMS treatment session"
+    title: "Advanced Deep TMS at KarmaTMS",
+    image: "https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/d85b7133-76b3-47d9-8904-c6b4ffc09e40.jpeg",
+    alt: "Karma TMS entrance"
   },
   {
-    title: "Comfortable Treatment Environment",
-    image: "/api/placeholder/400/300",
-    alt: "Modern TMS clinic interior"
+    title: "Find us in Palm Springs",
+    image: "https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/b65c46ad-dd56-4c76-bfc8-9fbe25e9b7af.jpg",
+    alt: "Palm Springs view"
   },
   {
-    title: "FDA-Approved Treatment",
-    image: "/api/placeholder/400/300",
-    alt: "TMS device and certification"
+    title: "Best Deep TMS in Palm Springs",
+    image: "https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/ab4091f6-2a9f-4462-909c-148d587ba88f.jpg",
+    alt: "Palm Springs"
   },
   {
     title: "Expert Medical Team",
