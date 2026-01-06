@@ -1,8 +1,8 @@
+import { Link } from 'react-router-dom';
 import Navigation from '@/components/Navigation';
 import FooterSection from '@/components/FooterSection';
 import SEO from '@/components/SEO';
 import StructuredData from '@/components/StructuredData';
-import { Link } from 'react-router-dom';
 import {
   Breadcrumb,
   BreadcrumbItem,
@@ -51,7 +51,6 @@ const ExploringTheMultifacetedDynamicsOfSuicideInTheElderlyPopulation = () => {
         canonical="/blogs/ExploringTheMultifacetedDynamicsOfSuicideInTheElderlyPopulation"
         ogType="article" />
 
-
       <StructuredData
         type="breadcrumb"
         breadcrumbs={[
@@ -59,7 +58,6 @@ const ExploringTheMultifacetedDynamicsOfSuicideInTheElderlyPopulation = () => {
         { name: 'Blog', url: '/blog' },
         { name: 'Suicide in Elderly Population', url: '/blogs/ExploringTheMultifacetedDynamicsOfSuicideInTheElderlyPopulation' }]
         } />
-
 
       <script type="application/ld+json">
         {JSON.stringify(articleSchema)}
@@ -131,7 +129,6 @@ const ExploringTheMultifacetedDynamicsOfSuicideInTheElderlyPopulation = () => {
                 src="https://res.cloudinary.com/de4kw1t2i/image/upload/v1764138579/30_lx4lub.png"
                 alt="Elderly mental health and suicide prevention"
                 className="w-full object-cover rounded-lg mb-6" />
-
 
               <p className="text-xl text-gray-700 leading-relaxed">
                 Suicide among the elderly is a critical public health concern that demands comprehensive understanding and immediate action. As our population ages, recognizing the unique challenges faced by older adults becomes increasingly important in preventing tragic outcomes and promoting mental wellness.
@@ -250,7 +247,6 @@ const ExploringTheMultifacetedDynamicsOfSuicideInTheElderlyPopulation = () => {
               role="Mental Health Content Specialist at KarmaTMS"
               bio="Dedicated to raising awareness about mental health issues and innovative treatment options. Focused on providing comprehensive, evidence-based information to support those seeking mental wellness."
               image="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=400&fit=crop" />
-
 
             {/* CTA Section */}
             <Card className="bg-gradient-to-br from-[#572670] to-[#7B3FA0] text-white mb-12 mt-12">
