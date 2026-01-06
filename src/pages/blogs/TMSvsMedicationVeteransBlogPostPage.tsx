@@ -285,7 +285,7 @@ const TMSvsMedicationVeteransBlogPostPage = () => {
               <img
                 src="https://res.cloudinary.com/de4kw1t2i/image/upload/v1763033665/3_zl830g.png"
                 alt="TMS therapy for veterans as alternative to medication"
-                className="w-full  lg:h-96 object-cover rounded-lg mb-4 md:mb-6" />
+                className="w-full   object-cover rounded-lg mb-4 md:mb-6" />
 
 
               <p className="text-base md:text-xl text-gray-700 leading-relaxed">
@@ -787,7 +787,7 @@ const TMSvsMedicationVeteransBlogPostPage = () => {
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
                 {relatedPosts.map((post, index) =>
                 <Card key={index} className="border-[#572670]/20 overflow-hidden hover:shadow-lg transition-shadow">
-                    <img src={post.image} alt={post.title} className="w-full h-40 md:h-48 object-cover" />
+                    <img src={post.image} alt={post.title} className="w-full  object-cover" />
 
                     <CardContent className="p-4 md:p-6">
                       <h3 className="font-bold text-base md:text-lg mb-2 hover:text-[#572670] transition-colors line-clamp-2">
