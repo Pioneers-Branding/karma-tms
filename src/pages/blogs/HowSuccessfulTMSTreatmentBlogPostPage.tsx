@@ -625,10 +625,10 @@ const HowSuccessfulTMSTreatmentBlogPostPage = () => {
 
             {/* Author Box */}
             <AuthorBox
-              name="KarmatmsAdmin"
-              role="Editorial Team at KarmaTMS"
-              bio="Our editorial team consists of board-certified psychiatrists, neuroscientists, and mental health specialists dedicated to providing accurate, evidence-based information about TMS therapy and mental health treatment."
-              image="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/ebadb369-a58d-421c-b937-24f900be5867.png" />
+              name="Dr. Keerthy Sunder"
+              role="Board-Certified Psychiatrist | Medical Director at KarmaTMS"
+              bio="Dr. Keerthy Sunder is a board-certified psychiatrist specializing in TMS therapy for veterans and treatment-resistant mental health conditions. With extensive experience in neuroscience and innovative treatment modalities, Dr. Sunder is dedicated to helping veterans overcome PTSD, depression, and anxiety through evidence-based, compassionate care."
+              image="https://www.prtms.com/wp-content/uploads/2023/03/Dr.-Keerthy-Sunder-scaled.jpg" />
 
             {/* FAQ Section */}
             <section ref={(el) => sectionsRef.current['faqs'] = el} className="mb-12 mt-12">
