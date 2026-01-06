@@ -75,22 +75,22 @@ export default function TMSMigraineVeteransBlogPostPage() {
 
   const relatedPosts = [
   {
-    title: 'Understanding PTSD in Veterans',
-    excerpt: 'Comprehensive guide to PTSD symptoms and treatment options for veterans.',
-    link: '/blogs/understanding-ptsd-veterans',
-    image: 'https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=800&auto=format'
+    title: 'TMS for Migraine Relief in Veterans',
+    excerpt: 'Learn how TMS helps veterans with migraines and comorbid conditions like PTSD and depression.',
+    link: '/blogs/tms-migraine-veterans',
+    image: 'https://res.cloudinary.com/de4kw1t2i/image/upload/v1763033673/7_lnxkrv.png'
   },
   {
     title: 'TMS for Anxiety in Veterans',
-    excerpt: 'Learn how TMS helps with veteran anxiety beyond medication.',
+    excerpt: 'Discover how TMS helps veterans manage anxiety beyond medication.',
     link: '/blogs/tms-anxiety-veterans',
-    image: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=800&auto=format'
+    image: 'https://res.cloudinary.com/de4kw1t2i/image/upload/v1763033666/6_rrkhgo.png'
   },
   {
-    title: 'TMS Therapy: A Complete Guide',
-    excerpt: 'Everything you need to know about Transcranial Magnetic Stimulation therapy.',
-    link: '/tms-therapy',
-    image: 'https://images.unsplash.com/photo-1559757175-0eb30cd8c063?w=800&auto=format'
+    title: 'Understanding PTSD in Veterans',
+    excerpt: 'Complete guide to PTSD signs, symptoms, and treatment paths including TMS therapy.',
+    link: '/blogs/understanding-ptsd-veterans',
+    image: 'https://res.cloudinary.com/de4kw1t2i/image/upload/v1763033666/5_kvtlku.png'
   }];
 
 
@@ -337,7 +337,7 @@ export default function TMSMigraineVeteransBlogPostPage() {
               <img
                 src="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/f00dd3f4-cea1-4918-8fec-5976198e195f.webp"
                 alt="VA benefits for veterans with migraines"
-                className="w-full h-64 md:h-80 object-cover rounded-lg mb-6" />
+                className="w-full  md:h-80 object-cover rounded-lg mb-6" />
 
 
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
@@ -813,7 +813,7 @@ export default function TMSMigraineVeteransBlogPostPage() {
                     <img
                     src={post.image}
                     alt={post.title}
-                    className="w-full h-48 object-cover" />
+                    className="w-full  object-cover" />
 
                     <CardContent className="p-6">
                       <h3 className="font-bold text-lg mb-2 hover:text-[#572670] transition-colors">

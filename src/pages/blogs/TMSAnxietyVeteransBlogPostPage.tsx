@@ -73,7 +73,7 @@ export default function TMSAnxietyVeteransBlogPostPage() {
   }];
 
 
- const relatedPosts = [
+  const relatedPosts = [
   {
     title: 'TMS for Migraine Relief in Veterans',
     excerpt: 'Learn how TMS helps veterans with migraines and comorbid conditions like PTSD and depression.',
