@@ -4,7 +4,7 @@ const WhyChooseKarmaSection = () => {
   const commitmentSections = [
   {
     title: "Personalized Treatment Plans",
-    description: "Our expert mental health counselors in palm springs ca design a unique TMS therapy plan tailored to your specific needs, ensuring the most effective treatment for mental health in palm springs.",
+    description: "Our expert mental health counselors in palm springs, CA design a unique TMS therapy plan tailored to your specific needs, ensuring the most effective treatment for mental health in Palm Springs.",
     image: "https://images.unsplash.com/photo-1507413245164-6160d8298b31?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     overlay: true
   },
