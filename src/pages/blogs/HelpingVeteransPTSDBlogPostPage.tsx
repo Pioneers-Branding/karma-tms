@@ -280,7 +280,7 @@ const HelpingVeteransPTSDBlogPostPage = () => {
               <img
                 src="https://res.cloudinary.com/de4kw1t2i/image/upload/v1763033666/4_toy7pb.png"
                 alt="Supporting veterans with PTSD through compassionate care"
-                className="w-full h-64 md:h-96 object-cover rounded-lg mb-6" />
+                className="w-full  md:h-96 object-cover rounded-lg mb-6" />
 
 
               <p className="text-xl text-gray-700 leading-relaxed">
@@ -445,10 +445,7 @@ const HelpingVeteransPTSDBlogPostPage = () => {
                 </CardContent>
               </Card>
 
-              <img
-                src="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/76caee2d-5629-4dc1-a3b4-8c5cea23ede6.webp"
-                alt="TMS therapy for veteran PTSD treatment"
-                className="w-full h-64 object-cover rounded-lg mb-6" />
+        
 
 
               <h3 className="text-2xl font-bold text-gray-900 mb-4">What to Expect from TMS Treatment</h3>
