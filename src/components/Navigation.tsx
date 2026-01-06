@@ -68,19 +68,21 @@ const Navigation = () => {
       <div className="max-w-[1600px] mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <div className="flex items-center">
+          <Link href="/" className="flex items-center">
             <img
               src="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/ebadb369-a58d-421c-b937-24f900be5867.png"
               alt="Karma TMS"
               className="h-10 w-auto" />
-          </div>
+          </Link>
 
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex items-center space-x-8">
+            <Link key="/" to="/">
             <Button variant="ghost" className="text-white hover:text-white/80 hover:bg-white/10 transition-colors">
               <Home className="h-4 w-4 mr-2" />
               Home
             </Button>
+            </Link>
             <Button variant="ghost" className="text-white hover:text-white/80 hover:bg-white/10 transition-colors">
               <User className="h-4 w-4 mr-2" />
               About
