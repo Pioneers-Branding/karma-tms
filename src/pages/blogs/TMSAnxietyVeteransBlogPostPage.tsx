@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 import { ChevronRight, Phone, Calendar } from 'lucide-react';
 
 export default function TMSAnxietyVeteransBlogPostPage() {
-  const publishDate = '2024-10-27';
+  const publishDate = '2025-10-27';
   const author = {
     name: 'Dr. Keerthy Sunder',
     credentials: 'MD, Board-Certified Psychiatrist',
