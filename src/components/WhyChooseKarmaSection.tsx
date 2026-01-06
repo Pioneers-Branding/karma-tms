@@ -5,7 +5,7 @@ const WhyChooseKarmaSection = () => {
   {
     title: "Personalized Treatment Plans",
     description: "Our expert team designs a unique TMS therapy plan tailored to your specific needs, ensuring the most effective and targeted treatment possible.",
-    image: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800&h=600&fit=crop&crop=center",
+    image: "https://www.usnews.com/object/image/0000017c-9ef7-dfbc-a3fe-feff9e340000/211021hcmentalhealth-stock.jpg?update-time=1634755331434&size=responsive640",
     overlay: true
   },
   {
