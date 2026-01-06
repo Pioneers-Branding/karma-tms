@@ -10,16 +10,16 @@ import {
   BreadcrumbLink,
   BreadcrumbList,
   BreadcrumbPage,
-  BreadcrumbSeparator
-} from '@/components/ui/breadcrumb';
+  BreadcrumbSeparator } from
+'@/components/ui/breadcrumb';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import {
   Accordion,
   AccordionContent,
   AccordionItem,
-  AccordionTrigger
-} from '@/components/ui/accordion';
+  AccordionTrigger } from
+'@/components/ui/accordion';
 import { Calendar, Clock, User, CheckCircle2, ArrowRight } from 'lucide-react';
 import AuthorBox from '@/components/AuthorBox';
 
@@ -28,17 +28,17 @@ const DoesTMSTherapyWorkForAnxiety = () => {
   const sectionsRef = useRef<{[key: string]: HTMLElement | null;}>({});
 
   const tocItems = [
-    { id: 'understanding-anxiety', label: 'Understanding Anxiety' },
-    { id: 'what-is-tms', label: 'What Is TMS Therapy for Anxiety?' },
-    { id: 'how-tms-works', label: 'How Does TMS Work for Anxiety?' },
-    { id: 'benefits', label: 'Benefits of TMS for Anxiety' },
-    { id: 'does-it-help', label: 'Does TMS Help Anxiety Directly?' },
-    { id: 'what-to-expect', label: 'What to Expect During TMS' },
-    { id: 'effectiveness', label: 'How Effective Is TMS?' },
-    { id: 'who-benefits', label: 'Who Can Benefit?' },
-    { id: 'karma-experience', label: 'TMS at Karma TMS' },
-    { id: 'faqs', label: 'Frequently Asked Questions' }
-  ];
+  { id: 'understanding-anxiety', label: 'Understanding Anxiety' },
+  { id: 'what-is-tms', label: 'What Is TMS Therapy for Anxiety?' },
+  { id: 'how-tms-works', label: 'How Does TMS Work for Anxiety?' },
+  { id: 'benefits', label: 'Benefits of TMS for Anxiety' },
+  { id: 'does-it-help', label: 'Does TMS Help Anxiety Directly?' },
+  { id: 'what-to-expect', label: 'What to Expect During TMS' },
+  { id: 'effectiveness', label: 'How Effective Is TMS?' },
+  { id: 'who-benefits', label: 'Who Can Benefit?' },
+  { id: 'karma-experience', label: 'TMS at Karma TMS' },
+  { id: 'faqs', label: 'Frequently Asked Questions' }];
+
 
   useEffect(() => {
     const handleScroll = () => {
@@ -71,56 +71,56 @@ const DoesTMSTherapyWorkForAnxiety = () => {
   };
 
   const faqs = [
-    {
-      question: 'Does TMS therapy work for anxiety disorders?',
-      answer: 'Yes, TMS therapy has shown effectiveness in treating anxiety disorders, particularly when anxiety co-occurs with depression. Studies demonstrate 50-70% response rates for generalized anxiety disorder, with many patients experiencing substantial reduction in anxiety symptoms. The FDA has approved TMS for anxious depression, validating its effectiveness for anxiety symptoms.'
-    },
-    {
-      question: 'How long does it take for TMS to help with anxiety?',
-      answer: 'Most patients begin noticing improvements in anxiety symptoms within 2-4 weeks of starting TMS treatment. The full benefits typically become apparent after 4-6 weeks of daily sessions. Some patients report feeling calmer and less anxious even earlier in treatment, while others may take the full course to experience significant relief.'
-    },
-    {
-      question: 'Is TMS better than medication for anxiety?',
-      answer: 'TMS offers several advantages over anxiety medications: no systemic side effects, no risk of dependency, and direct targeting of brain regions involved in anxiety. While medications work for many people, TMS is particularly valuable for those who haven\'t responded to medications or experience intolerable side effects. TMS can also be used alongside medications for enhanced benefits.'
-    },
-    {
-      question: 'Can TMS make anxiety worse?',
-      answer: 'TMS rarely makes anxiety worse. In clinical studies, less than 2% of patients report temporary increases in anxiety, which typically resolve within a few days. Most patients experience progressive reduction in anxiety symptoms throughout treatment. Your treatment team will monitor your symptoms closely and adjust the protocol if needed.'
-    },
-    {
-      question: 'What types of anxiety does TMS treat?',
-      answer: 'TMS has shown effectiveness for various anxiety conditions including generalized anxiety disorder (GAD), panic disorder, social anxiety, and anxiety associated with depression or PTSD. Research is ongoing for other anxiety-related conditions. The most robust evidence exists for GAD and anxious depression.'
-    },
-    {
-      question: 'Is TMS therapy covered by insurance for anxiety?',
-      answer: 'Insurance coverage for TMS varies by provider and plan. Most major insurers cover TMS for depression, and many also cover it when anxiety co-occurs with depression. Some plans may cover TMS specifically for anxiety disorders. Our team can help verify your insurance benefits and discuss coverage options.'
-    },
-    {
-      question: 'How long do the anxiety relief benefits of TMS last?',
-      answer: 'Many patients maintain significant anxiety reduction for 6-12 months or longer after completing TMS treatment. Studies show that approximately 60-70% of responders maintain their improvements at one-year follow-up. Some patients may benefit from occasional maintenance sessions to sustain long-term results.'
-    }
-  ];
+  {
+    question: 'Does TMS therapy work for anxiety disorders?',
+    answer: 'Yes, TMS therapy has shown effectiveness in treating anxiety disorders, particularly when anxiety co-occurs with depression. Studies demonstrate 50-70% response rates for generalized anxiety disorder, with many patients experiencing substantial reduction in anxiety symptoms. The FDA has approved TMS for anxious depression, validating its effectiveness for anxiety symptoms.'
+  },
+  {
+    question: 'How long does it take for TMS to help with anxiety?',
+    answer: 'Most patients begin noticing improvements in anxiety symptoms within 2-4 weeks of starting TMS treatment. The full benefits typically become apparent after 4-6 weeks of daily sessions. Some patients report feeling calmer and less anxious even earlier in treatment, while others may take the full course to experience significant relief.'
+  },
+  {
+    question: 'Is TMS better than medication for anxiety?',
+    answer: 'TMS offers several advantages over anxiety medications: no systemic side effects, no risk of dependency, and direct targeting of brain regions involved in anxiety. While medications work for many people, TMS is particularly valuable for those who haven\'t responded to medications or experience intolerable side effects. TMS can also be used alongside medications for enhanced benefits.'
+  },
+  {
+    question: 'Can TMS make anxiety worse?',
+    answer: 'TMS rarely makes anxiety worse. In clinical studies, less than 2% of patients report temporary increases in anxiety, which typically resolve within a few days. Most patients experience progressive reduction in anxiety symptoms throughout treatment. Your treatment team will monitor your symptoms closely and adjust the protocol if needed.'
+  },
+  {
+    question: 'What types of anxiety does TMS treat?',
+    answer: 'TMS has shown effectiveness for various anxiety conditions including generalized anxiety disorder (GAD), panic disorder, social anxiety, and anxiety associated with depression or PTSD. Research is ongoing for other anxiety-related conditions. The most robust evidence exists for GAD and anxious depression.'
+  },
+  {
+    question: 'Is TMS therapy covered by insurance for anxiety?',
+    answer: 'Insurance coverage for TMS varies by provider and plan. Most major insurers cover TMS for depression, and many also cover it when anxiety co-occurs with depression. Some plans may cover TMS specifically for anxiety disorders. Our team can help verify your insurance benefits and discuss coverage options.'
+  },
+  {
+    question: 'How long do the anxiety relief benefits of TMS last?',
+    answer: 'Many patients maintain significant anxiety reduction for 6-12 months or longer after completing TMS treatment. Studies show that approximately 60-70% of responders maintain their improvements at one-year follow-up. Some patients may benefit from occasional maintenance sessions to sustain long-term results.'
+  }];
+
 
   const relatedPosts = [
-    {
-      title: 'TMS for Anxiety in Veterans',
-      excerpt: 'Discover how TMS helps veterans manage anxiety beyond medication.',
-      link: '/blogs/tms-anxiety-veterans',
-      image: 'https://res.cloudinary.com/de4kw1t2i/image/upload/v1763033666/6_rrkhgo.png'
-    },
-    {
-      title: 'Managing Anxiety Triggers in Everyday Life',
-      excerpt: 'Learn practical strategies to identify and manage anxiety triggers effectively.',
-      link: '/blog/managing-anxiety-triggers',
-      image: 'https://res.cloudinary.com/de4kw1t2i/image/upload/v1763376737/22_wiizht.png'
-    },
-    {
-      title: 'Understanding PTSD in Veterans',
-      excerpt: 'Complete guide to PTSD signs, symptoms, and treatment paths including TMS therapy.',
-      link: '/blogs/understanding-ptsd-veterans',
-      image: 'https://res.cloudinary.com/de4kw1t2i/image/upload/v1763033666/5_kvtlku.png'
-    }
-  ];
+  {
+    title: 'TMS for Anxiety in Veterans',
+    excerpt: 'Discover how TMS helps veterans manage anxiety beyond medication.',
+    link: '/blogs/tms-anxiety-veterans',
+    image: 'https://res.cloudinary.com/de4kw1t2i/image/upload/v1763033666/6_rrkhgo.png'
+  },
+  {
+    title: 'Managing Anxiety Triggers in Everyday Life',
+    excerpt: 'Learn practical strategies to identify and manage anxiety triggers effectively.',
+    link: '/blog/managing-anxiety-triggers',
+    image: 'https://res.cloudinary.com/de4kw1t2i/image/upload/v1763376737/22_wiizht.png'
+  },
+  {
+    title: 'Understanding PTSD in Veterans',
+    excerpt: 'Complete guide to PTSD signs, symptoms, and treatment paths including TMS therapy.',
+    link: '/blogs/understanding-ptsd-veterans',
+    image: 'https://res.cloudinary.com/de4kw1t2i/image/upload/v1763033666/5_kvtlku.png'
+  }];
+
 
   const articleSchema = {
     '@context': 'https://schema.org',
@@ -174,17 +174,17 @@ const DoesTMSTherapyWorkForAnxiety = () => {
         keywords="TMS therapy for anxiety, TMS anxiety treatment, does TMS work for anxiety, TMS for GAD, anxiety TMS therapy, non-medication anxiety treatment"
         canonical="/blogs/DoesTMSTherapyWorkForAnxiety"
         ogImage="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/9705b922-d0fc-4d29-be10-acd507ce308c.webp"
-        ogType="article"
-      />
+        ogType="article" />
+
 
       <StructuredData
         type="breadcrumb"
         breadcrumbs={[
-          { name: 'Home', url: '/' },
-          { name: 'Blog', url: '/blog' },
-          { name: 'Does TMS Therapy Work for Anxiety?', url: '/blogs/DoesTMSTherapyWorkForAnxiety' }
-        ]}
-      />
+        { name: 'Home', url: '/' },
+        { name: 'Blog', url: '/blog' },
+        { name: 'Does TMS Therapy Work for Anxiety?', url: '/blogs/DoesTMSTherapyWorkForAnxiety' }]
+        } />
+
 
       <script type="application/ld+json">
         {JSON.stringify(articleSchema)}
@@ -268,19 +268,19 @@ const DoesTMSTherapyWorkForAnxiety = () => {
                 <CardContent className="p-6">
                   <h3 className="font-bold text-lg mb-4 text-[#572670]">Table of Contents</h3>
                   <nav className="space-y-2">
-                    {tocItems.map((item) => (
-                      <button
-                        key={item.id}
-                        onClick={() => scrollToSection(item.id)}
-                        className={`block w-full text-left px-3 py-2 rounded-md text-sm transition-all ${
-                          activeSection === item.id ?
-                            'bg-[#572670] text-white font-medium' :
-                            'text-gray-700 hover:bg-[#572670]/10'
-                        }`}
-                      >
+                    {tocItems.map((item) =>
+                    <button
+                      key={item.id}
+                      onClick={() => scrollToSection(item.id)}
+                      className={`block w-full text-left px-3 py-2 rounded-md text-sm transition-all ${
+                      activeSection === item.id ?
+                      'bg-[#572670] text-white font-medium' :
+                      'text-gray-700 hover:bg-[#572670]/10'}`
+                      }>
+
                         {item.label}
                       </button>
-                    ))}
+                    )}
                   </nav>
                   <div className="mt-6 pt-6 border-t">
                     <Button asChild className="w-full bg-[#572670] hover:bg-[#7B3FA0]">
@@ -299,8 +299,8 @@ const DoesTMSTherapyWorkForAnxiety = () => {
               <img
                 src="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/9705b922-d0fc-4d29-be10-acd507ce308c.webp"
                 alt="TMS therapy for anxiety treatment"
-                className="w-full object-cover rounded-lg mb-6"
-              />
+                className="w-full object-cover rounded-lg mb-6" />
+
 
               <p className="text-xl text-gray-700 leading-relaxed">
                 Anxiety can feel overwhelming, affecting every aspect of your life—from work performance to personal relationships. If you've been struggling with anxiety and traditional treatments haven't provided adequate relief, you might be wondering: does <Link to="/tms-therapy" className="text-[#572670] hover:underline font-medium">TMS therapy</Link> work for anxiety? The answer is increasingly promising, with growing evidence supporting TMS as an effective treatment for various anxiety disorders.
@@ -645,8 +645,8 @@ const DoesTMSTherapyWorkForAnxiety = () => {
               <img
                 src="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/d85b7133-76b3-47d9-8904-c6b4ffc09e40.jpeg"
                 alt="Karma TMS clinic entrance"
-                className="w-full object-cover rounded-lg mb-6"
-              />
+                className="w-full object-cover rounded-lg mb-6" />
+
 
               <p className="mb-6">
                 At <Link to="/" className="text-[#572670] hover:underline font-medium">Karma TMS</Link>, we specialize in providing compassionate, evidence-based TMS therapy for anxiety and other mental health conditions. Our approach includes:
@@ -693,20 +693,20 @@ const DoesTMSTherapyWorkForAnxiety = () => {
               name="Dr. Keerthy Sunder"
               role="Board-Certified Psychiatrist | Medical Director at KarmaTMS"
               bio="Dr. Keerthy Sunder is a board-certified psychiatrist specializing in TMS therapy for veterans and treatment-resistant mental health conditions. With extensive experience in neuroscience and innovative treatment modalities, Dr. Sunder is dedicated to helping patients overcome anxiety, depression, and PTSD through evidence-based, compassionate care."
-              image="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/6e11b9b5-a5e7-4213-8e90-24371919d086.webp"
-            />
+              image="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/6e11b9b5-a5e7-4213-8e90-24371919d086.webp" />
+
 
             {/* FAQ Section */}
             <section ref={(el) => sectionsRef.current['faqs'] = el} className="mb-12 mt-12">
               <h2 className="text-3xl font-bold text-[#572670] mb-6">Frequently Asked Questions</h2>
               
               <Accordion type="single" collapsible className="w-full space-y-2">
-                {faqs.map((faq, index) => (
-                  <AccordionItem
-                    key={index}
-                    value={`item-${index}`}
-                    className="border border-gray-200 rounded-lg px-4 data-[state=open]:border-[#572670]"
-                  >
+                {faqs.map((faq, index) =>
+                <AccordionItem
+                  key={index}
+                  value={`item-${index}`}
+                  className="border border-gray-200 rounded-lg px-4 data-[state=open]:border-[#572670]">
+
                     <AccordionTrigger className="text-left font-semibold hover:text-[#572670] hover:no-underline">
                       {faq.question}
                     </AccordionTrigger>
@@ -714,7 +714,7 @@ const DoesTMSTherapyWorkForAnxiety = () => {
                       {faq.answer}
                     </AccordionContent>
                   </AccordionItem>
-                ))}
+                )}
               </Accordion>
             </section>
 
@@ -742,13 +742,13 @@ const DoesTMSTherapyWorkForAnxiety = () => {
             <section className="mb-12">
               <h2 className="text-3xl font-bold text-[#572670] mb-6">Related Articles</h2>
               <div className="grid md:grid-cols-3 gap-6">
-                {relatedPosts.map((post, index) => (
-                  <Card key={index} className="border-[#572670]/20 overflow-hidden hover:shadow-lg transition-shadow">
+                {relatedPosts.map((post, index) =>
+                <Card key={index} className="border-[#572670]/20 overflow-hidden hover:shadow-lg transition-shadow">
                     <img
-                      src={post.image}
-                      alt={post.title}
-                      className="w-full object-cover"
-                    />
+                    src={post.image}
+                    alt={post.title}
+                    className="w-full object-cover" />
+
                     <CardContent className="p-6">
                       <h3 className="font-bold text-lg mb-2 hover:text-[#572670] transition-colors">
                         <Link to={post.link}>{post.title}</Link>
@@ -761,7 +761,7 @@ const DoesTMSTherapyWorkForAnxiety = () => {
                       </Button>
                     </CardContent>
                   </Card>
-                ))}
+                )}
               </div>
             </section>
           </article>
@@ -769,8 +769,8 @@ const DoesTMSTherapyWorkForAnxiety = () => {
       </div>
 
       <FooterSection />
-    </>
-  );
+    </>);
+
 };
 
 export default DoesTMSTherapyWorkForAnxiety;

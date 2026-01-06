@@ -283,7 +283,7 @@ export default function HowDoesADHDTreatmentWorkBlogPostPage() {
             {/* Introduction */}
             <div className="mb-12">
               <img
-                src="https://images.unsplash.com/photo-1710767904391-145c3d62aa10?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MTg3MTl8MHwxfHNlYXJjaHwxfHxBJTIwY3JvcHBlZCUyMGltYWdlJTIwZnJvbSUyMFVuc3BsYXNoJTIwc2hvd2Nhc2luZyUyMGElMjB2aXN1YWxseSUyMGFwcGVhbGluZyUyMHNjZW5lLnxlbnwwfHx8fDE3NjQ0MTE0ODZ8MA&ixlib=rb-4.1.0&q=80&w=200$w=1200"
+                src="https://res.cloudinary.com/de4kw1t2i/image/upload/v1764569001/35_morbs0.png"
                 alt="ADHD Treatment and Therapy"
                 className="w-full object-cover rounded-lg mb-6" />
 
