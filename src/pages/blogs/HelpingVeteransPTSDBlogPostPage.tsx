@@ -280,7 +280,7 @@ const HelpingVeteransPTSDBlogPostPage = () => {
               <img
                 src="https://res.cloudinary.com/de4kw1t2i/image/upload/v1763033666/4_toy7pb.png"
                 alt="Supporting veterans with PTSD through compassionate care"
-                className="w-full md:h-96 object-cover rounded-lg mb-6" />
+                className="w-full  object-cover rounded-lg mb-6" />
 
 
               <p className="text-xl text-gray-700 leading-relaxed">
