@@ -133,6 +133,12 @@ const TMSTherapyPage = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50">
       <Navigation />
+      <SEO
+  title="TMS Therapy in Palm Springs | Karma TMS PC"
+  description="Karma TMS PC offers advanced TMS Therapy in Palm Springs to treat depression and anxiety safely, helping you achieve lasting mental wellness and balance."
+  keywords="tms palm springs, karma tms palm springs, TMS"
+  canonical="https://www.karmatms.com/tms-therapy"
+/>
       
       {/* Hero Section */}
       <section className="pt-24 pb-16 px-4">
