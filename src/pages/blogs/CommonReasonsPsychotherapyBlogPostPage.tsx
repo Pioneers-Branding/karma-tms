@@ -689,7 +689,7 @@ const CommonReasonsPsychotherapyBlogPostPage = () => {
                     <Link to="/contact">Schedule a Consultation</Link>
                   </Button>
                   <Button asChild size="lg" variant="outline" className="border-white text-white hover:bg-white/10">
-                    <Link to="/conditions">Explore Treatment Options</Link>
+                    
                   </Button>
                 </div>
               </CardContent>
