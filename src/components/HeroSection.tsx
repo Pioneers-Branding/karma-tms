@@ -63,7 +63,7 @@ const HeroSection = () => {
       <div className="max-w-7xl mx-auto px-4 mt-4">
         <div className="grid lg:grid-cols-2 xl:grid-cols-5 items-center min-h-[75vh]">
           {/* Left Section */}
-          <div className="xl:col-span-3  lg:p-6 xl:p-8 flex flex-col justify-center space-y-6 lg:space-y-8 max-w-4xl">
+          <div className="xl:col-span-3 py-4 lg:p-6 xl:p-8 flex flex-col justify-center space-y-6 lg:space-y-8 max-w-4xl">
             <div className="space-y-4 lg:space-y-6">
               <div className="flex flex-row gap-2">
                 <a
