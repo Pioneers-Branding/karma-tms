@@ -65,7 +65,7 @@ const HeroSection = () => {
                 Palm Springs, CA
               </a>
               <a
-                      href="https://maps.app.goo.gl/39Ep5D1cGtLvPAsw7"
+                      href="https://share.google/e8yhlNFFaLaN8z1d1"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="flex flex-row bg-blue-magenta text-white p-2 px-4 rounded-3xl w-fit items-center hover:scale-105 hover:shadow-lg transition-all duration-300 cursor-pointer">
