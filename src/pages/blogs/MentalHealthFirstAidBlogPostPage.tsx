@@ -242,7 +242,7 @@ const MentalHealthFirstAidBlogPostPage = () => {
                 <Link to="/contact">Get Professional Support</Link>
               </Button>
               <Button asChild size="lg" variant="outline" className="border-white text-white hover:bg-white/10">
-                <a href="tel:988">Call 988 - Crisis Lifeline</a>
+                
               </Button>
             </div>
           </div>
@@ -760,7 +760,7 @@ const MentalHealthFirstAidBlogPostPage = () => {
                     <Link to="/contact">Schedule Free Consultation</Link>
                   </Button>
                   <Button asChild size="lg" variant="outline" className="border-white text-white hover:bg-white/10">
-                    <Link to="/tms-therapy">Learn About TMS</Link>
+                    
                   </Button>
                 </div>
               </CardContent>
