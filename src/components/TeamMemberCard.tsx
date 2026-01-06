@@ -116,20 +116,20 @@ const TeamMemberCard: React.FC<TeamMemberCardProps> = ({ member, index }) => {
 
             {/* Credentials Preview */}
             <div className="flex flex-wrap gap-1 pt-2">
-              {member.credentials && member.credentials.length > 0 ? (
-                <>
-                  {member.credentials.slice(0, 2).map((credential, idx) => (
-                    <Badge key={idx} variant="outline" className="text-xs border-[#572670]/30 text-[#572670]">
+              {member.credentials && member.credentials.length > 0 ?
+              <>
+                  {member.credentials.slice(0, 2).map((credential, idx) =>
+                <Badge key={idx} variant="outline" className="text-xs border-[#572670]/30 text-[#572670]">
                       {credential}
                     </Badge>
-                  ))}
-                  {member.credentials.length > 2 && (
-                    <Badge variant="outline" className="text-xs border-gray-300 text-gray-500">
+                )}
+                  {member.credentials.length > 2 &&
+                <Badge variant="outline" className="text-xs border-gray-300 text-gray-500">
                       +{member.credentials.length - 2} more
                     </Badge>
-                  )}
-                </>
-              ) : null}
+                }
+                </> :
+              null}
             </div>
 
             {/* View Profile Button */}
@@ -173,11 +173,11 @@ const TeamMemberCard: React.FC<TeamMemberCardProps> = ({ member, index }) => {
                         Credentials
                       </h4>
                       <div className="space-y-2">
-                        {member.credentials && member.credentials.map((cred, idx) => (
-                          <Badge key={idx} variant="outline" className="mr-2 mb-2 border-[#572670]/30 text-[#572670]">
+                        {member.credentials && member.credentials.map((cred, idx) =>
+                        <Badge key={idx} variant="outline" className="mr-2 mb-2 border-[#572670]/30 text-[#572670]">
                             {cred}
                           </Badge>
-                        ))}
+                        )}
                       </div>
                     </div>
 
@@ -203,11 +203,11 @@ const TeamMemberCard: React.FC<TeamMemberCardProps> = ({ member, index }) => {
                         Languages
                       </h4>
                       <div className="flex flex-wrap gap-1">
-                        {member.languages && member.languages.map((language, idx) => (
-                          <Badge key={idx} variant="secondary" className="text-xs bg-gray-100">
+                        {member.languages && member.languages.map((language, idx) =>
+                        <Badge key={idx} variant="secondary" className="text-xs bg-gray-100">
                             {language}
                           </Badge>
-                        ))}
+                        )}
                       </div>
                     </div>
                   </div>
@@ -234,14 +234,14 @@ const TeamMemberCard: React.FC<TeamMemberCardProps> = ({ member, index }) => {
                           {member.email}
                         </a>
                       </div>
-                      {member.phone && (
-                        <div className="flex items-center gap-3 text-sm text-gray-600">
+                      {member.phone &&
+                      <div className="flex items-center gap-3 text-sm text-gray-600">
                           <Phone size={16} className="text-[#572670]" />
                           <a href={`tel:${member.phone}`} className="hover:text-[#572670] transition-colors">
                             {member.phone}
                           </a>
                         </div>
-                      )}
+                      }
                     </div>
                   </div>
 
@@ -265,8 +265,8 @@ const TeamMemberCard: React.FC<TeamMemberCardProps> = ({ member, index }) => {
           </div>
         </CardContent>
       </Card>
-    </motion.div>
-  );
+    </motion.div>);
+
 };
 
 export default TeamMemberCard;

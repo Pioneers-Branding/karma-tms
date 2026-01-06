@@ -145,12 +145,12 @@ export default function TeamMemberPage() {
                 Credentials
               </h2>
               <div className="space-y-2">
-                {member.credentials.map((cred, index) => (
-                  <div key={index} className="flex items-start">
+                {member.credentials.map((cred, index) =>
+                <div key={index} className="flex items-start">
                     <div className="w-2 h-2 bg-purple-600 rounded-full mr-3 mt-2"></div>
                     <span className="text-gray-700">{cred}</span>
                   </div>
-                ))}
+                )}
               </div>
             </div>
           </div>
@@ -166,14 +166,14 @@ export default function TeamMemberPage() {
               Languages Spoken
             </h2>
             <div className="flex flex-wrap gap-3">
-              {member.languages.map((language, index) => (
-                <Badge
-                  key={index}
-                  variant="outline"
-                  className="text-base px-4 py-2 border-teal-600 text-teal-600">
+              {member.languages.map((language, index) =>
+              <Badge
+                key={index}
+                variant="outline"
+                className="text-base px-4 py-2 border-teal-600 text-teal-600">
                   {language}
                 </Badge>
-              ))}
+              )}
             </div>
           </div>
         </div>
@@ -214,6 +214,6 @@ export default function TeamMemberPage() {
       </div>
 
       <FooterSection />
-    </div>
-  );
+    </div>);
+
 }

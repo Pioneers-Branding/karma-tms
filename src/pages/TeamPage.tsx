@@ -13,15 +13,15 @@ const TeamPage: React.FC = () => {
   const [activeFilter, setActiveFilter] = useState('all');
 
   // Filter team members based on active filter
-  const filteredMembers = activeFilter === 'all'
-    ? teamMembers
-    : teamMembers.filter(member => member.category === activeFilter);
+  const filteredMembers = activeFilter === 'all' ?
+  teamMembers :
+  teamMembers.filter((member) => member.category === activeFilter);
 
   // Calculate member counts for filters
   const memberCounts = {
     all: teamMembers.length,
-    medical: teamMembers.filter(m => m.category === 'medical').length,
-    administrative: teamMembers.filter(m => m.category === 'administrative').length
+    medical: teamMembers.filter((m) => m.category === 'medical').length,
+    administrative: teamMembers.filter((m) => m.category === 'administrative').length
   };
 
   return (
@@ -59,8 +59,8 @@ const TeamPage: React.FC = () => {
           <TeamFilters
             activeFilter={activeFilter}
             onFilterChange={setActiveFilter}
-            memberCounts={memberCounts}
-          />
+            memberCounts={memberCounts} />
+
         </div>
       </section>
 
@@ -72,26 +72,26 @@ const TeamPage: React.FC = () => {
             animate={{ opacity: 1 }}
             transition={{ duration: 0.5 }}
             className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
-            {filteredMembers.map((member, index) => (
-              <TeamMemberCard
-                key={member.id}
-                member={member}
-                index={index}
-              />
-            ))}
+            {filteredMembers.map((member, index) =>
+            <TeamMemberCard
+              key={member.id}
+              member={member}
+              index={index} />
+
+            )}
           </motion.div>
 
           {/* No results message */}
-          {filteredMembers.length === 0 && (
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              className="text-center py-12">
+          {filteredMembers.length === 0 &&
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            className="text-center py-12">
               <p className="text-xl text-gray-600">
                 No team members found in this category.
               </p>
             </motion.div>
-          )}
+          }
         </div>
       </section>
 
@@ -126,8 +126,8 @@ const TeamPage: React.FC = () => {
       </section>
 
       <FooterSection />
-    </div>
-  );
+    </div>);
+
 };
 
 export default TeamPage;
