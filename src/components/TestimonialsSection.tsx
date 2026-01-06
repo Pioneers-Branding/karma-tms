@@ -16,7 +16,7 @@ const TestimonialsSection = () => {
     quote: "Depression is a miserable way to deal with life on a daily basis. When the med dont seem to do the trick ,TMS therapy is a sensible addition to treatment that has helped me in the battle.",
     hasVideo: true,
     videoId: "xewffol4oOQ", // Example YouTube ID
-    avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=face"
+    avatar: "https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/498a0642-bb81-4bcf-8933-201f433ed83a.png"
   },
   {
     name: "Nancy A.",
