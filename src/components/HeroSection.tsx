@@ -57,7 +57,7 @@ const HeroSection = () => {
                 {/* Heading */}
                 <div className="space-y-4 lg:space-y-6">
                   <div className="flex items-center space-x-3 mb-4">
-                    <div className="w-12 h-12 bg-gradient-to-br from-indigo-[#572670] to-[#572670]/80 rounded-2xl flex items-center justify-center shadow-lg">
+                    <div className="w-12 h-12 bg-gradient-to-br from-[#572670] to-[#572670]/80 rounded-2xl flex items-center justify-center shadow-lg">
                       <Brain className="w-6 h-6 text-white" />
                     </div>
                     <span className="text-indigo-700 font-semibold text-lg">Karma TMS</span>
