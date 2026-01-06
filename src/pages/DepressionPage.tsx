@@ -96,7 +96,7 @@ const DepressionPage = () => {
             </div>
             <div className="relative">
               <img
-                src="https://images.unsplash.com/photo-1631563019676-dade0dbdb8fc?q=80&w=800"
+                src="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/460c9673-d421-40be-a576-8470fafd54e6.webp"
                 alt="Brain scan showing depression treatment"
                 className="rounded-lg shadow-lg" />
 
@@ -374,7 +374,7 @@ const DepressionPage = () => {
             </div>
             <div className="relative">
               <img
-                src="https://images.unsplash.com/photo-1570105954248-fa0c1376edfe?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MTg3MTl8MHwxfHNlYXJjaHwxfHxBJTIwVE1TJTIwdHJlYXRtZW50JTIwY2hhaXIlMjB1c2VkJTIwZm9yJTIwZGVwcmVzc2lvbiUyMHRoZXJhcHkufGVufDB8fHx8MTc1OTIzNjY3MXww&ixlib=rb-4.1.0&q=80&w=200$w=800"
+                src="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/2ddc8d69-b09a-4f1d-bd47-6d783ceefbd1.webp"
                 alt="TMS treatment chair"
                 className="rounded-lg shadow-lg" />
 
