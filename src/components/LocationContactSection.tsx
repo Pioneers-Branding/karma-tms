@@ -17,7 +17,7 @@ const LocationContactSection = () => {
         Visit Our Mental Health Facilities in Palm Springs
       </h2>
       <p className="text-lg text-gray-600 leading-relaxed">
-        Our mental health facilities in Palm Springs are conveniently located serving patients throughout the Coachella Valley and surrounding areas, with experienced mental health counselors in Palm Springs, CA ready to help with mental health in palm springs.
+        Our mental health facilities in Palm Springs are conveniently located serving patients throughout the Coachella Valley and surrounding areas, with experienced mental health counselors in Palm Springs, CA ready to help with mental health.
       </p>
     </div>
 
