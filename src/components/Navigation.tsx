@@ -64,7 +64,7 @@ const Navigation = () => {
     'bg-[#572670]/95 backdrop-blur-md shadow-lg border-b border-white/20' :
     'bg-[#572670]/90 backdrop-blur-sm shadow-sm border-b border-white/10'}`
     }>
-      <div className="container mx-auto px-4">
+      <div className="max-w-[1500px] mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex items-center">
