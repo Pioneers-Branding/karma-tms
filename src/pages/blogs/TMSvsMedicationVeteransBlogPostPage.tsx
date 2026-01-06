@@ -658,10 +658,7 @@ const TMSvsMedicationVeteransBlogPostPage = () => {
                 </CardContent>
               </Card>
 
-              <img
-                src="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/dd7dd986-540f-4359-99af-39f398491cf0.webp"
-                alt="Veterans accessing mental health care and TMS therapy"
-                className="w-full  object-cover rounded-lg mb-6" />
+             
 
 
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Private TMS Options for Veterans</h3>
