@@ -77,7 +77,7 @@ const generateUniqueBlogPosts = (shuffledThumbnails: string[]): BlogPost[] => {
     title: 'Inside the VA & Veterans\' Mental Health: How TMS Fits Into Modern PTSD Treatment',
     excerpt: 'Educational guide explaining the relationship between VA programs and TMS therapy, and how veterans can access care through VA-approved or private options.',
     category: 'mental-health',
-    author: 'Dr. Apollo Thomas',
+    author: 'Dr. Keerthy Sunder',
     date: new Date(2024, 0, 20).toLocaleDateString('en-US', {
       year: 'numeric',
       month: 'long',
@@ -93,7 +93,7 @@ const generateUniqueBlogPosts = (shuffledThumbnails: string[]): BlogPost[] => {
     title: 'Understanding VA Disability Benefits for Depression, Anxiety & PTSD',
     excerpt: 'Complete guide to obtaining VA disability benefits for mental health conditions. Learn about eligibility, rating percentages, application process, and how much the VA pays.',
     category: 'mental-health',
-    author: 'Dr. Apollo Thomas',
+    author: 'Dr. Keerthy Sunder',
     date: new Date(2024, 0, 25).toLocaleDateString('en-US', {
       year: 'numeric',
       month: 'long',
@@ -109,7 +109,7 @@ const generateUniqueBlogPosts = (shuffledThumbnails: string[]): BlogPost[] => {
     title: 'TMS vs Medication: Why Veterans Are Turning to Magnetic Stimulation for Depression Relief',
     excerpt: 'Comprehensive comparison of TMS therapy and medication for veterans with depression. Discover why veterans are choosing magnetic stimulation over traditional antidepressants.',
     category: 'tms-therapy',
-    author: 'Dr. Apollo Thomas',
+    author: 'Dr. Keerthy Sunder',
     date: new Date(2024, 0, 28).toLocaleDateString('en-US', {
       year: 'numeric',
       month: 'long',
@@ -125,7 +125,7 @@ const generateUniqueBlogPosts = (shuffledThumbnails: string[]): BlogPost[] => {
     title: 'How to Help Veterans with PTSD: Therapy, TMS, and Beyond',
     excerpt: 'Compassionate guide for helping veterans with PTSD, including therapy options, TMS treatment, local resources, and support strategies for families.',
     category: 'mental-health',
-    author: 'Dr. Apollo Thomas',
+    author: 'Dr. Keerthy Sunder',
     date: new Date(2024, 1, 1).toLocaleDateString('en-US', {
       year: 'numeric',
       month: 'long',
