@@ -11,198 +11,198 @@ import FooterSection from '@/components/FooterSection';
 
 const MedicationManagementPage = () => {
   const [selectedPhase, setSelectedPhase] = useState(0);
-  const [trackedSideEffects, setTrackedSideEffects] = useState<{ [key: string]: boolean }>({});
+  const [trackedSideEffects, setTrackedSideEffects] = useState<{[key: string]: boolean;}>({});
 
   const philosophyPrinciples = [
-    {
-      principle: 'Patient-Centered Care',
-      description: 'Every decision prioritizes your individual needs, preferences, and quality of life',
-      icon: <Heart className="w-8 h-8" />,
-      details: 'We believe you are the expert on your own experience. Our role is to provide medical expertise while honoring your personal values, goals, and concerns about medication treatment.',
-      color: 'from-red-500 to-pink-500'
-    },
-    {
-      principle: 'Minimal Effective Dose',
-      description: 'Using the lowest dose that provides maximum benefit with minimal side effects',
-      icon: <Target className="w-8 h-8" />,
-      details: 'Rather than following one-size-fits-all protocols, we carefully titrate medications to find your optimal therapeutic window, avoiding both under-treatment and over-medication.',
-      color: 'from-[#572670] to-purple-600'
-    },
-    {
-      principle: 'Informed Collaboration',
-      description: 'Transparent communication about benefits, risks, and alternatives',
-      icon: <Users className="w-8 h-8" />,
-      details: 'We provide comprehensive information about your treatment options, including potential side effects, drug interactions, and alternative approaches, empowering you to make informed decisions.',
-      color: 'from-blue-500 to-purple-500'
-    },
-    {
-      principle: 'Holistic Integration',
-      description: 'Combining medication with therapy, lifestyle changes, and complementary treatments',
-      icon: <Brain className="w-8 h-8" />,
-      details: 'Medication is just one tool in your healing journey. We integrate pharmaceutical interventions with psychotherapy, nutrition, exercise, and other evidence-based approaches.',
-      color: 'from-green-500 to-blue-500'
-    }
-  ];
+  {
+    principle: 'Patient-Centered Care',
+    description: 'Every decision prioritizes your individual needs, preferences, and quality of life',
+    icon: <Heart className="w-8 h-8" />,
+    details: 'We believe you are the expert on your own experience. Our role is to provide medical expertise while honoring your personal values, goals, and concerns about medication treatment.',
+    color: 'from-red-500 to-pink-500'
+  },
+  {
+    principle: 'Minimal Effective Dose',
+    description: 'Using the lowest dose that provides maximum benefit with minimal side effects',
+    icon: <Target className="w-8 h-8" />,
+    details: 'Rather than following one-size-fits-all protocols, we carefully titrate medications to find your optimal therapeutic window, avoiding both under-treatment and over-medication.',
+    color: 'from-[#572670] to-purple-600'
+  },
+  {
+    principle: 'Informed Collaboration',
+    description: 'Transparent communication about benefits, risks, and alternatives',
+    icon: <Users className="w-8 h-8" />,
+    details: 'We provide comprehensive information about your treatment options, including potential side effects, drug interactions, and alternative approaches, empowering you to make informed decisions.',
+    color: 'from-blue-500 to-purple-500'
+  },
+  {
+    principle: 'Holistic Integration',
+    description: 'Combining medication with therapy, lifestyle changes, and complementary treatments',
+    icon: <Brain className="w-8 h-8" />,
+    details: 'Medication is just one tool in your healing journey. We integrate pharmaceutical interventions with psychotherapy, nutrition, exercise, and other evidence-based approaches.',
+    color: 'from-green-500 to-blue-500'
+  }];
+
 
   const taperPhases = [
-    {
-      phase: 'Pre-Taper Assessment',
-      duration: '2-4 weeks',
-      description: 'Comprehensive evaluation and preparation',
-      activities: [
-        'Complete medical and psychiatric evaluation',
-        'Review current medication regimen',
-        'Assess readiness for tapering',
-        'Establish support systems',
-        'Create detailed tapering plan'
-      ],
-      considerations: [
-        'Symptom stability (6+ months)',
-        'Life stressor assessment',
-        'Support system evaluation',
-        'Alternative coping strategies'
-      ],
-      successCriteria: 'Patient feels prepared and has comprehensive support plan'
-    },
-    {
-      phase: 'Initial Reduction',
-      duration: '4-8 weeks',
-      description: 'Begin gradual dose reduction with close monitoring',
-      activities: [
-        'Reduce dose by 10-25% from baseline',
-        'Daily symptom and side effect tracking',
-        'Weekly check-ins with medical team',
-        'Implement coping strategies',
-        'Adjust taper speed as needed'
-      ],
-      considerations: [
-        'Monitor for withdrawal symptoms',
-        'Track mood and anxiety levels',
-        'Assess sleep quality',
-        'Watch for cognitive changes'
-      ],
-      successCriteria: 'Minimal withdrawal symptoms and maintained stability'
-    },
-    {
-      phase: 'Progressive Tapering',
-      duration: '3-12 months',
-      description: 'Continue systematic dose reductions',
-      activities: [
-        'Reduce dose by 10-25% every 2-4 weeks',
-        'Regular monitoring appointments',
-        'Adjust tapering schedule based on response',
-        'Implement additional support as needed',
-        'Track functional improvements'
-      ],
-      considerations: [
-        'Slower tapering may be needed',
-        'Some doses may need to be held',
-        'Additional therapeutic support',
-        'Lifestyle modification support'
-      ],
-      successCriteria: 'Successful dose reductions without significant symptom return'
-    },
-    {
-      phase: 'Final Discontinuation',
-      duration: '4-8 weeks',
-      description: 'Complete medication withdrawal with intensive support',
-      activities: [
-        'Final dose reductions to zero',
-        'Intensive monitoring protocol',
-        'Emergency support plan activation',
-        'Alternative treatment optimization',
-        'Transition planning'
-      ],
-      considerations: [
-        'Highest risk period for symptoms',
-        'May require temporary dose increases',
-        'Enhanced therapeutic support',
-        'Family/support system involvement'
-      ],
-      successCriteria: 'Complete discontinuation with maintained wellness'
-    },
-    {
-      phase: 'Post-Discontinuation Monitoring',
-      duration: '3-6 months',
-      description: 'Long-term follow-up and relapse prevention',
-      activities: [
-        'Regular monitoring appointments',
-        'Symptom tracking and management',
-        'Relapse prevention planning',
-        'Alternative treatment optimization',
-        'Long-term wellness planning'
-      ],
-      considerations: [
-        'Risk of protracted withdrawal',
-        'Delayed symptom emergence',
-        'Need for ongoing support',
-        'Lifestyle sustainability'
-      ],
-      successCriteria: 'Sustained wellness without medication dependence'
-    }
-  ];
+  {
+    phase: 'Pre-Taper Assessment',
+    duration: '2-4 weeks',
+    description: 'Comprehensive evaluation and preparation',
+    activities: [
+    'Complete medical and psychiatric evaluation',
+    'Review current medication regimen',
+    'Assess readiness for tapering',
+    'Establish support systems',
+    'Create detailed tapering plan'],
+
+    considerations: [
+    'Symptom stability (6+ months)',
+    'Life stressor assessment',
+    'Support system evaluation',
+    'Alternative coping strategies'],
+
+    successCriteria: 'Patient feels prepared and has comprehensive support plan'
+  },
+  {
+    phase: 'Initial Reduction',
+    duration: '4-8 weeks',
+    description: 'Begin gradual dose reduction with close monitoring',
+    activities: [
+    'Reduce dose by 10-25% from baseline',
+    'Daily symptom and side effect tracking',
+    'Weekly check-ins with medical team',
+    'Implement coping strategies',
+    'Adjust taper speed as needed'],
+
+    considerations: [
+    'Monitor for withdrawal symptoms',
+    'Track mood and anxiety levels',
+    'Assess sleep quality',
+    'Watch for cognitive changes'],
+
+    successCriteria: 'Minimal withdrawal symptoms and maintained stability'
+  },
+  {
+    phase: 'Progressive Tapering',
+    duration: '3-12 months',
+    description: 'Continue systematic dose reductions',
+    activities: [
+    'Reduce dose by 10-25% every 2-4 weeks',
+    'Regular monitoring appointments',
+    'Adjust tapering schedule based on response',
+    'Implement additional support as needed',
+    'Track functional improvements'],
+
+    considerations: [
+    'Slower tapering may be needed',
+    'Some doses may need to be held',
+    'Additional therapeutic support',
+    'Lifestyle modification support'],
+
+    successCriteria: 'Successful dose reductions without significant symptom return'
+  },
+  {
+    phase: 'Final Discontinuation',
+    duration: '4-8 weeks',
+    description: 'Complete medication withdrawal with intensive support',
+    activities: [
+    'Final dose reductions to zero',
+    'Intensive monitoring protocol',
+    'Emergency support plan activation',
+    'Alternative treatment optimization',
+    'Transition planning'],
+
+    considerations: [
+    'Highest risk period for symptoms',
+    'May require temporary dose increases',
+    'Enhanced therapeutic support',
+    'Family/support system involvement'],
+
+    successCriteria: 'Complete discontinuation with maintained wellness'
+  },
+  {
+    phase: 'Post-Discontinuation Monitoring',
+    duration: '3-6 months',
+    description: 'Long-term follow-up and relapse prevention',
+    activities: [
+    'Regular monitoring appointments',
+    'Symptom tracking and management',
+    'Relapse prevention planning',
+    'Alternative treatment optimization',
+    'Long-term wellness planning'],
+
+    considerations: [
+    'Risk of protracted withdrawal',
+    'Delayed symptom emergence',
+    'Need for ongoing support',
+    'Lifestyle sustainability'],
+
+    successCriteria: 'Sustained wellness without medication dependence'
+  }];
+
 
   const sideEffectCategories = [
-    {
-      category: 'Physical Symptoms',
-      effects: [
-        'Nausea/Digestive issues',
-        'Headaches',
-        'Dizziness',
-        'Fatigue',
-        'Weight changes',
-        'Sleep disturbances',
-        'Sexual side effects',
-        'Muscle tension/pain'
-      ],
-      color: 'from-red-500 to-orange-500'
-    },
-    {
-      category: 'Cognitive Effects',
-      effects: [
-        'Memory problems',
-        'Concentration difficulties',
-        'Mental fog',
-        'Confusion',
-        'Slow thinking',
-        'Word-finding problems',
-        'Decision-making issues',
-        'Reduced creativity'
-      ],
-      color: 'from-blue-500 to-purple-500'
-    },
-    {
-      category: 'Emotional Changes',
-      effects: [
-        'Emotional numbing',
-        'Increased anxiety',
-        'Mood swings',
-        'Irritability',
-        'Apathy',
-        'Feeling disconnected',
-        'Reduced empathy',
-        'Emotional instability'
-      ],
-      color: 'from-[#572670] to-pink-500'
-    },
-    {
-      category: 'Social/Behavioral',
-      effects: [
-        'Social withdrawal',
-        'Relationship difficulties',
-        'Reduced motivation',
-        'Loss of interest',
-        'Personality changes',
-        'Impulsive behaviors',
-        'Work/school performance',
-        'Daily functioning issues'
-      ],
-      color: 'from-green-500 to-blue-500'
-    }
-  ];
+  {
+    category: 'Physical Symptoms',
+    effects: [
+    'Nausea/Digestive issues',
+    'Headaches',
+    'Dizziness',
+    'Fatigue',
+    'Weight changes',
+    'Sleep disturbances',
+    'Sexual side effects',
+    'Muscle tension/pain'],
+
+    color: 'from-red-500 to-orange-500'
+  },
+  {
+    category: 'Cognitive Effects',
+    effects: [
+    'Memory problems',
+    'Concentration difficulties',
+    'Mental fog',
+    'Confusion',
+    'Slow thinking',
+    'Word-finding problems',
+    'Decision-making issues',
+    'Reduced creativity'],
+
+    color: 'from-blue-500 to-purple-500'
+  },
+  {
+    category: 'Emotional Changes',
+    effects: [
+    'Emotional numbing',
+    'Increased anxiety',
+    'Mood swings',
+    'Irritability',
+    'Apathy',
+    'Feeling disconnected',
+    'Reduced empathy',
+    'Emotional instability'],
+
+    color: 'from-[#572670] to-pink-500'
+  },
+  {
+    category: 'Social/Behavioral',
+    effects: [
+    'Social withdrawal',
+    'Relationship difficulties',
+    'Reduced motivation',
+    'Loss of interest',
+    'Personality changes',
+    'Impulsive behaviors',
+    'Work/school performance',
+    'Daily functioning issues'],
+
+    color: 'from-green-500 to-blue-500'
+  }];
+
 
   const handleSideEffectCheck = (effect: string, checked: boolean) => {
-    setTrackedSideEffects(prev => ({
+    setTrackedSideEffects((prev) => ({
       ...prev,
       [effect]: checked
     }));
@@ -258,8 +258,8 @@ const MedicationManagementPage = () => {
           </div>
 
           <div className="grid lg:grid-cols-2 gap-8 mb-16">
-            {philosophyPrinciples.map((item, index) => (
-              <Card key={index} className="group hover:shadow-2xl transition-all duration-300 border-0 bg-gradient-to-br from-white to-purple-50">
+            {philosophyPrinciples.map((item, index) =>
+            <Card key={index} className="group hover:shadow-2xl transition-all duration-300 border-0 bg-gradient-to-br from-white to-purple-50">
                 <CardHeader className="pb-4">
                   <div className="flex items-start space-x-4">
                     <div className={`w-16 h-16 bg-gradient-to-r ${item.color} rounded-full flex items-center justify-center text-white group-hover:scale-110 transition-transform duration-300`}>
@@ -281,7 +281,7 @@ const MedicationManagementPage = () => {
                   </p>
                 </CardContent>
               </Card>
-            ))}
+            )}
           </div>
 
           <div className="bg-gradient-to-r from-[#572670]/10 to-purple-600/10 rounded-2xl p-8">
@@ -331,25 +331,25 @@ const MedicationManagementPage = () => {
           </div>
 
           <div className="space-y-6">
-            {taperPhases.map((phase, index) => (
-              <Card 
-                key={index} 
-                className={`cursor-pointer transition-all duration-300 border-0 ${
-                  selectedPhase === index 
-                    ? 'bg-gradient-to-br from-[#572670]/10 to-purple-600/10 shadow-xl scale-105' 
-                    : 'bg-gradient-to-br from-white to-purple-50 shadow-md hover:shadow-lg'
-                }`}
-                onClick={() => setSelectedPhase(index)}
-              >
+            {taperPhases.map((phase, index) =>
+            <Card
+              key={index}
+              className={`cursor-pointer transition-all duration-300 border-0 ${
+              selectedPhase === index ?
+              'bg-gradient-to-br from-[#572670]/10 to-purple-600/10 shadow-xl scale-105' :
+              'bg-gradient-to-br from-white to-purple-50 shadow-md hover:shadow-lg'}`
+              }
+              onClick={() => setSelectedPhase(index)}>
+
                 <CardContent className="p-8">
                   <div className="grid lg:grid-cols-4 gap-8 items-start">
                     <div className="lg:col-span-1">
                       <div className="flex items-center mb-4">
                         <div className={`w-10 h-10 rounded-full flex items-center justify-center text-white font-bold mr-4 transition-all duration-300 ${
-                          selectedPhase === index 
-                            ? 'bg-gradient-to-r from-[#572670] to-purple-600 scale-110' 
-                            : 'bg-gradient-to-r from-gray-500 to-gray-600'
-                        }`}>
+                      selectedPhase === index ?
+                      'bg-gradient-to-r from-[#572670] to-purple-600 scale-110' :
+                      'bg-gradient-to-r from-gray-500 to-gray-600'}`
+                      }>
                           {index + 1}
                         </div>
                         <div>
@@ -365,27 +365,27 @@ const MedicationManagementPage = () => {
                     <div className="lg:col-span-1">
                       <h4 className="font-bold text-gray-900 mb-3">Key Activities:</h4>
                       <ul className="space-y-2">
-                        {phase.activities.slice(0, 3).map((activity, activityIndex) => (
-                          <li key={activityIndex} className="flex items-start space-x-2 text-sm">
+                        {phase.activities.slice(0, 3).map((activity, activityIndex) =>
+                      <li key={activityIndex} className="flex items-start space-x-2 text-sm">
                             <div className="w-1.5 h-1.5 bg-[#572670] rounded-full mt-2 flex-shrink-0"></div>
                             <span className="text-gray-700">{activity}</span>
                           </li>
-                        ))}
-                        {phase.activities.length > 3 && (
-                          <li className="text-xs text-gray-500">+{phase.activities.length - 3} more activities</li>
-                        )}
+                      )}
+                        {phase.activities.length > 3 &&
+                      <li className="text-xs text-gray-500">+{phase.activities.length - 3} more activities</li>
+                      }
                       </ul>
                     </div>
                     
                     <div className="lg:col-span-1">
                       <h4 className="font-bold text-gray-900 mb-3">Considerations:</h4>
                       <ul className="space-y-2">
-                        {phase.considerations.map((consideration, considerationIndex) => (
-                          <li key={considerationIndex} className="flex items-start space-x-2 text-sm">
+                        {phase.considerations.map((consideration, considerationIndex) =>
+                      <li key={considerationIndex} className="flex items-start space-x-2 text-sm">
                             <AlertTriangle className="w-3 h-3 text-yellow-500 mt-1 flex-shrink-0" />
                             <span className="text-gray-700">{consideration}</span>
                           </li>
-                        ))}
+                      )}
                       </ul>
                     </div>
                     
@@ -401,7 +401,7 @@ const MedicationManagementPage = () => {
                   </div>
                 </CardContent>
               </Card>
-            ))}
+            )}
           </div>
 
           <div className="mt-12">
@@ -463,8 +463,8 @@ const MedicationManagementPage = () => {
           </div>
 
           <div className="grid md:grid-cols-2 gap-8">
-            {sideEffectCategories.map((category, categoryIndex) => (
-              <Card key={categoryIndex} className="bg-gradient-to-br from-white to-purple-50 border-0 shadow-lg">
+            {sideEffectCategories.map((category, categoryIndex) =>
+            <Card key={categoryIndex} className="bg-gradient-to-br from-white to-purple-50 border-0 shadow-lg">
                 <CardHeader className="pb-4">
                   <CardTitle className="text-xl font-bold text-gray-900 flex items-center">
                     <div className={`w-8 h-8 bg-gradient-to-r ${category.color} rounded-full flex items-center justify-center text-white text-sm font-bold mr-3`}>
@@ -474,25 +474,25 @@ const MedicationManagementPage = () => {
                   </CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-4">
-                  {category.effects.map((effect, effectIndex) => (
-                    <div key={effectIndex} className="flex items-start space-x-3">
-                      <Checkbox 
-                        id={`${categoryIndex}-${effectIndex}`}
-                        checked={trackedSideEffects[effect] || false}
-                        onCheckedChange={(checked) => handleSideEffectCheck(effect, checked as boolean)}
-                        className="mt-0.5 border-[#572670] data-[state=checked]:bg-[#572670] data-[state=checked]:border-[#572670]"
-                      />
-                      <label 
-                        htmlFor={`${categoryIndex}-${effectIndex}`}
-                        className="text-sm text-gray-700 leading-relaxed cursor-pointer"
-                      >
+                  {category.effects.map((effect, effectIndex) =>
+                <div key={effectIndex} className="flex items-start space-x-3">
+                      <Checkbox
+                    id={`${categoryIndex}-${effectIndex}`}
+                    checked={trackedSideEffects[effect] || false}
+                    onCheckedChange={(checked) => handleSideEffectCheck(effect, checked as boolean)}
+                    className="mt-0.5 border-[#572670] data-[state=checked]:bg-[#572670] data-[state=checked]:border-[#572670]" />
+
+                      <label
+                    htmlFor={`${categoryIndex}-${effectIndex}`}
+                    className="text-sm text-gray-700 leading-relaxed cursor-pointer">
+
                         {effect}
                       </label>
                     </div>
-                  ))}
+                )}
                 </CardContent>
               </Card>
-            ))}
+            )}
           </div>
 
           {/* Tracking Summary */}
@@ -515,48 +515,48 @@ const MedicationManagementPage = () => {
                     <span>Moderate</span>
                     <span>Severe</span>
                   </div>
-                  <Progress 
-                    value={(totalTracked / totalEffects) * 100} 
+                  <Progress
+                    value={totalTracked / totalEffects * 100}
                     className={`h-4 ${
-                      totalTracked === 0 ? 'text-green-500' :
-                      totalTracked <= totalEffects * 0.25 ? 'text-yellow-500' :
-                      totalTracked <= totalEffects * 0.5 ? 'text-orange-500' : 'text-red-500'
-                    }`}
-                  />
+                    totalTracked === 0 ? 'text-green-500' :
+                    totalTracked <= totalEffects * 0.25 ? 'text-yellow-500' :
+                    totalTracked <= totalEffects * 0.5 ? 'text-orange-500' : 'text-red-500'}`
+                    } />
+
                 </div>
                 
                 <div className="space-y-4">
-                  {totalTracked === 0 && (
-                    <div className="bg-green-100 border border-green-300 rounded-lg p-4">
+                  {totalTracked === 0 &&
+                  <div className="bg-green-100 border border-green-300 rounded-lg p-4">
                       <p className="text-green-800 font-semibold text-center">
                         ✅ Excellent! No significant side effects reported.
                       </p>
                     </div>
-                  )}
+                  }
                   
-                  {totalTracked > 0 && totalTracked <= totalEffects * 0.25 && (
-                    <div className="bg-yellow-100 border border-yellow-300 rounded-lg p-4">
+                  {totalTracked > 0 && totalTracked <= totalEffects * 0.25 &&
+                  <div className="bg-yellow-100 border border-yellow-300 rounded-lg p-4">
                       <p className="text-yellow-800 font-semibold text-center">
                         ⚠️ Mild side effects - Let's discuss optimization strategies.
                       </p>
                     </div>
-                  )}
+                  }
                   
-                  {totalTracked > totalEffects * 0.25 && totalTracked <= totalEffects * 0.5 && (
-                    <div className="bg-orange-100 border border-orange-300 rounded-lg p-4">
+                  {totalTracked > totalEffects * 0.25 && totalTracked <= totalEffects * 0.5 &&
+                  <div className="bg-orange-100 border border-orange-300 rounded-lg p-4">
                       <p className="text-orange-800 font-semibold text-center">
                         ⚠️ Moderate side effect burden - Medication review recommended.
                       </p>
                     </div>
-                  )}
+                  }
                   
-                  {totalTracked > totalEffects * 0.5 && (
-                    <div className="bg-red-100 border border-red-300 rounded-lg p-4">
+                  {totalTracked > totalEffects * 0.5 &&
+                  <div className="bg-red-100 border border-red-300 rounded-lg p-4">
                       <p className="text-red-800 font-semibold text-center">
                         🚨 Significant side effects - Urgent medication review needed.
                       </p>
                     </div>
-                  )}
+                  }
                 </div>
 
                 <div className="text-center mt-8">
@@ -606,8 +606,8 @@ const MedicationManagementPage = () => {
       </section>
 
       <FooterSection />
-    </div>
-  );
+    </div>);
+
 };
 
 export default MedicationManagementPage;

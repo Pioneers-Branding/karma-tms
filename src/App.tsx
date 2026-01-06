@@ -30,6 +30,9 @@ import BookPage from "./pages/BookPage";
 import ContactPage from "./pages/ContactPage";
 import FAQsPage from "./pages/FAQsPage";
 import HIPAAPage from "./pages/HIPAAPage";
+import RefundPolicyPage from "./pages/RefundPolicyPage";
+import TermsPage from "./pages/TermsPage";
+import PrivacyPage from "./pages/PrivacyPage";
 
 const queryClient = new QueryClient();
 
@@ -78,6 +81,9 @@ const App = () =>
           
           {/* Legal Routes */}
           <Route path="/hipaa" element={<HIPAAPage />} />
+          <Route path="/refund-policy" element={<RefundPolicyPage />} />
+          <Route path="/terms" element={<TermsPage />} />
+          <Route path="/privacy" element={<PrivacyPage />} />
           
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />

@@ -12,157 +12,157 @@ const NeurofeedbackPage = () => {
   const [selectedMechanism, setSelectedMechanism] = useState(0);
 
   const mechanismSteps = [
-    {
-      title: 'Real-Time Monitoring',
-      description: 'EEG sensors continuously track your brain wave activity',
-      icon: <Activity className="w-8 h-8" />,
-      details: 'High-precision sensors placed on your scalp detect electrical activity from neurons in real-time, measuring brain waves across different frequency bands.',
-      visual: '📡'
-    },
-    {
-      title: 'Pattern Recognition',
-      description: 'Advanced algorithms identify optimal and suboptimal brain states',
-      icon: <Brain className="w-8 h-8" />,
-      details: 'Our software compares your current brain activity to healthy, optimal patterns, identifying when your brain is in states associated with focus, calm, or peak performance.',
-      visual: '🧠'
-    },
-    {
-      title: 'Instant Feedback',
-      description: 'Visual and audio cues guide your brain toward healthier patterns',
-      icon: <Zap className="w-8 h-8" />,
-      details: 'When your brain produces desired patterns, you receive positive feedback through games, music, or visual displays, reinforcing these healthy neural pathways.',
-      visual: '⚡'
-    },
-    {
-      title: 'Neural Plasticity',
-      description: 'Repeated training creates lasting changes in brain function',
-      icon: <TrendingUp className="w-8 h-8" />,
-      details: 'Through consistent practice, your brain learns to maintain optimal states more easily, creating permanent positive changes in neural networks and function.',
-      visual: '🎯'
-    }
-  ];
+  {
+    title: 'Real-Time Monitoring',
+    description: 'EEG sensors continuously track your brain wave activity',
+    icon: <Activity className="w-8 h-8" />,
+    details: 'High-precision sensors placed on your scalp detect electrical activity from neurons in real-time, measuring brain waves across different frequency bands.',
+    visual: '📡'
+  },
+  {
+    title: 'Pattern Recognition',
+    description: 'Advanced algorithms identify optimal and suboptimal brain states',
+    icon: <Brain className="w-8 h-8" />,
+    details: 'Our software compares your current brain activity to healthy, optimal patterns, identifying when your brain is in states associated with focus, calm, or peak performance.',
+    visual: '🧠'
+  },
+  {
+    title: 'Instant Feedback',
+    description: 'Visual and audio cues guide your brain toward healthier patterns',
+    icon: <Zap className="w-8 h-8" />,
+    details: 'When your brain produces desired patterns, you receive positive feedback through games, music, or visual displays, reinforcing these healthy neural pathways.',
+    visual: '⚡'
+  },
+  {
+    title: 'Neural Plasticity',
+    description: 'Repeated training creates lasting changes in brain function',
+    icon: <TrendingUp className="w-8 h-8" />,
+    details: 'Through consistent practice, your brain learns to maintain optimal states more easily, creating permanent positive changes in neural networks and function.',
+    visual: '🎯'
+  }];
+
 
   const benefits = [
-    {
-      category: 'Cognitive Enhancement',
-      items: [
-        'Improved focus and attention span',
-        'Enhanced memory and learning',
-        'Better executive function',
-        'Increased mental clarity',
-        'Faster information processing'
-      ],
-      icon: <Brain className="w-8 h-8" />,
-      color: 'from-blue-500 to-purple-500'
-    },
-    {
-      category: 'Emotional Regulation',
-      items: [
-        'Reduced anxiety and stress',
-        'Better mood stability',
-        'Improved emotional control',
-        'Enhanced resilience',
-        'Greater self-awareness'
-      ],
-      icon: <Shield className="w-8 h-8" />,
-      color: 'from-[#572670] to-purple-600'
-    },
-    {
-      category: 'Performance Optimization',
-      items: [
-        'Enhanced creativity',
-        'Improved decision-making',
-        'Better problem-solving skills',
-        'Increased peak flow states',
-        'Superior mental endurance'
-      ],
-      icon: <Target className="w-8 h-8" />,
-      color: 'from-green-500 to-blue-500'
-    },
-    {
-      category: 'Sleep & Recovery',
-      items: [
-        'Improved sleep quality',
-        'Faster sleep onset',
-        'Deeper restorative sleep',
-        'Better recovery from stress',
-        'Enhanced daytime alertness'
-      ],
-      icon: <Clock className="w-8 h-8" />,
-      color: 'from-purple-500 to-pink-500'
-    }
-  ];
+  {
+    category: 'Cognitive Enhancement',
+    items: [
+    'Improved focus and attention span',
+    'Enhanced memory and learning',
+    'Better executive function',
+    'Increased mental clarity',
+    'Faster information processing'],
+
+    icon: <Brain className="w-8 h-8" />,
+    color: 'from-blue-500 to-purple-500'
+  },
+  {
+    category: 'Emotional Regulation',
+    items: [
+    'Reduced anxiety and stress',
+    'Better mood stability',
+    'Improved emotional control',
+    'Enhanced resilience',
+    'Greater self-awareness'],
+
+    icon: <Shield className="w-8 h-8" />,
+    color: 'from-[#572670] to-purple-600'
+  },
+  {
+    category: 'Performance Optimization',
+    items: [
+    'Enhanced creativity',
+    'Improved decision-making',
+    'Better problem-solving skills',
+    'Increased peak flow states',
+    'Superior mental endurance'],
+
+    icon: <Target className="w-8 h-8" />,
+    color: 'from-green-500 to-blue-500'
+  },
+  {
+    category: 'Sleep & Recovery',
+    items: [
+    'Improved sleep quality',
+    'Faster sleep onset',
+    'Deeper restorative sleep',
+    'Better recovery from stress',
+    'Enhanced daytime alertness'],
+
+    icon: <Clock className="w-8 h-8" />,
+    color: 'from-purple-500 to-pink-500'
+  }];
+
 
   const sessionTimeline = [
-    {
-      phase: 'Initial Assessment',
-      duration: '60 minutes',
-      sessions: 1,
-      description: 'Comprehensive brain mapping and baseline establishment',
-      activities: [
-        'Complete qEEG brain mapping',
-        'Cognitive and behavioral assessment',
-        'Treatment goal setting',
-        'Protocol customization'
-      ],
-      outcomes: 'Understanding of current brain patterns and optimal training targets'
-    },
-    {
-      phase: 'Foundation Training',
-      duration: '45 minutes',
-      sessions: 10,
-      description: 'Basic neurofeedback skills and protocol familiarization',
-      activities: [
-        'Learn neurofeedback basics',
-        'Simple attention training',
-        'Relaxation protocols',
-        'Progress monitoring'
-      ],
-      outcomes: 'Initial brain training skills and early improvements in target areas'
-    },
-    {
-      phase: 'Intensive Training',
-      duration: '45 minutes',
-      sessions: 20,
-      description: 'Advanced protocols targeting specific goals and conditions',
-      activities: [
-        'Advanced cognitive training',
-        'Emotion regulation protocols',
-        'Peak performance training',
-        'Customized interventions'
-      ],
-      outcomes: 'Significant improvements in symptoms and enhanced brain function'
-    },
-    {
-      phase: 'Integration',
-      duration: '45 minutes',
-      sessions: 10,
-      description: 'Skill consolidation and real-world application',
-      activities: [
-        'Advanced skill refinement',
-        'Real-world application training',
-        'Maintenance strategies',
-        'Long-term planning'
-      ],
-      outcomes: 'Stable improvements and self-regulation skills for ongoing benefits'
-    },
-    {
-      phase: 'Maintenance',
-      duration: '45 minutes',
-      sessions: '2-4 monthly',
-      description: 'Ongoing support and skill reinforcement',
-      activities: [
-        'Progress monitoring',
-        'Skill refreshers',
-        'Protocol adjustments',
-        'Continued optimization'
-      ],
-      outcomes: 'Long-term maintenance of gains and continued improvement'
-    }
-  ];
+  {
+    phase: 'Initial Assessment',
+    duration: '60 minutes',
+    sessions: 1,
+    description: 'Comprehensive brain mapping and baseline establishment',
+    activities: [
+    'Complete qEEG brain mapping',
+    'Cognitive and behavioral assessment',
+    'Treatment goal setting',
+    'Protocol customization'],
 
-  const totalSessions = sessionTimeline.slice(0, 4).reduce((sum, phase) => 
-    sum + (typeof phase.sessions === 'number' ? phase.sessions : 0), 0
+    outcomes: 'Understanding of current brain patterns and optimal training targets'
+  },
+  {
+    phase: 'Foundation Training',
+    duration: '45 minutes',
+    sessions: 10,
+    description: 'Basic neurofeedback skills and protocol familiarization',
+    activities: [
+    'Learn neurofeedback basics',
+    'Simple attention training',
+    'Relaxation protocols',
+    'Progress monitoring'],
+
+    outcomes: 'Initial brain training skills and early improvements in target areas'
+  },
+  {
+    phase: 'Intensive Training',
+    duration: '45 minutes',
+    sessions: 20,
+    description: 'Advanced protocols targeting specific goals and conditions',
+    activities: [
+    'Advanced cognitive training',
+    'Emotion regulation protocols',
+    'Peak performance training',
+    'Customized interventions'],
+
+    outcomes: 'Significant improvements in symptoms and enhanced brain function'
+  },
+  {
+    phase: 'Integration',
+    duration: '45 minutes',
+    sessions: 10,
+    description: 'Skill consolidation and real-world application',
+    activities: [
+    'Advanced skill refinement',
+    'Real-world application training',
+    'Maintenance strategies',
+    'Long-term planning'],
+
+    outcomes: 'Stable improvements and self-regulation skills for ongoing benefits'
+  },
+  {
+    phase: 'Maintenance',
+    duration: '45 minutes',
+    sessions: '2-4 monthly',
+    description: 'Ongoing support and skill reinforcement',
+    activities: [
+    'Progress monitoring',
+    'Skill refreshers',
+    'Protocol adjustments',
+    'Continued optimization'],
+
+    outcomes: 'Long-term maintenance of gains and continued improvement'
+  }];
+
+
+  const totalSessions = sessionTimeline.slice(0, 4).reduce((sum, phase) =>
+  sum + (typeof phase.sessions === 'number' ? phase.sessions : 0), 0
   );
 
   return (
@@ -213,23 +213,23 @@ const NeurofeedbackPage = () => {
 
           <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
             <div className="space-y-6">
-              {mechanismSteps.map((step, index) => (
-                <Card 
-                  key={index} 
-                  className={`cursor-pointer transition-all duration-300 border-0 ${
-                    selectedMechanism === index 
-                      ? 'bg-gradient-to-br from-[#572670]/10 to-purple-600/10 shadow-xl scale-105' 
-                      : 'bg-gradient-to-br from-white to-purple-50 shadow-md hover:shadow-lg'
-                  }`}
-                  onClick={() => setSelectedMechanism(index)}
-                >
+              {mechanismSteps.map((step, index) =>
+              <Card
+                key={index}
+                className={`cursor-pointer transition-all duration-300 border-0 ${
+                selectedMechanism === index ?
+                'bg-gradient-to-br from-[#572670]/10 to-purple-600/10 shadow-xl scale-105' :
+                'bg-gradient-to-br from-white to-purple-50 shadow-md hover:shadow-lg'}`
+                }
+                onClick={() => setSelectedMechanism(index)}>
+
                   <CardHeader className="pb-2">
                     <div className="flex items-center space-x-4">
                       <div className={`w-12 h-12 rounded-full flex items-center justify-center text-white transition-all duration-300 ${
-                        selectedMechanism === index 
-                          ? 'bg-gradient-to-r from-[#572670] to-purple-600 scale-110' 
-                          : 'bg-gradient-to-r from-gray-500 to-gray-600'
-                      }`}>
+                    selectedMechanism === index ?
+                    'bg-gradient-to-r from-[#572670] to-purple-600 scale-110' :
+                    'bg-gradient-to-r from-gray-500 to-gray-600'}`
+                    }>
                         {step.icon}
                       </div>
                       <div>
@@ -243,7 +243,7 @@ const NeurofeedbackPage = () => {
                     </div>
                   </CardHeader>
                 </Card>
-              ))}
+              )}
             </div>
             
             <div className="text-center">
@@ -298,8 +298,8 @@ const NeurofeedbackPage = () => {
           </div>
 
           <div className="grid lg:grid-cols-2 gap-8">
-            {benefits.map((category, index) => (
-              <Card key={index} className="group hover:shadow-2xl transition-all duration-300 border-0 bg-gradient-to-br from-white to-purple-50">
+            {benefits.map((category, index) =>
+            <Card key={index} className="group hover:shadow-2xl transition-all duration-300 border-0 bg-gradient-to-br from-white to-purple-50">
                 <CardHeader className="pb-4">
                   <div className="flex items-center space-x-4">
                     <div className={`w-16 h-16 bg-gradient-to-r ${category.color} rounded-full flex items-center justify-center text-white group-hover:scale-110 transition-transform duration-300`}>
@@ -312,16 +312,16 @@ const NeurofeedbackPage = () => {
                 </CardHeader>
                 <CardContent>
                   <ul className="space-y-3">
-                    {category.items.map((item, itemIndex) => (
-                      <li key={itemIndex} className="flex items-start space-x-3">
+                    {category.items.map((item, itemIndex) =>
+                  <li key={itemIndex} className="flex items-start space-x-3">
                         <CheckCircle className="w-5 h-5 text-[#572670] mt-0.5 flex-shrink-0" />
                         <span className="text-gray-700">{item}</span>
                       </li>
-                    ))}
+                  )}
                   </ul>
                 </CardContent>
               </Card>
-            ))}
+            )}
           </div>
 
           <div className="text-center mt-12">
@@ -373,8 +373,8 @@ const NeurofeedbackPage = () => {
           </div>
 
           <div className="space-y-8">
-            {sessionTimeline.map((phase, index) => (
-              <Card key={index} className="bg-gradient-to-br from-white to-purple-50 border-0 shadow-lg">
+            {sessionTimeline.map((phase, index) =>
+            <Card key={index} className="bg-gradient-to-br from-white to-purple-50 border-0 shadow-lg">
                 <CardContent className="p-8">
                   <div className="grid lg:grid-cols-3 gap-8 items-center">
                     <div>
@@ -404,18 +404,18 @@ const NeurofeedbackPage = () => {
                     <div className="lg:col-span-2">
                       <h4 className="font-bold text-gray-900 mb-4">Session Activities:</h4>
                       <div className="grid md:grid-cols-2 gap-4">
-                        {phase.activities.map((activity, activityIndex) => (
-                          <div key={activityIndex} className="flex items-center space-x-3">
+                        {phase.activities.map((activity, activityIndex) =>
+                      <div key={activityIndex} className="flex items-center space-x-3">
                             <div className="w-2 h-2 bg-[#572670] rounded-full"></div>
                             <span className="text-gray-700">{activity}</span>
                           </div>
-                        ))}
+                      )}
                       </div>
                     </div>
                   </div>
                 </CardContent>
               </Card>
-            ))}
+            )}
           </div>
 
           {/* Progress Summary */}
@@ -480,8 +480,8 @@ const NeurofeedbackPage = () => {
       </section>
 
       <FooterSection />
-    </div>
-  );
+    </div>);
+
 };
 
 export default NeurofeedbackPage;

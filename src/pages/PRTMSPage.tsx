@@ -13,142 +13,142 @@ const PRTMSPage = () => {
   const [checkedItems, setCheckedItems] = useState<string[]>([]);
 
   const algorithmSteps = [
-    {
-      step: 1,
-      title: 'Brain Mapping Analysis',
-      description: 'Advanced qEEG analysis identifies your unique brain patterns and dysfunctional networks',
-      icon: <Brain className="w-6 h-6" />,
-      color: 'from-blue-600 to-purple-600'
-    },
-    {
-      step: 2,
-      title: 'Symptom Profiling',
-      description: 'Comprehensive assessment of depression severity, anxiety levels, and cognitive function',
-      icon: <BarChart3 className="w-6 h-6" />,
-      color: 'from-purple-600 to-pink-600'
-    },
-    {
-      step: 3,
-      title: 'Treatment History',
-      description: 'Analysis of previous medication responses and therapy outcomes to avoid ineffective approaches',
-      icon: <FileText className="w-6 h-6" />,
-      color: 'from-pink-600 to-red-600'
-    },
-    {
-      step: 4,
-      title: 'AI Algorithm Processing',
-      description: 'Machine learning analyzes 50+ variables to determine optimal stimulation parameters',
-      icon: <Activity className="w-6 h-6" />,
-      color: 'from-red-600 to-orange-600'
-    },
-    {
-      step: 5,
-      title: 'Personalized Protocol',
-      description: 'Custom treatment plan with specific frequency, intensity, and target locations',
-      icon: <Target className="w-6 h-6" />,
-      color: 'from-orange-600 to-yellow-600'
-    },
-    {
-      step: 6,
-      title: 'Continuous Optimization',
-      description: 'Real-time adjustments based on treatment response and symptom improvement',
-      icon: <Zap className="w-6 h-6" />,
-      color: 'from-yellow-600 to-green-600'
-    }
-  ];
+  {
+    step: 1,
+    title: 'Brain Mapping Analysis',
+    description: 'Advanced qEEG analysis identifies your unique brain patterns and dysfunctional networks',
+    icon: <Brain className="w-6 h-6" />,
+    color: 'from-blue-600 to-purple-600'
+  },
+  {
+    step: 2,
+    title: 'Symptom Profiling',
+    description: 'Comprehensive assessment of depression severity, anxiety levels, and cognitive function',
+    icon: <BarChart3 className="w-6 h-6" />,
+    color: 'from-purple-600 to-pink-600'
+  },
+  {
+    step: 3,
+    title: 'Treatment History',
+    description: 'Analysis of previous medication responses and therapy outcomes to avoid ineffective approaches',
+    icon: <FileText className="w-6 h-6" />,
+    color: 'from-pink-600 to-red-600'
+  },
+  {
+    step: 4,
+    title: 'AI Algorithm Processing',
+    description: 'Machine learning analyzes 50+ variables to determine optimal stimulation parameters',
+    icon: <Activity className="w-6 h-6" />,
+    color: 'from-red-600 to-orange-600'
+  },
+  {
+    step: 5,
+    title: 'Personalized Protocol',
+    description: 'Custom treatment plan with specific frequency, intensity, and target locations',
+    icon: <Target className="w-6 h-6" />,
+    color: 'from-orange-600 to-yellow-600'
+  },
+  {
+    step: 6,
+    title: 'Continuous Optimization',
+    description: 'Real-time adjustments based on treatment response and symptom improvement',
+    icon: <Zap className="w-6 h-6" />,
+    color: 'from-yellow-600 to-green-600'
+  }];
+
 
   const caseStudies = [
-    {
-      id: 1,
-      title: 'Treatment-Resistant Depression Success',
-      patient: 'Sarah, 34',
-      condition: 'Major Depression + Anxiety',
-      background: 'Failed 6 antidepressants over 8 years, severe anxiety, unable to work',
-      treatment: 'Personalized bilateral rTMS protocol based on qEEG findings',
-      outcome: '85% symptom reduction after 4 weeks, returned to work, sustained improvement at 12 months',
-      image: 'https://images.unsplash.com/photo-1559757148-5c350d0d3c56?auto=format&fit=crop&w=800&q=80',
-      metrics: {
-        'PHQ-9 Score': '23 → 4',
-        'GAD-7 Score': '18 → 3',
-        'Treatment Duration': '6 weeks'
-      }
-    },
-    {
-      id: 2,
-      title: 'Bipolar Depression Breakthrough',
-      patient: 'Michael, 42',
-      condition: 'Bipolar II Disorder',
-      background: 'Chronic depressive episodes, medication intolerance, family history',
-      treatment: 'Low-frequency right-sided stimulation with mood stabilizer continuation',
-      outcome: '70% improvement in depressive symptoms, no manic episodes, improved quality of life',
-      image: 'https://images.unsplash.com/photo-1582750433449-648ed127bb54?auto=format&fit=crop&w=800&q=80',
-      metrics: {
-        'MADRS Score': '28 → 8',
-        'Quality of Life': '40% → 85%',
-        'Remission Duration': '18+ months'
-      }
-    },
-    {
-      id: 3,
-      title: 'Postpartum Depression Recovery',
-      patient: 'Lisa, 29',
-      condition: 'Postpartum Depression',
-      background: 'Severe depression following childbirth, breastfeeding complications with medications',
-      treatment: 'Accelerated rTMS protocol, medication-free approach',
-      outcome: 'Complete remission in 3 weeks, successful bonding with baby, medication-free',
-      image: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=800&q=80',
-      metrics: {
-        'EPDS Score': '22 → 2',
-        'Bonding Score': '30% → 95%',
-        'Treatment Time': '3 weeks'
-      }
+  {
+    id: 1,
+    title: 'Treatment-Resistant Depression Success',
+    patient: 'Sarah, 34',
+    condition: 'Major Depression + Anxiety',
+    background: 'Failed 6 antidepressants over 8 years, severe anxiety, unable to work',
+    treatment: 'Personalized bilateral rTMS protocol based on qEEG findings',
+    outcome: '85% symptom reduction after 4 weeks, returned to work, sustained improvement at 12 months',
+    image: 'https://images.unsplash.com/photo-1559757148-5c350d0d3c56?auto=format&fit=crop&w=800&q=80',
+    metrics: {
+      'PHQ-9 Score': '23 → 4',
+      'GAD-7 Score': '18 → 3',
+      'Treatment Duration': '6 weeks'
     }
-  ];
+  },
+  {
+    id: 2,
+    title: 'Bipolar Depression Breakthrough',
+    patient: 'Michael, 42',
+    condition: 'Bipolar II Disorder',
+    background: 'Chronic depressive episodes, medication intolerance, family history',
+    treatment: 'Low-frequency right-sided stimulation with mood stabilizer continuation',
+    outcome: '70% improvement in depressive symptoms, no manic episodes, improved quality of life',
+    image: 'https://images.unsplash.com/photo-1582750433449-648ed127bb54?auto=format&fit=crop&w=800&q=80',
+    metrics: {
+      'MADRS Score': '28 → 8',
+      'Quality of Life': '40% → 85%',
+      'Remission Duration': '18+ months'
+    }
+  },
+  {
+    id: 3,
+    title: 'Postpartum Depression Recovery',
+    patient: 'Lisa, 29',
+    condition: 'Postpartum Depression',
+    background: 'Severe depression following childbirth, breastfeeding complications with medications',
+    treatment: 'Accelerated rTMS protocol, medication-free approach',
+    outcome: 'Complete remission in 3 weeks, successful bonding with baby, medication-free',
+    image: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=800&q=80',
+    metrics: {
+      'EPDS Score': '22 → 2',
+      'Bonding Score': '30% → 95%',
+      'Treatment Time': '3 weeks'
+    }
+  }];
+
 
   const eligibilityChecklist = [
-    {
-      category: 'Clinical Requirements',
-      items: [
-        'Diagnosed with Major Depressive Disorder',
-        'Failed to respond to 2+ antidepressant medications',
-        'Currently experiencing moderate to severe depression',
-        'Stable on current medications (if any) for 4+ weeks'
-      ]
-    },
-    {
-      category: 'Medical Clearance',
-      items: [
-        'No metallic implants in head/neck region',
-        'No history of seizures or epilepsy',
-        'No cochlear implants or hearing aids',
-        'No deep brain stimulators or vagus nerve stimulators'
-      ]
-    },
-    {
-      category: 'Psychological Readiness',
-      items: [
-        'Committed to 6-8 week treatment schedule',
-        'No active substance abuse (sober 30+ days)',
-        'Stable living situation during treatment',
-        'Support system available for treatment period'
-      ]
-    },
-    {
-      category: 'Age & Health Status',
-      items: [
-        'Age 18-70 years old',
-        'No pregnancy (current or planned)',
-        'No severe medical conditions affecting treatment',
-        'Able to sit comfortably for 45-minute sessions'
-      ]
-    }
-  ];
+  {
+    category: 'Clinical Requirements',
+    items: [
+    'Diagnosed with Major Depressive Disorder',
+    'Failed to respond to 2+ antidepressant medications',
+    'Currently experiencing moderate to severe depression',
+    'Stable on current medications (if any) for 4+ weeks']
+
+  },
+  {
+    category: 'Medical Clearance',
+    items: [
+    'No metallic implants in head/neck region',
+    'No history of seizures or epilepsy',
+    'No cochlear implants or hearing aids',
+    'No deep brain stimulators or vagus nerve stimulators']
+
+  },
+  {
+    category: 'Psychological Readiness',
+    items: [
+    'Committed to 6-8 week treatment schedule',
+    'No active substance abuse (sober 30+ days)',
+    'Stable living situation during treatment',
+    'Support system available for treatment period']
+
+  },
+  {
+    category: 'Age & Health Status',
+    items: [
+    'Age 18-70 years old',
+    'No pregnancy (current or planned)',
+    'No severe medical conditions affecting treatment',
+    'Able to sit comfortably for 45-minute sessions']
+
+  }];
+
 
   const handleCheckItem = (item: string) => {
-    setCheckedItems(prev => 
-      prev.includes(item) 
-        ? prev.filter(i => i !== item)
-        : [...prev, item]
+    setCheckedItems((prev) =>
+    prev.includes(item) ?
+    prev.filter((i) => i !== item) :
+    [...prev, item]
     );
   };
 
@@ -210,8 +210,8 @@ const PRTMSPage = () => {
           </div>
 
           <div className="grid lg:grid-cols-3 gap-8">
-            {algorithmSteps.map((step, index) => (
-              <div key={index} className="relative">
+            {algorithmSteps.map((step, index) =>
+            <div key={index} className="relative">
                 <Card className="h-full bg-gradient-to-br from-white to-purple-50/30 border-0 shadow-xl hover:shadow-2xl transition-all duration-500 group overflow-hidden">
                   <div className={`absolute top-0 right-0 w-24 h-24 bg-gradient-to-br ${step.color} opacity-10 rounded-full -translate-y-12 translate-x-12`}></div>
                   
@@ -235,22 +235,22 @@ const PRTMSPage = () => {
                 </Card>
                 
                 {/* Flow arrow */}
-                {index < algorithmSteps.length - 1 && index % 3 !== 2 && (
-                  <div className="hidden lg:block absolute top-1/2 -right-4 transform -translate-y-1/2 z-10">
+                {index < algorithmSteps.length - 1 && index % 3 !== 2 &&
+              <div className="hidden lg:block absolute top-1/2 -right-4 transform -translate-y-1/2 z-10">
                     <ChevronRight className="w-6 h-6 text-[#572670] opacity-60" />
                   </div>
-                )}
+              }
                 
                 {/* Down arrow for row break */}
-                {index === 2 && (
-                  <div className="hidden lg:block absolute -bottom-4 left-1/2 transform -translate-x-1/2 z-10">
+                {index === 2 &&
+              <div className="hidden lg:block absolute -bottom-4 left-1/2 transform -translate-x-1/2 z-10">
                     <div className="w-6 h-6 rotate-90">
                       <ChevronRight className="w-6 h-6 text-[#572670] opacity-60" />
                     </div>
                   </div>
-                )}
+              }
               </div>
-            ))}
+            )}
           </div>
 
           <div className="text-center mt-12">
@@ -292,11 +292,11 @@ const PRTMSPage = () => {
             <Card className="bg-gradient-to-br from-white to-purple-50/30 border-0 shadow-2xl overflow-hidden">
               <div className="grid lg:grid-cols-2 gap-8 p-8">
                 <div className="relative">
-                  <img 
-                    src={caseStudies[currentSlide].image} 
+                  <img
+                    src={caseStudies[currentSlide].image}
                     alt="Patient success story"
-                    className="w-full h-64 object-cover rounded-2xl shadow-lg"
-                  />
+                    className="w-full h-64 object-cover rounded-2xl shadow-lg" />
+
                   <div className="absolute top-4 left-4 bg-gradient-to-r from-[#572670] to-purple-600 text-white px-4 py-2 rounded-full text-sm font-semibold">
                     Case Study {caseStudies[currentSlide].id}
                   </div>
@@ -339,12 +339,12 @@ const PRTMSPage = () => {
                   </div>
 
                   <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-                    {Object.entries(caseStudies[currentSlide].metrics).map(([key, value]) => (
-                      <div key={key} className="bg-gradient-to-r from-[#572670]/10 to-purple-600/10 rounded-lg p-3 text-center">
+                    {Object.entries(caseStudies[currentSlide].metrics).map(([key, value]) =>
+                    <div key={key} className="bg-gradient-to-r from-[#572670]/10 to-purple-600/10 rounded-lg p-3 text-center">
                         <p className="text-xs text-gray-600 mb-1">{key}</p>
                         <p className="font-bold text-[#572670]">{value}</p>
                       </div>
-                    ))}
+                    )}
                   </div>
                 </div>
               </div>
@@ -356,31 +356,31 @@ const PRTMSPage = () => {
                 variant="outline"
                 size="sm"
                 onClick={prevSlide}
-                className="rounded-full border-[#572670] text-[#572670] hover:bg-[#572670] hover:text-white"
-              >
+                className="rounded-full border-[#572670] text-[#572670] hover:bg-[#572670] hover:text-white">
+
                 <ChevronLeft className="w-4 h-4" />
               </Button>
               
               <div className="flex space-x-2">
-                {caseStudies.map((_, index) => (
-                  <button
-                    key={index}
-                    onClick={() => setCurrentSlide(index)}
-                    className={`w-3 h-3 rounded-full transition-all duration-300 ${
-                      index === currentSlide 
-                        ? 'bg-[#572670] w-8' 
-                        : 'bg-gray-300 hover:bg-gray-400'
-                    }`}
-                  />
-                ))}
+                {caseStudies.map((_, index) =>
+                <button
+                  key={index}
+                  onClick={() => setCurrentSlide(index)}
+                  className={`w-3 h-3 rounded-full transition-all duration-300 ${
+                  index === currentSlide ?
+                  'bg-[#572670] w-8' :
+                  'bg-gray-300 hover:bg-gray-400'}`
+                  } />
+
+                )}
               </div>
               
               <Button
                 variant="outline"
                 size="sm"
                 onClick={nextSlide}
-                className="rounded-full border-[#572670] text-[#572670] hover:bg-[#572670] hover:text-white"
-              >
+                className="rounded-full border-[#572670] text-[#572670] hover:bg-[#572670] hover:text-white">
+
                 <ChevronRight className="w-4 h-4" />
               </Button>
             </div>
@@ -405,8 +405,8 @@ const PRTMSPage = () => {
           </div>
 
           <div className="grid md:grid-cols-2 gap-8">
-            {eligibilityChecklist.map((category, categoryIndex) => (
-              <Card key={categoryIndex} className="bg-gradient-to-br from-white to-purple-50/30 border-0 shadow-lg">
+            {eligibilityChecklist.map((category, categoryIndex) =>
+            <Card key={categoryIndex} className="bg-gradient-to-br from-white to-purple-50/30 border-0 shadow-lg">
                 <CardHeader>
                   <CardTitle className="text-xl font-bold text-gray-900 flex items-center">
                     <div className="w-6 h-6 bg-gradient-to-br from-[#572670] to-purple-600 rounded-full flex items-center justify-center text-white text-sm font-bold mr-3">
@@ -416,25 +416,25 @@ const PRTMSPage = () => {
                   </CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-4">
-                  {category.items.map((item, itemIndex) => (
-                    <div key={itemIndex} className="flex items-center space-x-3">
+                  {category.items.map((item, itemIndex) =>
+                <div key={itemIndex} className="flex items-center space-x-3">
                       <Checkbox
-                        id={`${categoryIndex}-${itemIndex}`}
-                        checked={checkedItems.includes(item)}
-                        onCheckedChange={() => handleCheckItem(item)}
-                        className="data-[state=checked]:bg-[#572670] data-[state=checked]:border-[#572670]"
-                      />
+                    id={`${categoryIndex}-${itemIndex}`}
+                    checked={checkedItems.includes(item)}
+                    onCheckedChange={() => handleCheckItem(item)}
+                    className="data-[state=checked]:bg-[#572670] data-[state=checked]:border-[#572670]" />
+
                       <label
-                        htmlFor={`${categoryIndex}-${itemIndex}`}
-                        className="text-gray-700 text-sm leading-relaxed cursor-pointer"
-                      >
+                    htmlFor={`${categoryIndex}-${itemIndex}`}
+                    className="text-gray-700 text-sm leading-relaxed cursor-pointer">
+
                         {item}
                       </label>
                     </div>
-                  ))}
+                )}
                 </CardContent>
               </Card>
-            ))}
+            )}
           </div>
 
           <div className="mt-12 text-center">
@@ -443,11 +443,11 @@ const PRTMSPage = () => {
                 Checked Items: {checkedItems.length} / {eligibilityChecklist.reduce((sum, category) => sum + category.items.length, 0)}
               </h3>
               <p className="text-gray-600 mb-6">
-                {checkedItems.length >= 12 ? 
-                  'Great! You appear to be an excellent candidate for personalized rTMS therapy. Schedule your consultation to get started.' :
-                  checkedItems.length >= 8 ?
-                  'You may be a good candidate for personalized rTMS. Our medical team can provide a thorough evaluation.' :
-                  'Some criteria may need to be addressed. Our specialists can help determine the best treatment approach for you.'
+                {checkedItems.length >= 12 ?
+                'Great! You appear to be an excellent candidate for personalized rTMS therapy. Schedule your consultation to get started.' :
+                checkedItems.length >= 8 ?
+                'You may be a good candidate for personalized rTMS. Our medical team can provide a thorough evaluation.' :
+                'Some criteria may need to be addressed. Our specialists can help determine the best treatment approach for you.'
                 }
               </p>
               
@@ -488,8 +488,8 @@ const PRTMSPage = () => {
       </section>
 
       <FooterSection />
-    </div>
-  );
+    </div>);
+
 };
 
 export default PRTMSPage;

@@ -13,100 +13,100 @@ const BrainMappingPage = () => {
   const [reportStep, setReportStep] = useState(0);
 
   const heatmapExamples = [
-    {
-      title: 'Depression - Before Treatment',
-      description: 'Decreased activity in prefrontal regions (blue areas)',
-      image: 'https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=400&h=300&fit=crop',
-      regions: ['DLPFC Hypoactivity', 'Anterior Cingulate Changes', 'Limbic Dysregulation'],
-      severity: 'Severe'
-    },
-    {
-      title: 'Depression - After 6 Weeks TMS',
-      description: 'Normalized activity patterns (green/yellow areas)',
-      image: 'https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=400&h=300&fit=crop',
-      regions: ['DLPFC Activation', 'Restored Connectivity', 'Balanced Networks'],
-      severity: 'Mild'
-    },
-    {
-      title: 'Anxiety - Overactivation Pattern',
-      description: 'Hyperactivity in amygdala and fear circuits (red areas)',
-      image: 'https://images.unsplash.com/photo-1591453089816-0fbb971b454c?w=400&h=300&fit=crop',
-      regions: ['Amygdala Hyperactivity', 'Heightened Fear Network', 'Stress Response'],
-      severity: 'Moderate'
-    },
-    {
-      title: 'ADHD - Attention Networks',
-      description: 'Underactivity in attention and executive regions',
-      image: 'https://images.unsplash.com/photo-1586773860418-d37222d8fce3?w=400&h=300&fit=crop',
-      regions: ['Prefrontal Hypoactivity', 'Default Network Issues', 'Executive Dysfunction'],
-      severity: 'Moderate'
-    }
-  ];
+  {
+    title: 'Depression - Before Treatment',
+    description: 'Decreased activity in prefrontal regions (blue areas)',
+    image: 'https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=400&h=300&fit=crop',
+    regions: ['DLPFC Hypoactivity', 'Anterior Cingulate Changes', 'Limbic Dysregulation'],
+    severity: 'Severe'
+  },
+  {
+    title: 'Depression - After 6 Weeks TMS',
+    description: 'Normalized activity patterns (green/yellow areas)',
+    image: 'https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=400&h=300&fit=crop',
+    regions: ['DLPFC Activation', 'Restored Connectivity', 'Balanced Networks'],
+    severity: 'Mild'
+  },
+  {
+    title: 'Anxiety - Overactivation Pattern',
+    description: 'Hyperactivity in amygdala and fear circuits (red areas)',
+    image: 'https://images.unsplash.com/photo-1591453089816-0fbb971b454c?w=400&h=300&fit=crop',
+    regions: ['Amygdala Hyperactivity', 'Heightened Fear Network', 'Stress Response'],
+    severity: 'Moderate'
+  },
+  {
+    title: 'ADHD - Attention Networks',
+    description: 'Underactivity in attention and executive regions',
+    image: 'https://images.unsplash.com/photo-1586773860418-d37222d8fce3?w=400&h=300&fit=crop',
+    regions: ['Prefrontal Hypoactivity', 'Default Network Issues', 'Executive Dysfunction'],
+    severity: 'Moderate'
+  }];
+
 
   const reportSteps = [
-    {
-      title: 'Patient Information & History',
-      description: 'Demographic data, clinical history, medications, and presenting symptoms',
-      content: 'This section includes your complete medical history, current medications, symptom timeline, and treatment goals to provide context for the brain mapping results.',
-      icon: <FileText className="w-6 h-6" />,
-      duration: '5 minutes to review'
-    },
-    {
-      title: 'Raw EEG Data Analysis',
-      description: 'Detailed frequency analysis across all brain regions with statistical comparisons',
-      content: 'Your brain wave patterns are analyzed across Delta, Theta, Alpha, Beta, and Gamma frequencies, compared to age-matched normative databases.',
-      icon: <Activity className="w-6 h-6" />,
-      duration: '10 minutes to review'
-    },
-    {
-      title: 'Brain Maps & Visualizations',
-      description: 'Colorful topographic maps showing brain activity patterns and abnormalities',
-      content: 'Visual representations of your brain activity using heat maps, with red areas showing overactivity and blue areas showing underactivity.',
-      icon: <Brain className="w-6 h-6" />,
-      duration: '15 minutes to review'
-    },
-    {
-      title: 'Clinical Interpretation',
-      description: 'Professional analysis of findings and their relationship to your symptoms',
-      content: 'Our neurologists explain what the patterns mean for your specific condition and how they relate to your symptoms and treatment options.',
-      icon: <Eye className="w-6 h-6" />,
-      duration: '20 minutes to review'
-    },
-    {
-      title: 'Treatment Recommendations',
-      description: 'Personalized treatment plan based on your unique brain patterns',
-      content: 'Specific recommendations for TMS protocols, neurofeedback training, medication considerations, and lifestyle modifications.',
-      icon: <Target className="w-6 h-6" />,
-      duration: '15 minutes to review'
-    }
-  ];
+  {
+    title: 'Patient Information & History',
+    description: 'Demographic data, clinical history, medications, and presenting symptoms',
+    content: 'This section includes your complete medical history, current medications, symptom timeline, and treatment goals to provide context for the brain mapping results.',
+    icon: <FileText className="w-6 h-6" />,
+    duration: '5 minutes to review'
+  },
+  {
+    title: 'Raw EEG Data Analysis',
+    description: 'Detailed frequency analysis across all brain regions with statistical comparisons',
+    content: 'Your brain wave patterns are analyzed across Delta, Theta, Alpha, Beta, and Gamma frequencies, compared to age-matched normative databases.',
+    icon: <Activity className="w-6 h-6" />,
+    duration: '10 minutes to review'
+  },
+  {
+    title: 'Brain Maps & Visualizations',
+    description: 'Colorful topographic maps showing brain activity patterns and abnormalities',
+    content: 'Visual representations of your brain activity using heat maps, with red areas showing overactivity and blue areas showing underactivity.',
+    icon: <Brain className="w-6 h-6" />,
+    duration: '15 minutes to review'
+  },
+  {
+    title: 'Clinical Interpretation',
+    description: 'Professional analysis of findings and their relationship to your symptoms',
+    content: 'Our neurologists explain what the patterns mean for your specific condition and how they relate to your symptoms and treatment options.',
+    icon: <Eye className="w-6 h-6" />,
+    duration: '20 minutes to review'
+  },
+  {
+    title: 'Treatment Recommendations',
+    description: 'Personalized treatment plan based on your unique brain patterns',
+    content: 'Specific recommendations for TMS protocols, neurofeedback training, medication considerations, and lifestyle modifications.',
+    icon: <Target className="w-6 h-6" />,
+    duration: '15 minutes to review'
+  }];
+
 
   const qeegBenefits = [
-    {
-      title: 'Objective Measurement',
-      description: 'Unlike subjective assessments, qEEG provides measurable brain activity data',
-      icon: <TrendingUp className="w-8 h-8" />,
-      color: 'from-blue-500 to-purple-500'
-    },
-    {
-      title: 'Treatment Precision',
-      description: 'Identifies exact brain regions that need stimulation or regulation',
-      icon: <Target className="w-8 h-8" />,
-      color: 'from-[#572670] to-purple-600'
-    },
-    {
-      title: 'Progress Tracking',
-      description: 'Monitors how your brain responds to treatment over time',
-      icon: <Activity className="w-8 h-8" />,
-      color: 'from-green-500 to-blue-500'
-    },
-    {
-      title: 'Personalized Protocols',
-      description: 'Creates custom treatment parameters based on your unique patterns',
-      icon: <Brain className="w-8 h-8" />,
-      color: 'from-purple-500 to-pink-500'
-    }
-  ];
+  {
+    title: 'Objective Measurement',
+    description: 'Unlike subjective assessments, qEEG provides measurable brain activity data',
+    icon: <TrendingUp className="w-8 h-8" />,
+    color: 'from-blue-500 to-purple-500'
+  },
+  {
+    title: 'Treatment Precision',
+    description: 'Identifies exact brain regions that need stimulation or regulation',
+    icon: <Target className="w-8 h-8" />,
+    color: 'from-[#572670] to-purple-600'
+  },
+  {
+    title: 'Progress Tracking',
+    description: 'Monitors how your brain responds to treatment over time',
+    icon: <Activity className="w-8 h-8" />,
+    color: 'from-green-500 to-blue-500'
+  },
+  {
+    title: 'Personalized Protocols',
+    description: 'Creates custom treatment parameters based on your unique patterns',
+    icon: <Brain className="w-8 h-8" />,
+    color: 'from-purple-500 to-pink-500'
+  }];
+
 
   const nextHeatmap = () => {
     setCurrentHeatmap((prev) => (prev + 1) % heatmapExamples.length);
@@ -198,8 +198,8 @@ const BrainMappingPage = () => {
             
             <div className="space-y-6">
               <div className="grid grid-cols-2 gap-4">
-                {qeegBenefits.map((benefit, index) => (
-                  <Card key={index} className="group hover:shadow-lg transition-all duration-300 border-0 bg-gradient-to-br from-white to-purple-50">
+                {qeegBenefits.map((benefit, index) =>
+                <Card key={index} className="group hover:shadow-lg transition-all duration-300 border-0 bg-gradient-to-br from-white to-purple-50">
                     <CardContent className="p-6 text-center">
                       <div className={`w-12 h-12 mx-auto mb-3 bg-gradient-to-r ${benefit.color} rounded-full flex items-center justify-center text-white group-hover:scale-110 transition-transform duration-300`}>
                         {benefit.icon}
@@ -208,7 +208,7 @@ const BrainMappingPage = () => {
                       <p className="text-sm text-gray-600">{benefit.description}</p>
                     </CardContent>
                   </Card>
-                ))}
+                )}
               </div>
             </div>
           </div>
@@ -251,17 +251,17 @@ const BrainMappingPage = () => {
             <Card className="bg-gradient-to-br from-white to-purple-50 border-0 shadow-xl overflow-hidden">
               <div className="grid lg:grid-cols-2 gap-0">
                 <div className="relative h-80 lg:h-96">
-                  <img 
+                  <img
                     src={heatmapExamples[currentHeatmap].image}
                     alt={heatmapExamples[currentHeatmap].title}
-                    className="w-full h-full object-cover"
-                  />
+                    className="w-full h-full object-cover" />
+
                   <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
                   <div className="absolute bottom-4 left-4 right-4">
                     <Badge className={`mb-2 ${
-                      heatmapExamples[currentHeatmap].severity === 'Severe' ? 'bg-red-500' :
-                      heatmapExamples[currentHeatmap].severity === 'Moderate' ? 'bg-yellow-500' : 'bg-green-500'
-                    } text-white`}>
+                    heatmapExamples[currentHeatmap].severity === 'Severe' ? 'bg-red-500' :
+                    heatmapExamples[currentHeatmap].severity === 'Moderate' ? 'bg-yellow-500' : 'bg-green-500'} text-white`
+                    }>
                       {heatmapExamples[currentHeatmap].severity}
                     </Badge>
                   </div>
@@ -277,12 +277,12 @@ const BrainMappingPage = () => {
                   
                   <div className="space-y-3 mb-6">
                     <h4 className="font-bold text-gray-900">Key Findings:</h4>
-                    {heatmapExamples[currentHeatmap].regions.map((region, index) => (
-                      <div key={index} className="flex items-center">
+                    {heatmapExamples[currentHeatmap].regions.map((region, index) =>
+                    <div key={index} className="flex items-center">
                         <div className="w-3 h-3 bg-gradient-to-r from-[#572670] to-purple-600 rounded-full mr-3"></div>
                         <span className="text-gray-700">{region}</span>
                       </div>
-                    ))}
+                    )}
                   </div>
                   
                   <div className="flex space-x-4">
@@ -297,34 +297,34 @@ const BrainMappingPage = () => {
 
             {/* Navigation */}
             <div className="flex justify-between items-center mt-8">
-              <Button 
+              <Button
                 onClick={prevHeatmap}
-                variant="outline" 
-                className="border-[#572670] text-[#572670] hover:bg-[#572670] hover:text-white"
-              >
+                variant="outline"
+                className="border-[#572670] text-[#572670] hover:bg-[#572670] hover:text-white">
+
                 <ChevronLeft className="w-4 h-4 mr-2" />
                 Previous
               </Button>
               
               <div className="flex space-x-2">
-                {heatmapExamples.map((_, index) => (
-                  <button
-                    key={index}
-                    onClick={() => setCurrentHeatmap(index)}
-                    className={`w-3 h-3 rounded-full transition-all duration-300 ${
-                      index === currentHeatmap 
-                        ? 'bg-[#572670]' 
-                        : 'bg-gray-300 hover:bg-gray-400'
-                    }`}
-                  />
-                ))}
+                {heatmapExamples.map((_, index) =>
+                <button
+                  key={index}
+                  onClick={() => setCurrentHeatmap(index)}
+                  className={`w-3 h-3 rounded-full transition-all duration-300 ${
+                  index === currentHeatmap ?
+                  'bg-[#572670]' :
+                  'bg-gray-300 hover:bg-gray-400'}`
+                  } />
+
+                )}
               </div>
               
-              <Button 
+              <Button
                 onClick={nextHeatmap}
-                variant="outline" 
-                className="border-[#572670] text-[#572670] hover:bg-[#572670] hover:text-white"
-              >
+                variant="outline"
+                className="border-[#572670] text-[#572670] hover:bg-[#572670] hover:text-white">
+
                 Next
                 <ChevronRight className="w-4 h-4 ml-2" />
               </Button>
@@ -350,19 +350,19 @@ const BrainMappingPage = () => {
 
           <Tabs value={reportStep.toString()} onValueChange={(value) => setReportStep(parseInt(value))}>
             <TabsList className="grid grid-cols-5 w-full mb-8 bg-gradient-to-r from-[#572670]/10 to-purple-600/10">
-              {reportSteps.map((step, index) => (
-                <TabsTrigger 
-                  key={index} 
-                  value={index.toString()}
-                  className="data-[state=active]:bg-gradient-to-r data-[state=active]:from-[#572670] data-[state=active]:to-purple-600 data-[state=active]:text-white"
-                >
+              {reportSteps.map((step, index) =>
+              <TabsTrigger
+                key={index}
+                value={index.toString()}
+                className="data-[state=active]:bg-gradient-to-r data-[state=active]:from-[#572670] data-[state=active]:to-purple-600 data-[state=active]:text-white bg-white text-[#737373]">
+
                   Step {index + 1}
                 </TabsTrigger>
-              ))}
+              )}
             </TabsList>
 
-            {reportSteps.map((step, index) => (
-              <TabsContent key={index} value={index.toString()}>
+            {reportSteps.map((step, index) =>
+            <TabsContent key={index} value={index.toString()}>
                 <Card className="bg-gradient-to-br from-white to-purple-50 border-0 shadow-lg">
                   <CardHeader>
                     <div className="flex items-center mb-4">
@@ -383,8 +383,8 @@ const BrainMappingPage = () => {
                       {step.content}
                     </p>
                     
-                    {index === 0 && (
-                      <div className="bg-gradient-to-r from-blue-100 to-purple-100 rounded-lg p-6">
+                    {index === 0 &&
+                  <div className="bg-gradient-to-r from-blue-100 to-purple-100 rounded-lg p-6">
                         <h4 className="font-bold text-gray-900 mb-4">What We'll Review:</h4>
                         <div className="grid md:grid-cols-2 gap-4">
                           <ul className="space-y-2 text-gray-700">
@@ -399,10 +399,10 @@ const BrainMappingPage = () => {
                           </ul>
                         </div>
                       </div>
-                    )}
+                  }
 
-                    {index === 2 && (
-                      <div className="bg-gradient-to-r from-green-100 to-blue-100 rounded-lg p-6">
+                    {index === 2 &&
+                  <div className="bg-gradient-to-r from-green-100 to-blue-100 rounded-lg p-6">
                         <h4 className="font-bold text-gray-900 mb-4">Map Color Guide:</h4>
                         <div className="grid md:grid-cols-2 gap-4">
                           <div className="space-y-2">
@@ -427,10 +427,10 @@ const BrainMappingPage = () => {
                           </div>
                         </div>
                       </div>
-                    )}
+                  }
 
-                    {index === 4 && (
-                      <div className="bg-gradient-to-r from-[#572670]/10 to-purple-600/10 rounded-lg p-6">
+                    {index === 4 &&
+                  <div className="bg-gradient-to-r from-[#572670]/10 to-purple-600/10 rounded-lg p-6">
                         <h4 className="font-bold text-gray-900 mb-4">Recommended Next Steps:</h4>
                         <div className="space-y-4">
                           <Link to="/prtms">
@@ -447,11 +447,11 @@ const BrainMappingPage = () => {
                           </Link>
                         </div>
                       </div>
-                    )}
+                  }
                   </CardContent>
                 </Card>
               </TabsContent>
-            ))}
+            )}
           </Tabs>
 
           <div className="text-center mt-12">
@@ -482,8 +482,8 @@ const BrainMappingPage = () => {
       </section>
 
       <FooterSection />
-    </div>
-  );
+    </div>);
+
 };
 
 export default BrainMappingPage;
