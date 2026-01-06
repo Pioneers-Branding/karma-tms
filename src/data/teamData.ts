@@ -130,7 +130,7 @@ export const teamMembers: TeamMember[] = [
   email: 'cvigilia@karmatms.com'
 },
 {
-  id: 'charles-vigilia',
+  id: 'charles',
   name: 'Charles Vigilia',
   title: 'TMS Neurotechnologist',
   specialization: 'TMS Technology & Patient Care',
@@ -159,6 +159,4 @@ export const teamMembers: TeamMember[] = [
   languages: ['English', 'Spanish'],
   location: 'Palm Springs, CA',
   email: 'cvigilia@karmatms.com'
-}
-
-];
+}];
