@@ -140,7 +140,7 @@ const RanchoMiragePage = () => {
               </div>
               <div className="relative h-96 rounded-xl overflow-hidden shadow-2xl">
                 <img
-                  src="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/d85b7133-76b3-47d9-8904-c6b4ffc09e40.jpeg"
+                  src="https://i.ibb.co/qM2v12mM/Santo-Tomas-Rancho-Mirage-19.jpg"
                   alt="Elegant KarmaTMS Rancho Mirage facility entrance"
                   className="w-full h-full object-cover" />
 
@@ -195,7 +195,7 @@ const RanchoMiragePage = () => {
             <div className="grid md:grid-cols-3 gap-6">
               <div className="relative h-72 rounded-xl overflow-hidden shadow-lg group">
                 <img
-                  src="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/d85b7133-76b3-47d9-8904-c6b4ffc09e40.jpeg"
+                  src="https://i.ibb.co/675zy4wB/treatment.webp"
                   alt="Luxurious reception area at Rancho Mirage mental health clinic"
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" />
 
@@ -204,7 +204,7 @@ const RanchoMiragePage = () => {
               </div>
               <div className="relative h-72 rounded-xl overflow-hidden shadow-lg group">
                 <img
-                  src="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/031012db-9570-41de-bb30-96c6fa482330.png"
+                  src="https://i.ibb.co/675zy4wB/treatment.webp"
                   alt="Premium TMS therapy equipment in Rancho Mirage"
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" />
 
@@ -213,7 +213,7 @@ const RanchoMiragePage = () => {
               </div>
               <div className="relative h-72 rounded-xl overflow-hidden shadow-lg group">
                 <img
-                  src="https://images.unsplash.com/photo-1665231795856-769fb08a90bc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MTg3MTl8MHwxfHNlYXJjaHwxfHxDb21mb3J0YWJsZSUyMHByaXZhdGUlMjB0cmVhdG1lbnQlMjByb29tJTIwZm9yJTIwVE1TJTIwdGhlcmFweXxlbnwwfHx8fDE3NjM3Mjg5OTl8MA&ixlib=rb-4.1.0&q=80&w=200$w=1920"
+                  src="https://i.ibb.co/675zy4wB/treatment.webp"
                   alt="Comfortable private treatment room for TMS therapy"
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" />
 
