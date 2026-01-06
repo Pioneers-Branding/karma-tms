@@ -153,7 +153,7 @@ const TestimonialsSection = () => {
                     </div> :
 
                   <Avatar className="w-48 h-48 lg:w-64 lg:h-64 ">
-                      <AvatarImage src={currentData.avatar} alt={currentData.name} />
+                      <AvatarImage src={currentData.avatar} alt={currentData.name} className="aspect-square h-full w-full object-cover" />
                       <AvatarFallback className="text-4xl bg-white/20 text-white object-cover">
                         {currentData.name.charAt(0)}
                       </AvatarFallback>
