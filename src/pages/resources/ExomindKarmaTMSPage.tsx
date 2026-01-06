@@ -56,7 +56,7 @@ const ExomindKarmaTMSPage = () => {
             </div>
             <div className="relative">
               <img
-                src="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/031012db-9570-41de-bb30-96c6fa482330.png"
+                src="https://res.cloudinary.com/de4kw1t2i/image/upload/v1763029481/Exomind_PIC_Female-Model1_0961_ENUS100_zflpcx.jpg"
                 alt="Exomind TMS Chair at KarmaTMS Rancho Mirage - Advanced brain stimulation therapy"
                 className="rounded-lg shadow-2xl" />
 
