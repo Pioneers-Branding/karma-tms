@@ -17,7 +17,7 @@ const WhyChooseKarmaSection = () => {
   {
     title: "State-of-the-Art Technology",
     description: "We use the latest advancements in TMS technology to deliver precise and powerful therapy, maximizing therapeutic benefits with minimal discomfort.",
-    image: "https://karmatms.com/wp-content/uploads/2024/09/64f261827ad091245bab5b5b-2.jpeg",
+    image: "https://res.cloudinary.com/de4kw1t2i/image/upload/v1761733382/patient-in-tms_erqhyf.webp",
     overlay: false
   },
   {
