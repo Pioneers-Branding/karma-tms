@@ -188,7 +188,7 @@ const HeroSection = () => {
                       <label htmlFor="hero-full-name" className="sr-only">Full Name</label>
                       <input
                         id="hero-full-name"
-                        name="fullName"
+                        name="name"
                         type="text"
                         placeholder="Full Name"
                         required

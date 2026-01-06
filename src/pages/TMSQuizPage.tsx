@@ -123,6 +123,14 @@ const TMSQuizPage = () => {
 
 
 
+
+
+
+
+
+
+
+
     // Let the form submit naturally to Formester
     // After submission, Formester will handle the redirect
     // If you want to redirect to a specific page, you can add a hidden input
@@ -165,25 +173,17 @@ const TMSQuizPage = () => {
               <CardContent>
                 <div className="space-y-4">
                   {currentQ.options.map((option) => <div key={option.value} className="flex items-start space-x-3">
-                      <input type="radio" id={`${currentQ.id}-${option.value}`} name={`current_${currentQ.name}`} value={option.value}
-                      checked={answers[currentQ.id] === option.value}
-                      onChange={(e) => handleAnswerChange(currentQ.id, e.target.value)}
-                      className="mt-1 h-4 w-4 text-[#572670] focus:ring-[#572670] border-gray-300" />
+                      <input type="radio" id={`${currentQ.id}-${option.value}`} name={`current_${currentQ.name}`} value={option.value} checked={answers[currentQ.id] === option.value} onChange={(e) => handleAnswerChange(currentQ.id, e.target.value)} className="mt-1 h-4 w-4 text-[#572670] focus:ring-[#572670] border-gray-300" />
 
-                      <Label
-                      htmlFor={`${currentQ.id}-${option.value}`}
-                      className="text-gray-700 cursor-pointer leading-relaxed font-normal">
+                      <Label htmlFor={`${currentQ.id}-${option.value}`} className="text-gray-700 cursor-pointer leading-relaxed font-normal">
 
                         {option.label}
                       </Label>
-                    </div>
-                )}
+                    </div>)}
                 </div>
 
                 <div className="flex justify-between mt-8">
-                  <Button
-                  type="button"
-                  variant="outline"
+                  <Button type="button" variant="outline"
                   onClick={handlePrevious}
                   disabled={currentQuestion === 0}>
 
