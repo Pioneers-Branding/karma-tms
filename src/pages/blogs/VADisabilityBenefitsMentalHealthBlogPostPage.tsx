@@ -326,10 +326,7 @@ const VADisabilityBenefitsMentalHealthBlogPostPage = () => {
                 Yes, <strong>can you get va disability for depression</strong> is a question with a definitive answer: absolutely. Depression is one of the most commonly approved conditions for VA disability benefits. The VA recognizes that depression can be directly caused by military service—whether through combat exposure, traumatic events, military sexual trauma, chronic stress, or other service-related factors.
               </p>
 
-              <img
-                src="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/7ace98a6-9efe-4403-aacf-892346fb07a8.webp"
-                alt="Veterans dealing with depression and mental health challenges"
-                className="w-full  object-cover rounded-lg mb-6" />
+            
 
 
               <p className="mb-6">
