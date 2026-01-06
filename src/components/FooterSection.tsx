@@ -55,11 +55,11 @@ const FooterSection = () => {
   },
   {
     label: 'Location 2',
-    addressLines: ["35400 Bob Hope Dr. Suite 206-B Rancho Mirage, CA 92270"]
+    addressLines: ["35400 Bob Hope Dr. Suite 206 Rancho Mirage, CA 92270"]
   },
   {
     label: 'Location 3',
-    addressLines: ['72724 29 Palms Hwy. Suite 107-B Twentynine Palms, CA 92277']
+    addressLines: ['72724 29 Palms Hwy. Suite 107 Twentynine Palms, CA 92277']
   }];
 
 
