@@ -95,22 +95,22 @@ const ScreenTimeMentalHealthBlogPostPage = () => {
 
   const relatedPosts = [
   {
-    title: 'How TMS Therapy Helps with Depression',
-    excerpt: 'Learn how TMS therapy can help treat depression that may be exacerbated by modern lifestyle factors.',
-    link: '/depression',
-    image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/2ddc8d69-b09a-4f1d-bd47-6d783ceefbd1.webp'
+    title: 'TMS for Migraine Relief in Veterans',
+    excerpt: 'Learn how TMS helps veterans with migraines and comorbid conditions like PTSD and depression.',
+    link: '/blogs/tms-migraine-veterans',
+    image: 'https://res.cloudinary.com/de4kw1t2i/image/upload/v1763033673/7_lnxkrv.png'
   },
   {
-    title: 'Understanding Anxiety Disorders',
-    excerpt: 'Explore how anxiety develops and effective treatment options including TMS therapy.',
-    link: '/anxiety',
-    image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/9705b922-d0fc-4d29-be10-acd507ce308c.webp'
+    title: 'TMS for Anxiety in Veterans',
+    excerpt: 'Discover how TMS helps veterans manage anxiety beyond medication.',
+    link: '/blogs/tms-anxiety-veterans',
+    image: 'https://res.cloudinary.com/de4kw1t2i/image/upload/v1763033666/6_rrkhgo.png'
   },
   {
-    title: 'Stress Management: The Four A\'s Approach',
-    excerpt: 'Learn practical strategies for managing stress in our digital age.',
-    link: '/blog/four-as-stress-management',
-    image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/76caee2d-5629-4dc1-a3b4-8c5cea23ede6.webp'
+    title: 'Understanding PTSD in Veterans',
+    excerpt: 'Complete guide to PTSD signs, symptoms, and treatment paths including TMS therapy.',
+    link: '/blogs/understanding-ptsd-veterans',
+    image: 'https://res.cloudinary.com/de4kw1t2i/image/upload/v1763033666/5_kvtlku.png'
   }];
 
 
@@ -287,7 +287,7 @@ const ScreenTimeMentalHealthBlogPostPage = () => {
               <img
                 src="https://res.cloudinary.com/de4kw1t2i/image/upload/v1763376734/16_ekice5.png"
                 alt="Person using smartphone with mental health concerns"
-                className="w-full h-64 md:h-96 object-cover rounded-lg mb-6" />
+                className="w-full  md:h-96 object-cover rounded-lg mb-6" />
 
               <p className="text-xl text-gray-700 leading-relaxed">
                 We live in an era of unprecedented digital connectivity. The average American spends over 7 hours daily on screens—more time than we spend sleeping. While technology brings countless benefits, mounting research reveals a troubling connection between excessive screen time and declining mental health. Understanding this relationship is crucial for protecting our psychological wellbeing in the digital age.
@@ -366,7 +366,7 @@ const ScreenTimeMentalHealthBlogPostPage = () => {
               <img
                 src="https://images.unsplash.com/photo-1551434678-e076c223a692?w=1200"
                 alt="Mental health and technology impact"
-                className="w-full h-64 object-cover rounded-lg mb-6" />
+                className="w-full  object-cover rounded-lg mb-6" />
 
               <div className="space-y-6">
                 <Card className="border-[#572670]/20">
@@ -746,7 +746,7 @@ const ScreenTimeMentalHealthBlogPostPage = () => {
                     <img
                     src={post.image}
                     alt={post.title}
-                    className="w-full h-48 object-cover" />
+                    className="w-full  object-cover" />
                     <CardContent className="p-6">
                       <h3 className="font-bold text-lg mb-2 hover:text-[#572670] transition-colors">
                         <Link to={post.link}>{post.title}</Link>
