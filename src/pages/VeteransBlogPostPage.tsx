@@ -641,9 +641,7 @@ const VeteransBlogPostPage = () => {
                     <p className="text-gray-600 mb-4">
                       Board-Certified Psychiatrist | Medical Director at KarmaTMS
                     </p>
-                    <p className="text-gray-700 mb-4">
-                      Dr. Thomas is a board-certified psychiatrist specializing in treatment-resistant mood disorders and TMS therapy. With over 15 years of experience treating veterans and military personnel, he has helped hundreds of service members overcome PTSD, depression, and anxiety using innovative neurostimulation techniques. Dr. Thomas is passionate about providing veterans with evidence-based, medication-free treatment options.
-                    </p>
+                  
                     <Button asChild variant="outline" className="border-[#572670] text-[#572670]">
                       <Link to="/team">View Full Bio</Link>
                     </Button>
