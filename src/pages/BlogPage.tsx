@@ -45,7 +45,7 @@ const generateUniqueBlogPosts = (): BlogPost[] => {
       day: 'numeric'
     }),
     readTime: '8 min read',
-    image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/02c362bd-cde2-431d-8820-a07a14939638.webp',
+    image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/157c49b6-b322-4aa5-b8d6-8ee41dc03a43.webp',
     featured: true,
     rating: 5
   }];
