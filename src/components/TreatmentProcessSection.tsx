@@ -54,7 +54,7 @@ const TreatmentProcessSection = () => {
 
 
   return (
-    <section className="py-20 bg-gradient-to-br from-gray-50 via-white to-purple-50/30 relative overflow-hidden">
+    <section className="py-16 bg-gradient-to-br from-gray-50 via-white to-purple-50/30 relative overflow-hidden">
       {/* Background Elements */}
       <div className="absolute top-10 right-10 w-64 h-64 bg-purple-200/20 rounded-full blur-3xl"></div>
       <div className="absolute bottom-20 left-10 w-48 h-48 bg-blue-200/20 rounded-full blur-3xl"></div>
