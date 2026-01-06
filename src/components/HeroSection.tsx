@@ -187,7 +187,7 @@ const HeroSection = () => {
             </div>
             <div>
               <textarea
-                      placeholder="Tell us about your situation and how we can help. Our mental health counselors in palm springs ca are here to support you..."
+                      placeholder="Tell us about your situation and how we can help. Our mental health counselors in Palm Springs ca are here to support you..."
                       rows={4}
                       className="w-full px-4 lg:px-5 py-3 lg:py-4 border border-gray-200 rounded-2xl focus:ring-2 focus:ring-violet-500 focus:border-transparent outline-none transition-all duration-300 resize-none bg-white/90 backdrop-blur-sm hover:bg-white text-sm lg:text-base">
               </textarea>
