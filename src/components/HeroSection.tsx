@@ -51,7 +51,7 @@ const HeroSection = () => {
           <div className="grid lg:grid-cols-2 xl:grid-cols-5 ">
             
             {/* Left Section - Content */}
-            <div className="xl:col-span-3 p-4  bg-blue-magenta/10  lg:p-6 xl:p-8 flex flex-col justify-center">
+            <div className="xl:col-span-3 p-4  bg-blue-magenta/5  lg:p-6 xl:p-8 flex flex-col justify-center">
               <div className="space-y-6 lg:space-y-8">
                 
                 {/* Heading */}
