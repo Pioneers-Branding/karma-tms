@@ -89,12 +89,12 @@ const ConditionsSection = () => {
                       <span className="text-sm font-medium text-[#572670] bg-[#572670]/10 px-3 py-1 rounded-full">
                         {condition.stats}
                       </span>
-                      {condition.link && (
-                        <Button variant="ghost" className="text-[#572670] hover:text-[#572670]/80 p-0 h-auto group">
+                      {condition.link &&
+                      <Button variant="ghost" className="text-[#572670] hover:text-[#572670]/80 p-0 h-auto group">
                           Learn More 
                           <ArrowRight className="h-4 w-4 ml-1 group-hover:translate-x-1 transition-transform" />
                         </Button>
-                      )}
+                      }
                     </div>
                   </CardContent>
                 </Card>
