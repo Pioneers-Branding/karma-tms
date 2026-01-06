@@ -65,7 +65,7 @@ const HeroSection = () => {
               </div>
               <div className="flex flex-row bg-blue-magenta text-white p-2 px-4 rounded-3xl w-fit items-center">
                 <MapPin className="w-5 h-5 text-white mr-2" />
-                Rancho Mirage, CA
+                Rancho Mirage
               </div>
             </div>
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-5xl xl:text-6xl font-bold text-gray-900 leading-tight"> 
@@ -80,9 +80,9 @@ const HeroSection = () => {
           <div className="relative bg-white rounded-3xl overflow-hidden group">
             <div className="relative h-64 sm:h-72 lg:h-80 xl:h-96">
               <img
-                src={slides[currentSlide].image}
-                alt={slides[currentSlide].alt}
-                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
+                      src={slides[currentSlide].image}
+                      alt={slides[currentSlide].alt}
+                      className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
               <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent" />
               <div className="absolute bottom-4 left-4 right-4">
                 <h3 className="text-white font-semibold text-lg lg:text-xl drop-shadow-lg">
@@ -92,28 +92,28 @@ const HeroSection = () => {
             </div>
             {/* Slider Controls */}
             <button
-              onClick={prevSlide}
-              className="absolute left-4 top-1/2 -translate-y-1/2 bg-white/95 hover:bg-white rounded-full p-3 shadow-xl transition-all duration-300 hover:scale-110 hover:shadow-2xl backdrop-blur-sm">
+                    onClick={prevSlide}
+                    className="absolute left-4 top-1/2 -translate-y-1/2 bg-white/95 hover:bg-white rounded-full p-3 shadow-xl transition-all duration-300 hover:scale-110 hover:shadow-2xl backdrop-blur-sm">
               <ChevronLeft className="w-5 h-5 text-indigo-600" />
             </button>
             <button
-              onClick={nextSlide}
-              className="absolute right-4 top-1/2 -translate-y-1/2 bg-white/95 hover:bg-white rounded-full p-3 shadow-xl transition-all duration-300 hover:scale-110 hover:shadow-2xl backdrop-blur-sm">
+                    onClick={nextSlide}
+                    className="absolute right-4 top-1/2 -translate-y-1/2 bg-white/95 hover:bg-white rounded-full p-3 shadow-xl transition-all duration-300 hover:scale-110 hover:shadow-2xl backdrop-blur-sm">
               <ChevronRight className="w-5 h-5 text-indigo-600" />
             </button>
             {/* Slide Indicators */}
             <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex space-x-2">
               {slides.map((_, index) =>
-                <button
-                  key={index}
-                  onClick={() => setCurrentSlide(index)}
-                  className={`w-2.5 h-2.5 rounded-full transition-all duration-300 ${
-                    index === currentSlide ?
-                    'bg-white scale-125 shadow-lg' :
-                    'bg-white/60 hover:bg-white/80'}`
-                  }
-                />
-              )}
+                    <button
+                      key={index}
+                      onClick={() => setCurrentSlide(index)}
+                      className={`w-2.5 h-2.5 rounded-full transition-all duration-300 ${
+                      index === currentSlide ?
+                      'bg-white scale-125 shadow-lg' :
+                      'bg-white/60 hover:bg-white/80'}`
+                      } />
+
+                    )}
             </div>
           </div>
 
@@ -145,33 +145,33 @@ const HeroSection = () => {
           <div className="space-y-4 lg:space-y-5">
             <div>
               <input
-                type="text"
-                placeholder="Full Name"
-                className="w-full px-4 lg:px-5 py-3 lg:py-4 border border-gray-200 rounded-2xl focus:ring-2 focus:ring-violet-500 focus:border-transparent outline-none transition-all duration-300 bg-white/90 backdrop-blur-sm hover:bg-white text-sm lg:text-base" />
+                      type="text"
+                      placeholder="Full Name"
+                      className="w-full px-4 lg:px-5 py-3 lg:py-4 border border-gray-200 rounded-2xl focus:ring-2 focus:ring-violet-500 focus:border-transparent outline-none transition-all duration-300 bg-white/90 backdrop-blur-sm hover:bg-white text-sm lg:text-base" />
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <input
-                type="email"
-                placeholder="Email Address"
-                className="w-full px-4 lg:px-5 py-3 lg:py-4 border border-gray-200 rounded-2xl focus:ring-2 focus:ring-violet-500 focus:border-transparent outline-none transition-all duration-300 bg-white/90 backdrop-blur-sm hover:bg-white text-sm lg:text-base" />
+                      type="email"
+                      placeholder="Email Address"
+                      className="w-full px-4 lg:px-5 py-3 lg:py-4 border border-gray-200 rounded-2xl focus:ring-2 focus:ring-violet-500 focus:border-transparent outline-none transition-all duration-300 bg-white/90 backdrop-blur-sm hover:bg-white text-sm lg:text-base" />
               <input
-                type="tel"
-                placeholder="Phone Number"
-                className="w-full px-4 lg:px-5 py-3 lg:py-4 border border-gray-200 rounded-2xl focus:ring-2 focus:ring-violet-500 focus:border-transparent outline-none transition-all duration-300 bg-white/90 backdrop-blur-sm hover:bg-white text-sm lg:text-base" />
+                      type="tel"
+                      placeholder="Phone Number"
+                      className="w-full px-4 lg:px-5 py-3 lg:py-4 border border-gray-200 rounded-2xl focus:ring-2 focus:ring-violet-500 focus:border-transparent outline-none transition-all duration-300 bg-white/90 backdrop-blur-sm hover:bg-white text-sm lg:text-base" />
             </div>
             <div>
               <select className="w-full px-4 lg:px-5 py-3 lg:py-4 border border-gray-200 rounded-2xl focus:ring-2 focus:ring-violet-500 focus:border-transparent outline-none transition-all duration-300 bg-white/90 backdrop-blur-sm hover:bg-white text-sm lg:text-base">
                 <option value="">Select Condition</option>
                 {conditions.map((condition, index) =>
-                  <option key={index} value={condition}>{condition}</option>
-                )}
+                      <option key={index} value={condition}>{condition}</option>
+                      )}
               </select>
             </div>
             <div>
               <textarea
-                placeholder="Tell us about your situation and how we can help..."
-                rows={4}
-                className="w-full px-4 lg:px-5 py-3 lg:py-4 border border-gray-200 rounded-2xl focus:ring-2 focus:ring-violet-500 focus:border-transparent outline-none transition-all duration-300 resize-none bg-white/90 backdrop-blur-sm hover:bg-white text-sm lg:text-base">
+                      placeholder="Tell us about your situation and how we can help..."
+                      rows={4}
+                      className="w-full px-4 lg:px-5 py-3 lg:py-4 border border-gray-200 rounded-2xl focus:ring-2 focus:ring-violet-500 focus:border-transparent outline-none transition-all duration-300 resize-none bg-white/90 backdrop-blur-sm hover:bg-white text-sm lg:text-base">
               </textarea>
             </div>
           </div>
@@ -225,7 +225,7 @@ const HeroSection = () => {
       </div>
     </div>
   </div>
-</div>
+      </div>
 
     </div>);
 
