@@ -346,19 +346,6 @@ const RanchoMiragePage = () => {
                 title="Map of KarmaTMS Rancho Mirage Location" />
 
             </div>
-
-            <Card className="bg-purple-50 border-purple-200">
-              <CardContent className="p-8">
-                <h3 className="text-xl font-bold mb-4">Driving Directions</h3>
-                <div className="space-y-3 text-gray-700">
-                  <p><strong>From Palm Desert:</strong> Head east on Highway 111, turn left on Bob Hope Drive, our office is on the right in Suite 206-B.</p>
-                  <p><strong>From Indian Wells:</strong> Take Highway 111 north to Bob Hope Drive, turn right, location is on the right side.</p>
-                  <p><strong>From La Quinta:</strong> Take Washington Street north to Highway 111, turn right, then left on Bob Hope Drive.</p>
-                  <p><strong>From Palm Springs:</strong> Take Highway 111 southeast through Cathedral City toward Rancho Mirage, turn right on Bob Hope Drive.</p>
-                  <p className="text-sm italic mt-4">Ample covered parking • Easily accessible from all Coachella Valley communities</p>
-                </div>
-              </CardContent>
-            </Card>
           </div>
         </div>
       </div>
