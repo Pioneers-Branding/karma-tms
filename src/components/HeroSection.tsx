@@ -72,7 +72,7 @@ const HeroSection = () => {
               Effective<span className="bg-gradient-to-r from-blue-magenta via-blue-magenta/70 to-blue-magenta bg-clip-text text-transparent">TMS Therapy </span> for Depression
             </h1>
             <p className="text-base sm:text-lg lg:text-xl text-gray-700 leading-relaxed max-w-2xl">
-              Revolutionary FDA-approved treatment for depression, anxiety, OCD, and PTSD. Experience breakthrough results with our advanced TMS technology at Karma TMS.
+              Revolutionary FDA-cleared treatment for depression, anxiety, OCD, and PTSD. Experience breakthrough results with our advanced TMS technology at Karma TMS.
             </p>
           </div>
 
