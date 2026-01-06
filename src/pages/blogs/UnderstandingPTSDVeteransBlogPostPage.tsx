@@ -11,16 +11,16 @@ import {
   BreadcrumbLink,
   BreadcrumbList,
   BreadcrumbPage,
-  BreadcrumbSeparator
-} from '@/components/ui/breadcrumb';
+  BreadcrumbSeparator } from
+'@/components/ui/breadcrumb';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import {
   Accordion,
   AccordionContent,
   AccordionItem,
-  AccordionTrigger
-} from '@/components/ui/accordion';
+  AccordionTrigger } from
+'@/components/ui/accordion';
 import { Calendar, Clock, User, CheckCircle2, ArrowRight, Phone } from 'lucide-react';
 
 export default function UnderstandingPTSDVeteransBlogPostPage() {
@@ -36,63 +36,63 @@ export default function UnderstandingPTSDVeteransBlogPostPage() {
   };
 
   const tocItems = [
-    { id: 'what-is-ptsd', label: 'What Is PTSD for Veterans?' },
-    { id: 'what-ptsd-looks-like', label: 'What Does PTSD Look Like?' },
-    { id: 'war-veterans', label: 'PTSD in War Veterans' },
-    { id: 'recognition-diagnosis', label: 'Recognition and Diagnosis' },
-    { id: 'treatment-paths', label: 'Treatment Paths' },
-    { id: 'recovery-journey', label: 'The Recovery Journey' },
-    { id: 'supporting-veterans', label: 'Supporting Veterans with PTSD' },
-    { id: 'faqs', label: 'Frequently Asked Questions' }
-  ];
+  { id: 'what-is-ptsd', label: 'What Is PTSD for Veterans?' },
+  { id: 'what-ptsd-looks-like', label: 'What Does PTSD Look Like?' },
+  { id: 'war-veterans', label: 'PTSD in War Veterans' },
+  { id: 'recognition-diagnosis', label: 'Recognition and Diagnosis' },
+  { id: 'treatment-paths', label: 'Treatment Paths' },
+  { id: 'recovery-journey', label: 'The Recovery Journey' },
+  { id: 'supporting-veterans', label: 'Supporting Veterans with PTSD' },
+  { id: 'faqs', label: 'Frequently Asked Questions' }];
+
 
   const faqs = [
-    {
-      question: 'What is PTSD for veterans and how is it different from civilian PTSD?',
-      answer: 'PTSD for veterans is a mental health condition that develops after experiencing or witnessing traumatic combat events. Veteran PTSD often involves unique triggers related to combat experiences, such as loud noises, crowds, or authority figures. Veterans may also experience moral injury, survivor\'s guilt, and hypervigilance that stems specifically from military training and combat situations, making their PTSD experience distinct from civilian trauma.'
-    },
-    {
-      question: 'What are the most common signs of PTSD in war veterans?',
-      answer: 'Common signs include: recurrent nightmares or flashbacks of combat, hypervigilance and exaggerated startle response, avoidance of people or situations that remind them of service, emotional numbing or detachment from loved ones, difficulty sleeping, irritability or angry outbursts, difficulty concentrating, and survivor\'s guilt. These symptoms must last more than one month and significantly impact daily functioning to be diagnosed as PTSD.'
-    },
-    {
-      question: 'How common is PTSD in Vietnam war veterans?',
-      answer: 'Studies show that approximately 30% of Vietnam war veterans have experienced PTSD at some point in their lives. Vietnam vets face unique PTSD challenges due to the nature of guerrilla warfare, unclear enemy lines, and the difficult homecoming many experienced. Many Vietnam veterans dealt with delayed PTSD diagnosis and treatment, as understanding of the condition was less developed during and immediately after the war.'
-    },
-    {
-      question: 'Can TMS therapy help veterans with PTSD?',
-      answer: 'Yes, TMS (Transcranial Magnetic Stimulation) has shown significant promise for veterans with PTSD, especially those who haven\'t responded to traditional treatments. TMS uses non-invasive brain stimulation to target trauma-affected areas, helping regulate emotional processing and fear responses. It has no systemic side effects like medications and can be combined with therapy for enhanced results. Clinical research shows TMS is particularly effective for treatment-resistant PTSD.'
-    },
-    {
-      question: 'When should a veteran seek help for PTSD symptoms?',
-      answer: 'Veterans should seek professional help if symptoms last more than one month, interfere with work or relationships, include thoughts of self-harm, involve substance abuse as a coping mechanism, or cause an inability to control emotional responses. Early intervention is crucial for successful treatment. Remember: seeking help is a sign of strength, not weakness.'
-    },
-    {
-      question: 'What are the most effective treatments for PTSD in veterans?',
-      answer: 'Evidence-based treatments include: Cognitive Processing Therapy (CPT), Prolonged Exposure Therapy (PE), Eye Movement Desensitization and Reprocessing (EMDR), medications like SSRIs and SNRIs, and innovative options like TMS therapy. The most effective approach often combines therapy with other interventions. What works best varies by individual, so working with a specialized provider to find the right treatment combination is essential.'
-    }
-  ];
+  {
+    question: 'What is PTSD for veterans and how is it different from civilian PTSD?',
+    answer: 'PTSD for veterans is a mental health condition that develops after experiencing or witnessing traumatic combat events. Veteran PTSD often involves unique triggers related to combat experiences, such as loud noises, crowds, or authority figures. Veterans may also experience moral injury, survivor\'s guilt, and hypervigilance that stems specifically from military training and combat situations, making their PTSD experience distinct from civilian trauma.'
+  },
+  {
+    question: 'What are the most common signs of PTSD in war veterans?',
+    answer: 'Common signs include: recurrent nightmares or flashbacks of combat, hypervigilance and exaggerated startle response, avoidance of people or situations that remind them of service, emotional numbing or detachment from loved ones, difficulty sleeping, irritability or angry outbursts, difficulty concentrating, and survivor\'s guilt. These symptoms must last more than one month and significantly impact daily functioning to be diagnosed as PTSD.'
+  },
+  {
+    question: 'How common is PTSD in Vietnam war veterans?',
+    answer: 'Studies show that approximately 30% of Vietnam war veterans have experienced PTSD at some point in their lives. Vietnam vets face unique PTSD challenges due to the nature of guerrilla warfare, unclear enemy lines, and the difficult homecoming many experienced. Many Vietnam veterans dealt with delayed PTSD diagnosis and treatment, as understanding of the condition was less developed during and immediately after the war.'
+  },
+  {
+    question: 'Can TMS therapy help veterans with PTSD?',
+    answer: 'Yes, TMS (Transcranial Magnetic Stimulation) has shown significant promise for veterans with PTSD, especially those who haven\'t responded to traditional treatments. TMS uses non-invasive brain stimulation to target trauma-affected areas, helping regulate emotional processing and fear responses. It has no systemic side effects like medications and can be combined with therapy for enhanced results. Clinical research shows TMS is particularly effective for treatment-resistant PTSD.'
+  },
+  {
+    question: 'When should a veteran seek help for PTSD symptoms?',
+    answer: 'Veterans should seek professional help if symptoms last more than one month, interfere with work or relationships, include thoughts of self-harm, involve substance abuse as a coping mechanism, or cause an inability to control emotional responses. Early intervention is crucial for successful treatment. Remember: seeking help is a sign of strength, not weakness.'
+  },
+  {
+    question: 'What are the most effective treatments for PTSD in veterans?',
+    answer: 'Evidence-based treatments include: Cognitive Processing Therapy (CPT), Prolonged Exposure Therapy (PE), Eye Movement Desensitization and Reprocessing (EMDR), medications like SSRIs and SNRIs, and innovative options like TMS therapy. The most effective approach often combines therapy with other interventions. What works best varies by individual, so working with a specialized provider to find the right treatment combination is essential.'
+  }];
+
 
   const relatedPosts = [
-    {
-      title: 'VA Approves TMS for Veterans with PTSD',
-      excerpt: 'Learn about VA coverage for TMS therapy and how to access this breakthrough treatment.',
-      link: '/blogs/va-veterans-ptsd-tms',
-      image: 'https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=800&auto=format'
-    },
-    {
-      title: 'TMS for Anxiety in Veterans',
-      excerpt: 'Discover how TMS helps veterans manage anxiety beyond medication.',
-      link: '/blogs/tms-anxiety-veterans',
-      image: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=800&auto=format'
-    },
-    {
-      title: 'TMS for Migraine Relief in Veterans',
-      excerpt: 'Learn how TMS helps veterans with migraines and comorbid conditions.',
-      link: '/blogs/tms-migraine-veterans',
-      image: 'https://images.unsplash.com/photo-1559757175-0eb30cd8c063?w=800&auto=format'
-    }
-  ];
+  {
+    title: 'VA Approves TMS for Veterans with PTSD',
+    excerpt: 'Learn about VA coverage for TMS therapy and how to access this breakthrough treatment.',
+    link: '/blogs/va-veterans-ptsd-tms',
+    image: 'https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=800&auto=format'
+  },
+  {
+    title: 'TMS for Anxiety in Veterans',
+    excerpt: 'Discover how TMS helps veterans manage anxiety beyond medication.',
+    link: '/blogs/tms-anxiety-veterans',
+    image: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=800&auto=format'
+  },
+  {
+    title: 'TMS for Migraine Relief in Veterans',
+    excerpt: 'Learn how TMS helps veterans with migraines and comorbid conditions.',
+    link: '/blogs/tms-migraine-veterans',
+    image: 'https://images.unsplash.com/photo-1559757175-0eb30cd8c063?w=800&auto=format'
+  }];
+
 
   const structuredData = {
     '@context': 'https://schema.org',
@@ -170,8 +170,8 @@ export default function UnderstandingPTSDVeteransBlogPostPage() {
         title="Understanding PTSD in Veterans: Signs, Symptoms & Treatment | Karma TMS"
         description="Complete guide to PTSD in war veterans including Vietnam vets. Learn what PTSD looks like in veterans, common signs, symptoms, and effective treatment paths including TMS therapy."
         keywords="what is ptsd for veterans, what does ptsd look like in veterans, ptsd war veterans, ptsd war vets, ptsd vietnam vets, ptsd vietnam war veterans, veteran ptsd symptoms, ptsd treatment for veterans"
-        canonicalUrl="https://www.karmatms.com/blogs/understanding-ptsd-veterans"
-      />
+        canonicalUrl="https://www.karmatms.com/blogs/understanding-ptsd-veterans" />
+
 
       <StructuredData data={structuredData} />
       
@@ -236,10 +236,10 @@ export default function UnderstandingPTSDVeteransBlogPostPage() {
                 <Link to="/contact">Schedule Free Consultation</Link>
               </Button>
               <Button asChild size="lg" variant="outline" className="border-white text-white hover:bg-white/10">
-                <a href="tel:760-449-8185" className="inline-flex items-center gap-2">
-                  <Phone className="w-4 h-4" />
-                  (760) 449-8185
-                </a>
+                
+
+
+
               </Button>
             </div>
           </div>
@@ -256,19 +256,19 @@ export default function UnderstandingPTSDVeteransBlogPostPage() {
                 <CardContent className="p-6">
                   <h3 className="font-bold text-lg mb-4 text-[#572670]">Table of Contents</h3>
                   <nav className="space-y-2">
-                    {tocItems.map((item) => (
-                      <button
-                        key={item.id}
-                        onClick={() => scrollToSection(item.id)}
-                        className={`block w-full text-left px-3 py-2 rounded-md text-sm transition-all ${
-                          activeSection === item.id
-                            ? 'bg-[#572670] text-white font-medium'
-                            : 'text-gray-700 hover:bg-[#572670]/10'
-                        }`}
-                      >
+                    {tocItems.map((item) =>
+                    <button
+                      key={item.id}
+                      onClick={() => scrollToSection(item.id)}
+                      className={`block w-full text-left px-3 py-2 rounded-md text-sm transition-all ${
+                      activeSection === item.id ?
+                      'bg-[#572670] text-white font-medium' :
+                      'text-gray-700 hover:bg-[#572670]/10'}`
+                      }>
+
                         {item.label}
                       </button>
-                    ))}
+                    )}
                   </nav>
                   <div className="mt-6 pt-6 border-t">
                     <Button asChild className="w-full bg-[#572670] hover:bg-[#7B3FA0]">
@@ -287,12 +287,12 @@ export default function UnderstandingPTSDVeteransBlogPostPage() {
               <img
                 src="https://res.cloudinary.com/de4kw1t2i/image/upload/v1763033666/5_kvtlku.png"
                 alt="Understanding PTSD in Veterans"
-                className="w-full h-64 md:h-96 object-cover rounded-lg mb-6"
-              />
+                className="w-full h-64 md:h-96 object-cover rounded-lg mb-6" />
+
             </div>
 
             {/* Section 1: What Is PTSD */}
-            <section ref={(el) => (sectionsRef.current['what-is-ptsd'] = el)} className="mb-12">
+            <section ref={(el) => sectionsRef.current['what-is-ptsd'] = el} className="mb-12">
               <h2 className="text-3xl font-bold text-[#572670] mb-6">What Is PTSD for Veterans?</h2>
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
                 Post-Traumatic Stress Disorder (PTSD) is a mental health condition that develops after experiencing or witnessing traumatic events. For veterans, particularly war veterans including Vietnam vets, the experiences of combat, loss of fellow service members, and exposure to life-threatening situations can create lasting psychological impacts that manifest as PTSD.
@@ -303,7 +303,7 @@ export default function UnderstandingPTSDVeteransBlogPostPage() {
             </section>
 
             {/* Section 2: What PTSD Looks Like */}
-            <section ref={(el) => (sectionsRef.current['what-ptsd-looks-like'] = el)} className="mb-12">
+            <section ref={(el) => sectionsRef.current['what-ptsd-looks-like'] = el} className="mb-12">
               <h2 className="text-3xl font-bold text-[#572670] mb-6">What Does PTSD Look Like in Veterans?</h2>
               
               <Card className="bg-gradient-to-br from-[#572670]/5 to-transparent border-[#572670]/20 mb-6">
@@ -410,13 +410,13 @@ export default function UnderstandingPTSDVeteransBlogPostPage() {
             </section>
 
             {/* Section 3: War Veterans */}
-            <section ref={(el) => (sectionsRef.current['war-veterans'] = el)} className="mb-12">
+            <section ref={(el) => sectionsRef.current['war-veterans'] = el} className="mb-12">
               <h2 className="text-3xl font-bold text-[#572670] mb-6">PTSD in War Veterans: Special Considerations</h2>
               <img
                 src="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/0a00bae7-03d4-4867-b6ee-a18528b1c447.webp"
                 alt="PTSD in war veterans"
-                className="w-full h-64 md:h-80 object-cover rounded-lg mb-6"
-              />
+                className="w-full h-64 md:h-80 object-cover rounded-lg mb-6" />
+
 
               <Card className="border-l-4 border-[#572670] mb-6">
                 <CardContent className="p-6">
@@ -456,7 +456,7 @@ export default function UnderstandingPTSDVeteransBlogPostPage() {
             </section>
 
             {/* Section 4: Recognition and Diagnosis */}
-            <section ref={(el) => (sectionsRef.current['recognition-diagnosis'] = el)} className="mb-12">
+            <section ref={(el) => sectionsRef.current['recognition-diagnosis'] = el} className="mb-12">
               <h2 className="text-3xl font-bold text-[#572670] mb-6">Recognition and Diagnosis</h2>
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
                 Early recognition of PTSD symptoms is critical for successful treatment. Many veterans don't realize they have PTSD, attributing their struggles to normal adjustment challenges or trying to "tough it out."
@@ -493,13 +493,13 @@ export default function UnderstandingPTSDVeteransBlogPostPage() {
             </section>
 
             {/* Section 5: Treatment Paths */}
-            <section ref={(el) => (sectionsRef.current['treatment-paths'] = el)} className="mb-12">
+            <section ref={(el) => sectionsRef.current['treatment-paths'] = el} className="mb-12">
               <h2 className="text-3xl font-bold text-[#572670] mb-6">Treatment Paths for PTSD in Veterans</h2>
               <img
                 src="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/dd7dd986-540f-4359-99af-39f398491cf0.webp"
                 alt="TMS therapy for veterans"
-                className="w-full h-64 md:h-80 object-cover rounded-lg mb-6"
-              />
+                className="w-full h-64 md:h-80 object-cover rounded-lg mb-6" />
+
 
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Evidence-Based Treatments</h3>
               
@@ -593,7 +593,7 @@ export default function UnderstandingPTSDVeteransBlogPostPage() {
             </section>
 
             {/* Section 6: Recovery Journey */}
-            <section ref={(el) => (sectionsRef.current['recovery-journey'] = el)} className="mb-12">
+            <section ref={(el) => sectionsRef.current['recovery-journey'] = el} className="mb-12">
               <h2 className="text-3xl font-bold text-[#572670] mb-6">The Recovery Journey</h2>
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
                 Recovery from PTSD is a journey, not a destination. While symptoms may never completely disappear, effective treatment can significantly reduce their impact and help veterans reclaim their quality of life.
@@ -641,7 +641,7 @@ export default function UnderstandingPTSDVeteransBlogPostPage() {
             </section>
 
             {/* Section 7: Supporting Veterans */}
-            <section ref={(el) => (sectionsRef.current['supporting-veterans'] = el)} className="mb-12">
+            <section ref={(el) => sectionsRef.current['supporting-veterans'] = el} className="mb-12">
               <h2 className="text-3xl font-bold text-[#572670] mb-6">For Families: Supporting Veterans with PTSD</h2>
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
                 Family members and loved ones play a crucial role in supporting veterans with PTSD. Understanding the condition and knowing how to help can make a significant difference.
@@ -697,20 +697,20 @@ export default function UnderstandingPTSDVeteransBlogPostPage() {
               name={author.name}
               role={author.credentials}
               bio={author.bio}
-              image={author.image}
-            />
+              image={author.image} />
+
 
             {/* FAQ Section */}
-            <section ref={(el) => (sectionsRef.current['faqs'] = el)} className="mb-12 mt-12">
+            <section ref={(el) => sectionsRef.current['faqs'] = el} className="mb-12 mt-12">
               <h2 className="text-3xl font-bold text-[#572670] mb-6">Frequently Asked Questions</h2>
               
               <Accordion type="single" collapsible className="w-full space-y-2">
-                {faqs.map((faq, index) => (
-                  <AccordionItem
-                    key={index}
-                    value={`item-${index}`}
-                    className="border border-gray-200 rounded-lg px-4 data-[state=open]:border-[#572670]"
-                  >
+                {faqs.map((faq, index) =>
+                <AccordionItem
+                  key={index}
+                  value={`item-${index}`}
+                  className="border border-gray-200 rounded-lg px-4 data-[state=open]:border-[#572670]">
+
                     <AccordionTrigger className="text-left font-semibold hover:text-[#572670] hover:no-underline">
                       {faq.question}
                     </AccordionTrigger>
@@ -718,7 +718,7 @@ export default function UnderstandingPTSDVeteransBlogPostPage() {
                       {faq.answer}
                     </AccordionContent>
                   </AccordionItem>
-                ))}
+                )}
               </Accordion>
             </section>
 
@@ -739,10 +739,10 @@ export default function UnderstandingPTSDVeteransBlogPostPage() {
                     </Link>
                   </Button>
                   <Button asChild size="lg" variant="outline" className="border-white text-white hover:bg-white/10">
-                    <a href="tel:760-449-8185" className="inline-flex items-center gap-2">
-                      <Phone className="h-5 w-5" />
-                      (760) 449-8185
-                    </a>
+                    
+
+
+
                   </Button>
                 </div>
                 <p className="mt-6 text-white/90">
@@ -755,13 +755,13 @@ export default function UnderstandingPTSDVeteransBlogPostPage() {
             <section className="mb-12">
               <h2 className="text-3xl font-bold text-[#572670] mb-6">Related Articles</h2>
               <div className="grid md:grid-cols-3 gap-6">
-                {relatedPosts.map((post, index) => (
-                  <Card key={index} className="border-[#572670]/20 overflow-hidden hover:shadow-lg transition-shadow">
+                {relatedPosts.map((post, index) =>
+                <Card key={index} className="border-[#572670]/20 overflow-hidden hover:shadow-lg transition-shadow">
                     <img
-                      src={post.image}
-                      alt={post.title}
-                      className="w-full h-48 object-cover"
-                    />
+                    src={post.image}
+                    alt={post.title}
+                    className="w-full h-48 object-cover" />
+
                     <CardContent className="p-6">
                       <h3 className="font-bold text-lg mb-2 hover:text-[#572670] transition-colors">
                         <Link to={post.link}>{post.title}</Link>
@@ -774,7 +774,7 @@ export default function UnderstandingPTSDVeteransBlogPostPage() {
                       </Button>
                     </CardContent>
                   </Card>
-                ))}
+                )}
               </div>
             </section>
           </article>
@@ -782,6 +782,6 @@ export default function UnderstandingPTSDVeteransBlogPostPage() {
       </div>
 
       <FooterSection />
-    </>
-  );
+    </>);
+
 }
