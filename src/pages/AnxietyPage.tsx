@@ -55,7 +55,7 @@ const AnxietyPage = () => {
             </div>
             <div className="relative">
               <img
-                src="https://images.unsplash.com/photo-1740645581682-bc1e8e37b0f3?q=80&w=800"
+                src="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/76caee2d-5629-4dc1-a3b4-8c5cea23ede6.webp"
                 alt="KarmaTMS anxiety therapy and treatment with advanced TMS technology"
                 className="rounded-lg shadow-2xl" />
 
@@ -99,7 +99,7 @@ const AnxietyPage = () => {
             </div>
             <div className="relative">
               <img
-                src="https://images.unsplash.com/photo-1591450456502-a8da3ecde6d4?q=80&w=800"
+                src="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/9705b922-d0fc-4d29-be10-acd507ce308c.webp"
                 alt="Brain imaging for anxiety treatment"
                 className="rounded-lg shadow-lg" />
 
@@ -377,7 +377,7 @@ const AnxietyPage = () => {
             </div>
             <div className="relative">
               <img
-                src="https://images.unsplash.com/photo-1612362155818-e2aedf5e153f?q=80&w=800"
+                src="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/66e6e1ae-8cc3-4469-bfaf-b1f3f3d07006.webp"
                 alt="Anxiety treatment session"
                 className="rounded-lg shadow-lg" />
 
