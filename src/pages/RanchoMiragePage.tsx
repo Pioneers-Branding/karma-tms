@@ -311,11 +311,11 @@ const RanchoMiragePage = () => {
 
                 <div className="space-y-3">
                   <a
-                    href="https://www.google.com/maps/dir//35400+Bob+Hope+Dr.+Suite+206-B,+Rancho+Mirage,+CA+92270"
+                    href="https://maps.app.goo.gl/g8QXsaP4Ba1GET1U7"
                     target="_blank"
                     rel="noopener noreferrer">
 
-                    <Button variant="outline" className="w-full group">
+                    <Button variant="outline" className="w-full group mb-3">
                       <NavIcon className="w-4 h-4 mr-2 group-hover:translate-x-1 transition-transform" />
                       Get Directions
                     </Button>
@@ -336,7 +336,7 @@ const RanchoMiragePage = () => {
 
             <div className="rounded-lg overflow-hidden shadow-xl mb-8">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d229186.20144231617!2d-116.58782004243615!3d33.797083618942274!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dafd449b434721%3A0xf3719bcb5804db!2s35400%20Bob%20Hope%20Dr%20STE%20206%2C%20Rancho%20Mirage%2C%20CA%2092270!5e0!3m2!1sen!2sus!4v1756473962862!5m2!1sen!2sus"
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d922901.4777224401!2d-116.405446!3d33.791309!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dafd449b434721%3A0xf3719bcb5804db!2s35400%20Bob%20Hope%20Dr%20STE%20206%2C%20Rancho%20Mirage%2C%20CA%2092270%2C%20USA!5e1!3m2!1sen!2sin!4v1763984506652!5m2!1sen!2sin"
                 width="100%"
                 height="400"
                 style={{ border: 0 }}
