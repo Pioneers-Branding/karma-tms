@@ -1,30 +1,133 @@
+import { useState, useEffect, useRef } from 'react';
+import { Link } from 'react-router-dom';
 import Navigation from '@/components/Navigation';
 import FooterSection from '@/components/FooterSection';
 import SEO from '@/components/SEO';
 import StructuredData from '@/components/StructuredData';
-import { Link } from 'react-router-dom';
 import {
   Breadcrumb,
   BreadcrumbItem,
   BreadcrumbLink,
   BreadcrumbList,
   BreadcrumbPage,
-  BreadcrumbSeparator } from
-'@/components/ui/breadcrumb';
+  BreadcrumbSeparator
+} from '@/components/ui/breadcrumb';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger
+} from '@/components/ui/accordion';
 import { Calendar, Clock, User, CheckCircle2, ArrowRight } from 'lucide-react';
 import AuthorBox from '@/components/AuthorBox';
 
 const PsychiatristsBoostWellBeingThroughExpertCareForMentalHealth = () => {
+  const [activeSection, setActiveSection] = useState('');
+  const sectionsRef = useRef<{[key: string]: HTMLElement | null;}>({});
+
+  const tocItems = [
+    { id: 'comprehensive-role', label: 'Comprehensive Role of Psychiatrists' },
+    { id: 'treatment-approaches', label: 'Evidence-Based Treatment Approaches' },
+    { id: 'tms-therapy', label: 'TMS Therapy Innovation' },
+    { id: 'personalized-care', label: 'Personalized Care' },
+    { id: 'when-to-seek', label: 'When to Seek Psychiatric Care' },
+    { id: 'faqs', label: 'Frequently Asked Questions' }
+  ];
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollPosition = window.scrollY + 150;
+
+      for (const item of tocItems) {
+        const section = sectionsRef.current[item.id];
+        if (section) {
+          const { offsetTop, offsetHeight } = section;
+          if (scrollPosition >= offsetTop && scrollPosition < offsetTop + offsetHeight) {
+            setActiveSection(item.id);
+            break;
+          }
+        }
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    handleScroll();
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  const scrollToSection = (id: string) => {
+    const section = sectionsRef.current[id];
+    if (section) {
+      const yOffset = -100;
+      const y = section.getBoundingClientRect().top + window.pageYOffset + yOffset;
+      window.scrollTo({ top: y, behavior: 'smooth' });
+    }
+  };
+
+  const faqs = [
+    {
+      question: 'What is the difference between a psychiatrist and a psychologist?',
+      answer: 'Psychiatrists are medical doctors who can prescribe medication and provide therapy, while psychologists focus primarily on psychotherapy and cannot prescribe medications in most states. Psychiatrists have a comprehensive medical background that allows them to address both physical and mental health aspects of conditions.'
+    },
+    {
+      question: 'How do I know if I need to see a psychiatrist?',
+      answer: 'Consider seeing a psychiatrist if you experience persistent depression, anxiety, significant mood swings, thoughts of self-harm, difficulty functioning in daily life, or if you haven\'t found relief with therapy alone. A psychiatrist can provide comprehensive assessment and determine if medication or other medical interventions might be helpful.'
+    },
+    {
+      question: 'What can I expect during my first psychiatrist appointment?',
+      answer: 'Your first appointment will typically involve a comprehensive evaluation including your medical history, current symptoms, medication history, family history, and lifestyle factors. The psychiatrist will work with you to develop a personalized treatment plan that may include medication, therapy, or innovative treatments like TMS.'
+    },
+    {
+      question: 'Is TMS therapy safe and effective?',
+      answer: 'Yes, TMS therapy is FDA-approved and has been proven safe and effective for treatment-resistant depression. Clinical studies show 50-60% of patients experience significant improvement, with minimal side effects. Unlike medications, TMS doesn\'t cause weight gain, sexual dysfunction, or cognitive impairment.'
+    },
+    {
+      question: 'How long does psychiatric treatment typically last?',
+      answer: 'Treatment duration varies based on individual needs and conditions. Some patients may need short-term treatment for a few months, while others benefit from ongoing care. Your psychiatrist will regularly assess your progress and adjust the treatment plan as needed to ensure optimal outcomes.'
+    },
+    {
+      question: 'Does insurance cover psychiatric care and TMS therapy?',
+      answer: 'Most insurance plans cover psychiatric consultations and treatments. TMS therapy is covered by many insurance providers for treatment-resistant depression. We recommend contacting your insurance provider or our office to verify your specific coverage and benefits.'
+    }
+  ];
+
+  const relatedPosts = [
+    {
+      title: 'TMS Therapy for Treatment Resistant Depression',
+      excerpt: 'Discover how TMS offers new hope for those who haven\'t found relief with traditional treatments.',
+      link: '/blogs/TMSTherapyForTreatmentResistantDepression',
+      image: 'https://images.unsplash.com/photo-1688126507367-b7cb61e19f30?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MTg3MTl8MHwxfHNlYXJjaHwxfHxBJTIwd2VicCUyMGltYWdlJTIwaG9zdGVkJTIwb24lMjBhJTIwc2VydmVyJTJDJTIwcG9zc2libHklMjByZWxhdGVkJTIwdG8lMjBtZW50YWwlMjBoZWFsdGglMjBvciUyMHBzeWNoaWF0cnkufGVufDB8fHx8MTc2NDEzNzk4N3ww&ixlib=rb-4.1.0&q=80&w=200$w=800'
+    },
+    {
+      title: 'Understanding Depression Treatment',
+      excerpt: 'Comprehensive guide to depression symptoms and treatment options.',
+      link: '/depression',
+      image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/2ddc8d69-b09a-4f1d-bd47-6d783ceefbd1.webp'
+    },
+    {
+      title: 'Anxiety Treatment Options',
+      excerpt: 'Learn about effective approaches to managing anxiety disorders.',
+      link: '/anxiety',
+      image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/9705b922-d0fc-4d29-be10-acd507ce308c.webp'
+    }
+  ];
+
   const articleSchema = {
     '@context': 'https://schema.org',
     '@type': 'Article',
     headline: 'Psychiatrists Boost Well-Being Through Expert Care For Mental Health',
     description: 'Discover how psychiatrists provide comprehensive mental health care through evidence-based treatments, personalized approaches, and innovative therapies like TMS.',
+    image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/66e6e1ae-8cc3-4469-bfaf-b1f3f3d07006.webp',
     author: {
       '@type': 'Person',
-      name: 'karmatmsdev'
+      name: 'Dr. Keerthy Sunder',
+      jobTitle: 'Board-Certified Psychiatrist | Medical Director at KarmaTMS',
+      affiliation: {
+        '@type': 'Organization',
+        name: 'KarmaTMS'
+      }
     },
     publisher: {
       '@type': 'Organization',
@@ -42,6 +145,19 @@ const PsychiatristsBoostWellBeingThroughExpertCareForMentalHealth = () => {
     }
   };
 
+  const faqSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: faqs.map((faq) => ({
+      '@type': 'Question',
+      name: faq.question,
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: faq.answer
+      }
+    }))
+  };
+
   return (
     <>
       <SEO
@@ -49,20 +165,23 @@ const PsychiatristsBoostWellBeingThroughExpertCareForMentalHealth = () => {
         description="Discover how psychiatrists provide comprehensive mental health care through evidence-based treatments, personalized approaches, and innovative therapies like TMS."
         keywords="psychiatrist, mental health care, psychiatric treatment, TMS therapy, depression treatment, anxiety treatment, mental wellness"
         canonical="/blogs/PsychiatristsBoostWellBeingThroughExpertCareForMentalHealth"
+        ogImage="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/66e6e1ae-8cc3-4469-bfaf-b1f3f3d07006.webp"
         ogType="article" />
-
 
       <StructuredData
         type="breadcrumb"
         breadcrumbs={[
-        { name: 'Home', url: '/' },
-        { name: 'Blog', url: '/blog' },
-        { name: 'Psychiatrists Expert Care', url: '/blogs/PsychiatristsBoostWellBeingThroughExpertCareForMentalHealth' }]
-        } />
-
+          { name: 'Home', url: '/' },
+          { name: 'Blog', url: '/blog' },
+          { name: 'Psychiatrists Expert Care', url: '/blogs/PsychiatristsBoostWellBeingThroughExpertCareForMentalHealth' }
+        ]} />
 
       <script type="application/ld+json">
         {JSON.stringify(articleSchema)}
+      </script>
+
+      <script type="application/ld+json">
+        {JSON.stringify(faqSchema)}
       </script>
 
       <Navigation />
@@ -108,7 +227,7 @@ const PsychiatristsBoostWellBeingThroughExpertCareForMentalHealth = () => {
               </span>
               <span className="flex items-center gap-1 bg-white/10 px-3 py-1 rounded-full backdrop-blur-sm">
                 <User className="w-4 h-4" />
-                karmatmsdev
+                Dr. Keerthy Sunder
               </span>
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
@@ -117,14 +236,53 @@ const PsychiatristsBoostWellBeingThroughExpertCareForMentalHealth = () => {
             <p className="text-xl md:text-2xl text-white/90 mb-8">
               Understanding the comprehensive role of psychiatrists in promoting mental wellness through evidence-based care
             </p>
+            <div className="flex flex-wrap justify-center gap-4">
+              <Button asChild size="lg" className="bg-white text-[#572670] hover:bg-gray-100">
+                <Link to="/contact">Schedule Consultation</Link>
+              </Button>
+              <Button asChild size="lg" variant="outline" className="border-white text-white hover:bg-white/10">
+                <Link to="/team">Meet Our Team</Link>
+              </Button>
+            </div>
           </div>
         </div>
       </section>
 
       {/* Main Content */}
       <div className="container mx-auto px-4 py-12">
-        <div className="max-w-4xl mx-auto">
-          <article className="prose prose-lg max-w-none">
+        <div className="grid lg:grid-cols-4 gap-8">
+          {/* Table of Contents - Sticky Sidebar */}
+          <aside className="lg:col-span-1">
+            <div className="lg:sticky lg:top-24">
+              <Card className="border-[#572670]/20">
+                <CardContent className="p-6">
+                  <h3 className="font-bold text-lg mb-4 text-[#572670]">Table of Contents</h3>
+                  <nav className="space-y-2">
+                    {tocItems.map((item) => (
+                      <button
+                        key={item.id}
+                        onClick={() => scrollToSection(item.id)}
+                        className={`block w-full text-left px-3 py-2 rounded-md text-sm transition-all ${
+                          activeSection === item.id
+                            ? 'bg-[#572670] text-white font-medium'
+                            : 'text-gray-700 hover:bg-[#572670]/10'
+                        }`}>
+                        {item.label}
+                      </button>
+                    ))}
+                  </nav>
+                  <div className="mt-6 pt-6 border-t">
+                    <Button asChild className="w-full bg-[#572670] hover:bg-[#7B3FA0]">
+                      <Link to="/contact">Schedule Consultation</Link>
+                    </Button>
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
+          </aside>
+
+          {/* Article Content */}
+          <article className="lg:col-span-3 prose prose-lg max-w-none">
             {/* Introduction */}
             <div className="mb-12">
               <img
@@ -132,14 +290,13 @@ const PsychiatristsBoostWellBeingThroughExpertCareForMentalHealth = () => {
                 alt="Psychiatrist providing expert mental health care"
                 className="w-full object-cover rounded-lg mb-6" />
 
-
               <p className="text-xl text-gray-700 leading-relaxed">
                 In an era where mental health awareness is gaining unprecedented attention, psychiatrists stand at the forefront of providing comprehensive, expert care that transforms lives. Their unique combination of medical expertise, psychological insight, and compassionate approach makes them essential partners in the journey toward mental wellness.
               </p>
             </div>
 
-            {/* Role of Psychiatrists Section */}
-            <section className="mb-12">
+            {/* Section 1: Role of Psychiatrists */}
+            <section ref={(el) => sectionsRef.current['comprehensive-role'] = el} className="mb-12">
               <h2 className="text-3xl font-bold text-[#572670] mb-6">The Comprehensive Role of Psychiatrists</h2>
               
               <Card className="bg-gradient-to-br from-[#572670]/5 to-transparent border-[#572670]/20 mb-6">
@@ -187,8 +344,8 @@ const PsychiatristsBoostWellBeingThroughExpertCareForMentalHealth = () => {
               </div>
             </section>
 
-            {/* Treatment Approaches Section */}
-            <section className="mb-12">
+            {/* Section 2: Treatment Approaches */}
+            <section ref={(el) => sectionsRef.current['treatment-approaches'] = el} className="mb-12">
               <h2 className="text-3xl font-bold text-[#572670] mb-6">Evidence-Based Treatment Approaches</h2>
               
               <p className="mb-6">
@@ -225,15 +382,14 @@ const PsychiatristsBoostWellBeingThroughExpertCareForMentalHealth = () => {
               </div>
             </section>
 
-            {/* TMS Therapy Section */}
-            <section className="mb-12">
+            {/* Section 3: TMS Therapy */}
+            <section ref={(el) => sectionsRef.current['tms-therapy'] = el} className="mb-12">
               <h2 className="text-3xl font-bold text-[#572670] mb-6">TMS Therapy: A Modern Psychiatric Innovation</h2>
               
               <img
                 src="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/76caee2d-5629-4dc1-a3b4-8c5cea23ede6.webp"
                 alt="TMS Therapy treatment"
                 className="w-full object-cover rounded-lg mb-6" />
-
 
               <p className="mb-4">
                 Transcranial Magnetic Stimulation represents one of the most significant advances in psychiatric treatment in recent decades. This FDA-approved therapy allows psychiatrists to:
@@ -256,8 +412,8 @@ const PsychiatristsBoostWellBeingThroughExpertCareForMentalHealth = () => {
               </Card>
             </section>
 
-            {/* Personalized Care Section */}
-            <section className="mb-12">
+            {/* Section 4: Personalized Care */}
+            <section ref={(el) => sectionsRef.current['personalized-care'] = el} className="mb-12">
               <h2 className="text-3xl font-bold text-[#572670] mb-6">The Importance of Personalized Care</h2>
               
               <p className="mb-4">
@@ -282,8 +438,8 @@ const PsychiatristsBoostWellBeingThroughExpertCareForMentalHealth = () => {
               </Card>
             </section>
 
-            {/* When to See Section */}
-            <section className="mb-12">
+            {/* Section 5: When to See */}
+            <section ref={(el) => sectionsRef.current['when-to-seek'] = el} className="mb-12">
               <h2 className="text-3xl font-bold text-[#572670] mb-6">When to Seek Psychiatric Care</h2>
               
               <p className="mb-6">
@@ -315,16 +471,35 @@ const PsychiatristsBoostWellBeingThroughExpertCareForMentalHealth = () => {
             </section>
 
             {/* Author Box */}
-               <AuthorBox
+            <AuthorBox
               name="Dr. Keerthy Sunder"
               role="Board-Certified Psychiatrist | Medical Director at KarmaTMS"
               bio="Dr. Keerthy Sunder is a board-certified psychiatrist specializing in TMS therapy for veterans and treatment-resistant mental health conditions. With extensive experience in neuroscience and innovative treatment modalities, Dr. Sunder is dedicated to helping veterans overcome PTSD, depression, and anxiety through evidence-based, compassionate care."
               image="https://www.prtms.com/wp-content/uploads/2023/03/Dr.-Keerthy-Sunder-scaled.jpg" />
 
-
+            {/* FAQ Section */}
+            <section ref={(el) => sectionsRef.current['faqs'] = el} className="mb-12 mt-12">
+              <h2 className="text-3xl font-bold text-[#572670] mb-6">Frequently Asked Questions</h2>
+              
+              <Accordion type="single" collapsible className="w-full space-y-2">
+                {faqs.map((faq, index) => (
+                  <AccordionItem
+                    key={index}
+                    value={`item-${index}`}
+                    className="border border-gray-200 rounded-lg px-4 data-[state=open]:border-[#572670]">
+                    <AccordionTrigger className="text-left font-semibold hover:text-[#572670] hover:no-underline">
+                      {faq.question}
+                    </AccordionTrigger>
+                    <AccordionContent className="text-gray-700 pt-2 pb-4">
+                      {faq.answer}
+                    </AccordionContent>
+                  </AccordionItem>
+                ))}
+              </Accordion>
+            </section>
 
             {/* CTA Section */}
-            <Card className="bg-gradient-to-br from-[#572670] to-[#7B3FA0] text-white mb-12 mt-12">
+            <Card className="bg-gradient-to-br from-[#572670] to-[#7B3FA0] text-white mb-12">
               <CardContent className="p-8 text-center">
                 <h3 className="text-2xl md:text-3xl font-bold mb-4">
                   Ready to Start Your Mental Health Journey?
@@ -347,23 +522,25 @@ const PsychiatristsBoostWellBeingThroughExpertCareForMentalHealth = () => {
             <section className="mb-12">
               <h2 className="text-3xl font-bold text-[#572670] mb-6">Related Articles</h2>
               <div className="grid md:grid-cols-3 gap-6">
-                <Card className="border-[#572670]/20 overflow-hidden hover:shadow-lg transition-shadow">
-                  <img
-                    src="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/76caee2d-5629-4dc1-a3b4-8c5cea23ede6.webp"
-                    alt="TMS Therapy"
-                    className="w-full object-cover h-48" />
-
-                  <CardContent className="p-6">
-                    <h3 className="font-bold text-lg mb-2 hover:text-[#572670] transition-colors">
-                      <Link to="/tms-therapy">Understanding TMS Therapy</Link>
-                    </h3>
-                    <Button asChild variant="ghost" className="text-[#572670] p-0 h-auto hover:bg-transparent">
-                      <Link to="/tms-therapy" className="inline-flex items-center gap-2">
-                        Learn More <ArrowRight className="w-4 h-4" />
-                      </Link>
-                    </Button>
-                  </CardContent>
-                </Card>
+                {relatedPosts.map((post, index) => (
+                  <Card key={index} className="border-[#572670]/20 overflow-hidden hover:shadow-lg transition-shadow">
+                    <img
+                      src={post.image}
+                      alt={post.title}
+                      className="w-full object-cover" />
+                    <CardContent className="p-6">
+                      <h3 className="font-bold text-lg mb-2 hover:text-[#572670] transition-colors">
+                        <Link to={post.link}>{post.title}</Link>
+                      </h3>
+                      <p className="text-gray-600 text-sm mb-4">{post.excerpt}</p>
+                      <Button asChild variant="ghost" className="text-[#572670] p-0 h-auto hover:bg-transparent">
+                        <Link to={post.link} className="inline-flex items-center gap-2">
+                          Read More <ArrowRight className="w-4 h-4" />
+                        </Link>
+                      </Button>
+                    </CardContent>
+                  </Card>
+                ))}
               </div>
             </section>
           </article>
@@ -371,8 +548,8 @@ const PsychiatristsBoostWellBeingThroughExpertCareForMentalHealth = () => {
       </div>
 
       <FooterSection />
-    </>);
-
+    </>
+  );
 };
 
 export default PsychiatristsBoostWellBeingThroughExpertCareForMentalHealth;

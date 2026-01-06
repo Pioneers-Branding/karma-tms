@@ -1,30 +1,134 @@
+import { useState, useEffect, useRef } from 'react';
+import { Link } from 'react-router-dom';
 import Navigation from '@/components/Navigation';
 import FooterSection from '@/components/FooterSection';
 import SEO from '@/components/SEO';
 import StructuredData from '@/components/StructuredData';
-import { Link } from 'react-router-dom';
 import {
   Breadcrumb,
   BreadcrumbItem,
   BreadcrumbLink,
   BreadcrumbList,
   BreadcrumbPage,
-  BreadcrumbSeparator } from
-'@/components/ui/breadcrumb';
+  BreadcrumbSeparator
+} from '@/components/ui/breadcrumb';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger
+} from '@/components/ui/accordion';
 import { Calendar, Clock, User, CheckCircle2, ArrowRight } from 'lucide-react';
 import AuthorBox from '@/components/AuthorBox';
 
 const TMSTherapyForTreatmentResistantDepression = () => {
+  const [activeSection, setActiveSection] = useState('');
+  const sectionsRef = useRef<{[key: string]: HTMLElement | null;}>({});
+
+  const tocItems = [
+    { id: 'understanding-trd', label: 'Understanding Treatment-Resistant Depression' },
+    { id: 'how-tms-works', label: 'How TMS Works' },
+    { id: 'benefits', label: 'Benefits of TMS' },
+    { id: 'success-rates', label: 'Success Rates' },
+    { id: 'treatment-process', label: 'Treatment Process' },
+    { id: 'good-candidate', label: 'Who is a Good Candidate' },
+    { id: 'faqs', label: 'Frequently Asked Questions' }
+  ];
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollPosition = window.scrollY + 150;
+
+      for (const item of tocItems) {
+        const section = sectionsRef.current[item.id];
+        if (section) {
+          const { offsetTop, offsetHeight } = section;
+          if (scrollPosition >= offsetTop && scrollPosition < offsetTop + offsetHeight) {
+            setActiveSection(item.id);
+            break;
+          }
+        }
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    handleScroll();
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  const scrollToSection = (id: string) => {
+    const section = sectionsRef.current[id];
+    if (section) {
+      const yOffset = -100;
+      const y = section.getBoundingClientRect().top + window.pageYOffset + yOffset;
+      window.scrollTo({ top: y, behavior: 'smooth' });
+    }
+  };
+
+  const faqs = [
+    {
+      question: 'What is treatment-resistant depression?',
+      answer: 'Treatment-resistant depression (TRD) is diagnosed when symptoms persist despite trying at least two different antidepressant medications at adequate doses and durations. It affects approximately 30-40% of people with major depressive disorder and requires alternative treatment approaches like TMS therapy.'
+    },
+    {
+      question: 'How effective is TMS therapy for treatment-resistant depression?',
+      answer: 'Clinical studies show that 50-60% of patients with treatment-resistant depression experience significant symptom improvement with TMS therapy, and about 30-40% achieve complete remission. These results are particularly impressive given that these patients haven\'t responded to traditional treatments.'
+    },
+    {
+      question: 'Does TMS therapy hurt?',
+      answer: 'Most patients describe TMS as a tapping sensation on the scalp. Some people experience mild discomfort or headache during the first few sessions, but this typically subsides quickly. TMS is non-invasive and doesn\'t require anesthesia or sedation.'
+    },
+    {
+      question: 'How long do TMS results last?',
+      answer: 'Many patients maintain improvements for a year or longer after completing TMS treatment. Studies show that approximately 70% of patients maintain their improvement at one-year follow-up. Some patients may benefit from occasional maintenance sessions to sustain results.'
+    },
+    {
+      question: 'Can I continue my medications during TMS treatment?',
+      answer: 'Yes, most patients continue their current medications during TMS therapy. Your psychiatrist will review your medication regimen and make any necessary adjustments. TMS can be used alongside medications or as a standalone treatment depending on your individual needs.'
+    },
+    {
+      question: 'Is TMS therapy covered by insurance?',
+      answer: 'Most major insurance providers cover TMS therapy for treatment-resistant depression when specific criteria are met. Coverage typically requires documentation of prior antidepressant trials. Our team can help verify your insurance benefits and navigate the approval process.'
+    }
+  ];
+
+  const relatedPosts = [
+    {
+      title: 'Psychiatrists Boost Well-Being Through Expert Care',
+      excerpt: 'Understanding the comprehensive role of psychiatrists in mental health treatment.',
+      link: '/blogs/PsychiatristsBoostWellBeingThroughExpertCareForMentalHealth',
+      image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/66e6e1ae-8cc3-4469-bfaf-b1f3f3d07006.webp'
+    },
+    {
+      title: 'Understanding Depression',
+      excerpt: 'Comprehensive guide to depression symptoms and available treatments.',
+      link: '/depression',
+      image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/2ddc8d69-b09a-4f1d-bd47-6d783ceefbd1.webp'
+    },
+    {
+      title: 'TMS Therapy for Veterans',
+      excerpt: 'How TMS helps veterans overcome PTSD, depression, and anxiety.',
+      link: '/blog/veterans-tms-therapy',
+      image: 'https://res.cloudinary.com/de4kw1t2i/image/upload/v1763036078/0_zutd9g.png'
+    }
+  ];
+
   const articleSchema = {
     '@context': 'https://schema.org',
     '@type': 'Article',
     headline: 'TMS Therapy for Treatment Resistant Depression',
     description: 'Comprehensive guide to TMS therapy as an effective treatment for treatment-resistant depression, including success rates, benefits, and what to expect.',
+    image: 'https://images.unsplash.com/photo-1704650334658-11e83f293ff3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MTg3MTl8MHwxfHNlYXJjaHwxfHxBbiUyMGltYWdlJTIwZGVwaWN0aW5nJTIwVE1TJTIwdGhlcmFweSUyMGZvciUyMHRyZWF0bWVudC1yZXNpc3RhbnQlMjBkZXByZXNzaW9uJTJDJTIwc2hvd2Nhc2luZyUyMGElMjBzZXJlbmUlMjBhbmQlMjBwcm9mZXNzaW9uYWwlMjBzZXR0aW5nLnxlbnwwfHx8fDE3NjQxMzc5ODh8MA&ixlib=rb-4.1.0&q=80&w=200$w=800',
     author: {
       '@type': 'Person',
-      name: 'karmatmsdev'
+      name: 'Dr. Keerthy Sunder',
+      jobTitle: 'Board-Certified Psychiatrist | Medical Director at KarmaTMS',
+      affiliation: {
+        '@type': 'Organization',
+        name: 'KarmaTMS'
+      }
     },
     publisher: {
       '@type': 'Organization',
@@ -42,6 +146,19 @@ const TMSTherapyForTreatmentResistantDepression = () => {
     }
   };
 
+  const faqSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: faqs.map((faq) => ({
+      '@type': 'Question',
+      name: faq.question,
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: faq.answer
+      }
+    }))
+  };
+
   return (
     <>
       <SEO
@@ -49,20 +166,23 @@ const TMSTherapyForTreatmentResistantDepression = () => {
         description="Comprehensive guide to TMS therapy as an effective treatment for treatment-resistant depression, including success rates, benefits, and what to expect."
         keywords="TMS therapy, treatment resistant depression, TRD, depression treatment, TMS success rates, non-invasive depression treatment"
         canonical="/blogs/TMSTherapyForTreatmentResistantDepression"
+        ogImage="https://images.unsplash.com/photo-1704650334658-11e83f293ff3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MTg3MTl8MHwxfHNlYXJjaHwxfHxBbiUyMGltYWdlJTIwZGVwaWN0aW5nJTIwVE1TJTIwdGhlcmFweSUyMGZvciUyMHRyZWF0bWVudC1yZXNpc3RhbnQlMjBkZXByZXNzaW9uJTJDJTIwc2hvd2Nhc2luZyUyMGElMjBzZXJlbmUlMjBhbmQlMjBwcm9mZXNzaW9uYWwlMjBzZXR0aW5nLnxlbnwwfHx8fDE3NjQxMzc5ODh8MA&ixlib=rb-4.1.0&q=80&w=200$w=800"
         ogType="article" />
-
 
       <StructuredData
         type="breadcrumb"
         breadcrumbs={[
-        { name: 'Home', url: '/' },
-        { name: 'Blog', url: '/blog' },
-        { name: 'TMS for Treatment Resistant Depression', url: '/blogs/TMSTherapyForTreatmentResistantDepression' }]
-        } />
-
+          { name: 'Home', url: '/' },
+          { name: 'Blog', url: '/blog' },
+          { name: 'TMS for Treatment Resistant Depression', url: '/blogs/TMSTherapyForTreatmentResistantDepression' }
+        ]} />
 
       <script type="application/ld+json">
         {JSON.stringify(articleSchema)}
+      </script>
+
+      <script type="application/ld+json">
+        {JSON.stringify(faqSchema)}
       </script>
 
       <Navigation />
@@ -108,7 +228,7 @@ const TMSTherapyForTreatmentResistantDepression = () => {
               </span>
               <span className="flex items-center gap-1 bg-white/10 px-3 py-1 rounded-full backdrop-blur-sm">
                 <User className="w-4 h-4" />
-                karmatmsdev
+                Dr. Keerthy Sunder
               </span>
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
@@ -117,29 +237,67 @@ const TMSTherapyForTreatmentResistantDepression = () => {
             <p className="text-xl md:text-2xl text-white/90 mb-8">
               Discover how TMS offers new hope for those who haven't found relief with traditional depression treatments
             </p>
+            <div className="flex flex-wrap justify-center gap-4">
+              <Button asChild size="lg" className="bg-white text-[#572670] hover:bg-gray-100">
+                <Link to="/contact">Schedule Free Consultation</Link>
+              </Button>
+              <Button asChild size="lg" variant="outline" className="border-white text-white hover:bg-white/10">
+                <Link to="/tms-therapy">Learn More About TMS</Link>
+              </Button>
+            </div>
           </div>
         </div>
       </section>
 
       {/* Main Content */}
       <div className="container mx-auto px-4 py-12">
-        <div className="max-w-4xl mx-auto">
-          <article className="prose prose-lg max-w-none">
+        <div className="grid lg:grid-cols-4 gap-8">
+          {/* Table of Contents - Sticky Sidebar */}
+          <aside className="lg:col-span-1">
+            <div className="lg:sticky lg:top-24">
+              <Card className="border-[#572670]/20">
+                <CardContent className="p-6">
+                  <h3 className="font-bold text-lg mb-4 text-[#572670]">Table of Contents</h3>
+                  <nav className="space-y-2">
+                    {tocItems.map((item) => (
+                      <button
+                        key={item.id}
+                        onClick={() => scrollToSection(item.id)}
+                        className={`block w-full text-left px-3 py-2 rounded-md text-sm transition-all ${
+                          activeSection === item.id
+                            ? 'bg-[#572670] text-white font-medium'
+                            : 'text-gray-700 hover:bg-[#572670]/10'
+                        }`}>
+                        {item.label}
+                      </button>
+                    ))}
+                  </nav>
+                  <div className="mt-6 pt-6 border-t">
+                    <Button asChild className="w-full bg-[#572670] hover:bg-[#7B3FA0]">
+                      <Link to="/contact">Schedule Consultation</Link>
+                    </Button>
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
+          </aside>
+
+          {/* Article Content */}
+          <article className="lg:col-span-3 prose prose-lg max-w-none">
             {/* Introduction */}
             <div className="mb-12">
               <img
-                src="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/e3bc971e-e2ab-4334-ac23-0b9876309934.webp"
+                src="https://images.unsplash.com/photo-1704650334658-11e83f293ff3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MTg3MTl8MHwxfHNlYXJjaHwxfHxBbiUyMGltYWdlJTIwZGVwaWN0aW5nJTIwVE1TJTIwdGhlcmFweSUyMGZvciUyMHRyZWF0bWVudC1yZXNpc3RhbnQlMjBkZXByZXNzaW9uJTJDJTIwc2hvd2Nhc2luZyUyMGElMjBzZXJlbmUlMjBhbmQlMjBwcm9mZXNzaW9uYWwlMjBzZXR0aW5nLnxlbnwwfHx8fDE3NjQxMzc5ODh8MA&ixlib=rb-4.1.0&q=80&w=200$w=800"
                 alt="TMS therapy for treatment resistant depression"
                 className="w-full object-cover rounded-lg mb-6" />
-
 
               <p className="text-xl text-gray-700 leading-relaxed">
                 For millions of people living with depression, traditional treatments like medication and therapy provide significant relief. However, approximately 30-40% of individuals with major depressive disorder experience treatment-resistant depression (TRD), meaning they haven't found adequate relief after trying multiple antidepressants. For these individuals, Transcranial Magnetic Stimulation (TMS) therapy offers a scientifically proven, FDA-approved alternative that's transforming lives.
               </p>
             </div>
 
-            {/* Understanding TRD Section */}
-            <section className="mb-12">
+            {/* Section 1: Understanding TRD */}
+            <section ref={(el) => sectionsRef.current['understanding-trd'] = el} className="mb-12">
               <h2 className="text-3xl font-bold text-[#572670] mb-6">Understanding Treatment-Resistant Depression</h2>
               
               <Card className="bg-gradient-to-br from-[#572670]/5 to-transparent border-[#572670]/20 mb-6">
@@ -164,15 +322,14 @@ const TMSTherapyForTreatmentResistantDepression = () => {
               </ul>
             </section>
 
-            {/* How TMS Works Section */}
-            <section className="mb-12">
+            {/* Section 2: How TMS Works */}
+            <section ref={(el) => sectionsRef.current['how-tms-works'] = el} className="mb-12">
               <h2 className="text-3xl font-bold text-[#572670] mb-6">How TMS Therapy Works for Treatment-Resistant Depression</h2>
               
               <img
-                src="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/031012db-9570-41de-bb30-96c6fa482330.png"
+                src="https://images.unsplash.com/photo-1664560724581-e3b068a0a376?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MTg3MTl8MHwxfHNlYXJjaHwxfHxBbiUyMGltYWdlJTIwc2hvd2Nhc2luZyUyMGElMjBzZXJlbmUlMjBhbmQlMjBwcm9mZXNzaW9uYWwlMjBzZXR0aW5nJTIwZm9yJTIwVE1TJTIwdGhlcmFweSUyQyUyMGZlYXR1cmluZyUyMGElMjBjb21mb3J0YWJsZSUyMGNoYWlyJTIwYW5kJTIwYWR2YW5jZWQlMjBlcXVpcG1lbnQufGVufDB8fHx8MTc2NDEzNzk5MHww&ixlib=rb-4.1.0&q=80&w=200$w=800"
                 alt="TMS therapy chair and equipment"
                 className="w-full object-cover rounded-lg mb-6" />
-
 
               <p className="mb-4">
                 <Link to="/tms-therapy" className="text-[#572670] hover:underline font-medium">TMS therapy</Link> uses magnetic pulses to stimulate specific areas of the brain that are underactive in people with depression. Unlike medications that affect your entire body, TMS directly targets the brain regions responsible for mood regulation.
@@ -191,8 +348,8 @@ const TMSTherapyForTreatmentResistantDepression = () => {
               </Card>
             </section>
 
-            {/* Benefits Section */}
-            <section className="mb-12">
+            {/* Section 3: Benefits */}
+            <section ref={(el) => sectionsRef.current['benefits'] = el} className="mb-12">
               <h2 className="text-3xl font-bold text-[#572670] mb-6">Benefits of TMS for Treatment-Resistant Depression</h2>
               
               <div className="grid md:grid-cols-2 gap-4 my-6">
@@ -241,8 +398,8 @@ const TMSTherapyForTreatmentResistantDepression = () => {
               </div>
             </section>
 
-            {/* Success Rates Section */}
-            <section className="mb-12">
+            {/* Section 4: Success Rates */}
+            <section ref={(el) => sectionsRef.current['success-rates'] = el} className="mb-12">
               <h2 className="text-3xl font-bold text-[#572670] mb-6">TMS Success Rates for Treatment-Resistant Depression</h2>
               
               <Card className="bg-blue-50 border-blue-200 mb-6">
@@ -262,8 +419,8 @@ const TMSTherapyForTreatmentResistantDepression = () => {
               </ul>
             </section>
 
-            {/* Treatment Process Section */}
-            <section className="mb-12">
+            {/* Section 5: Treatment Process */}
+            <section ref={(el) => sectionsRef.current['treatment-process'] = el} className="mb-12">
               <h2 className="text-3xl font-bold text-[#572670] mb-6">What to Expect During TMS Treatment</h2>
               
               <div className="space-y-4">
@@ -349,8 +506,8 @@ const TMSTherapyForTreatmentResistantDepression = () => {
               </div>
             </section>
 
-            {/* Who is a Good Candidate Section */}
-            <section className="mb-12">
+            {/* Section 6: Good Candidate */}
+            <section ref={(el) => sectionsRef.current['good-candidate'] = el} className="mb-12">
               <h2 className="text-3xl font-bold text-[#572670] mb-6">Who is a Good Candidate for TMS?</h2>
               
               <p className="mb-6">
@@ -387,14 +544,34 @@ const TMSTherapyForTreatmentResistantDepression = () => {
 
             {/* Author Box */}
             <AuthorBox
-              name="karmatmsdev"
-              role="Mental Health Content Specialist at KarmaTMS"
-              bio="Dedicated to raising awareness about mental health issues and innovative treatment options. Focused on providing comprehensive, evidence-based information to support those seeking mental wellness."
-              image="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=400&fit=crop" />
+              name="Dr. Keerthy Sunder"
+              role="Board-Certified Psychiatrist | Medical Director at KarmaTMS"
+              bio="Dr. Keerthy Sunder is a board-certified psychiatrist specializing in TMS therapy for veterans and treatment-resistant mental health conditions. With extensive experience in neuroscience and innovative treatment modalities, Dr. Sunder is dedicated to helping veterans overcome PTSD, depression, and anxiety through evidence-based, compassionate care."
+              image="https://www.prtms.com/wp-content/uploads/2023/03/Dr.-Keerthy-Sunder-scaled.jpg" />
 
+            {/* FAQ Section */}
+            <section ref={(el) => sectionsRef.current['faqs'] = el} className="mb-12 mt-12">
+              <h2 className="text-3xl font-bold text-[#572670] mb-6">Frequently Asked Questions</h2>
+              
+              <Accordion type="single" collapsible className="w-full space-y-2">
+                {faqs.map((faq, index) => (
+                  <AccordionItem
+                    key={index}
+                    value={`item-${index}`}
+                    className="border border-gray-200 rounded-lg px-4 data-[state=open]:border-[#572670]">
+                    <AccordionTrigger className="text-left font-semibold hover:text-[#572670] hover:no-underline">
+                      {faq.question}
+                    </AccordionTrigger>
+                    <AccordionContent className="text-gray-700 pt-2 pb-4">
+                      {faq.answer}
+                    </AccordionContent>
+                  </AccordionItem>
+                ))}
+              </Accordion>
+            </section>
 
             {/* CTA Section */}
-            <Card className="bg-gradient-to-br from-[#572670] to-[#7B3FA0] text-white mb-12 mt-12">
+            <Card className="bg-gradient-to-br from-[#572670] to-[#7B3FA0] text-white mb-12">
               <CardContent className="p-8 text-center">
                 <h3 className="text-2xl md:text-3xl font-bold mb-4">
                   Don't Give Up Hope
@@ -417,23 +594,25 @@ const TMSTherapyForTreatmentResistantDepression = () => {
             <section className="mb-12">
               <h2 className="text-3xl font-bold text-[#572670] mb-6">Related Articles</h2>
               <div className="grid md:grid-cols-3 gap-6">
-                <Card className="border-[#572670]/20 overflow-hidden hover:shadow-lg transition-shadow">
-                  <img
-                    src="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/2ddc8d69-b09a-4f1d-bd47-6d783ceefbd1.webp"
-                    alt="Depression Treatment"
-                    className="w-full object-cover h-48" />
-
-                  <CardContent className="p-6">
-                    <h3 className="font-bold text-lg mb-2 hover:text-[#572670] transition-colors">
-                      <Link to="/depression">Understanding Depression</Link>
-                    </h3>
-                    <Button asChild variant="ghost" className="text-[#572670] p-0 h-auto hover:bg-transparent">
-                      <Link to="/depression" className="inline-flex items-center gap-2">
-                        Learn More <ArrowRight className="w-4 h-4" />
-                      </Link>
-                    </Button>
-                  </CardContent>
-                </Card>
+                {relatedPosts.map((post, index) => (
+                  <Card key={index} className="border-[#572670]/20 overflow-hidden hover:shadow-lg transition-shadow">
+                    <img
+                      src={post.image}
+                      alt={post.title}
+                      className="w-full object-cover" />
+                    <CardContent className="p-6">
+                      <h3 className="font-bold text-lg mb-2 hover:text-[#572670] transition-colors">
+                        <Link to={post.link}>{post.title}</Link>
+                      </h3>
+                      <p className="text-gray-600 text-sm mb-4">{post.excerpt}</p>
+                      <Button asChild variant="ghost" className="text-[#572670] p-0 h-auto hover:bg-transparent">
+                        <Link to={post.link} className="inline-flex items-center gap-2">
+                          Read More <ArrowRight className="w-4 h-4" />
+                        </Link>
+                      </Button>
+                    </CardContent>
+                  </Card>
+                ))}
               </div>
             </section>
           </article>
@@ -441,8 +620,8 @@ const TMSTherapyForTreatmentResistantDepression = () => {
       </div>
 
       <FooterSection />
-    </>);
-
+    </>
+  );
 };
 
 export default TMSTherapyForTreatmentResistantDepression;
