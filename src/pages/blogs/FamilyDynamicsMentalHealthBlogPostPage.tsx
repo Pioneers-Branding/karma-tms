@@ -234,7 +234,7 @@ const FamilyDynamicsMentalHealthBlogPostPage = () => {
                 <Link to="/contact">Schedule Consultation</Link>
               </Button>
               <Button asChild size="lg" variant="outline" className="border-white text-white hover:bg-white/10">
-                <Link to="/quiz">Assess Your Situation</Link>
+                
               </Button>
             </div>
           </div>
@@ -590,7 +590,7 @@ const FamilyDynamicsMentalHealthBlogPostPage = () => {
                     variant="outline"
                     className="border-white text-white hover:bg-white/10">
 
-                    <Link to="/blog">Explore More Resources</Link>
+                    
                   </Button>
                 </div>
               </CardContent>
