@@ -46,7 +46,7 @@ const OCDPage = () => {
             </div>
             <div className="relative">
               <img
-                src="https://images.unsplash.com/photo-1743767588082-e754fc9874be?q=80&w=800"
+                src="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/a335820f-57c9-445b-80e6-083620391958.webp"
                 alt="Brain imaging for OCD treatment"
                 className="rounded-lg shadow-2xl" />
 
@@ -90,7 +90,7 @@ const OCDPage = () => {
             </div>
             <div className="relative">
               <img
-                src="https://images.unsplash.com/photo-1709651669999-57741c9bf085?q=80&w=800"
+                src="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/0f1caab2-6dbf-4a6b-abf9-fc290c1c3987.webp"
                 alt="OCD brain circuit visualization"
                 className="rounded-lg shadow-lg" />
 
@@ -369,7 +369,7 @@ const OCDPage = () => {
             </div>
             <div className="relative">
               <img
-                src="https://images.unsplash.com/photo-1566669419640-ae09e20a18d8?q=80&w=800"
+                src="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/dc48a774-38fc-40dd-9723-d016e82f221f.webp"
                 alt="Deep TMS treatment for OCD"
                 className="rounded-lg shadow-lg" />
 
