@@ -148,7 +148,7 @@ const HeroSection = () => {
       {/* Right Section - Form & Stats */}
       <div className="xl:col-span-2 bg-gradient-to-br from-blue-magenta via-blue-magenta/70 to-blue-magenta rounded-3xl m-2 p-2 sm:p-2 md:p-2 lg:p-4 xl:p-6 flex flex-col">
         {/* Contact Form */}
-        <div className="bg-white/95 backdrop-blur-lg rounded-3xl p-4 shadow-2xl flex-grow border border-white/20">
+        <div className="bg-white/95 backdrop-blur-lg rounded-3xl p-4 pb-2 lg:pb-3 shadow-2xl flex-grow border border-white/20">
           <div className="flex justify-between items-center mb-4 lg:mb-8">
             <h2 className="text-xl lg:text-2xl font-bold text-gray-900 flex items-center">
               <Heart className="w-5 h-5 lg:w-6 lg:h-6 text-violet-600 mr-2" />
@@ -196,7 +196,7 @@ const HeroSection = () => {
         </div>
 
         {/* Stats Section */}
-        <div className="mt-6 lg:mt-8 space-y-4 lg:space-y-6">
+        <div className="mt-3 lg:mt-4 space-y-4 lg:space-y-6">
           {/* Main Stats */}
           <div className="grid grid-cols-2 gap-4 lg:gap-6">
             <div className="bg-white/90 backdrop-blur-lg rounded-2xl lg:rounded-3xl p-4 lg:p-6 text-center shadow-xl border border-white/20 hover:bg-white/95 transition-all duration-300 hover:scale-105">
