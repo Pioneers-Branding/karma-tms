@@ -234,7 +234,7 @@ const EmpoweringYouthBlogPostPage = () => {
                 <Link to="/contact">Schedule Consultation</Link>
               </Button>
               <Button asChild size="lg" variant="outline" className="border-white text-white hover:bg-white/10">
-                <Link to="/quiz">Take Our Quiz</Link>
+                
               </Button>
             </div>
           </div>
@@ -533,7 +533,7 @@ const EmpoweringYouthBlogPostPage = () => {
                     variant="outline"
                     className="border-white text-white hover:bg-white/10">
 
-                    <Link to="/blog">Read More Articles</Link>
+                    
                   </Button>
                 </div>
               </CardContent>
