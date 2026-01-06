@@ -17,7 +17,7 @@ const TestimonialsSection = () => {
     hasVideo: false,
     videoId: "xewffol4oOQ",
     videoType: "youtube",
-    avatar: "https://images.unsplash.com/photo-1750056393306-ac672d0dbb8c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MTg3MTl8MHwxfHNlYXJjaHwxfHxBJTIwcGxhY2Vob2xkZXIlMjBhdmF0YXIlMjBpbWFnZSUyMGZvciUyMGElMjB0ZXN0aW1vbmlhbCUyMHNlY3Rpb24ufGVufDB8fHx8MTc1OTIzNjY1OHww&ixlib=rb-4.1.0&q=80&w=200$w=512"
+    avatar: "https://images.unsplash.com/photo-1510511293580-9d525c6d8913?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MTg3MTl8MHwxfHNlYXJjaHwxfHxBJTIwZ2VuZXJpYyUyMGF2YXRhciUyMG9yJTIwcHJvZmlsZSUyMHBpY3R1cmUlMjBvZiUyMGElMjBwZXJzb24ufGVufDB8fHx8MTc1OTIzNzE0OHww&ixlib=rb-4.1.0&q=80&w=200$w=512"
   },
   {
     name: "Spanish Patient B",
@@ -28,7 +28,7 @@ const TestimonialsSection = () => {
     hasVideo: true,
     videoId: "1106562016",
     videoType: "vimeo",
-    avatar: "https://images.unsplash.com/photo-1750056393306-ac672d0dbb8c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MTg3MTl8MHwxfHNlYXJjaHwxfHxBJTIwcGxhY2Vob2xkZXIlMjBhdmF0YXIlMjBpbWFnZSUyMGZvciUyMGElMjB0ZXN0aW1vbmlhbCUyMHNlY3Rpb24ufGVufDB8fHx8MTc1OTIzNjY1OHww&ixlib=rb-4.1.0&q=80&w=200$w=512"
+    avatar: "https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/2f824ef5-3d22-4a4f-a5df-6414bb0776f6.jpg"
   },
   {
     name: "Spanish Patient A",
@@ -40,7 +40,7 @@ const TestimonialsSection = () => {
     videoId: "1098237681",
     videoType: "vimeo",
     vimeoHash: "b204c02062",
-    avatar: "https://images.unsplash.com/photo-1750056393306-ac672d0dbb8c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MTg3MTl8MHwxfHNlYXJjaHwxfHxBJTIwcGxhY2Vob2xkZXIlMjBhdmF0YXIlMjBpbWFnZSUyMGZvciUyMGElMjB0ZXN0aW1vbmlhbCUyMHNlY3Rpb24ufGVufDB8fHx8MTc1OTIzNjY1OHww&ixlib=rb-4.1.0&q=80&w=200$w=512"
+    avatar: "https://images.unsplash.com/photo-1510511293580-9d525c6d8913?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MTg3MTl8MHwxfHNlYXJjaHwxfHxBJTIwZ2VuZXJpYyUyMGF2YXRhciUyMG9yJTIwcHJvZmlsZSUyMHBpY3R1cmUlMjBvZiUyMGElMjBwZXJzb24ufGVufDB8fHx8MTc1OTIzNzE0OHww&ixlib=rb-4.1.0&q=80&w=200$w=512"
   },
   {
     name: "Thomas M.",
@@ -50,7 +50,7 @@ const TestimonialsSection = () => {
     quote: "TMS has helped me incredibly.It took more then half way throughout the sessions to see results but it definitely started to kick in. I highly recommend anyone sufferings with depression etc to try TMS.",
     hasVideo: false,
     videoType: "youtube",
-    avatar: "https://images.unsplash.com/photo-1750056393306-ac672d0dbb8c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MTg3MTl8MHwxfHNlYXJjaHwxfHxBJTIwcGxhY2Vob2xkZXIlMjBhdmF0YXIlMjBpbWFnZSUyMGZvciUyMGElMjB0ZXN0aW1vbmlhbCUyMHNlY3Rpb24ufGVufDB8fHx8MTc1OTIzNjY1OHww&ixlib=rb-4.1.0&q=80&w=200$w=512"
+    avatar: "https://images.unsplash.com/photo-1615843423179-bea071facf96?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MTg3MTl8MHwxfHNlYXJjaHwxfHxBJTIwcGxhY2Vob2xkZXIlMjBpbWFnZSUyMG9mJTIwYSUyMGdlbmVyaWMlMjBhdmF0YXIlMjBvciUyMHByb2ZpbGUlMjBwaWN0dXJlLnxlbnwwfHx8fDE3NTkyMzcxNDR8MA&ixlib=rb-4.1.0&q=80&w=200$w=512"
   },
   {
     name: "Benjamin A.",
@@ -61,7 +61,7 @@ const TestimonialsSection = () => {
     hasVideo: false,
     videoId: "dQw4w9WgXcQ",
     videoType: "youtube",
-    avatar: "https://images.unsplash.com/photo-1750056393306-ac672d0dbb8c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MTg3MTl8MHwxfHNlYXJjaHwxfHxBJTIwcGxhY2Vob2xkZXIlMjBhdmF0YXIlMjBpbWFnZSUyMGZvciUyMGElMjB0ZXN0aW1vbmlhbCUyMHNlY3Rpb24ufGVufDB8fHx8MTc1OTIzNjY1OHww&ixlib=rb-4.1.0&q=80&w=200$w=512"
+    avatar: "https://images.unsplash.com/photo-1510511293580-9d525c6d8913?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MTg3MTl8MHwxfHNlYXJjaHwxfHxBJTIwZ2VuZXJpYyUyMGF2YXRhciUyMG9yJTIwcHJvZmlsZSUyMHBpY3R1cmUlMjBvZiUyMGElMjBwZXJzb24ufGVufDB8fHx8MTc1OTIzNzE0OHww&ixlib=rb-4.1.0&q=80&w=200$w=512"
   },
   {
     name: "Nicole J.",
@@ -71,7 +71,7 @@ const TestimonialsSection = () => {
     quote: "TMS therapy changed my life! This was a leap of faith and it worked out for me, TMS saved my life!",
     hasVideo: false,
     videoType: "youtube",
-    avatar: "https://images.unsplash.com/photo-1750056393306-ac672d0dbb8c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MTg3MTl8MHwxfHNlYXJjaHwxfHxBJTIwcGxhY2Vob2xkZXIlMjBhdmF0YXIlMjBpbWFnZSUyMGZvciUyMGElMjB0ZXN0aW1vbmlhbCUyMHNlY3Rpb24ufGVufDB8fHx8MTc1OTIzNjY1OHww&ixlib=rb-4.1.0&q=80&w=200$w=512"
+    avatar: "https://images.unsplash.com/photo-1510511293580-9d525c6d8913?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MTg3MTl8MHwxfHNlYXJjaHwxfHxBJTIwZ2VuZXJpYyUyMGF2YXRhciUyMG9yJTIwcHJvZmlsZSUyMHBpY3R1cmUlMjBvZiUyMGElMjBwZXJzb24ufGVufDB8fHx8MTc1OTIzNzE0OHww&ixlib=rb-4.1.0&q=80&w=200$w=512"
   },
   {
     name: "Lynette I.",
@@ -82,7 +82,7 @@ const TestimonialsSection = () => {
     hasVideo: false,
     videoId: "dQw4w9WgXcQ",
     videoType: "youtube",
-    avatar: "https://images.unsplash.com/photo-1750056393306-ac672d0dbb8c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MTg3MTl8MHwxfHNlYXJjaHwxfHxBJTIwcGxhY2Vob2xkZXIlMjBhdmF0YXIlMjBpbWFnZSUyMGZvciUyMGElMjB0ZXN0aW1vbmlhbCUyMHNlY3Rpb24ufGVufDB8fHx8MTc1OTIzNjY1OHww&ixlib=rb-4.1.0&q=80&w=200$w=512"
+    avatar: "https://images.unsplash.com/photo-1510511293580-9d525c6d8913?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MTg3MTl8MHwxfHNlYXJjaHwxfHxBJTIwZ2VuZXJpYyUyMGF2YXRhciUyMG9yJTIwcHJvZmlsZSUyMHBpY3R1cmUlMjBvZiUyMGElMjBwZXJzb24ufGVufDB8fHx8MTc1OTIzNzE0OHww&ixlib=rb-4.1.0&q=80&w=200$w=512"
   }];
 
 
@@ -120,29 +120,29 @@ const TestimonialsSection = () => {
                   <div className="relative w-full max-w-md">
                       {/* Video Embed */}
                       <div className="aspect-video bg-black rounded-lg overflow-hidden shadow-2xl">
-                        {currentData.videoType === 'vimeo' ? (
-                          <div style={{ padding: '56.25% 0 0 0', position: 'relative' }}>
+                        {currentData.videoType === 'vimeo' ?
+                      <div style={{ padding: '56.25% 0 0 0', position: 'relative' }}>
                             <iframe
-                              src={`https://player.vimeo.com/video/${currentData.videoId}${currentData.vimeoHash ? `?h=${currentData.vimeoHash}&` : '?'}badge=0&autopause=0&player_id=0&app_id=58479`}
-                              frameBorder="0"
-                              allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
-                              style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }}
-                              title={`${currentData.name} Testimonial`}
-                              className="rounded-lg"
-                            />
-                          </div>
-                        ) : (
-                          <iframe
-                            width="100%"
-                            height="100%"
-                            src={`https://www.youtube.com/embed/${currentData.videoId}?controls=1&modestbranding=1`}
-                            title={`${currentData.name} Testimonial`}
-                            frameBorder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowFullScreen
-                            className="rounded-lg"
-                          />
-                        )}
+                          src={`https://player.vimeo.com/video/${currentData.videoId}${currentData.vimeoHash ? `?h=${currentData.vimeoHash}&` : '?'}badge=0&autopause=0&player_id=0&app_id=58479`}
+                          frameBorder="0"
+                          allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+                          style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }}
+                          title={`${currentData.name} Testimonial`}
+                          className="rounded-lg" />
+
+                          </div> :
+
+                      <iframe
+                        width="100%"
+                        height="100%"
+                        src={`https://www.youtube.com/embed/${currentData.videoId}?controls=1&modestbranding=1`}
+                        title={`${currentData.name} Testimonial`}
+                        frameBorder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowFullScreen
+                        className="rounded-lg" />
+
+                      }
                       </div>
                       <div className="absolute -bottom-6 left-1/2 transform -translate-x-1/2">
                         <div className="bg-white text-[#572670] px-4 py-2 rounded-full text-sm font-semibold shadow-lg">

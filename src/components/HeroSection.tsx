@@ -22,7 +22,7 @@ const HeroSection = () => {
   },
   {
     title: "Advanced TMS Setup",
-    image: "https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/2f824ef5-3d22-4a4f-a5df-6414bb0776f6.jpg",
+    image: "https://images.unsplash.com/photo-1719150006679-fa515f9372ae?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MTg3MTl8MHwxfHNlYXJjaHwxfHxBJTIwbW9kZXJuJTIwYW5kJTIwY29tZm9ydGFibGUlMjBUTVMlMjB0aGVyYXB5JTIwY2hhaXIlMjBzZXR1cCUyMGluJTIwYSUyMGNsaW5pY2FsJTIwZW52aXJvbm1lbnQufGVufDB8fHx8MTc1OTIzNzE0Nnww&ixlib=rb-4.1.0&q=80&w=200$w=1920",
     alt: "TMS-Chair"
   }];
 
