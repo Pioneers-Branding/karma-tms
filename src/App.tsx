@@ -13,6 +13,7 @@ import AddictionPage from "./pages/AddictionPage";
 import StressPage from "./pages/StressPage";
 import WomensMoodPage from "./pages/WomensMoodPage";
 import TMSQuizPage from "./pages/TMSQuizPage";
+import ThankYouPage from "./pages/ThankYouPage";
 import AboutPage from "./pages/AboutPage";
 import TeamPage from "./pages/TeamPage";
 import TeamMemberPage from "./pages/TeamMemberPage";
@@ -113,6 +114,7 @@ const App = () =>
           <Route path="/quiz/" element={<TMSQuizPage />} />
           {/* Keep old route for backwards compatibility */}
           <Route path="/tms-quiz" element={<TMSQuizPage />} />
+          <Route path="/thank-you" element={<ThankYouPage />} />
           
           {/* Legal Routes - Sitemap URLs */}
           <Route path="/hipaa" element={<HIPAAPage />} />
