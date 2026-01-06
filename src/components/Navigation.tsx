@@ -68,7 +68,7 @@ const Navigation = () => {
       <div className="max-w-[1600px] mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <Link href="/" className="flex items-center">
+          <Link key="/" to="/" className="flex items-center">
             <img
               src="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/ebadb369-a58d-421c-b937-24f900be5867.png"
               alt="Karma TMS"
