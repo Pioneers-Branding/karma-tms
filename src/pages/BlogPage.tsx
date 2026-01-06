@@ -30,60 +30,192 @@ const blogCategories = [
 { id: 'wellness', label: 'Wellness Tips' }];
 
 
-// Sample blog data
-const generateBlogPosts = (count: number): BlogPost[] => {
-  const posts: BlogPost[] = [];
-  const titles = [
-  'Understanding TMS Therapy: A Comprehensive Guide',
-  'Breaking the Stigma: Mental Health Awareness',
-  'Latest Research in Depression Treatment',
-  'Success Stories: Real Patient Experiences',
-  'Managing Anxiety in Daily Life',
-  'The Science Behind TMS Technology',
-  'Holistic Approaches to Mental Wellness',
-  'Seasonal Affective Disorder: Signs and Solutions',
-  'Building Resilience Through Difficult Times',
-  'The Role of Family Support in Recovery'];
-
-
-  const categories = ['tms-therapy', 'mental-health', 'research', 'patient-stories', 'wellness'];
-  const authors = ['Dr. Thomas Lim', 'Dr. Apollo Leung', 'Dr. Benjamin Eylul', 'Lyn Hanshaw', 'Nicole Zozaya'];
-
-  for (let i = 0; i < count; i++) {
-    posts.push({
-      id: i + 1,
-      title: titles[i % titles.length] + (i > 9 ? ` - Part ${Math.floor(i / 10) + 1}` : ''),
+// Generate exactly 10 unique blog posts
+const generateUniqueBlogPosts = (): BlogPost[] => {
+  const posts: BlogPost[] = [
+    {
+      id: 1,
+      title: 'Understanding TMS Therapy: A Comprehensive Guide',
       excerpt: 'Discover the latest insights and breakthrough treatments in mental health care. Our comprehensive approach combines cutting-edge technology with compassionate care.',
-      category: categories[i % categories.length],
-      author: authors[i % authors.length],
-      date: new Date(2024, 0, 1 + i).toLocaleDateString('en-US', {
+      category: 'tms-therapy',
+      author: 'Dr. Thomas Lim',
+      date: new Date(2024, 0, 15).toLocaleDateString('en-US', {
         year: 'numeric',
         month: 'long',
         day: 'numeric'
       }),
-      readTime: `${3 + i % 8} min read`,
-      image: `https://picsum.photos/400/250?random=${i + 1}`,
-      featured: i === 0,
-      rating: i < 5 ? 5 : 4
-    });
-  }
+      readTime: '8 min read',
+      image: 'https://images.unsplash.com/photo-1559757175-5700dde675bc?q=80&w=800&auto=format&fit=crop',
+      featured: true,
+      rating: 5
+    },
+    {
+      id: 2,
+      title: 'Breaking the Stigma: Mental Health Awareness',
+      excerpt: 'Learn how we can collectively work to break down barriers and create supportive environments for those facing mental health challenges.',
+      category: 'mental-health',
+      author: 'Dr. Apollo Leung',
+      date: new Date(2024, 0, 20).toLocaleDateString('en-US', {
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric'
+      }),
+      readTime: '6 min read',
+      image: 'https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?q=80&w=800&auto=format&fit=crop',
+      rating: 5
+    },
+    {
+      id: 3,
+      title: 'Latest Research in Depression Treatment',
+      excerpt: 'Explore groundbreaking research findings that are shaping the future of depression treatment and improving patient outcomes.',
+      category: 'research',
+      author: 'Dr. Benjamin Eylul',
+      date: new Date(2024, 1, 5).toLocaleDateString('en-US', {
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric'
+      }),
+      readTime: '10 min read',
+      image: 'https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?q=80&w=800&auto=format&fit=crop',
+      rating: 5
+    },
+    {
+      id: 4,
+      title: 'Success Stories: Real Patient Experiences',
+      excerpt: 'Read inspiring stories from patients who have transformed their lives through our comprehensive mental health treatment programs.',
+      category: 'patient-stories',
+      author: 'Lyn Hanshaw',
+      date: new Date(2024, 1, 12).toLocaleDateString('en-US', {
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric'
+      }),
+      readTime: '5 min read',
+      image: 'https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?q=80&w=800&auto=format&fit=crop',
+      rating: 5
+    },
+    {
+      id: 5,
+      title: 'Managing Anxiety in Daily Life',
+      excerpt: 'Practical strategies and evidence-based techniques to help manage anxiety and improve your overall quality of life.',
+      category: 'wellness',
+      author: 'Nicole Zozaya',
+      date: new Date(2024, 1, 18).toLocaleDateString('en-US', {
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric'
+      }),
+      readTime: '7 min read',
+      image: 'https://images.unsplash.com/photo-1506126613408-eca07ce68773?q=80&w=800&auto=format&fit=crop',
+      rating: 4
+    },
+    {
+      id: 6,
+      title: 'The Science Behind TMS Technology',
+      excerpt: 'Dive deep into the neuroscience and technology that makes TMS therapy an effective treatment for various mental health conditions.',
+      category: 'tms-therapy',
+      author: 'Dr. Thomas Lim',
+      date: new Date(2024, 2, 1).toLocaleDateString('en-US', {
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric'
+      }),
+      readTime: '9 min read',
+      image: 'https://images.unsplash.com/photo-1530026405186-ed1f139313f8?q=80&w=800&auto=format&fit=crop',
+      rating: 4
+    },
+    {
+      id: 7,
+      title: 'Holistic Approaches to Mental Wellness',
+      excerpt: 'Discover how combining traditional therapy with lifestyle changes can lead to comprehensive mental health improvement.',
+      category: 'wellness',
+      author: 'Dr. Apollo Leung',
+      date: new Date(2024, 2, 10).toLocaleDateString('en-US', {
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric'
+      }),
+      readTime: '6 min read',
+      image: 'https://images.unsplash.com/photo-1499209974431-9dddcece7f88?q=80&w=800&auto=format&fit=crop',
+      rating: 4
+    },
+    {
+      id: 8,
+      title: 'Seasonal Affective Disorder: Signs and Solutions',
+      excerpt: 'Understanding SAD and how light therapy, TMS, and other interventions can help manage seasonal depression effectively.',
+      category: 'mental-health',
+      author: 'Dr. Benjamin Eylul',
+      date: new Date(2024, 2, 20).toLocaleDateString('en-US', {
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric'
+      }),
+      readTime: '7 min read',
+      image: 'https://images.unsplash.com/photo-1542831371-29b0f74f9713?q=80&w=800&auto=format&fit=crop',
+      rating: 4
+    },
+    {
+      id: 9,
+      title: 'Building Resilience Through Difficult Times',
+      excerpt: 'Learn practical resilience-building strategies that can help you navigate life\'s challenges with greater strength and confidence.',
+      category: 'wellness',
+      author: 'Lyn Hanshaw',
+      date: new Date(2024, 3, 5).toLocaleDateString('en-US', {
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric'
+      }),
+      readTime: '8 min read',
+      image: 'https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?q=80&w=800&auto=format&fit=crop',
+      rating: 4
+    },
+    {
+      id: 10,
+      title: 'The Role of Family Support in Recovery',
+      excerpt: 'Explore how family involvement and support systems play a crucial role in successful mental health treatment and long-term recovery.',
+      category: 'patient-stories',
+      author: 'Nicole Zozaya',
+      date: new Date(2024, 3, 15).toLocaleDateString('en-US', {
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric'
+      }),
+      readTime: '6 min read',
+      image: 'https://images.unsplash.com/photo-1511632765486-a01980e01a18?q=80&w=800&auto=format&fit=crop',
+      rating: 4
+    }
+  ];
 
   return posts;
 };
 
 const BlogPage = () => {
   const [activeCategory, setActiveCategory] = useState('all');
-  const [posts, setPosts] = useState<BlogPost[]>([]);
+  const [allPosts] = useState<BlogPost[]>(generateUniqueBlogPosts());
+  const [displayedPosts, setDisplayedPosts] = useState<BlogPost[]>([]);
   const [loading, setLoading] = useState(false);
   const [hasMore, setHasMore] = useState(true);
-  const [page, setPage] = useState(1);
   const observerRef = useRef<HTMLDivElement>(null);
 
-  // Initialize posts
+  const POSTS_PER_LOAD = 6;
+
+  // Initialize with first batch of posts
   useEffect(() => {
-    const initialPosts = generateBlogPosts(12);
-    setPosts(initialPosts);
+    const initialPosts = allPosts.slice(0, POSTS_PER_LOAD);
+    setDisplayedPosts(initialPosts);
+    setHasMore(initialPosts.length < allPosts.length);
   }, []);
+
+  // Reset displayed posts when category changes
+  useEffect(() => {
+    const filteredPosts = activeCategory === 'all' 
+      ? allPosts 
+      : allPosts.filter(post => post.category === activeCategory);
+    
+    const initialPosts = filteredPosts.slice(0, POSTS_PER_LOAD);
+    setDisplayedPosts(initialPosts);
+    setHasMore(initialPosts.length < filteredPosts.length);
+  }, [activeCategory]);
 
   // Infinite scroll observer
   useEffect(() => {
@@ -101,43 +233,39 @@ const BlogPage = () => {
     }
 
     return () => observer.disconnect();
-  }, [hasMore, loading]);
+  }, [hasMore, loading, displayedPosts.length, activeCategory]);
 
   const loadMorePosts = async () => {
-    if (loading || posts.length >= 40) {
-      setHasMore(false);
-      return;
-    }
+    if (loading) return;
 
     setLoading(true);
 
     // Simulate API call
     setTimeout(() => {
-      const remainingPosts = 40 - posts.length;
-      const postsToAdd = Math.min(6, remainingPosts);
+      const filteredPosts = activeCategory === 'all' 
+        ? allPosts 
+        : allPosts.filter(post => post.category === activeCategory);
       
-      const newPosts = generateBlogPosts(postsToAdd).map((post, index) => ({
-        ...post,
-        id: posts.length + index + 1,
-        featured: false
-      }));
+      const currentCount = displayedPosts.length;
+      const nextPosts = filteredPosts.slice(currentCount, currentCount + POSTS_PER_LOAD);
 
-      setPosts((prev) => [...prev, ...newPosts]);
-      setPage((prev) => prev + 1);
-
-      if (posts.length + postsToAdd >= 40) {
-        setHasMore(false);
+      if (nextPosts.length > 0) {
+        setDisplayedPosts((prev) => [...prev, ...nextPosts]);
       }
 
+      // Check if there are more posts to load
+      const totalDisplayed = currentCount + nextPosts.length;
+      setHasMore(totalDisplayed < filteredPosts.length);
+
       setLoading(false);
-    }, 1000);
+    }, 800);
   };
 
-  const filteredPosts = posts.filter((post) =>
+  const filteredPosts = displayedPosts.filter((post) =>
   activeCategory === 'all' || post.category === activeCategory
   );
 
-  const featuredPost = posts.find((post) => post.featured);
+  const featuredPost = filteredPosts.find((post) => post.featured);
   const regularPosts = filteredPosts.filter((post) => !post.featured);
 
   return (
@@ -286,7 +414,7 @@ const BlogPage = () => {
                 {/* Loading Skeletons */}
                 {loading &&
               <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
-                    {Array.from({ length: 6 }).map((_, i) =>
+                    {Array.from({ length: 3 }).map((_, i) =>
                 <Card key={i} className="overflow-hidden">
                         <Skeleton className="w-full h-48" />
                         <CardHeader>
@@ -306,9 +434,9 @@ const BlogPage = () => {
               }
 
                 {/* Infinite Scroll Trigger */}
-                {hasMore &&
+                {hasMore && !loading &&
               <div ref={observerRef} className="h-10 flex items-center justify-center">
-                    <div className="text-gray-500 text-sm">Loading more posts...</div>
+                    <div className="text-gray-500 text-sm">Scroll for more...</div>
                   </div>
               }
 
@@ -320,6 +448,12 @@ const BlogPage = () => {
                     </Button>
                   </div>
               }
+
+                {regularPosts.length === 0 && !loading &&
+                  <div className="text-center py-12">
+                    <p className="text-gray-500 text-lg">No posts found in this category.</p>
+                  </div>
+                }
               </TabsContent>
             )}
           </Tabs>
