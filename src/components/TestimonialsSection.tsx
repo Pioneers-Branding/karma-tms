@@ -19,13 +19,13 @@ const TestimonialsSection = () => {
     avatar: "https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/498a0642-bb81-4bcf-8933-201f433ed83a.png"
   },
   {
-    name: "Nancy A.",
+    name: "Thomas M.",
     location: "Desert Hot Springs, CA",
     condition: "Postpartum Depression",
     rating: 5,
-    quote: "As a new mother, I needed a treatment that was safe and effective. TMS allowed me to get better without worrying about medication effects on breastfeeding.",
+    quote: "TMS has helped me incredibly.It took more then half way throughout the sessions to see results but it definitely started to kick in. I highly recommend anyone sufferings with depression etc to try TMS.",
     hasVideo: false,
-    avatar: "https://images.unsplash.com/photo-1708962188322-0e9a5e40c101?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MTg3MTl8MHwxfHNlYXJjaHwxfHxBJTIwY3JvcHBlZCUyMGltYWdlJTIwb2YlMjBhJTIwcGVyc29uJTJDJTIwZm9jdXNpbmclMjBvbiUyMHRoZWlyJTIwZmFjZSUyQyUyMHdpdGglMjBhJTIwcmVzb2x1dGlvbiUyMG9mJTIwMTAweDEwMCUyMHBpeGVscy58ZW58MHx8fHwxNzU1MDAxOTgxfDA&ixlib=rb-4.1.0&q=80&w=200$w=100"
+    avatar: "https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/e46a0ae8-2974-432a-9a49-4a1e8300553b.png"
   },
   {
     name: "Andrej Z.",
