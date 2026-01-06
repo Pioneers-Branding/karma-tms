@@ -33,6 +33,54 @@ const blogCategories = [
 // Blog posts - Veterans TMS Therapy with fixed images
 const allBlogPosts: BlogPost[] = [
 {
+  id: 22,
+  title: 'Understanding the Complex Connection between Depression and Erectile Dysfunction',
+  excerpt: 'Explore the bidirectional relationship between depression and erectile dysfunction. Learn about biological factors, psychological impact, and comprehensive treatment options.',
+  category: 'mental-health',
+  author: 'karmatmsdev',
+  date: new Date(2024, 9, 24).toLocaleDateString('en-US', {
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric'
+  }),
+  readTime: '15 min read',
+  image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/2ddc8d69-b09a-4f1d-bd47-6d783ceefbd1.webp',
+  featured: false,
+  rating: 5
+},
+{
+  id: 23,
+  title: 'Connecting with Teens & Nurturing Open Communication on Mental Wellness',
+  excerpt: 'Learn effective strategies for building trust and fostering open communication about mental health with teenagers. Recognize warning signs and create a supportive environment.',
+  category: 'mental-health',
+  author: 'karmatmsdev',
+  date: new Date(2024, 9, 17).toLocaleDateString('en-US', {
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric'
+  }),
+  readTime: '14 min read',
+  image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/62abea2f-775f-47a7-ad22-2bfc58d01038.webp',
+  featured: false,
+  rating: 5
+},
+{
+  id: 24,
+  title: 'A Guide to Mental Health Resources for Coping with Community Violence',
+  excerpt: 'Comprehensive guide on understanding trauma, accessing mental health resources, and building resilience after exposure to community violence.',
+  category: 'mental-health',
+  author: 'karmatmsdev',
+  date: new Date(2024, 9, 10).toLocaleDateString('en-US', {
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric'
+  }),
+  readTime: '16 min read',
+  image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/b3740a3e-1c6d-4eb7-8300-432f7cb4655c.webp',
+  featured: false,
+  rating: 5
+},
+{
   id: 19,
   title: 'Empowering Youth: Strategies for Building Emotional Resilience',
   excerpt: 'Discover proven strategies for building emotional resilience in young people. Learn practical tools and techniques to help youth develop mental wellness.',
@@ -582,7 +630,10 @@ const BlogPage = () => {
                     18: '/blog/mental-health-first-aid',
                     19: '/blog/empowering-youth-emotional-resilience',
                     20: '/blog/family-dynamics-mental-health',
-                    21: '/blog/managing-anxiety-triggers'
+                    21: '/blog/managing-anxiety-triggers',
+                    22: '/blogs/depression-erectile-dysfunction',
+                    23: '/blogs/connecting-teens-mental-wellness',
+                    24: '/blogs/mental-health-community-violence'
                   };
                   return (
                     <a
