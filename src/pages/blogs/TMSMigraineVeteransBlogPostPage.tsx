@@ -11,7 +11,7 @@ export default function TMSMigraineVeteransBlogPostPage() {
   const author = {
     name: 'Dr. Keerthy Sunder',
     credentials: 'MD, Board-Certified Psychiatrist',
-    image: 'https://images.unsplash.com/photo-1678940805950-73f2127f9d4e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MTg3MTl8MHwxfHNlYXJjaHwxfHxBJTIwcHJvZmVzc2lvbmFsJTIwaGVhZHNob3QlMjBvZiUyMERyLiUyMEtlZXJ0aHklMjBTdW5kZXIlMkMlMjBhJTIwYm9hcmQtY2VydGlmaWVkJTIwcHN5Y2hpYXRyaXN0LnxlbnwwfHx8fDE3NjI4NjEyNDF8MA&ixlib=rb-4.1.0&q=80&w=200$w=300',
+    image: 'https://res.cloudinary.com/de4kw1t2i/image/upload/v1762863799/blog_8_l0irim.png',
     bio: 'Dr. Keerthy Sunder is a board-certified psychiatrist specializing in TMS therapy and treatment-resistant mental health conditions. With extensive experience treating veterans, Dr. Sunder is dedicated to providing innovative, evidence-based care to those who have served our country.'
   };
 
