@@ -69,7 +69,7 @@ const PalmSpringsPage = () => {
         {
           name: 'KarmaTMS Palm Springs',
           address: {
-            streetAddress: '560 S. Paseo Dorotea Suite 4',
+            streetAddress: '560 S. Paseo Dorotea Suite 4B',
             addressLocality: 'Palm Springs',
             addressRegion: 'CA',
             postalCode: '92264'
@@ -287,7 +287,7 @@ const PalmSpringsPage = () => {
                   <div className="flex items-start gap-3">
                     <MapPin className="w-5 h-5 text-purple-600 mt-1 flex-shrink-0" />
                     <div>
-                      <p className="font-medium">560 S. Paseo Dorotea Suite 4-B</p>
+                      <p className="font-medium">560 S. Paseo Dorotea Suite 4B</p>
                       <p className="text-gray-600">Palm Springs, CA 92264</p>
                     </div>
                   </div>
