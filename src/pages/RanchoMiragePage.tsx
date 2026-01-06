@@ -248,7 +248,7 @@ const RanchoMiragePage = () => {
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link to="/contact">
-                  <Button size="lg" className="bg-yellow-500 text-purple-900 hover:bg-yellow-400 font-bold text-lg px-10 shadow-xl">
+                  <Button size="lg" className="inline-flex items-center justify-center gap-2 whitespace-nowrap transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 h-10 rounded-md bg-purple-500 text-white hover:bg-purple-400 font-bold text-lg px-10 shadow-xl">
                     Schedule Your Exomind Consultation
                   </Button>
                 </Link>
