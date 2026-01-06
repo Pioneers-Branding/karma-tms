@@ -181,7 +181,7 @@ const TMSTherapyPage = () => {
             className="relative mx-auto max-w-4xl">
 
             <img
-              src="https://res.cloudinary.com/de4kw1t2i/image/upload/v1761916000/348s_n32mvk.jpg"
+              src="https://res.cloudinary.com/de4kw1t2i/image/upload/v1763029482/Exomind_PIC_Female-Model4_0129_ENUS100_yqzeod.jpg"
               alt="TMS Treatment Chair"
               className="w-full h-auto max-h-[600px] object-cover rounded-2xl shadow-2xl" />
           </motion.div>
