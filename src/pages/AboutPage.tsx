@@ -26,8 +26,8 @@ import {
   Zap,
   Building2,
   Briefcase,
-  Mail
-} from 'lucide-react';
+  Mail } from
+'lucide-react';
 
 const AboutPage = () => {
   const [activeTab, setActiveTab] = useState('story');
@@ -53,48 +53,48 @@ const AboutPage = () => {
   };
 
   const coreValues = [
-    {
-      icon: Heart,
-      title: "Compassionate Care",
-      description: "Every patient receives personalized attention with empathy and understanding at the core of our treatment philosophy."
-    },
-    {
-      icon: Brain,
-      title: "Scientific Excellence", 
-      description: "We utilize the latest research and evidence-based treatments to ensure optimal outcomes for our patients."
-    },
-    {
-      icon: Shield,
-      title: "Safe Environment",
-      description: "Our clinic provides a secure, welcoming space where patients feel comfortable throughout their healing journey."
-    },
-    {
-      icon: Users,
-      title: "Collaborative Approach",
-      description: "We work closely with patients, families, and healthcare providers to create comprehensive treatment plans."
-    }
-  ];
+  {
+    icon: Heart,
+    title: "Compassionate Care",
+    description: "Every patient receives personalized attention with empathy and understanding at the core of our treatment philosophy."
+  },
+  {
+    icon: Brain,
+    title: "Scientific Excellence",
+    description: "We utilize the latest research and evidence-based treatments to ensure optimal outcomes for our patients."
+  },
+  {
+    icon: Shield,
+    title: "Safe Environment",
+    description: "Our clinic provides a secure, welcoming space where patients feel comfortable throughout their healing journey."
+  },
+  {
+    icon: Users,
+    title: "Collaborative Approach",
+    description: "We work closely with patients, families, and healthcare providers to create comprehensive treatment plans."
+  }];
+
 
   const technologies = [
-    {
-      icon: Zap,
-      title: "NeuroStar TMS",
-      description: "FDA-approved advanced TMS technology for precise, effective treatment of depression and anxiety disorders.",
-      features: ["Precise targeting", "Proven efficacy", "Non-invasive"]
-    },
-    {
-      icon: Brain,
-      title: "Brain Mapping",
-      description: "Advanced neuroimaging techniques to personalize treatment protocols and optimize outcomes.",
-      features: ["Personalized protocols", "Real-time monitoring", "Treatment optimization"]
-    },
-    {
-      icon: Target,
-      title: "Precision Medicine",
-      description: "Individualized treatment plans based on genetic markers, neuroimaging, and clinical assessments.",
-      features: ["Genetic testing", "Biomarker analysis", "Customized protocols"]
-    }
-  ];
+  {
+    icon: Zap,
+    title: "NeuroStar TMS",
+    description: "FDA-approved advanced TMS technology for precise, effective treatment of depression and anxiety disorders.",
+    features: ["Precise targeting", "Proven efficacy", "Non-invasive"]
+  },
+  {
+    icon: Brain,
+    title: "Brain Mapping",
+    description: "Advanced neuroimaging techniques to personalize treatment protocols and optimize outcomes.",
+    features: ["Personalized protocols", "Real-time monitoring", "Treatment optimization"]
+  },
+  {
+    icon: Target,
+    title: "Precision Medicine",
+    description: "Individualized treatment plans based on genetic markers, neuroimaging, and clinical assessments.",
+    features: ["Genetic testing", "Biomarker analysis", "Customized protocols"]
+  }];
+
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-purple-50">
@@ -205,20 +205,20 @@ const AboutPage = () => {
           {/* Interactive Tabs */}
           <div className="max-w-6xl mx-auto">
             <div className="flex flex-wrap justify-center gap-4 mb-12">
-              {['story', 'values', 'technology'].map((tab) => (
-                <Button
-                  key={tab}
-                  variant={activeTab === tab ? "default" : "outline"}
-                  className={`px-8 py-3 text-lg transition-all duration-300 ${
-                    activeTab === tab ?
-                    "bg-[#572670] hover:bg-[#572670]/90" :
-                    "border-[#572670]/30 text-[#572670] hover:bg-[#572670]/10"}`
-                  }
-                  onClick={() => setActiveTab(tab)}>
-                    {tab === 'story' ? 'Practice Story' : 
-                     tab === 'values' ? 'Core Values' : 'Technology Showcase'}
+              {['story', 'values', 'technology'].map((tab) =>
+              <Button
+                key={tab}
+                variant={activeTab === tab ? "default" : "outline"}
+                className={`px-8 py-3 text-lg transition-all duration-300 ${
+                activeTab === tab ?
+                "bg-[#572670] hover:bg-[#572670]/90" :
+                "border-[#572670]/30 text-[#572670] hover:bg-[#572670]/10"}`
+                }
+                onClick={() => setActiveTab(tab)}>
+                    {tab === 'story' ? 'Practice Story' :
+                tab === 'values' ? 'Core Values' : 'Technology Showcase'}
                 </Button>
-              ))}
+              )}
             </div>
 
             <motion.div
@@ -228,8 +228,8 @@ const AboutPage = () => {
               transition={{ duration: 0.5 }}
               className="bg-gradient-to-br from-[#572670]/5 to-purple-100/30 rounded-3xl p-8 lg:p-12">
 
-              {activeTab === 'story' && (
-                <div className="space-y-8">
+              {activeTab === 'story' &&
+              <div className="space-y-8">
                   <div className="grid lg:grid-cols-2 gap-12 items-center">
                     <div>
                       <h3 className="text-3xl font-bold text-gray-900 mb-6">Our Story</h3>
@@ -261,53 +261,53 @@ const AboutPage = () => {
                     </div>
                     <div className="relative">
                       <img
-                        src="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/031012db-9570-41de-bb30-96c6fa482330.png"
-                        alt="TMS Treatment Chair"
-                        className="w-full h-80 object-contain rounded-2xl bg-gray-50 p-6" />
+                      src="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/031012db-9570-41de-bb30-96c6fa482330.png"
+                      alt="TMS Treatment Chair"
+                      className="w-full h-80 object-contain rounded-2xl bg-gray-50 p-6" />
                     </div>
                   </div>
                 </div>
-              )}
+              }
 
-              {activeTab === 'values' && (
-                <div>
+              {activeTab === 'values' &&
+              <div>
                   <h3 className="text-3xl font-bold text-gray-900 mb-8 text-center">Our Core Values</h3>
                   <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
                     {coreValues.map((value, index) => {
-                      const IconComponent = value.icon;
-                      return (
-                        <motion.div
-                          key={value.title}
-                          initial={{ opacity: 0, y: 20 }}
-                          animate={{ opacity: 1, y: 0 }}
-                          transition={{ delay: index * 0.1 }}
-                          className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                    const IconComponent = value.icon;
+                    return (
+                      <motion.div
+                        key={value.title}
+                        initial={{ opacity: 0, y: 20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ delay: index * 0.1 }}
+                        className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
 
                           <div className="w-12 h-12 bg-gradient-to-br from-[#572670] to-purple-500 rounded-full flex items-center justify-center mb-4">
                             <IconComponent className="h-6 w-6 text-white" />
                           </div>
                           <h4 className="text-xl font-semibold text-gray-900 mb-2">{value.title}</h4>
                           <p className="text-gray-600 text-sm">{value.description}</p>
-                        </motion.div>
-                      );
-                    })}
+                        </motion.div>);
+
+                  })}
                   </div>
                 </div>
-              )}
+              }
 
-              {activeTab === 'technology' && (
-                <div>
+              {activeTab === 'technology' &&
+              <div>
                   <h3 className="text-3xl font-bold text-gray-900 mb-8 text-center">Technology Showcase</h3>
                   <div className="grid lg:grid-cols-3 gap-8">
                     {technologies.map((tech, index) => {
-                      const IconComponent = tech.icon;
-                      return (
-                        <motion.div
-                          key={tech.title}
-                          initial={{ opacity: 0, y: 30 }}
-                          animate={{ opacity: 1, y: 0 }}
-                          transition={{ delay: index * 0.2 }}
-                          className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300">
+                    const IconComponent = tech.icon;
+                    return (
+                      <motion.div
+                        key={tech.title}
+                        initial={{ opacity: 0, y: 30 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ delay: index * 0.2 }}
+                        className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300">
                           
                           <div className="w-16 h-16 bg-gradient-to-br from-[#572670] to-purple-500 rounded-2xl flex items-center justify-center mb-6">
                             <IconComponent className="h-8 w-8 text-white" />
@@ -315,16 +315,16 @@ const AboutPage = () => {
                           <h4 className="text-2xl font-bold text-gray-900 mb-3">{tech.title}</h4>
                           <p className="text-gray-600 mb-4">{tech.description}</p>
                           <div className="space-y-2">
-                            {tech.features.map((feature, idx) => (
-                              <div key={idx} className="flex items-center gap-2">
+                            {tech.features.map((feature, idx) =>
+                          <div key={idx} className="flex items-center gap-2">
                                 <CheckCircle className="h-4 w-4 text-[#572670]" />
                                 <span className="text-sm text-gray-700">{feature}</span>
                               </div>
-                            ))}
+                          )}
                           </div>
-                        </motion.div>
-                      );
-                    })}
+                        </motion.div>);
+
+                  })}
                   </div>
                   <div className="text-center mt-12">
                     <p className="text-gray-600 mb-6">
@@ -344,7 +344,7 @@ const AboutPage = () => {
                     </div>
                   </div>
                 </div>
-              )}
+              }
             </motion.div>
           </div>
         </div>
@@ -374,10 +374,10 @@ const AboutPage = () => {
               
               <div className="grid md:grid-cols-3 gap-8 mb-12">
                 {[
-                  { icon: Building2, title: "Modern Facility", desc: "State-of-the-art clinic with latest technology" },
-                  { icon: Users, title: "Collaborative Team", desc: "Work alongside experienced professionals" },
-                  { icon: Briefcase, title: "Growth Opportunities", desc: "Professional development and advancement paths" }
-                ].map((benefit, index) => {
+                { icon: Building2, title: "Modern Facility", desc: "State-of-the-art clinic with latest technology" },
+                { icon: Users, title: "Collaborative Team", desc: "Work alongside experienced professionals" },
+                { icon: Briefcase, title: "Growth Opportunities", desc: "Professional development and advancement paths" }].
+                map((benefit, index) => {
                   const IconComponent = benefit.icon;
                   return (
                     <motion.div
@@ -393,8 +393,8 @@ const AboutPage = () => {
                       </div>
                       <h3 className="text-xl font-semibold text-gray-900 mb-3">{benefit.title}</h3>
                       <p className="text-gray-600">{benefit.desc}</p>
-                    </motion.div>
-                  );
+                    </motion.div>);
+
                 })}
               </div>
 
@@ -444,8 +444,8 @@ const AboutPage = () => {
       </section>
 
       <FooterSection />
-    </div>
-  );
+    </div>);
+
 };
 
 export default AboutPage;

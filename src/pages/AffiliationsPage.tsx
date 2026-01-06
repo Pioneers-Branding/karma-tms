@@ -6,7 +6,7 @@ import FooterSection from '@/components/FooterSection';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { Card, CardContent } from '@/components/ui/card';
-import { 
+import {
   Award,
   Building2,
   Users,
@@ -16,8 +16,8 @@ import {
   Calendar,
   BookOpen,
   Microscope,
-  GraduationCap
-} from 'lucide-react';
+  GraduationCap } from
+'lucide-react';
 
 const AffiliationsPage = () => {
   const fadeInUp = {
@@ -41,145 +41,145 @@ const AffiliationsPage = () => {
 
   // Research Partners Data
   const researchPartners = [
-    {
-      name: "Stanford University Medical Center",
-      type: "Research Institution",
-      logo: "https://images.unsplash.com/photo-1752080193173-25f318f9cafb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MTg3MTl8MHwxfHNlYXJjaHwxfHxBJTIwY3JvcHBlZCUyMGltYWdlJTIwZnJvbSUyMFVuc3BsYXNoJTIwd2l0aCUyMGElMjB3aWR0aCUyMG9mJTIwMjAwJTIwcGl4ZWxzJTIwYW5kJTIwYSUyMGhlaWdodCUyMG9mJTIwMTAwJTIwcGl4ZWxzLnxlbnwwfHx8fDE3NTYxMjcyNTB8MA&ixlib=rb-4.1.0&q=80&w=200$w=200",
-      description: "Collaborative TMS research on treatment-resistant depression and innovative protocols.",
-      partnership: "Active Research Collaboration",
-      projects: ["TMS Protocol Optimization", "Neuroplasticity Studies", "Patient Outcome Research"]
-    },
-    {
-      name: "UCLA Neuropsychiatric Institute",
-      type: "Academic Medical Center",
-      logo: "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=200&h=100&fit=crop",
-      description: "Joint clinical trials and training programs for advancing TMS therapy techniques.",
-      partnership: "Clinical Trial Partnership",
-      projects: ["Multi-site Clinical Trials", "Resident Training", "Protocol Development"]
-    },
-    {
-      name: "Mayo Clinic",
-      type: "Medical Institution",
-      logo: "https://images.unsplash.com/photo-1551601651-2a8555f1a136?w=200&h=100&fit=crop",
-      description: "Collaborative research on brain mapping technologies and personalized treatment approaches.",
-      partnership: "Technology Partnership",
-      projects: ["Brain Mapping Research", "Personalized Medicine", "Technology Innovation"]
-    },
-    {
-      name: "National Institute of Mental Health",
-      type: "Federal Research Agency",
-      logo: "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=200&h=100&fit=crop",
-      description: "Federal research grants supporting innovative TMS applications and outcome studies.",
-      partnership: "Grant Recipient",
-      projects: ["NIMH Research Grants", "Population Health Studies", "Treatment Efficacy Research"]
-    },
-    {
-      name: "Johns Hopkins School of Medicine",
-      type: "Medical School",
-      logo: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=200&h=100&fit=crop",
-      description: "Academic partnership for medical education and advanced psychiatric research.",
-      partnership: "Educational Collaboration",
-      projects: ["Medical Student Rotations", "Research Publications", "Continuing Education"]
-    },
-    {
-      name: "American Psychiatric Association",
-      type: "Professional Organization",
-      logo: "https://images.unsplash.com/photo-1505751172876-fa1923c5c528?w=200&h=100&fit=crop",
-      description: "Professional development and standards setting for TMS therapy practice.",
-      partnership: "Professional Membership",
-      projects: ["Practice Guidelines", "Professional Development", "Standards Setting"]
-    }
-  ];
+  {
+    name: "Stanford University Medical Center",
+    type: "Research Institution",
+    logo: "https://images.unsplash.com/photo-1752080193173-25f318f9cafb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MTg3MTl8MHwxfHNlYXJjaHwxfHxBJTIwY3JvcHBlZCUyMGltYWdlJTIwZnJvbSUyMFVuc3BsYXNoJTIwd2l0aCUyMGElMjB3aWR0aCUyMG9mJTIwMjAwJTIwcGl4ZWxzJTIwYW5kJTIwYSUyMGhlaWdodCUyMG9mJTIwMTAwJTIwcGl4ZWxzLnxlbnwwfHx8fDE3NTYxMjcyNTB8MA&ixlib=rb-4.1.0&q=80&w=200$w=200",
+    description: "Collaborative TMS research on treatment-resistant depression and innovative protocols.",
+    partnership: "Active Research Collaboration",
+    projects: ["TMS Protocol Optimization", "Neuroplasticity Studies", "Patient Outcome Research"]
+  },
+  {
+    name: "UCLA Neuropsychiatric Institute",
+    type: "Academic Medical Center",
+    logo: "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=200&h=100&fit=crop",
+    description: "Joint clinical trials and training programs for advancing TMS therapy techniques.",
+    partnership: "Clinical Trial Partnership",
+    projects: ["Multi-site Clinical Trials", "Resident Training", "Protocol Development"]
+  },
+  {
+    name: "Mayo Clinic",
+    type: "Medical Institution",
+    logo: "https://images.unsplash.com/photo-1551601651-2a8555f1a136?w=200&h=100&fit=crop",
+    description: "Collaborative research on brain mapping technologies and personalized treatment approaches.",
+    partnership: "Technology Partnership",
+    projects: ["Brain Mapping Research", "Personalized Medicine", "Technology Innovation"]
+  },
+  {
+    name: "National Institute of Mental Health",
+    type: "Federal Research Agency",
+    logo: "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=200&h=100&fit=crop",
+    description: "Federal research grants supporting innovative TMS applications and outcome studies.",
+    partnership: "Grant Recipient",
+    projects: ["NIMH Research Grants", "Population Health Studies", "Treatment Efficacy Research"]
+  },
+  {
+    name: "Johns Hopkins School of Medicine",
+    type: "Medical School",
+    logo: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=200&h=100&fit=crop",
+    description: "Academic partnership for medical education and advanced psychiatric research.",
+    partnership: "Educational Collaboration",
+    projects: ["Medical Student Rotations", "Research Publications", "Continuing Education"]
+  },
+  {
+    name: "American Psychiatric Association",
+    type: "Professional Organization",
+    logo: "https://images.unsplash.com/photo-1505751172876-fa1923c5c528?w=200&h=100&fit=crop",
+    description: "Professional development and standards setting for TMS therapy practice.",
+    partnership: "Professional Membership",
+    projects: ["Practice Guidelines", "Professional Development", "Standards Setting"]
+  }];
+
 
   // Conference Logos Data
   const conferences = [
-    {
-      name: "American Psychiatric Association Annual Meeting",
-      year: "2024",
-      role: "Keynote Speaker",
-      logo: "https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=120&h=80&fit=crop",
-      presentation: "Innovations in TMS Therapy"
-    },
-    {
-      name: "International Society for TMS and TES",
-      year: "2024",
-      role: "Research Presenter",
-      logo: "https://images.unsplash.com/photo-1560472355-536de3962603?w=120&h=80&fit=crop",
-      presentation: "Patient Outcome Studies"
-    },
-    {
-      name: "World Congress of Psychiatry",
-      year: "2023",
-      role: "Panel Discussant",
-      logo: "https://images.unsplash.com/photo-1587825140708-dfaf72ae4b04?w=120&h=80&fit=crop",
-      presentation: "Global Mental Health Treatment"
-    },
-    {
-      name: "Society of Biological Psychiatry",
-      year: "2023",
-      role: "Research Poster",
-      logo: "https://images.unsplash.com/photo-1752080193173-25f318f9cafb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MTg3MTl8MHwxfHNlYXJjaHwxfHxBJTIwY3JvcHBlZCUyMGltYWdlJTIwZnJvbSUyMFVuc3BsYXNoJTIwd2l0aCUyMGElMjB3aWR0aCUyMG9mJTIwMTIwJTIwcGl4ZWxzJTIwYW5kJTIwYSUyMGhlaWdodCUyMG9mJTIwODAlMjBwaXhlbHMufGVufDB8fHx8MTc1NjEyNzI0N3ww&ixlib=rb-4.1.0&q=80&w=200$w=120",
-      presentation: "Brain Stimulation Advances"
-    },
-    {
-      name: "Clinical TMS Society Annual Conference",
-      year: "2024",
-      role: "Workshop Leader",
-      logo: "https://images.unsplash.com/photo-1559757175-0eb30cd8c063?w=120&h=80&fit=crop",
-      presentation: "Advanced TMS Techniques"
-    },
-    {
-      name: "American College of Neuropsychopharmacology",
-      year: "2023",
-      role: "Symposium Speaker",
-      logo: "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=120&h=80&fit=crop",
-      presentation: "Neuropharmacology of TMS"
-    }
-  ];
+  {
+    name: "American Psychiatric Association Annual Meeting",
+    year: "2024",
+    role: "Keynote Speaker",
+    logo: "https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=120&h=80&fit=crop",
+    presentation: "Innovations in TMS Therapy"
+  },
+  {
+    name: "International Society for TMS and TES",
+    year: "2024",
+    role: "Research Presenter",
+    logo: "https://images.unsplash.com/photo-1560472355-536de3962603?w=120&h=80&fit=crop",
+    presentation: "Patient Outcome Studies"
+  },
+  {
+    name: "World Congress of Psychiatry",
+    year: "2023",
+    role: "Panel Discussant",
+    logo: "https://images.unsplash.com/photo-1587825140708-dfaf72ae4b04?w=120&h=80&fit=crop",
+    presentation: "Global Mental Health Treatment"
+  },
+  {
+    name: "Society of Biological Psychiatry",
+    year: "2023",
+    role: "Research Poster",
+    logo: "https://images.unsplash.com/photo-1752080193173-25f318f9cafb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MTg3MTl8MHwxfHNlYXJjaHwxfHxBJTIwY3JvcHBlZCUyMGltYWdlJTIwZnJvbSUyMFVuc3BsYXNoJTIwd2l0aCUyMGElMjB3aWR0aCUyMG9mJTIwMTIwJTIwcGl4ZWxzJTIwYW5kJTIwYSUyMGhlaWdodCUyMG9mJTIwODAlMjBwaXhlbHMufGVufDB8fHx8MTc1NjEyNzI0N3ww&ixlib=rb-4.1.0&q=80&w=200$w=120",
+    presentation: "Brain Stimulation Advances"
+  },
+  {
+    name: "Clinical TMS Society Annual Conference",
+    year: "2024",
+    role: "Workshop Leader",
+    logo: "https://images.unsplash.com/photo-1559757175-0eb30cd8c063?w=120&h=80&fit=crop",
+    presentation: "Advanced TMS Techniques"
+  },
+  {
+    name: "American College of Neuropsychopharmacology",
+    year: "2023",
+    role: "Symposium Speaker",
+    logo: "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=120&h=80&fit=crop",
+    presentation: "Neuropharmacology of TMS"
+  }];
+
 
   // Press Quotes Data
   const pressQuotes = [
-    {
-      quote: "Karma TMS has established itself as a leader in innovative mental health treatment, setting new standards for patient care and clinical excellence.",
-      source: "Psychology Today",
-      author: "Dr. Jennifer Williams",
-      title: "Senior Medical Editor",
-      date: "March 2024",
-      publication: "Psychology Today Magazine"
-    },
-    {
-      quote: "The groundbreaking research coming from Karma TMS is reshaping our understanding of treatment-resistant depression and the potential of brain stimulation therapies.",
-      source: "Medical News Today",
-      author: "Sarah Johnson, MD",
-      title: "Contributing Medical Writer",
-      date: "February 2024",
-      publication: "Medical News Today"
-    },
-    {
-      quote: "Dr. Mitchell and her team at Karma TMS represent the future of psychiatry—combining cutting-edge technology with compassionate, personalized patient care.",
-      source: "Psychiatric Times",
-      author: "Michael Roberts, PhD",
-      title: "Clinical Research Director",
-      date: "January 2024",
-      publication: "Psychiatric Times"
-    },
-    {
-      quote: "Karma TMS's innovative approach to TMS therapy has achieved remarkable success rates, offering hope to patients who haven't responded to traditional treatments.",
-      source: "HealthLine",
-      author: "Lisa Chen, MSW",
-      title: "Mental Health Specialist",
-      date: "December 2023",
-      publication: "HealthLine"
-    },
-    {
-      quote: "The clinical outcomes at Karma TMS speak for themselves—this is precision medicine at its finest, delivered with exceptional care and expertise.",
-      source: "Harvard Health Review",
-      author: "Dr. Robert Thompson",
-      title: "Professor of Psychiatry",
-      date: "November 2023",
-      publication: "Harvard Health Review"
-    }
-  ];
+  {
+    quote: "Karma TMS has established itself as a leader in innovative mental health treatment, setting new standards for patient care and clinical excellence.",
+    source: "Psychology Today",
+    author: "Dr. Jennifer Williams",
+    title: "Senior Medical Editor",
+    date: "March 2024",
+    publication: "Psychology Today Magazine"
+  },
+  {
+    quote: "The groundbreaking research coming from Karma TMS is reshaping our understanding of treatment-resistant depression and the potential of brain stimulation therapies.",
+    source: "Medical News Today",
+    author: "Sarah Johnson, MD",
+    title: "Contributing Medical Writer",
+    date: "February 2024",
+    publication: "Medical News Today"
+  },
+  {
+    quote: "Dr. Mitchell and her team at Karma TMS represent the future of psychiatry—combining cutting-edge technology with compassionate, personalized patient care.",
+    source: "Psychiatric Times",
+    author: "Michael Roberts, PhD",
+    title: "Clinical Research Director",
+    date: "January 2024",
+    publication: "Psychiatric Times"
+  },
+  {
+    quote: "Karma TMS's innovative approach to TMS therapy has achieved remarkable success rates, offering hope to patients who haven't responded to traditional treatments.",
+    source: "HealthLine",
+    author: "Lisa Chen, MSW",
+    title: "Mental Health Specialist",
+    date: "December 2023",
+    publication: "HealthLine"
+  },
+  {
+    quote: "The clinical outcomes at Karma TMS speak for themselves—this is precision medicine at its finest, delivered with exceptional care and expertise.",
+    source: "Harvard Health Review",
+    author: "Dr. Robert Thompson",
+    title: "Professor of Psychiatry",
+    date: "November 2023",
+    publication: "Harvard Health Review"
+  }];
+
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-purple-50">
@@ -248,24 +248,24 @@ const AffiliationsPage = () => {
           </motion.div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {researchPartners.map((partner, index) => (
-              <motion.div
-                key={partner.name}
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: index * 0.1 }}
-              >
+            {researchPartners.map((partner, index) =>
+            <motion.div
+              key={partner.name}
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: index * 0.1 }}>
+
                 <Card className="h-full hover:shadow-2xl transition-all duration-500 group">
                   <CardContent className="p-6">
                     <div className="space-y-4">
                       {/* Logo */}
                       <div className="relative overflow-hidden rounded-lg">
                         <img
-                          src={partner.logo}
-                          alt={partner.name}
-                          className="w-full h-32 object-cover group-hover:scale-105 transition-transform duration-500"
-                        />
+                        src={partner.logo}
+                        alt={partner.name}
+                        className="w-full h-32 object-cover group-hover:scale-105 transition-transform duration-500" />
+
                       </div>
 
                       {/* Institution Info */}
@@ -289,21 +289,21 @@ const AffiliationsPage = () => {
                       <div>
                         <h4 className="font-semibold text-gray-900 mb-2">Active Projects</h4>
                         <ul className="space-y-1">
-                          {partner.projects.map((project, idx) => (
-                            <li key={idx} className="text-sm text-gray-600 flex items-start gap-2">
+                          {partner.projects.map((project, idx) =>
+                        <li key={idx} className="text-sm text-gray-600 flex items-start gap-2">
                               <Award className="h-3 w-3 text-[#572670] flex-shrink-0 mt-0.5" />
                               {project}
                             </li>
-                          ))}
+                        )}
                         </ul>
                       </div>
 
                       {/* Link */}
                       <Button
-                        variant="outline"
-                        className="w-full border-[#572670] text-[#572670] hover:bg-[#572670]/10"
-                        onClick={() => window.open('#', '_blank')}
-                      >
+                      variant="outline"
+                      className="w-full border-[#572670] text-[#572670] hover:bg-[#572670]/10"
+                      onClick={() => window.open('#', '_blank')}>
+
                         <ExternalLink className="h-4 w-4 mr-2" />
                         Learn More
                       </Button>
@@ -311,7 +311,7 @@ const AffiliationsPage = () => {
                   </CardContent>
                 </Card>
               </motion.div>
-            ))}
+            )}
           </div>
         </div>
       </section>
@@ -339,23 +339,23 @@ const AffiliationsPage = () => {
           </motion.div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {conferences.map((conference, index) => (
-              <motion.div
-                key={conference.name}
-                initial={{ opacity: 0, scale: 0.9 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                viewport={{ once: true }}
-                transition={{ delay: index * 0.1 }}
-                className="group"
-              >
+            {conferences.map((conference, index) =>
+            <motion.div
+              key={conference.name}
+              initial={{ opacity: 0, scale: 0.9 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              viewport={{ once: true }}
+              transition={{ delay: index * 0.1 }}
+              className="group">
+
                 <Card className="hover:shadow-xl transition-all duration-300">
                   <CardContent className="p-6">
                     <div className="flex items-start gap-4">
                       <img
-                        src={conference.logo}
-                        alt={conference.name}
-                        className="w-16 h-12 object-cover rounded-lg flex-shrink-0"
-                      />
+                      src={conference.logo}
+                      alt={conference.name}
+                      className="w-16 h-12 object-cover rounded-lg flex-shrink-0" />
+
                       <div className="flex-1">
                         <h3 className="font-bold text-gray-900 text-lg mb-1">{conference.name}</h3>
                         <div className="flex items-center gap-2 mb-2">
@@ -371,7 +371,7 @@ const AffiliationsPage = () => {
                   </CardContent>
                 </Card>
               </motion.div>
-            ))}
+            )}
           </div>
         </div>
       </section>
@@ -399,14 +399,14 @@ const AffiliationsPage = () => {
           </motion.div>
 
           <div className="grid lg:grid-cols-2 gap-8">
-            {pressQuotes.map((press, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, x: index % 2 === 0 ? -30 : 30 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: index * 0.2 }}
-              >
+            {pressQuotes.map((press, index) =>
+            <motion.div
+              key={index}
+              initial={{ opacity: 0, x: index % 2 === 0 ? -30 : 30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: index * 0.2 }}>
+
                 <Card className="h-full hover:shadow-xl transition-all duration-300">
                   <CardContent className="p-8">
                     <div className="space-y-6">
@@ -426,15 +426,15 @@ const AffiliationsPage = () => {
                       </div>
 
                       <div className="flex items-center gap-1">
-                        {[1,2,3,4,5].map((star) => (
-                          <Star key={star} className="h-4 w-4 text-yellow-400 fill-current" />
-                        ))}
+                        {[1, 2, 3, 4, 5].map((star) =>
+                      <Star key={star} className="h-4 w-4 text-yellow-400 fill-current" />
+                      )}
                       </div>
                     </div>
                   </CardContent>
                 </Card>
               </motion.div>
-            ))}
+            )}
           </div>
         </div>
       </section>
@@ -470,8 +470,8 @@ const AffiliationsPage = () => {
       </section>
 
       <FooterSection />
-    </div>
-  );
+    </div>);
+
 };
 
 export default AffiliationsPage;

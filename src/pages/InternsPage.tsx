@@ -11,7 +11,7 @@ import { Label } from '@/components/ui/label';
 import { Textarea } from '@/components/ui/textarea';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import { Checkbox } from '@/components/ui/checkbox';
-import { 
+import {
   GraduationCap,
   Calendar,
   Clock,
@@ -24,8 +24,8 @@ import {
   Stethoscope,
   Brain,
   Target,
-  Star
-} from 'lucide-react';
+  Star } from
+'lucide-react';
 
 const InternsPage = () => {
   const [formData, setFormData] = useState({
@@ -67,88 +67,88 @@ const InternsPage = () => {
 
   // Program Overview Data
   const programHighlights = [
-    {
-      icon: Stethoscope,
-      title: "Clinical Experience",
-      description: "Hands-on experience with TMS therapy, patient assessments, and treatment planning under expert supervision."
-    },
-    {
-      icon: Brain,
-      title: "Research Opportunities",
-      description: "Participate in ongoing research projects and contribute to publications in peer-reviewed journals."
-    },
-    {
-      icon: BookOpen,
-      title: "Educational Seminars",
-      description: "Weekly seminars covering advanced topics in psychiatry, neurostimulation, and mental health treatment."
-    },
-    {
-      icon: Users,
-      title: "Mentorship Program",
-      description: "One-on-one mentorship with board-certified psychiatrists and experienced clinical staff."
-    }
-  ];
+  {
+    icon: Stethoscope,
+    title: "Clinical Experience",
+    description: "Hands-on experience with TMS therapy, patient assessments, and treatment planning under expert supervision."
+  },
+  {
+    icon: Brain,
+    title: "Research Opportunities",
+    description: "Participate in ongoing research projects and contribute to publications in peer-reviewed journals."
+  },
+  {
+    icon: BookOpen,
+    title: "Educational Seminars",
+    description: "Weekly seminars covering advanced topics in psychiatry, neurostimulation, and mental health treatment."
+  },
+  {
+    icon: Users,
+    title: "Mentorship Program",
+    description: "One-on-one mentorship with board-certified psychiatrists and experienced clinical staff."
+  }];
+
 
   // Rotation Calendar Data
   const rotationCalendar = [
-    {
-      month: "January 2024",
-      rotation: "TMS Therapy Rotation",
-      duration: "4 weeks",
-      focus: "Basic TMS principles, patient selection, and treatment protocols",
-      supervisor: "Dr. Sarah Mitchell",
-      spots: 3,
-      available: true
-    },
-    {
-      month: "February 2024",
-      rotation: "Brain Mapping & Assessment",
-      duration: "4 weeks",
-      focus: "Neuroimaging, brain mapping techniques, and personalized treatment planning",
-      supervisor: "Dr. Michael Chen",
-      spots: 2,
-      available: true
-    },
-    {
-      month: "March 2024",
-      rotation: "Research & Data Analysis",
-      duration: "4 weeks",
-      focus: "Clinical research methods, data collection, and statistical analysis",
-      supervisor: "Dr. Emily Rodriguez",
-      spots: 2,
-      available: false
-    },
-    {
-      month: "April 2024",
-      rotation: "Patient Care & Follow-up",
-      duration: "4 weeks",
-      focus: "Long-term patient management, outcome tracking, and care coordination",
-      supervisor: "Dr. Sarah Mitchell",
-      spots: 3,
-      available: true
-    },
-    {
-      month: "May 2024",
-      rotation: "Advanced TMS Techniques",
-      duration: "4 weeks",
-      focus: "Specialized protocols, combination therapies, and treatment optimization",
-      supervisor: "Dr. Michael Chen",
-      spots: 2,
-      available: true
-    },
-    {
-      month: "June 2024",
-      rotation: "Quality Improvement",
-      duration: "4 weeks",
-      focus: "Clinical quality metrics, process improvement, and best practices",
-      supervisor: "Dr. Emily Rodriguez",
-      spots: 2,
-      available: true
-    }
-  ];
+  {
+    month: "January 2024",
+    rotation: "TMS Therapy Rotation",
+    duration: "4 weeks",
+    focus: "Basic TMS principles, patient selection, and treatment protocols",
+    supervisor: "Dr. Sarah Mitchell",
+    spots: 3,
+    available: true
+  },
+  {
+    month: "February 2024",
+    rotation: "Brain Mapping & Assessment",
+    duration: "4 weeks",
+    focus: "Neuroimaging, brain mapping techniques, and personalized treatment planning",
+    supervisor: "Dr. Michael Chen",
+    spots: 2,
+    available: true
+  },
+  {
+    month: "March 2024",
+    rotation: "Research & Data Analysis",
+    duration: "4 weeks",
+    focus: "Clinical research methods, data collection, and statistical analysis",
+    supervisor: "Dr. Emily Rodriguez",
+    spots: 2,
+    available: false
+  },
+  {
+    month: "April 2024",
+    rotation: "Patient Care & Follow-up",
+    duration: "4 weeks",
+    focus: "Long-term patient management, outcome tracking, and care coordination",
+    supervisor: "Dr. Sarah Mitchell",
+    spots: 3,
+    available: true
+  },
+  {
+    month: "May 2024",
+    rotation: "Advanced TMS Techniques",
+    duration: "4 weeks",
+    focus: "Specialized protocols, combination therapies, and treatment optimization",
+    supervisor: "Dr. Michael Chen",
+    spots: 2,
+    available: true
+  },
+  {
+    month: "June 2024",
+    rotation: "Quality Improvement",
+    duration: "4 weeks",
+    focus: "Clinical quality metrics, process improvement, and best practices",
+    supervisor: "Dr. Emily Rodriguez",
+    spots: 2,
+    available: true
+  }];
+
 
   const handleInputChange = (field: string, value: string | boolean) => {
-    setFormData(prev => ({
+    setFormData((prev) => ({
       ...prev,
       [field]: value
     }));
@@ -248,8 +248,8 @@ const InternsPage = () => {
                           <h4 className="text-xl font-semibold text-gray-900 mb-2">{highlight.title}</h4>
                           <p className="text-gray-600">{highlight.description}</p>
                         </div>
-                      </div>
-                    );
+                      </div>);
+
                   })}
                 </div>
               </div>
@@ -266,11 +266,11 @@ const InternsPage = () => {
                   <h3 className="text-2xl font-bold text-gray-900 mb-6">Program Statistics</h3>
                   <div className="grid grid-cols-2 gap-6">
                     {[
-                      { label: "Program Length", value: "12 weeks", icon: Clock },
-                      { label: "Weekly Hours", value: "20-30", icon: Calendar },
-                      { label: "Acceptance Rate", value: "15%", icon: Target },
-                      { label: "Job Placement", value: "95%", icon: Award }
-                    ].map((stat, index) => {
+                    { label: "Program Length", value: "12 weeks", icon: Clock },
+                    { label: "Weekly Hours", value: "20-30", icon: Calendar },
+                    { label: "Acceptance Rate", value: "15%", icon: Target },
+                    { label: "Job Placement", value: "95%", icon: Award }].
+                    map((stat, index) => {
                       const IconComponent = stat.icon;
                       return (
                         <div key={stat.label} className="text-center">
@@ -279,8 +279,8 @@ const InternsPage = () => {
                           </div>
                           <div className="text-2xl font-bold text-gray-900">{stat.value}</div>
                           <div className="text-sm text-gray-600">{stat.label}</div>
-                        </div>
-                      );
+                        </div>);
+
                     })}
                   </div>
                 </CardContent>
@@ -290,17 +290,17 @@ const InternsPage = () => {
                 <h4 className="text-xl font-semibold text-gray-900">Program Requirements</h4>
                 <ul className="space-y-2">
                   {[
-                    "Currently enrolled in psychology, psychiatry, or related graduate program",
-                    "Minimum 3.5 GPA",
-                    "Completed prerequisite courses in abnormal psychology and research methods",
-                    "Strong interest in mental health and neurostimulation therapies",
-                    "Professional references from academic advisors or supervisors"
-                  ].map((requirement, index) => (
-                    <li key={index} className="flex items-start gap-2">
+                  "Currently enrolled in psychology, psychiatry, or related graduate program",
+                  "Minimum 3.5 GPA",
+                  "Completed prerequisite courses in abnormal psychology and research methods",
+                  "Strong interest in mental health and neurostimulation therapies",
+                  "Professional references from academic advisors or supervisors"].
+                  map((requirement, index) =>
+                  <li key={index} className="flex items-start gap-2">
                       <CheckCircle className="h-5 w-5 text-[#572670] flex-shrink-0 mt-0.5" />
                       <span className="text-gray-600">{requirement}</span>
                     </li>
-                  ))}
+                  )}
                 </ul>
               </div>
             </motion.div>
@@ -331,17 +331,17 @@ const InternsPage = () => {
           </motion.div>
 
           <div className="grid gap-6">
-            {rotationCalendar.map((rotation, index) => (
-              <motion.div
-                key={rotation.month}
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: index * 0.1 }}
-              >
+            {rotationCalendar.map((rotation, index) =>
+            <motion.div
+              key={rotation.month}
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: index * 0.1 }}>
+
                 <Card className={`hover:shadow-xl transition-all duration-300 ${
-                  rotation.available ? 'border-l-4 border-l-[#572670]' : 'border-l-4 border-l-gray-400'
-                }`}>
+              rotation.available ? 'border-l-4 border-l-[#572670]' : 'border-l-4 border-l-gray-400'}`
+              }>
                   <CardContent className="p-6">
                     <div className="grid md:grid-cols-4 gap-6 items-center">
                       <div>
@@ -373,13 +373,13 @@ const InternsPage = () => {
                         <div className="text-2xl font-bold text-gray-900 mb-1">{rotation.spots}</div>
                         <div className="text-sm text-gray-600 mb-3">Spots Available</div>
                         <Button
-                          className={`${
-                            rotation.available
-                              ? 'bg-[#572670] hover:bg-[#572670]/90'
-                              : 'bg-gray-400 cursor-not-allowed'
-                          }`}
-                          disabled={!rotation.available}
-                        >
+                        className={`${
+                        rotation.available ?
+                        'bg-[#572670] hover:bg-[#572670]/90' :
+                        'bg-gray-400 cursor-not-allowed'}`
+                        }
+                        disabled={!rotation.available}>
+
                           {rotation.available ? 'Apply' : 'Full'}
                         </Button>
                       </div>
@@ -387,7 +387,7 @@ const InternsPage = () => {
                   </CardContent>
                 </Card>
               </motion.div>
-            ))}
+            )}
           </div>
         </div>
       </section>
@@ -428,8 +428,8 @@ const InternsPage = () => {
                           id="firstName"
                           value={formData.firstName}
                           onChange={(e) => handleInputChange('firstName', e.target.value)}
-                          required
-                        />
+                          required />
+
                       </div>
                       <div>
                         <Label htmlFor="lastName">Last Name *</Label>
@@ -437,8 +437,8 @@ const InternsPage = () => {
                           id="lastName"
                           value={formData.lastName}
                           onChange={(e) => handleInputChange('lastName', e.target.value)}
-                          required
-                        />
+                          required />
+
                       </div>
                       <div>
                         <Label htmlFor="email">Email Address *</Label>
@@ -447,8 +447,8 @@ const InternsPage = () => {
                           type="email"
                           value={formData.email}
                           onChange={(e) => handleInputChange('email', e.target.value)}
-                          required
-                        />
+                          required />
+
                       </div>
                       <div>
                         <Label htmlFor="phone">Phone Number *</Label>
@@ -457,8 +457,8 @@ const InternsPage = () => {
                           type="tel"
                           value={formData.phone}
                           onChange={(e) => handleInputChange('phone', e.target.value)}
-                          required
-                        />
+                          required />
+
                       </div>
                     </div>
                   </div>
@@ -473,8 +473,8 @@ const InternsPage = () => {
                           id="university"
                           value={formData.university}
                           onChange={(e) => handleInputChange('university', e.target.value)}
-                          required
-                        />
+                          required />
+
                       </div>
                       <div>
                         <Label htmlFor="program">Program of Study *</Label>
@@ -516,8 +516,8 @@ const InternsPage = () => {
                           max="4"
                           value={formData.gpa}
                           onChange={(e) => handleInputChange('gpa', e.target.value)}
-                          required
-                        />
+                          required />
+
                       </div>
                     </div>
                   </div>
@@ -549,8 +549,8 @@ const InternsPage = () => {
                           type="date"
                           value={formData.startDate}
                           onChange={(e) => handleInputChange('startDate', e.target.value)}
-                          required
-                        />
+                          required />
+
                       </div>
                     </div>
                   </div>
@@ -564,8 +564,8 @@ const InternsPage = () => {
                       value={formData.coverLetter}
                       onChange={(e) => handleInputChange('coverLetter', e.target.value)}
                       rows={6}
-                      required
-                    />
+                      required />
+
                   </div>
 
                   {/* References */}
@@ -576,8 +576,8 @@ const InternsPage = () => {
                       placeholder="Please provide contact information for 2-3 professional or academic references..."
                       value={formData.references}
                       onChange={(e) => handleInputChange('references', e.target.value)}
-                      rows={4}
-                    />
+                      rows={4} />
+
                   </div>
 
                   {/* Checkboxes */}
@@ -586,16 +586,16 @@ const InternsPage = () => {
                       <Checkbox
                         id="transcript"
                         checked={formData.hasTranscript}
-                        onCheckedChange={(checked) => handleInputChange('hasTranscript', checked as boolean)}
-                      />
+                        onCheckedChange={(checked) => handleInputChange('hasTranscript', checked as boolean)} />
+
                       <Label htmlFor="transcript">I have my official transcript ready to submit</Label>
                     </div>
                     <div className="flex items-center space-x-2">
                       <Checkbox
                         id="references-ready"
                         checked={formData.hasReferences}
-                        onCheckedChange={(checked) => handleInputChange('hasReferences', checked as boolean)}
-                      />
+                        onCheckedChange={(checked) => handleInputChange('hasReferences', checked as boolean)} />
+
                       <Label htmlFor="references-ready">I have contacted my references about this application</Label>
                     </div>
                     <div className="flex items-center space-x-2">
@@ -603,8 +603,8 @@ const InternsPage = () => {
                         id="terms"
                         checked={formData.agreeToTerms}
                         onCheckedChange={(checked) => handleInputChange('agreeToTerms', checked as boolean)}
-                        required
-                      />
+                        required />
+
                       <Label htmlFor="terms">I agree to the internship program terms and conditions *</Label>
                     </div>
                   </div>
@@ -614,8 +614,8 @@ const InternsPage = () => {
                     <Button
                       type="submit"
                       className="bg-[#572670] hover:bg-[#572670]/90 px-12 py-4 text-lg"
-                      disabled={!formData.agreeToTerms}
-                    >
+                      disabled={!formData.agreeToTerms}>
+
                       <Send className="mr-2 h-5 w-5" />
                       Submit Application
                     </Button>
@@ -632,8 +632,8 @@ const InternsPage = () => {
       </section>
 
       <FooterSection />
-    </div>
-  );
+    </div>);
+
 };
 
 export default InternsPage;

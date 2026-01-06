@@ -7,7 +7,7 @@ import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { Card, CardContent } from '@/components/ui/card';
 import { Link } from 'react-router-dom';
-import { 
+import {
   Shield,
   Lock,
   Eye,
@@ -19,8 +19,8 @@ import {
   FileText,
   Clock,
   AlertCircle,
-  CheckCircle
-} from 'lucide-react';
+  CheckCircle } from
+'lucide-react';
 
 const PrivacyPage = () => {
   const fadeInUp = {
@@ -33,94 +33,94 @@ const PrivacyPage = () => {
   };
 
   const privacySections = [
-    {
-      title: "Information We Collect",
-      icon: Database,
-      content: [
-        "Personal Information: Name, address, phone number, email address, date of birth, and insurance information",
-        "Medical Information: Medical history, current medications, treatment records, and health assessments", 
-        "Billing Information: Payment details, insurance claims, and billing records",
-        "Website Usage: IP address, browser type, pages visited, and interaction data when using our website"
-      ]
-    },
-    {
-      title: "How We Use Your Information", 
-      icon: Settings,
-      content: [
-        "Providing medical care and TMS treatments as prescribed by your physician",
-        "Scheduling appointments and managing your treatment plan",
-        "Processing insurance claims and handling billing matters",
-        "Communicating with you about your care, appointments, and health information"
-      ]
-    },
-    {
-      title: "Information Sharing & Disclosure",
-      icon: Eye,
-      content: [
-        "Healthcare Operations: Sharing with healthcare providers involved in your care",
-        "Legal Requirements: Disclosure when required by law or court order", 
-        "Insurance Processing: Sharing with insurance companies for claims processing",
-        "Business Associates: Limited sharing with vendors who support our operations under strict agreements"
-      ]
-    },
-    {
-      title: "Data Security Measures",
-      icon: Shield,
-      content: [
-        "Encryption of all electronic health records and payment information",
-        "Secure, HIPAA-compliant data storage systems and backup procedures",
-        "Regular security audits and staff training on privacy protection",
-        "Physical safeguards including locked filing systems and restricted access areas"
-      ]
-    },
-    {
-      title: "Your Privacy Rights",
-      icon: Lock,
-      content: [
-        "Right to request access to your personal and medical information",
-        "Right to request corrections to inaccurate information in your records",
-        "Right to request restrictions on how your information is used or disclosed",
-        "Right to request alternative communication methods or locations"
-      ]
-    },
-    {
-      title: "Website Privacy & Cookies",
-      icon: Cookie,
-      content: [
-        "We use essential cookies to improve website functionality and user experience",
-        "Analytics cookies help us understand how visitors use our website",
-        "You can control cookie preferences through your browser settings",
-        "No personal health information is collected through website cookies"
-      ]
-    }
-  ];
+  {
+    title: "Information We Collect",
+    icon: Database,
+    content: [
+    "Personal Information: Name, address, phone number, email address, date of birth, and insurance information",
+    "Medical Information: Medical history, current medications, treatment records, and health assessments",
+    "Billing Information: Payment details, insurance claims, and billing records",
+    "Website Usage: IP address, browser type, pages visited, and interaction data when using our website"]
+
+  },
+  {
+    title: "How We Use Your Information",
+    icon: Settings,
+    content: [
+    "Providing medical care and TMS treatments as prescribed by your physician",
+    "Scheduling appointments and managing your treatment plan",
+    "Processing insurance claims and handling billing matters",
+    "Communicating with you about your care, appointments, and health information"]
+
+  },
+  {
+    title: "Information Sharing & Disclosure",
+    icon: Eye,
+    content: [
+    "Healthcare Operations: Sharing with healthcare providers involved in your care",
+    "Legal Requirements: Disclosure when required by law or court order",
+    "Insurance Processing: Sharing with insurance companies for claims processing",
+    "Business Associates: Limited sharing with vendors who support our operations under strict agreements"]
+
+  },
+  {
+    title: "Data Security Measures",
+    icon: Shield,
+    content: [
+    "Encryption of all electronic health records and payment information",
+    "Secure, HIPAA-compliant data storage systems and backup procedures",
+    "Regular security audits and staff training on privacy protection",
+    "Physical safeguards including locked filing systems and restricted access areas"]
+
+  },
+  {
+    title: "Your Privacy Rights",
+    icon: Lock,
+    content: [
+    "Right to request access to your personal and medical information",
+    "Right to request corrections to inaccurate information in your records",
+    "Right to request restrictions on how your information is used or disclosed",
+    "Right to request alternative communication methods or locations"]
+
+  },
+  {
+    title: "Website Privacy & Cookies",
+    icon: Cookie,
+    content: [
+    "We use essential cookies to improve website functionality and user experience",
+    "Analytics cookies help us understand how visitors use our website",
+    "You can control cookie preferences through your browser settings",
+    "No personal health information is collected through website cookies"]
+
+  }];
+
 
   const cookieTypes = [
-    {
-      name: "Essential Cookies",
-      purpose: "Required for basic website functionality",
-      duration: "Session only",
-      canDisable: false
-    },
-    {
-      name: "Analytics Cookies", 
-      purpose: "Help us understand website usage",
-      duration: "Up to 2 years",
-      canDisable: true
-    },
-    {
-      name: "Preference Cookies",
-      purpose: "Remember your settings and preferences",
-      duration: "Up to 1 year", 
-      canDisable: true
-    },
-    {
-      name: "Marketing Cookies",
-      purpose: "Deliver relevant content and ads",
-      duration: "Up to 1 year",
-      canDisable: true
-    }
-  ];
+  {
+    name: "Essential Cookies",
+    purpose: "Required for basic website functionality",
+    duration: "Session only",
+    canDisable: false
+  },
+  {
+    name: "Analytics Cookies",
+    purpose: "Help us understand website usage",
+    duration: "Up to 2 years",
+    canDisable: true
+  },
+  {
+    name: "Preference Cookies",
+    purpose: "Remember your settings and preferences",
+    duration: "Up to 1 year",
+    canDisable: true
+  },
+  {
+    name: "Marketing Cookies",
+    purpose: "Deliver relevant content and ads",
+    duration: "Up to 1 year",
+    canDisable: true
+  }];
+
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-purple-50">
@@ -204,8 +204,8 @@ const PrivacyPage = () => {
                   initial={{ opacity: 0, y: 30 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
-                  transition={{ delay: index * 0.1 }}
-                >
+                  transition={{ delay: index * 0.1 }}>
+
                   <Card className="hover:shadow-xl transition-all duration-300">
                     <CardContent className="p-8">
                       <div className="flex items-center gap-4 mb-6">
@@ -216,17 +216,17 @@ const PrivacyPage = () => {
                       </div>
                       
                       <ul className="space-y-3">
-                        {section.content.map((item, idx) => (
-                          <li key={idx} className="flex items-start gap-3">
+                        {section.content.map((item, idx) =>
+                        <li key={idx} className="flex items-start gap-3">
                             <CheckCircle className="h-5 w-5 text-[#572670] flex-shrink-0 mt-0.5" />
                             <span className="text-gray-600">{item}</span>
                           </li>
-                        ))}
+                        )}
                       </ul>
                     </CardContent>
                   </Card>
-                </motion.div>
-              );
+                </motion.div>);
+
             })}
           </div>
         </div>
@@ -256,23 +256,23 @@ const PrivacyPage = () => {
 
           <div className="max-w-4xl mx-auto">
             <div className="grid md:grid-cols-2 gap-6">
-              {cookieTypes.map((cookie, index) => (
-                <motion.div
-                  key={cookie.name}
-                  initial={{ opacity: 0, y: 30 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ delay: index * 0.1 }}
-                >
+              {cookieTypes.map((cookie, index) =>
+              <motion.div
+                key={cookie.name}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: index * 0.1 }}>
+
                   <Card className="h-full hover:shadow-xl transition-all duration-300">
                     <CardContent className="p-6">
                       <div className="flex items-start justify-between mb-4">
                         <h3 className="text-xl font-bold text-gray-900">{cookie.name}</h3>
                         <Badge className={`${
-                          cookie.canDisable 
-                            ? 'bg-green-100 text-green-800' 
-                            : 'bg-orange-100 text-orange-800'
-                        }`}>
+                      cookie.canDisable ?
+                      'bg-green-100 text-green-800' :
+                      'bg-orange-100 text-orange-800'}`
+                      }>
                           {cookie.canDisable ? 'Optional' : 'Required'}
                         </Badge>
                       </div>
@@ -284,7 +284,7 @@ const PrivacyPage = () => {
                     </CardContent>
                   </Card>
                 </motion.div>
-              ))}
+              )}
             </div>
 
             {/* Cookie Banner Link */}
@@ -357,7 +357,7 @@ const PrivacyPage = () => {
             {/* Data Breach Notification */}
             <motion.div
               initial="hidden"
-              whileInView="visible" 
+              whileInView="visible"
               viewport={{ once: true }}
               variants={fadeInUp}
               className="mb-12 p-6 bg-gradient-to-r from-orange-50 to-red-50 border-l-4 border-l-orange-500 rounded-r-xl">
@@ -399,7 +399,7 @@ const PrivacyPage = () => {
                 </Button>
               </div>
               <p className="text-sm text-gray-500 mt-4">
-                Privacy Officer: Dr. Sarah Mitchell, Medical Director<br/>
+                Privacy Officer: Dr. Sarah Mitchell, Medical Director<br />
                 Mailing Address: 123 Medical Plaza, Palm Springs, CA 92262
               </p>
             </motion.div>
@@ -436,8 +436,8 @@ const PrivacyPage = () => {
       </section>
 
       <FooterSection />
-    </div>
-  );
+    </div>);
+
 };
 
 export default PrivacyPage;

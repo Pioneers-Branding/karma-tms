@@ -7,7 +7,7 @@ import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { Card, CardContent } from '@/components/ui/card';
 import { Link } from 'react-router-dom';
-import { 
+import {
   FileText,
   Scale,
   Shield,
@@ -15,8 +15,8 @@ import {
   Clock,
   Users,
   Lock,
-  Phone
-} from 'lucide-react';
+  Phone } from
+'lucide-react';
 
 const TermsPage = () => {
   const fadeInUp = {
@@ -29,106 +29,106 @@ const TermsPage = () => {
   };
 
   const termsData = [
-    {
-      title: "Acceptance of Terms",
-      icon: FileText,
-      content: [
-        "By accessing and using Karma TMS services, you agree to be bound by these Terms of Service and all applicable laws and regulations.",
-        "If you do not agree with any of these terms, you are prohibited from using or accessing our services.",
-        "These terms constitute a legally binding agreement between you and Karma TMS.",
-        "We reserve the right to modify these terms at any time, with changes taking effect immediately upon posting."
-      ]
-    },
-    {
-      title: "Medical Services & Treatment",
-      icon: Shield,
-      content: [
-        "All medical services are provided by licensed healthcare professionals under appropriate medical supervision.",
-        "TMS therapy is a medical procedure that requires proper evaluation, consent, and ongoing medical oversight.",
-        "Patients must provide accurate medical history and follow all treatment protocols and instructions.",
-        "Treatment outcomes cannot be guaranteed, and individual results may vary based on medical condition and other factors."
-      ]
-    },
-    {
-      title: "Patient Responsibilities",
-      icon: Users,
-      content: [
-        "Arrive on time for scheduled appointments or provide at least 24 hours notice for cancellations.",
-        "Provide complete and accurate medical history, including current medications and previous treatments.",
-        "Follow all pre-treatment and post-treatment instructions provided by medical staff.",
-        "Report any adverse effects, concerns, or changes in condition immediately to medical personnel."
-      ]
-    },
-    {
-      title: "Payment & Financial Terms",
-      icon: Scale,
-      content: [
-        "Payment is due at the time services are rendered unless other arrangements have been made in advance.",
-        "We accept cash, check, credit cards, and work with most major insurance providers.",
-        "Patients are responsible for understanding their insurance coverage and any out-of-pocket expenses.",
-        "Unpaid balances may be subject to collection procedures after appropriate notice and opportunity to resolve."
-      ]
-    },
-    {
-      title: "Confidentiality & Privacy",
-      icon: Lock,
-      content: [
-        "All medical information is protected under HIPAA and will not be disclosed without proper authorization.",
-        "We maintain strict confidentiality standards in accordance with federal and state privacy laws.",
-        "Patient information may only be shared as necessary for treatment, payment, or healthcare operations.",
-        "Patients have the right to request restrictions on how their health information is used or disclosed."
-      ]
-    },
-    {
-      title: "Limitation of Liability",
-      icon: AlertTriangle,
-      content: [
-        "Our liability is limited to the cost of services provided and does not extend to indirect or consequential damages.",
-        "Patients acknowledge that TMS therapy, like all medical treatments, carries inherent risks and potential side effects.",
-        "We are not liable for outcomes that result from patient non-compliance with treatment recommendations.",
-        "Any legal disputes will be resolved through binding arbitration in accordance with applicable state laws."
-      ]
-    }
-  ];
+  {
+    title: "Acceptance of Terms",
+    icon: FileText,
+    content: [
+    "By accessing and using Karma TMS services, you agree to be bound by these Terms of Service and all applicable laws and regulations.",
+    "If you do not agree with any of these terms, you are prohibited from using or accessing our services.",
+    "These terms constitute a legally binding agreement between you and Karma TMS.",
+    "We reserve the right to modify these terms at any time, with changes taking effect immediately upon posting."]
+
+  },
+  {
+    title: "Medical Services & Treatment",
+    icon: Shield,
+    content: [
+    "All medical services are provided by licensed healthcare professionals under appropriate medical supervision.",
+    "TMS therapy is a medical procedure that requires proper evaluation, consent, and ongoing medical oversight.",
+    "Patients must provide accurate medical history and follow all treatment protocols and instructions.",
+    "Treatment outcomes cannot be guaranteed, and individual results may vary based on medical condition and other factors."]
+
+  },
+  {
+    title: "Patient Responsibilities",
+    icon: Users,
+    content: [
+    "Arrive on time for scheduled appointments or provide at least 24 hours notice for cancellations.",
+    "Provide complete and accurate medical history, including current medications and previous treatments.",
+    "Follow all pre-treatment and post-treatment instructions provided by medical staff.",
+    "Report any adverse effects, concerns, or changes in condition immediately to medical personnel."]
+
+  },
+  {
+    title: "Payment & Financial Terms",
+    icon: Scale,
+    content: [
+    "Payment is due at the time services are rendered unless other arrangements have been made in advance.",
+    "We accept cash, check, credit cards, and work with most major insurance providers.",
+    "Patients are responsible for understanding their insurance coverage and any out-of-pocket expenses.",
+    "Unpaid balances may be subject to collection procedures after appropriate notice and opportunity to resolve."]
+
+  },
+  {
+    title: "Confidentiality & Privacy",
+    icon: Lock,
+    content: [
+    "All medical information is protected under HIPAA and will not be disclosed without proper authorization.",
+    "We maintain strict confidentiality standards in accordance with federal and state privacy laws.",
+    "Patient information may only be shared as necessary for treatment, payment, or healthcare operations.",
+    "Patients have the right to request restrictions on how their health information is used or disclosed."]
+
+  },
+  {
+    title: "Limitation of Liability",
+    icon: AlertTriangle,
+    content: [
+    "Our liability is limited to the cost of services provided and does not extend to indirect or consequential damages.",
+    "Patients acknowledge that TMS therapy, like all medical treatments, carries inherent risks and potential side effects.",
+    "We are not liable for outcomes that result from patient non-compliance with treatment recommendations.",
+    "Any legal disputes will be resolved through binding arbitration in accordance with applicable state laws."]
+
+  }];
+
 
   const policies = [
-    {
-      title: "Appointment Policy",
-      items: [
-        "24-hour cancellation policy for all appointments",
-        "No-show fees may apply after repeated missed appointments", 
-        "Emergency appointments available during business hours",
-        "Telemedicine consultations available when appropriate"
-      ]
-    },
-    {
-      title: "Insurance & Billing",
-      items: [
-        "Insurance verification completed prior to treatment",
-        "Pre-authorization obtained when required by insurance",
-        "Payment plans available for qualifying patients",
-        "Detailed billing statements provided upon request"
-      ]
-    },
-    {
-      title: "Medical Records",
-      items: [
-        "Comprehensive medical records maintained for all patients",
-        "Records available to patients upon written request",
-        "Records may be transferred to other providers with proper authorization",
-        "Records retained according to legal and professional requirements"
-      ]
-    },
-    {
-      title: "Quality Assurance",
-      items: [
-        "Regular quality audits and improvement initiatives",
-        "Patient feedback actively solicited and reviewed",
-        "Continuing education required for all clinical staff",
-        "Equipment maintenance and calibration performed regularly"
-      ]
-    }
-  ];
+  {
+    title: "Appointment Policy",
+    items: [
+    "24-hour cancellation policy for all appointments",
+    "No-show fees may apply after repeated missed appointments",
+    "Emergency appointments available during business hours",
+    "Telemedicine consultations available when appropriate"]
+
+  },
+  {
+    title: "Insurance & Billing",
+    items: [
+    "Insurance verification completed prior to treatment",
+    "Pre-authorization obtained when required by insurance",
+    "Payment plans available for qualifying patients",
+    "Detailed billing statements provided upon request"]
+
+  },
+  {
+    title: "Medical Records",
+    items: [
+    "Comprehensive medical records maintained for all patients",
+    "Records available to patients upon written request",
+    "Records may be transferred to other providers with proper authorization",
+    "Records retained according to legal and professional requirements"]
+
+  },
+  {
+    title: "Quality Assurance",
+    items: [
+    "Regular quality audits and improvement initiatives",
+    "Patient feedback actively solicited and reviewed",
+    "Continuing education required for all clinical staff",
+    "Equipment maintenance and calibration performed regularly"]
+
+  }];
+
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-purple-50">
@@ -199,8 +199,8 @@ const TermsPage = () => {
                   initial={{ opacity: 0, y: 30 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
-                  transition={{ delay: index * 0.1 }}
-                >
+                  transition={{ delay: index * 0.1 }}>
+
                   <Card className="hover:shadow-xl transition-all duration-300">
                     <CardContent className="p-8">
                       <div className="flex items-center gap-4 mb-6">
@@ -211,16 +211,16 @@ const TermsPage = () => {
                       </div>
                       
                       <div className="space-y-4">
-                        {section.content.map((item, idx) => (
-                          <p key={idx} className="text-gray-600 leading-relaxed">
+                        {section.content.map((item, idx) =>
+                        <p key={idx} className="text-gray-600 leading-relaxed">
                             {item}
                           </p>
-                        ))}
+                        )}
                       </div>
                     </CardContent>
                   </Card>
-                </motion.div>
-              );
+                </motion.div>);
+
             })}
           </div>
         </div>
@@ -245,29 +245,29 @@ const TermsPage = () => {
           </motion.div>
 
           <div className="grid md:grid-cols-2 gap-8">
-            {policies.map((policy, index) => (
-              <motion.div
-                key={policy.title}
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: index * 0.1 }}
-              >
+            {policies.map((policy, index) =>
+            <motion.div
+              key={policy.title}
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: index * 0.1 }}>
+
                 <Card className="h-full hover:shadow-xl transition-all duration-300">
                   <CardContent className="p-8">
                     <h3 className="text-xl font-bold text-gray-900 mb-6">{policy.title}</h3>
                     <ul className="space-y-3">
-                      {policy.items.map((item, idx) => (
-                        <li key={idx} className="flex items-start gap-3">
+                      {policy.items.map((item, idx) =>
+                    <li key={idx} className="flex items-start gap-3">
                           <div className="w-2 h-2 bg-[#572670] rounded-full mt-2 flex-shrink-0"></div>
                           <span className="text-gray-600">{item}</span>
                         </li>
-                      ))}
+                    )}
                     </ul>
                   </CardContent>
                 </Card>
               </motion.div>
-            ))}
+            )}
           </div>
         </div>
       </section>
@@ -396,8 +396,8 @@ const TermsPage = () => {
       </section>
 
       <FooterSection />
-    </div>
-  );
+    </div>);
+
 };
 
 export default TermsPage;

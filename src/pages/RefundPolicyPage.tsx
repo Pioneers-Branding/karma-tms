@@ -7,7 +7,7 @@ import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { Card, CardContent } from '@/components/ui/card';
 import { Link } from 'react-router-dom';
-import { 
+import {
   CreditCard,
   Clock,
   CheckCircle,
@@ -15,8 +15,8 @@ import {
   Phone,
   Mail,
   FileText,
-  Shield
-} from 'lucide-react';
+  Shield } from
+'lucide-react';
 
 const RefundPolicyPage = () => {
   const fadeInUp = {
@@ -29,70 +29,70 @@ const RefundPolicyPage = () => {
   };
 
   const refundPolicies = [
-    {
-      category: "Initial Consultation",
-      icon: Clock,
-      policies: [
-        "Full refund if cancelled 24+ hours before appointment",
-        "50% refund if cancelled within 24 hours",
-        "No refund for no-shows or same-day cancellations",
-        "Refunds processed within 3-5 business days"
-      ]
-    },
-    {
-      category: "TMS Treatment Series",
-      icon: CreditCard,
-      policies: [
-        "Refund available before treatment series begins",
-        "Prorated refund for unused sessions after treatment starts",
-        "Medical necessity cancellations eligible for full refund",
-        "Insurance-covered treatments follow insurance refund policies"
-      ]
-    },
-    {
-      category: "Brain Mapping Services",
-      icon: FileText,
-      policies: [
-        "Full refund if cancelled 48+ hours before appointment",
-        "No refund after mapping session is completed",
-        "Technical issues resulting in incomplete mapping eligible for refund",
-        "Refunds processed to original payment method"
-      ]
-    },
-    {
-      category: "Emergency Situations",
-      icon: AlertCircle,
-      policies: [
-        "Medical emergencies eligible for full refund",
-        "Family emergencies considered case-by-case",
-        "Documentation may be required for emergency refunds",
-        "Emergency refunds processed within 24 hours when approved"
-      ]
-    }
-  ];
+  {
+    category: "Initial Consultation",
+    icon: Clock,
+    policies: [
+    "Full refund if cancelled 24+ hours before appointment",
+    "50% refund if cancelled within 24 hours",
+    "No refund for no-shows or same-day cancellations",
+    "Refunds processed within 3-5 business days"]
+
+  },
+  {
+    category: "TMS Treatment Series",
+    icon: CreditCard,
+    policies: [
+    "Refund available before treatment series begins",
+    "Prorated refund for unused sessions after treatment starts",
+    "Medical necessity cancellations eligible for full refund",
+    "Insurance-covered treatments follow insurance refund policies"]
+
+  },
+  {
+    category: "Brain Mapping Services",
+    icon: FileText,
+    policies: [
+    "Full refund if cancelled 48+ hours before appointment",
+    "No refund after mapping session is completed",
+    "Technical issues resulting in incomplete mapping eligible for refund",
+    "Refunds processed to original payment method"]
+
+  },
+  {
+    category: "Emergency Situations",
+    icon: AlertCircle,
+    policies: [
+    "Medical emergencies eligible for full refund",
+    "Family emergencies considered case-by-case",
+    "Documentation may be required for emergency refunds",
+    "Emergency refunds processed within 24 hours when approved"]
+
+  }];
+
 
   const refundProcess = [
-    {
-      step: 1,
-      title: "Submit Request",
-      description: "Contact our billing department via phone or email with your refund request and relevant details."
-    },
-    {
-      step: 2,
-      title: "Review Process",
-      description: "Our team reviews your request against our policy guidelines within 1-2 business days."
-    },
-    {
-      step: 3,
-      title: "Approval Notification",
-      description: "You'll receive email confirmation with refund approval and processing timeline."
-    },
-    {
-      step: 4,
-      title: "Refund Processing",
-      description: "Approved refunds are processed to your original payment method within 3-5 business days."
-    }
-  ];
+  {
+    step: 1,
+    title: "Submit Request",
+    description: "Contact our billing department via phone or email with your refund request and relevant details."
+  },
+  {
+    step: 2,
+    title: "Review Process",
+    description: "Our team reviews your request against our policy guidelines within 1-2 business days."
+  },
+  {
+    step: 3,
+    title: "Approval Notification",
+    description: "You'll receive email confirmation with refund approval and processing timeline."
+  },
+  {
+    step: 4,
+    title: "Refund Processing",
+    description: "Approved refunds are processed to your original payment method within 3-5 business days."
+  }];
+
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-purple-50">
@@ -164,8 +164,8 @@ const RefundPolicyPage = () => {
                   initial={{ opacity: 0, y: 30 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
-                  transition={{ delay: index * 0.1 }}
-                >
+                  transition={{ delay: index * 0.1 }}>
+
                   <Card className="h-full hover:shadow-xl transition-all duration-300">
                     <CardContent className="p-8">
                       <div className="flex items-center gap-4 mb-6">
@@ -176,17 +176,17 @@ const RefundPolicyPage = () => {
                       </div>
                       
                       <ul className="space-y-3">
-                        {category.policies.map((policy, idx) => (
-                          <li key={idx} className="flex items-start gap-3">
+                        {category.policies.map((policy, idx) =>
+                        <li key={idx} className="flex items-start gap-3">
                             <CheckCircle className="h-5 w-5 text-[#572670] flex-shrink-0 mt-0.5" />
                             <span className="text-gray-600">{policy}</span>
                           </li>
-                        ))}
+                        )}
                       </ul>
                     </CardContent>
                   </Card>
-                </motion.div>
-              );
+                </motion.div>);
+
             })}
           </div>
         </div>
@@ -213,22 +213,22 @@ const RefundPolicyPage = () => {
 
           <div className="max-w-4xl mx-auto">
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-              {refundProcess.map((step, index) => (
-                <motion.div
-                  key={step.step}
-                  initial={{ opacity: 0, y: 30 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ delay: index * 0.2 }}
-                  className="text-center"
-                >
+              {refundProcess.map((step, index) =>
+              <motion.div
+                key={step.step}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: index * 0.2 }}
+                className="text-center">
+
                   <div className="w-16 h-16 bg-gradient-to-br from-[#572670] to-purple-500 rounded-full flex items-center justify-center mx-auto mb-4">
                     <span className="text-2xl font-bold text-white">{step.step}</span>
                   </div>
                   <h3 className="text-xl font-bold text-gray-900 mb-3">{step.title}</h3>
                   <p className="text-gray-600">{step.description}</p>
                 </motion.div>
-              ))}
+              )}
             </div>
           </div>
         </div>
@@ -341,8 +341,8 @@ const RefundPolicyPage = () => {
       </section>
 
       <FooterSection />
-    </div>
-  );
+    </div>);
+
 };
 
 export default RefundPolicyPage;
