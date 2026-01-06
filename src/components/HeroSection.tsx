@@ -24,7 +24,7 @@ const HeroSection = () => {
   {
     title: 'Find us in Palm Springs',
     image:
-    'https://res.cloudinary.com/de4kw1t2i/image/upload/v1759239428/ktms_irodne.jpg',
+    'https://res.cloudinary.com/de4kw1t2i/image/upload/v1763039658/2_miiwgx.jpg',
     alt: 'Palm Springs California location for KarmaTMS depression and anxiety treatment center'
   },
   {
