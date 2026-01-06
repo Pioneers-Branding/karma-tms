@@ -130,7 +130,7 @@ const FooterSection = () => {
 
           {/* Contact Info - Separate Column */}
           <div>
-            <h3 className="text-lg font-bold mb-6 text-white">Contact Information</h3>
+            <h3 className="text-lg font-bold mb-6 text-white">Our Locations</h3>
 
             {/* Locations - Card Style */}
             <div className="space-y-4 mb-8">
