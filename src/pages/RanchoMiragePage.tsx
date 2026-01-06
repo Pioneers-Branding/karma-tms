@@ -84,7 +84,7 @@ const RanchoMiragePage = () => {
       {/* Hero Section */}
       <div className="relative bg-gradient-to-br from-purple-900 via-purple-800 to-purple-700 text-white py-24 lg:py-32">
         <div className="absolute inset-0 opacity-20">
-          <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1754197530512-20fc23520937?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MTg3MTl8MHwxfHNlYXJjaHwxfHxBJTIwc2NlbmljJTIwdmlldyUyMG9mJTIwYSUyMGx1eHVyaW91cyUyMGZhY2lsaXR5JTIwc3Vycm91bmRlZCUyMGJ5JTIwZ3JlZW5lcnklMjBhbmQlMjBhJTIwY2xlYXIlMjBibHVlJTIwc2t5LnxlbnwwfHx8fDE3NjM3Mjg5OTZ8MA&ixlib=rb-4.1.0&q=80&w=200$w=1920')] bg-cover bg-center" />
+          <div className="absolute inset-0 bg-[url('https://i.ibb.co/qM2v12mM/Santo-Tomas-Rancho-Mirage-19.jpg')] bg-cover bg-center" />
         </div>
         <div className="container mx-auto px-4 relative z-10">
           <Badge className="mb-4 bg-purple-500/20 text-white border-purple-300">Rancho Mirage Location</Badge>
