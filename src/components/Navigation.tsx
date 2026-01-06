@@ -209,7 +209,7 @@ const Navigation = () => {
 
             <div className="flex items-center gap-2 flex-shrink-0">
               {/* Mobile/Tablet Phone Button - shows icon only on small screens */}
-              <a href="tel:760-760-5675" className="md:hidden">
+              <a href="tel:951-297-8375" className="md:hidden">
                 <Button
                   variant="outline"
                   size="sm"
@@ -369,7 +369,7 @@ const Navigation = () => {
                     <div className="pt-4 pb-6">
                       <Button className="w-full bg-[#572670] hover:bg-[#572670]/90 text-white py-3 text-base font-medium">
                         <Phone className="h-5 w-5 mr-2" />
-                        Call 760-760-5675
+                        Call 951-297-8375
                       </Button>
                     </div>
                   </div>
