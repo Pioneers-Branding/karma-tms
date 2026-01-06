@@ -93,7 +93,7 @@ const TMSMultipleSessionsBlogPostPage = () => {
   }];
 
 
-  const relatedPosts = [
+    const relatedPosts = [
   {
     title: 'TMS for Migraine Relief in Veterans',
     excerpt: 'Learn how TMS helps veterans with migraines and comorbid conditions like PTSD and depression.',
@@ -427,10 +427,7 @@ const TMSMultipleSessionsBlogPostPage = () => {
                 </CardContent>
               </Card>
 
-              <img
-                src="https://images.unsplash.com/photo-1664902273035-82c35762a0b1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MTg3MTl8MHwxfHNlYXJjaHwxfHxBbiUyMGltYWdlJTIwc2hvd2luZyUyMGElMjBUTVMlMjB0cmVhdG1lbnQlMjBjaGFpciUyMGFuZCUyMGVxdWlwbWVudCUyMHNldHVwLnxlbnwwfHx8fDE3NjMzNjI2OTd8MA&ixlib=rb-4.1.0&q=80&w=200$w=800"
-                alt="TMS treatment chair and equipment"
-                className="w-full  object-cover rounded-lg mb-6" />
+            
 
             </section>
 
