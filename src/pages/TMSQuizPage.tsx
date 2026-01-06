@@ -99,19 +99,19 @@ const TMSQuizPage = () => {
   };
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+
+
+
+
+
+
+
+
     // Let the form submit naturally to Formester
     // After submission, Formester will handle the redirect
     // If you want to redirect to a specific page, you can add a hidden input
     // with name="redirect_to" and value="/thank-you"
-  };
-
-  const progress = (currentQuestion + 1) / quizQuestions.length * 100;
-  const currentQ = quizQuestions[currentQuestion];
-  const canProceed = answers[currentQ?.id];
-  const isLastQuestion = currentQuestion === quizQuestions.length - 1;
-
-  return (
-    <div className="min-h-screen">
+  };const progress = (currentQuestion + 1) / quizQuestions.length * 100;const currentQ = quizQuestions[currentQuestion];const canProceed = answers[currentQ?.id];const isLastQuestion = currentQuestion === quizQuestions.length - 1;return <div className="min-h-screen">
       <Navigation />
       
       <div className="py-20 px-4">
@@ -134,21 +134,21 @@ const TMSQuizPage = () => {
             <Progress value={progress} className="w-full" />
           </div>
 
-          <form 
-            acceptCharset="UTF-8" 
-            action="https://app.formester.com/forms/oktnrNSVh/submissions" 
-            method="POST"
-            onSubmit={handleSubmit}
-          >
+          <form
+          acceptCharset="UTF-8"
+          action="https://app.formester.com/forms/oktnrNSVh/submissions"
+          method="POST"
+          onSubmit={handleSubmit}>
+
             {/* Hidden inputs for all answers */}
-            {quizQuestions.map((question) => (
-              <input
-                key={question.id}
-                type="hidden"
-                name={question.name}
-                value={answers[question.id] || ''}
-              />
-            ))}
+            {quizQuestions.map((question) =>
+          <input
+            key={question.id}
+            type="hidden"
+            name={question.name}
+            value={answers[question.id] || ''} />
+
+          )}
 
             {/* Redirect URL after form submission */}
             <input type="hidden" name="redirect_to" value="/thank-you" />
@@ -159,58 +159,58 @@ const TMSQuizPage = () => {
               </CardHeader>
               <CardContent>
                 <div className="space-y-4">
-                  {currentQ.options.map((option) => (
-                    <div key={option.value} className="flex items-start space-x-3">
+                  {currentQ.options.map((option) =>
+                <div key={option.value} className="flex items-start space-x-3">
                       <input
-                        type="radio"
-                        id={`${currentQ.id}-${option.value}`}
-                        name={`current_${currentQ.name}`}
-                        value={option.value}
-                        checked={answers[currentQ.id] === option.value}
-                        onChange={(e) => handleAnswerChange(currentQ.id, e.target.value)}
-                        className="mt-1 h-4 w-4 text-[#572670] focus:ring-[#572670] border-gray-300"
-                      />
-                      <Label 
-                        htmlFor={`${currentQ.id}-${option.value}`} 
-                        className="text-gray-700 cursor-pointer leading-relaxed font-normal"
-                      >
+                    type="radio"
+                    id={`${currentQ.id}-${option.value}`}
+                    name={`current_${currentQ.name}`}
+                    value={option.value}
+                    checked={answers[currentQ.id] === option.value}
+                    onChange={(e) => handleAnswerChange(currentQ.id, e.target.value)}
+                    className="mt-1 h-4 w-4 text-[#572670] focus:ring-[#572670] border-gray-300" />
+
+                      <Label
+                    htmlFor={`${currentQ.id}-${option.value}`}
+                    className="text-gray-700 cursor-pointer leading-relaxed font-normal">
+
                         {option.label}
                       </Label>
                     </div>
-                  ))}
+                )}
                 </div>
 
                 <div className="flex justify-between mt-8">
                   <Button
-                    type="button"
-                    variant="outline"
-                    onClick={handlePrevious}
-                    disabled={currentQuestion === 0}
-                  >
+                  type="button"
+                  variant="outline"
+                  onClick={handlePrevious}
+                  disabled={currentQuestion === 0}>
+
                     <ArrowLeft className="h-4 w-4 mr-2" />
                     Previous
                   </Button>
                   
-                  {!isLastQuestion ? (
-                    <Button
-                      type="button"
-                      onClick={handleNext}
-                      disabled={!canProceed}
-                      className="bg-[#572670] hover:bg-[#572670]/90"
-                    >
+                  {!isLastQuestion ?
+                <Button
+                  type="button"
+                  onClick={handleNext}
+                  disabled={!canProceed}
+                  className="bg-[#572670] hover:bg-[#572670]/90">
+
                       Next
                       <ArrowRight className="h-4 w-4 ml-2" />
-                    </Button>
-                  ) : (
-                    <Button
-                      type="submit"
-                      disabled={!canProceed}
-                      className="bg-[#572670] hover:bg-[#572670]/90"
-                    >
+                    </Button> :
+
+                <Button
+                  type="submit"
+                  disabled={!canProceed}
+                  className="bg-[#572670] hover:bg-[#572670]/90">
+
                       Submit Assessment
                       <ArrowRight className="h-4 w-4 ml-2" />
                     </Button>
-                  )}
+                }
                 </div>
               </CardContent>
             </Card>
@@ -224,8 +224,8 @@ const TMSQuizPage = () => {
       </div>
 
       <FooterSection />
-    </div>
-  );
+    </div>;
+
 };
 
 export default TMSQuizPage;
