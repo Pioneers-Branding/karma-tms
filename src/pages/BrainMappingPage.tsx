@@ -134,14 +134,12 @@ const BrainMappingPage = () => {
               Quantitative EEG (qEEG) brain mapping provides detailed insights into your brain's electrical activity, revealing patterns that guide personalized treatment for optimal outcomes.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Link to="/contact">
               <Button className="bg-gradient-to-r from-[#572670] to-purple-600 hover:from-purple-700 hover:to-blue-700 text-lg px-8 py-3">
                 <Phone className="w-5 h-5 mr-2" />
                 Schedule Brain Map
               </Button>
-              <Button variant="outline" className="border-[#572670] text-[#572670] hover:bg-[#572670] hover:text-white text-lg px-8 py-3">
-                <Play className="w-5 h-5 mr-2" />
-                Watch Demo
-              </Button>
+            </Link>
             </div>
           </div>
         </div>
@@ -283,13 +281,6 @@ const BrainMappingPage = () => {
                         <span className="text-gray-700">{region}</span>
                       </div>
                     )}
-                  </div>
-                  
-                  <div className="flex space-x-4">
-                    <Button variant="outline" className="border-[#572670] text-[#572670] hover:bg-[#572670] hover:text-white">
-                      <Download className="w-4 h-4 mr-2" />
-                      Sample Report
-                    </Button>
                   </div>
                 </div>
               </div>
