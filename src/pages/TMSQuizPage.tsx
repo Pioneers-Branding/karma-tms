@@ -1091,6 +1091,14 @@ const TMSQuizPage = () => {
 
 
 
+
+
+
+
+
+
+
+
     // Let the form submit naturally to Formester
     // After submission, Formester will handle the redirect
     // If you want to redirect to a specific page, you can add a hidden input
