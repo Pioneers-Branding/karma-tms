@@ -47,24 +47,16 @@ const TestimonialsSection = () => {
     avatar: "https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/962f349b-14de-4a40-b25d-849dc7d20c24.png"
   },
   {
-    name: "Brittany B.",
+    name: "Lynette I.",
     location: "Palm Desert, CA",
     condition: "Anxiety Disorder",
     rating: 5,
-    quote: "The biggest relief was that I could drive myself to appointments. No side effects, no downtime - just gradual, sustainable improvement in my anxiety levels.",
-    hasVideo: true,
-    videoId: "dQw4w9WgXcQ",
-    avatar: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop&crop=face"
-  },
-  {
-    name: "Rafael F.",
-    location: "La Quinta, CA",
-    condition: "PTSD",
-    rating: 5,
-    quote: "Traditional therapy helped, but TMS was the breakthrough I needed for my PTSD symptoms. The combination has given me tools to manage my condition effectively.",
+    quote: "I have had treatment-resistant clinical depression since childhood. [TMS] proved to be a life-changing decision, since after completing the recommended number of treatments, I experienced, for the first time, life without the dark cycles of depression",
     hasVideo: false,
-    avatar: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100&h=100&fit=crop&crop=face"
-  }];
+    videoId: "dQw4w9WgXcQ",
+    avatar: "https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/41b87b04-674f-4cd2-a399-5d68da1ab78e.png"
+  }
+  ];
 
 
   const nextTestimonial = () => {
