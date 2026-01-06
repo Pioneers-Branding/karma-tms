@@ -302,13 +302,12 @@ const BlogPage = () => {
                   </Button>
                 </div>
                 
-                <div className="relative h-64 lg:h-auto">
+                <div className="relative w-full overflow-hidden flex items-center justify-center bg-white">
                   <img
                   src={featuredPost.image}
                   alt={featuredPost.title}
-                  className="absolute inset-0 w-full h-full object-cover" />
-
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent lg:hidden"></div>
+                  className="w-full h-auto"
+                  style={{ aspectRatio: '1.91' }} />
                 </div>
               </div>
             </Card>
