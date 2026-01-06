@@ -183,14 +183,12 @@ const NeurofeedbackPage = () => {
               Train your brain to achieve optimal performance through real-time monitoring and feedback. Neurofeedback helps you develop better brain wave patterns for improved focus, emotional regulation, and cognitive function.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Link to="/contact">
               <Button className="bg-gradient-to-r from-[#572670] to-purple-600 hover:from-purple-700 hover:to-blue-700 text-lg px-8 py-3">
                 <Phone className="w-5 h-5 mr-2" />
                 Start Training
               </Button>
-              <Button variant="outline" className="border-[#572670] text-[#572670] hover:bg-[#572670] hover:text-white text-lg px-8 py-3">
-                <Play className="w-5 h-5 mr-2" />
-                Watch How It Works
-              </Button>
+              </Link>
             </div>
           </div>
         </div>
