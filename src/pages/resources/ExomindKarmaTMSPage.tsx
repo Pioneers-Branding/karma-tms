@@ -147,45 +147,45 @@ const ExomindKarmaTMSPage = () => {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
             {[
-              {
-                name: 'Serena Williams',
-                title: 'Champion Athlete',
-                condition: 'Performance Optimization',
-                videoUrl: 'https://play.gumlet.io/embed/694e80a6f1ad267a0668472d'
-              },
-              {
-                name: 'Lil Jon',
-                title: 'Music Icon',
-                condition: 'Mental Wellness',
-                videoUrl: 'https://play.gumlet.io/embed/694e80a6f1ad267a06684727'
-              },
-              {
-                name: 'Gwyneth Paltrow',
-                title: 'Wellness Icon & Entrepreneur',
-                condition: 'Brain Fog & Burnout',
-                videoUrl: 'https://play.gumlet.io/embed/694e80a6f1ad267a06684727'
-              },
-              {
-                name: 'Ashlee Simpson',
-                title: 'Entertainment Star',
-                condition: 'Cognitive Enhancement',
-                videoUrl: 'https://play.gumlet.io/embed/694e80a6b122cbf1765d2e37'
-              }
-            ].map((celebrity, index) => (
-              <div key={index} className="flex flex-col">
+            {
+              name: 'Serena Williams',
+              title: 'Champion Athlete',
+              condition: 'Performance Optimization',
+              videoUrl: 'https://play.gumlet.io/embed/694e80a6f1ad267a0668472d'
+            },
+            {
+              name: 'Lil Jon',
+              title: 'Music Icon',
+              condition: 'Mental Wellness',
+              videoUrl: 'https://play.gumlet.io/embed/694e80a6f1ad267a06684727'
+            },
+            {
+              name: 'Gwyneth Paltrow',
+              title: 'Wellness Icon & Entrepreneur',
+              condition: 'Brain Fog & Burnout',
+              videoUrl: 'https://play.gumlet.io/embed/694e80a6f1ad267a0668472b'
+            },
+            {
+              name: 'Ashlee Simpson',
+              title: 'Entertainment Star',
+              condition: 'Cognitive Enhancement',
+              videoUrl: 'https://play.gumlet.io/embed/694e80a6b122cbf1765d2e37'
+            }].
+            map((celebrity, index) =>
+            <div key={index} className="flex flex-col">
                 <Card className="h-full flex flex-col">
                   <CardContent className="p-4 flex-1 flex flex-col">
                     {/* 9:16 Aspect Ratio Video Container */}
                     <div className="relative w-full mb-4" style={{ aspectRatio: '9/16' }}>
                       <iframe
-                        src={celebrity.videoUrl}
-                        loading="lazy"
-                        className="absolute top-0 left-0 w-full h-full rounded-lg"
-                        style={{ border: 0 }}
-                        allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture"
-                        allowFullScreen
-                        title={`${celebrity.name} - Exomind TMS`}
-                      />
+                      src={celebrity.videoUrl}
+                      loading="lazy"
+                      className="absolute top-0 left-0 w-full h-full rounded-lg"
+                      style={{ border: 0 }}
+                      allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture"
+                      allowFullScreen
+                      title={`${celebrity.name} - Exomind TMS`} />
+
                     </div>
                     <div className="flex-1 flex flex-col">
                       <Badge className="mb-3 w-fit">{celebrity.condition}</Badge>
@@ -195,7 +195,7 @@ const ExomindKarmaTMSPage = () => {
                   </CardContent>
                 </Card>
               </div>
-            ))}
+            )}
           </div>
 
           <div className="text-center mt-8">
