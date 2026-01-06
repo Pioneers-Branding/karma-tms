@@ -150,7 +150,7 @@ const AboutPage = () => {
 
               <div className="relative rounded-3xl overflow-hidden shadow-2xl">
                 <img
-                  src="https://images.unsplash.com/photo-1565466550182-0a93dad09f63?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MTg3MTl8MHwxfHNlYXJjaHwxfHxBJTIwbW9kZXJuJTIwY2xpbmljJTIwZW50cmFuY2UlMjB3aXRoJTIwYSUyMHdlbGNvbWluZyUyMGRlc2lnbiUyQyUyMGZlYXR1cmluZyUyMGElMjBnbGFzcyUyMGRvb3IlMjBhbmQlMjBhJTIwY2xlYW4lMkMlMjBwcm9mZXNzaW9uYWwlMjBhcHBlYXJhbmNlLnxlbnwwfHx8fDE3NTkyMzY2Njl8MA&ixlib=rb-4.1.0&q=80&w=200$w=1920"
+                  src="https://res.cloudinary.com/de4kw1t2i/image/upload/v1761733382/patient-in-tms_erqhyf.webp"
                   alt="Karma TMS Clinic Entrance"
                   className="w-full h-96 object-cover" />
 
