@@ -61,7 +61,7 @@ const HeroSection = () => {
               </div>
               <div className="flex flex-row bg-blue-magenta text-white p-2 px-4 rounded-3xl w-fit items-center">
                 <MapPin className="w-5 h-5 text-white mr-2" />
-                29 Palms
+                TwentyNine Palms
               </div>
               <div className="flex flex-row bg-blue-magenta text-white p-2 px-4 rounded-3xl w-fit items-center">
                 <MapPin className="w-5 h-5 text-white mr-2" />
