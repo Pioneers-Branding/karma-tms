@@ -285,7 +285,7 @@ const ScreenTimeMentalHealthBlogPostPage = () => {
             {/* Introduction */}
             <div className="mb-12">
               <img
-                src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=1200"
+                src="https://res.cloudinary.com/de4kw1t2i/image/upload/v1763376734/16_ekice5.png"
                 alt="Person using smartphone with mental health concerns"
                 className="w-full h-64 md:h-96 object-cover rounded-lg mb-6" />
 
