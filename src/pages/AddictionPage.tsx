@@ -48,7 +48,7 @@ const AddictionPage = () => {
             </div>
             <div className="relative">
               <img
-                src="https://res.cloudinary.com/de4kw1t2i/image/upload/v1761916023/Image_20251021_173517_696_amecqm.jpg"
+                src="https://res.cloudinary.com/de4kw1t2i/image/upload/v1763029482/Exomind_PIC_Female-Model4_0129_ENUS100_yqzeod.jpg"
                 alt="Recovery and healing journey"
                 className="rounded-lg shadow-2xl h-full w-full max-h-[400px] object-cover" />
 
