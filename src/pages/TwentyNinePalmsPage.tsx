@@ -195,7 +195,7 @@ const TwentyNinePalmsPage = () => {
             <div className="grid md:grid-cols-3 gap-6">
               <div className="relative h-72 rounded-xl overflow-hidden shadow-lg group">
                 <img
-                  src="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/d85b7133-76b3-47d9-8904-c6b4ffc09e40.jpeg"
+                  src="https://i.ibb.co/fYtrMmJQ/entrance.webp"
                   alt="Professional and welcoming entrance at Twentynine Palms location"
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" />
 
@@ -204,17 +204,16 @@ const TwentyNinePalmsPage = () => {
               </div>
               <div className="relative h-72 rounded-xl overflow-hidden shadow-lg group">
                 <img
-                  src="https://images.unsplash.com/photo-1664902265139-934219cee42f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MTg3MTl8MHwxfHNlYXJjaHwxfHxBbiUyMGFkdmFuY2VkJTIwVE1TJTIwdGhlcmFweSUyMGVxdWlwbWVudCUyMHNldHVwJTIwaW4lMjBhJTIwY2xpbmljYWwlMjBlbnZpcm9ubWVudC58ZW58MHx8fHwxNzYzNzI2MTY3fDA&ixlib=rb-4.1.0&q=80&w=200$w=1920"
+                  src="https://i.ibb.co/bR2VwFzY/help-desk.webp"
                   alt="State-of-the-art TMS treatment chair for veteran care"
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" />
 
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
-                <p className="absolute bottom-4 left-4 text-white font-semibold">TMS Equipment</p>
+                <p className="absolute bottom-4 left-4 text-white font-semibold">Help Desk</p>
               </div>
               <div className="relative h-72 rounded-xl overflow-hidden shadow-lg group">
                 <img
-                  src="https://images.unsplash.com/photo-1758205307891-fa9abee1704a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MTg3MTl8MHwxfHNlYXJjaHwxfHxDb21mb3J0YWJsZSUyMHRyZWF0bWVudCUyMGVudmlyb25tZW50JTIwZm9yJTIwbWlsaXRhcnklMjBwYXRpZW50c3xlbnwwfHx8fDE3NjM3MjYxNjV8MA&ixlib=rb-4.1.0&q=80&w=200$w=1920"
-                  alt="Comfortable treatment environment for military patients"
+                  src="https://i.ibb.co/675zy4wB/treatment.webp"
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" />
 
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
