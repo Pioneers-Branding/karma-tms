@@ -121,7 +121,7 @@ const HelpingVeteransPTSDBlogPostPage = () => {
     '@type': 'Article',
     headline: 'How to Help Veterans with PTSD: Therapy, TMS, and Beyond',
     description: 'Compassionate guide for helping veterans with PTSD, including therapy options, TMS treatment, local resources, veteran PTSD therapists, and support organizations. Learn how to help ptsd veterans in your life.',
-    image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/02c362bd-cde2-431d-8820-a07a14939638.webp',
+    image: 'https://res.cloudinary.com/de4kw1t2i/image/upload/v1762863799/blog_8_l0irim.png',
     author: {
       '@type': 'Person',
       name: 'Dr. Keerthy Sunder',
@@ -167,7 +167,7 @@ const HelpingVeteransPTSDBlogPostPage = () => {
         description="Learn how to help ptsd veterans and how to help veterans with ptsd through effective therapy options, TMS treatment, veteran therapist near me, ptsd veterans organizations, and family support strategies."
         keywords="how to help ptsd veterans, how to help veterans with ptsd, ptsd veterans organizations, veteran ptsd therapist, veteran therapist near me, ptsd support for veterans, helping veterans with ptsd"
         canonical="/blog/how-to-help-veterans-ptsd"
-        ogImage="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/02c362bd-cde2-431d-8820-a07a14939638.webp"
+        ogImage="https://res.cloudinary.com/de4kw1t2i/image/upload/v1762863799/blog_8_l0irim.png"
         ogType="article" />
 
 
@@ -286,7 +286,7 @@ const HelpingVeteransPTSDBlogPostPage = () => {
             {/* Introduction */}
             <section ref={(el) => sectionsRef.current['understanding-ptsd'] = el} className="mb-12">
               <img
-                src="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/02c362bd-cde2-431d-8820-a07a14939638.webp"
+                src="https://res.cloudinary.com/de4kw1t2i/image/upload/v1762863799/blog_8_l0irim.png"
                 alt="Supporting veterans with PTSD through compassionate care"
                 className="w-full h-64 md:h-96 object-cover rounded-lg mb-6" />
 

@@ -121,7 +121,7 @@ const TMSvsMedicationVeteransBlogPostPage = () => {
     '@type': 'Article',
     headline: 'TMS vs Medication: Why Veterans Are Turning to Magnetic Stimulation for Depression Relief',
     description: 'Comprehensive comparison of TMS therapy and medication for veterans with depression. Learn why tms veterans are choosing magnetic stimulation over traditional antidepressants, including VA coverage information.',
-    image: 'https://images.unsplash.com/photo-1620924701256-1c6f1103ebdf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MTg3MTl8MHwxfHNlYXJjaHwxfHxBbiUyMGltYWdlJTIwZGVwaWN0aW5nJTIwVE1TJTIwdGhlcmFweSUyMGZvciUyMHZldGVyYW5zJTIwYXMlMjBhbiUyMGFsdGVybmF0aXZlJTIwdG8lMjBtZWRpY2F0aW9uLnxlbnwwfHx8fDE3NjI3NzgzNzd8MA&ixlib=rb-4.1.0&q=80&w=200$w=1200',
+    image: 'https://res.cloudinary.com/de4kw1t2i/image/upload/v1762863798/blog_5_jt2nzt.png',
     author: {
       '@type': 'Person',
       name: 'Dr. Keerthy Sunder',
@@ -167,7 +167,7 @@ const TMSvsMedicationVeteransBlogPostPage = () => {
         description="Discover why tms veterans are choosing magnetic stimulation over traditional medication for depression treatment. Learn about effectiveness, side effects, VA coverage, and whether veterans get free mental health care including TMS therapy."
         keywords="tms veterans, depression treatment for veterans, do veterans get free mental health care, do veterans get free therapy, tms vs medication, veteran mental health treatment, va tms therapy"
         canonical="/blog/tms-vs-medication-veterans-depression"
-        ogImage="https://images.unsplash.com/photo-1620924701256-1c6f1103ebdf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MTg3MTl8MHwxfHNlYXJjaHwxfHxBbiUyMGltYWdlJTIwZGVwaWN0aW5nJTIwVE1TJTIwdGhlcmFweSUyMGZvciUyMHZldGVyYW5zJTIwYXMlMjBhbiUyMGFsdGVybmF0aXZlJTIwdG8lMjBtZWRpY2F0aW9uLnxlbnwwfHx8fDE3NjI3NzgzNzd8MA&ixlib=rb-4.1.0&q=80&w=200$w=1200"
+        ogImage="https://res.cloudinary.com/de4kw1t2i/image/upload/v1762863798/blog_5_jt2nzt.png"
         ogType="article" />
 
 
@@ -286,7 +286,7 @@ const TMSvsMedicationVeteransBlogPostPage = () => {
             {/* Introduction */}
             <section ref={(el) => sectionsRef.current['introduction'] = el} className="mb-12">
               <img
-                src="https://images.unsplash.com/photo-1620924701256-1c6f1103ebdf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MTg3MTl8MHwxfHNlYXJjaHwxfHxBbiUyMGltYWdlJTIwZGVwaWN0aW5nJTIwVE1TJTIwdGhlcmFweSUyMGZvciUyMHZldGVyYW5zJTIwYXMlMjBhbiUyMGFsdGVybmF0aXZlJTIwdG8lMjBtZWRpY2F0aW9uLnxlbnwwfHx8fDE3NjI3NzgzNzd8MA&ixlib=rb-4.1.0&q=80&w=200$w=1200"
+                src="https://res.cloudinary.com/de4kw1t2i/image/upload/v1762863798/blog_5_jt2nzt.png"
                 alt="TMS therapy for veterans as alternative to medication"
                 className="w-full h-64 md:h-96 object-cover rounded-lg mb-6" />
 

@@ -119,7 +119,7 @@ const VAVeteransPTSDTMSBlogPostPage = () => {
     '@type': 'Article',
     headline: 'Inside the VA & Veterans\' Mental Health: How TMS Fits Into Modern PTSD Treatment',
     description: 'Educational guide explaining the relationship between VA programs and TMS therapy, and how veterans can access care through VA-approved or private options like Karma TMS.',
-    image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/dd7dd986-540f-4359-99af-39f398491cf0.webp',
+    image: 'https://res.cloudinary.com/de4kw1t2i/image/upload/v1762863798/blog_7_ywddey.png',
     author: {
       '@type': 'Person',
       name: 'Dr. Keerthy Sunder',
@@ -165,7 +165,7 @@ const VAVeteransPTSDTMSBlogPostPage = () => {
         description="Learn about VA mental health programs, PTSD treatment options, and how veterans can access TMS therapy through VA-approved or private providers like KarmaTMS. Complete guide to ptsd va gov resources and veterans administration tms programs."
         keywords="ptsd for veterans, ptsd va gov professional, www ptsd va gov treatment, ptsd va claim, veterans administration tms, tms training for va employees, va mental health, tms therapy veterans, ptsd treatment va"
         canonical="/blog/va-veterans-ptsd-tms-treatment"
-        ogImage="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/dd7dd986-540f-4359-99af-39f398491cf0.webp"
+        ogImage="https://res.cloudinary.com/de4kw1t2i/image/upload/v1762863798/blog_7_ywddey.png"
         ogType="article" />
 
 

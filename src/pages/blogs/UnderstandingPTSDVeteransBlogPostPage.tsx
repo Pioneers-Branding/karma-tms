@@ -35,7 +35,7 @@ export default function UnderstandingPTSDVeteransBlogPostPage() {
         url: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/ebadb369-a58d-421c-b937-24f900be5867.png'
       }
     },
-    image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/02c362bd-cde2-431d-8820-a07a14939638.webp',
+    image: 'https://res.cloudinary.com/de4kw1t2i/image/upload/v1762863798/blog_2_ahwkma.png',
     mainEntityOfPage: {
       '@type': 'WebPage',
       '@id': 'https://www.karmatms.com/blogs/understanding-ptsd-veterans'
@@ -96,7 +96,7 @@ export default function UnderstandingPTSDVeteransBlogPostPage() {
               </time>
             </div>
             <img
-              src="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/02c362bd-cde2-431d-8820-a07a14939638.webp"
+              src="https://res.cloudinary.com/de4kw1t2i/image/upload/v1762863798/blog_2_ahwkma.png"
               alt="Understanding PTSD in Veterans"
               className="w-full h-[400px] object-cover rounded-2xl shadow-xl mb-12" />
 

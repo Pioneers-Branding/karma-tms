@@ -119,7 +119,7 @@ const VeteransBlogPostPage = () => {
     '@type': 'Article',
     headline: 'How TMS Therapy Helps Veterans Heal: A New Hope for PTSD, Depression & Anxiety',
     description: 'Comprehensive guide on how TMS therapy helps veterans overcome PTSD, depression, and anxiety. Learn about VA hospital availability, success stories, and treatment options for veterans.',
-    image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/02c362bd-cde2-431d-8820-a07a14939638.webp',
+    image: 'https://res.cloudinary.com/de4kw1t2i/image/upload/v1762863798/blog_3_piba73.png',
     author: {
       '@type': 'Person',
       name: 'Dr. Keerthy Sunder',
@@ -165,7 +165,7 @@ const VeteransBlogPostPage = () => {
         description="Discover how TMS therapy offers veterans new hope for PTSD, depression, and anxiety. Learn about VA hospital availability, success stories, and treatment options for veterans with service-related mental health conditions."
         keywords="tms veterans, tms for veterans, veteran affairs tms, va hospital tms, veterans administration tms, depression treatment for veterans, va anxiety, ptsd treatment veterans, tms therapy veterans"
         canonical="/blog/veterans-tms-therapy"
-        ogImage="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/02c362bd-cde2-431d-8820-a07a14939638.webp"
+        ogImage="https://res.cloudinary.com/de4kw1t2i/image/upload/v1762863798/blog_3_piba73.png"
         ogType="article" />
 
 

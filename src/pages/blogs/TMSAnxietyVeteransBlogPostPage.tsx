@@ -11,7 +11,7 @@ export default function TMSAnxietyVeteransBlogPostPage() {
   const author = {
     name: 'Dr. Keerthy Sunder',
     credentials: 'MD, Board-Certified Psychiatrist',
-    image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/6e11b9b5-a5e7-4213-8e90-24371919d086.webp',
+    image: 'https://images.unsplash.com/photo-1748288166888-f1bd5d6ef9ed?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MTg3MTl8MHwxfHNlYXJjaHwxfHxBJTIwcHJvZmVzc2lvbmFsJTIwcG9ydHJhaXQlMjBvZiUyMERyLiUyMEtlZXJ0aHklMjBTdW5kZXIlMkMlMjBhJTIwYm9hcmQtY2VydGlmaWVkJTIwcHN5Y2hpYXRyaXN0LnxlbnwwfHx8fDE3NjI4NjQyNzF8MA&ixlib=rb-4.1.0&q=80&w=200$w=800',
     bio: 'Dr. Keerthy Sunder is a board-certified psychiatrist specializing in TMS therapy and treatment-resistant mental health conditions. With extensive experience treating veterans, Dr. Sunder is dedicated to providing innovative, evidence-based care to those who have served our country.'
   };
 
@@ -35,7 +35,7 @@ export default function TMSAnxietyVeteransBlogPostPage() {
         url: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/ebadb369-a58d-421c-b937-24f900be5867.png'
       }
     },
-    image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/9705b922-d0fc-4d29-be10-acd507ce308c.webp',
+    image: 'https://res.cloudinary.com/de4kw1t2i/image/upload/v1762863798/blog_6_z1bbda.png',
     mainEntityOfPage: {
       '@type': 'WebPage',
       '@id': 'https://www.karmatms.com/blogs/tms-anxiety-veterans'
@@ -96,7 +96,7 @@ export default function TMSAnxietyVeteransBlogPostPage() {
               </time>
             </div>
             <img
-              src="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/9705b922-d0fc-4d29-be10-acd507ce308c.webp"
+              src="https://res.cloudinary.com/de4kw1t2i/image/upload/v1762863798/blog_6_z1bbda.png"
               alt="TMS for Anxiety in Veterans"
               className="w-full h-[400px] object-cover rounded-2xl shadow-xl mb-12" />
 

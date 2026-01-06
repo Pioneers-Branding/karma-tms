@@ -121,7 +121,7 @@ const VADisabilityBenefitsMentalHealthBlogPostPage = () => {
     '@type': 'Article',
     headline: 'Understanding VA Disability Benefits for Depression, Anxiety & PTSD',
     description: 'Complete guide to obtaining VA disability benefits for mental health conditions including depression, anxiety, and PTSD. Learn about eligibility, rating percentages, application process, and treatment options.',
-    image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/2ddc8d69-b09a-4f1d-bd47-6d783ceefbd1.webp',
+    image: 'https://res.cloudinary.com/de4kw1t2i/image/upload/v1762863798/blog_1_efmoo3.png',
     author: {
       '@type': 'Person',
       name: 'Dr. Keerthy Sunder',
@@ -167,7 +167,7 @@ const VADisabilityBenefitsMentalHealthBlogPostPage = () => {
         description="Complete guide on how to get VA disability for depression, anxiety, and PTSD. Learn about eligibility criteria, rating percentages, application process, and how much the VA pays for mental health conditions."
         keywords="can you get va disability for depression, how to get va disability for depression, how much does va pay for depression, does the va give disability for depression, va anxiety, claiming anxiety va, ptsd va claim, va disability mental health"
         canonical="/blog/va-disability-benefits-depression-anxiety-ptsd"
-        ogImage="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/2ddc8d69-b09a-4f1d-bd47-6d783ceefbd1.webp"
+        ogImage="https://res.cloudinary.com/de4kw1t2i/image/upload/v1762863798/blog_1_efmoo3.png"
         ogType="article" />
 
 
@@ -286,7 +286,7 @@ const VADisabilityBenefitsMentalHealthBlogPostPage = () => {
             {/* Introduction */}
             <section ref={(el) => sectionsRef.current['introduction'] = el} className="mb-12">
               <img
-                src="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/2ddc8d69-b09a-4f1d-bd47-6d783ceefbd1.webp"
+                src="https://res.cloudinary.com/de4kw1t2i/image/upload/v1762863798/blog_1_efmoo3.png"
                 alt="VA disability benefits for veterans with mental health conditions"
                 className="w-full h-64 md:h-96 object-cover rounded-lg mb-6" />
 
