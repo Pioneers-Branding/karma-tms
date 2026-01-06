@@ -71,9 +71,9 @@ const FooterSection = () => {
 
       {/* Main Footer Content */}
       <div className="container mx-auto px-4 py-16 relative z-10">
-        <div className="grid lg:grid-cols-4 md:grid-cols-2 gap-12">
-          {/* Company Info with Added Locations */}
-          <div className="lg:col-span-1 space-y-6">
+        <div className="grid lg:grid-cols-5 md:grid-cols-2 gap-12">
+          {/* Company Info */}
+          <div className="space-y-6">
             <div className="flex items-center gap-3">
               <img
                 src="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/ebadb369-a58d-421c-b937-24f900be5867.png"
@@ -83,12 +83,16 @@ const FooterSection = () => {
             </div>
 
             <p className="text-gray-300 leading-relaxed">
-              Leading TMS therapy provider in Palm Springs, transforming lives through 
+              Leading TMS therapy provider in Palm Springs, transforming lives through
               advanced transcranial magnetic stimulation treatment.
             </p>
+          </div>
 
-            {/* Locations */}
-            <div className="space-y-6">
+          {/* Contact Info - Separate Column */}
+          <div>
+            <h3 className="text-lg font-bold mb-6 text-white">Contact Information</h3>
+
+            <div className="space-y-6 mb-8">
               {locations.map((loc, idx) => (
                 <div key={idx} className="flex items-start gap-3">
                   <MapPin className="h-5 w-5 text-[#572670] mt-1 flex-shrink-0" />
@@ -102,8 +106,7 @@ const FooterSection = () => {
               ))}
             </div>
 
-            {/* Contact Info */}
-            <div className="space-y-3 mt-6">
+            <div className="space-y-3">
               <div className="flex items-center gap-3">
                 <Phone className="h-5 w-5 text-[#572670]" />
                 <div>
