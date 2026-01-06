@@ -44,7 +44,7 @@ const HowTMSWorks = () => {
             </CardContent>
           </Card>
           <Link to="/about" aria-label="Learn more about the science">
-            <Button className="bg-[#572670] hover:bg-[#572670]/90 text-white px-8 mt-3">
+            <Button className="bg-[#572670] hover:bg-[#572670]/90 text-white px-8 mt-5">
               Learn More About the Science
             </Button>
           </Link>
