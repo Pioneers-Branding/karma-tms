@@ -285,7 +285,7 @@ const VADisabilityBenefitsMentalHealthBlogPostPage = () => {
               <img
                 src="https://res.cloudinary.com/de4kw1t2i/image/upload/v1763033665/2_tv5b86.png"
                 alt="VA disability benefits for veterans with mental health conditions"
-                className="w-full  md:h-96 object-cover rounded-lg mb-6" />
+                className="w-full   object-cover rounded-lg mb-6" />
 
 
               <p className="text-xl text-gray-700 leading-relaxed">
