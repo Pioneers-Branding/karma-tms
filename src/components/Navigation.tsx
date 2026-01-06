@@ -61,8 +61,8 @@ const Navigation = () => {
   return (
     <header className={`sticky top-0 z-50 transition-all duration-100 ${
     scrolled ?
-    'bg-[#572670]/95 backdrop-blur-md m-0 shadow-lg border-b border-white/20 rounded-bl-2xl rounded-br-2xl' :
-    'bg-[#572670]/90 backdrop-blur-sm m-2 shadow-sm border-b border-white/10 rounded-2xl'}`
+    'bg-[#572670]/95 backdrop-blur-sm m-0 shadow-lg border-b border-white/20 rounded-bl-2xl rounded-br-2xl' :
+    'bg-[#572670]/90 backdrop-blur-md m-2 shadow-sm border-b border-white/10 rounded-2xl'}`
     }>
       <div className="max-w-[1600px] mx-auto px-4">
         <div className="flex items-center justify-between h-16">
