@@ -96,7 +96,7 @@ export default function TMSAnxietyVeteransBlogPostPage() {
               </time>
             </div>
             <img
-              src="https://res.cloudinary.com/de4kw1t2i/image/upload/v1762863798/blog_6_z1bbda.png"
+              src="https://res.cloudinary.com/de4kw1t2i/image/upload/v1763033666/6_rrkhgo.png"
               alt="TMS for Anxiety in Veterans"
               className="w-full h-[400px] object-cover rounded-2xl shadow-xl mb-12" />
 
