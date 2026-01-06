@@ -40,6 +40,7 @@ import LocationsPage from "./pages/LocationsPage";
 import PalmSpringsPage from "./pages/PalmSpringsPage";
 import TwentyNinePalmsPage from "./pages/TwentyNinePalmsPage";
 import VeteransPage from "./pages/VeteransPage";
+import VeteransBlogPostPage from "./pages/VeteransBlogPostPage";
 import DisclaimerPage from "./pages/DisclaimerPage";
 
 const queryClient = new QueryClient();
@@ -98,6 +99,7 @@ const App = () =>
           <Route path="/insurance-pricing" element={<InsurancePricingPage />} />
           <Route path="/testimonials" element={<TestimonialsPage />} />
           <Route path="/testimonials/" element={<TestimonialsPage />} />
+          <Route path="/blog/veterans-tms-therapy" element={<VeteransBlogPostPage />} />
           <Route path="/blog" element={<BlogPage />} />
           <Route path="/blog/" element={<BlogPage />} />
           <Route path="/research-and-publications" element={<ResearchPage />} />
@@ -125,6 +127,10 @@ const App = () =>
           <Route path="/privacy-policy/" element={<PrivacyPage />} />
           {/* Keep old route for backwards compatibility */}
           <Route path="/privacy" element={<PrivacyPage />} />
+          
+          {/* Veterans & Disclaimer Routes */}
+          <Route path="/veterans" element={<VeteransPage />} />
+          <Route path="/disclaimer" element={<DisclaimerPage />} />
           
           {/* Catch-all route redirects to home instead of 404 */}
           <Route path="*" element={<Navigate to="/" replace />} />

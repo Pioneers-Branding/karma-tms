@@ -139,6 +139,14 @@ const TMSQuizPage = () => {
 
 
 
+
+
+
+
+
+
+
+
     // Let the form submit naturally to Formester
     // After submission, Formester will handle the redirect
     // If you want to redirect to a specific page, you can add a hidden input
@@ -201,16 +209,11 @@ const TMSQuizPage = () => {
 
                       Next
                       <ArrowRight className="h-4 w-4 ml-2" />
-                    </Button> :
-                <Button
-                  type="submit"
-                  disabled={!canProceed}
-                  className="bg-[#572670] hover:bg-[#572670]/90">
+                    </Button> : <Button type="submit" disabled={!canProceed} className="bg-[#572670] hover:bg-[#572670]/90">
 
                       Submit Assessment
                       <ArrowRight className="h-4 w-4 ml-2" />
-                    </Button>
-                }
+                    </Button>}
                 </div>
               </CardContent>
             </Card>
@@ -224,8 +227,5 @@ const TMSQuizPage = () => {
       </div>
 
       <FooterSection />
-    </div>;
-
-};
-
+    </div>;};
 export default TMSQuizPage;

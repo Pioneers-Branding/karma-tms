@@ -43,7 +43,7 @@ const TwentyNinePalmsPage = () => {
         description="KarmaTMS Twentynine Palms - TMS therapy near Marine Corps Base. PTSD treatment for veterans and military families. Depression & mental health services."
         keywords="KarmaTMS Twentynine Palms, TMS therapy 29 Palms, veterans mental health, PTSD treatment military, Marine Corps Base mental health"
         canonical="/29-palms"
-        ogImage="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/031012db-9570-41de-bb30-96c6fa482330.png" />
+        ogImage="https://images.unsplash.com/photo-1650392974921-f42d5cddf537?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MTg3MTl8MHwxfHNlYXJjaHwxfHxBJTIwcHJvbW90aW9uYWwlMjBpbWFnZSUyMGZvciUyMEthcm1hVE1TJTIwVHdlbnR5bmluZSUyMFBhbG1zJTJDJTIwc2hvd2Nhc2luZyUyMGElMjBzZXJlbmUlMjBhbmQlMjBwcm9mZXNzaW9uYWwlMjBlbnZpcm9ubWVudCUyMGZvciUyMG1lbnRhbCUyMGhlYWx0aCUyMHNlcnZpY2VzLnxlbnwwfHx8fDE3NjI0OTk0MjZ8MA&ixlib=rb-4.1.0&q=80&w=200$w=1920" />
 
       <StructuredData
         type="localBusiness"
@@ -65,7 +65,7 @@ const TwentyNinePalmsPage = () => {
       {/* Hero Section */}
       <div className="relative bg-gradient-to-br from-blue-900 via-blue-800 to-teal-700 text-white py-20">
         <div className="absolute inset-0 opacity-20">
-          <div className="absolute inset-0 bg-[url('https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/031012db-9570-41de-bb30-96c6fa482330.png')] bg-cover bg-center" />
+          <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1650392974921-f42d5cddf537?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MTg3MTl8MHwxfHNlYXJjaHwxfHxBJTIwcHJvbW90aW9uYWwlMjBpbWFnZSUyMGZvciUyMEthcm1hVE1TJTIwVHdlbnR5bmluZSUyMFBhbG1zJTJDJTIwc2hvd2Nhc2luZyUyMGElMjBzZXJlbmUlMjBhbmQlMjBwcm9mZXNzaW9uYWwlMjBlbnZpcm9ubWVudCUyMGZvciUyMG1lbnRhbCUyMGhlYWx0aCUyMHNlcnZpY2VzLnxlbnwwfHx8fDE3NjI0OTk0MjZ8MA&ixlib=rb-4.1.0&q=80&w=200$w=1920')] bg-cover bg-center" />
         </div>
         <div className="container mx-auto px-4 relative z-10">
           <Badge className="mb-4 bg-blue-500/20 text-white border-blue-300">29 Palms Location</Badge>
@@ -106,7 +106,7 @@ const TwentyNinePalmsPage = () => {
             </div>
             <div className="relative h-96 rounded-lg overflow-hidden shadow-xl">
               <img
-                src="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/e3bc971e-e2ab-4334-ac23-0b9876309934.webp"
+                src="https://images.unsplash.com/photo-1682663947090-b35e4f2c23cc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MTg3MTl8MHwxfHNlYXJjaHwxfHxBbiUyMGltYWdlJTIwc2hvd2Nhc2luZyUyMFRNUyUyMFRoZXJhcHklMjBFcXVpcG1lbnQlMkMlMjB1c2VkJTIwaW4lMjBtZW50YWwlMjBoZWFsdGglMjB0cmVhdG1lbnRzLnxlbnwwfHx8fDE3NjI0OTkzMzN8MA&ixlib=rb-4.1.0&q=80&w=200$w=1920"
                 alt="TMS Therapy Equipment"
                 className="w-full h-full object-cover" />
 

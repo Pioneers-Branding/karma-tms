@@ -35,17 +35,17 @@ const generateUniqueBlogPosts = (): BlogPost[] => {
   const posts: BlogPost[] = [
   {
     id: 1,
-    title: 'Understanding TMS Therapy: A Comprehensive Guide',
-    excerpt: 'Discover the latest insights and breakthrough treatments in mental health care. Our comprehensive approach combines cutting-edge technology with compassionate care.',
+    title: 'How TMS Therapy Helps Veterans Heal: A New Hope for PTSD, Depression & Anxiety',
+    excerpt: 'Discover how TMS therapy offers new hope for veterans struggling with PTSD, depression, and anxiety. Learn about VA hospital availability and treatment success rates.',
     category: 'tms-therapy',
-    author: 'Dr. Thomas Lim',
+    author: 'Dr. Keerthy Sunder',
     date: new Date(2024, 0, 15).toLocaleDateString('en-US', {
       year: 'numeric',
       month: 'long',
       day: 'numeric'
     }),
     readTime: '8 min read',
-    image: 'https://images.unsplash.com/photo-1559757175-5700dde675bc?q=80&w=800&auto=format&fit=crop',
+    image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/02c362bd-cde2-431d-8820-a07a14939638.webp',
     featured: true,
     rating: 5
   },

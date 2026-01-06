@@ -57,7 +57,7 @@ const VeteransPage = () => {
         description="Specialized KarmaTMS therapy for veterans and military personnel. PTSD treatment, depression care near Marine Corps Base. TRICARE accepted. Call (760) 760-5675."
         keywords="KarmaTMS veterans, TMS therapy PTSD, veterans mental health, military PTSD treatment, TRICARE TMS therapy, Marine Corps mental health"
         canonical="/veterans"
-        ogImage="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/e3bc971e-e2ab-4334-ac23-0b9876309934.webp" />
+        ogImage="https://images.unsplash.com/photo-1627994094951-8ce028677fc8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MTg3MTl8MHwxfHNlYXJjaHwxfHxBJTIwc2VyZW5lJTIwYW5kJTIwcHJvZmVzc2lvbmFsJTIwaW1hZ2UlMjByZXByZXNlbnRpbmclMjBtZW50YWwlMjBoZWFsdGglMjBzZXJ2aWNlcyUyMGZvciUyMHZldGVyYW5zJTJDJTIwZmVhdHVyaW5nJTIwYSUyMGNhbG0lMjBhbmQlMjBzdXBwb3J0aXZlJTIwZW52aXJvbm1lbnQufGVufDB8fHx8MTc2MjQ5OTQyOXww&ixlib=rb-4.1.0&q=80&w=200$w=1920" />
 
       <StructuredData
         type="breadcrumb"
@@ -71,7 +71,7 @@ const VeteransPage = () => {
       {/* Hero Section */}
       <div className="relative bg-gradient-to-br from-blue-900 via-blue-800 to-teal-700 text-white py-20">
         <div className="absolute inset-0 opacity-10">
-          <div className="absolute inset-0 bg-[url('https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/e3bc971e-e2ab-4334-ac23-0b9876309934.webp')] bg-cover bg-center" />
+          <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1627994094951-8ce028677fc8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MTg3MTl8MHwxfHNlYXJjaHwxfHxBJTIwc2VyZW5lJTIwYW5kJTIwcHJvZmVzc2lvbmFsJTIwaW1hZ2UlMjByZXByZXNlbnRpbmclMjBtZW50YWwlMjBoZWFsdGglMjBzZXJ2aWNlcyUyMGZvciUyMHZldGVyYW5zJTJDJTIwZmVhdHVyaW5nJTIwYSUyMGNhbG0lMjBhbmQlMjBzdXBwb3J0aXZlJTIwZW52aXJvbm1lbnQufGVufDB8fHx8MTc2MjQ5OTQyOXww&ixlib=rb-4.1.0&q=80&w=200$w=1920')] bg-cover bg-center" />
         </div>
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-3xl">
@@ -91,7 +91,7 @@ const VeteransPage = () => {
                 </Button>
               </Link>
               <a href="tel:7607605675">
-                <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10">
+                <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10 bg-black text-white">
                   <Phone className="w-4 h-4 mr-2" />
                   760-760-5675
                 </Button>
@@ -157,7 +157,7 @@ const VeteransPage = () => {
               </div>
               <div className="relative h-96 rounded-lg overflow-hidden shadow-xl">
                 <img
-                  src="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/031012db-9570-41de-bb30-96c6fa482330.png"
+                  src="https://images.unsplash.com/photo-1570105954248-fa0c1376edfe?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MTg3MTl8MHwxfHNlYXJjaHwxfHxBJTIwVE1TJTIwdHJlYXRtZW50JTIwY2hhaXIlMjBpbiUyMGElMjBjbGluaWNhbCUyMHNldHRpbmclMkMlMjBzaG93Y2FzaW5nJTIwYSUyMGNvbWZvcnRhYmxlJTIwYW5kJTIwcHJvZmVzc2lvbmFsJTIwZW52aXJvbm1lbnQlMjBmb3IlMjB0aGVyYXB5JTIwc2Vzc2lvbnMufGVufDB8fHx8MTc2MjQ5OTYyM3ww&ixlib=rb-4.1.0&q=80&w=200$w=1920"
                   alt="TMS Treatment Chair"
                   className="w-full h-full object-cover" />
 
@@ -293,13 +293,13 @@ const VeteransPage = () => {
               </Button>
             </Link>
             <a href="tel:7607605675">
-              <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10">
+              <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10 bg-black text-white">
                 <Phone className="w-4 h-4 mr-2" />
                 Call: 760-760-5675
               </Button>
             </a>
             <Link to="/tms-quiz">
-              <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10">
+              <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10 bg-black text-white">
                 Take TMS Quiz
               </Button>
             </Link>
