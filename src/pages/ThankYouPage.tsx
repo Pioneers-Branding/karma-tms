@@ -28,8 +28,8 @@ export default function ThankYouPage() {
             <Button
               onClick={() => navigate('/')}
               size="lg"
-              className="bg-teal-600 hover:bg-teal-700 text-white px-8"
-            >
+              className="bg-teal-600 hover:bg-teal-700 text-white px-8">
+
               Return to Home
             </Button>
           </div>
@@ -40,17 +40,17 @@ export default function ThankYouPage() {
               Contact Us
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-6 text-gray-700">
-              <a 
-                href="tel:+17606999735" 
-                className="flex items-center gap-2 hover:text-teal-600 transition-colors"
-              >
+              <a
+                href="tel:+17606999735"
+                className="flex items-center gap-2 hover:text-teal-600 transition-colors">
+
                 <Phone className="h-5 w-5" />
                 <span>(760) 699-9735</span>
               </a>
-              <a 
-                href="mailto:info@karmatms.com" 
-                className="flex items-center gap-2 hover:text-teal-600 transition-colors"
-              >
+              <a
+                href="mailto:info@karmatms.com"
+                className="flex items-center gap-2 hover:text-teal-600 transition-colors">
+
                 <Mail className="h-5 w-5" />
                 <span>info@karmatms.com</span>
               </a>
@@ -60,6 +60,6 @@ export default function ThankYouPage() {
       </main>
 
       <FooterSection />
-    </div>
-  );
+    </div>);
+
 }
