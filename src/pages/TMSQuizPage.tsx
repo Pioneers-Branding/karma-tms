@@ -107,6 +107,14 @@ const TMSQuizPage = () => {
 
 
 
+
+
+
+
+
+
+
+
     // Let the form submit naturally to Formester
     // After submission, Formester will handle the redirect
     // If you want to redirect to a specific page, you can add a hidden input
@@ -134,19 +142,11 @@ const TMSQuizPage = () => {
             <Progress value={progress} className="w-full" />
           </div>
 
-          <form
-          acceptCharset="UTF-8"
-          action="https://app.formester.com/forms/oktnrNSVh/submissions"
-          method="POST"
-          onSubmit={handleSubmit}>
+          <form acceptCharset="UTF-8" action="https://app.formester.com/forms/oktnrNSVh/submissions" method="POST" onSubmit={handleSubmit}>
 
             {/* Hidden inputs for all answers */}
-            {quizQuestions.map((question) =>
-          <input
-            key={question.id}
-            type="hidden"
-            name={question.name}
-            value={answers[question.id] || ''} />
+            {quizQuestions.map((question) => <input key={question.id} type="hidden" name={question.name}
+              value={answers[question.id] || ''} />
 
           )}
 

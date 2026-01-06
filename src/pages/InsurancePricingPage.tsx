@@ -160,12 +160,6 @@ const InsurancePricingPage = () => {
                   Verify Insurance
                 </Link>
               </Button>
-              <Button variant="outline" className="border-[#572670] text-[#572670] hover:bg-[#572670]/10 px-8 py-3 text-lg" asChild>
-                <Link to="/contact">
-                  <Phone className="mr-2 h-5 w-5" />
-                  Call for Pricing: 760-760-5675
-                </Link>
-              </Button>
             </div>
           </motion.div>
         </div>
@@ -173,8 +167,8 @@ const InsurancePricingPage = () => {
 
       {/* Insurance Verification Widget - removed as requested */}
       {/*
-                                                                   <section className="py-20 bg-white"> ... </section>
-                                                                   */}
+                                                                     <section className="py-20 bg-white"> ... </section>
+                                                                     */}
 
       {/* Accepted Insurance */}
       <section className="py-20 bg-gradient-to-br from-slate-50 to-purple-50">
@@ -235,8 +229,8 @@ const InsurancePricingPage = () => {
 
       {/* Self-Pay Pricing - removed as requested */}
       {/*
-                                                                   <section className="py-20 bg-white"> ... </section>
-                                                                   */}
+                                                                     <section className="py-20 bg-white"> ... </section>
+                                                                     */}
 
       {/* Financing Options Banner */}
       <section className="py-20 bg-gradient-to-r from-[#572670] to-purple-600">
