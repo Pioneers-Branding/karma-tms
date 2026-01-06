@@ -25,7 +25,7 @@ const LocationsPage = () => {
     name: '29 Palms',
     slug: '29-palms',
     addresses: [
-    { line1: '72724 29 Palms Hwy. Suite 107-B', line2: 'Twentynine Palms, CA 92277' }],
+    { line1: '72724 29 Palms Hwy. Suite 107', line2: 'Twentynine Palms, CA 92277' }],
 
     phone: '760-760-5675',
     hours: 'Monday - Friday: 8:00 AM - 6:00 PM',
