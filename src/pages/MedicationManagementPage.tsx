@@ -8,6 +8,7 @@ import { Checkbox } from '@/components/ui/checkbox';
 import { Link } from 'react-router-dom';
 import Navigation from '@/components/Navigation';
 import FooterSection from '@/components/FooterSection';
+import SEO from '@/components/SEO'
 
 const MedicationManagementPage = () => {
   const [selectedPhase, setSelectedPhase] = useState(0);

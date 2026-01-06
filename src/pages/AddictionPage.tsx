@@ -5,7 +5,7 @@ import { Badge } from '@/components/ui/badge';
 import { Link } from 'react-router-dom';
 import Navigation from '@/components/Navigation';
 import FooterSection from '@/components/FooterSection';
-import SEO from '@/components/SEO'
+import SEO from '@/components/SEO';
 import { Brain, Heart, CheckCircle, ArrowRight, Calendar, Shield, Award, Zap } from 'lucide-react';
 
 const AddictionPage = () => {
@@ -13,11 +13,11 @@ const AddictionPage = () => {
     <div className="min-h-screen">
       <Navigation />
       <SEO
-  title="Addiction Recovery Center Palm Springs | Karma TMS PC"
-  description="Karma TMS PC offers personalized treatment at our Addiction Recovery Center in Palm Springs, helping you achieve lasting recovery and emotional wellness."
-  keywords="addiction recovery center palm springs"
-  canonical="https://www.karmatms.com/conditions/addiction"
-/>
+        title="Addiction Recovery Center Palm Springs | Karma TMS PC"
+        description="Karma TMS PC offers personalized treatment at our Addiction Recovery Center in Palm Springs, helping you achieve lasting recovery and emotional wellness."
+        keywords="addiction recovery center palm springs"
+        canonical="https://www.karmatms.com/conditions/addiction" />
+
       
       {/* Hero Section */}
       <section className="relative bg-gradient-to-r from-[#572670] to-[#7B4D9E] text-white py-20 px-4">
