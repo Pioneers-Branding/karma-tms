@@ -35,7 +35,7 @@ const LocationContactSection = () => {
                 },
                 {
                   label: "Address 2",
-                  lines: ["35400 Bob Hope Dr, Rancho Mirage, CA 92270"]
+                  lines: ["35400 Bob Hope Dr Ste #206, Rancho Mirage, CA 92270  "]
                 },
                 {
                   label: "Address 3",
