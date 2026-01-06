@@ -181,7 +181,7 @@ const TMSTherapyPage = () => {
             className="relative mx-auto max-w-4xl">
 
             <img
-              src="https://images.unsplash.com/photo-1692939558183-3da9afd034e0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MTg3MTl8MHwxfHNlYXJjaHwxfHxBbiUyMGltYWdlJTIwb2YlMjBhJTIwVE1TJTIwdHJlYXRtZW50JTIwY2hhaXIlMkMlMjBzaG93Y2FzaW5nJTIwYSUyMGNvbWZvcnRhYmxlJTIwYW5kJTIwbW9kZXJuJTIwZGVzaWduJTJDJTIwdXNlZCUyMGZvciUyMHRyYW5zY3JhbmlhbCUyMG1hZ25ldGljJTIwc3RpbXVsYXRpb24lMjB0aGVyYXB5LnxlbnwwfHx8fDE3NTkyMzY3MDR8MA&ixlib=rb-4.1.0&q=80&w=200$w=800"
+              src="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/6cfeb881-529d-42c6-875a-321eac7d440c.webp"
               alt="TMS Treatment Chair"
               className="w-full h-auto rounded-2xl shadow-2xl" />
 
