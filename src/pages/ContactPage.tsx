@@ -269,7 +269,7 @@ const ContactPage = () => {
                 <div>
                   <h3 className="font-bold text-lg text-gray-900 mb-2">Karma TMS</h3>
                   <p className="text-gray-700 leading-relaxed">                   
-                    560 S. Paseo Dorotea,<br /> Suite 4-B Palm Springs,<br /> CA 92264
+                    560 S. Paseo Dorotea, Suite 4-B Palm Springs, CA 92264
                   </p>
                 </div>
 
