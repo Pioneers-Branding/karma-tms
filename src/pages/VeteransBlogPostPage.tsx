@@ -317,7 +317,7 @@ const VeteransBlogPostPage = () => {
               </p>
 
               <img
-                src="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/76caee2d-5629-4dc1-a3b4-8c5cea23ede6.webp"
+                src="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/f00dd3f4-cea1-4918-8fec-5976198e195f.webp"
                 alt="TMS therapy equipment and treatment process"
                 className="w-full h-64 object-cover rounded-lg mb-6" />
 
