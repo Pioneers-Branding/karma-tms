@@ -1,608 +1,527 @@
-import { useState, useEffect, useRef } from 'react';
-import { Link } from 'react-router-dom';
 import Navigation from '@/components/Navigation';
 import FooterSection from '@/components/FooterSection';
 import SEO from '@/components/SEO';
 import StructuredData from '@/components/StructuredData';
-import {
-  Breadcrumb,
-  BreadcrumbItem,
-  BreadcrumbLink,
-  BreadcrumbList,
-  BreadcrumbPage,
-  BreadcrumbSeparator
-} from '@/components/ui/breadcrumb';
-import { Card, CardContent } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger
-} from '@/components/ui/accordion';
-import { Calendar, Clock, User, CheckCircle2, ArrowRight } from 'lucide-react';
 import AuthorBox from '@/components/AuthorBox';
+import { Link } from 'react-router-dom';
+import { ChevronRight, Phone, Calendar } from 'lucide-react';
 
-const TMSAnxietyVeteransBlogPostPage = () => {
-  const [activeSection, setActiveSection] = useState('');
-  const sectionsRef = useRef<{[key: string]: HTMLElement | null;}>({});
-
-  const tocItems = [
-    { id: 'understanding', label: 'Understanding Anxiety in Veterans' },
-    { id: 'standalone', label: 'Anxiety as Standalone Disorder' },
-    { id: 'va-support', label: 'VA Anxiety Support' },
-    { id: 'how-tms-works', label: 'How TMS Works for Anxiety' },
-    { id: 'benefits', label: 'Benefits of TMS' },
-    { id: 'faqs', label: 'Frequently Asked Questions' }
-  ];
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const scrollPosition = window.scrollY + 150;
-
-      for (const item of tocItems) {
-        const section = sectionsRef.current[item.id];
-        if (section) {
-          const { offsetTop, offsetHeight } = section;
-          if (scrollPosition >= offsetTop && scrollPosition < offsetTop + offsetHeight) {
-            setActiveSection(item.id);
-            break;
-          }
-        }
-      }
-    };
-
-    window.addEventListener('scroll', handleScroll);
-    handleScroll();
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
-
-  const scrollToSection = (id: string) => {
-    const section = sectionsRef.current[id];
-    if (section) {
-      const yOffset = -100;
-      const y = section.getBoundingClientRect().top + window.pageYOffset + yOffset;
-      window.scrollTo({ top: y, behavior: 'smooth' });
-    }
+export default function TMSAnxietyVeteransBlogPostPage() {
+  const publishDate = '2025-10-27';
+  const author = {
+    name: 'Dr. Keerthy Sunder',
+    credentials: 'MD, Board-Certified Psychiatrist',
+    image: 'https://www.prtms.com/wp-content/uploads/2023/03/Dr.-Keerthy-Sunder-scaled.jpg',
+    bio: 'Dr. Keerthy Sunder is a board-certified psychiatrist specializing in TMS therapy and treatment-resistant mental health conditions. With extensive experience treating veterans, Dr. Sunder is dedicated to providing innovative, evidence-based care to those who have served our country.'
   };
 
-  const faqs = [
-    {
-      question: 'How effective is TMS for anxiety in veterans?',
-      answer: 'Studies show that 60-70% of patients experience significant anxiety reduction with TMS therapy. Many veterans achieve remission of anxiety symptoms. TMS is particularly effective for treatment-resistant anxiety that hasn\'t responded to traditional medications.'
-    },
-    {
-      question: 'Does the VA cover TMS for anxiety disorders?',
-      answer: 'Some VA facilities offer TMS therapy for eligible veterans with anxiety disorders. Coverage varies by location. Many veterans choose private providers like KarmaTMS for faster access and more flexible scheduling.'
-    },
-    {
-      question: 'How long does TMS treatment take for anxiety?',
-      answer: 'A typical TMS treatment course lasts 4-6 weeks with sessions 5 days per week. Each session takes 20-40 minutes. Most veterans begin noticing improvements within 3-4 weeks of starting treatment.'
-    },
-    {
-      question: 'Can TMS help with panic attacks?',
-      answer: 'Yes! TMS has shown effectiveness in reducing panic attacks by regulating the brain\'s fear response centers. Many veterans experience significant reduction in both frequency and intensity of panic attacks with TMS therapy.'
-    },
-    {
-      question: 'What are the side effects of TMS for anxiety?',
-      answer: 'TMS is well-tolerated with minimal side effects. The most common is mild scalp discomfort during treatment. Unlike anxiety medications, TMS doesn\'t cause weight gain, sexual dysfunction, or cognitive impairment.'
-    },
-    {
-      question: 'Can I continue my anxiety medication during TMS?',
-      answer: 'Yes, TMS can be combined with existing medications. Many veterans are able to reduce or eliminate medications after successful TMS treatment, but this should always be done under medical supervision.'
-    }
-  ];
-
-  const relatedPosts = [
-    {
-      title: 'How TMS Therapy Helps Veterans Heal: A New Hope for PTSD',
-      excerpt: 'Comprehensive guide on TMS therapy for veterans with PTSD, depression, and anxiety.',
-      link: '/blog/veterans-tms-therapy',
-      image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/f00dd3f4-cea1-4918-8fec-5976198e195f.webp'
-    },
-    {
-      title: 'Understanding PTSD in Veterans',
-      excerpt: 'Complete guide to PTSD signs, symptoms, and treatment paths for veterans.',
-      link: '/blog/understanding-ptsd-veterans',
-      image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/02c362bd-cde2-431d-8820-a07a14939638.webp'
-    },
-    {
-      title: 'VA & Veterans Mental Health Programs',
-      excerpt: 'Learn about VA mental health programs and how to access TMS therapy.',
-      link: '/blog/va-veterans-ptsd-tms-treatment',
-      image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/dd7dd986-540f-4359-99af-39f398491cf0.webp'
-    }
-  ];
-
-  const articleSchema = {
+  const structuredData = {
     '@context': 'https://schema.org',
-    '@type': 'Article',
+    '@type': 'BlogPosting',
     headline: 'TMS for Anxiety in Veterans: A Promising Path Beyond Medication',
     description: 'Discover how TMS therapy helps veterans with anxiety beyond traditional medication. Learn about VA anxiety support and brain regulation through TMS.',
-    image: 'https://res.cloudinary.com/de4kw1t2i/image/upload/v1762863798/blog_6_z1bbda.png',
     author: {
       '@type': 'Person',
-      name: 'Dr. Keerthy Sunder',
-      jobTitle: 'Board-Certified Psychiatrist | Medical Director at KarmaTMS',
-      affiliation: {
-        '@type': 'Organization',
-        name: 'KarmaTMS'
-      }
+      name: author.name,
+      jobTitle: author.credentials
     },
+    datePublished: publishDate,
+    dateModified: publishDate,
     publisher: {
       '@type': 'Organization',
-      name: 'KarmaTMS',
+      name: 'Karma TMS',
       logo: {
         '@type': 'ImageObject',
         url: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/ebadb369-a58d-421c-b937-24f900be5867.png'
       }
     },
-    datePublished: '2025-10-27',
-    dateModified: '2025-10-27',
+    image: 'https://res.cloudinary.com/de4kw1t2i/image/upload/v1762863798/blog_6_z1bbda.png',
     mainEntityOfPage: {
       '@type': 'WebPage',
-      '@id': 'https://karmatms.com/blog/tms-anxiety-veterans'
+      '@id': 'https://www.karmatms.com/blogs/tms-anxiety-veterans'
     }
-  };
-
-  const faqSchema = {
-    '@context': 'https://schema.org',
-    '@type': 'FAQPage',
-    mainEntity: faqs.map((faq) => ({
-      '@type': 'Question',
-      name: faq.question,
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: faq.answer
-      }
-    }))
   };
 
   return (
     <>
       <SEO
-        title="TMS for Anxiety in Veterans: Beyond Medication Treatment | KarmaTMS"
+        title="TMS for Anxiety in Veterans: Beyond Medication Treatment | Karma TMS"
         description="Learn how TMS therapy helps veterans with anxiety disorders. Discover how brain stimulation regulates anxiety centers beyond traditional medication. VA anxiety support available."
         keywords="va anxiety, veteran anxiety, veterans with anxiety, anxiety for veterans, TMS for anxiety, veteran anxiety treatment, anxiety disorder veterans"
-        canonical="/blog/tms-anxiety-veterans"
-        ogImage="https://res.cloudinary.com/de4kw1t2i/image/upload/v1762863798/blog_6_z1bbda.png"
-        ogType="article"
-      />
+        canonicalUrl="https://www.karmatms.com/blogs/tms-anxiety-veterans" />
 
-      <StructuredData
-        type="breadcrumb"
-        breadcrumbs={[
-          { name: 'Home', url: '/' },
-          { name: 'Blog', url: '/blog' },
-          { name: 'TMS for Anxiety in Veterans', url: '/blog/tms-anxiety-veterans' }
-        ]}
-      />
-
-      <script type="application/ld+json">
-        {JSON.stringify(articleSchema)}
-      </script>
-
-      <script type="application/ld+json">
-        {JSON.stringify(faqSchema)}
-      </script>
-
+      <StructuredData data={structuredData} />
       <Navigation />
 
-      {/* Breadcrumb */}
-      <div className="bg-gray-50 border-b">
-        <div className="container mx-auto px-4 py-4">
-          <Breadcrumb>
-            <BreadcrumbList>
-              <BreadcrumbItem>
-                <BreadcrumbLink asChild>
-                  <Link to="/">Home</Link>
-                </BreadcrumbLink>
-              </BreadcrumbItem>
-              <BreadcrumbSeparator />
-              <BreadcrumbItem>
-                <BreadcrumbLink asChild>
-                  <Link to="/blog">Blog</Link>
-                </BreadcrumbLink>
-              </BreadcrumbItem>
-              <BreadcrumbSeparator />
-              <BreadcrumbItem>
-                <BreadcrumbPage>TMS for Anxiety in Veterans</BreadcrumbPage>
-              </BreadcrumbItem>
-            </BreadcrumbList>
-          </Breadcrumb>
+      <main className="min-h-screen bg-gradient-to-b from-slate-50 to-white">
+        {/* Breadcrumbs */}
+        <div className="container mx-auto px-4 pt-24 pb-4">
+          <nav className="flex items-center space-x-2 text-sm text-slate-600">
+            <Link to="/" className="hover:text-purple-600 transition-colors">Home</Link>
+            <ChevronRight className="h-4 w-4" />
+            <Link to="/blog" className="hover:text-purple-600 transition-colors">Blog</Link>
+            <ChevronRight className="h-4 w-4" />
+            <span className="text-purple-600">TMS for Anxiety in Veterans</span>
+          </nav>
         </div>
-      </div>
 
-      {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-[#572670] to-[#7B3FA0] text-white py-20">
-        <div className="absolute inset-0 bg-black/20"></div>
-        <div className="container mx-auto px-4 relative z-10">
-          <div className="max-w-4xl mx-auto text-center">
-            <div className="flex flex-wrap justify-center gap-4 mb-6 text-sm">
-              <span className="flex items-center gap-1 bg-white/10 px-3 py-1 rounded-full backdrop-blur-sm">
-                <Calendar className="w-4 h-4" />
-                October 27, 2025
-              </span>
-              <span className="flex items-center gap-1 bg-white/10 px-3 py-1 rounded-full backdrop-blur-sm">
-                <Clock className="w-4 h-4" />
-                12 min read
-              </span>
-              <span className="flex items-center gap-1 bg-white/10 px-3 py-1 rounded-full backdrop-blur-sm">
-                <User className="w-4 h-4" />
-                Dr. Keerthy Sunder
-              </span>
+        {/* Hero Section */}
+        <section className="container mx-auto px-4 py-8">
+          <div className="max-w-4xl mx-auto">
+            <div className="bg-blue-50 text-blue-700 px-4 py-2 rounded-full inline-block text-sm font-semibold mb-6">
+              Treatment Innovation
             </div>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
+            <h1 className="text-4xl md:text-5xl font-bold text-slate-900 mb-6 leading-tight">
               TMS for Anxiety in Veterans: A Promising Path Beyond Medication
             </h1>
-            <p className="text-xl md:text-2xl text-white/90 mb-8">
-              Discover how TMS therapy offers veterans breakthrough treatment for anxiety without the side effects of medication
-            </p>
-            <div className="flex flex-wrap justify-center gap-4">
-              <Button asChild size="lg" className="bg-white text-[#572670] hover:bg-gray-100">
-                <Link to="/veterans">Learn About Our Veterans Program</Link>
-              </Button>
-              <Button asChild size="lg" variant="outline" className="border-white text-white hover:bg-white/10">
-                <Link to="/contact">Schedule Consultation</Link>
-              </Button>
+            <div className="flex items-center gap-6 text-slate-600 mb-8">
+              <div className="flex items-center gap-2">
+                <img
+                  src={author.image}
+                  alt={author.name}
+                  className="w-10 h-10 rounded-full object-cover" />
+
+                <div>
+                  <p className="font-semibold text-slate-900">{author.name}</p>
+                  <p className="text-sm">{author.credentials}</p>
+                </div>
+              </div>
+              <span>•</span>
+              <time dateTime={publishDate} className="text-sm">
+                {new Date(publishDate).toLocaleDateString('en-US', {
+                  year: 'numeric',
+                  month: 'long',
+                  day: 'numeric'
+                })}
+              </time>
             </div>
+            <img
+              src="https://res.cloudinary.com/de4kw1t2i/image/upload/v1763033666/6_rrkhgo.png"
+              alt="TMS for Anxiety in Veterans"
+              className="w-full h-[400px] object-cover rounded-2xl shadow-xl mb-12" />
+
           </div>
-        </div>
-      </section>
+        </section>
 
-      {/* Main Content */}
-      <div className="container mx-auto px-4 py-12">
-        <div className="grid lg:grid-cols-4 gap-8">
-          {/* Table of Contents - Sticky Sidebar */}
-          <aside className="lg:col-span-1">
-            <div className="lg:sticky lg:top-24">
-              <Card className="border-[#572670]/20">
-                <CardContent className="p-6">
-                  <h3 className="font-bold text-lg mb-4 text-[#572670]">Table of Contents</h3>
-                  <nav className="space-y-2">
-                    {tocItems.map((item) => (
-                      <button
-                        key={item.id}
-                        onClick={() => scrollToSection(item.id)}
-                        className={`block w-full text-left px-3 py-2 rounded-md text-sm transition-all ${
-                          activeSection === item.id
-                            ? 'bg-[#572670] text-white font-medium'
-                            : 'text-gray-700 hover:bg-[#572670]/10'
-                        }`}
-                      >
-                        {item.label}
-                      </button>
-                    ))}
-                  </nav>
-                  <div className="mt-6 pt-6 border-t">
-                    <Button asChild className="w-full bg-[#572670] hover:bg-[#7B3FA0]">
-                      <Link to="/contact">Schedule Consultation</Link>
-                    </Button>
-                  </div>
-                </CardContent>
-              </Card>
-            </div>
-          </aside>
-
-          {/* Article Content */}
-          <article className="lg:col-span-3 prose prose-lg max-w-none">
+        {/* Content */}
+        <article className="container mx-auto px-4 pb-16">
+          <div className="max-w-4xl mx-auto prose prose-lg">
+            
             {/* Introduction */}
-            <div className="mb-12">
-              <img
-                src="https://res.cloudinary.com/de4kw1t2i/image/upload/v1763033666/6_rrkhgo.png"
-                alt="TMS for Anxiety in Veterans"
-                className="w-full h-64 md:h-96 object-cover rounded-lg mb-6"
-              />
-              <p className="text-xl text-gray-700 leading-relaxed">
-                Anxiety disorders affect millions of veterans, often as a standalone condition separate from PTSD. While many associate veteran mental health primarily with combat-related PTSD, <strong>veteran anxiety</strong> can manifest independently and requires specialized attention and treatment. For veterans with anxiety who haven't found relief through traditional treatments, Transcranial Magnetic Stimulation (TMS) offers a promising alternative path—one that works by directly regulating the brain's anxiety centers without the side effects of medication.
+            <section className="mb-12">
+              <h2 className="text-3xl font-bold text-slate-900 mb-6">Understanding Anxiety in Veterans</h2>
+              <p className="text-lg text-slate-700 leading-relaxed mb-6">
+                Anxiety disorders affect millions of veterans, often as a standalone condition separate from PTSD. While many associate veteran mental health primarily with combat-related PTSD, veteran anxiety can manifest independently and requires specialized attention and treatment.
               </p>
-            </div>
+              <p className="text-lg text-slate-700 leading-relaxed mb-6">
+                For veterans with anxiety who haven't found relief through traditional treatments, Transcranial Magnetic Stimulation (TMS) offers a promising alternative path—one that works by directly regulating the brain's anxiety centers without the side effects of medication.
+              </p>
+            </section>
 
-            {/* Section 1: Understanding Anxiety */}
-            <section ref={(el) => sectionsRef.current['understanding'] = el} className="mb-12">
-              <h2 className="text-3xl font-bold text-[#572670] mb-6">Understanding Anxiety in Veterans</h2>
-              
-              <Card className="bg-gradient-to-br from-[#572670]/5 to-transparent border-[#572670]/20 mb-6">
-                <CardContent className="p-6">
-                  <h3 className="text-2xl font-bold mb-4">Recognizing Anxiety in Veterans</h3>
-                  <div className="grid md:grid-cols-2 gap-6">
-                    <div>
-                      <h4 className="font-bold mb-3 text-[#572670]">Physical Symptoms</h4>
-                      <ul className="space-y-2 text-gray-700">
-                        <li className="flex items-start gap-2">
-                          <CheckCircle2 className="w-5 h-5 text-green-600 mt-1 flex-shrink-0" />
-                          <span>Rapid heartbeat or palpitations</span>
-                        </li>
-                        <li className="flex items-start gap-2">
-                          <CheckCircle2 className="w-5 h-5 text-green-600 mt-1 flex-shrink-0" />
-                          <span>Sweating and trembling</span>
-                        </li>
-                        <li className="flex items-start gap-2">
-                          <CheckCircle2 className="w-5 h-5 text-green-600 mt-1 flex-shrink-0" />
-                          <span>Shortness of breath</span>
-                        </li>
-                        <li className="flex items-start gap-2">
-                          <CheckCircle2 className="w-5 h-5 text-green-600 mt-1 flex-shrink-0" />
-                          <span>Muscle tension and headaches</span>
-                        </li>
-                      </ul>
-                    </div>
-                    <div>
-                      <h4 className="font-bold mb-3 text-[#572670]">Psychological Symptoms</h4>
-                      <ul className="space-y-2 text-gray-700">
-                        <li className="flex items-start gap-2">
-                          <CheckCircle2 className="w-5 h-5 text-green-600 mt-1 flex-shrink-0" />
-                          <span>Excessive worry or fear</span>
-                        </li>
-                        <li className="flex items-start gap-2">
-                          <CheckCircle2 className="w-5 h-5 text-green-600 mt-1 flex-shrink-0" />
-                          <span>Difficulty concentrating</span>
-                        </li>
-                        <li className="flex items-start gap-2">
-                          <CheckCircle2 className="w-5 h-5 text-green-600 mt-1 flex-shrink-0" />
-                          <span>Restlessness or feeling on edge</span>
-                        </li>
-                        <li className="flex items-start gap-2">
-                          <CheckCircle2 className="w-5 h-5 text-green-600 mt-1 flex-shrink-0" />
-                          <span>Irritability</span>
-                        </li>
-                      </ul>
-                    </div>
+            {/* Anxiety as Standalone Disorder */}
+            <section className="mb-12">
+              <h2 className="text-3xl font-bold text-slate-900 mb-6">Anxiety as a Standalone Disorder in Veterans</h2>
+              <div className="bg-slate-50 rounded-xl p-8 mb-6">
+                <p className="text-lg text-slate-700 leading-relaxed mb-6">
+                  While often discussed alongside PTSD, anxiety disorders can occur independently in veterans. The stress of military service, transitions to civilian life, and ongoing life challenges can trigger various anxiety conditions.
+                </p>
+                <h3 className="text-2xl font-bold text-slate-900 mb-4">Common Anxiety Disorders in Veterans:</h3>
+                <div className="space-y-4">
+                  <div className="border-l-4 border-blue-500 pl-6">
+                    <h4 className="text-xl font-semibold text-slate-900 mb-2">Generalized Anxiety Disorder (GAD)</h4>
+                    <p className="text-slate-700">Persistent, excessive worry about various aspects of life including health, finances, work, and family.</p>
                   </div>
-                </CardContent>
-              </Card>
+                  <div className="border-l-4 border-blue-500 pl-6">
+                    <h4 className="text-xl font-semibold text-slate-900 mb-2">Panic Disorder</h4>
+                    <p className="text-slate-700">Recurrent, unexpected panic attacks with intense physical symptoms and fear of future attacks.</p>
+                  </div>
+                  <div className="border-l-4 border-blue-500 pl-6">
+                    <h4 className="text-xl font-semibold text-slate-900 mb-2">Social Anxiety Disorder</h4>
+                    <p className="text-slate-700">Intense fear of social situations, particularly common during the transition from military to civilian life.</p>
+                  </div>
+                  <div className="border-l-4 border-blue-500 pl-6">
+                    <h4 className="text-xl font-semibold text-slate-900 mb-2">Specific Phobias</h4>
+                    <p className="text-slate-700">Intense fear of specific objects or situations, which may develop or worsen during service.</p>
+                  </div>
+                </div>
+              </div>
+            </section>
 
+            {/* Signs and Symptoms */}
+            <section className="mb-12">
+              <h2 className="text-3xl font-bold text-slate-900 mb-6">Recognizing Anxiety in Veterans</h2>
               <img
                 src="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/66e6e1ae-8cc3-4469-bfaf-b1f3f3d07006.webp"
                 alt="Understanding anxiety in veterans"
-                className="w-full h-64 object-cover rounded-lg mb-6"
-              />
-            </section>
+                className="w-full h-[300px] object-cover rounded-xl shadow-lg mb-6" />
 
-            {/* Section 2: Standalone Disorder */}
-            <section ref={(el) => sectionsRef.current['standalone'] = el} className="mb-12">
-              <h2 className="text-3xl font-bold text-[#572670] mb-6">Anxiety as a Standalone Disorder in Veterans</h2>
-              
-              <p className="mb-6">
-                While often discussed alongside PTSD, anxiety disorders can occur independently in veterans. The stress of military service, transitions to civilian life, and ongoing life challenges can trigger various anxiety conditions.
-              </p>
-
-              <div className="grid md:grid-cols-2 gap-4 my-6">
-                <Card className="border-[#572670]/20">
-                  <CardContent className="p-6">
-                    <h4 className="font-bold mb-2 text-[#572670]">Generalized Anxiety Disorder (GAD)</h4>
-                    <p className="text-sm text-gray-600">Persistent, excessive worry about various aspects of life including health, finances, work, and family</p>
-                  </CardContent>
-                </Card>
-                <Card className="border-[#572670]/20">
-                  <CardContent className="p-6">
-                    <h4 className="font-bold mb-2 text-[#572670]">Panic Disorder</h4>
-                    <p className="text-sm text-gray-600">Recurrent, unexpected panic attacks with intense physical symptoms and fear of future attacks</p>
-                  </CardContent>
-                </Card>
-                <Card className="border-[#572670]/20">
-                  <CardContent className="p-6">
-                    <h4 className="font-bold mb-2 text-[#572670]">Social Anxiety Disorder</h4>
-                    <p className="text-sm text-gray-600">Intense fear of social situations, particularly common during transition from military to civilian life</p>
-                  </CardContent>
-                </Card>
-                <Card className="border-[#572670]/20">
-                  <CardContent className="p-6">
-                    <h4 className="font-bold mb-2 text-[#572670]">Specific Phobias</h4>
-                    <p className="text-sm text-gray-600">Intense fear of specific objects or situations, which may develop or worsen during service</p>
-                  </CardContent>
-                </Card>
+              <div className="grid md:grid-cols-2 gap-6 mb-6">
+                <div className="bg-blue-50 rounded-xl p-6">
+                  <h3 className="text-xl font-bold text-slate-900 mb-4">Physical Symptoms</h3>
+                  <ul className="list-disc pl-6 text-slate-700 space-y-2">
+                    <li>Rapid heartbeat or palpitations</li>
+                    <li>Sweating and trembling</li>
+                    <li>Shortness of breath</li>
+                    <li>Muscle tension and headaches</li>
+                    <li>Fatigue and sleep disturbances</li>
+                    <li>Gastrointestinal issues</li>
+                  </ul>
+                </div>
+                <div className="bg-purple-50 rounded-xl p-6">
+                  <h3 className="text-xl font-bold text-slate-900 mb-4">Psychological Symptoms</h3>
+                  <ul className="list-disc pl-6 text-slate-700 space-y-2">
+                    <li>Excessive worry or fear</li>
+                    <li>Difficulty concentrating</li>
+                    <li>Restlessness or feeling on edge</li>
+                    <li>Irritability</li>
+                    <li>Sense of impending doom</li>
+                    <li>Avoidance of certain situations</li>
+                  </ul>
+                </div>
               </div>
             </section>
 
-            {/* Section 3: VA Support */}
-            <section ref={(el) => sectionsRef.current['va-support'] = el} className="mb-12">
-              <h2 className="text-3xl font-bold text-[#572670] mb-6">VA Anxiety Support and Resources</h2>
-              
-              <Card className="bg-green-50 border-green-200 mb-6">
-                <CardContent className="p-6">
-                  <h3 className="text-xl font-bold mb-4">VA Benefits for Anxiety</h3>
-                  <ul className="space-y-3">
-                    <li className="flex items-start gap-2">
-                      <CheckCircle2 className="w-5 h-5 text-green-600 mt-1 flex-shrink-0" />
-                      <span><strong>Disability Compensation:</strong> Veterans can receive disability ratings for anxiety disorders</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <CheckCircle2 className="w-5 h-5 text-green-600 mt-1 flex-shrink-0" />
-                      <span><strong>Mental Health Services:</strong> Access to psychiatrists, psychologists, and therapists</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <CheckCircle2 className="w-5 h-5 text-green-600 mt-1 flex-shrink-0" />
-                      <span><strong>Evidence-Based Treatments:</strong> Cognitive Behavioral Therapy (CBT) and other proven interventions</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <CheckCircle2 className="w-5 h-5 text-green-600 mt-1 flex-shrink-0" />
-                      <span><strong>Crisis Support:</strong> 24/7 Veterans Crisis Line (988, then press 1)</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <CheckCircle2 className="w-5 h-5 text-green-600 mt-1 flex-shrink-0" />
-                      <span><strong>TMS Therapy:</strong> Growing availability at select VA facilities</span>
-                    </li>
-                  </ul>
-                </CardContent>
-              </Card>
+            {/* VA Anxiety Support */}
+            <section className="mb-12">
+              <h2 className="text-3xl font-bold text-slate-900 mb-6">VA Anxiety Support and Resources</h2>
+              <p className="text-lg text-slate-700 leading-relaxed mb-6">
+                The Department of Veterans Affairs (VA) recognizes anxiety disorders as a significant health concern for veterans and offers various support services:
+              </p>
+              <div className="bg-green-50 border-l-4 border-green-500 p-6 rounded-lg mb-6">
+                <h3 className="text-xl font-bold text-slate-900 mb-4">VA Benefits for Anxiety:</h3>
+                <ul className="list-disc pl-6 text-slate-700 space-y-2">
+                  <li><strong>Disability Compensation:</strong> Veterans can receive disability ratings for anxiety disorders</li>
+                  <li><strong>Mental Health Services:</strong> Access to psychiatrists, psychologists, and therapists</li>
+                  <li><strong>Evidence-Based Treatments:</strong> Cognitive Behavioral Therapy (CBT) and other proven interventions</li>
+                  <li><strong>Medication Management:</strong> Access to anxiety medications through VA pharmacies</li>
+                  <li><strong>Crisis Support:</strong> 24/7 Veterans Crisis Line (988, then press 1)</li>
+                  <li><strong>TMS Therapy:</strong> Growing availability of TMS treatment at select VA facilities</li>
+                </ul>
+              </div>
             </section>
 
-            {/* Section 4: How TMS Works */}
-            <section ref={(el) => sectionsRef.current['how-tms-works'] = el} className="mb-12">
-              <h2 className="text-3xl font-bold text-[#572670] mb-6">How TMS Works for Anxiety</h2>
-              
+            {/* How TMS Works for Anxiety */}
+            <section className="mb-12">
+              <h2 className="text-3xl font-bold text-slate-900 mb-6">How TMS Works for Anxiety</h2>
               <img
-                src="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/76caee2d-5629-4dc1-a3b4-8c5cea23ede6.webp"
+                src="https://images.unsplash.com/photo-1662596594694-a7ec7c2f8979?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MTg3MTl8MHwxfHNlYXJjaHwxfHxBbiUyMGltYWdlJTIwZGVwaWN0aW5nJTIwVE1TJTIwdGhlcmFweSUyMGZvciUyMGFueGlldHklMkMlMjBzaG93Y2FzaW5nJTIwYSUyMHNlcmVuZSUyMGFuZCUyMGNhbG1pbmclMjBlbnZpcm9ubWVudC58ZW58MHx8fHwxNzYyNzgxMjg4fDA&ixlib=rb-4.1.0&q=80&w=200$w=800"
                 alt="TMS therapy for anxiety"
-                className="w-full h-64 object-cover rounded-lg mb-6"
-              />
+                className="w-full h-[300px] object-cover rounded-xl shadow-lg mb-6" />
 
-              <p className="mb-6">
+              <p className="text-lg text-slate-700 leading-relaxed mb-6">
                 Transcranial Magnetic Stimulation (TMS) is a non-invasive treatment that uses magnetic pulses to stimulate specific areas of the brain involved in mood regulation and anxiety processing.
               </p>
-
-              <Card className="bg-gradient-to-br from-[#572670]/5 to-transparent border-[#572670]/20 mb-6">
-                <CardContent className="p-6">
-                  <h3 className="text-2xl font-bold mb-4">The Science Behind TMS for Anxiety</h3>
-                  <div className="space-y-4">
-                    <div className="border-l-4 border-[#572670] pl-6">
-                      <h4 className="font-bold mb-2">Targeting Anxiety Centers</h4>
-                      <p className="text-gray-700">TMS targets the dorsolateral prefrontal cortex (DLPFC) and other brain regions involved in emotional regulation, fear response modulation, and stress response management</p>
-                    </div>
-                    <div className="border-l-4 border-blue-500 pl-6">
-                      <h4 className="font-bold mb-2">Neuroplasticity and Healing</h4>
-                      <p className="text-gray-700">By repeatedly stimulating these areas, TMS promotes neuroplasticity—the brain's ability to form new neural connections and pathways</p>
-                    </div>
-                    <div className="border-l-4 border-green-500 pl-6">
-                      <h4 className="font-bold mb-2">The Treatment Process</h4>
-                      <ul className="list-disc pl-6 text-gray-700 space-y-1">
-                        <li>Sessions last 20-40 minutes</li>
-                        <li>Typically 5 days per week for 4-6 weeks</li>
-                        <li>No anesthesia or sedation required</li>
-                        <li>Return to normal activities immediately after</li>
-                      </ul>
-                    </div>
+              <div className="bg-gradient-to-br from-purple-50 to-blue-50 rounded-xl p-8 mb-6">
+                <h3 className="text-2xl font-bold text-slate-900 mb-4">The Science Behind TMS for Anxiety</h3>
+                <div className="space-y-6">
+                  <div>
+                    <h4 className="text-xl font-semibold text-slate-900 mb-3">Targeting Anxiety Centers</h4>
+                    <p className="text-slate-700 mb-2">
+                      TMS targets the dorsolateral prefrontal cortex (DLPFC) and other brain regions involved in:
+                    </p>
+                    <ul className="list-disc pl-6 text-slate-700 space-y-1">
+                      <li>Emotional regulation</li>
+                      <li>Fear response modulation</li>
+                      <li>Worry and rumination control</li>
+                      <li>Stress response management</li>
+                    </ul>
                   </div>
-                </CardContent>
-              </Card>
-            </section>
-
-            {/* Section 5: Benefits */}
-            <section ref={(el) => sectionsRef.current['benefits'] = el} className="mb-12">
-              <h2 className="text-3xl font-bold text-[#572670] mb-6">Benefits of TMS for Veterans with Anxiety</h2>
-              
-              <Card className="bg-blue-50 border-blue-200 mb-6">
-                <CardContent className="p-6">
-                  <h3 className="text-xl font-bold mb-4">Treatment Outcomes</h3>
-                  <div className="grid md:grid-cols-3 gap-6 mb-6">
-                    <div className="text-center">
-                      <div className="text-4xl font-bold text-[#572670] mb-2">60-70%</div>
-                      <p className="text-gray-700">of patients show significant anxiety reduction</p>
-                    </div>
-                    <div className="text-center">
-                      <div className="text-4xl font-bold text-blue-600 mb-2">50%+</div>
-                      <p className="text-gray-700">achieve remission of anxiety symptoms</p>
-                    </div>
-                    <div className="text-center">
-                      <div className="text-4xl font-bold text-green-600 mb-2">3-4 weeks</div>
-                      <p className="text-gray-700">typical timeframe to notice improvements</p>
-                    </div>
+                  <div>
+                    <h4 className="text-xl font-semibold text-slate-900 mb-3">Neuroplasticity and Healing</h4>
+                    <p className="text-slate-700">
+                      By repeatedly stimulating these areas, TMS promotes neuroplasticity—the brain's ability to form new neural connections and pathways. This helps "retrain" the brain's anxiety response, leading to lasting improvements.
+                    </p>
                   </div>
-                  <h4 className="font-bold mb-3">What Veterans Report:</h4>
-                  <div className="grid md:grid-cols-2 gap-3">
-                    <div className="flex items-start gap-2">
-                      <CheckCircle2 className="w-5 h-5 text-green-600 mt-1 flex-shrink-0" />
-                      <span>Reduced frequency and intensity of anxiety attacks</span>
-                    </div>
-                    <div className="flex items-start gap-2">
-                      <CheckCircle2 className="w-5 h-5 text-green-600 mt-1 flex-shrink-0" />
-                      <span>Improved ability to manage stressful situations</span>
-                    </div>
-                    <div className="flex items-start gap-2">
-                      <CheckCircle2 className="w-5 h-5 text-green-600 mt-1 flex-shrink-0" />
-                      <span>Better sleep quality</span>
-                    </div>
-                    <div className="flex items-start gap-2">
-                      <CheckCircle2 className="w-5 h-5 text-green-600 mt-1 flex-shrink-0" />
-                      <span>Enhanced concentration and focus</span>
-                    </div>
-                    <div className="flex items-start gap-2">
-                      <CheckCircle2 className="w-5 h-5 text-green-600 mt-1 flex-shrink-0" />
-                      <span>Greater engagement in daily activities</span>
-                    </div>
-                    <div className="flex items-start gap-2">
-                      <CheckCircle2 className="w-5 h-5 text-green-600 mt-1 flex-shrink-0" />
-                      <span>Reduced reliance on anti-anxiety medications</span>
-                    </div>
+                  <div>
+                    <h4 className="text-xl font-semibold text-slate-900 mb-3">The Treatment Process</h4>
+                    <ul className="list-disc pl-6 text-slate-700 space-y-2">
+                      <li>Sessions last 20-40 minutes</li>
+                      <li>Typically 5 days per week for 4-6 weeks</li>
+                      <li>No anesthesia or sedation required</li>
+                      <li>Return to normal activities immediately after</li>
+                      <li>Minimal to no side effects</li>
+                    </ul>
                   </div>
-                </CardContent>
-              </Card>
-            </section>
-
-            {/* Author Box */}
-            <AuthorBox
-              name="Dr. Keerthy Sunder"
-              role="Board-Certified Psychiatrist | Medical Director at KarmaTMS"
-              bio="Dr. Keerthy Sunder is a board-certified psychiatrist specializing in TMS therapy for veterans and treatment-resistant mental health conditions. With extensive experience in neuroscience and innovative treatment modalities, Dr. Sunder is dedicated to helping veterans overcome PTSD, depression, and anxiety through evidence-based, compassionate care."
-              image="https://www.prtms.com/wp-content/uploads/2023/03/Dr.-Keerthy-Sunder-scaled.jpg"
-            />
-
-            {/* FAQ Section */}
-            <section ref={(el) => sectionsRef.current['faqs'] = el} className="mb-12 mt-12">
-              <h2 className="text-3xl font-bold text-[#572670] mb-6">Frequently Asked Questions</h2>
-              
-              <Accordion type="single" collapsible className="w-full space-y-2">
-                {faqs.map((faq, index) => (
-                  <AccordionItem
-                    key={index}
-                    value={`item-${index}`}
-                    className="border border-gray-200 rounded-lg px-4 data-[state=open]:border-[#572670]"
-                  >
-                    <AccordionTrigger className="text-left font-semibold hover:text-[#572670] hover:no-underline">
-                      {faq.question}
-                    </AccordionTrigger>
-                    <AccordionContent className="text-gray-700 pt-2 pb-4">
-                      {faq.answer}
-                    </AccordionContent>
-                  </AccordionItem>
-                ))}
-              </Accordion>
-            </section>
-
-            {/* CTA Section */}
-            <Card className="bg-gradient-to-br from-[#572670] to-[#7B3FA0] text-white mb-12">
-              <CardContent className="p-8 text-center">
-                <h3 className="text-2xl md:text-3xl font-bold mb-4">
-                  Ready to Break Free from Anxiety?
-                </h3>
-                <p className="text-lg mb-6 text-white/90">
-                  Discover how TMS can help you overcome anxiety without the side effects of medication. Specialized care for veterans at KarmaTMS.
-                </p>
-                <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                  <Button asChild size="lg" className="bg-white text-[#572670] hover:bg-gray-100">
-                    <Link to="/contact">Schedule Free Consultation</Link>
-                  </Button>
-                  <Button asChild size="lg" variant="outline" className="border-white text-white hover:bg-white/10">
-                    <Link to="/veterans">Learn About Veterans Program</Link>
-                  </Button>
                 </div>
-              </CardContent>
-            </Card>
-
-            {/* Related Posts */}
-            <section className="mb-12">
-              <h2 className="text-3xl font-bold text-[#572670] mb-6">Related Articles</h2>
-              <div className="grid md:grid-cols-3 gap-6">
-                {relatedPosts.map((post, index) => (
-                  <Card key={index} className="border-[#572670]/20 overflow-hidden hover:shadow-lg transition-shadow">
-                    <img
-                      src={post.image}
-                      alt={post.title}
-                      className="w-full h-48 object-cover"
-                    />
-                    <CardContent className="p-6">
-                      <h3 className="font-bold text-lg mb-2 hover:text-[#572670] transition-colors">
-                        <Link to={post.link}>{post.title}</Link>
-                      </h3>
-                      <p className="text-gray-600 text-sm mb-4">{post.excerpt}</p>
-                      <Button asChild variant="ghost" className="text-[#572670] p-0 h-auto hover:bg-transparent">
-                        <Link to={post.link} className="inline-flex items-center gap-2">
-                          Read More <ArrowRight className="w-4 h-4" />
-                        </Link>
-                      </Button>
-                    </CardContent>
-                  </Card>
-                ))}
               </div>
             </section>
-          </article>
+
+            {/* Brain Regulation Through TMS */}
+            <section className="mb-12">
+              <h2 className="text-3xl font-bold text-slate-900 mb-6">Brain Regulation Through TMS: Beyond Symptom Management</h2>
+              <p className="text-lg text-slate-700 leading-relaxed mb-6">
+                Unlike medications that work systemically throughout the body, TMS offers targeted brain regulation:
+              </p>
+              <div className="grid md:grid-cols-2 gap-6 mb-6">
+                <div className="bg-slate-50 rounded-xl p-6">
+                  <h3 className="text-xl font-bold text-slate-900 mb-4">Traditional Medication Approach</h3>
+                  <ul className="space-y-3 text-slate-700">
+                    <li className="flex items-start gap-2">
+                      <span className="text-red-500 mt-1">✗</span>
+                      <span>Systemic side effects</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-red-500 mt-1">✗</span>
+                      <span>Weight gain, sexual dysfunction</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-red-500 mt-1">✗</span>
+                      <span>Dependency concerns</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-red-500 mt-1">✗</span>
+                      <span>Trial and error process</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-red-500 mt-1">✗</span>
+                      <span>Daily pill requirements</span>
+                    </li>
+                  </ul>
+                </div>
+                <div className="bg-gradient-to-br from-green-50 to-blue-50 rounded-xl p-6">
+                  <h3 className="text-xl font-bold text-slate-900 mb-4">TMS Approach</h3>
+                  <ul className="space-y-3 text-slate-700">
+                    <li className="flex items-start gap-2">
+                      <span className="text-green-500 mt-1">✓</span>
+                      <span>Targeted brain stimulation</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-green-500 mt-1">✓</span>
+                      <span>Minimal side effects</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-green-500 mt-1">✓</span>
+                      <span>No systemic medications</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-green-500 mt-1">✓</span>
+                      <span>Promotes lasting brain changes</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-green-500 mt-1">✓</span>
+                      <span>Non-invasive and well-tolerated</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </section>
+
+            {/* Benefits Beyond Medication */}
+            <section className="mb-12">
+              <h2 className="text-3xl font-bold text-slate-900 mb-6">Benefits of TMS for Veterans with Anxiety</h2>
+              <div className="space-y-6">
+                <div className="bg-blue-50 rounded-xl p-6">
+                  <h3 className="text-xl font-bold text-slate-900 mb-3">1. No Systemic Side Effects</h3>
+                  <p className="text-slate-700">
+                    TMS doesn't cause weight gain, sexual dysfunction, or the cognitive fog often associated with anxiety medications. This is particularly important for veterans returning to work or education.
+                  </p>
+                </div>
+                <div className="bg-purple-50 rounded-xl p-6">
+                  <h3 className="text-xl font-bold text-slate-900 mb-3">2. Effective for Treatment-Resistant Anxiety</h3>
+                  <p className="text-slate-700">
+                    Studies show TMS can be effective even when multiple medications have failed, offering new hope for veterans who haven't found relief through traditional treatments.
+                  </p>
+                </div>
+                <div className="bg-green-50 rounded-xl p-6">
+                  <h3 className="text-xl font-bold text-slate-900 mb-3">3. Can Be Combined with Other Treatments</h3>
+                  <p className="text-slate-700">
+                    TMS can be used alongside therapy, reduced medication doses, or other interventions, providing a comprehensive treatment approach.
+                  </p>
+                </div>
+                <div className="bg-yellow-50 rounded-xl p-6">
+                  <h3 className="text-xl font-bold text-slate-900 mb-3">4. Lasting Results</h3>
+                  <p className="text-slate-700">
+                    Rather than requiring daily pills, TMS promotes lasting changes in brain function, with many patients experiencing sustained improvement after treatment completion.
+                  </p>
+                </div>
+              </div>
+            </section>
+
+            {/* Treatment Outcomes */}
+            <section className="mb-12">
+              <h2 className="text-3xl font-bold text-slate-900 mb-6">Treatment Outcomes: What Veterans Can Expect</h2>
+              <p className="text-lg text-slate-700 leading-relaxed mb-6">
+                Clinical studies and real-world outcomes demonstrate the effectiveness of TMS for anxiety in veterans:
+              </p>
+              <div className="bg-gradient-to-br from-purple-50 to-blue-50 rounded-xl p-8 mb-6">
+                <h3 className="text-2xl font-bold text-slate-900 mb-6">Clinical Evidence:</h3>
+                <div className="grid md:grid-cols-3 gap-6">
+                  <div className="text-center">
+                    <div className="text-4xl font-bold text-purple-600 mb-2">60-70%</div>
+                    <p className="text-slate-700">of patients show significant anxiety reduction</p>
+                  </div>
+                  <div className="text-center">
+                    <div className="text-4xl font-bold text-blue-600 mb-2">50%+</div>
+                    <p className="text-slate-700">achieve remission of anxiety symptoms</p>
+                  </div>
+                  <div className="text-center">
+                    <div className="text-4xl font-bold text-green-600 mb-2">3-4 weeks</div>
+                    <p className="text-slate-700">typical timeframe to notice improvements</p>
+                  </div>
+                </div>
+              </div>
+              <div className="bg-slate-50 border-l-4 border-purple-500 p-6 rounded-lg">
+                <h4 className="text-xl font-bold text-slate-900 mb-3">What Veterans Report:</h4>
+                <ul className="list-disc pl-6 text-slate-700 space-y-2">
+                  <li>Reduced frequency and intensity of anxiety attacks</li>
+                  <li>Improved ability to manage stressful situations</li>
+                  <li>Better sleep quality</li>
+                  <li>Enhanced concentration and focus</li>
+                  <li>Greater engagement in daily activities and relationships</li>
+                  <li>Reduced reliance on anti-anxiety medications</li>
+                </ul>
+              </div>
+            </section>
+
+            {/* Who Is a Good Candidate */}
+            <section className="mb-12">
+              <h2 className="text-3xl font-bold text-slate-900 mb-6">Is TMS Right for Your Anxiety?</h2>
+              <p className="text-lg text-slate-700 leading-relaxed mb-6">
+                TMS may be an excellent option for veterans with anxiety who:
+              </p>
+              <div className="space-y-3 mb-6">
+                <div className="flex items-start gap-3 bg-slate-50 p-4 rounded-lg">
+                  <span className="text-green-500 text-xl">✓</span>
+                  <p className="text-slate-700">Haven't responded adequately to medications</p>
+                </div>
+                <div className="flex items-start gap-3 bg-slate-50 p-4 rounded-lg">
+                  <span className="text-green-500 text-xl">✓</span>
+                  <p className="text-slate-700">Experience significant side effects from anxiety medications</p>
+                </div>
+                <div className="flex items-start gap-3 bg-slate-50 p-4 rounded-lg">
+                  <span className="text-green-500 text-xl">✓</span>
+                  <p className="text-slate-700">Want to reduce or eliminate medication use</p>
+                </div>
+                <div className="flex items-start gap-3 bg-slate-50 p-4 rounded-lg">
+                  <span className="text-green-500 text-xl">✓</span>
+                  <p className="text-slate-700">Are committed to a 4-6 week treatment course</p>
+                </div>
+                <div className="flex items-start gap-3 bg-slate-50 p-4 rounded-lg">
+                  <span className="text-green-500 text-xl">✓</span>
+                  <p className="text-slate-700">Prefer non-invasive, medication-free treatment options</p>
+                </div>
+              </div>
+            </section>
+
+            {/* Getting Started */}
+            <section className="mb-12">
+              <h2 className="text-3xl font-bold text-slate-900 mb-6">Getting Started with TMS for Anxiety</h2>
+              <div className="bg-purple-50 rounded-xl p-8">
+                <h3 className="text-xl font-bold text-slate-900 mb-4">The Process at Karma TMS:</h3>
+                <ol className="space-y-4 text-slate-700">
+                  <li className="flex gap-3">
+                    <span className="flex-shrink-0 w-8 h-8 bg-purple-600 text-white rounded-full flex items-center justify-center font-bold">1</span>
+                    <div>
+                      <strong className="text-slate-900">Initial Consultation:</strong> Comprehensive evaluation of your anxiety symptoms and treatment history
+                    </div>
+                  </li>
+                  <li className="flex gap-3">
+                    <span className="flex-shrink-0 w-8 h-8 bg-purple-600 text-white rounded-full flex items-center justify-center font-bold">2</span>
+                    <div>
+                      <strong className="text-slate-900">Brain Mapping:</strong> Precise identification of treatment targets using advanced technology
+                    </div>
+                  </li>
+                  <li className="flex gap-3">
+                    <span className="flex-shrink-0 w-8 h-8 bg-purple-600 text-white rounded-full flex items-center justify-center font-bold">3</span>
+                    <div>
+                      <strong className="text-slate-900">Personalized Treatment Plan:</strong> Customized TMS protocol designed for your specific needs
+                    </div>
+                  </li>
+                  <li className="flex gap-3">
+                    <span className="flex-shrink-0 w-8 h-8 bg-purple-600 text-white rounded-full flex items-center justify-center font-bold">4</span>
+                    <div>
+                      <strong className="text-slate-900">Treatment Sessions:</strong> Regular TMS sessions over 4-6 weeks
+                    </div>
+                  </li>
+                  <li className="flex gap-3">
+                    <span className="flex-shrink-0 w-8 h-8 bg-purple-600 text-white rounded-full flex items-center justify-center font-bold">5</span>
+                    <div>
+                      <strong className="text-slate-900">Ongoing Support:</strong> Regular monitoring and follow-up care
+                    </div>
+                  </li>
+                </ol>
+              </div>
+            </section>
+
+            {/* Conclusion */}
+            <section className="mb-12">
+              <h2 className="text-3xl font-bold text-slate-900 mb-6">A New Path Forward for Veterans with Anxiety</h2>
+              <p className="text-lg text-slate-700 leading-relaxed mb-6">
+                For veterans with anxiety, TMS represents more than just another treatment option—it's a fundamentally different approach that addresses the root neurological causes of anxiety rather than just masking symptoms.
+              </p>
+              <p className="text-lg text-slate-700 leading-relaxed mb-6">
+                By directly regulating the brain's anxiety centers through targeted magnetic stimulation, TMS offers veterans a path to lasting relief without the burden of daily medications and their side effects.
+              </p>
+              <p className="text-lg text-slate-700 leading-relaxed mb-6">
+                If you're a veteran struggling with anxiety—whether generalized anxiety, panic disorder, or social anxiety—and traditional treatments haven't provided the relief you deserve, TMS therapy may be the answer you've been looking for.
+              </p>
+            </section>
+
+            {/* Related Articles */}
+            <section className="mb-12">
+              <h3 className="text-2xl font-bold text-slate-900 mb-6">Related Articles</h3>
+              <div className="grid md:grid-cols-2 gap-4">
+                <Link to="/blogs/understanding-ptsd-veterans" className="p-4 bg-slate-50 rounded-lg hover:bg-slate-100 transition-colors">
+                  <h4 className="font-semibold text-purple-600 mb-2">Understanding PTSD in Veterans</h4>
+                  <p className="text-sm text-slate-600">Learn about PTSD signs, symptoms, and treatment paths for veterans.</p>
+                </Link>
+                <Link to="/blogs/va-veterans-ptsd-tms" className="p-4 bg-slate-50 rounded-lg hover:bg-slate-100 transition-colors">
+                  <h4 className="font-semibold text-purple-600 mb-2">VA Approves TMS for Veterans</h4>
+                  <p className="text-sm text-slate-600">Discover how to access TMS therapy through VA benefits.</p>
+                </Link>
+              </div>
+            </section>
+
+          </div>
+        </article>
+
+        {/* Author Box */}
+        <div className="container mx-auto px-4 pb-16">
+          <div className="max-w-4xl mx-auto">
+            <AuthorBox
+              name={author.name}
+              credentials={author.credentials}
+              image={author.image}
+              bio={author.bio} />
+
+          </div>
         </div>
-      </div>
+
+        {/* CTA Section */}
+        <section className="bg-gradient-to-br from-blue-600 to-purple-600 py-16">
+          <div className="container mx-auto px-4">
+            <div className="max-w-4xl mx-auto text-center text-white">
+              <h2 className="text-3xl md:text-4xl font-bold mb-6">
+                Break Free from Anxiety with TMS Therapy
+              </h2>
+              <p className="text-xl mb-8 text-blue-100">
+                Discover how TMS can help you overcome anxiety without the side effects of medication. Specialized care for veterans at Karma TMS.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <Link
+                  to="/contact"
+                  className="inline-flex items-center justify-center gap-2 bg-white text-blue-600 px-8 py-4 rounded-lg hover:bg-blue-50 transition-colors font-semibold text-lg">
+
+                  <Calendar className="h-5 w-5" />
+                  Schedule Free Consultation
+                </Link>
+                <a
+                  href="tel:760-760-5675"
+                  className="inline-flex items-center justify-center gap-2 bg-blue-700 text-white px-8 py-4 rounded-lg hover:bg-blue-800 transition-colors font-semibold text-lg border-2 border-white">
+
+                  <Phone className="h-5 w-5" />
+                  (760) 449-8185
+                </a>
+              </div>
+              <p className="mt-6 text-blue-100">
+                Proudly serving veterans in Palm Springs, Twentynine Palms, and surrounding communities
+              </p>
+            </div>
+          </div>
+        </section>
+      </main>
 
       <FooterSection />
-    </>
-  );
-};
+    </>);
 
-export default TMSAnxietyVeteransBlogPostPage;
+}
