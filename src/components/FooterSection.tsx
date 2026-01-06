@@ -94,7 +94,7 @@ const FooterSection = () => {
             <div className="space-y-1 pt-3 border-t border-gray-700/50">
               <div className="group">
                 <div className="flex items-center gap-3 p-3 rounded-lg hover:bg-white/5 transition-all duration-200">
-                  <Phone className="h-5 w-5 text-[#572670] flex-shrink-0" />
+                  <Phone className="h-5 w-5 text-white flex-shrink-0" />
                   <div>
                     <div className="text-xs font-semibold text-gray-400 uppercase tracking-wide mb-0.5">Call Us</div>
                     <a href="tel:760-760-5675" className="text-sm font-medium text-white hover:text-[#572670] transition-colors">
@@ -106,10 +106,10 @@ const FooterSection = () => {
 
               <div className="group">
                 <div className="flex items-center gap-3 p-3 rounded-lg hover:bg-white/5 transition-all duration-200">
-                  <Mail className="h-5 w-5 text-[#572670] flex-shrink-0" />
+                  <Mail className="h-5 w-5 text-white flex-shrink-0" />
                   <div>
                     <div className="text-xs font-semibold text-gray-400 uppercase tracking-wide mb-0.5">Email</div>
-                    <a href="mailto:contact@karmatms.com" className="text-sm font-medium text-white hover:text-[#572670] transition-colors break-all">
+                    <a href="mailto:contact@karmatms.com" className="text-sm font-medium text-white hover:text-white transition-colors break-all">
                       contact@karmatms.com
                     </a>
                   </div>
@@ -118,7 +118,7 @@ const FooterSection = () => {
 
               <div className="group">
                 <div className="flex items-center gap-3 p-3 rounded-lg hover:bg-white/5 transition-all duration-200">
-                  <Clock className="h-5 w-5 text-[#572670] flex-shrink-0" />
+                  <Clock className="h-5 w-5 text-white flex-shrink-0" />
                   <div>
                     <div className="text-xs font-semibold text-gray-400 uppercase tracking-wide mb-0.5">Hours</div>
                     <div className="text-sm font-medium text-white">Mon-Fri: 8AM-6PM</div>
@@ -148,7 +148,7 @@ const FooterSection = () => {
 
               <div className="p-4 rounded-lg bg-white/5 border border-[#572670]/20 hover:border-[#572670]/40 transition-all duration-300">
                 <div className="flex items-start gap-3">
-                  <MapPin className="h-5 w-5 text-[#572670] mt-0.5 flex-shrink-0" />
+                  <MapPin className="h-5 w-5 text-white mt-0.5 flex-shrink-0" />
                   <div>
                     <div className="text-sm font-bold text-white mb-1">Rancho Mirage</div>
                     <div className="text-xs text-gray-300 leading-relaxed">
