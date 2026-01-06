@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 import { ChevronRight, Phone, Calendar } from 'lucide-react';
 
 export default function UnderstandingPTSDVeteransBlogPostPage() {
-  const publishDate = '2024-01-15';
+  const publishDate = '2024-10-20';
   const author = {
     name: 'Dr. Keerthy Sunder',
     credentials: 'MD, Board-Certified Psychiatrist',

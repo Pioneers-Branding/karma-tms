@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 import { ChevronRight, Phone, Calendar } from 'lucide-react';
 
 export default function TMSMigraineVeteransBlogPostPage() {
-  const publishDate = '2024-01-22';
+  const publishDate = '2024-11-10';
   const author = {
     name: 'Dr. Keerthy Sunder',
     credentials: 'MD, Board-Certified Psychiatrist',
