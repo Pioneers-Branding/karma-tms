@@ -271,41 +271,6 @@ const TestimonialsPage = () => {
         </div>
       </section>
 
-      {/* Schema Rating Overview */}
-      <section className="py-12">
-        <div className="container mx-auto px-4">
-          <Card className="bg-gradient-to-r from-[#572670] to-[#572670]/80 text-white">
-            <CardContent className="p-8 text-center">
-              <div className="max-w-2xl mx-auto">
-                <h3 className="text-2xl font-bold mb-4">
-                  Trusted by Patients Across the Coachella Valley
-                </h3>
-                <div className="flex items-center justify-center gap-4 mb-4">
-                  <div className="flex items-center gap-2">
-                    {[...Array(5)].map((_, i) =>
-                    <Star key={i} className="h-6 w-6 fill-yellow-400 text-yellow-400" />
-                    )}
-                  </div>
-                  <span className="text-2xl font-bold">4.9/5</span>
-                </div>
-                <p className="text-white/90 mb-6">
-                  Based on {testimonials.length}+ verified patient reviews
-                </p>
-                
-                <Button
-                    variant="secondary"
-                    className="bg-white text-[#572670] hover:bg-gray-100">
-
-                  Schedule Your Free Consultation
-                  <ChevronRight className="ml-2 h-4 w-4" />
-                </Button>
-                
-              </div>
-            </CardContent>
-          </Card>
-        </div>
-      </section>
-
       <FooterSection />
     </div>);
 
