@@ -72,7 +72,7 @@ const TestimonialsSection = () => {
     quote: "TMS therapy changed my life! This was a leap of faith and it worked out for me, TMS saved my life!",
     hasVideo: false,
     videoType: "youtube",
-    avatar: "https://images.unsplash.com/photo-1501196354995-cbb51c65aaea?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    avatar: "https://images.unsplash.com/photo-1552699611-e2c208d5d9cf?q=80&w=1108&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
     name: "Lynette I.",
