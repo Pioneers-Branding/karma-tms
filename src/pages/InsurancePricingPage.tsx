@@ -48,10 +48,8 @@ const InsurancePricingPage = () => {
   const acceptedInsurance = [
   { name: "Aetna", coverage: "Most TMS treatments", copay: "$20-50", logo: "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=80&h=40&fit=crop" },
   { name: "Anthem Blue Cross", coverage: "Comprehensive TMS coverage", copay: "$25-75", logo: "https://images.unsplash.com/photo-1559526324-593bc073d938?w=80&h=40&fit=crop" },
-  { name: "Cigna", coverage: "TMS with pre-authorization", copay: "$30-60", logo: "https://images.unsplash.com/photo-1551601651-2a8555f1a136?w=80&h=40&fit=crop" },
-  { name: "UnitedHealthcare", coverage: "Full TMS treatment series", copay: "$15-50", logo: "https://images.unsplash.com/photo-1752080193173-25f318f9cafb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MTg3MTl8MHwxfHNlYXJjaHwxfHxBJTIwY3JvcHBlZCUyMGltYWdlJTIwZnJvbSUyMFVuc3BsYXNoJTIwd2l0aCUyMGElMjB3aWR0aCUyMG9mJTIwODAlMjBwaXhlbHMlMjBhbmQlMjBhJTIwaGVpZ2h0JTIwb2YlMjA0MCUyMHBpeGVscy58ZW58MHx8fHwxNzU2MTI3MjUzfDA&ixlib=rb-4.1.0&q=80&w=200$w=80" },
-  { name: "Kaiser Permanente", coverage: "Limited TMS coverage", copay: "$40-80", logo: "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=80&h=40&fit=crop" },
-  { name: "Medicare", coverage: "TMS for qualifying conditions", copay: "20% coinsurance", logo: "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=80&h=40&fit=crop" }];
+  { name: "Cigna", coverage: "TMS with pre-authorization", copay: "$30-60", logo: "https://images.unsplash.com/photo-1551601651-2a8555f1a136?w=80&h=40&fit=crop" }
+  ];
 
 
   const cashPayPricing = [
@@ -167,8 +165,8 @@ const InsurancePricingPage = () => {
 
       {/* Insurance Verification Widget - removed as requested */}
       {/*
-                                                                                                                                                                                                                                                                                                                                                           <section className="py-20 bg-white"> ... </section>
-                                                                                                                                                                                                                                                                                                                                                           */}
+                                                                                                                                                                                                                                                                                                                                                             <section className="py-20 bg-white"> ... </section>
+                                                                                                                                                                                                                                                                                                                                                             */}
 
       {/* Accepted Insurance */}
       <section className="py-20 bg-gradient-to-br from-slate-50 to-purple-50">
@@ -229,8 +227,8 @@ const InsurancePricingPage = () => {
 
       {/* Self-Pay Pricing - removed as requested */}
       {/*
-                                                                                                                                                                                                                                                                                                                                                           <section className="py-20 bg-white"> ... </section>
-                                                                                                                                                                                                                                                                                                                                                           */}
+                                                                                                                                                                                                                                                                                                                                                             <section className="py-20 bg-white"> ... </section>
+                                                                                                                                                                                                                                                                                                                                                             */}
 
       {/* Financing Options Banner */}
       <section className="py-20 bg-gradient-to-r from-[#572670] to-purple-600">
