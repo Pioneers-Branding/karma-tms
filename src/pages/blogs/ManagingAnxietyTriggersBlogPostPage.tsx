@@ -10,16 +10,16 @@ import {
   BreadcrumbLink,
   BreadcrumbList,
   BreadcrumbPage,
-  BreadcrumbSeparator,
-} from '@/components/ui/breadcrumb';
+  BreadcrumbSeparator } from
+'@/components/ui/breadcrumb';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import {
   Accordion,
   AccordionContent,
   AccordionItem,
-  AccordionTrigger,
-} from '@/components/ui/accordion';
+  AccordionTrigger } from
+'@/components/ui/accordion';
 import { Calendar, Clock, User, CheckCircle2, ArrowRight } from 'lucide-react';
 import AuthorBox from '@/components/AuthorBox';
 
@@ -28,13 +28,13 @@ const ManagingAnxietyTriggersBlogPostPage = () => {
   const sectionsRef = useRef<{[key: string]: HTMLElement | null;}>({});
 
   const tocItems = [
-    { id: 'understanding-triggers', label: 'Understanding Anxiety Triggers' },
-    { id: 'identifying-triggers', label: 'Identifying Your Triggers' },
-    { id: 'common-triggers', label: 'Common Anxiety Triggers' },
-    { id: 'management-strategies', label: 'Management Strategies' },
-    { id: 'long-term-solutions', label: 'Long-Term Solutions' },
-    { id: 'faqs', label: 'Frequently Asked Questions' },
-  ];
+  { id: 'understanding-triggers', label: 'Understanding Anxiety Triggers' },
+  { id: 'identifying-triggers', label: 'Identifying Your Triggers' },
+  { id: 'common-triggers', label: 'Common Anxiety Triggers' },
+  { id: 'management-strategies', label: 'Management Strategies' },
+  { id: 'long-term-solutions', label: 'Long-Term Solutions' },
+  { id: 'faqs', label: 'Frequently Asked Questions' }];
+
 
   useEffect(() => {
     const handleScroll = () => {
@@ -67,52 +67,52 @@ const ManagingAnxietyTriggersBlogPostPage = () => {
   };
 
   const faqs = [
-    {
-      question: 'How long does it take to identify your anxiety triggers?',
-      answer: 'The timeline varies, but most people begin recognizing patterns within 2-4 weeks of consistently tracking their anxiety episodes. Some triggers are immediately obvious, while others may take months of observation to identify, especially subtle emotional or situational triggers.',
-    },
-    {
-      question: 'Can anxiety triggers change over time?',
-      answer: 'Yes, anxiety triggers can absolutely change as your life circumstances, stress levels, and coping skills evolve. What triggered anxiety five years ago may no longer affect you, while new triggers can emerge. This is why ongoing self-awareness and periodic reassessment are important.',
-    },
-    {
-      question: 'Is it possible to eliminate anxiety triggers completely?',
-      answer: 'While you can\'t eliminate all triggers from life (some are unavoidable), you can significantly reduce your reactivity to them through treatment, coping strategies, and lifestyle changes. The goal isn\'t to avoid all triggers but to manage your response effectively when you encounter them.',
-    },
-    {
-      question: 'What\'s the difference between anxiety triggers and anxiety disorders?',
-      answer: 'Triggers are specific situations, thoughts, or sensations that provoke anxiety responses. An anxiety disorder is a clinical condition characterized by persistent, excessive worry and anxiety that significantly impacts daily functioning. Triggers can worsen anxiety disorders, but not everyone with triggers has a disorder.',
-    },
-    {
-      question: 'When should I seek professional help for anxiety triggers?',
-      answer: 'Seek professional help if anxiety triggers significantly interfere with daily life, you\'re avoiding important activities, you experience panic attacks, anxiety persists despite self-help strategies, or you\'re using substances to cope. Early intervention prevents anxiety from worsening.',
-    },
-    {
-      question: 'Can medication help with anxiety triggers?',
-      answer: 'Medication can help manage anxiety symptoms, making triggers more manageable. Anti-anxiety medications and antidepressants can reduce overall anxiety levels, while therapy teaches coping skills for specific triggers. Many people benefit from combining medication with therapy for optimal results.',
-    },
-  ];
+  {
+    question: 'How long does it take to identify your anxiety triggers?',
+    answer: 'The timeline varies, but most people begin recognizing patterns within 2-4 weeks of consistently tracking their anxiety episodes. Some triggers are immediately obvious, while others may take months of observation to identify, especially subtle emotional or situational triggers.'
+  },
+  {
+    question: 'Can anxiety triggers change over time?',
+    answer: 'Yes, anxiety triggers can absolutely change as your life circumstances, stress levels, and coping skills evolve. What triggered anxiety five years ago may no longer affect you, while new triggers can emerge. This is why ongoing self-awareness and periodic reassessment are important.'
+  },
+  {
+    question: 'Is it possible to eliminate anxiety triggers completely?',
+    answer: 'While you can\'t eliminate all triggers from life (some are unavoidable), you can significantly reduce your reactivity to them through treatment, coping strategies, and lifestyle changes. The goal isn\'t to avoid all triggers but to manage your response effectively when you encounter them.'
+  },
+  {
+    question: 'What\'s the difference between anxiety triggers and anxiety disorders?',
+    answer: 'Triggers are specific situations, thoughts, or sensations that provoke anxiety responses. An anxiety disorder is a clinical condition characterized by persistent, excessive worry and anxiety that significantly impacts daily functioning. Triggers can worsen anxiety disorders, but not everyone with triggers has a disorder.'
+  },
+  {
+    question: 'When should I seek professional help for anxiety triggers?',
+    answer: 'Seek professional help if anxiety triggers significantly interfere with daily life, you\'re avoiding important activities, you experience panic attacks, anxiety persists despite self-help strategies, or you\'re using substances to cope. Early intervention prevents anxiety from worsening.'
+  },
+  {
+    question: 'Can medication help with anxiety triggers?',
+    answer: 'Medication can help manage anxiety symptoms, making triggers more manageable. Anti-anxiety medications and antidepressants can reduce overall anxiety levels, while therapy teaches coping skills for specific triggers. Many people benefit from combining medication with therapy for optimal results.'
+  }];
+
 
   const relatedPosts = [
-    {
-      title: 'TMS for Anxiety: A Promising Path Beyond Medication',
-      excerpt: 'Explore how TMS therapy offers relief from anxiety through brain regulation without medication side effects.',
-      link: '/blogs/tms-anxiety-veterans',
-      image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/9705b922-d0fc-4d29-be10-acd507ce308c.webp',
-    },
-    {
-      title: 'Mindfulness Practices for Stress Management',
-      excerpt: 'Learn evidence-based mindfulness techniques to reduce stress and manage anxiety effectively.',
-      link: '/blog/mindfulness-stress-management',
-      image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/6cfeb881-529d-42c6-875a-321eac7d440c.webp',
-    },
-    {
-      title: 'What are the 4 A\'s of Stress Management?',
-      excerpt: 'Discover the Avoid, Alter, Adapt, and Accept framework for effective stress management.',
-      link: '/blog/four-as-stress-management',
-      image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/6cfeb881-529d-42c6-875a-321eac7d440c.webp',
-    },
-  ];
+  {
+    title: 'TMS for Anxiety: A Promising Path Beyond Medication',
+    excerpt: 'Explore how TMS therapy offers relief from anxiety through brain regulation without medication side effects.',
+    link: '/blogs/tms-anxiety-veterans',
+    image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/9705b922-d0fc-4d29-be10-acd507ce308c.webp'
+  },
+  {
+    title: 'Mindfulness Practices for Stress Management',
+    excerpt: 'Learn evidence-based mindfulness techniques to reduce stress and manage anxiety effectively.',
+    link: '/blog/mindfulness-stress-management',
+    image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/6cfeb881-529d-42c6-875a-321eac7d440c.webp'
+  },
+  {
+    title: 'What are the 4 A\'s of Stress Management?',
+    excerpt: 'Discover the Avoid, Alter, Adapt, and Accept framework for effective stress management.',
+    link: '/blog/four-as-stress-management',
+    image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/6cfeb881-529d-42c6-875a-321eac7d440c.webp'
+  }];
+
 
   const articleSchema = {
     '@context': 'https://schema.org',
@@ -122,22 +122,22 @@ const ManagingAnxietyTriggersBlogPostPage = () => {
     image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/9705b922-d0fc-4d29-be10-acd507ce308c.webp',
     author: {
       '@type': 'Organization',
-      name: 'karmatms',
+      name: 'karmatms'
     },
     publisher: {
       '@type': 'Organization',
       name: 'KarmaTMS',
       logo: {
         '@type': 'ImageObject',
-        url: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/ebadb369-a58d-421c-b937-24f900be5867.png',
-      },
+        url: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/ebadb369-a58d-421c-b937-24f900be5867.png'
+      }
     },
     datePublished: '2024-12-18',
     dateModified: '2024-12-18',
     mainEntityOfPage: {
       '@type': 'WebPage',
-      '@id': 'https://karmatms.com/blog/managing-anxiety-triggers',
-    },
+      '@id': 'https://karmatms.com/blog/managing-anxiety-triggers'
+    }
   };
 
   const faqSchema = {
@@ -148,9 +148,9 @@ const ManagingAnxietyTriggersBlogPostPage = () => {
       name: faq.question,
       acceptedAnswer: {
         '@type': 'Answer',
-        text: faq.answer,
-      },
-    })),
+        text: faq.answer
+      }
+    }))
   };
 
   return (
@@ -161,17 +161,17 @@ const ManagingAnxietyTriggersBlogPostPage = () => {
         keywords="anxiety triggers, managing anxiety, anxiety management, coping with anxiety, anxiety relief, anxiety symptoms, anxiety treatment, everyday anxiety"
         canonical="/blog/managing-anxiety-triggers"
         ogImage="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/9705b922-d0fc-4d29-be10-acd507ce308c.webp"
-        ogType="article"
-      />
+        ogType="article" />
+
 
       <StructuredData
         type="breadcrumb"
         breadcrumbs={[
-          { name: 'Home', url: '/' },
-          { name: 'Blog', url: '/blog' },
-          { name: 'Managing Anxiety Triggers', url: '/blog/managing-anxiety-triggers' },
-        ]}
-      />
+        { name: 'Home', url: '/' },
+        { name: 'Blog', url: '/blog' },
+        { name: 'Managing Anxiety Triggers', url: '/blog/managing-anxiety-triggers' }]
+        } />
+
 
       <script type="application/ld+json">{JSON.stringify(articleSchema)}</script>
 
@@ -251,19 +251,19 @@ const ManagingAnxietyTriggersBlogPostPage = () => {
                 <CardContent className="p-6">
                   <h3 className="font-bold text-lg mb-4 text-[#572670]">Table of Contents</h3>
                   <nav className="space-y-2">
-                    {tocItems.map((item) => (
-                      <button
-                        key={item.id}
-                        onClick={() => scrollToSection(item.id)}
-                        className={`block w-full text-left px-3 py-2 rounded-md text-sm transition-all ${
-                          activeSection === item.id
-                            ? 'bg-[#572670] text-white font-medium'
-                            : 'text-gray-700 hover:bg-[#572670]/10'
-                        }`}
-                      >
+                    {tocItems.map((item) =>
+                    <button
+                      key={item.id}
+                      onClick={() => scrollToSection(item.id)}
+                      className={`block w-full text-left px-3 py-2 rounded-md text-sm transition-all ${
+                      activeSection === item.id ?
+                      'bg-[#572670] text-white font-medium' :
+                      'text-gray-700 hover:bg-[#572670]/10'}`
+                      }>
+
                         {item.label}
                       </button>
-                    ))}
+                    )}
                   </nav>
                   <div className="mt-6 pt-6 border-t">
                     <Button asChild className="w-full bg-[#572670] hover:bg-[#7B3FA0]">
@@ -282,15 +282,15 @@ const ManagingAnxietyTriggersBlogPostPage = () => {
               <img
                 src="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/9705b922-d0fc-4d29-be10-acd507ce308c.webp"
                 alt="Person managing anxiety in daily life"
-                className="w-full h-64 md:h-96 object-cover rounded-lg mb-6"
-              />
+                className="w-full h-64 md:h-96 object-cover rounded-lg mb-6" />
+
               <p className="text-xl text-gray-700 leading-relaxed">
                 Anxiety doesn't appear out of nowhere—it's usually triggered by specific situations, thoughts, or experiences. Understanding what triggers your <Link to="/anxiety" className="text-[#572670] hover:underline font-medium">anxiety</Link> is the first step toward managing it effectively. Whether you're dealing with occasional anxious moments or a diagnosed anxiety disorder, learning to recognize and respond to your triggers can dramatically improve your quality of life.
               </p>
             </div>
 
             {/* Section 1: Understanding Triggers */}
-            <section ref={(el) => (sectionsRef.current['understanding-triggers'] = el)} className="mb-12">
+            <section ref={(el) => sectionsRef.current['understanding-triggers'] = el} className="mb-12">
               <h2 className="text-3xl font-bold text-[#572670] mb-6">Understanding Anxiety Triggers</h2>
               <Card className="bg-gradient-to-br from-[#572670]/5 to-transparent border-[#572670]/20 mb-6">
                 <CardContent className="p-6">
@@ -338,7 +338,7 @@ const ManagingAnxietyTriggersBlogPostPage = () => {
             </section>
 
             {/* Section 2: Identifying Triggers */}
-            <section ref={(el) => (sectionsRef.current['identifying-triggers'] = el)} className="mb-12">
+            <section ref={(el) => sectionsRef.current['identifying-triggers'] = el} className="mb-12">
               <h2 className="text-3xl font-bold text-[#572670] mb-6">Identifying Your Personal Triggers</h2>
 
               <p className="mb-6">
@@ -388,7 +388,7 @@ const ManagingAnxietyTriggersBlogPostPage = () => {
             </section>
 
             {/* Section 3: Common Triggers */}
-            <section ref={(el) => (sectionsRef.current['common-triggers'] = el)} className="mb-12">
+            <section ref={(el) => sectionsRef.current['common-triggers'] = el} className="mb-12">
               <h2 className="text-3xl font-bold text-[#572670] mb-6">Common Anxiety Triggers</h2>
 
               <p className="mb-6">
@@ -441,7 +441,7 @@ const ManagingAnxietyTriggersBlogPostPage = () => {
             </section>
 
             {/* Section 4: Management Strategies */}
-            <section ref={(el) => (sectionsRef.current['management-strategies'] = el)} className="mb-12">
+            <section ref={(el) => sectionsRef.current['management-strategies'] = el} className="mb-12">
               <h2 className="text-3xl font-bold text-[#572670] mb-6">Immediate Management Strategies</h2>
 
               <p className="mb-6">
@@ -498,7 +498,7 @@ const ManagingAnxietyTriggersBlogPostPage = () => {
             </section>
 
             {/* Section 5: Long-Term Solutions */}
-            <section ref={(el) => (sectionsRef.current['long-term-solutions'] = el)} className="mb-12">
+            <section ref={(el) => sectionsRef.current['long-term-solutions'] = el} className="mb-12">
               <h2 className="text-3xl font-bold text-[#572670] mb-6">Long-Term Solutions for Anxiety Management</h2>
 
               <p className="mb-6">
@@ -565,26 +565,26 @@ const ManagingAnxietyTriggersBlogPostPage = () => {
               name="karmatms"
               role="Mental Health Content Team"
               bio="Our content team is dedicated to providing evidence-based information on mental health, wellness, and innovative treatments. We combine clinical expertise with compassionate understanding to help individuals and families navigate mental health challenges."
-              image="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/ebadb369-a58d-421c-b937-24f900be5867.png"
-            />
+              image="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/ebadb369-a58d-421c-b937-24f900be5867.png" />
+
 
             {/* FAQ Section */}
-            <section ref={(el) => (sectionsRef.current['faqs'] = el)} className="mb-12 mt-12">
+            <section ref={(el) => sectionsRef.current['faqs'] = el} className="mb-12 mt-12">
               <h2 className="text-3xl font-bold text-[#572670] mb-6">Frequently Asked Questions</h2>
 
               <Accordion type="single" collapsible className="w-full space-y-2">
-                {faqs.map((faq, index) => (
-                  <AccordionItem
-                    key={index}
-                    value={`item-${index}`}
-                    className="border border-gray-200 rounded-lg px-4 data-[state=open]:border-[#572670]"
-                  >
+                {faqs.map((faq, index) =>
+                <AccordionItem
+                  key={index}
+                  value={`item-${index}`}
+                  className="border border-gray-200 rounded-lg px-4 data-[state=open]:border-[#572670]">
+
                     <AccordionTrigger className="text-left font-semibold hover:text-[#572670] hover:no-underline">
                       {faq.question}
                     </AccordionTrigger>
                     <AccordionContent className="text-gray-700 pt-2 pb-4">{faq.answer}</AccordionContent>
                   </AccordionItem>
-                ))}
+                )}
               </Accordion>
             </section>
 
@@ -605,8 +605,8 @@ const ManagingAnxietyTriggersBlogPostPage = () => {
                     asChild
                     size="lg"
                     variant="outline"
-                    className="border-white text-white hover:bg-white/10"
-                  >
+                    className="border-white text-white hover:bg-white/10">
+
                     <Link to="/anxiety">Learn About Anxiety Treatment</Link>
                   </Button>
                 </div>
@@ -617,11 +617,11 @@ const ManagingAnxietyTriggersBlogPostPage = () => {
             <section className="mb-12">
               <h2 className="text-3xl font-bold text-[#572670] mb-6">Related Articles</h2>
               <div className="grid md:grid-cols-3 gap-6">
-                {relatedPosts.map((post, index) => (
-                  <Card
-                    key={index}
-                    className="border-[#572670]/20 overflow-hidden hover:shadow-lg transition-shadow"
-                  >
+                {relatedPosts.map((post, index) =>
+                <Card
+                  key={index}
+                  className="border-[#572670]/20 overflow-hidden hover:shadow-lg transition-shadow">
+
                     <img src={post.image} alt={post.title} className="w-full h-48 object-cover" />
                     <CardContent className="p-6">
                       <h3 className="font-bold text-lg mb-2 hover:text-[#572670] transition-colors">
@@ -629,17 +629,17 @@ const ManagingAnxietyTriggersBlogPostPage = () => {
                       </h3>
                       <p className="text-gray-600 text-sm mb-4">{post.excerpt}</p>
                       <Button
-                        asChild
-                        variant="ghost"
-                        className="text-[#572670] p-0 h-auto hover:bg-transparent"
-                      >
+                      asChild
+                      variant="ghost"
+                      className="text-[#572670] p-0 h-auto hover:bg-transparent">
+
                         <Link to={post.link} className="inline-flex items-center gap-2">
                           Read More <ArrowRight className="w-4 h-4" />
                         </Link>
                       </Button>
                     </CardContent>
                   </Card>
-                ))}
+                )}
               </div>
             </section>
           </article>
@@ -647,8 +647,8 @@ const ManagingAnxietyTriggersBlogPostPage = () => {
       </div>
 
       <FooterSection />
-    </>
-  );
+    </>);
+
 };
 
 export default ManagingAnxietyTriggersBlogPostPage;

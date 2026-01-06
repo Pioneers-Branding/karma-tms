@@ -10,16 +10,16 @@ import {
   BreadcrumbLink,
   BreadcrumbList,
   BreadcrumbPage,
-  BreadcrumbSeparator,
-} from '@/components/ui/breadcrumb';
+  BreadcrumbSeparator } from
+'@/components/ui/breadcrumb';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import {
   Accordion,
   AccordionContent,
   AccordionItem,
-  AccordionTrigger,
-} from '@/components/ui/accordion';
+  AccordionTrigger } from
+'@/components/ui/accordion';
 import { Calendar, Clock, User, CheckCircle2, ArrowRight } from 'lucide-react';
 import AuthorBox from '@/components/AuthorBox';
 
@@ -28,13 +28,13 @@ const FamilyDynamicsMentalHealthBlogPostPage = () => {
   const sectionsRef = useRef<{[key: string]: HTMLElement | null;}>({});
 
   const tocItems = [
-    { id: 'understanding-family-dynamics', label: 'Understanding Family Dynamics' },
-    { id: 'impact-on-recovery', label: 'Impact on Mental Health Recovery' },
-    { id: 'positive-family-patterns', label: 'Positive Family Patterns' },
-    { id: 'addressing-challenges', label: 'Addressing Family Challenges' },
-    { id: 'family-therapy', label: 'Role of Family Therapy' },
-    { id: 'faqs', label: 'Frequently Asked Questions' },
-  ];
+  { id: 'understanding-family-dynamics', label: 'Understanding Family Dynamics' },
+  { id: 'impact-on-recovery', label: 'Impact on Mental Health Recovery' },
+  { id: 'positive-family-patterns', label: 'Positive Family Patterns' },
+  { id: 'addressing-challenges', label: 'Addressing Family Challenges' },
+  { id: 'family-therapy', label: 'Role of Family Therapy' },
+  { id: 'faqs', label: 'Frequently Asked Questions' }];
+
 
   useEffect(() => {
     const handleScroll = () => {
@@ -67,52 +67,52 @@ const FamilyDynamicsMentalHealthBlogPostPage = () => {
   };
 
   const faqs = [
-    {
-      question: 'How do family dynamics affect mental health recovery?',
-      answer: 'Family dynamics significantly influence recovery by affecting emotional support, treatment adherence, stress levels, and overall environment. Supportive family relationships can accelerate recovery, while toxic dynamics can hinder progress. Research shows that individuals with strong family support have better treatment outcomes and lower relapse rates.',
-    },
-    {
-      question: 'Can family therapy help even if only one member has a mental health diagnosis?',
-      answer: 'Absolutely. Mental health conditions affect the entire family system, not just the diagnosed individual. Family therapy helps all members understand the condition, improve communication, develop healthy coping strategies, and create a supportive environment that benefits everyone, regardless of who has the diagnosis.',
-    },
-    {
-      question: 'What if my family is resistant to participating in treatment?',
-      answer: 'Resistance is common and often stems from stigma, fear, or misunderstanding. Start by educating family members about mental health, sharing your needs clearly, and inviting rather than demanding participation. Sometimes beginning with individual therapy and gradually incorporating family sessions works best. A therapist can guide this process.',
-    },
-    {
-      question: 'How can I set boundaries with family while in recovery?',
-      answer: 'Healthy boundaries are essential for recovery. Clearly communicate your needs and limits, be consistent in enforcing boundaries, don\'t over-explain or apologize excessively, and recognize that boundary-setting may initially cause discomfort but is necessary for your well-being. A therapist can help you develop and maintain appropriate boundaries.',
-    },
-    {
-      question: 'What role does family history play in mental health?',
-      answer: 'Family history influences mental health through both genetics and learned behaviors. While genetic predisposition matters, family patterns of communication, conflict resolution, emotional expression, and coping also significantly impact mental health. Understanding your family history helps identify patterns to continue or change.',
-    },
-    {
-      question: 'When should families seek professional help?',
-      answer: 'Seek professional help when: communication has broken down, conflicts escalate to crisis, family dynamics interfere with treatment progress, there\'s abuse or substance misuse, or when family members feel overwhelmed. Early intervention prevents problems from deepening and improves outcomes for everyone.',
-    },
-  ];
+  {
+    question: 'How do family dynamics affect mental health recovery?',
+    answer: 'Family dynamics significantly influence recovery by affecting emotional support, treatment adherence, stress levels, and overall environment. Supportive family relationships can accelerate recovery, while toxic dynamics can hinder progress. Research shows that individuals with strong family support have better treatment outcomes and lower relapse rates.'
+  },
+  {
+    question: 'Can family therapy help even if only one member has a mental health diagnosis?',
+    answer: 'Absolutely. Mental health conditions affect the entire family system, not just the diagnosed individual. Family therapy helps all members understand the condition, improve communication, develop healthy coping strategies, and create a supportive environment that benefits everyone, regardless of who has the diagnosis.'
+  },
+  {
+    question: 'What if my family is resistant to participating in treatment?',
+    answer: 'Resistance is common and often stems from stigma, fear, or misunderstanding. Start by educating family members about mental health, sharing your needs clearly, and inviting rather than demanding participation. Sometimes beginning with individual therapy and gradually incorporating family sessions works best. A therapist can guide this process.'
+  },
+  {
+    question: 'How can I set boundaries with family while in recovery?',
+    answer: 'Healthy boundaries are essential for recovery. Clearly communicate your needs and limits, be consistent in enforcing boundaries, don\'t over-explain or apologize excessively, and recognize that boundary-setting may initially cause discomfort but is necessary for your well-being. A therapist can help you develop and maintain appropriate boundaries.'
+  },
+  {
+    question: 'What role does family history play in mental health?',
+    answer: 'Family history influences mental health through both genetics and learned behaviors. While genetic predisposition matters, family patterns of communication, conflict resolution, emotional expression, and coping also significantly impact mental health. Understanding your family history helps identify patterns to continue or change.'
+  },
+  {
+    question: 'When should families seek professional help?',
+    answer: 'Seek professional help when: communication has broken down, conflicts escalate to crisis, family dynamics interfere with treatment progress, there\'s abuse or substance misuse, or when family members feel overwhelmed. Early intervention prevents problems from deepening and improves outcomes for everyone.'
+  }];
+
 
   const relatedPosts = [
-    {
-      title: 'Empowering Youth: Strategies for Building Emotional Resilience',
-      excerpt: 'Learn effective strategies for helping young people develop emotional resilience and mental wellness.',
-      link: '/blog/empowering-youth-emotional-resilience',
-      image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/6cfeb881-529d-42c6-875a-321eac7d440c.webp',
-    },
-    {
-      title: 'Managing Anxiety Triggers in Everyday Life',
-      excerpt: 'Discover practical approaches to identifying and managing anxiety triggers in daily situations.',
-      link: '/blog/managing-anxiety-triggers',
-      image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/9705b922-d0fc-4d29-be10-acd507ce308c.webp',
-    },
-    {
-      title: 'Mental Health First Aid: How to Help Someone in Crisis',
-      excerpt: 'Essential mental health first aid skills for recognizing crisis signs and providing support.',
-      link: '/blog/mental-health-first-aid',
-      image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/76caee2d-5629-4dc1-a3b4-8c5cea23ede6.webp',
-    },
-  ];
+  {
+    title: 'Empowering Youth: Strategies for Building Emotional Resilience',
+    excerpt: 'Learn effective strategies for helping young people develop emotional resilience and mental wellness.',
+    link: '/blog/empowering-youth-emotional-resilience',
+    image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/6cfeb881-529d-42c6-875a-321eac7d440c.webp'
+  },
+  {
+    title: 'Managing Anxiety Triggers in Everyday Life',
+    excerpt: 'Discover practical approaches to identifying and managing anxiety triggers in daily situations.',
+    link: '/blog/managing-anxiety-triggers',
+    image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/9705b922-d0fc-4d29-be10-acd507ce308c.webp'
+  },
+  {
+    title: 'Mental Health First Aid: How to Help Someone in Crisis',
+    excerpt: 'Essential mental health first aid skills for recognizing crisis signs and providing support.',
+    link: '/blog/mental-health-first-aid',
+    image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/76caee2d-5629-4dc1-a3b4-8c5cea23ede6.webp'
+  }];
+
 
   const articleSchema = {
     '@context': 'https://schema.org',
@@ -122,22 +122,22 @@ const FamilyDynamicsMentalHealthBlogPostPage = () => {
     image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/6cfeb881-529d-42c6-875a-321eac7d440c.webp',
     author: {
       '@type': 'Organization',
-      name: 'karmatms',
+      name: 'karmatms'
     },
     publisher: {
       '@type': 'Organization',
       name: 'KarmaTMS',
       logo: {
         '@type': 'ImageObject',
-        url: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/ebadb369-a58d-421c-b937-24f900be5867.png',
-      },
+        url: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/ebadb369-a58d-421c-b937-24f900be5867.png'
+      }
     },
     datePublished: '2024-12-19',
     dateModified: '2024-12-19',
     mainEntityOfPage: {
       '@type': 'WebPage',
-      '@id': 'https://karmatms.com/blog/family-dynamics-mental-health',
-    },
+      '@id': 'https://karmatms.com/blog/family-dynamics-mental-health'
+    }
   };
 
   const faqSchema = {
@@ -148,9 +148,9 @@ const FamilyDynamicsMentalHealthBlogPostPage = () => {
       name: faq.question,
       acceptedAnswer: {
         '@type': 'Answer',
-        text: faq.answer,
-      },
-    })),
+        text: faq.answer
+      }
+    }))
   };
 
   return (
@@ -161,17 +161,17 @@ const FamilyDynamicsMentalHealthBlogPostPage = () => {
         keywords="family dynamics, mental health recovery, family therapy, family support mental health, family relationships, mental health family involvement, family systems therapy"
         canonical="/blog/family-dynamics-mental-health"
         ogImage="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/6cfeb881-529d-42c6-875a-321eac7d440c.webp"
-        ogType="article"
-      />
+        ogType="article" />
+
 
       <StructuredData
         type="breadcrumb"
         breadcrumbs={[
-          { name: 'Home', url: '/' },
-          { name: 'Blog', url: '/blog' },
-          { name: 'Family Dynamics in Mental Health', url: '/blog/family-dynamics-mental-health' },
-        ]}
-      />
+        { name: 'Home', url: '/' },
+        { name: 'Blog', url: '/blog' },
+        { name: 'Family Dynamics in Mental Health', url: '/blog/family-dynamics-mental-health' }]
+        } />
+
 
       <script type="application/ld+json">{JSON.stringify(articleSchema)}</script>
 
@@ -251,19 +251,19 @@ const FamilyDynamicsMentalHealthBlogPostPage = () => {
                 <CardContent className="p-6">
                   <h3 className="font-bold text-lg mb-4 text-[#572670]">Table of Contents</h3>
                   <nav className="space-y-2">
-                    {tocItems.map((item) => (
-                      <button
-                        key={item.id}
-                        onClick={() => scrollToSection(item.id)}
-                        className={`block w-full text-left px-3 py-2 rounded-md text-sm transition-all ${
-                          activeSection === item.id
-                            ? 'bg-[#572670] text-white font-medium'
-                            : 'text-gray-700 hover:bg-[#572670]/10'
-                        }`}
-                      >
+                    {tocItems.map((item) =>
+                    <button
+                      key={item.id}
+                      onClick={() => scrollToSection(item.id)}
+                      className={`block w-full text-left px-3 py-2 rounded-md text-sm transition-all ${
+                      activeSection === item.id ?
+                      'bg-[#572670] text-white font-medium' :
+                      'text-gray-700 hover:bg-[#572670]/10'}`
+                      }>
+
                         {item.label}
                       </button>
-                    ))}
+                    )}
                   </nav>
                   <div className="mt-6 pt-6 border-t">
                     <Button asChild className="w-full bg-[#572670] hover:bg-[#7B3FA0]">
@@ -282,15 +282,15 @@ const FamilyDynamicsMentalHealthBlogPostPage = () => {
               <img
                 src="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/6cfeb881-529d-42c6-875a-321eac7d440c.webp"
                 alt="Family supporting mental health recovery"
-                className="w-full h-64 md:h-96 object-cover rounded-lg mb-6"
-              />
+                className="w-full h-64 md:h-96 object-cover rounded-lg mb-6" />
+
               <p className="text-xl text-gray-700 leading-relaxed">
                 Mental health doesn't exist in a vacuum—it's deeply intertwined with our relationships, particularly those within our families. Whether you're navigating <Link to="/depression" className="text-[#572670] hover:underline font-medium">depression</Link>, <Link to="/anxiety" className="text-[#572670] hover:underline font-medium">anxiety</Link>, or another mental health condition, the dynamics within your family system can either accelerate your healing journey or present significant obstacles to recovery.
               </p>
             </div>
 
             {/* Section 1: Understanding Family Dynamics */}
-            <section ref={(el) => (sectionsRef.current['understanding-family-dynamics'] = el)} className="mb-12">
+            <section ref={(el) => sectionsRef.current['understanding-family-dynamics'] = el} className="mb-12">
               <h2 className="text-3xl font-bold text-[#572670] mb-6">Understanding Family Dynamics</h2>
               <Card className="bg-gradient-to-br from-[#572670]/5 to-transparent border-[#572670]/20 mb-6">
                 <CardContent className="p-6">
@@ -338,7 +338,7 @@ const FamilyDynamicsMentalHealthBlogPostPage = () => {
             </section>
 
             {/* Section 2: Impact on Recovery */}
-            <section ref={(el) => (sectionsRef.current['impact-on-recovery'] = el)} className="mb-12">
+            <section ref={(el) => sectionsRef.current['impact-on-recovery'] = el} className="mb-12">
               <h2 className="text-3xl font-bold text-[#572670] mb-6">How Family Dynamics Impact Mental Health Recovery</h2>
 
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Positive Impacts</h3>
@@ -378,7 +378,7 @@ const FamilyDynamicsMentalHealthBlogPostPage = () => {
             </section>
 
             {/* Section 3: Positive Family Patterns */}
-            <section ref={(el) => (sectionsRef.current['positive-family-patterns'] = el)} className="mb-12">
+            <section ref={(el) => sectionsRef.current['positive-family-patterns'] = el} className="mb-12">
               <h2 className="text-3xl font-bold text-[#572670] mb-6">Cultivating Positive Family Patterns</h2>
 
               <p className="mb-6">
@@ -434,7 +434,7 @@ const FamilyDynamicsMentalHealthBlogPostPage = () => {
             </section>
 
             {/* Section 4: Addressing Challenges */}
-            <section ref={(el) => (sectionsRef.current['addressing-challenges'] = el)} className="mb-12">
+            <section ref={(el) => sectionsRef.current['addressing-challenges'] = el} className="mb-12">
               <h2 className="text-3xl font-bold text-[#572670] mb-6">Addressing Family Challenges</h2>
 
               <p className="mb-6">
@@ -497,7 +497,7 @@ const FamilyDynamicsMentalHealthBlogPostPage = () => {
             </section>
 
             {/* Section 5: Family Therapy */}
-            <section ref={(el) => (sectionsRef.current['family-therapy'] = el)} className="mb-12">
+            <section ref={(el) => sectionsRef.current['family-therapy'] = el} className="mb-12">
               <h2 className="text-3xl font-bold text-[#572670] mb-6">The Role of Family Therapy in Recovery</h2>
 
               <p className="mb-6">
@@ -548,26 +548,26 @@ const FamilyDynamicsMentalHealthBlogPostPage = () => {
               name="karmatms"
               role="Mental Health Content Team"
               bio="Our content team is dedicated to providing evidence-based information on mental health, wellness, and innovative treatments. We combine clinical expertise with compassionate understanding to help individuals and families navigate mental health challenges."
-              image="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/ebadb369-a58d-421c-b937-24f900be5867.png"
-            />
+              image="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/ebadb369-a58d-421c-b937-24f900be5867.png" />
+
 
             {/* FAQ Section */}
-            <section ref={(el) => (sectionsRef.current['faqs'] = el)} className="mb-12 mt-12">
+            <section ref={(el) => sectionsRef.current['faqs'] = el} className="mb-12 mt-12">
               <h2 className="text-3xl font-bold text-[#572670] mb-6">Frequently Asked Questions</h2>
 
               <Accordion type="single" collapsible className="w-full space-y-2">
-                {faqs.map((faq, index) => (
-                  <AccordionItem
-                    key={index}
-                    value={`item-${index}`}
-                    className="border border-gray-200 rounded-lg px-4 data-[state=open]:border-[#572670]"
-                  >
+                {faqs.map((faq, index) =>
+                <AccordionItem
+                  key={index}
+                  value={`item-${index}`}
+                  className="border border-gray-200 rounded-lg px-4 data-[state=open]:border-[#572670]">
+
                     <AccordionTrigger className="text-left font-semibold hover:text-[#572670] hover:no-underline">
                       {faq.question}
                     </AccordionTrigger>
                     <AccordionContent className="text-gray-700 pt-2 pb-4">{faq.answer}</AccordionContent>
                   </AccordionItem>
-                ))}
+                )}
               </Accordion>
             </section>
 
@@ -588,8 +588,8 @@ const FamilyDynamicsMentalHealthBlogPostPage = () => {
                     asChild
                     size="lg"
                     variant="outline"
-                    className="border-white text-white hover:bg-white/10"
-                  >
+                    className="border-white text-white hover:bg-white/10">
+
                     <Link to="/blog">Explore More Resources</Link>
                   </Button>
                 </div>
@@ -600,11 +600,11 @@ const FamilyDynamicsMentalHealthBlogPostPage = () => {
             <section className="mb-12">
               <h2 className="text-3xl font-bold text-[#572670] mb-6">Related Articles</h2>
               <div className="grid md:grid-cols-3 gap-6">
-                {relatedPosts.map((post, index) => (
-                  <Card
-                    key={index}
-                    className="border-[#572670]/20 overflow-hidden hover:shadow-lg transition-shadow"
-                  >
+                {relatedPosts.map((post, index) =>
+                <Card
+                  key={index}
+                  className="border-[#572670]/20 overflow-hidden hover:shadow-lg transition-shadow">
+
                     <img src={post.image} alt={post.title} className="w-full h-48 object-cover" />
                     <CardContent className="p-6">
                       <h3 className="font-bold text-lg mb-2 hover:text-[#572670] transition-colors">
@@ -612,17 +612,17 @@ const FamilyDynamicsMentalHealthBlogPostPage = () => {
                       </h3>
                       <p className="text-gray-600 text-sm mb-4">{post.excerpt}</p>
                       <Button
-                        asChild
-                        variant="ghost"
-                        className="text-[#572670] p-0 h-auto hover:bg-transparent"
-                      >
+                      asChild
+                      variant="ghost"
+                      className="text-[#572670] p-0 h-auto hover:bg-transparent">
+
                         <Link to={post.link} className="inline-flex items-center gap-2">
                           Read More <ArrowRight className="w-4 h-4" />
                         </Link>
                       </Button>
                     </CardContent>
                   </Card>
-                ))}
+                )}
               </div>
             </section>
           </article>
@@ -630,8 +630,8 @@ const FamilyDynamicsMentalHealthBlogPostPage = () => {
       </div>
 
       <FooterSection />
-    </>
-  );
+    </>);
+
 };
 
 export default FamilyDynamicsMentalHealthBlogPostPage;

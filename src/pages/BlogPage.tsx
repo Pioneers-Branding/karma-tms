@@ -379,11 +379,26 @@ const BlogPage = () => {
 
   const POSTS_PER_LOAD = 6;
 
+  // Helper function to parse date string back to Date object for sorting
+  const parseDate = (dateString: string): Date => {
+    return new Date(dateString);
+  };
+
+  // Helper function to get sorted posts
+  const getSortedPosts = (posts: BlogPost[]): BlogPost[] => {
+    return [...posts].sort((a, b) => {
+      const dateA = parseDate(a.date);
+      const dateB = parseDate(b.date);
+      return dateB.getTime() - dateA.getTime(); // Descending order (newest first)
+    });
+  };
+
   // Initialize with first batch of posts
   useEffect(() => {
-    const initialPosts = allBlogPosts.slice(0, POSTS_PER_LOAD);
+    const sortedPosts = getSortedPosts(allBlogPosts);
+    const initialPosts = sortedPosts.slice(0, POSTS_PER_LOAD);
     setDisplayedPosts(initialPosts);
-    setHasMore(initialPosts.length < allBlogPosts.length);
+    setHasMore(initialPosts.length < sortedPosts.length);
   }, []);
 
   // Reset displayed posts when category changes
@@ -392,9 +407,10 @@ const BlogPage = () => {
     allBlogPosts :
     allBlogPosts.filter((post) => post.category === activeCategory);
 
-    const initialPosts = filteredPosts.slice(0, POSTS_PER_LOAD);
+    const sortedPosts = getSortedPosts(filteredPosts);
+    const initialPosts = sortedPosts.slice(0, POSTS_PER_LOAD);
     setDisplayedPosts(initialPosts);
-    setHasMore(initialPosts.length < filteredPosts.length);
+    setHasMore(initialPosts.length < sortedPosts.length);
   }, [activeCategory]);
 
   // Infinite scroll observer
@@ -426,8 +442,9 @@ const BlogPage = () => {
       allBlogPosts :
       allBlogPosts.filter((post) => post.category === activeCategory);
 
+      const sortedPosts = getSortedPosts(filteredPosts);
       const currentCount = displayedPosts.length;
-      const nextPosts = filteredPosts.slice(currentCount, currentCount + POSTS_PER_LOAD);
+      const nextPosts = sortedPosts.slice(currentCount, currentCount + POSTS_PER_LOAD);
 
       if (nextPosts.length > 0) {
         setDisplayedPosts((prev) => [...prev, ...nextPosts]);
@@ -435,7 +452,7 @@ const BlogPage = () => {
 
       // Check if there are more posts to load
       const totalDisplayed = currentCount + nextPosts.length;
-      setHasMore(totalDisplayed < filteredPosts.length);
+      setHasMore(totalDisplayed < sortedPosts.length);
 
       setLoading(false);
     }, 800);

@@ -10,16 +10,16 @@ import {
   BreadcrumbLink,
   BreadcrumbList,
   BreadcrumbPage,
-  BreadcrumbSeparator,
-} from '@/components/ui/breadcrumb';
+  BreadcrumbSeparator } from
+'@/components/ui/breadcrumb';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import {
   Accordion,
   AccordionContent,
   AccordionItem,
-  AccordionTrigger,
-} from '@/components/ui/accordion';
+  AccordionTrigger } from
+'@/components/ui/accordion';
 import { Calendar, Clock, User, CheckCircle2, ArrowRight } from 'lucide-react';
 import AuthorBox from '@/components/AuthorBox';
 
@@ -28,13 +28,13 @@ const EmpoweringYouthBlogPostPage = () => {
   const sectionsRef = useRef<{[key: string]: HTMLElement | null;}>({});
 
   const tocItems = [
-    { id: 'what-is-resilience', label: 'What is Emotional Resilience?' },
-    { id: 'why-important', label: 'Why It Matters for Youth' },
-    { id: 'key-strategies', label: 'Key Building Strategies' },
-    { id: 'practical-tools', label: 'Practical Tools' },
-    { id: 'role-of-adults', label: 'Supporting Young People' },
-    { id: 'faqs', label: 'Frequently Asked Questions' },
-  ];
+  { id: 'what-is-resilience', label: 'What is Emotional Resilience?' },
+  { id: 'why-important', label: 'Why It Matters for Youth' },
+  { id: 'key-strategies', label: 'Key Building Strategies' },
+  { id: 'practical-tools', label: 'Practical Tools' },
+  { id: 'role-of-adults', label: 'Supporting Young People' },
+  { id: 'faqs', label: 'Frequently Asked Questions' }];
+
 
   useEffect(() => {
     const handleScroll = () => {
@@ -67,52 +67,52 @@ const EmpoweringYouthBlogPostPage = () => {
   };
 
   const faqs = [
-    {
-      question: 'At what age should we start building emotional resilience?',
-      answer: 'Emotional resilience can be nurtured from early childhood. Even toddlers benefit from age-appropriate emotional coaching. However, it\'s never too late—adolescents and young adults can still develop strong resilience skills with proper guidance and practice.',
-    },
-    {
-      question: 'How long does it take to build emotional resilience?',
-      answer: 'Building emotional resilience is an ongoing process, not a destination. Young people can begin seeing improvements in their coping skills within a few weeks of consistent practice, but developing deep resilience typically takes months to years of continued effort and support.',
-    },
-    {
-      question: 'Can technology help or hinder youth resilience?',
-      answer: 'Technology is a double-edged sword. When used mindfully, apps for meditation, mental health support, and learning can enhance resilience. However, excessive screen time, social media comparison, and cyberbullying can undermine it. The key is balanced, intentional use.',
-    },
-    {
-      question: 'What role does physical health play in emotional resilience?',
-      answer: 'Physical and emotional health are deeply interconnected. Regular exercise, adequate sleep, and proper nutrition significantly impact mood regulation, stress management, and overall resilience. Youth who maintain good physical health typically demonstrate stronger emotional coping skills.',
-    },
-    {
-      question: 'How can schools support youth resilience?',
-      answer: 'Schools can integrate social-emotional learning into curricula, provide access to mental health professionals, create safe spaces for expression, train teachers in trauma-informed practices, and foster inclusive environments where all students feel valued and supported.',
-    },
-    {
-      question: 'When should parents seek professional help for their child?',
-      answer: 'Seek professional help if your child shows persistent sadness or anxiety, withdrawal from activities, significant changes in eating or sleeping patterns, declining academic performance, self-harm behaviors, or if stress significantly impacts their daily functioning despite supportive interventions.',
-    },
-  ];
+  {
+    question: 'At what age should we start building emotional resilience?',
+    answer: 'Emotional resilience can be nurtured from early childhood. Even toddlers benefit from age-appropriate emotional coaching. However, it\'s never too late—adolescents and young adults can still develop strong resilience skills with proper guidance and practice.'
+  },
+  {
+    question: 'How long does it take to build emotional resilience?',
+    answer: 'Building emotional resilience is an ongoing process, not a destination. Young people can begin seeing improvements in their coping skills within a few weeks of consistent practice, but developing deep resilience typically takes months to years of continued effort and support.'
+  },
+  {
+    question: 'Can technology help or hinder youth resilience?',
+    answer: 'Technology is a double-edged sword. When used mindfully, apps for meditation, mental health support, and learning can enhance resilience. However, excessive screen time, social media comparison, and cyberbullying can undermine it. The key is balanced, intentional use.'
+  },
+  {
+    question: 'What role does physical health play in emotional resilience?',
+    answer: 'Physical and emotional health are deeply interconnected. Regular exercise, adequate sleep, and proper nutrition significantly impact mood regulation, stress management, and overall resilience. Youth who maintain good physical health typically demonstrate stronger emotional coping skills.'
+  },
+  {
+    question: 'How can schools support youth resilience?',
+    answer: 'Schools can integrate social-emotional learning into curricula, provide access to mental health professionals, create safe spaces for expression, train teachers in trauma-informed practices, and foster inclusive environments where all students feel valued and supported.'
+  },
+  {
+    question: 'When should parents seek professional help for their child?',
+    answer: 'Seek professional help if your child shows persistent sadness or anxiety, withdrawal from activities, significant changes in eating or sleeping patterns, declining academic performance, self-harm behaviors, or if stress significantly impacts their daily functioning despite supportive interventions.'
+  }];
+
 
   const relatedPosts = [
-    {
-      title: 'Managing Anxiety Triggers in Everyday Life',
-      excerpt: 'Learn practical strategies to identify and manage anxiety triggers effectively in your daily routine.',
-      link: '/blog/managing-anxiety-triggers',
-      image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/9705b922-d0fc-4d29-be10-acd507ce308c.webp',
-    },
-    {
-      title: 'The Role of Family Dynamics in Mental Health Recovery',
-      excerpt: 'Discover how family relationships and dynamics influence mental health outcomes and recovery processes.',
-      link: '/blog/family-dynamics-mental-health',
-      image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/6cfeb881-529d-42c6-875a-321eac7d440c.webp',
-    },
-    {
-      title: 'Mindfulness Practices for Stress Management',
-      excerpt: 'Explore evidence-based mindfulness techniques for reducing stress and improving mental wellness.',
-      link: '/blog/mindfulness-stress-management',
-      image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/6cfeb881-529d-42c6-875a-321eac7d440c.webp',
-    },
-  ];
+  {
+    title: 'Managing Anxiety Triggers in Everyday Life',
+    excerpt: 'Learn practical strategies to identify and manage anxiety triggers effectively in your daily routine.',
+    link: '/blog/managing-anxiety-triggers',
+    image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/9705b922-d0fc-4d29-be10-acd507ce308c.webp'
+  },
+  {
+    title: 'The Role of Family Dynamics in Mental Health Recovery',
+    excerpt: 'Discover how family relationships and dynamics influence mental health outcomes and recovery processes.',
+    link: '/blog/family-dynamics-mental-health',
+    image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/6cfeb881-529d-42c6-875a-321eac7d440c.webp'
+  },
+  {
+    title: 'Mindfulness Practices for Stress Management',
+    excerpt: 'Explore evidence-based mindfulness techniques for reducing stress and improving mental wellness.',
+    link: '/blog/mindfulness-stress-management',
+    image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/6cfeb881-529d-42c6-875a-321eac7d440c.webp'
+  }];
+
 
   const articleSchema = {
     '@context': 'https://schema.org',
@@ -122,22 +122,22 @@ const EmpoweringYouthBlogPostPage = () => {
     image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/6cfeb881-529d-42c6-875a-321eac7d440c.webp',
     author: {
       '@type': 'Organization',
-      name: 'karmatms',
+      name: 'karmatms'
     },
     publisher: {
       '@type': 'Organization',
       name: 'KarmaTMS',
       logo: {
         '@type': 'ImageObject',
-        url: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/ebadb369-a58d-421c-b937-24f900be5867.png',
-      },
+        url: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/ebadb369-a58d-421c-b937-24f900be5867.png'
+      }
     },
     datePublished: '2024-12-28',
     dateModified: '2024-12-28',
     mainEntityOfPage: {
       '@type': 'WebPage',
-      '@id': 'https://karmatms.com/blog/empowering-youth-emotional-resilience',
-    },
+      '@id': 'https://karmatms.com/blog/empowering-youth-emotional-resilience'
+    }
   };
 
   const faqSchema = {
@@ -148,9 +148,9 @@ const EmpoweringYouthBlogPostPage = () => {
       name: faq.question,
       acceptedAnswer: {
         '@type': 'Answer',
-        text: faq.answer,
-      },
-    })),
+        text: faq.answer
+      }
+    }))
   };
 
   return (
@@ -161,17 +161,17 @@ const EmpoweringYouthBlogPostPage = () => {
         keywords="youth mental health, emotional resilience, building resilience in youth, adolescent mental health, youth empowerment, teen mental wellness, emotional intelligence youth"
         canonical="/blog/empowering-youth-emotional-resilience"
         ogImage="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/6cfeb881-529d-42c6-875a-321eac7d440c.webp"
-        ogType="article"
-      />
+        ogType="article" />
+
 
       <StructuredData
         type="breadcrumb"
         breadcrumbs={[
-          { name: 'Home', url: '/' },
-          { name: 'Blog', url: '/blog' },
-          { name: 'Empowering Youth', url: '/blog/empowering-youth-emotional-resilience' },
-        ]}
-      />
+        { name: 'Home', url: '/' },
+        { name: 'Blog', url: '/blog' },
+        { name: 'Empowering Youth', url: '/blog/empowering-youth-emotional-resilience' }]
+        } />
+
 
       <script type="application/ld+json">{JSON.stringify(articleSchema)}</script>
 
@@ -251,19 +251,19 @@ const EmpoweringYouthBlogPostPage = () => {
                 <CardContent className="p-6">
                   <h3 className="font-bold text-lg mb-4 text-[#572670]">Table of Contents</h3>
                   <nav className="space-y-2">
-                    {tocItems.map((item) => (
-                      <button
-                        key={item.id}
-                        onClick={() => scrollToSection(item.id)}
-                        className={`block w-full text-left px-3 py-2 rounded-md text-sm transition-all ${
-                          activeSection === item.id
-                            ? 'bg-[#572670] text-white font-medium'
-                            : 'text-gray-700 hover:bg-[#572670]/10'
-                        }`}
-                      >
+                    {tocItems.map((item) =>
+                    <button
+                      key={item.id}
+                      onClick={() => scrollToSection(item.id)}
+                      className={`block w-full text-left px-3 py-2 rounded-md text-sm transition-all ${
+                      activeSection === item.id ?
+                      'bg-[#572670] text-white font-medium' :
+                      'text-gray-700 hover:bg-[#572670]/10'}`
+                      }>
+
                         {item.label}
                       </button>
-                    ))}
+                    )}
                   </nav>
                   <div className="mt-6 pt-6 border-t">
                     <Button asChild className="w-full bg-[#572670] hover:bg-[#7B3FA0]">
@@ -282,15 +282,15 @@ const EmpoweringYouthBlogPostPage = () => {
               <img
                 src="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/6cfeb881-529d-42c6-875a-321eac7d440c.webp"
                 alt="Young people building emotional resilience"
-                className="w-full h-64 md:h-96 object-cover rounded-lg mb-6"
-              />
+                className="w-full h-64 md:h-96 object-cover rounded-lg mb-6" />
+
               <p className="text-xl text-gray-700 leading-relaxed">
                 In an era marked by unprecedented challenges—from academic pressures to social media comparison, climate anxiety to economic uncertainty—today's youth face unique stressors that can impact their mental health. Building <strong>emotional resilience</strong> is no longer optional; it's essential for helping young people not just survive, but thrive in an increasingly complex world.
               </p>
             </div>
 
             {/* Section 1: What is Emotional Resilience */}
-            <section ref={(el) => (sectionsRef.current['what-is-resilience'] = el)} className="mb-12">
+            <section ref={(el) => sectionsRef.current['what-is-resilience'] = el} className="mb-12">
               <h2 className="text-3xl font-bold text-[#572670] mb-6">What is Emotional Resilience?</h2>
               <Card className="bg-gradient-to-br from-[#572670]/5 to-transparent border-[#572670]/20 mb-6">
                 <CardContent className="p-6">
@@ -338,7 +338,7 @@ const EmpoweringYouthBlogPostPage = () => {
             </section>
 
             {/* Section 2: Why Important */}
-            <section ref={(el) => (sectionsRef.current['why-important'] = el)} className="mb-12">
+            <section ref={(el) => sectionsRef.current['why-important'] = el} className="mb-12">
               <h2 className="text-3xl font-bold text-[#572670] mb-6">Why Emotional Resilience Matters for Youth</h2>
 
               <p className="mb-6">
@@ -366,7 +366,7 @@ const EmpoweringYouthBlogPostPage = () => {
             </section>
 
             {/* Section 3: Key Strategies */}
-            <section ref={(el) => (sectionsRef.current['key-strategies'] = el)} className="mb-12">
+            <section ref={(el) => sectionsRef.current['key-strategies'] = el} className="mb-12">
               <h2 className="text-3xl font-bold text-[#572670] mb-6">Key Strategies for Building Resilience</h2>
 
               <h3 className="text-2xl font-bold text-gray-900 mb-4">1. Foster Emotional Intelligence</h3>
@@ -391,7 +391,7 @@ const EmpoweringYouthBlogPostPage = () => {
             </section>
 
             {/* Section 4: Practical Tools */}
-            <section ref={(el) => (sectionsRef.current['practical-tools'] = el)} className="mb-12">
+            <section ref={(el) => sectionsRef.current['practical-tools'] = el} className="mb-12">
               <h2 className="text-3xl font-bold text-[#572670] mb-6">Practical Tools and Activities</h2>
 
               <div className="space-y-4 mb-8">
@@ -443,7 +443,7 @@ const EmpoweringYouthBlogPostPage = () => {
             </section>
 
             {/* Section 5: Role of Adults */}
-            <section ref={(el) => (sectionsRef.current['role-of-adults'] = el)} className="mb-12">
+            <section ref={(el) => sectionsRef.current['role-of-adults'] = el} className="mb-12">
               <h2 className="text-3xl font-bold text-[#572670] mb-6">How Adults Can Support Youth Resilience</h2>
 
               <p className="mb-6">
@@ -491,26 +491,26 @@ const EmpoweringYouthBlogPostPage = () => {
               name="karmatms"
               role="Mental Health Content Team"
               bio="Our content team is dedicated to providing evidence-based information on mental health, wellness, and innovative treatments. We combine clinical expertise with compassionate understanding to help individuals and families navigate mental health challenges."
-              image="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/ebadb369-a58d-421c-b937-24f900be5867.png"
-            />
+              image="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/ebadb369-a58d-421c-b937-24f900be5867.png" />
+
 
             {/* FAQ Section */}
-            <section ref={(el) => (sectionsRef.current['faqs'] = el)} className="mb-12 mt-12">
+            <section ref={(el) => sectionsRef.current['faqs'] = el} className="mb-12 mt-12">
               <h2 className="text-3xl font-bold text-[#572670] mb-6">Frequently Asked Questions</h2>
 
               <Accordion type="single" collapsible className="w-full space-y-2">
-                {faqs.map((faq, index) => (
-                  <AccordionItem
-                    key={index}
-                    value={`item-${index}`}
-                    className="border border-gray-200 rounded-lg px-4 data-[state=open]:border-[#572670]"
-                  >
+                {faqs.map((faq, index) =>
+                <AccordionItem
+                  key={index}
+                  value={`item-${index}`}
+                  className="border border-gray-200 rounded-lg px-4 data-[state=open]:border-[#572670]">
+
                     <AccordionTrigger className="text-left font-semibold hover:text-[#572670] hover:no-underline">
                       {faq.question}
                     </AccordionTrigger>
                     <AccordionContent className="text-gray-700 pt-2 pb-4">{faq.answer}</AccordionContent>
                   </AccordionItem>
-                ))}
+                )}
               </Accordion>
             </section>
 
@@ -531,8 +531,8 @@ const EmpoweringYouthBlogPostPage = () => {
                     asChild
                     size="lg"
                     variant="outline"
-                    className="border-white text-white hover:bg-white/10"
-                  >
+                    className="border-white text-white hover:bg-white/10">
+
                     <Link to="/blog">Read More Articles</Link>
                   </Button>
                 </div>
@@ -543,11 +543,11 @@ const EmpoweringYouthBlogPostPage = () => {
             <section className="mb-12">
               <h2 className="text-3xl font-bold text-[#572670] mb-6">Related Articles</h2>
               <div className="grid md:grid-cols-3 gap-6">
-                {relatedPosts.map((post, index) => (
-                  <Card
-                    key={index}
-                    className="border-[#572670]/20 overflow-hidden hover:shadow-lg transition-shadow"
-                  >
+                {relatedPosts.map((post, index) =>
+                <Card
+                  key={index}
+                  className="border-[#572670]/20 overflow-hidden hover:shadow-lg transition-shadow">
+
                     <img src={post.image} alt={post.title} className="w-full h-48 object-cover" />
                     <CardContent className="p-6">
                       <h3 className="font-bold text-lg mb-2 hover:text-[#572670] transition-colors">
@@ -555,17 +555,17 @@ const EmpoweringYouthBlogPostPage = () => {
                       </h3>
                       <p className="text-gray-600 text-sm mb-4">{post.excerpt}</p>
                       <Button
-                        asChild
-                        variant="ghost"
-                        className="text-[#572670] p-0 h-auto hover:bg-transparent"
-                      >
+                      asChild
+                      variant="ghost"
+                      className="text-[#572670] p-0 h-auto hover:bg-transparent">
+
                         <Link to={post.link} className="inline-flex items-center gap-2">
                           Read More <ArrowRight className="w-4 h-4" />
                         </Link>
                       </Button>
                     </CardContent>
                   </Card>
-                ))}
+                )}
               </div>
             </section>
           </article>
@@ -573,8 +573,8 @@ const EmpoweringYouthBlogPostPage = () => {
       </div>
 
       <FooterSection />
-    </>
-  );
+    </>);
+
 };
 
 export default EmpoweringYouthBlogPostPage;
