@@ -5,7 +5,7 @@ import { Brain, Zap, TrendingUp, CheckCircle } from 'lucide-react';
 
 const HowTMSWorks = () => {
   return (
-   <section className="py-20 bg-white">
+    <section className="py-20 bg-white">
   <div className="container mx-auto px-4">
     <div className="grid lg:grid-cols-2 gap-12 items-center">
       {/* Left Column - Content */}
@@ -56,21 +56,21 @@ const HowTMSWorks = () => {
             <div className="flex flex-col items-center justify-center w-full">
               <div className="w-full" style={{ position: "relative", paddingBottom: "56.25%", height: 0, overflow: "hidden", borderRadius: "1rem" }}>
                 <iframe
-                  title="YouTube video player"
-                  src="https://www.youtube.com/embed/opUZyysSUJc?si=3sKz7fzyePEMbqZQ"
-                  frameBorder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  allowFullScreen
-                  referrerPolicy="strict-origin-when-cross-origin"
-                  style={{
-                    position: "absolute",
-                    top: 0,
-                    left: 0,
-                    width: "100%",
-                    height: "100%",
-                    borderRadius: "1rem",
-                  }}
-                />
+                      title="YouTube video player"
+                      src="https://www.youtube.com/embed/opUZyysSUJc?si=3sKz7fzyePEMbqZQ"
+                      frameBorder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      allowFullScreen
+                      referrerPolicy="strict-origin-when-cross-origin"
+                      style={{
+                        position: "absolute",
+                        top: 0,
+                        left: 0,
+                        width: "100%",
+                        height: "100%",
+                        borderRadius: "1rem"
+                      }} />
+
               </div>
             </div>
           </CardContent>
@@ -116,8 +116,8 @@ const HowTMSWorks = () => {
       </div>
     </div>
   </div>
-</section>
-);
+    </section>);
+
 
 };
 

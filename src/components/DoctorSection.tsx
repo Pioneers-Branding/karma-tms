@@ -84,7 +84,7 @@ const DoctorSection = () => {
               {/* Floating Stats Cards */}
               <Card className="absolute -top-6 -right-6 bg-gradient-to-r from-[#572670] to-purple-600 text-white shadow-2xl lg:block hidden">
                 <CardContent className="p-6 text-center">
-                  <div className="text-4xl font-bold mb-2">15+</div>
+                  <div className="text-4xl font-bold mb-2">30+</div>
                   <div className="text-sm text-white/90">Years Experience</div>
                 </CardContent>
               </Card>
