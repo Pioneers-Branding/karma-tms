@@ -38,7 +38,7 @@ const allBlogPosts: BlogPost[] = [
   excerpt: 'Discover how TMS therapy offers new hope for veterans struggling with PTSD, depression, and anxiety. Learn about VA hospital availability and treatment success rates.',
   category: 'tms-therapy',
   author: 'Dr. Keerthy Sunder',
-  date: new Date(2024, 8, 15).toLocaleDateString('en-US', {
+  date: new Date(2025, 8, 15).toLocaleDateString('en-US', {
     year: 'numeric',
     month: 'long',
     day: 'numeric'
@@ -54,7 +54,7 @@ const allBlogPosts: BlogPost[] = [
   excerpt: 'Educational guide explaining the relationship between VA programs and TMS therapy, and how veterans can access care through VA-approved or private options.',
   category: 'mental-health',
   author: 'Dr. Keerthy Sunder',
-  date: new Date(2024, 8, 22).toLocaleDateString('en-US', {
+  date: new Date(2025, 8, 22).toLocaleDateString('en-US', {
     year: 'numeric',
     month: 'long',
     day: 'numeric'
@@ -70,7 +70,7 @@ const allBlogPosts: BlogPost[] = [
   excerpt: 'Complete guide to obtaining VA disability benefits for mental health conditions. Learn about eligibility, rating percentages, application process, and how much the VA pays.',
   category: 'mental-health',
   author: 'Dr. Keerthy Sunder',
-  date: new Date(2024, 8, 29).toLocaleDateString('en-US', {
+  date: new Date(2025, 8, 29).toLocaleDateString('en-US', {
     year: 'numeric',
     month: 'long',
     day: 'numeric'
@@ -86,7 +86,7 @@ const allBlogPosts: BlogPost[] = [
   excerpt: 'Comprehensive comparison of TMS therapy and medication for veterans with depression. Discover why veterans are choosing magnetic stimulation over traditional antidepressants.',
   category: 'tms-therapy',
   author: 'Dr. Keerthy Sunder',
-  date: new Date(2024, 9, 6).toLocaleDateString('en-US', {
+  date: new Date(2025, 9, 6).toLocaleDateString('en-US', {
     year: 'numeric',
     month: 'long',
     day: 'numeric'
@@ -102,7 +102,7 @@ const allBlogPosts: BlogPost[] = [
   excerpt: 'Compassionate guide for helping veterans with PTSD, including therapy options, TMS treatment, local resources, and support strategies for families.',
   category: 'mental-health',
   author: 'Dr. Keerthy Sunder',
-  date: new Date(2024, 9, 13).toLocaleDateString('en-US', {
+  date: new Date(2025, 9, 13).toLocaleDateString('en-US', {
     year: 'numeric',
     month: 'long',
     day: 'numeric'
@@ -118,7 +118,7 @@ const allBlogPosts: BlogPost[] = [
   excerpt: 'A comprehensive guide to recognizing PTSD in war veterans and Vietnam vets, with modern treatment options including TMS therapy.',
   category: 'mental-health',
   author: 'Dr. Keerthy Sunder',
-  date: new Date(2024, 9, 20).toLocaleDateString('en-US', {
+  date: new Date(2025, 9, 20).toLocaleDateString('en-US', {
     year: 'numeric',
     month: 'long',
     day: 'numeric'
@@ -134,7 +134,7 @@ const allBlogPosts: BlogPost[] = [
   excerpt: 'Discover how TMS therapy helps veterans manage anxiety through brain regulation, offering hope beyond traditional medications.',
   category: 'tms-therapy',
   author: 'Dr. Keerthy Sunder',
-  date: new Date(2024, 9, 27).toLocaleDateString('en-US', {
+  date: new Date(2025, 9, 27).toLocaleDateString('en-US', {
     year: 'numeric',
     month: 'long',
     day: 'numeric'
@@ -150,7 +150,7 @@ const allBlogPosts: BlogPost[] = [
   excerpt: 'Learn how TMS addresses chronic migraines in veterans, including comorbidity with PTSD and depression, plus VA disability information.',
   category: 'tms-therapy',
   author: 'Dr. Keerthy Sunder',
-  date: new Date(2024, 10, 10).toLocaleDateString('en-US', {
+  date: new Date(2025, 10, 10).toLocaleDateString('en-US', {
     year: 'numeric',
     month: 'long',
     day: 'numeric'
