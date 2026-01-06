@@ -321,7 +321,7 @@ const PalmSpringsPage = () => {
                     target="_blank"
                     rel="noopener noreferrer">
 
-                    <Button variant="outline" className="w-full group">
+                    <Button variant="outline" className="w-full group mb-3">
                       <NavIcon className="w-4 h-4 mr-2 group-hover:translate-x-1 transition-transform" />
                       Get Directions
                     </Button>
