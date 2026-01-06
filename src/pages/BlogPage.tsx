@@ -76,7 +76,7 @@ const allBlogPosts: BlogPost[] = [
     day: 'numeric'
   }),
   readTime: '14 min read',
-  image: 'https://images.unsplash.com/photo-1747301136652-63964ac1fd95?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MTg3MTl8MHwxfHNlYXJjaHwxfHxBJTIwd2VicCUyMGltYWdlJTIwaG9zdGVkJTIwb24lMjBhJTIwc2VydmVyJTJDJTIwbGlrZWx5JTIwdXNlZCUyMGFzJTIwYSUyMHZpc3VhbCUyMGVsZW1lbnQlMjBpbiUyMGElMjBibG9nJTIwb3IlMjBhcnRpY2xlLnxlbnwwfHx8fDE3NjQwNzExOTF8MA&ixlib=rb-4.1.0&q=80&w=200$w=1200',
+  image: 'https://res.cloudinary.com/de4kw1t2i/image/upload/v1764138579/32_og3ayd.png',
   featured: false,
   rating: 5
 },
