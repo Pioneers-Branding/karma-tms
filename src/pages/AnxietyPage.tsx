@@ -381,9 +381,9 @@ const AnxietyPage = () => {
               <img
                 src="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/66e6e1ae-8cc3-4469-bfaf-b1f3f3d07006.webp"
                 alt="Anxiety treatment session"
-                className="rounded-lg shadow-lg" />
+                className="rounded-lg shadow-lg max-h-[600px] mx-auto" />
 
-              <div className="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent rounded-lg"></div>
+              
             </div>
           </div>
 
