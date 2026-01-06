@@ -25,8 +25,8 @@ import {
   HandHelping,
   Calendar,
   Wallet,
-  BookA,
-} from 'lucide-react';
+  BookA } from
+'lucide-react';
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -45,81 +45,81 @@ const Navigation = () => {
   };
 
   const servicesLinks = [
-    { name: 'TMS Therapy', href: '/tms-therapy', icon: Brain },
-    { name: 'PrTMS', href: '/prtms', icon: Stethoscope },
-    { name: 'Brain Mapping', href: '/brain-mapping', icon: Brain },
-    { name: 'Neurofeedback', href: '/neurofeedback', icon: FileText },
-    { name: 'Medication Management', href: '/medication-management', icon: Shield }
-  ];
+  { name: 'TMS Therapy', href: '/tms-therapy', icon: Brain },
+  { name: 'PrTMS', href: '/prtms', icon: Stethoscope },
+  { name: 'Brain Mapping', href: '/brain-mapping', icon: Brain },
+  { name: 'Neurofeedback', href: '/neurofeedback', icon: FileText },
+  { name: 'Medication Management', href: '/medication-management', icon: Shield }];
+
 
   const conditionsLinks = [
-    { name: 'Depression', href: '/conditions/depression', icon: Heart },
-    { name: 'Anxiety Disorders', href: '/conditions/anxiety', icon: Shield },
-    { name: 'OCD', href: '/conditions/ocd', icon: Brain },
-    { name: 'PTSD', href: '/conditions/ptsd', icon: Heart },
-    { name: 'Bipolar Depression', href: '/conditions/bipolar', icon: Brain },
-    { name: 'Addiction Recovery', href: '/conditions/addiction', icon: Heart },
-    { name: "Women's Mood", href: '/conditions/womens-mood', icon: Heart }
-  ];
+  { name: 'Depression', href: '/conditions/depression', icon: Heart },
+  { name: 'Anxiety Disorders', href: '/conditions/anxiety', icon: Shield },
+  { name: 'OCD', href: '/conditions/ocd', icon: Brain },
+  { name: 'PTSD', href: '/conditions/ptsd', icon: Heart },
+  { name: 'Bipolar Depression', href: '/conditions/bipolar', icon: Brain },
+  { name: 'Addiction Recovery', href: '/conditions/addiction', icon: Heart },
+  { name: "Women's Mood", href: '/conditions/womens-mood', icon: Heart }];
+
 
   const resourcesLinks = [
-    { name: 'Testimonials', href: '/testimonials', icon: Users },
-    { name: 'Research', href: '/research', icon: BookOpen },
-    { name: 'Blog', href: '/blog', icon: FileText },
-    { name: 'FAQs', href: '/faqs', icon: HelpCircle },
-    { name: 'Take Quiz', href: '/quiz', icon: Award }
-  ];
+  { name: 'Testimonials', href: '/testimonials', icon: Users },
+  { name: 'Research', href: '/research', icon: BookOpen },
+  { name: 'Blog', href: '/blog', icon: FileText },
+  { name: 'FAQs', href: '/faqs', icon: HelpCircle },
+  { name: 'Take Quiz', href: '/quiz', icon: Award }];
+
 
   const patientLinks = [
-    { name: 'Affiliations', href: '/affiliations', icon: HandHelping },
-    { name: 'Internships', href: '/interns', icon: BookA },
-    { name: 'Insurance & Pricing', href: '/insurance-pricing', icon: Wallet },
-    { name: 'Book Appointment', href: '/book', icon: Calendar }
-  ];
+  { name: 'Affiliations', href: '/affiliations', icon: HandHelping },
+  { name: 'Internships', href: '/interns', icon: BookA },
+  { name: 'Insurance & Pricing', href: '/insurance-pricing', icon: Wallet },
+  { name: 'Book Appointment', href: '/book', icon: Calendar }];
+
 
   return (
     <header className={`sticky top-0 z-50 transition-all duration-300 ${
-      scrolled
-        ? 'bg-[#572670]/95 backdrop-blur-sm shadow-lg border-b border-white/20'
-        : 'bg-[#572670]/90 backdrop-blur-xs shadow-sm border-b border-white/10'
-    }`}>
+    scrolled ?
+    'bg-[#572670]/95 backdrop-blur-sm shadow-lg border-b border-white/20' :
+    'bg-[#572670]/90 backdrop-blur-xs shadow-sm border-b border-white/10'}`
+    }>
       <div className="w-full max-w-full overflow-hidden">
-        <div className="max-w-[1600px] mx-auto px-3 sm:px-4 lg:px-6">
-          <div className="flex items-center justify-between h-14 sm:h-16 lg:h-18">
+        <div className="max-w-[1600px] mx-auto px-2 sm:px-3 md:px-4 lg:px-6">
+          <div className="flex items-center justify-between h-14 sm:h-16 lg:h-18 gap-2 sm:gap-3">
             
-            <Link to="/" className="flex items-center flex-shrink-0">
+            <Link to="/" className="flex items-center flex-shrink-0 min-w-0">
               <img
                 src="https://res.cloudinary.com/de4kw1t2i/image/upload/v1759944699/karmatms_rp4lkn.png"
                 alt="Karma TMS"
-                className="h-8 w-auto sm:h-10 md:h-12 transition-all duration-200"
-              />
+                className="h-7 w-auto sm:h-9 md:h-10 lg:h-12 transition-all duration-200" />
+
             </Link>
 
-            <nav className="hidden xl:flex items-center space-x-4 xl:space-x-6 flex-shrink">
+            <nav className="hidden xl:flex items-center space-x-2 xl:space-x-4 flex-shrink min-w-0">
               <Link to="/">
-                <Button variant="ghost" className="text-white hover:text-white/80 hover:bg-white/10 transition-colors text-sm">
-                  <Home className="h-4 w-4 mr-2" />
+                <Button variant="ghost" className="text-white hover:text-white/80 hover:bg-white/10 transition-colors text-xs xl:text-sm px-2 xl:px-3">
+                  <Home className="h-3.5 w-3.5 xl:h-4 xl:w-4 mr-1.5 xl:mr-2" />
                   Home
                 </Button>
               </Link>
               
               <Link to="/about">
-                <Button variant="ghost" className="text-white hover:text-white/80 hover:bg-white/10 transition-colors text-sm">
-                  <User className="h-4 w-4 mr-2" />
+                <Button variant="ghost" className="text-white hover:text-white/80 hover:bg-white/10 transition-colors text-xs xl:text-sm px-2 xl:px-3">
+                  <User className="h-3.5 w-3.5 xl:h-4 xl:w-4 mr-1.5 xl:mr-2" />
                   About
                 </Button>
               </Link>
               
               <Link to="/team">
-                <Button variant="ghost" className="text-white hover:text-white/80 hover:bg-white/10 transition-colors text-sm">
-                  <UserCheck className="h-4 w-4 mr-2" />
+                <Button variant="ghost" className="text-white hover:text-white/80 hover:bg-white/10 transition-colors text-xs xl:text-sm px-2 xl:px-3">
+                  <UserCheck className="h-3.5 w-3.5 xl:h-4 xl:w-4 mr-1.5 xl:mr-2" />
                   Our Team
                 </Button>
               </Link>
 
               <DropdownMenu>
                 <DropdownMenuTrigger asChild>
-                  <Button variant="ghost" className="text-white hover:text-white/80 hover:bg-white/10 flex items-center gap-1 transition-colors text-sm">
+                  <Button variant="ghost" className="text-white hover:text-white/80 hover:bg-white/10 flex items-center gap-1 transition-colors text-xs xl:text-sm px-2 xl:px-3">
                     Services <ChevronDown className="h-4 w-4" />
                   </Button>
                 </DropdownMenuTrigger>
@@ -132,15 +132,15 @@ const Navigation = () => {
                           <IconComponent className="h-4 w-4 mr-3 text-[#572670] group-hover:scale-110 transition-transform" />
                           <span className="font-medium">{link.name}</span>
                         </DropdownMenuItem>
-                      </Link>
-                    );
+                      </Link>);
+
                   })}
                 </DropdownMenuContent>
               </DropdownMenu>
 
               <DropdownMenu>
                 <DropdownMenuTrigger asChild>
-                  <Button variant="ghost" className="text-white hover:text-white/80 hover:bg-white/10 flex items-center gap-1 transition-colors text-sm">
+                  <Button variant="ghost" className="text-white hover:text-white/80 hover:bg-white/10 flex items-center gap-1 transition-colors text-xs xl:text-sm px-2 xl:px-3">
                     Conditions <ChevronDown className="h-4 w-4" />
                   </Button>
                 </DropdownMenuTrigger>
@@ -153,15 +153,15 @@ const Navigation = () => {
                           <IconComponent className="h-4 w-4 mr-3 text-[#572670] group-hover:scale-110 transition-transform" />
                           <span className="font-medium">{link.name}</span>
                         </DropdownMenuItem>
-                      </Link>
-                    );
+                      </Link>);
+
                   })}
                 </DropdownMenuContent>
               </DropdownMenu>
 
               <DropdownMenu>
                 <DropdownMenuTrigger asChild>
-                  <Button variant="ghost" className="text-white hover:text-white/80 hover:bg-white/10 flex items-center gap-1 transition-colors text-sm">
+                  <Button variant="ghost" className="text-white hover:text-white/80 hover:bg-white/10 flex items-center gap-1 transition-colors text-xs xl:text-sm px-2 xl:px-3">
                     Resources <ChevronDown className="h-4 w-4" />
                   </Button>
                 </DropdownMenuTrigger>
@@ -174,15 +174,15 @@ const Navigation = () => {
                           <IconComponent className="h-4 w-4 mr-3 text-[#572670] group-hover:scale-110 transition-transform" />
                           <span className="font-medium">{link.name}</span>
                         </DropdownMenuItem>
-                      </Link>
-                    );
+                      </Link>);
+
                   })}
                 </DropdownMenuContent>
               </DropdownMenu>
 
               <DropdownMenu>
                 <DropdownMenuTrigger asChild>
-                  <Button variant="ghost" className="text-white hover:text-white/80 hover:bg-white/10 flex items-center gap-1 transition-colors text-sm">
+                  <Button variant="ghost" className="text-white hover:text-white/80 hover:bg-white/10 flex items-center gap-1 transition-colors text-xs xl:text-sm px-2 xl:px-3">
                     Patient Care <ChevronDown className="h-4 w-4" />
                   </Button>
                 </DropdownMenuTrigger>
@@ -195,29 +195,52 @@ const Navigation = () => {
                           <IconComponent className="h-4 w-4 mr-3 text-[#572670] group-hover:scale-110 transition-transform" />
                           <span className="font-medium">{link.name}</span>
                         </DropdownMenuItem>
-                      </Link>
-                    );
+                      </Link>);
+
                   })}
                 </DropdownMenuContent>
               </DropdownMenu>
 
               <Link to="/contact">
-                <Button variant="ghost" className="text-white hover:text-white/80 hover:bg-white/10 transition-colors text-sm">
-                  <Mail className="h-4 w-4 mr-2" />
+                <Button variant="ghost" className="text-white hover:text-white/80 hover:bg-white/10 transition-colors text-xs xl:text-sm px-2 xl:px-3">
+                  <Mail className="h-3.5 w-3.5 xl:h-4 xl:w-4 mr-1.5 xl:mr-2" />
                   Contact
                 </Button>
               </Link>
             </nav>
 
-            <div className="hidden lg:flex items-center">
-              <Button
-                variant="outline"
-                size="sm"
-                className="border-white/30 text-white bg-white/5 hover:bg-white hover:text-[#572670] hover:border-white transition-all duration-300 px-3 lg:px-6 text-xs lg:text-sm">
-                <Phone className="h-3 w-3 lg:h-4 lg:w-4 mr-1 lg:mr-2" />
-                <span className="hidden lg:inline">760-760-5675</span>
-                <span className="lg:hidden">Call</span>
-              </Button>
+            <div className="flex items-center gap-2 flex-shrink-0">
+              {/* Mobile/Tablet Phone Button - shows icon only on small screens */}
+              <a href="tel:760-760-5675" className="md:hidden">
+                <Button
+                  variant="outline"
+                  size="sm"
+                  className="border-white/30 text-white bg-white/5 hover:bg-white hover:text-[#572670] hover:border-white transition-all duration-300 px-2 py-1 h-8 min-w-[2rem]">
+                  <Phone className="h-4 w-4" />
+                </Button>
+              </a>
+              
+              {/* Tablet+ Phone Button - shows phone number */}
+              <a href="tel:760-760-5675" className="hidden md:flex lg:hidden">
+                <Button
+                  variant="outline"
+                  size="sm"
+                  className="border-white/30 text-white bg-white/5 hover:bg-white hover:text-[#572670] hover:border-white transition-all duration-300 px-2.5 py-1 h-9 text-xs whitespace-nowrap bg-black text-white">
+                  <Phone className="h-3.5 w-3.5 mr-1.5" />
+                  <span>760-760-5675</span>
+                </Button>
+              </a>
+              
+              {/* Desktop Phone Button - full size */}
+              <a href="tel:760-760-5675" className="hidden lg:flex">
+                <Button
+                  variant="outline"
+                  size="sm"
+                  className="border-white/30 text-white bg-white/5 hover:bg-white hover:text-[#572670] hover:border-white transition-all duration-300 px-4 xl:px-6 py-2 h-10 text-sm whitespace-nowrap">
+                  <Phone className="h-4 w-4 mr-2" />
+                  <span>760-760-5675</span>
+                </Button>
+              </a>
             </div>
 
             <Sheet open={isOpen} onOpenChange={setIsOpen}>
@@ -280,8 +303,8 @@ const Navigation = () => {
                                 <IconComponent className="h-4 w-4 mr-3 text-[#572670]/70" />
                                 {link.name}
                               </Button>
-                            </Link>
-                          );
+                            </Link>);
+
                         })}
                       </div>
                     </div>
@@ -299,8 +322,8 @@ const Navigation = () => {
                                 <IconComponent className="h-4 w-4 mr-3 text-[#572670]/70" />
                                 {link.name}
                               </Button>
-                            </Link>
-                          );
+                            </Link>);
+
                         })}
                       </div>
                     </div>
@@ -318,8 +341,8 @@ const Navigation = () => {
                                 <IconComponent className="h-4 w-4 mr-3 text-[#572670]/70" />
                                 {link.name}
                               </Button>
-                            </Link>
-                          );
+                            </Link>);
+
                         })}
                       </div>
                     </div>
@@ -337,8 +360,8 @@ const Navigation = () => {
                                 <IconComponent className="h-4 w-4 mr-3 text-[#572670]/70" />
                                 {link.name}
                               </Button>
-                            </Link>
-                          );
+                            </Link>);
+
                         })}
                       </div>
                     </div>
@@ -358,8 +381,8 @@ const Navigation = () => {
           </div>
         </div>
       </div>
-    </header>
-  );
+    </header>);
+
 };
 
 export default Navigation;
