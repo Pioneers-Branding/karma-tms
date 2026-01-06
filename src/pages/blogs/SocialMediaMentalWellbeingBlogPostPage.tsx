@@ -272,7 +272,7 @@ const SocialMediaMentalWellbeingBlogPostPage = () => {
             {/* Introduction */}
             <div className="mb-12">
               <img
-                src="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/0df1c6f4-54ea-43f5-aeab-67608371a640.webp"
+                src="https://res.cloudinary.com/de4kw1t2i/image/upload/v1764138578/28_mmumyo.png"
                 alt="Social media and mental health concept"
                 className="w-full object-cover rounded-lg mb-6" />
 
@@ -299,10 +299,7 @@ const SocialMediaMentalWellbeingBlogPostPage = () => {
                 Social media's influence on mental health operates through multiple psychological mechanisms. The constant exposure to curated, idealized versions of others' lives triggers social comparison, while the dopamine-driven feedback loops of likes and comments can create addictive patterns of use. Understanding these mechanisms helps us recognize when our social media habits might be affecting our wellbeing.
               </p>
 
-              <img
-                src="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/88d0408f-19ff-48a1-80bd-5553928c7047.webp"
-                alt="Digital wellbeing concept"
-                className="w-full object-cover rounded-lg mb-6" />
+              
 
             </section>
 
