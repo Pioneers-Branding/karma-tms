@@ -11,19 +11,7 @@ const PatientOnboardingPage = () => {
 
 
       <div className="w-full h-screen overflow-hidden">
-        <iframe
-          src="https://makeforms.io/form/6958dddf14437b1543e0a27c"
-          title="Patient Onboarding Form"
-          className="w-full h-full border-0"
-          style={{
-            width: '100%',
-            height: '100vh',
-            border: 'none',
-            margin: 0,
-            padding: 0
-          }}
-          allow="geolocation; microphone; camera"
-          loading="lazy" />
+        <iframe src="https://us.makeforms.co/ke7qese/" style="width: 100%;height: 500px;max-height: 100%;max-width: 100%;" frameborder="none"></iframe>
 
       </div>
     </>);
