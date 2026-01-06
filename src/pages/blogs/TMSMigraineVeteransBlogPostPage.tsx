@@ -11,16 +11,16 @@ import {
   BreadcrumbLink,
   BreadcrumbList,
   BreadcrumbPage,
-  BreadcrumbSeparator
-} from '@/components/ui/breadcrumb';
+  BreadcrumbSeparator } from
+'@/components/ui/breadcrumb';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import {
   Accordion,
   AccordionContent,
   AccordionItem,
-  AccordionTrigger
-} from '@/components/ui/accordion';
+  AccordionTrigger } from
+'@/components/ui/accordion';
 import { Calendar, Clock, User, CheckCircle2, ArrowRight, Phone } from 'lucide-react';
 
 export default function TMSMigraineVeteransBlogPostPage() {
@@ -36,63 +36,63 @@ export default function TMSMigraineVeteransBlogPostPage() {
   };
 
   const tocItems = [
-    { id: 'understanding-migraines', label: 'Understanding Migraines in Veterans' },
-    { id: 'burden-of-migraines', label: 'The Burden of Migraines for Veterans' },
-    { id: 'va-disability', label: 'VA Disability for Migraines' },
-    { id: 'comorbidity', label: 'Migraines, PTSD, and Depression' },
-    { id: 'traditional-treatments', label: 'Traditional Treatments vs. TMS' },
-    { id: 'how-tms-helps', label: 'How TMS Helps with Migraines' },
-    { id: 'clinical-benefits', label: 'Clinical Benefits and Research' },
-    { id: 'faqs', label: 'Frequently Asked Questions' }
-  ];
+  { id: 'understanding-migraines', label: 'Understanding Migraines in Veterans' },
+  { id: 'burden-of-migraines', label: 'The Burden of Migraines for Veterans' },
+  { id: 'va-disability', label: 'VA Disability for Migraines' },
+  { id: 'comorbidity', label: 'Migraines, PTSD, and Depression' },
+  { id: 'traditional-treatments', label: 'Traditional Treatments vs. TMS' },
+  { id: 'how-tms-helps', label: 'How TMS Helps with Migraines' },
+  { id: 'clinical-benefits', label: 'Clinical Benefits and Research' },
+  { id: 'faqs', label: 'Frequently Asked Questions' }];
+
 
   const faqs = [
-    {
-      question: 'Can TMS therapy help with migraine relief in veterans?',
-      answer: 'Yes, TMS therapy has shown significant effectiveness in reducing migraine frequency and severity in veterans. Studies demonstrate a 40-60% reduction in monthly migraine days. TMS is particularly beneficial for veterans because it can simultaneously address comorbid conditions like PTSD and depression that often coexist with migraines.'
-    },
-    {
-      question: 'How does VA disability rating work for migraines?',
-      answer: 'The VA rates migraines from 0% to 50% based on frequency and severity. A 50% rating is given for very frequent, completely prostrating attacks. 30% for attacks occurring monthly, 10% for attacks every 2 months, and 0% for less frequent attacks. Veterans should document all episodes and obtain medical evidence linking migraines to service.'
-    },
-    {
-      question: 'Why are migraines more common in veterans with PTSD?',
-      answer: 'Veterans with PTSD are 3-5 times more likely to experience migraines due to shared neurobiological mechanisms. The stress and hyperarousal from PTSD can trigger migraine episodes, while chronic migraine pain can worsen PTSD symptoms. Both conditions involve dysfunction in similar brain regions and neurotransmitter systems.'
-    },
-    {
-      question: 'Is TMS better than traditional migraine treatments for veterans?',
-      answer: 'TMS offers several advantages over traditional treatments. Unlike medications, it has no systemic side effects, doesn\'t require daily use, and can treat multiple conditions simultaneously. TMS addresses the neurological dysfunction underlying both migraines and comorbid mental health conditions, offering long-lasting relief that medications cannot provide.'
-    },
-    {
-      question: 'How long does TMS treatment take for migraine relief?',
-      answer: 'A typical TMS treatment course consists of 20-40 minute sessions, usually 5 days per week for 4-6 weeks. Many veterans begin experiencing relief within 2-3 weeks of starting treatment, with continued improvement throughout the course and beyond.'
-    },
-    {
-      question: 'Can veterans with TBI benefit from TMS for migraines?',
-      answer: 'Yes, TMS can be particularly effective for post-traumatic headaches and migraines following TBI. Over 50% of veterans with TBI experience chronic migraines, and these are often resistant to traditional treatments. TMS can help normalize brain activity and reduce both frequency and intensity of TBI-related migraines.'
-    }
-  ];
+  {
+    question: 'Can TMS therapy help with migraine relief in veterans?',
+    answer: 'Yes, TMS therapy has shown significant effectiveness in reducing migraine frequency and severity in veterans. Studies demonstrate a 40-60% reduction in monthly migraine days. TMS is particularly beneficial for veterans because it can simultaneously address comorbid conditions like PTSD and depression that often coexist with migraines.'
+  },
+  {
+    question: 'How does VA disability rating work for migraines?',
+    answer: 'The VA rates migraines from 0% to 50% based on frequency and severity. A 50% rating is given for very frequent, completely prostrating attacks. 30% for attacks occurring monthly, 10% for attacks every 2 months, and 0% for less frequent attacks. Veterans should document all episodes and obtain medical evidence linking migraines to service.'
+  },
+  {
+    question: 'Why are migraines more common in veterans with PTSD?',
+    answer: 'Veterans with PTSD are 3-5 times more likely to experience migraines due to shared neurobiological mechanisms. The stress and hyperarousal from PTSD can trigger migraine episodes, while chronic migraine pain can worsen PTSD symptoms. Both conditions involve dysfunction in similar brain regions and neurotransmitter systems.'
+  },
+  {
+    question: 'Is TMS better than traditional migraine treatments for veterans?',
+    answer: 'TMS offers several advantages over traditional treatments. Unlike medications, it has no systemic side effects, doesn\'t require daily use, and can treat multiple conditions simultaneously. TMS addresses the neurological dysfunction underlying both migraines and comorbid mental health conditions, offering long-lasting relief that medications cannot provide.'
+  },
+  {
+    question: 'How long does TMS treatment take for migraine relief?',
+    answer: 'A typical TMS treatment course consists of 20-40 minute sessions, usually 5 days per week for 4-6 weeks. Many veterans begin experiencing relief within 2-3 weeks of starting treatment, with continued improvement throughout the course and beyond.'
+  },
+  {
+    question: 'Can veterans with TBI benefit from TMS for migraines?',
+    answer: 'Yes, TMS can be particularly effective for post-traumatic headaches and migraines following TBI. Over 50% of veterans with TBI experience chronic migraines, and these are often resistant to traditional treatments. TMS can help normalize brain activity and reduce both frequency and intensity of TBI-related migraines.'
+  }];
+
 
   const relatedPosts = [
-    {
-      title: 'Understanding PTSD in Veterans',
-      excerpt: 'Comprehensive guide to PTSD symptoms and treatment options for veterans.',
-      link: '/blogs/understanding-ptsd-veterans',
-      image: 'https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=800&auto=format'
-    },
-    {
-      title: 'TMS for Anxiety in Veterans',
-      excerpt: 'Learn how TMS helps with veteran anxiety beyond medication.',
-      link: '/blogs/tms-anxiety-veterans',
-      image: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=800&auto=format'
-    },
-    {
-      title: 'TMS Therapy: A Complete Guide',
-      excerpt: 'Everything you need to know about Transcranial Magnetic Stimulation therapy.',
-      link: '/tms-therapy',
-      image: 'https://images.unsplash.com/photo-1559757175-0eb30cd8c063?w=800&auto=format'
-    }
-  ];
+  {
+    title: 'Understanding PTSD in Veterans',
+    excerpt: 'Comprehensive guide to PTSD symptoms and treatment options for veterans.',
+    link: '/blogs/understanding-ptsd-veterans',
+    image: 'https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=800&auto=format'
+  },
+  {
+    title: 'TMS for Anxiety in Veterans',
+    excerpt: 'Learn how TMS helps with veteran anxiety beyond medication.',
+    link: '/blogs/tms-anxiety-veterans',
+    image: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=800&auto=format'
+  },
+  {
+    title: 'TMS Therapy: A Complete Guide',
+    excerpt: 'Everything you need to know about Transcranial Magnetic Stimulation therapy.',
+    link: '/tms-therapy',
+    image: 'https://images.unsplash.com/photo-1559757175-0eb30cd8c063?w=800&auto=format'
+  }];
+
 
   const structuredData = {
     '@context': 'https://schema.org',
@@ -170,8 +170,8 @@ export default function TMSMigraineVeteransBlogPostPage() {
         title="TMS for Migraine Relief in Veterans: Brain Stimulation Treatment | Karma TMS"
         description="Discover how TMS helps veterans with migraines. Learn about VA disability for migraines, comorbidity with PTSD and depression, and clinical benefits of brain stimulation therapy."
         keywords="migraines for veterans, migraines veterans disability, migraines veterans, migraines for va disability, va disability for migraines, TMS for migraines, veteran migraine treatment"
-        canonicalUrl="https://www.karmatms.com/blogs/tms-migraine-veterans"
-      />
+        canonicalUrl="https://www.karmatms.com/blogs/tms-migraine-veterans" />
+
 
       <StructuredData data={structuredData} />
       
@@ -256,19 +256,19 @@ export default function TMSMigraineVeteransBlogPostPage() {
                 <CardContent className="p-6">
                   <h3 className="font-bold text-lg mb-4 text-[#572670]">Table of Contents</h3>
                   <nav className="space-y-2">
-                    {tocItems.map((item) => (
-                      <button
-                        key={item.id}
-                        onClick={() => scrollToSection(item.id)}
-                        className={`block w-full text-left px-3 py-2 rounded-md text-sm transition-all ${
-                          activeSection === item.id
-                            ? 'bg-[#572670] text-white font-medium'
-                            : 'text-gray-700 hover:bg-[#572670]/10'
-                        }`}
-                      >
+                    {tocItems.map((item) =>
+                    <button
+                      key={item.id}
+                      onClick={() => scrollToSection(item.id)}
+                      className={`block w-full text-left px-3 py-2 rounded-md text-sm transition-all ${
+                      activeSection === item.id ?
+                      'bg-[#572670] text-white font-medium' :
+                      'text-gray-700 hover:bg-[#572670]/10'}`
+                      }>
+
                         {item.label}
                       </button>
-                    ))}
+                    )}
                   </nav>
                   <div className="mt-6 pt-6 border-t">
                     <Button asChild className="w-full bg-[#572670] hover:bg-[#7B3FA0]">
@@ -287,12 +287,12 @@ export default function TMSMigraineVeteransBlogPostPage() {
               <img
                 src="https://res.cloudinary.com/de4kw1t2i/image/upload/v1763033673/7_lnxkrv.png"
                 alt="TMS for Migraine Relief in Veterans"
-                className="w-full h-64 md:h-96 object-cover rounded-lg mb-6"
-              />
+                className="w-full  md:h-96 object-cover rounded-lg mb-6" />
+
             </div>
 
             {/* Section 1: Understanding Migraines */}
-            <section ref={(el) => (sectionsRef.current['understanding-migraines'] = el)} className="mb-12">
+            <section ref={(el) => sectionsRef.current['understanding-migraines'] = el} className="mb-12">
               <h2 className="text-3xl font-bold text-[#572670] mb-6">Understanding Migraines in Veterans</h2>
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
                 Migraines affect a significantly higher percentage of veterans compared to the general population. For many veterans, chronic migraines aren't just debilitating headaches—they're often interconnected with other service-related conditions like PTSD, traumatic brain injury (TBI), and depression.
@@ -303,7 +303,7 @@ export default function TMSMigraineVeteransBlogPostPage() {
             </section>
 
             {/* Section 2: Burden of Migraines */}
-            <section ref={(el) => (sectionsRef.current['burden-of-migraines'] = el)} className="mb-12">
+            <section ref={(el) => sectionsRef.current['burden-of-migraines'] = el} className="mb-12">
               <h2 className="text-3xl font-bold text-[#572670] mb-6">The Burden of Migraines for Veterans</h2>
               
               <Card className="bg-gradient-to-br from-[#572670]/5 to-transparent border-[#572670]/20 mb-6">
@@ -332,13 +332,13 @@ export default function TMSMigraineVeteransBlogPostPage() {
             </section>
 
             {/* Section 3: VA Disability */}
-            <section ref={(el) => (sectionsRef.current['va-disability'] = el)} className="mb-12">
+            <section ref={(el) => sectionsRef.current['va-disability'] = el} className="mb-12">
               <h2 className="text-3xl font-bold text-[#572670] mb-6">VA Disability for Migraines</h2>
               <img
                 src="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/f00dd3f4-cea1-4918-8fec-5976198e195f.webp"
                 alt="VA benefits for veterans with migraines"
-                className="w-full h-64 md:h-80 object-cover rounded-lg mb-6"
-              />
+                className="w-full h-64 md:h-80 object-cover rounded-lg mb-6" />
+
 
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
                 The VA recognizes migraines as a potentially disabling condition for veterans. Understanding how to navigate VA disability for migraines is crucial for accessing proper care and compensation.
@@ -414,7 +414,7 @@ export default function TMSMigraineVeteransBlogPostPage() {
             </section>
 
             {/* Section 4: Comorbidity */}
-            <section ref={(el) => (sectionsRef.current['comorbidity'] = el)} className="mb-12">
+            <section ref={(el) => sectionsRef.current['comorbidity'] = el} className="mb-12">
               <h2 className="text-3xl font-bold text-[#572670] mb-6">The Complex Connection: Migraines, PTSD, and Depression</h2>
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
                 One of the most critical aspects of understanding migraines in veterans is recognizing their comorbidity with mental health conditions. These conditions often exist together and can exacerbate each other, creating a challenging cycle.
@@ -502,13 +502,13 @@ export default function TMSMigraineVeteransBlogPostPage() {
             </section>
 
             {/* Section 5: Traditional Treatments */}
-            <section ref={(el) => (sectionsRef.current['traditional-treatments'] = el)} className="mb-12">
+            <section ref={(el) => sectionsRef.current['traditional-treatments'] = el} className="mb-12">
               <h2 className="text-3xl font-bold text-[#572670] mb-6">Traditional Treatments vs. TMS</h2>
               <img
                 src="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/2ddc8d69-b09a-4f1d-bd47-6d783ceefbd1.webp"
                 alt="Migraine treatment options"
-                className="w-full h-64 md:h-80 object-cover rounded-lg mb-6"
-              />
+                className="w-full h-64 md:h-80 object-cover rounded-lg mb-6" />
+
 
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Conventional Migraine Treatments:</h3>
               <div className="space-y-4 mb-8">
@@ -555,7 +555,7 @@ export default function TMSMigraineVeteransBlogPostPage() {
             </section>
 
             {/* Section 6: How TMS Helps */}
-            <section ref={(el) => (sectionsRef.current['how-tms-helps'] = el)} className="mb-12">
+            <section ref={(el) => sectionsRef.current['how-tms-helps'] = el} className="mb-12">
               <h2 className="text-3xl font-bold text-[#572670] mb-6">How TMS Helps with Migraines</h2>
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
                 TMS offers a fundamentally different approach to migraine treatment by addressing the neurological dysfunction that underlies both migraines and comorbid mental health conditions.
@@ -631,13 +631,10 @@ export default function TMSMigraineVeteransBlogPostPage() {
             </section>
 
             {/* Section 7: Clinical Benefits */}
-            <section ref={(el) => (sectionsRef.current['clinical-benefits'] = el)} className="mb-12">
+            <section ref={(el) => sectionsRef.current['clinical-benefits'] = el} className="mb-12">
               <h2 className="text-3xl font-bold text-[#572670] mb-6">Clinical Benefits and Research</h2>
-              <img
-                src="https://images.unsplash.com/photo-1649770942197-d7f638a930fd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1920"
-                alt="TMS therapy clinical research"
-                className="w-full h-64 md:h-80 object-cover rounded-lg mb-6"
-              />
+             
+
 
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
                 Growing clinical evidence supports the effectiveness of TMS for migraine treatment, particularly for veterans with treatment-resistant migraines and comorbid conditions.
@@ -756,20 +753,20 @@ export default function TMSMigraineVeteransBlogPostPage() {
               name={author.name}
               role={author.credentials}
               bio={author.bio}
-              image={author.image}
-            />
+              image={author.image} />
+
 
             {/* FAQ Section */}
-            <section ref={(el) => (sectionsRef.current['faqs'] = el)} className="mb-12 mt-12">
+            <section ref={(el) => sectionsRef.current['faqs'] = el} className="mb-12 mt-12">
               <h2 className="text-3xl font-bold text-[#572670] mb-6">Frequently Asked Questions</h2>
               
               <Accordion type="single" collapsible className="w-full space-y-2">
-                {faqs.map((faq, index) => (
-                  <AccordionItem
-                    key={index}
-                    value={`item-${index}`}
-                    className="border border-gray-200 rounded-lg px-4 data-[state=open]:border-[#572670]"
-                  >
+                {faqs.map((faq, index) =>
+                <AccordionItem
+                  key={index}
+                  value={`item-${index}`}
+                  className="border border-gray-200 rounded-lg px-4 data-[state=open]:border-[#572670]">
+
                     <AccordionTrigger className="text-left font-semibold hover:text-[#572670] hover:no-underline">
                       {faq.question}
                     </AccordionTrigger>
@@ -777,7 +774,7 @@ export default function TMSMigraineVeteransBlogPostPage() {
                       {faq.answer}
                     </AccordionContent>
                   </AccordionItem>
-                ))}
+                )}
               </Accordion>
             </section>
 
@@ -814,13 +811,13 @@ export default function TMSMigraineVeteransBlogPostPage() {
             <section className="mb-12">
               <h2 className="text-3xl font-bold text-[#572670] mb-6">Related Articles</h2>
               <div className="grid md:grid-cols-3 gap-6">
-                {relatedPosts.map((post, index) => (
-                  <Card key={index} className="border-[#572670]/20 overflow-hidden hover:shadow-lg transition-shadow">
+                {relatedPosts.map((post, index) =>
+                <Card key={index} className="border-[#572670]/20 overflow-hidden hover:shadow-lg transition-shadow">
                     <img
-                      src={post.image}
-                      alt={post.title}
-                      className="w-full h-48 object-cover"
-                    />
+                    src={post.image}
+                    alt={post.title}
+                    className="w-full h-48 object-cover" />
+
                     <CardContent className="p-6">
                       <h3 className="font-bold text-lg mb-2 hover:text-[#572670] transition-colors">
                         <Link to={post.link}>{post.title}</Link>
@@ -833,7 +830,7 @@ export default function TMSMigraineVeteransBlogPostPage() {
                       </Button>
                     </CardContent>
                   </Card>
-                ))}
+                )}
               </div>
             </section>
           </article>
@@ -841,6 +838,6 @@ export default function TMSMigraineVeteransBlogPostPage() {
       </div>
 
       <FooterSection />
-    </>
-  );
+    </>);
+
 }
