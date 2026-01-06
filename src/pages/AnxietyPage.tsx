@@ -29,7 +29,7 @@ const AnxietyPage = () => {
       <Navigation />
       
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-r from-[#572670] to-[#7B4D9E] text-white py-20 px-4">
+      <section className="relative bg-gradient-to-r from-purple-600 to-purple-700 text-white py-20 px-4">
         <div className="max-w-6xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
@@ -43,13 +43,13 @@ const AnxietyPage = () => {
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link to="/contact">
-                  <Button size="lg" className="bg-white text-[#572670] hover:bg-gray-100">
+                  <Button size="lg" className="bg-white text-purple-600 hover:bg-gray-100">
                     <Calendar className="h-5 w-5 mr-2" />
                     Schedule Consultation
                   </Button>
                 </Link>
                 <Link to="/tms-quiz">
-                  <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-[#572670] bg-black text-white">
+                  <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-purple-600 bg-black text-white">
                     Take Assessment
                   </Button>
                 </Link>
@@ -89,7 +89,7 @@ const AnxietyPage = () => {
                 map((item, index) =>
                 <div key={index} className="bg-gray-50 p-4 rounded-lg">
                     <div className="flex items-start gap-3">
-                      <Shield className="h-5 w-5 text-[#572670] mt-0.5 flex-shrink-0" />
+                      <Shield className="h-5 w-5 text-purple-600 mt-0.5 flex-shrink-0" />
                       <div>
                         <h4 className="font-semibold text-gray-900">{item.type}</h4>
                         <p className="text-gray-700 text-sm">{item.symptoms}</p>
@@ -114,9 +114,9 @@ const AnxietyPage = () => {
       {/* Take Assessment CTA */}
       <section className="py-16 px-4 bg-gray-50">
         <div className="max-w-4xl mx-auto text-center">
-          <Card className="border-[#572670]/20 shadow-lg">
+          <Card className="border-purple-600/20 shadow-lg">
             <CardContent className="p-12">
-              <Shield className="h-16 w-16 text-[#572670] mx-auto mb-6" />
+              <Shield className="h-16 w-16 text-purple-600 mx-auto mb-6" />
               <h2 className="text-3xl font-bold text-gray-900 mb-4">
                 Is TMS Right for Your Anxiety?
               </h2>
@@ -125,7 +125,7 @@ const AnxietyPage = () => {
                 to determine if TMS therapy could provide the relief you've been seeking.
               </p>
               <Link to="/tms-quiz">
-                <Button size="lg" className="bg-[#572670] hover:bg-[#572670]/90">
+                <Button size="lg" className="bg-purple-600 hover:bg-purple-700">
                   <ArrowRight className="h-5 w-5 mr-2" />
                   Take the Anxiety Assessment
                 </Button>
@@ -166,7 +166,7 @@ const AnxietyPage = () => {
             map((item, index) =>
             <Card key={index} className="text-center h-full">
                 <CardHeader>
-                  <item.icon className="h-12 w-12 text-[#572670] mx-auto mb-4" />
+                  <item.icon className="h-12 w-12 text-purple-600 mx-auto mb-4" />
                   <CardTitle className="text-xl">{item.title}</CardTitle>
                 </CardHeader>
                 <CardContent>
@@ -184,15 +184,15 @@ const AnxietyPage = () => {
             </p>
             <div className="grid md:grid-cols-3 gap-6">
               <div className="text-center">
-                <div className="text-3xl font-bold text-[#572670] mb-2">50-60%</div>
+                <div className="text-3xl font-bold text-purple-600 mb-2">50-60%</div>
                 <div className="text-sm text-gray-600">Response Rate</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-[#572670] mb-2">Off-Label</div>
+                <div className="text-3xl font-bold text-purple-600 mb-2">Off-Label</div>
                 <div className="text-sm text-gray-600">FDA Status</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-[#572670] mb-2">Growing</div>
+                <div className="text-3xl font-bold text-purple-600 mb-2">Growing</div>
                 <div className="text-sm text-gray-600">Evidence Base</div>
               </div>
             </div>
@@ -236,7 +236,7 @@ const AnxietyPage = () => {
             map((item, index) =>
             <Card key={index} className="text-center h-full hover:shadow-lg transition-shadow">
                 <CardHeader>
-                  <item.icon className="h-10 w-10 text-[#572670] mx-auto mb-3" />
+                  <item.icon className="h-10 w-10 text-purple-600 mx-auto mb-3" />
                   <CardTitle className="text-lg">{item.title}</CardTitle>
                 </CardHeader>
                 <CardContent>
@@ -274,7 +274,7 @@ const AnxietyPage = () => {
                 }].
                 map((benefit, index) =>
                 <div key={index} className="flex gap-4">
-                    <CheckCircle className="h-6 w-6 text-[#572670] mt-1 flex-shrink-0" />
+                    <CheckCircle className="h-6 w-6 text-purple-600 mt-1 flex-shrink-0" />
                     <div>
                       <h3 className="font-semibold text-gray-900 mb-2">{benefit.title}</h3>
                       <p className="text-gray-700">{benefit.description}</p>
@@ -290,10 +290,10 @@ const AnxietyPage = () => {
                   <CardContent className="p-6">
                     <div className="flex items-center justify-between">
                       <div>
-                        <div className="text-2xl font-bold text-[#572670]">4-6 weeks</div>
+                        <div className="text-2xl font-bold text-purple-600">4-6 weeks</div>
                         <div className="text-gray-600">Typical treatment duration</div>
                       </div>
-                      <Calendar className="h-8 w-8 text-[#572670]" />
+                      <Calendar className="h-8 w-8 text-purple-600" />
                     </div>
                   </CardContent>
                 </Card>
@@ -302,10 +302,10 @@ const AnxietyPage = () => {
                   <CardContent className="p-6">
                     <div className="flex items-center justify-between">
                       <div>
-                        <div className="text-2xl font-bold text-[#572670]">20 sessions</div>
+                        <div className="text-2xl font-bold text-purple-600">20 sessions</div>
                         <div className="text-gray-600">Standard anxiety protocol</div>
                       </div>
-                      <Zap className="h-8 w-8 text-[#572670]" />
+                      <Zap className="h-8 w-8 text-purple-600" />
                     </div>
                   </CardContent>
                 </Card>
@@ -314,10 +314,10 @@ const AnxietyPage = () => {
                   <CardContent className="p-6">
                     <div className="flex items-center justify-between">
                       <div>
-                        <div className="text-2xl font-bold text-[#572670]">Gradual</div>
+                        <div className="text-2xl font-bold text-purple-600">Gradual</div>
                         <div className="text-gray-600">Improvement timeline</div>
                       </div>
-                      <Award className="h-8 w-8 text-[#572670]" />
+                      <Award className="h-8 w-8 text-purple-600" />
                     </div>
                   </CardContent>
                 </Card>
@@ -365,7 +365,7 @@ const AnxietyPage = () => {
                 map((item, index) =>
                 <div key={index} className="flex gap-4">
                     <div className="flex-shrink-0">
-                      <div className="w-10 h-10 bg-[#572670] text-white rounded-full flex items-center justify-center font-bold">
+                      <div className="w-10 h-10 bg-purple-600 text-white rounded-full flex items-center justify-center font-bold">
                         {item.step}
                       </div>
                     </div>
@@ -395,7 +395,7 @@ const AnxietyPage = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link to="/contact">
-                <Button size="lg" className="bg-[#572670] hover:bg-[#572670]/90">
+                <Button size="lg" className="bg-purple-600 hover:bg-purple-700">
                   <Calendar className="h-5 w-5 mr-2" />
                   Schedule Your Consultation
                 </Button>
@@ -417,19 +417,19 @@ const AnxietyPage = () => {
           <h2 className="text-2xl font-bold text-center mb-8">Related Karma Mental Health Services</h2>
           <div className="grid md:grid-cols-4 gap-4">
             <Link to="/depression" className="p-4 bg-gray-50 rounded-lg shadow hover:shadow-lg transition-shadow">
-              <h3 className="font-semibold text-blue-600 mb-2">Depression Treatment</h3>
+              <h3 className="font-semibold text-purple-600 mb-2">Depression Treatment</h3>
               <p className="text-sm text-gray-600">TMS therapy for major depression</p>
             </Link>
             <Link to="/conditions/ptsd" className="p-4 bg-gray-50 rounded-lg shadow hover:shadow-lg transition-shadow">
-              <h3 className="font-semibold text-blue-600 mb-2">PTSD Treatment</h3>
+              <h3 className="font-semibold text-purple-600 mb-2">PTSD Treatment</h3>
               <p className="text-sm text-gray-600">Specialized care for trauma</p>
             </Link>
             <Link to="/29-palms" className="p-4 bg-gray-50 rounded-lg shadow hover:shadow-lg transition-shadow">
-              <h3 className="font-semibold text-blue-600 mb-2">Twentynine Palms</h3>
+              <h3 className="font-semibold text-purple-600 mb-2">Twentynine Palms</h3>
               <p className="text-sm text-gray-600">Serving military families</p>
             </Link>
             <Link to="/veterans" className="p-4 bg-gray-50 rounded-lg shadow hover:shadow-lg transition-shadow">
-              <h3 className="font-semibold text-blue-600 mb-2">Veterans Services</h3>
+              <h3 className="font-semibold text-purple-600 mb-2">Veterans Services</h3>
               <p className="text-sm text-gray-600">Specialized veteran care</p>
             </Link>
           </div>
