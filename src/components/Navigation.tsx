@@ -83,7 +83,7 @@ const Navigation = () => {
             <img
               src="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/ebadb369-a58d-421c-b937-24f900be5867.png"
               alt="Karma TMS"
-              className="h-10 w-auto" />
+              className="h-12 w-auto" />
           </Link>
 
           {/* Desktop Navigation */}
