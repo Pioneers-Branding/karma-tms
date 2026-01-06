@@ -93,7 +93,7 @@ const VAVeteransPTSDTMSBlogPostPage = () => {
   }];
 
 
-   const relatedPosts = [
+  const relatedPosts = [
   {
     title: 'TMS for Migraine Relief in Veterans',
     excerpt: 'Learn how TMS helps veterans with migraines and comorbid conditions like PTSD and depression.',
@@ -347,10 +347,7 @@ const VAVeteransPTSDTMSBlogPostPage = () => {
                 </CardContent>
               </Card>
 
-              <img
-                src="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/f00dd3f4-cea1-4918-8fec-5976198e195f.webp"
-                alt="Veterans receiving mental health support"
-                className="w-full  object-cover rounded-lg mb-6" />
+        
 
 
               <h3 className="text-2xl font-bold text-gray-900 mb-4">
@@ -411,10 +408,7 @@ const VAVeteransPTSDTMSBlogPostPage = () => {
                 </Card>
               </div>
 
-              <img
-                src="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/02c362bd-cde2-431d-8820-a07a14939638.webp"
-                alt="PTSD treatment for veterans"
-                className="w-full  object-cover rounded-lg mb-6" />
+            
 
 
               <Card className="bg-blue-50 border-blue-200 mb-6">
