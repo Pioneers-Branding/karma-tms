@@ -109,8 +109,8 @@ const FooterSection = () => {
                 <Phone className="h-5 w-5 text-[#572670]" />
                 <div>
                   <div className="text-sm font-medium text-white">Call Us</div>
-                  <a href="tel:760-760-5675" className="text-sm text-gray-300 hover:text-[#572670] transition-colors">
-                    760-760-5675
+                  <a href="tel:951-297-8375" className="text-sm text-gray-300 hover:text-[#572670] transition-colors">
+                    951-297-8375
                   </a>
                 </div>
               </div>
