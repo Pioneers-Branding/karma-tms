@@ -15,7 +15,7 @@ const DepressionPage = () => {
       <SEO
         title="Depression Treatment Center in Palm Springs | Karma TMS PC"
         description="Karma TMS PC offers advanced and compassionate Depression Treatment in Palm Springs, providing personalized and expert mental health care for lasting recovery."
-        keywords="depression treatment center palm springs, depression palm springs ca, depression therapy palm springs ca"
+        keywords="depression treatment center palm springs, depression Palm Springs, CA, depression therapy Palm Springs,CA"
         canonical="https://www.karmatms.com/conditions/depression" />
 
       <StructuredData
