@@ -34,14 +34,14 @@ const MedicationManagementPage = () => {
     description: 'Transparent communication about benefits, risks, and alternatives',
     icon: <Users className="w-8 h-8" />,
     details: 'We provide comprehensive information about your treatment options, including potential side effects, drug interactions, and alternative approaches, empowering you to make informed decisions.',
-    color: 'from-blue-500 to-purple-500'
+    color: 'from-violet-500 to-purple-500'
   },
   {
     principle: 'Holistic Integration',
     description: 'Combining medication with therapy, lifestyle changes, and complementary treatments',
     icon: <Brain className="w-8 h-8" />,
     details: 'Medication is just one tool in your healing journey. We integrate pharmaceutical interventions with psychotherapy, nutrition, exercise, and other evidence-based approaches.',
-    color: 'from-green-500 to-blue-500'
+    color: 'from-green-500 to-violet-500'
   }];
 
 
@@ -170,7 +170,7 @@ const MedicationManagementPage = () => {
     'Decision-making issues',
     'Reduced creativity'],
 
-    color: 'from-blue-500 to-purple-500'
+    color: 'from-violet-500 to-purple-500'
   },
   {
     category: 'Emotional Changes',
@@ -198,7 +198,7 @@ const MedicationManagementPage = () => {
     'Work/school performance',
     'Daily functioning issues'],
 
-    color: 'from-green-500 to-blue-500'
+    color: 'from-green-500 to-violet-500'
   }];
 
 
@@ -213,7 +213,7 @@ const MedicationManagementPage = () => {
   const totalEffects = sideEffectCategories.reduce((sum, category) => sum + category.effects.length, 0);
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-purple-50">
+    <div className="min-h-screen bg-gradient-to-br from-violet-50 via-white to-purple-50">
       <Navigation />
       <SEO
         title="Medication Management in Palm Springs | Karma TMS PC"
@@ -226,10 +226,10 @@ const MedicationManagementPage = () => {
       <section className="relative pt-32 pb-20 px-4">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
-            <Badge className="mb-6 bg-gradient-to-r from-[#572670] to-blue-600 text-white">
+            <Badge className="mb-6 bg-gradient-to-r from-[#572670] to-purple-600 text-white">
               Personalized Approach
             </Badge>
-            <h1 className="text-5xl lg:text-7xl font-bold mb-8 bg-gradient-to-r from-[#572670] via-purple-600 to-blue-600 bg-clip-text text-transparent">
+            <h1 className="text-5xl lg:text-7xl font-bold mb-8 bg-gradient-to-r from-[#572670] via-purple-600 to-violet-600 bg-clip-text text-transparent">
               Medication Management
             </h1>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-10">
@@ -237,7 +237,7 @@ const MedicationManagementPage = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link to="/contact">
-              <Button className="bg-gradient-to-r from-[#572670] to-purple-600 hover:from-purple-700 hover:to-blue-700 text-lg px-8 py-3">
+              <Button className="bg-gradient-to-r from-[#572670] to-purple-600 hover:from-purple-700 hover:to-purple-700 text-lg px-8 py-3">
                 <Phone className="w-5 h-5 mr-2" />
                 Schedule Consultation
               </Button>
@@ -251,7 +251,7 @@ const MedicationManagementPage = () => {
       <section className="py-20 px-4">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
-            <Badge className="mb-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white">
+            <Badge className="mb-4 bg-gradient-to-r from-violet-600 to-purple-600 text-white">
               Our Approach
             </Badge>
             <h2 className="text-4xl font-bold mb-6 text-gray-900">
@@ -321,7 +321,7 @@ const MedicationManagementPage = () => {
       </section>
 
       {/* Taper Plan Flowchart */}
-      <section className="py-20 px-4 bg-gradient-to-br from-purple-50 to-blue-50">
+      <section className="py-20 px-4 bg-gradient-to-br from-purple-50 to-purple-50">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <Badge className="mb-4 bg-gradient-to-r from-[#572670] to-purple-600 text-white">
@@ -359,7 +359,7 @@ const MedicationManagementPage = () => {
                         </div>
                         <div>
                           <h3 className="text-lg font-bold text-gray-900">{phase.phase}</h3>
-                          <Badge className="mt-1 bg-gradient-to-r from-blue-500 to-purple-500 text-white">
+                          <Badge className="mt-1 bg-gradient-to-r from-violet-500 to-purple-500 text-white">
                             {phase.duration}
                           </Badge>
                         </div>
@@ -395,7 +395,7 @@ const MedicationManagementPage = () => {
                     </div>
                     
                     <div className="lg:col-span-1">
-                      <div className="bg-gradient-to-r from-green-100 to-blue-100 rounded-lg p-4">
+                      <div className="bg-gradient-to-r from-green-100 to-purple-100 rounded-lg p-4">
                         <h4 className="font-bold text-gray-900 mb-2 flex items-center">
                           <CheckCircle className="w-4 h-4 text-green-600 mr-2" />
                           Success Criteria
@@ -434,7 +434,7 @@ const MedicationManagementPage = () => {
                 
                 <div className="flex flex-col sm:flex-row gap-4 justify-center mt-8">
                   <Link to="/contact">
-                    <Button className="bg-gradient-to-r from-[#572670] to-purple-600 hover:from-purple-700 hover:to-blue-700">
+                    <Button className="bg-gradient-to-r from-[#572670] to-purple-600 hover:from-purple-700 hover:to-violet-700">
                       <Phone className="w-4 h-4 mr-2" />
                       Discuss Tapering Options
                     </Button>
@@ -591,7 +591,7 @@ const MedicationManagementPage = () => {
                   
                   <div className="flex flex-col sm:flex-row gap-4 justify-center">
                     <Link to="/contact">
-                      <Button className="bg-gradient-to-r from-[#572670] to-purple-600 hover:from-purple-700 hover:to-blue-700">
+                      <Button className="bg-gradient-to-r from-[#572670] to-purple-600 hover:from-purple-700 hover:to-purple-700">
                         <Phone className="w-4 h-4 mr-2" />
                         Schedule Medication Review
                       </Button>
