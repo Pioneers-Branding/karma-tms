@@ -22,15 +22,15 @@ const ContactPage = () => {
   {
     icon: Phone,
     title: 'Call Now',
-    subtitle: '(760) 832-4090',
-    action: () => window.location.href = 'tel:+17608324090',
+    subtitle: '951-297-8375',
+    action: () => window.location.href = 'tel:951-297-8375',
     color: 'bg-green-600 hover:bg-green-700'
   },
   {
     icon: MessageSquare,
     title: 'Text Us',
     subtitle: 'Quick Response',
-    action: () => window.location.href = 'sms:+17608324090',
+    action: () => window.location.href = 'sms:951-297-8375',
     color: 'bg-blue-600 hover:bg-blue-700'
   },
 
@@ -52,8 +52,8 @@ const ContactPage = () => {
   return (
     <div className="min-h-screen bg-white">
       <SEO
-        title="Contact KarmaTMS | TMS Therapy in Palm Springs | (760) 760-5675"
-        description="Contact KarmaTMS for depression treatment & mental health services in Palm Springs. Call (760) 760-5675. Multiple locations serving Southern California."
+        title="Contact KarmaTMS | TMS Therapy in Palm Springs | 951-297-8375"
+        description="Contact KarmaTMS for depression treatment & mental health services in Palm Springs. Call 951-297-8375. Multiple locations serving Southern California."
         keywords="contact KarmaTMS, TMS therapy Palm Springs, mental health consultation, KarmaTMS locations, depression treatment contact"
         canonical="/contact" />
 
@@ -68,7 +68,7 @@ const ContactPage = () => {
             addressRegion: "CA",
             postalCode: "92264"
           },
-          telephone: "+1-760-760-5675"
+          telephone: "951-297-8375"
         },
         {
           name: "Rancho Mirage",
@@ -78,7 +78,7 @@ const ContactPage = () => {
             addressRegion: "CA",
             postalCode: "92270"
           },
-          telephone: "+1-760-760-5675"
+          telephone: "951-297-8375"
         },
         {
           name: "Twentynine Palms",
@@ -88,7 +88,7 @@ const ContactPage = () => {
             addressRegion: "CA",
             postalCode: "92277"
           },
-          telephone: "+1-760-760-5675"
+          telephone: "951-297-8375"
         }]
         } />
 
@@ -177,7 +177,7 @@ const ContactPage = () => {
                         name="phone"
                         type="tel"
                         required
-                        placeholder="(760) 123-4567"
+                        placeholder="951-297-8375"
                         className="mt-1" />
 
                     </div>
