@@ -115,21 +115,6 @@ export const teamMembers: TeamMember[] = [
   email: 'jsmith@karmatms.com'
 },
 {
-  id: 'jothsna-bodhanapati',
-  name: 'Jothsna Bodhanapati',
-  title: 'Social Media Director',
-  specialization: 'Digital Marketing & Communications',
-  category: 'administrative',
-  image: 'https://res.cloudinary.com/de4kw1t2i/image/upload/v1759237098/6411f1204d97b27fa6e2191d-2-1-1-1_q1l5sh.png', // drjothsna
-  bio: 'Jothsna Bodhanapati leads our digital marketing efforts and patient education initiatives. She creates engaging content that helps reduce mental health stigma and connects patients with the resources and care they need.',
-  credentials: ['Digital Marketing Certified', 'Healthcare Communications Specialist', 'Social Media Expert'],
-  experience: '6+ years in Healthcare Marketing',
-  education: 'University of California San Diego',
-  languages: ['English', 'Telugu', 'Hindi'],
-  location: 'Palm Springs, CA',
-  email: 'jbodhanapati@karmatms.com'
-},
-{
   id: 'charles-vigilia',
   name: 'Charles Vigilia',
   title: 'TMS Neurotechnologist',
@@ -143,19 +128,4 @@ export const teamMembers: TeamMember[] = [
   languages: ['English', 'Spanish'],
   location: 'Palm Springs, CA',
   email: 'cvigilia@karmatms.com'
-},
-{
-  id: 'alexandra-mendoza',
-  name: 'Alexandra Mendoza',
-  title: 'TMS Neurotechnologist',
-  specialization: 'TMS Technology & Patient Support',
-  category: 'administrative',
-  image: 'https://res.cloudinary.com/de4kw1t2i/image/upload/v1759237096/64bad1829fa9f71c0b5e41d5-2-1_rnygcg.jpg', // dralexandra
-  bio: 'Alexandra Mendoza provides expert TMS treatment delivery and patient education. She ensures each patient understands their treatment process and feels supported throughout their TMS therapy journey.',
-  credentials: ['TMS Technician Certified', 'Patient Education Specialist', 'Mental Health Support Certified'],
-  experience: '4+ years in TMS Technology',
-  education: 'College of the Desert Healthcare Program',
-  languages: ['English', 'Spanish'],
-  location: 'Palm Springs, CA',
-  email: 'amendoza@karmatms.com'
 }];
