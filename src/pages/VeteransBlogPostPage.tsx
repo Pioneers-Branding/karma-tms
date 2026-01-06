@@ -390,7 +390,7 @@ const VeteransBlogPostPage = () => {
               </p>
 
               <img
-                src="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/2ddc8d69-b09a-4f1d-bd47-6d783ceefbd1.webp"
+                src="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/7ace98a6-9efe-4403-aacf-892346fb07a8.webp"
                 alt="Depression treatment for veterans using TMS therapy"
                 className="w-full h-64 object-cover rounded-lg mb-6" />
 
