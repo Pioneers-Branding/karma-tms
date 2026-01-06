@@ -291,7 +291,7 @@ const TMSMultipleSessionsBlogPostPage = () => {
               <img
                 src="https://res.cloudinary.com/de4kw1t2i/image/upload/v1763376733/11_itsgyr.png"
                 alt="TMS therapy session showing treatment process"
-                className="w-full  md:h-96 object-cover rounded-lg mb-6" />
+                className="w-full   object-cover rounded-lg mb-6" />
 
               <p className="text-xl text-gray-700 leading-relaxed">
                 One of the most common questions we hear from patients considering <Link to="/tms-therapy" className="text-[#572670] hover:underline font-medium">TMS therapy</Link> is: "Why do I need so many sessions?" It's a fair question, especially when you're investing time and resources into treatment. The answer lies in understanding how the brain changes and heals—a process called <strong>neuroplasticity</strong>.
