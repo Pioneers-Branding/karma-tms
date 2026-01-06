@@ -15,6 +15,7 @@ const TestimonialsSection = () => {
     rating: 5,
     quote: "After trying multiple medications for years with little success, TMS has given me my life back. The improvement in my mood and energy has been remarkable.",
     hasVideo: true,
+    videoId: "dQw4w9WgXcQ", // Example YouTube ID
     avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=face"
   },
   {
@@ -24,7 +25,7 @@ const TestimonialsSection = () => {
     rating: 5,
     quote: "As a new mother, I needed a treatment that was safe and effective. TMS allowed me to get better without worrying about medication effects on breastfeeding.",
     hasVideo: false,
-    avatar: "https://images.unsplash.com/photo-1611055114622-4ae289ce3c15?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MTg3MTl8MHwxfHNlYXJjaHwxfHxBJTIwY3JvcHBlZCUyMGltYWdlJTIwb2YlMjBhJTIwcGVyc29uJTJDJTIwZm9jdXNpbmclMjBvbiUyMHRoZWlyJTIwZmFjZSUyQyUyMHdpdGglMjBhJTIwd2lkdGglMjBhbmQlMjBoZWlnaHQlMjBvZiUyMDEwMCUyMHBpeGVscy58ZW58MHx8fHwxNzU0OTIwMjY3fDA&ixlib=rb-4.1.0&q=80&w=200$w=100"
+    avatar: "https://images.unsplash.com/photo-1708962188322-0e9a5e40c101?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MTg3MTl8MHwxfHNlYXJjaHwxfHxBJTIwY3JvcHBlZCUyMGltYWdlJTIwb2YlMjBhJTIwcGVyc29uJTJDJTIwZm9jdXNpbmclMjBvbiUyMHRoZWlyJTIwZmFjZSUyQyUyMHdpdGglMjBhJTIwcmVzb2x1dGlvbiUyMG9mJTIwMTAweDEwMCUyMHBpeGVscy58ZW58MHx8fHwxNzU1MDAxOTgxfDA&ixlib=rb-4.1.0&q=80&w=200$w=100"
   },
   {
     name: "Andrej Z.",
@@ -33,6 +34,7 @@ const TestimonialsSection = () => {
     rating: 5,
     quote: "The convenience of 20-minute sessions that fit into my lunch break made all the difference. I could continue working while getting the treatment I needed.",
     hasVideo: true,
+    videoId: "dQw4w9WgXcQ",
     avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop&crop=face"
   },
   {
@@ -51,6 +53,7 @@ const TestimonialsSection = () => {
     rating: 5,
     quote: "The biggest relief was that I could drive myself to appointments. No side effects, no downtime - just gradual, sustainable improvement in my anxiety levels.",
     hasVideo: true,
+    videoId: "dQw4w9WgXcQ",
     avatar: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop&crop=face"
   },
   {
@@ -75,9 +78,9 @@ const TestimonialsSection = () => {
   const currentData = testimonials[currentTestimonial];
 
   return (
-    <section className="py-20 bg-gradient-to-br from-[#572670]/5 to-[#572670]/10">
+    <section className="py-20 bg-white">
       <div className="container mx-auto px-4">
-        <div className="text-center max-w-3xl mx-auto mb-16">
+        <div className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
             Real Patient Stories
           </h2>
@@ -87,25 +90,30 @@ const TestimonialsSection = () => {
         </div>
 
         {/* Main Testimonial Display */}
-        <div className="max-w-4xl mx-auto mb-12">
+        <div className="mx-auto mb-12">
           <Card className="bg-white shadow-2xl border-0 overflow-hidden">
             <CardContent className="p-0">
               <div className="grid lg:grid-cols-2 gap-0">
                 {/* Video/Image Side */}
                 <div className="relative bg-gradient-to-br from-[#572670] to-[#572670]/80 p-8 lg:p-12 flex items-center justify-center">
                   {currentData.hasVideo ?
-                  <div className="relative">
-                      <div className="w-48 h-48 lg:w-64 lg:h-64 rounded-full bg-white/20 backdrop-blur-sm flex items-center justify-center">
-                        <Button
-                        size="lg"
-                        className="rounded-full w-16 h-16 bg-white text-[#572670] hover:bg-white/90 hover:scale-110 transition-all">
-
-                          <Play className="h-6 w-6 ml-1" />
-                        </Button>
+                  <div className="relative w-full max-w-md">
+                      {/* YouTube Embed */}
+                      <div className="aspect-video bg-black rounded-lg overflow-hidden shadow-2xl">
+                        <iframe
+                          width="100%"
+                          height="100%"
+                          src={`https://www.youtube.com/embed/${currentData.videoId}?controls=1&modestbranding=1`}
+                          title={`${currentData.name} Testimonial`}
+                          frameBorder="0"
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                          allowFullScreen
+                          className="rounded-lg"
+                        ></iframe>
                       </div>
                       <div className="absolute -bottom-6 left-1/2 transform -translate-x-1/2">
                         <div className="bg-white text-[#572670] px-4 py-2 rounded-full text-sm font-semibold shadow-lg">
-                          Click to Watch Video
+                          Video Testimonial
                         </div>
                       </div>
                     </div> :
@@ -180,7 +188,7 @@ const TestimonialsSection = () => {
         </div>
 
         {/* Thumbnail Grid */}
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 max-w-4xl mx-auto mb-8">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 mx-auto mb-8">
           {testimonials.map((testimonial, index) =>
           <button
             key={index}
@@ -188,7 +196,7 @@ const TestimonialsSection = () => {
             className={`relative p-3 rounded-lg transition-all ${
             index === currentTestimonial ?
             'bg-[#572670] text-white' :
-            'bg-white hover:bg-gray-50'}`
+            'bg-white hover:bg-gray-50 shadow-md'}`
             }>
 
               <Avatar className="w-12 h-12 mx-auto mb-2">

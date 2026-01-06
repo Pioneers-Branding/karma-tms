@@ -61,8 +61,8 @@ const Navigation = () => {
   return (
     <header className={`sticky top-0 z-50 transition-all duration-300 ${
     scrolled ?
-    'bg-white/95 backdrop-blur-md shadow-lg border-b border-white/20' :
-    'bg-white/90 backdrop-blur-sm shadow-sm border-b border-white/10'}`
+    'bg-[#572670]/95 backdrop-blur-md shadow-lg border-b border-white/20' :
+    'bg-[#572670]/90 backdrop-blur-sm shadow-sm border-b border-white/10'}`
     }>
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
@@ -72,20 +72,19 @@ const Navigation = () => {
               src="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/ebadb369-a58d-421c-b937-24f900be5867.png"
               alt="Karma TMS"
               className="h-10 w-auto" />
-
           </div>
 
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex items-center space-x-8">
-            <Button variant="ghost" className="text-gray-700 hover:text-[#572670] transition-colors">
+            <Button variant="ghost" className="text-white hover:text-white/80 hover:bg-white/10 transition-colors">
               <Home className="h-4 w-4 mr-2" />
               Home
             </Button>
-            <Button variant="ghost" className="text-gray-700 hover:text-[#572670] transition-colors">
+            <Button variant="ghost" className="text-white hover:text-white/80 hover:bg-white/10 transition-colors">
               <User className="h-4 w-4 mr-2" />
               About
             </Button>
-            <Button variant="ghost" className="text-gray-700 hover:text-[#572670] transition-colors">
+            <Button variant="ghost" className="text-white hover:text-white/80 hover:bg-white/10 transition-colors">
               <UserCheck className="h-4 w-4 mr-2" />
               Our Team
             </Button>
@@ -93,11 +92,11 @@ const Navigation = () => {
             {/* Services Dropdown */}
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
-                <Button variant="ghost" className="text-gray-700 hover:text-[#572670] flex items-center gap-1 transition-colors">
+                <Button variant="ghost" className="text-white hover:text-white/80 hover:bg-white/10 flex items-center gap-1 transition-colors">
                   Services <ChevronDown className="h-4 w-4" />
                 </Button>
               </DropdownMenuTrigger>
-              <DropdownMenuContent className="w-56 p-2 bg-white/95 backdrop-blur-md border-gray-200/50">
+              <DropdownMenuContent className="w-56 p-2 bg-white/95 backdrop-blur-md border-gray-200/50 shadow-xl">
                 {servicesLinks.map((link) => {
                   const IconComponent = link.icon;
                   return (
@@ -116,11 +115,11 @@ const Navigation = () => {
             {/* Conditions Dropdown */}
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
-                <Button variant="ghost" className="text-gray-700 hover:text-[#572670] flex items-center gap-1 transition-colors">
+                <Button variant="ghost" className="text-white hover:text-white/80 hover:bg-white/10 flex items-center gap-1 transition-colors">
                   Conditions <ChevronDown className="h-4 w-4" />
                 </Button>
               </DropdownMenuTrigger>
-              <DropdownMenuContent className="w-56 p-2 bg-white/95 backdrop-blur-md border-gray-200/50">
+              <DropdownMenuContent className="w-56 p-2 bg-white/95 backdrop-blur-md border-gray-200/50 shadow-xl">
                 {conditionsLinks.map((link) => {
                   const IconComponent = link.icon;
                   return (
@@ -139,11 +138,11 @@ const Navigation = () => {
             {/* Resources Dropdown */}
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
-                <Button variant="ghost" className="text-gray-700 hover:text-[#572670] flex items-center gap-1 transition-colors">
+                <Button variant="ghost" className="text-white hover:text-white/80 hover:bg-white/10 flex items-center gap-1 transition-colors">
                   Resources <ChevronDown className="h-4 w-4" />
                 </Button>
               </DropdownMenuTrigger>
-              <DropdownMenuContent className="w-56 p-2 bg-white/95 backdrop-blur-md border-gray-200/50">
+              <DropdownMenuContent className="w-56 p-2 bg-white/95 backdrop-blur-md border-gray-200/50 shadow-xl">
                 {resourcesLinks.map((link) => {
                   const IconComponent = link.icon;
                   return (
@@ -159,7 +158,7 @@ const Navigation = () => {
               </DropdownMenuContent>
             </DropdownMenu>
 
-            <Button variant="ghost" className="text-gray-700 hover:text-[#572670] transition-colors">
+            <Button variant="ghost" className="text-white hover:text-white/80 hover:bg-white/10 transition-colors">
               <Mail className="h-4 w-4 mr-2" />
               Contact
             </Button>
@@ -169,7 +168,7 @@ const Navigation = () => {
           <div className="hidden lg:flex items-center">
             <Button
               variant="outline"
-              className="border-[#572670]/30 text-[#572670] hover:bg-[#572670] hover:text-white hover:border-[#572670] transition-all duration-300 px-6">
+              className="border-white/30 text-white hover:bg-white hover:text-[#572670] hover:border-white transition-all duration-300 px-6">
 
               <Phone className="h-4 w-4 mr-2" />
               760-760-5675
@@ -179,7 +178,7 @@ const Navigation = () => {
           {/* Mobile Menu Button */}
           <Sheet open={isOpen} onOpenChange={setIsOpen}>
             <SheetTrigger asChild className="lg:hidden">
-              <Button variant="ghost" size="icon">
+              <Button variant="ghost" size="icon" className="text-white">
                 <Menu className="h-6 w-6" />
               </Button>
             </SheetTrigger>

@@ -60,7 +60,7 @@ const TreatmentProcessSection = () => {
       
       <div className="container mx-auto px-4 relative z-10">
         {/* Header */}
-        <div className="text-center max-w-4xl mx-auto mb-16">
+        <div className="text-center mb-16">
           <Badge className="mb-6 bg-[#572670]/10 text-[#572670] border-[#572670]/20 px-6 py-2 text-base">
             Your Treatment Journey
           </Badge>
@@ -75,7 +75,7 @@ const TreatmentProcessSection = () => {
         </div>
 
         {/* Steps Timeline */}
-        <div className="max-w-5xl mx-auto space-y-8">
+        <div className="space-y-8">
           {steps.map((step, index) => {
             const IconComponent = step.icon;
             const isLast = index === steps.length - 1;
@@ -141,7 +141,7 @@ const TreatmentProcessSection = () => {
 
         {/* CTA Section */}
         <div className="text-center mt-16">
-          <Card className="max-w-2xl mx-auto bg-gradient-to-r from-[#572670] to-purple-600 border-0 shadow-2xl">
+          <Card className="mx-auto bg-gradient-to-r from-[#572670] to-purple-600 border-0 shadow-2xl">
             <CardContent className="p-8 text-white text-center">
               <h3 className="text-3xl font-bold mb-4">Ready to Begin Your Journey?</h3>
               <p className="text-xl mb-6 text-white/90">
