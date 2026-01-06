@@ -178,13 +178,17 @@ const TMSQuizPage = () => {
                   </p>
                   
                   <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                    <Link to="/contact">
                     <Button size="lg" className="bg-[#572670] hover:bg-[#572670]/90">
                       <Calendar className="h-5 w-5 mr-2" />
                       Schedule Consultation
                     </Button>
+                    </Link>
+                    <Link to="/prtms">
                     <Button size="lg" variant="outline">
                       Learn More About TMS
                     </Button>
+                    </Link>
                   </div>
                 </div>
               </CardContent>
