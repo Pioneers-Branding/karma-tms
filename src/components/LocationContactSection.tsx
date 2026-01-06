@@ -14,10 +14,10 @@ const LocationContactSection = () => {
   <div className="container mx-auto px-4">
     <div className="text-center max-w-3xl mx-auto mb-16">
       <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-        Visit Our Locations
+        Visit Our Mental Health Facilities in Palm Springs
       </h2>
       <p className="text-lg text-gray-600 leading-relaxed">
-        Conveniently located serving patients throughout the Coachella Valley and surrounding areas.
+        Our mental health facilities in palm springs are conveniently located serving patients throughout the Coachella Valley and surrounding areas, with experienced mental health counselors in palm springs ca ready to help with mental health in palm springs.
       </p>
     </div>
 
@@ -25,7 +25,7 @@ const LocationContactSection = () => {
       {/* Left Column - Unified Contact Info */}
       <Card className="shadow-xl border-0 flex flex-col justify-between">
         <CardContent className="p-8 flex flex-col h-full">
-          <h3 className="text-2xl font-bold text-gray-900 mb-6">Contact Information</h3>
+          <h3 className="text-2xl font-bold text-gray-900 mb-6">Contact Our Mental Health Counselors in Palm Springs CA</h3>
           
           <div className="space-y-6 mb-8">
             {[

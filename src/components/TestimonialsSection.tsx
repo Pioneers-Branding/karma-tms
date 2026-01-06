@@ -102,10 +102,10 @@ const TestimonialsSection = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-            Real Patient Stories
+            Real Patient Stories from Our Mental Health Facilities in Palm Springs
           </h2>
           <p className="text-lg text-gray-600 leading-relaxed">
-            Hear from actual patients across the Coachella Valley who have transformed their lives with TMS therapy at Karma TMS.
+            Hear from actual patients who have transformed their mental health in palm springs with TMS therapy from our mental health counselors in palm springs ca at Karma TMS.
           </p>
         </div>
 

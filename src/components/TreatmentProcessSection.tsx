@@ -69,8 +69,7 @@ const TreatmentProcessSection = () => {
             <span className="bg-gradient-to-r from-[#572670] to-purple-600 bg-clip-text text-transparent"> Mental Wellness</span>
           </h2>
           <p className="text-xl text-gray-600 leading-relaxed">
-            Our streamlined 5-step process ensures you receive the most effective TMS treatment 
-            with minimal disruption to your daily life.
+            Our streamlined 5-step process at our mental health facilities in palm springs ensures you receive the most effective TMS treatment from our mental health counselors in palm springs ca, supporting mental health in palm springs with minimal disruption to your daily life.
           </p>
         </div>
 

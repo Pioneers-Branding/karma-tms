@@ -4,7 +4,7 @@ const WhyChooseKarmaSection = () => {
   const commitmentSections = [
   {
     title: "Personalized Treatment Plans",
-    description: "Our expert team designs a unique TMS therapy plan tailored to your specific needs, ensuring the most effective and targeted treatment possible.",
+    description: "Our expert mental health counselors in palm springs ca design a unique TMS therapy plan tailored to your specific needs, ensuring the most effective treatment for mental health in palm springs.",
     image: "https://images.unsplash.com/photo-1507413245164-6160d8298b31?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     overlay: true
   },
@@ -22,7 +22,7 @@ const WhyChooseKarmaSection = () => {
   },
   {
     title: "Holistic and Integrated Care",
-    description: "Our approach extends beyond TMS therapy. We integrate mental health support and resources to promote your overall well-being and long-term recovery.",
+    description: "Our approach extends beyond TMS therapy at our mental health facilities in palm springs. We integrate mental health support and resources to promote your overall well-being and long-term recovery.",
     image: "https://images.unsplash.com/photo-1567990064565-f1dababb97b8?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     overlay: true
   }];
@@ -35,10 +35,10 @@ const WhyChooseKarmaSection = () => {
         {/* Header */}
         <div className="text-center max-w-4xl mx-auto mb-16">
           <h2 className="text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
-            Why Choose Karma TMS?
+            Why Choose Karma TMS for Mental Health in Palm Springs?
           </h2>
           <p className="text-xl text-gray-600 leading-relaxed">
-            Experience advanced, compassionate, and personalized TMS therapy for lasting change.
+            Experience advanced, compassionate, and personalized TMS therapy for lasting change at one of the leading mental health facilities in palm springs, supported by dedicated mental health counselors in palm springs ca.
           </p>
         </div>
 

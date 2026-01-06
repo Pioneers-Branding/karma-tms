@@ -83,8 +83,7 @@ const FooterSection = () => {
             </div>
 
             <p className="text-gray-300 leading-relaxed">
-              Leading TMS therapy provider in Palm Springs, transforming lives through
-              advanced transcranial magnetic stimulation treatment.
+              Leading mental health facilities in palm springs, transforming lives through advanced TMS therapy and comprehensive mental health in palm springs with expert mental health counselors in palm springs ca providing exceptional care.
             </p>
           </div>
 

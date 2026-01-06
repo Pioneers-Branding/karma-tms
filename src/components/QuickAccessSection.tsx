@@ -34,11 +34,10 @@ const QuickAccessSection = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-            Quick Access Resources
+            Quick Access Resources for Mental Health in Palm Springs
           </h2>
           <p className="text-lg text-gray-600 leading-relaxed">
-            Everything you need to support your mental health journey, from research and guides 
-            to expert insights.
+            Everything you need to support your mental health journey at our mental health facilities in palm springs, from research and guides to expert insights from our mental health counselors in palm springs ca.
           </p>
         </div>
 

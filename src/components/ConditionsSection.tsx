@@ -53,10 +53,10 @@ const ConditionsSection = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-            Conditions We Treat
+            Conditions We Treat for Mental Health in Palm Springs
           </h2>
           <p className="text-lg text-gray-600 leading-relaxed">
-            Our TMS therapy programs are designed to treat various mental health conditions with personalized, evidence-based approaches that deliver real results.
+            Our TMS therapy programs at our mental health facilities in palm springs are designed to treat various mental health conditions with personalized, evidence-based approaches delivered by expert mental health counselors in palm springs ca who deliver real results.
           </p>
         </div>
 

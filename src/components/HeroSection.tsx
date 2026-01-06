@@ -69,10 +69,10 @@ const HeroSection = () => {
               </div>
             </div>
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-5xl xl:text-6xl font-bold text-gray-900 leading-tight"> 
-              Effective<span className="bg-gradient-to-r from-blue-magenta via-blue-magenta/70 to-blue-magenta bg-clip-text text-transparent">TMS Therapy </span> for Depression
+              Effective<span className="bg-gradient-to-r from-blue-magenta via-blue-magenta/70 to-blue-magenta bg-clip-text text-transparent">TMS Therapy </span> for Mental Health in Palm Springs
             </h1>
             <p className="text-base sm:text-lg lg:text-xl text-gray-700 leading-relaxed max-w-2xl">
-              Revolutionary FDA-cleared treatment for depression, anxiety, OCD, and PTSD. Experience breakthrough results with our advanced TMS technology at Karma TMS.
+              Revolutionary FDA-cleared treatment for depression, anxiety, OCD, and PTSD. Our mental health facilities in palm springs provide breakthrough results with advanced TMS technology, offering comprehensive mental health in palm springs through our experienced mental health counselors in palm springs ca.
             </p>
           </div>
 
@@ -169,7 +169,7 @@ const HeroSection = () => {
             </div>
             <div>
               <textarea
-                      placeholder="Tell us about your situation and how we can help..."
+                      placeholder="Tell us about your situation and how we can help. Our mental health counselors in palm springs ca are here to support you..."
                       rows={4}
                       className="w-full px-4 lg:px-5 py-3 lg:py-4 border border-gray-200 rounded-2xl focus:ring-2 focus:ring-violet-500 focus:border-transparent outline-none transition-all duration-300 resize-none bg-white/90 backdrop-blur-sm hover:bg-white text-sm lg:text-base">
               </textarea>
