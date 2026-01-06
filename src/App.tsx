@@ -42,6 +42,9 @@ import TwentyNinePalmsPage from "./pages/TwentyNinePalmsPage";
 import VeteransPage from "./pages/VeteransPage";
 import VeteransBlogPostPage from "./pages/blogs/VeteransBlogPostPage";
 import VAVeteransPTSDTMSBlogPostPage from "./pages/blogs/VAVeteransPTSDTMSBlogPostPage";
+import VADisabilityBenefitsMentalHealthBlogPostPage from "./pages/blogs/VADisabilityBenefitsMentalHealthBlogPostPage";
+import TMSvsMedicationVeteransBlogPostPage from "./pages/blogs/TMSvsMedicationVeteransBlogPostPage";
+import HelpingVeteransPTSDBlogPostPage from "./pages/blogs/HelpingVeteransPTSDBlogPostPage";
 import DisclaimerPage from "./pages/DisclaimerPage";
 
 const queryClient = new QueryClient();
@@ -102,6 +105,9 @@ const App = () =>
           <Route path="/testimonials/" element={<TestimonialsPage />} />
           <Route path="/blog/veterans-tms-therapy" element={<VeteransBlogPostPage />} />
           <Route path="/blog/va-veterans-ptsd-tms-treatment" element={<VAVeteransPTSDTMSBlogPostPage />} />
+          <Route path="/blog/va-disability-benefits-depression-anxiety-ptsd" element={<VADisabilityBenefitsMentalHealthBlogPostPage />} />
+          <Route path="/blog/tms-vs-medication-veterans-depression" element={<TMSvsMedicationVeteransBlogPostPage />} />
+          <Route path="/blog/how-to-help-veterans-ptsd" element={<HelpingVeteransPTSDBlogPostPage />} />
           <Route path="/blog" element={<BlogPage />} />
           <Route path="/blog/" element={<BlogPage />} />
           <Route path="/research-and-publications" element={<ResearchPage />} />

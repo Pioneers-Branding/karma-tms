@@ -44,15 +44,15 @@ const generateUniqueBlogPosts = (): BlogPost[] => {
       month: 'long',
       day: 'numeric'
     }),
-    readTime: '8 min read',
-    image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/157c49b6-b322-4aa5-b8d6-8ee41dc03a43.webp',
+    readTime: '12 min read',
+    image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/f00dd3f4-cea1-4918-8fec-5976198e195f.webp',
     featured: true,
     rating: 5
   },
   {
     id: 2,
     title: 'Inside the VA & Veterans\' Mental Health: How TMS Fits Into Modern PTSD Treatment',
-    excerpt: 'Educational guide explaining the relationship between VA programs and TMS therapy, and how veterans can access care through VA-approved or private options like Karma TMS.',
+    excerpt: 'Educational guide explaining the relationship between VA programs and TMS therapy, and how veterans can access care through VA-approved or private options.',
     category: 'mental-health',
     author: 'Dr. Apollo Thomas',
     date: new Date(2024, 0, 20).toLocaleDateString('en-US', {
@@ -62,6 +62,54 @@ const generateUniqueBlogPosts = (): BlogPost[] => {
     }),
     readTime: '15 min read',
     image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/dd7dd986-540f-4359-99af-39f398491cf0.webp',
+    featured: false,
+    rating: 5
+  },
+  {
+    id: 3,
+    title: 'Understanding VA Disability Benefits for Depression, Anxiety & PTSD',
+    excerpt: 'Complete guide to obtaining VA disability benefits for mental health conditions. Learn about eligibility, rating percentages, application process, and how much the VA pays.',
+    category: 'mental-health',
+    author: 'Dr. Apollo Thomas',
+    date: new Date(2024, 0, 25).toLocaleDateString('en-US', {
+      year: 'numeric',
+      month: 'long',
+      day: 'numeric'
+    }),
+    readTime: '18 min read',
+    image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/2ddc8d69-b09a-4f1d-bd47-6d783ceefbd1.webp',
+    featured: false,
+    rating: 5
+  },
+  {
+    id: 4,
+    title: 'TMS vs Medication: Why Veterans Are Turning to Magnetic Stimulation for Depression Relief',
+    excerpt: 'Comprehensive comparison of TMS therapy and medication for veterans with depression. Discover why veterans are choosing magnetic stimulation over traditional antidepressants.',
+    category: 'tms-therapy',
+    author: 'Dr. Apollo Thomas',
+    date: new Date(2024, 0, 28).toLocaleDateString('en-US', {
+      year: 'numeric',
+      month: 'long',
+      day: 'numeric'
+    }),
+    readTime: '16 min read',
+    image: 'https://images.unsplash.com/photo-1532679793267-861196432d0d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MTg3MTl8MHwxfHNlYXJjaHwxfHxBJTIwc2NlbmljJTIwaW1hZ2UlMjBzaG93Y2FzaW5nJTIwYSUyMHNlcmVuZSUyMGxhbmRzY2FwZSUyMHdpdGglMjB2aWJyYW50JTIwY29sb3JzJTIwYW5kJTIwbmF0dXJhbCUyMGJlYXV0eS58ZW58MHx8fHwxNzYyNzc4Mzc1fDA&ixlib=rb-4.1.0&q=80&w=200$w=800',
+    featured: false,
+    rating: 5
+  },
+  {
+    id: 5,
+    title: 'How to Help Veterans with PTSD: Therapy, TMS, and Beyond',
+    excerpt: 'Compassionate guide for helping veterans with PTSD, including therapy options, TMS treatment, local resources, and support strategies for families.',
+    category: 'mental-health',
+    author: 'Dr. Apollo Thomas',
+    date: new Date(2024, 1, 1).toLocaleDateString('en-US', {
+      year: 'numeric',
+      month: 'long',
+      day: 'numeric'
+    }),
+    readTime: '17 min read',
+    image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/02c362bd-cde2-431d-8820-a07a14939638.webp',
     featured: false,
     rating: 5
   }];
@@ -244,10 +292,18 @@ const BlogPage = () => {
             <TabsContent key={category.id} value={category.id} className="mt-0">
                 {/* Posts Grid */}
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
-                  {regularPosts.map((post) =>
-                <a
-                  key={post.id}
-                  href={post.id === 1 ? '/blog/veterans-tms-therapy' : '/blog/va-veterans-ptsd-tms-treatment'}>
+                  {regularPosts.map((post) => {
+                    const postLinks: { [key: number]: string } = {
+                      1: '/blog/veterans-tms-therapy',
+                      2: '/blog/va-veterans-ptsd-tms-treatment',
+                      3: '/blog/va-disability-benefits-depression-anxiety-ptsd',
+                      4: '/blog/tms-vs-medication-veterans-depression',
+                      5: '/blog/how-to-help-veterans-ptsd'
+                    };
+                    return (
+                      <a
+                        key={post.id}
+                        href={postLinks[post.id] || '/blog'}>
 
                   <Card className="group cursor-pointer hover:shadow-lg transition-all duration-300 border-gray-200 hover:border-[#572670]/30">
                       <div className="relative overflow-hidden rounded-t-lg">
@@ -294,8 +350,9 @@ const BlogPage = () => {
                         </div>
                       </CardContent>
                     </Card>
-                  </a>
-                )}
+                    </a>
+                  );
+                })}
                 </div>
 
                 {/* Loading Skeletons */}
