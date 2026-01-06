@@ -374,7 +374,7 @@ const IsTMSTherapyLegitimateBlogPostPage = () => {
               <img
                 src="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/d3a1f368-2c44-4046-8568-532988b95c6d.webp"
                 alt="Scientific research on TMS therapy"
-                className="w-full h-64 object-cover rounded-lg mb-6" />
+                className="w-full  object-cover rounded-lg mb-6" />
 
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Research Milestones</h3>
 
