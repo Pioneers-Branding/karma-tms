@@ -237,7 +237,7 @@ const AboutPage = () => {
                         <p className="text-lg text-gray-700 leading-relaxed">
                           Founded in 2015 in the heart of Palm Springs, Karma TMS emerged from a vision to 
                           bring cutting-edge mental health treatment to Southern California. Our founder, 
-                          Dr. Sarah Mitchell, witnessed firsthand the transformative power of TMS therapy 
+                          Dr. Sunder, witnessed firsthand the transformative power of TMS therapy 
                           during her residency at UCLA.
                         </p>
                         <p className="text-lg text-gray-700 leading-relaxed">
@@ -261,7 +261,7 @@ const AboutPage = () => {
                     </div>
                     <div className="relative">
                       <img
-                      src="https://images.unsplash.com/photo-1565466550182-0a93dad09f63?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MTg3MTl8MHwxfHNlYXJjaHwxfHxBJTIwcHJvZmVzc2lvbmFsJTIwY2xpbmljJTIwZW50cmFuY2UlMjBmZWF0dXJpbmclMjBhJTIwZ2xhc3MlMjBkb29yJTIwYW5kJTIwYSUyMGNsZWFuJTJDJTIwd2VsY29taW5nJTIwZGVzaWduLnxlbnwwfHx8fDE3NTkyMzY3MDJ8MA&ixlib=rb-4.1.0&q=80&w=200$w=1920"
+                      src="https://res.cloudinary.com/de4kw1t2i/image/upload/v1761742451/IMG_9537_VSCO_uw6qok.jpg"
                       alt="TMS Treatment Chair"
                       className="w-full h-80 object-contain rounded-2xl bg-gray-50 p-6" />
                     </div>
