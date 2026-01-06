@@ -244,7 +244,7 @@ const StressManagementFourAsBlogPostPage = () => {
                 <Link to="/contact">Schedule Consultation</Link>
               </Button>
               <Button asChild size="lg" variant="outline" className="border-white text-white hover:bg-white/10">
-                <Link to="/stress-management">Stress Management Resources</Link>
+                
               </Button>
             </div>
           </div>
@@ -622,7 +622,7 @@ const StressManagementFourAsBlogPostPage = () => {
                     <Link to="/contact">Schedule Free Consultation</Link>
                   </Button>
                   <Button asChild size="lg" variant="outline" className="border-white text-white hover:bg-white/10">
-                    <Link to="/stress-management">Learn More</Link>
+                    
                   </Button>
                 </div>
               </CardContent>
