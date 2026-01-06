@@ -33,6 +33,22 @@ const blogCategories = [
 // Blog posts - Veterans TMS Therapy with fixed images
 const allBlogPosts: BlogPost[] = [
 {
+  id: 31,
+  title: 'How Does ADHD Treatment Work?',
+  excerpt: 'Comprehensive guide to ADHD treatment including medication, behavioral therapy, CBT, and lifestyle modifications. Learn how effective ADHD management works.',
+  category: 'mental-health',
+  author: 'Dr. Keerthy Sunder',
+  date: new Date().toLocaleDateString('en-US', {
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric'
+  }),
+  readTime: '12 min read',
+  image: 'https://images.unsplash.com/photo-1705565535215-3dd46e7b99a7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MTg3MTl8MHwxfHNlYXJjaHwxfHxBJTIwcGhvdG9ncmFwaCUyMGZyb20lMjBVbnNwbGFzaCUyQyUyMGxpa2VseSUyMGRlcGljdGluZyUyMGElMjBzY2VuZSUyMG9yJTIwc3ViamVjdCUyMHJlbGF0ZWQlMjB0byUyMHRoZSUyMGNvbnRleHQlMjBvZiUyMHRoZSUyMGJsb2clMjBwb3N0LnxlbnwwfHx8fDE3NjQ0MTE0ODh8MA&ixlib=rb-4.1.0&q=80&w=200$w=1200',
+  featured: false,
+  rating: 5
+},
+{
   id: 28,
   title: 'Exploring the Multifaceted Dynamics of Suicide in the Elderly Population',
   excerpt: 'A comprehensive analysis of suicide risk factors, prevention strategies, and mental health interventions for elderly populations.',
@@ -707,6 +723,7 @@ const BlogPage = () => {
                   {regularPosts.map((post, index) => {
                   const postLinks: {[key: number]: string;} = {
                     1: '/blog/veterans-tms-therapy',
+                    31: '/blogs/how-does-adhd-treatment-work',
                     2: '/blog/va-veterans-ptsd-tms-treatment',
                     3: '/blog/va-disability-benefits-depression-anxiety-ptsd',
                     4: '/blog/tms-vs-medication-veterans-depression',

@@ -70,6 +70,7 @@ import CommonReasonsPsychotherapyBlogPostPage from "./pages/blogs/CommonReasonsP
 import ExploringTheMultifacetedDynamicsOfSuicideInTheElderlyPopulation from "./pages/blogs/ExploringTheMultifacetedDynamicsOfSuicideInTheElderlyPopulation";
 import PsychiatristsBoostWellBeingThroughExpertCareForMentalHealth from "./pages/blogs/PsychiatristsBoostWellBeingThroughExpertCareForMentalHealth";
 import TMSTherapyForTreatmentResistantDepression from "./pages/blogs/TMSTherapyForTreatmentResistantDepression";
+import HowDoesADHDTreatmentWorkBlogPostPage from "./pages/blogs/HowDoesADHDTreatmentWorkBlogPostPage";
 import DisclaimerPage from "./pages/DisclaimerPage";
 
 const queryClient = new QueryClient();
@@ -154,6 +155,7 @@ const App = () =>
           <Route path="/blogs/ExploringTheMultifacetedDynamicsOfSuicideInTheElderlyPopulation" element={<ExploringTheMultifacetedDynamicsOfSuicideInTheElderlyPopulation />} />
           <Route path="/blogs/PsychiatristsBoostWellBeingThroughExpertCareForMentalHealth" element={<PsychiatristsBoostWellBeingThroughExpertCareForMentalHealth />} />
           <Route path="/blogs/TMSTherapyForTreatmentResistantDepression" element={<TMSTherapyForTreatmentResistantDepression />} />
+          <Route path="/blogs/how-does-adhd-treatment-work" element={<HowDoesADHDTreatmentWorkBlogPostPage />} />
           <Route path="/blog" element={<BlogPage />} />
           <Route path="/blog/" element={<BlogPage />} />
           <Route path="/research-and-publications" element={<ResearchPage />} />
