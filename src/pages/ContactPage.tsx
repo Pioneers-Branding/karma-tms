@@ -13,9 +13,8 @@ import { Textarea } from '@/components/ui/textarea';
 
 const ContactPage = () => {
   const businessHours = [
-  { day: 'Monday - Friday', hours: '8:00 AM - 6:00 PM' },
-  { day: 'Saturday', hours: '9:00 AM - 2:00 PM' },
-  { day: 'Sunday', hours: 'Closed' },
+  { day: 'Monday - Friday', hours: '9:00 AM - 5:00 PM' },
+  { day: 'Saturday - Sunday', hours: 'Closed' },
   { day: 'Emergency Line', hours: '24/7 Available' }];
 
 
