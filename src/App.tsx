@@ -77,6 +77,7 @@ import IsDepressionADisabilityBlogPostPage from "./pages/blogs/IsDepressionADisa
 import CanYouGetDisabilityForDepressionBlogPostPage from "./pages/blogs/CanYouGetDisabilityForDepressionBlogPostPage";
 import DisclaimerPage from "./pages/DisclaimerPage";
 import ExomindKarmaTMSPage from "./pages/resources/ExomindKarmaTMSPage";
+import PatientOnboardingPage from "./pages/PatientOnboardingPage";
 
 const queryClient = new QueryClient();
 
@@ -184,6 +185,7 @@ const App = () =>
           {/* Keep old route for backwards compatibility */}
           <Route path="/tms-quiz" element={<TMSQuizPage />} />
           <Route path="/thank-you" element={<ThankYouPage />} />
+          <Route path="/patient-onboarding" element={<PatientOnboardingPage />} />
           
           {/* Legal Routes - Sitemap URLs */}
           <Route path="/hipaa" element={<HIPAAPage />} />

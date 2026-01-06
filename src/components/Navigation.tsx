@@ -23,7 +23,8 @@ import {
   Heart,
   Shield,
   MapPin,
-  Sparkles } from
+  Sparkles,
+  ClipboardCheck } from
 'lucide-react';
 
 const Navigation = () => {
@@ -132,6 +133,13 @@ const Navigation = () => {
                 </Button>
               </Link>
 
+              <Link to="/patient-onboarding">
+                <Button variant="ghost" className="text-white hover:text-white/80 hover:bg-white/10 transition-colors text-xs xl:text-sm px-2 xl:px-3">
+                  <ClipboardCheck className="h-3.5 w-3.5 xl:h-4 xl:w-4 mr-1.5 xl:mr-2" />
+                  Patient Onboarding
+                </Button>
+              </Link>
+
               {/* NEW: About Us Dropdown */}
               <NavDropdown label="About Us" links={aboutLinks} />
 
@@ -196,6 +204,13 @@ const Navigation = () => {
                         <Button variant="ghost" className="w-full justify-start text-base py-3 hover:bg-[#572670]/10">
                           <Home className="h-5 w-5 mr-3 text-[#572670]" />
                           Home
+                        </Button>
+                      </Link>
+
+                      <Link to="/patient-onboarding" onClick={handleLinkClick}>
+                        <Button variant="ghost" className="w-full justify-start text-base py-3 hover:bg-[#572670]/10">
+                          <ClipboardCheck className="h-5 w-5 mr-3 text-[#572670]" />
+                          Patient Onboarding
                         </Button>
                       </Link>
 
