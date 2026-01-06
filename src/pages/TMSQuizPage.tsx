@@ -131,6 +131,14 @@ const TMSQuizPage = () => {
 
 
 
+
+
+
+
+
+
+
+
     // Let the form submit naturally to Formester
     // After submission, Formester will handle the redirect
     // If you want to redirect to a specific page, you can add a hidden input
@@ -183,25 +191,17 @@ const TMSQuizPage = () => {
                 </div>
 
                 <div className="flex justify-between mt-8">
-                  <Button type="button" variant="outline"
-                  onClick={handlePrevious}
-                  disabled={currentQuestion === 0}>
+                  <Button type="button" variant="outline" onClick={handlePrevious} disabled={currentQuestion === 0}>
 
                     <ArrowLeft className="h-4 w-4 mr-2" />
                     Previous
                   </Button>
                   
-                  {!isLastQuestion ?
-                <Button
-                  type="button"
-                  onClick={handleNext}
-                  disabled={!canProceed}
-                  className="bg-[#572670] hover:bg-[#572670]/90">
+                  {!isLastQuestion ? <Button type="button" onClick={handleNext} disabled={!canProceed} className="bg-[#572670] hover:bg-[#572670]/90">
 
                       Next
                       <ArrowRight className="h-4 w-4 ml-2" />
                     </Button> :
-
                 <Button
                   type="submit"
                   disabled={!canProceed}

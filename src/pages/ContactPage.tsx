@@ -372,7 +372,7 @@ const ContactPage = () => {
           <Card className="overflow-hidden shadow-lg max-w-4xl mx-auto">
             <div className="aspect-video bg-gray-200 relative">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3311.123456789012!2d-116.5453!3d33.8303!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzPCsDQ5JzQ5LjEiTiAxMTbCsDMyJzQzLjEiVw!5e0!3m2!1sen!2sus!4v1234567890123!5m2!1sen!2sus"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d579.0997077594358!2d-116.50032412577016!3d33.814262642884565!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80db1d8e55ea98e3%3A0x807c8a665e925f92!2sKarma%20TMS%20PC%20-%20Palm%20Springs!5e0!3m2!1sen!2sin!4v1762498292990!5m2!1sen!2sin"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
