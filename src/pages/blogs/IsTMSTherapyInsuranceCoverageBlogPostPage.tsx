@@ -10,7 +10,7 @@ import {
   BreadcrumbLink,
   BreadcrumbList,
   BreadcrumbPage,
-  BreadcrumbSeparator
+  BreadcrumbSeparator,
 } from '@/components/ui/breadcrumb';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
@@ -18,9 +18,9 @@ import {
   Accordion,
   AccordionContent,
   AccordionItem,
-  AccordionTrigger
+  AccordionTrigger,
 } from '@/components/ui/accordion';
-import { Calendar, Clock, User, CheckCircle2, ArrowRight } from 'lucide-react';
+import { Calendar, Clock, User, ArrowRight, CheckCircle2 } from 'lucide-react';
 import AuthorBox from '@/components/AuthorBox';
 
 const IsTMSTherapyInsuranceCoverageBlogPostPage = () => {
@@ -28,16 +28,16 @@ const IsTMSTherapyInsuranceCoverageBlogPostPage = () => {
   const sectionsRef = useRef<{[key: string]: HTMLElement | null;}>({});
 
   const tocItems = [
-    { id: 'understanding-tms', label: 'Understanding TMS Therapy' },
-    { id: 'insurance-coverage-us', label: 'Insurance Coverage in the US' },
+    { id: 'understanding-tms', label: 'Understanding TMS & Coverage' },
+    { id: 'is-covered-us', label: 'Is TMS Covered in US?' },
     { id: 'depression-coverage', label: 'Coverage for Depression' },
     { id: 'insurance-criteria', label: 'Insurance Criteria' },
     { id: 'approval-process', label: 'Approval Process' },
-    { id: 'out-of-pocket-costs', label: 'Out-of-Pocket Costs' },
-    { id: 'denied-coverage', label: 'If Coverage is Denied' },
-    { id: 'beyond-depression', label: 'Coverage Beyond Depression' },
+    { id: 'out-of-pocket', label: 'Out-of-Pocket Costs' },
+    { id: 'denial-help', label: 'If Coverage Denied' },
+    { id: 'beyond-depression', label: 'Beyond Depression' },
     { id: 'provider-experience', label: 'Provider Experience' },
-    { id: 'is-it-worth-it', label: 'Is TMS Worth It?' },
+    { id: 'is-worth-it', label: 'Is It Worth It?' },
     { id: 'faqs', label: 'FAQs' }
   ];
 
@@ -73,24 +73,24 @@ const IsTMSTherapyInsuranceCoverageBlogPostPage = () => {
 
   const faqs = [
     {
-      question: 'Does Medicare cover TMS therapy?',
-      answer: 'Yes, Medicare Part B covers TMS therapy for treatment-resistant depression when specific criteria are met. You must have tried and failed at least one antidepressant medication during the current depressive episode and meet other clinical requirements. Medicare typically covers 80% of the approved amount after you meet your Part B deductible.'
+      question: 'Is TMS therapy covered by insurance?',
+      answer: 'In many cases, yes. Most insurance providers cover TMS therapy for major depressive disorder when standard treatments have not worked.'
     },
     {
-      question: 'What if my insurance denies coverage for TMS therapy?',
-      answer: 'If your insurance denies coverage, you have several options: file an appeal with supporting documentation from your doctor, request a peer-to-peer review where your psychiatrist speaks directly with the insurance medical reviewer, seek assistance from patient advocacy services, or explore alternative payment options including payment plans and financing.'
+      question: 'Does insurance cover TMS therapy for everyone?',
+      answer: 'Coverage depends on your diagnosis, treatment history, and specific insurance plan. Prior authorization is usually required.'
     },
     {
-      question: 'How much does TMS therapy cost with insurance?',
-      answer: 'With insurance coverage, your out-of-pocket costs will depend on your specific plan. You may be responsible for copays (typically $20-50 per session), coinsurance (usually 10-20% of the total cost), and your deductible if not yet met. Most patients with insurance pay between $500-3,000 total for a full course of treatment.'
+      question: 'What insurance plans usually cover TMS therapy?',
+      answer: 'Many private insurers and Medicare cover TMS therapy. Medicaid coverage varies by state and individual plan.'
     },
     {
-      question: 'How long does the insurance approval process take?',
-      answer: 'The insurance approval process typically takes 1-3 weeks, though it can vary by insurance company. Some insurers provide immediate approval, while others require extensive documentation review. Urgent cases may be expedited. Working with an experienced TMS provider can help streamline this process.'
+      question: 'What costs might I pay even if insurance covers TMS?',
+      answer: 'You may still have deductibles, copays, or coinsurance based on your policy, even with approved coverage.'
     },
     {
-      question: 'Is TMS therapy covered for anxiety disorders?',
-      answer: 'Currently, most insurance companies only cover TMS therapy for FDA-approved indications, primarily treatment-resistant depression and OCD. Coverage for anxiety disorders is limited because FDA approval for anxiety is still pending. However, some patients may receive coverage if anxiety is comorbid with their depression diagnosis.'
+      question: 'What if my insurance denies TMS therapy?',
+      answer: 'Denials can often be appealed with additional medical documentation or a peer-to-peer review by your provider.'
     }
   ];
 
@@ -118,12 +118,12 @@ const IsTMSTherapyInsuranceCoverageBlogPostPage = () => {
   const articleSchema = {
     '@context': 'https://schema.org',
     '@type': 'Article',
-    headline: 'Is TMS Therapy Covered by Insurance? A Complete Coverage Guide',
+    headline: 'Is TMS Therapy Covered by Insurance? What You Should Know',
     description: 'Is TMS therapy covered by insurance? Learn eligibility, approval criteria, costs, and coverage details to access effective TMS treatment.',
     image: 'https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=1200',
     author: {
       '@type': 'Person',
-      name: 'Dr. Keerthy Sunder',
+      name: 'KarmaTMS PC',
       affiliation: {
         '@type': 'Organization',
         name: 'KarmaTMS'
@@ -137,8 +137,8 @@ const IsTMSTherapyInsuranceCoverageBlogPostPage = () => {
         url: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/ebadb369-a58d-421c-b937-24f900be5867.png'
       }
     },
-    datePublished: '2025-01-15',
-    dateModified: '2025-01-15',
+    datePublished: '2026-01-06',
+    dateModified: '2026-01-06',
     mainEntityOfPage: {
       '@type': 'WebPage',
       '@id': 'https://karmatms.com/blog/is-tms-therapy-covered-by-insurance'
@@ -188,7 +188,6 @@ const IsTMSTherapyInsuranceCoverageBlogPostPage = () => {
 
       <Navigation />
 
-      {/* Breadcrumb */}
       <div className="bg-gray-50 border-b">
         <div className="container mx-auto px-4 py-4">
           <Breadcrumb>
@@ -213,7 +212,6 @@ const IsTMSTherapyInsuranceCoverageBlogPostPage = () => {
         </div>
       </div>
 
-      {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-[#572670] to-[#7B3FA0] text-white py-20">
         <div className="absolute inset-0 bg-black/20"></div>
         <div className="container mx-auto px-4 relative z-10">
@@ -221,39 +219,34 @@ const IsTMSTherapyInsuranceCoverageBlogPostPage = () => {
             <div className="flex flex-wrap justify-center gap-4 mb-6 text-sm">
               <span className="flex items-center gap-1 bg-white/10 px-3 py-1 rounded-full backdrop-blur-sm">
                 <Calendar className="w-4 h-4" />
-                January 15, 2025
+                January 06, 2026
               </span>
               <span className="flex items-center gap-1 bg-white/10 px-3 py-1 rounded-full backdrop-blur-sm">
                 <Clock className="w-4 h-4" />
-                15 min read
+                10 min read
               </span>
               <span className="flex items-center gap-1 bg-white/10 px-3 py-1 rounded-full backdrop-blur-sm">
                 <User className="w-4 h-4" />
-                Dr. Keerthy Sunder
+                Karma TMS PC
               </span>
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
               Is TMS Therapy Covered by Insurance? A Complete Coverage Guide
             </h1>
             <p className="text-xl md:text-2xl text-white/90 mb-8">
-              Everything you need to know about insurance coverage, approval criteria, and costs for TMS therapy
+              Is TMS therapy covered by insurance? Learn eligibility, approval criteria, costs, and coverage details to access effective TMS treatment.
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               <Button asChild size="lg" className="bg-white text-[#572670] hover:bg-gray-100">
                 <Link to="/contact">Schedule Consultation</Link>
-              </Button>
-              <Button asChild size="lg" variant="outline" className="border-white text-white hover:bg-white/10">
-                <Link to="/insurance-pricing">Check Coverage</Link>
               </Button>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Main Content */}
       <div className="container mx-auto px-4 py-12">
         <div className="grid lg:grid-cols-4 gap-8">
-          {/* Table of Contents - Sticky Sidebar */}
           <aside className="lg:col-span-1">
             <div className="lg:sticky lg:top-24">
               <Card className="border-[#572670]/20">
@@ -284,593 +277,159 @@ const IsTMSTherapyInsuranceCoverageBlogPostPage = () => {
             </div>
           </aside>
 
-          {/* Article Content */}
           <article className="lg:col-span-3 prose prose-lg max-w-none">
-            {/* Introduction */}
             <div className="mb-12">
               <img
                 src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=1200"
-                alt="Insurance coverage for TMS therapy"
+                alt="Is TMS therapy covered by insurance? Patient receiving TMS treatment in a clinic"
                 className="w-full object-cover rounded-lg mb-6"
               />
 
               <p className="text-xl text-gray-700 leading-relaxed">
-                One of the most common questions patients ask when considering <Link to="/tms-therapy" className="text-[#572670] hover:underline font-medium">TMS therapy</Link> is: "Is TMS therapy covered by insurance?" The good news is that most major insurance plans do cover TMS therapy for treatment-resistant depression. However, navigating insurance requirements, understanding approval criteria, and knowing what costs to expect can be complex. This comprehensive guide will help you understand everything about TMS therapy insurance coverage.
+                Is TMS therapy covered by insurance is one of the most searched and most important questions for people considering advanced mental health treatment. When someone has lived with depression or other mental health conditions for years and traditional medications have not helped enough, Transcranial Magnetic Stimulation can feel like a real source of hope. At the same time, uncertainty about cost and insurance approval often becomes a major barrier. For patients exploring TMS Therapy in Palm Springs. understanding insurance coverage clearly and realistically is the first step toward confident decision making.
+              </p>
+              <p className="text-gray-700 mt-4">
+                This in depth guide is written to help patients and families understand how insurance coverage for TMS therapy really works in the United States, what insurance companies look for, how approvals are obtained, and how to improve the chances of coverage while staying fully aligned with current Google content quality and medical transparency guidelines.
               </p>
             </div>
 
-            {/* Section 1: Understanding TMS */}
             <section ref={(el) => sectionsRef.current['understanding-tms'] = el} className="mb-12">
               <h2 className="text-3xl font-bold text-[#572670] mb-6">Understanding TMS Therapy and Why Insurance Coverage Matters</h2>
-              
               <p className="mb-4">
-                Transcranial Magnetic Stimulation (TMS) is an FDA-approved, non-invasive treatment for major depressive disorder, particularly for patients who haven't responded to traditional antidepressant medications. The therapy uses magnetic pulses to stimulate specific areas of the brain associated with mood regulation.
+                Transcranial Magnetic Stimulation, commonly called TMS therapy, is a non invasive treatment that uses focused magnetic pulses to stimulate areas of the brain involved in mood regulation. It is most often recommended for people with major depressive disorder who have not experienced adequate relief from antidepressant medications or psychotherapy.
               </p>
-
-              <Card className="bg-gradient-to-br from-[#572670]/5 to-transparent border-[#572670]/20 mb-6">
-                <CardContent className="p-6">
-                  <p className="text-lg font-medium text-[#572670] mb-2">Why Insurance Coverage Is Important</p>
-                  <p className="text-gray-700">
-                    Without insurance coverage, a full course of TMS therapy can cost $10,000-$15,000 or more. Insurance coverage makes this life-changing treatment accessible to those who need it most. Understanding your coverage options is the first step toward getting the help you deserve.
-                  </p>
-                </CardContent>
-              </Card>
-
-              <p className="mb-6">
-                TMS therapy typically involves:
+              <p className="mb-4">
+                TMS does not involve surgery, anesthesia, or medication changes. Patients remain awake during sessions and typically return to normal activities immediately afterward. However, treatment is delivered over multiple sessions, usually five days a week for several weeks. Because of this structure, the total cost of care can be significant, which makes mental health insurance coverage for TMS a critical concern for most patients.
               </p>
-              <ul className="list-disc pl-6 mb-6 space-y-2">
-                <li>Daily treatment sessions (5 days per week)</li>
-                <li>Each session lasting 20-40 minutes</li>
-                <li>A full course of 20-36 sessions over 4-9 weeks</li>
-                <li>No anesthesia, sedation, or recovery time needed</li>
-              </ul>
             </section>
 
-            {/* Section 2: Insurance Coverage in US */}
-            <section ref={(el) => sectionsRef.current['insurance-coverage-us'] = el} className="mb-12">
-              <h2 className="text-3xl font-bold text-[#572670] mb-6">Is TMS Therapy Covered by Insurance in the United States?</h2>
-              
-              <p className="mb-6">
-                Yes, TMS therapy is covered by most major insurance providers in the United States. Since receiving FDA approval in 2008, insurance coverage for TMS has steadily expanded. Today, the majority of commercial insurance plans, Medicare, and many Medicaid programs recognize TMS as a medically necessary treatment for treatment-resistant depression.
+            <section ref={(el) => sectionsRef.current['is-covered-us'] = el} className="mb-12">
+              <h2 className="text-3xl font-bold text-[#572670] mb-6">Is TMS Therapy Covered by Insurance in the United States</h2>
+              <p className="mb-4">
+                In many cases, yes, TMS therapy is covered by insurance in the United States. Over the past decade, major insurance providers have increasingly recognized TMS as a medically necessary treatment for treatment resistant depression. As clinical evidence has grown and professional guidelines have evolved, insurance policies have expanded to include TMS under specific conditions.
               </p>
-
-              <div className="grid md:grid-cols-2 gap-4 my-6">
-                <Card className="border-[#572670]/20">
-                  <CardContent className="p-6">
-                    <CheckCircle2 className="w-8 h-8 text-green-600 mb-3" />
-                    <h4 className="font-bold mb-2">Commercial Insurance</h4>
-                    <p className="text-sm text-gray-600">Most major carriers including Blue Cross Blue Shield, UnitedHealthcare, Aetna, Cigna, and Humana cover TMS therapy</p>
-                  </CardContent>
-                </Card>
-                <Card className="border-[#572670]/20">
-                  <CardContent className="p-6">
-                    <CheckCircle2 className="w-8 h-8 text-green-600 mb-3" />
-                    <h4 className="font-bold mb-2">Medicare</h4>
-                    <p className="text-sm text-gray-600">Medicare Part B covers TMS therapy when medical necessity criteria are met</p>
-                  </CardContent>
-                </Card>
-                <Card className="border-[#572670]/20">
-                  <CardContent className="p-6">
-                    <CheckCircle2 className="w-8 h-8 text-green-600 mb-3" />
-                    <h4 className="font-bold mb-2">Medicaid</h4>
-                    <p className="text-sm text-gray-600">Many state Medicaid programs now cover TMS therapy (coverage varies by state)</p>
-                  </CardContent>
-                </Card>
-                <Card className="border-[#572670]/20">
-                  <CardContent className="p-6">
-                    <CheckCircle2 className="w-8 h-8 text-green-600 mb-3" />
-                    <h4 className="font-bold mb-2">TRICARE</h4>
-                    <p className="text-sm text-gray-600">Military insurance covers TMS for eligible beneficiaries with treatment-resistant depression</p>
-                  </CardContent>
-                </Card>
-              </div>
-
-              <Card className="bg-blue-50 border-blue-200 mb-6">
-                <CardContent className="p-6">
-                  <p className="font-medium text-blue-900 mb-2">Important Note</p>
-                  <p className="text-gray-700">
-                    While most insurance plans cover TMS, specific coverage details, requirements, and out-of-pocket costs vary significantly between insurance companies and individual plans. Always verify your specific coverage with your insurance provider.
-                  </p>
-                </CardContent>
-              </Card>
+              <p className="mb-4">
+                Most private insurance plans, including employer sponsored policies, now offer coverage for TMS therapy when medical criteria are met. Medicare also provides coverage for TMS therapy for major depressive disorder. Medicaid coverage varies by state and by individual plan, which means eligibility depends on local regulations and benefit structures.
+              </p>
+              <p className="mb-4">
+                It is important to understand that coverage decisions are based on your individual insurance plan, not just the name of the insurance company. Two patients with the same insurer may receive different decisions depending on their policy details.
+              </p>
             </section>
 
-            {/* Section 3: Depression Coverage */}
             <section ref={(el) => sectionsRef.current['depression-coverage'] = el} className="mb-12">
-              <h2 className="text-3xl font-bold text-[#572670] mb-6">Does Insurance Cover TMS Therapy for Depression?</h2>
-              
-              <p className="mb-6">
-                Insurance companies typically cover TMS therapy specifically for major depressive disorder (MDD) when the depression is classified as "treatment-resistant." This means the patient has tried and not adequately responded to antidepressant medications.
-              </p>
-
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">What Qualifies as Treatment-Resistant Depression?</h3>
-
+              <h2 className="text-3xl font-bold text-[#572670] mb-6">Does Insurance Cover TMS Therapy for Depression</h2>
               <p className="mb-4">
-                Most insurance companies define treatment-resistant depression as:
+                When patients ask does insurance cover TMS therapy, the strongest and most consistent answer applies to major depressive disorder. Depression is the condition with the most extensive research support for TMS and is the primary diagnosis approved by insurers.
               </p>
-              <ul className="list-disc pl-6 mb-6 space-y-2">
-                <li>Failure to respond to at least one (sometimes two or more) adequate trials of antidepressant medication</li>
-                <li>Each medication trial must be at an adequate dose for an adequate duration (typically 4-6 weeks minimum)</li>
-                <li>Current depressive episode confirmed by clinical diagnosis</li>
-                <li>Symptoms significantly impair daily functioning</li>
-              </ul>
-
-              <Card className="border-l-4 border-[#572670] mb-6">
-                <CardContent className="p-6">
-                  <h4 className="font-bold text-lg mb-3">Insurance Coverage Requirements</h4>
-                  <p className="text-gray-700 mb-3">
-                    To qualify for insurance coverage, you typically need:
-                  </p>
-                  <ul className="space-y-2 text-sm text-gray-700">
-                    <li>• Documented diagnosis of major depressive disorder</li>
-                    <li>• Failure of at least one adequate antidepressant trial</li>
-                    <li>• Current PHQ-9 or similar depression screening score in the moderate-to-severe range</li>
-                    <li>• Physician documentation supporting medical necessity</li>
-                    <li>• No contraindications to TMS therapy</li>
-                  </ul>
-                </CardContent>
-              </Card>
+              <p className="mb-4">
+                Insurance companies typically require documentation showing that depression has not adequately responded to standard treatments. This usually means that several antidepressant medications were tried at appropriate doses and durations without sufficient improvement. In many cases, insurers also expect documentation of psychotherapy, such as cognitive behavioral therapy.
+              </p>
+              <p className="mb-4">
+                The goal of these requirements is to confirm that TMS is being used appropriately as a next step when first line treatments have not worked.
+              </p>
             </section>
 
-            {/* Section 4: Insurance Criteria */}
             <section ref={(el) => sectionsRef.current['insurance-criteria'] = el} className="mb-12">
               <h2 className="text-3xl font-bold text-[#572670] mb-6">Insurance Criteria and Medical Documentation Requirements</h2>
-              
-              <p className="mb-6">
-                Insurance companies require specific documentation to approve TMS therapy coverage. Understanding these requirements upfront can help streamline the approval process.
+              <p className="mb-4">
+                Insurance coverage for TMS therapy is based on clearly defined clinical criteria. While the exact details vary slightly between insurers, the overall structure is similar across most plans.
               </p>
-
-              <div className="space-y-6">
-                <Card className="border-[#572670]/20">
-                  <CardContent className="p-6">
-                    <h3 className="text-xl font-bold mb-3">1. Clinical Documentation</h3>
-                    <p className="text-gray-700 mb-3">Your psychiatrist must provide:</p>
-                    <ul className="space-y-2 text-sm text-gray-700">
-                      <li>• Detailed psychiatric evaluation</li>
-                      <li>• DSM-5 diagnosis of major depressive disorder</li>
-                      <li>• Current symptom severity scores (PHQ-9, HAM-D, etc.)</li>
-                      <li>• Treatment history and response</li>
-                      <li>• Medical necessity letter</li>
-                    </ul>
-                  </CardContent>
-                </Card>
-
-                <Card className="border-[#572670]/20">
-                  <CardContent className="p-6">
-                    <h3 className="text-xl font-bold mb-3">2. Medication History</h3>
-                    <p className="text-gray-700 mb-3">Documentation must include:</p>
-                    <ul className="space-y-2 text-sm text-gray-700">
-                      <li>• Names of all antidepressants tried</li>
-                      <li>• Dosages and duration of each trial</li>
-                      <li>• Response to each medication</li>
-                      <li>• Reasons for discontinuation</li>
-                      <li>• Side effects experienced</li>
-                    </ul>
-                  </CardContent>
-                </Card>
-
-                <Card className="border-[#572670]/20">
-                  <CardContent className="p-6">
-                    <h3 className="text-xl font-bold mb-3">3. Current Treatment Plan</h3>
-                    <p className="text-gray-700 mb-3">Insurance requires:</p>
-                    <ul className="space-y-2 text-sm text-gray-700">
-                      <li>• Proposed TMS treatment protocol</li>
-                      <li>• Expected number of sessions</li>
-                      <li>• Treatment frequency and duration</li>
-                      <li>• Concurrent treatments (therapy, medications)</li>
-                      <li>• Expected outcomes and goals</li>
-                    </ul>
-                  </CardContent>
-                </Card>
-              </div>
+              <p className="mb-4">
+                Patients usually must have a confirmed diagnosis of major depressive disorder. The medical record must document symptom severity, duration, and functional impairment. A detailed medication history is required, including the names of antidepressants tried, dosages, treatment duration, and reasons for discontinuation.
+              </p>
+              <p className="mb-4">
+                Some insurance plans also require evidence that psychotherapy was attempted without sufficient benefit. All of this information must be clearly documented during a comprehensive psychiatric evaluation before a pre authorization request is submitted.
+              </p>
             </section>
 
-            {/* Section 5: Approval Process */}
             <section ref={(el) => sectionsRef.current['approval-process'] = el} className="mb-12">
               <h2 className="text-3xl font-bold text-[#572670] mb-6">How the Insurance Approval Process Works</h2>
-              
-              <p className="mb-6">
-                Understanding the insurance approval process can help set appropriate expectations and reduce stress. Here's what typically happens:
+              <p className="mb-4">
+                The insurance approval process for TMS therapy begins with a thorough clinical assessment. During this evaluation, the psychiatrist reviews diagnosis, treatment history, symptom patterns, and current functioning. This assessment forms the foundation of the insurance request.
               </p>
-
-              <div className="grid md:grid-cols-2 gap-6 mb-8">
-                <Card className="border-l-4 border-[#572670]">
-                  <CardContent className="p-6">
-                    <h4 className="font-bold text-lg mb-3">Step 1: Initial Consultation</h4>
-                    <p className="text-gray-700 text-sm">
-                      Meet with a TMS provider for evaluation. They'll assess your depression history, review your medications, and determine if TMS is appropriate for you.
-                    </p>
-                  </CardContent>
-                </Card>
-
-                <Card className="border-l-4 border-[#572670]">
-                  <CardContent className="p-6">
-                    <h4 className="font-bold text-lg mb-3">Step 2: Documentation Gathering</h4>
-                    <p className="text-gray-700 text-sm">
-                      Your provider collects all necessary medical records, treatment history, and prepares the insurance authorization request.
-                    </p>
-                  </CardContent>
-                </Card>
-
-                <Card className="border-l-4 border-[#572670]">
-                  <CardContent className="p-6">
-                    <h4 className="font-bold text-lg mb-3">Step 3: Prior Authorization</h4>
-                    <p className="text-gray-700 text-sm">
-                      The TMS provider submits a prior authorization request to your insurance company with all supporting documentation.
-                    </p>
-                  </CardContent>
-                </Card>
-
-                <Card className="border-l-4 border-[#572670]">
-                  <CardContent className="p-6">
-                    <h4 className="font-bold text-lg mb-3">Step 4: Insurance Review</h4>
-                    <p className="text-gray-700 text-sm">
-                      Insurance company reviews the request. This typically takes 1-3 weeks but can be expedited if urgent.
-                    </p>
-                  </CardContent>
-                </Card>
-
-                <Card className="border-l-4 border-[#572670]">
-                  <CardContent className="p-6">
-                    <h4 className="font-bold text-lg mb-3">Step 5: Approval Decision</h4>
-                    <p className="text-gray-700 text-sm">
-                      Insurance approves, denies, or requests additional information. If approved, you receive authorization for a specific number of sessions.
-                    </p>
-                  </CardContent>
-                </Card>
-
-                <Card className="border-l-4 border-[#572670]">
-                  <CardContent className="p-6">
-                    <h4 className="font-bold text-lg mb-3">Step 6: Treatment Begins</h4>
-                    <p className="text-gray-700 text-sm">
-                      Once approved, you can schedule your TMS treatment sessions. Your provider will handle ongoing communication with your insurance.
-                    </p>
-                  </CardContent>
-                </Card>
-              </div>
-
-              <Card className="bg-gradient-to-br from-green-50 to-transparent border-green-200">
-                <CardContent className="p-6">
-                  <p className="font-medium text-green-900 mb-2">Pro Tip</p>
-                  <p className="text-gray-700">
-                    Work with a TMS provider experienced in insurance navigation. At KarmaTMS, our dedicated insurance team handles the entire authorization process, communicates with insurance companies, and maximizes your chances of approval.
-                  </p>
-                </CardContent>
-              </Card>
+              <p className="mb-4">
+                After the evaluation, the clinic submits a pre authorization request to the insurance company. This request includes clinical notes, diagnostic codes, medication history, and a medical necessity statement explaining why TMS therapy is appropriate.
+              </p>
+              <p className="mb-4">
+                Insurance companies then review the request. This process may take several days or a few weeks. Sometimes additional information is requested before a final decision is made. Clinics experienced in TMS therapy understand how to respond efficiently to these requests to avoid unnecessary delays.
+              </p>
             </section>
 
-            {/* Section 6: Out-of-Pocket Costs */}
-            <section ref={(el) => sectionsRef.current['out-of-pocket-costs'] = el} className="mb-12">
-              <h2 className="text-3xl font-bold text-[#572670] mb-6">What Out-of-Pocket Costs May Still Apply</h2>
-              
-              <p className="mb-6">
-                Even with insurance coverage, you may have some out-of-pocket expenses. Understanding these costs upfront helps you plan financially for your treatment.
+            <section ref={(el) => sectionsRef.current['out-of-pocket'] = el} className="mb-12">
+              <h2 className="text-3xl font-bold text-[#572670] mb-6">What Out of Pocket Costs May Still Apply</h2>
+              <p className="mb-4">
+                Even when insurance covers TMS therapy, patients may still have some out of pocket costs. These costs depend on the specific structure of the insurance plan.
               </p>
-
-              <div className="space-y-6">
-                <Card className="border-[#572670]/20">
-                  <CardContent className="p-6">
-                    <h3 className="text-xl font-bold mb-3">Deductible</h3>
-                    <p className="text-gray-700">
-                      If you haven't met your annual deductible, you'll pay out-of-pocket until your deductible is satisfied. Deductibles vary widely but typically range from $500-$5,000 for individual plans.
-                    </p>
-                  </CardContent>
-                </Card>
-
-                <Card className="border-[#572670]/20">
-                  <CardContent className="p-6">
-                    <h3 className="text-xl font-bold mb-3">Copayment</h3>
-                    <p className="text-gray-700 mb-3">
-                      Many plans require a fixed copay per treatment session. Copays for TMS therapy typically range from $20-$75 per session. With 20-36 sessions, total copay costs can be:
-                    </p>
-                    <ul className="space-y-2 text-sm text-gray-700">
-                      <li>• Low copay ($20): $400-$720 total</li>
-                      <li>• Mid copay ($40): $800-$1,440 total</li>
-                      <li>• High copay ($75): $1,500-$2,700 total</li>
-                    </ul>
-                  </CardContent>
-                </Card>
-
-                <Card className="border-[#572670]/20">
-                  <CardContent className="p-6">
-                    <h3 className="text-xl font-bold mb-3">Coinsurance</h3>
-                    <p className="text-gray-700">
-                      Some plans require you to pay a percentage of the allowed amount (typically 10-20%) after your deductible is met. Coinsurance costs depend on your plan's contracted rate with the provider.
-                    </p>
-                  </CardContent>
-                </Card>
-
-                <Card className="border-[#572670]/20">
-                  <CardContent className="p-6">
-                    <h3 className="text-xl font-bold mb-3">Out-of-Pocket Maximum</h3>
-                    <p className="text-gray-700">
-                      Good news: Once you reach your plan's annual out-of-pocket maximum, your insurance covers 100% of covered services for the rest of the year. This protects you from unlimited expenses.
-                    </p>
-                  </CardContent>
-                </Card>
-              </div>
-
-              <Card className="bg-blue-50 border-blue-200 mt-6">
-                <CardContent className="p-6">
-                  <p className="font-medium text-blue-900 mb-2">Cost Comparison</p>
-                  <p className="text-gray-700">
-                    While out-of-pocket costs for TMS may seem high, consider the long-term costs of ongoing antidepressant medications, therapy sessions, lost work productivity, and quality of life. For many patients, TMS represents a cost-effective solution that provides lasting relief.
-                  </p>
-                </CardContent>
-              </Card>
+              <p className="mb-4">
+                Common expenses include deductibles that must be met before coverage begins, copayments for each session, or coinsurance where the patient pays a percentage of the cost. Because TMS involves multiple sessions, understanding these details in advance is essential for financial planning.
+              </p>
+              <p className="mb-4">
+                A transparent explanation of benefits before starting treatment helps patients feel informed and reduces anxiety about unexpected expenses.
+              </p>
             </section>
 
-            {/* Section 7: Denied Coverage */}
-            <section ref={(el) => sectionsRef.current['denied-coverage'] = el} className="mb-12">
+            <section ref={(el) => sectionsRef.current['denial-help'] = el} className="mb-12">
               <h2 className="text-3xl font-bold text-[#572670] mb-6">What to Do If Insurance Denies Coverage</h2>
-              
-              <p className="mb-6">
-                If your insurance initially denies coverage for TMS therapy, don't give up. Many denials are overturned on appeal. Here's what you can do:
+              <p className="mb-4">
+                An insurance denial does not always mean that TMS therapy is no longer an option. Many initial denials occur because of missing information, incomplete documentation, or administrative errors.
               </p>
-
-              <div className="space-y-6">
-                <Card className="border-[#572670]/20">
-                  <CardContent className="p-6">
-                    <h3 className="text-xl font-bold mb-3">1. Understand the Reason</h3>
-                    <p className="text-gray-700 mb-3">Common denial reasons include:</p>
-                    <ul className="space-y-2 text-sm text-gray-700">
-                      <li>• Insufficient documentation of medication failures</li>
-                      <li>• Not meeting specific treatment-resistant criteria</li>
-                      <li>• Missing required clinical information</li>
-                      <li>• Administrative errors or incomplete submissions</li>
-                    </ul>
-                  </CardContent>
-                </Card>
-
-                <Card className="border-[#572670]/20">
-                  <CardContent className="p-6">
-                    <h3 className="text-xl font-bold mb-3">2. File an Appeal</h3>
-                    <p className="text-gray-700 mb-3">You have the right to appeal. The appeal process typically involves:</p>
-                    <ul className="space-y-2 text-sm text-gray-700">
-                      <li>• Submitting additional documentation</li>
-                      <li>• Providing detailed treatment history</li>
-                      <li>• Including peer-reviewed research supporting TMS</li>
-                      <li>• Having your doctor write a letter of medical necessity</li>
-                    </ul>
-                  </CardContent>
-                </Card>
-
-                <Card className="border-[#572670]/20">
-                  <CardContent className="p-6">
-                    <h3 className="text-xl font-bold mb-3">3. Request Peer-to-Peer Review</h3>
-                    <p className="text-gray-700">
-                      Ask for a peer-to-peer review where your treating psychiatrist speaks directly with the insurance company's medical reviewer. This doctor-to-doctor conversation often leads to approval.
-                    </p>
-                  </CardContent>
-                </Card>
-
-                <Card className="border-[#572670]/20">
-                  <CardContent className="p-6">
-                    <h3 className="text-xl font-bold mb-3">4. Seek External Review</h3>
-                    <p className="text-gray-700">
-                      If internal appeals fail, you can request an external review by an independent third party. This is typically the final level of appeal and is binding.
-                    </p>
-                  </CardContent>
-                </Card>
-
-                <Card className="border-[#572670]/20">
-                  <CardContent className="p-6">
-                    <h3 className="text-xl font-bold mb-3">5. Explore Alternative Payment Options</h3>
-                    <p className="text-gray-700 mb-3">While appealing, consider:</p>
-                    <ul className="space-y-2 text-sm text-gray-700">
-                      <li>• Payment plans offered by the TMS provider</li>
-                      <li>• Medical financing options</li>
-                      <li>• Health savings account (HSA) or flexible spending account (FSA) funds</li>
-                      <li>• Manufacturer or clinic financial assistance programs</li>
-                    </ul>
-                  </CardContent>
-                </Card>
-              </div>
-
-              <Card className="bg-gradient-to-br from-[#572670]/5 to-transparent border-[#572670]/20 mt-6">
-                <CardContent className="p-6">
-                  <p className="text-lg font-medium text-[#572670] mb-2">Success Rate of Appeals</p>
-                  <p className="text-gray-700">
-                    Studies show that 30-60% of initial insurance denials are overturned on appeal, especially when patients work with experienced providers who understand the appeals process and provide comprehensive documentation.
-                  </p>
-                </CardContent>
-              </Card>
+              <p className="mb-4">
+                In these cases, an appeal can be submitted with additional clinical detail. Appeals often include more comprehensive treatment histories, standardized symptom rating scales, and letters from the treating psychiatrist explaining medical necessity.
+              </p>
+              <p className="mb-4">
+                Another option is a peer to peer review. During this process, the treating clinician speaks directly with the insurance company’s medical reviewer to discuss the case. When supported by strong documentation, peer reviews can lead to overturned denials.
+              </p>
             </section>
 
-            {/* Section 8: Beyond Depression */}
             <section ref={(el) => sectionsRef.current['beyond-depression'] = el} className="mb-12">
               <h2 className="text-3xl font-bold text-[#572670] mb-6">Mental Health Insurance Coverage for TMS Beyond Depression</h2>
-              
-              <p className="mb-6">
-                While major depressive disorder is the most commonly covered indication, insurance coverage for TMS is expanding to other conditions:
+              <p className="mb-4">
+                While depression is the most commonly covered condition, patients often ask about mental health insurance coverage for TMS in other diagnoses. Coverage for conditions such as obsessive compulsive disorder, post traumatic stress disorder, and bipolar depression may be available in some cases, but it is less consistent.
               </p>
-
-              <div className="grid md:grid-cols-2 gap-4 my-6">
-                <Card className="border-[#572670]/20">
-                  <CardContent className="p-6">
-                    <h4 className="font-bold mb-2">Obsessive-Compulsive Disorder (OCD)</h4>
-                    <p className="text-sm text-gray-600">FDA-approved in 2018. Increasing insurance coverage, though criteria may be stricter than for depression.</p>
-                  </CardContent>
-                </Card>
-                <Card className="border-[#572670]/20">
-                  <CardContent className="p-6">
-                    <h4 className="font-bold mb-2">Anxiety Disorders</h4>
-                    <p className="text-sm text-gray-600">Limited coverage currently. Some insurers may cover when anxiety is comorbid with depression.</p>
-                  </CardContent>
-                </Card>
-                <Card className="border-[#572670]/20">
-                  <CardContent className="p-6">
-                    <h4 className="font-bold mb-2">PTSD</h4>
-                    <p className="text-sm text-gray-600">Growing research support. Coverage varies by insurer; VA system increasingly covers TMS for veterans with PTSD.</p>
-                  </CardContent>
-                </Card>
-                <Card className="border-[#572670]/20">
-                  <CardContent className="p-6">
-                    <h4 className="font-bold mb-2">Smoking Cessation</h4>
-                    <p className="text-sm text-gray-600">FDA-cleared device available. Insurance coverage still limited but expanding.</p>
-                  </CardContent>
-                </Card>
-              </div>
-
-              <Card className="bg-blue-50 border-blue-200">
-                <CardContent className="p-6">
-                  <p className="font-medium text-blue-900 mb-2">The Future of Coverage</p>
-                  <p className="text-gray-700">
-                    As research continues to demonstrate TMS effectiveness for various conditions and FDA approvals expand, insurance coverage is likely to broaden. Work with your provider to explore coverage options for your specific condition.
-                  </p>
-                </CardContent>
-              </Card>
+              <p className="mb-4">
+                Approval for these conditions depends on FDA clearance, insurer specific policies, and the strength of clinical justification. Because coverage rules are more complex, careful insurance verification is especially important when TMS is being considered for diagnoses other than depression.
+              </p>
             </section>
 
-            {/* Section 9: Provider Experience */}
             <section ref={(el) => sectionsRef.current['provider-experience'] = el} className="mb-12">
               <h2 className="text-3xl font-bold text-[#572670] mb-6">Why Provider Experience Matters for Insurance Approval</h2>
-              
-              <p className="mb-6">
-                Choosing a TMS provider with extensive insurance experience can significantly impact your approval success and overall experience:
+              <p className="mb-4">
+                Insurance approval for TMS therapy depends not only on medical criteria but also on how accurately and clearly information is submitted. Clinics with experience in TMS therapy understand insurer expectations, documentation standards, and appeal processes.
               </p>
-
-              <div className="space-y-6">
-                <Card className="border-l-4 border-[#572670]">
-                  <CardContent className="p-6">
-                    <h4 className="font-bold text-lg mb-3">Knowledge of Requirements</h4>
-                    <p className="text-gray-700 text-sm">
-                      Experienced providers understand exactly what documentation each insurance company requires, reducing delays and increasing first-time approval rates.
-                    </p>
-                  </CardContent>
-                </Card>
-
-                <Card className="border-l-4 border-[#572670]">
-                  <CardContent className="p-6">
-                    <h4 className="font-bold text-lg mb-3">Insurance Relationships</h4>
-                    <p className="text-gray-700 text-sm">
-                      Established providers often have direct relationships with insurance companies, facilitating communication and expediting approvals.
-                    </p>
-                  </CardContent>
-                </Card>
-
-                <Card className="border-l-4 border-[#572670]">
-                  <CardContent className="p-6">
-                    <h4 className="font-bold text-lg mb-3">Appeals Expertise</h4>
-                    <p className="text-gray-700 text-sm">
-                      When denials occur, experienced providers know exactly how to appeal effectively, often with pre-prepared appeals packages and strategies.
-                    </p>
-                  </CardContent>
-                </Card>
-
-                <Card className="border-l-4 border-[#572670]">
-                  <CardContent className="p-6">
-                    <h4 className="font-bold text-lg mb-3">Patient Advocacy</h4>
-                    <p className="text-gray-700 text-sm">
-                      The best providers advocate strongly for their patients, handling insurance communications and fighting for coverage so you can focus on your mental health.
-                    </p>
-                  </CardContent>
-                </Card>
-              </div>
-
-              <Card className="bg-gradient-to-br from-green-50 to-transparent border-green-200 mt-6">
-                <CardContent className="p-6">
-                  <p className="font-medium text-green-900 mb-2">KarmaTMS Insurance Support</p>
-                  <p className="text-gray-700">
-                    At KarmaTMS, our dedicated insurance verification team has successfully helped hundreds of patients navigate insurance approval. We handle everything from initial verification to appeals, maximizing your chances of coverage approval.
-                  </p>
-                </CardContent>
-              </Card>
+              <p className="mb-4">
+                An experienced provider ensures that records align with insurance guidelines while remaining truthful and patient centered. This administrative expertise can significantly improve approval timelines and reduce frustration for patients.
+              </p>
             </section>
 
-            {/* Section 10: Is It Worth It */}
-            <section ref={(el) => sectionsRef.current['is-it-worth-it'] = el} className="mb-12">
-              <h2 className="text-3xl font-bold text-[#572670] mb-6">Is TMS Therapy Worth It When Insurance Covers It?</h2>
-              
-              <p className="mb-6">
-                When insurance covers TMS therapy, your out-of-pocket costs are typically manageable—often less than ongoing medication and therapy costs over time. Consider these factors:
+            <section ref={(el) => sectionsRef.current['is-worth-it'] = el} className="mb-12">
+              <h2 className="text-3xl font-bold text-[#572670] mb-6">Is TMS Therapy Worth It When Insurance Covers It</h2>
+              <p className="mb-4">
+                For many patients, insurance coverage makes TMS therapy accessible and worthwhile. Compared with years of medication trials, ongoing side effects, and reduced quality of life, TMS offers a non medication option supported by growing clinical evidence.
               </p>
-
-              <div className="grid md:grid-cols-2 gap-6 mb-8">
-                <Card className="border-[#572670]/20">
-                  <CardContent className="p-6">
-                    <CheckCircle2 className="w-8 h-8 text-green-600 mb-3" />
-                    <h4 className="font-bold mb-2">High Success Rates</h4>
-                    <p className="text-sm text-gray-600">50-60% of patients achieve significant improvement; 30-40% reach complete remission</p>
-                  </CardContent>
-                </Card>
-                <Card className="border-[#572670]/20">
-                  <CardContent className="p-6">
-                    <CheckCircle2 className="w-8 h-8 text-green-600 mb-3" />
-                    <h4 className="font-bold mb-2">No Medication Side Effects</h4>
-                    <p className="text-sm text-gray-600">TMS provides relief without weight gain, sexual dysfunction, or other medication side effects</p>
-                  </CardContent>
-                </Card>
-                <Card className="border-[#572670]/20">
-                  <CardContent className="p-6">
-                    <CheckCircle2 className="w-8 h-8 text-green-600 mb-3" />
-                    <h4 className="font-bold mb-2">Long-Lasting Results</h4>
-                    <p className="text-sm text-gray-600">Many patients maintain improvements for 12 months or longer after completing treatment</p>
-                  </CardContent>
-                </Card>
-                <Card className="border-[#572670]/20">
-                  <CardContent className="p-6">
-                    <CheckCircle2 className="w-8 h-8 text-green-600 mb-3" />
-                    <h4 className="font-bold mb-2">Quality of Life</h4>
-                    <p className="text-sm text-gray-600">Improved mood, better relationships, increased productivity, and restored enjoyment of life</p>
-                  </CardContent>
-                </Card>
-              </div>
-
-              <Card className="bg-gradient-to-br from-[#572670]/5 to-transparent border-[#572670]/20">
-                <CardContent className="p-6">
-                  <p className="text-lg font-medium text-[#572670] mb-2">Real Patient Impact</p>
-                  <p className="text-gray-700 italic">
-                    "After years of trying different medications, TMS was life-changing. My insurance covered most of the cost, and my out-of-pocket was around $1,200. Best investment I ever made in my mental health. I've been in remission for over two years." - TMS Patient
-                  </p>
-                </CardContent>
-              </Card>
+              <p className="mb-4">
+                Patients who respond well often describe improvements in mood, motivation, focus, sleep, and daily functioning. While results vary from person to person, insurance coverage allows eligible patients to explore TMS therapy without carrying the full financial burden alone.
+              </p>
             </section>
 
-            {/* Section 11: Final Thoughts */}
             <section className="mb-12">
-              <h2 className="text-3xl font-bold text-[#572670] mb-6">Final Thoughts: Navigating TMS Insurance Coverage</h2>
-              
-              <p className="mb-6">
-                Understanding insurance coverage for TMS therapy doesn't have to be overwhelming. Here are the key takeaways:
+              <h2 className="text-3xl font-bold text-[#572670] mb-6">Final Thoughts</h2>
+              <p className="mb-4">
+                Is TMS therapy covered by insurance is a question that deserves a clear and honest answer. For many patients, particularly those with major depressive disorder that has not responded to standard treatments, insurance coverage is available and achievable with proper evaluation and documentation. Understanding the process, requirements, and potential costs helps patients move forward with confidence.
               </p>
-
-              <ul className="list-disc pl-6 mb-6 space-y-2">
-                <li><strong>Most insurance plans do cover TMS</strong> for treatment-resistant depression when medical necessity criteria are met</li>
-                <li><strong>You'll need documentation</strong> showing you've tried at least one antidepressant without adequate response</li>
-                <li><strong>Out-of-pocket costs vary</strong> based on your deductible, copays, and coinsurance</li>
-                <li><strong>The approval process typically takes 1-3 weeks</strong>, though it can be expedited</li>
-                <li><strong>Denials can often be overturned</strong> through the appeals process</li>
-                <li><strong>Working with an experienced provider</strong> significantly increases your chances of approval</li>
-                <li><strong>TMS offers excellent value</strong> when insurance covers it, providing lasting relief without medication side effects</li>
-              </ul>
-
-              <Card className="bg-gradient-to-br from-[#572670] to-[#7B3FA0] text-white">
-                <CardContent className="p-8">
-                  <h3 className="text-2xl font-bold mb-4">Ready to Explore Your Coverage?</h3>
-                  <p className="mb-6">
-                    Don't let insurance concerns prevent you from accessing this potentially life-changing treatment. Our insurance specialists at KarmaTMS will verify your coverage, handle the authorization process, and fight for your approval.
-                  </p>
-                  <Button asChild size="lg" className="bg-white text-[#572670] hover:bg-gray-100">
-                    <Link to="/contact">Schedule Free Consultation</Link>
-                  </Button>
-                </CardContent>
-              </Card>
+              <p className="mb-4">
+                If you are considering TMS Therapy in Palm Springs, Karma TMS PC, the best next step is a comprehensive psychiatric consultation and insurance verification. With the right guidance, many patients find that TMS therapy is not only clinically meaningful but also financially accessible through their insurance plan.
+              </p>
             </section>
 
-            {/* Author Box */}
             <AuthorBox
-              name="Dr. Keerthy Sunder"
-              role="Board-Certified Psychiatrist | Medical Director at KarmaTMS"
-              bio="Dr. Keerthy Sunder is a board-certified psychiatrist specializing in TMS therapy and treatment-resistant mental health conditions. With extensive experience in insurance navigation and patient advocacy, Dr. Sunder has helped hundreds of patients access TMS therapy through insurance coverage."
-              image="https://www.prtms.com/wp-content/uploads/2023/03/Dr.-Keerthy-Sunder-scaled.jpg"
+              name="Karma TMS PC"
+              role="Mental Health Clinic"
+              bio="Karma TMS PC is a leading mental health clinic specializing in TMS therapy and other advanced treatments for depression, anxiety, and PTSD."
+              image="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/ebadb369-a58d-421c-b937-24f900be5867.png" // Placeholder, maybe use logo or default
             />
 
-            {/* FAQ Section */}
             <section ref={(el) => sectionsRef.current['faqs'] = el} className="mb-12 mt-12">
               <h2 className="text-3xl font-bold text-[#572670] mb-6">Frequently Asked Questions</h2>
-              
               <Accordion type="single" collapsible className="w-full space-y-2">
                 {faqs.map((faq, index) => (
                   <AccordionItem
@@ -889,27 +448,22 @@ const IsTMSTherapyInsuranceCoverageBlogPostPage = () => {
               </Accordion>
             </section>
 
-            {/* CTA Section */}
             <Card className="bg-gradient-to-br from-[#572670] to-[#7B3FA0] text-white mb-12">
               <CardContent className="p-8 text-center">
                 <h3 className="text-2xl md:text-3xl font-bold mb-4">
-                  Get Help with Your Insurance Coverage
+                  Ready to Experience TMS Success?
                 </h3>
                 <p className="text-lg mb-6 text-white/90">
-                  Our insurance team will verify your coverage and guide you through the entire approval process.
+                  Join the thousands who have found relief with TMS therapy. Schedule a consultation to learn if you're a good candidate.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <Button asChild size="lg" className="bg-white text-[#572670] hover:bg-gray-100">
-                    <Link to="/contact">Check My Coverage</Link>
-                  </Button>
-                  <Button asChild size="lg" variant="outline" className="border-white text-white hover:bg-white/10">
-                    <Link to="/insurance-pricing">Learn About Costs</Link>
+                    <Link to="/contact">Schedule Free Consultation</Link>
                   </Button>
                 </div>
               </CardContent>
             </Card>
 
-            {/* Related Posts */}
             <section className="mb-12">
               <h2 className="text-3xl font-bold text-[#572670] mb-6">Related Articles</h2>
               <div className="grid md:grid-cols-3 gap-6">
