@@ -216,26 +216,26 @@ const TestimonialsPage = () => {
                 <Card className="overflow-hidden shadow-lg">
                   <div className="aspect-video bg-black">
                     {videoTestimonials[currentVideoIndex]?.videoType === 'vimeo' ?
-                      <div style={{ padding: '56.25% 0 0 0', position: 'relative' }}>
+                  <div style={{ padding: '56.25% 0 0 0', position: 'relative' }}>
                         <iframe
-                          src={`https://player.vimeo.com/video/${videoTestimonials[currentVideoIndex]?.videoId}${videoTestimonials[currentVideoIndex]?.vimeoHash ? `?h=${videoTestimonials[currentVideoIndex]?.vimeoHash}&` : '?'}badge=0&autopause=0&player_id=0&app_id=58479`}
-                          frameBorder="0"
-                          allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
-                          style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }}
-                          title={`${videoTestimonials[currentVideoIndex]?.name} Testimonial`}
-                        />
-                      </div>
-                      :
-                      <iframe
-                        width="100%"
-                        height="100%"
-                        src={`https://www.youtube.com/embed/${videoTestimonials[currentVideoIndex]?.videoId}?controls=1&modestbranding=1`}
-                        title={`${videoTestimonials[currentVideoIndex]?.name} Testimonial`}
-                        frameBorder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowFullScreen
-                      />
-                    }
+                      src={`https://player.vimeo.com/video/${videoTestimonials[currentVideoIndex]?.videoId}${videoTestimonials[currentVideoIndex]?.vimeoHash ? `?h=${videoTestimonials[currentVideoIndex]?.vimeoHash}&` : '?'}badge=0&autopause=0&player_id=0&app_id=58479`}
+                      frameBorder="0"
+                      allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+                      style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }}
+                      title={`${videoTestimonials[currentVideoIndex]?.name} Testimonial`} />
+
+                      </div> :
+
+                  <iframe
+                    width="100%"
+                    height="100%"
+                    src={`https://www.youtube.com/embed/${videoTestimonials[currentVideoIndex]?.videoId}?controls=1&modestbranding=1`}
+                    title={`${videoTestimonials[currentVideoIndex]?.name} Testimonial`}
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen />
+
+                  }
                   </div>
                 </Card>
               </div>
