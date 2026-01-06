@@ -84,7 +84,7 @@ const TwentyNinePalmsPage = () => {
       {/* Hero Section */}
       <div className="relative bg-gradient-to-br from-purple-900 via-purple-800 to-purple-700 text-white py-24 lg:py-32">
         <div className="absolute inset-0 opacity-20">
-          <div className="absolute inset-0 bg-[url('https://i.ibb.co/ZtXDgxm/4188f2c2-city-909-15b5d69d8f7.jpg" />
+          <div className="absolute inset-0 bg-[url('https://i.ibb.co/ZtXDgxm/4188f2c2-city-909-15b5d69d8f7.jpg')]" />
         </div>
         <div className="container mx-auto px-4 relative z-10">
           <Badge className="mb-4 bg-purple-500/20 text-white border-purple-300">Twentynine Palms Location</Badge>
@@ -195,7 +195,7 @@ const TwentyNinePalmsPage = () => {
             <div className="grid md:grid-cols-3 gap-6">
               <div className="relative h-72 rounded-xl overflow-hidden shadow-lg group">
                 <img
-                  src="https://i.ibb.co/fYtrMmJQ/entrance.webp"
+                  src="https://res.cloudinary.com/de4kw1t2i/image/upload/v1763039658/2_miiwgx.jpg"
                   alt="Professional and welcoming entrance at Twentynine Palms location"
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" />
 
