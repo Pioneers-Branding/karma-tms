@@ -233,9 +233,9 @@ const BlogPage = () => {
                   <Card className="group cursor-pointer hover:shadow-lg transition-all duration-300 border-gray-200 hover:border-blue-300">
                       <div className="relative overflow-hidden rounded-t-lg">
                         <img
-                      src={post.image}
-                      alt={post.title}
-                      className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300" />
+                        src={post.image}
+                        alt={post.title}
+                        className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300" />
 
                         <div className="absolute top-4 left-4">
                           <Badge variant="secondary" className="bg-white/90 text-gray-700">

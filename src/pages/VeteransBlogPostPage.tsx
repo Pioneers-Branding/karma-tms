@@ -228,7 +228,7 @@ const VeteransBlogPostPage = () => {
               </span>
               <span className="flex items-center gap-1 bg-white/10 px-3 py-1 rounded-full backdrop-blur-sm">
                 <User className="w-4 h-4" />
-                Dr. Apollo Thomas
+                Dr. Keerthy Sunder
               </span>
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
