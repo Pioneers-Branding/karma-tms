@@ -247,7 +247,7 @@ const Navigation = () => {
                 </div>
 
                 <div className="border-t pt-6">
-                  <Button className="w-full bg-[#572670] hover:bg-[#572670]/90 text-white">
+                  <Button className="w-full bg-[#572670] hover:bg-[#572670]/90 text-purple-800">
                     <Phone className="h-4 w-4 mr-2" />
                     760-760-5675
                   </Button>
