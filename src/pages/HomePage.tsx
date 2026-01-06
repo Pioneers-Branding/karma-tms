@@ -18,7 +18,7 @@ const HomePage = () => {
       <SEO
         title="Mental Health Clinic in Palm Springs | Karma TMS PC"
         description="Karma TMS PC is a leading Mental Health Clinic in Palm Springs, offering personalized treatments for depression, anxiety, and mood disorders with expert care."
-        keywords="mental health in palm springs, mental health facilities in palm springs, mental health counselors in palm springs ca"
+        keywords="mental health in Palm Springs, mental health facilities in palm springs, mental health counselors in Palm Springs,CA"
         canonical="/" />
 
       <StructuredData type="organization" />
