@@ -214,6 +214,12 @@ const MedicationManagementPage = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-purple-50">
       <Navigation />
+      <SEO
+  title="Medication Management in Palm Springs | Karma TMS PC"
+  description="Karma TMS PC offers expert Medication Management in Palm Springs, providing personalized treatment plans to ensure safe, effective, and balanced mental health care."
+  keywords="Medication Management"
+  canonical="https://www.karmatms.com/medication-management"
+/>
       
       {/* Hero Section */}
       <section className="relative pt-32 pb-20 px-4">
