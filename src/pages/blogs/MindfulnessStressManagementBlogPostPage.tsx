@@ -288,7 +288,7 @@ const MindfulnessStressManagementBlogPostPage = () => {
             {/* Introduction */}
             <div className="mb-12">
               <img
-                src="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/6cfeb881-529d-42c6-875a-321eac7d440c.webp"
+                src="https://res.cloudinary.com/de4kw1t2i/image/upload/v1763376734/17_dnhevc.png"
                 alt="Peaceful mindfulness meditation practice"
                 className="w-full h-64 md:h-96 object-cover rounded-lg mb-6" />
 
