@@ -66,8 +66,8 @@ const TeamMemberCard: React.FC<TeamMemberCardProps> = ({ member, index }) => {
               src={member.image}
               alt={member.name}
               className={`w-full h-full object-cover transition-all duration-700 
-                         ${isHovered ? 'scale-110' : 'scale-100'}`}
-            />
+                         ${isHovered ? 'scale-110' : 'scale-100'}`} />
+
             <div className={`absolute inset-0 bg-gradient-to-t from-black/40 to-transparent 
                             transition-opacity duration-500 ${isHovered ? 'opacity-60' : 'opacity-40'}`} />
             
@@ -116,16 +116,16 @@ const TeamMemberCard: React.FC<TeamMemberCardProps> = ({ member, index }) => {
 
             {/* Credentials Preview */}
             <div className="flex flex-wrap gap-1 pt-2">
-              {member.credentials.slice(0, 2).map((credential, idx) => (
-                <Badge key={idx} variant="outline" className="text-xs border-[#572670]/30 text-[#572670]">
+              {member.credentials.slice(0, 2).map((credential, idx) =>
+              <Badge key={idx} variant="outline" className="text-xs border-[#572670]/30 text-[#572670]">
                   {credential}
                 </Badge>
-              ))}
-              {member.credentials.length > 2 && (
-                <Badge variant="outline" className="text-xs border-gray-300 text-gray-500">
+              )}
+              {member.credentials.length > 2 &&
+              <Badge variant="outline" className="text-xs border-gray-300 text-gray-500">
                   +{member.credentials.length - 2} more
                 </Badge>
-              )}
+              }
             </div>
 
             {/* View Profile Button */}
@@ -143,8 +143,8 @@ const TeamMemberCard: React.FC<TeamMemberCardProps> = ({ member, index }) => {
                     <img
                       src={member.image}
                       alt={member.name}
-                      className="w-16 h-16 rounded-full object-cover border-2 border-gray-200"
-                    />
+                      className="w-16 h-16 rounded-full object-cover border-2 border-gray-200" />
+
                     <div>
                       <div className="text-gray-900">{member.name}</div>
                       <div className="text-base font-normal text-gray-600">{member.title}</div>
@@ -170,11 +170,11 @@ const TeamMemberCard: React.FC<TeamMemberCardProps> = ({ member, index }) => {
                         Credentials
                       </h4>
                       <div className="space-y-2">
-                        {member.credentials.map((credential, idx) => (
-                          <Badge key={idx} variant="outline" className="mr-2 mb-2 border-[#572670]/30 text-[#572670]">
+                        {member.credentials.map((credential, idx) =>
+                        <Badge key={idx} variant="outline" className="mr-2 mb-2 border-[#572670]/30 text-[#572670]">
                             {credential}
                           </Badge>
-                        ))}
+                        )}
                       </div>
                     </div>
 
@@ -197,11 +197,11 @@ const TeamMemberCard: React.FC<TeamMemberCardProps> = ({ member, index }) => {
                     <div>
                       <h4 className="font-semibold text-gray-900 mb-3">Languages</h4>
                       <div className="flex flex-wrap gap-1">
-                        {member.languages.map((language, idx) => (
-                          <Badge key={idx} variant="secondary" className="text-xs bg-gray-100">
+                        {member.languages.map((language, idx) =>
+                        <Badge key={idx} variant="secondary" className="text-xs bg-gray-100">
                             {language}
                           </Badge>
-                        ))}
+                        )}
                       </div>
                     </div>
                   </div>
@@ -214,40 +214,40 @@ const TeamMemberCard: React.FC<TeamMemberCardProps> = ({ member, index }) => {
                         <MapPin size={16} className="text-[#572670]" />
                         <span>{member.location}</span>
                       </div>
-                      {member.email && (
-                        <div className="flex items-center gap-3 text-sm text-gray-600">
+                      {member.email &&
+                      <div className="flex items-center gap-3 text-sm text-gray-600">
                           <Mail size={16} className="text-[#572670]" />
                           <a href={`mailto:${member.email}`} className="hover:text-[#572670] transition-colors">
                             {member.email}
                           </a>
                         </div>
-                      )}
-                      {member.phone && (
-                        <div className="flex items-center gap-3 text-sm text-gray-600">
+                      }
+                      {member.phone &&
+                      <div className="flex items-center gap-3 text-sm text-gray-600">
                           <Phone size={16} className="text-[#572670]" />
                           <a href={`tel:${member.phone}`} className="hover:text-[#572670] transition-colors">
                             {member.phone}
                           </a>
                         </div>
-                      )}
+                      }
                     </div>
                   </div>
 
                   {/* Action Buttons */}
                   <div className="flex gap-3 pt-4 border-t border-gray-200">
-                    <Button 
+                    <Button
                       className="flex-1 bg-[#572670] hover:bg-[#572670]/90"
                       onClick={() => window.open('/book', '_self')}>
                       Book Appointment
                     </Button>
-                    {member.email && (
-                      <Button 
-                        variant="outline" 
-                        className="border-[#572670] text-[#572670] hover:bg-[#572670]/10"
-                        onClick={() => window.open(`mailto:${member.email}`, '_self')}>
+                    {member.email &&
+                    <Button
+                      variant="outline"
+                      className="border-[#572670] text-[#572670] hover:bg-[#572670]/10"
+                      onClick={() => window.open(`mailto:${member.email}`, '_self')}>
                         <Mail className="h-4 w-4" />
                       </Button>
-                    )}
+                    }
                   </div>
                 </div>
               </DialogContent>
@@ -255,8 +255,8 @@ const TeamMemberCard: React.FC<TeamMemberCardProps> = ({ member, index }) => {
           </div>
         </CardContent>
       </Card>
-    </motion.div>
-  );
+    </motion.div>);
+
 };
 
 export default TeamMemberCard;

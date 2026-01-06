@@ -46,13 +46,13 @@ const TeamPage: React.FC = () => {
             animate={{ opacity: 1 }}
             transition={{ duration: 0.5 }}
             className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
-            {teamMembers.map((member, index) => (
-              <TeamMemberCard
-                key={member.id}
-                member={member}
-                index={index}
-              />
-            ))}
+            {teamMembers.map((member, index) =>
+            <TeamMemberCard
+              key={member.id}
+              member={member}
+              index={index} />
+
+            )}
           </motion.div>
         </div>
       </section>
@@ -88,8 +88,8 @@ const TeamPage: React.FC = () => {
       </section>
 
       <FooterSection />
-    </div>
-  );
+    </div>);
+
 };
 
 export default TeamPage;

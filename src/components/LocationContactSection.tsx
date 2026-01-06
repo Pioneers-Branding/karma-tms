@@ -64,7 +64,7 @@ const LocationContactSection = () => {
               {
                 Icon: Clock,
                 label: "Hours",
-                value: "Monday - Friday: 9:00 AM - 5:00 PM\nSaturday - Sunday: Closed"
+                value: "Monday - Friday: 8:00 AM - 6:00 PM\nSaturday - Sunday: Closed"
               },
               {
                 Icon: Mail,
