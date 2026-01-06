@@ -39,7 +39,7 @@ const LocationContactSection = () => {
                 },
                 {
                   label: "Address 3",
-                  lines: ["560 S. Paseo Dorotea, Suite 4-B", "Twentynine Palms, CA 92277"]
+                  lines: ["72724 29 Palms Hwy. Suite 107-B", "Twentynine Palms, CA 92277"]
                 }].
                 map((addr, idx) =>
                 <div key={idx} className="flex items-start gap-4">
