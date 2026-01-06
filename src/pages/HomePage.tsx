@@ -16,9 +16,9 @@ const HomePage = () => {
   return (
     <div className="min-h-screen">
       <SEO
-        title="KarmaTMS | TMS Therapy for Depression & Mental Health | Palm Springs, CA"
-        description="Leading TMS therapy center in Palm Springs. FDA-approved depression treatment, anxiety therapy & mental health services. 85% success rate. Call (760) 760-5675."
-        keywords="KarmaTMS, Karma mental health, TMS therapy Palm Springs, depression treatment California, anxiety treatment, mental health Palm Springs, transcranial magnetic stimulation"
+        title="Mental Health Clinic in Palm Springs | Karma TMS PC"
+        description="Karma TMS PC is a leading Mental Health Clinic in Palm Springs, offering personalized treatments for depression, anxiety, and mood disorders with expert care."
+        keywords="mental health in palm springs, mental health facilities in palm springs, mental health counselors in palm springs ca"
         canonical="/" />
 
       <StructuredData type="organization" />
