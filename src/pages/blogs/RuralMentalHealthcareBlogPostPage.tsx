@@ -90,12 +90,7 @@ const RuralMentalHealthcareBlogPostPage = () => {
 
 
   const relatedPosts = [
-  {
-    title: 'TMS Therapy: A New Hope for Depression Treatment',
-    excerpt: 'Discover how TMS therapy is revolutionizing depression treatment with non-invasive brain stimulation.',
-    link: '/tms-therapy',
-    image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/76caee2d-5629-4dc1-a3b4-8c5cea23ede6.webp'
-  },
+  
   {
     title: 'Mindfulness Practices for Stress Management',
     excerpt: 'Evidence-based mindfulness techniques to reduce stress and improve mental wellness.',
@@ -272,7 +267,7 @@ const RuralMentalHealthcareBlogPostPage = () => {
             {/* Introduction */}
             <div className="mb-12">
               <img
-                src="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/5a26ae21-6fa8-4af4-8fba-bc048cb7cc0f.webp"
+                src="https://res.cloudinary.com/de4kw1t2i/image/upload/v1764138578/27_mpunrs.png"
                 alt="Rural community mental healthcare"
                 className="w-full object-cover rounded-lg mb-6" />
 
@@ -386,10 +381,7 @@ const RuralMentalHealthcareBlogPostPage = () => {
                 <Link to="/tms-therapy" className="text-[#572670] hover:underline font-medium">Transcranial Magnetic Stimulation (TMS)</Link> therapy represents an innovative treatment option that could transform mental healthcare in rural communities. This FDA-approved, non-invasive treatment for depression and other mental health conditions offers several advantages for rural populations.
               </p>
 
-              <img
-                src="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/76caee2d-5629-4dc1-a3b4-8c5cea23ede6.webp"
-                alt="TMS therapy equipment"
-                className="w-full object-cover rounded-lg mb-6" />
+         
 
 
               <div className="grid md:grid-cols-2 gap-4 my-6">
