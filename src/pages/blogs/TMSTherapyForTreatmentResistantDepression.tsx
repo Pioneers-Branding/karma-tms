@@ -287,7 +287,7 @@ const TMSTherapyForTreatmentResistantDepression = () => {
             {/* Introduction */}
             <div className="mb-12">
               <img
-                src="https://images.unsplash.com/photo-1704650334658-11e83f293ff3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MTg3MTl8MHwxfHNlYXJjaHwxfHxBbiUyMGltYWdlJTIwZGVwaWN0aW5nJTIwVE1TJTIwdGhlcmFweSUyMGZvciUyMHRyZWF0bWVudC1yZXNpc3RhbnQlMjBkZXByZXNzaW9uJTJDJTIwc2hvd2Nhc2luZyUyMGElMjBzZXJlbmUlMjBhbmQlMjBwcm9mZXNzaW9uYWwlMjBzZXR0aW5nLnxlbnwwfHx8fDE3NjQxMzc5ODh8MA&ixlib=rb-4.1.0&q=80&w=200$w=800"
+                src="https://res.cloudinary.com/de4kw1t2i/image/upload/v1764138579/32_og3ayd.png"
                 alt="TMS therapy for treatment resistant depression"
                 className="w-full object-cover rounded-lg mb-6" />
 
@@ -326,10 +326,7 @@ const TMSTherapyForTreatmentResistantDepression = () => {
             <section ref={(el) => sectionsRef.current['how-tms-works'] = el} className="mb-12">
               <h2 className="text-3xl font-bold text-[#572670] mb-6">How TMS Therapy Works for Treatment-Resistant Depression</h2>
               
-              <img
-                src="https://images.unsplash.com/photo-1664560724581-e3b068a0a376?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MTg3MTl8MHwxfHNlYXJjaHwxfHxBbiUyMGltYWdlJTIwc2hvd2Nhc2luZyUyMGElMjBzZXJlbmUlMjBhbmQlMjBwcm9mZXNzaW9uYWwlMjBzZXR0aW5nJTIwZm9yJTIwVE1TJTIwdGhlcmFweSUyQyUyMGZlYXR1cmluZyUyMGElMjBjb21mb3J0YWJsZSUyMGNoYWlyJTIwYW5kJTIwYWR2YW5jZWQlMjBlcXVpcG1lbnQufGVufDB8fHx8MTc2NDEzNzk5MHww&ixlib=rb-4.1.0&q=80&w=200$w=800"
-                alt="TMS therapy chair and equipment"
-                className="w-full object-cover rounded-lg mb-6" />
+            
 
               <p className="mb-4">
                 <Link to="/tms-therapy" className="text-[#572670] hover:underline font-medium">TMS therapy</Link> uses magnetic pulses to stimulate specific areas of the brain that are underactive in people with depression. Unlike medications that affect your entire body, TMS directly targets the brain regions responsible for mood regulation.
