@@ -453,12 +453,7 @@ const PRTMSPage = () => {
               </p>
               
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Link to="/contact">
-                  
-
-
-
-                </Link>
+               
                 <Link to="/tms-quiz">
                   <Button variant="outline" className="border-[#572670] text-[#572670] hover:bg-[#572670] hover:text-white text-lg px-8 py-4 rounded-full">
                     Take Detailed TMS Quiz
