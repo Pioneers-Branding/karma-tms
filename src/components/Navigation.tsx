@@ -2,9 +2,9 @@ import { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from '@/components/ui/dropdown-menu';
 import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from '@/components/ui/sheet';
-import { 
-  Menu, 
-  ChevronDown, 
+import {
+  Menu,
+  ChevronDown,
   Phone,
   Stethoscope,
   Brain,
@@ -19,8 +19,8 @@ import {
   Award,
   HelpCircle,
   Heart,
-  Shield
-} from 'lucide-react';
+  Shield } from
+'lucide-react';
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -35,35 +35,35 @@ const Navigation = () => {
   }, []);
 
   const servicesLinks = [
-    { name: 'TMS Therapy', href: '/tms-therapy', icon: Brain },
-    { name: 'PrTMS', href: '/prtms', icon: Stethoscope },
-    { name: 'Brain Mapping', href: '/brain-mapping', icon: Brain },
-    { name: 'Neurofeedback', href: '/neurofeedback', icon: FileText },
-    { name: 'Medication Management', href: '/medication-management', icon: Shield }
-  ];
+  { name: 'TMS Therapy', href: '/tms-therapy', icon: Brain },
+  { name: 'PrTMS', href: '/prtms', icon: Stethoscope },
+  { name: 'Brain Mapping', href: '/brain-mapping', icon: Brain },
+  { name: 'Neurofeedback', href: '/neurofeedback', icon: FileText },
+  { name: 'Medication Management', href: '/medication-management', icon: Shield }];
+
 
   const conditionsLinks = [
-    { name: 'Depression', href: '/conditions/depression', icon: Heart },
-    { name: 'Anxiety', href: '/conditions/anxiety', icon: Shield },
-    { name: 'OCD', href: '/conditions/ocd', icon: Brain },
-    { name: 'PTSD', href: '/conditions/ptsd', icon: Heart },
-    { name: 'Stress', href: '/conditions/stress', icon: Shield },
-    { name: "Women's Mood", href: '/conditions/womens-mood', icon: Heart }
-  ];
+  { name: 'Depression', href: '/conditions/depression', icon: Heart },
+  { name: 'Anxiety', href: '/conditions/anxiety', icon: Shield },
+  { name: 'OCD', href: '/conditions/ocd', icon: Brain },
+  { name: 'PTSD', href: '/conditions/ptsd', icon: Heart },
+  { name: 'Stress', href: '/conditions/stress', icon: Shield },
+  { name: "Women's Mood", href: '/conditions/womens-mood', icon: Heart }];
+
 
   const resourcesLinks = [
-    { name: 'Testimonials', href: '/testimonials', icon: Users },
-    { name: 'Research', href: '/research', icon: BookOpen },
-    { name: 'Blog', href: '/blog', icon: FileText },
-    { name: 'FAQs', href: '/faqs', icon: HelpCircle }
-  ];
+  { name: 'Testimonials', href: '/testimonials', icon: Users },
+  { name: 'Research', href: '/research', icon: BookOpen },
+  { name: 'Blog', href: '/blog', icon: FileText },
+  { name: 'FAQs', href: '/faqs', icon: HelpCircle }];
+
 
   return (
     <header className={`sticky top-0 z-50 transition-all duration-300 ${
-      scrolled 
-        ? 'bg-white/95 backdrop-blur-md shadow-lg border-b border-white/20' 
-        : 'bg-white/90 backdrop-blur-sm shadow-sm border-b border-white/10'
-    }`}>
+    scrolled ?
+    'bg-white/95 backdrop-blur-md shadow-lg border-b border-white/20' :
+    'bg-white/90 backdrop-blur-sm shadow-sm border-b border-white/10'}`
+    }>
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
@@ -71,8 +71,8 @@ const Navigation = () => {
             <img
               src="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/ebadb369-a58d-421c-b937-24f900be5867.png"
               alt="Karma TMS"
-              className="h-10 w-auto"
-            />
+              className="h-10 w-auto" />
+
           </div>
 
           {/* Desktop Navigation */}
@@ -101,14 +101,14 @@ const Navigation = () => {
                 {servicesLinks.map((link) => {
                   const IconComponent = link.icon;
                   return (
-                    <DropdownMenuItem 
-                      key={link.href} 
-                      className="cursor-pointer p-3 rounded-md hover:bg-[#572670]/10 transition-all duration-200 group"
-                    >
+                    <DropdownMenuItem
+                      key={link.href}
+                      className="cursor-pointer p-3 rounded-md hover:bg-[#572670]/10 transition-all duration-200 group">
+
                       <IconComponent className="h-4 w-4 mr-3 text-[#572670] group-hover:scale-110 transition-transform" />
                       <span className="font-medium">{link.name}</span>
-                    </DropdownMenuItem>
-                  );
+                    </DropdownMenuItem>);
+
                 })}
               </DropdownMenuContent>
             </DropdownMenu>
@@ -124,14 +124,14 @@ const Navigation = () => {
                 {conditionsLinks.map((link) => {
                   const IconComponent = link.icon;
                   return (
-                    <DropdownMenuItem 
-                      key={link.href} 
-                      className="cursor-pointer p-3 rounded-md hover:bg-[#572670]/10 transition-all duration-200 group"
-                    >
+                    <DropdownMenuItem
+                      key={link.href}
+                      className="cursor-pointer p-3 rounded-md hover:bg-[#572670]/10 transition-all duration-200 group">
+
                       <IconComponent className="h-4 w-4 mr-3 text-[#572670] group-hover:scale-110 transition-transform" />
                       <span className="font-medium">{link.name}</span>
-                    </DropdownMenuItem>
-                  );
+                    </DropdownMenuItem>);
+
                 })}
               </DropdownMenuContent>
             </DropdownMenu>
@@ -147,14 +147,14 @@ const Navigation = () => {
                 {resourcesLinks.map((link) => {
                   const IconComponent = link.icon;
                   return (
-                    <DropdownMenuItem 
-                      key={link.href} 
-                      className="cursor-pointer p-3 rounded-md hover:bg-[#572670]/10 transition-all duration-200 group"
-                    >
+                    <DropdownMenuItem
+                      key={link.href}
+                      className="cursor-pointer p-3 rounded-md hover:bg-[#572670]/10 transition-all duration-200 group">
+
                       <IconComponent className="h-4 w-4 mr-3 text-[#572670] group-hover:scale-110 transition-transform" />
                       <span className="font-medium">{link.name}</span>
-                    </DropdownMenuItem>
-                  );
+                    </DropdownMenuItem>);
+
                 })}
               </DropdownMenuContent>
             </DropdownMenu>
@@ -167,10 +167,10 @@ const Navigation = () => {
 
           {/* Phone Number */}
           <div className="hidden lg:flex items-center">
-            <Button 
-              variant="outline" 
-              className="border-[#572670]/30 text-[#572670] hover:bg-[#572670] hover:text-white hover:border-[#572670] transition-all duration-300 px-6"
-            >
+            <Button
+              variant="outline"
+              className="border-[#572670]/30 text-[#572670] hover:bg-[#572670] hover:text-white hover:border-[#572670] transition-all duration-300 px-6">
+
               <Phone className="h-4 w-4 mr-2" />
               760-760-5675
             </Button>
@@ -210,8 +210,8 @@ const Navigation = () => {
                         <Button key={link.href} variant="ghost" className="w-full justify-start text-sm py-2">
                           <IconComponent className="h-4 w-4 mr-3 text-[#572670]" />
                           {link.name}
-                        </Button>
-                      );
+                        </Button>);
+
                     })}
                   </div>
 
@@ -223,8 +223,8 @@ const Navigation = () => {
                         <Button key={link.href} variant="ghost" className="w-full justify-start text-sm py-2">
                           <IconComponent className="h-4 w-4 mr-3 text-[#572670]" />
                           {link.name}
-                        </Button>
-                      );
+                        </Button>);
+
                     })}
                   </div>
 
@@ -236,8 +236,8 @@ const Navigation = () => {
                         <Button key={link.href} variant="ghost" className="w-full justify-start text-sm py-2">
                           <IconComponent className="h-4 w-4 mr-3 text-[#572670]" />
                           {link.name}
-                        </Button>
-                      );
+                        </Button>);
+
                     })}
                   </div>
 
@@ -258,8 +258,8 @@ const Navigation = () => {
           </Sheet>
         </div>
       </div>
-    </header>
-  );
+    </header>);
+
 };
 
 export default Navigation;

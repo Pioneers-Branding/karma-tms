@@ -4,49 +4,49 @@ import { Phone, Mail, MapPin, ExternalLink, Calendar, Clock } from 'lucide-react
 
 const FooterSection = () => {
   const quickLinks = [
-    { name: 'Home', href: '/' },
-    { name: 'About', href: '/about' },
-    { name: 'Our Team', href: '/team' },
-    { name: 'Contact', href: '/contact' }
-  ];
+  { name: 'Home', href: '/' },
+  { name: 'About', href: '/about' },
+  { name: 'Our Team', href: '/team' },
+  { name: 'Contact', href: '/contact' }];
+
 
   const services = [
-    { name: 'TMS Therapy', href: '/tms-therapy' },
-    { name: 'PrTMS', href: '/prtms' },
-    { name: 'Brain Mapping', href: '/brain-mapping' },
-    { name: 'Neurofeedback', href: '/neurofeedback' },
-    { name: 'Medication Management', href: '/medication-management' }
-  ];
+  { name: 'TMS Therapy', href: '/tms-therapy' },
+  { name: 'PrTMS', href: '/prtms' },
+  { name: 'Brain Mapping', href: '/brain-mapping' },
+  { name: 'Neurofeedback', href: '/neurofeedback' },
+  { name: 'Medication Management', href: '/medication-management' }];
+
 
   const conditions = [
-    { name: 'Depression', href: '/conditions/depression' },
-    { name: 'Anxiety', href: '/conditions/anxiety' },
-    { name: 'OCD', href: '/conditions/ocd' },
-    { name: 'PTSD', href: '/conditions/ptsd' },
-    { name: "Women's Mood", href: '/conditions/womens-mood' }
-  ];
+  { name: 'Depression', href: '/conditions/depression' },
+  { name: 'Anxiety', href: '/conditions/anxiety' },
+  { name: 'OCD', href: '/conditions/ocd' },
+  { name: 'PTSD', href: '/conditions/ptsd' },
+  { name: "Women's Mood", href: '/conditions/womens-mood' }];
+
 
   const resources = [
-    { name: 'Testimonials', href: '/testimonials' },
-    { name: 'Research', href: '/research' },
-    { name: 'Blog', href: '/blog' },
-    { name: 'FAQs', href: '/faqs' },
-    { name: 'Take Quiz', href: '/quiz' }
-  ];
+  { name: 'Testimonials', href: '/testimonials' },
+  { name: 'Research', href: '/research' },
+  { name: 'Blog', href: '/blog' },
+  { name: 'FAQs', href: '/faqs' },
+  { name: 'Take Quiz', href: '/quiz' }];
+
 
   const legalLinks = [
-    { name: 'HIPAA', href: '/hipaa' },
-    { name: 'Terms', href: '/terms' },
-    { name: 'Privacy Policy', href: '/privacy' },
-    { name: 'Refund Policy', href: '/refund-policy' }
-  ];
+  { name: 'HIPAA', href: '/hipaa' },
+  { name: 'Terms', href: '/terms' },
+  { name: 'Privacy Policy', href: '/privacy' },
+  { name: 'Refund Policy', href: '/refund-policy' }];
+
 
   const businessLinks = [
-    { name: 'Affiliations', href: '/affiliations' },
-    { name: 'Internships', href: '/interns' },
-    { name: 'Insurance & Pricing', href: '/insurance-pricing' },
-    { name: 'Book Appointment', href: '/book' }
-  ];
+  { name: 'Affiliations', href: '/affiliations' },
+  { name: 'Internships', href: '/interns' },
+  { name: 'Insurance & Pricing', href: '/insurance-pricing' },
+  { name: 'Book Appointment', href: '/book' }];
+
 
   return (
     <footer className="relative bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white overflow-hidden">
@@ -63,8 +63,8 @@ const FooterSection = () => {
               <img
                 src="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/ebadb369-a58d-421c-b937-24f900be5867.png"
                 alt="Karma TMS"
-                className="h-12 w-auto brightness-0 invert"
-              />
+                className="h-12 w-auto brightness-0 invert" />
+
             </div>
             
             <p className="text-gray-300 leading-relaxed">
@@ -78,7 +78,7 @@ const FooterSection = () => {
                 <MapPin className="h-5 w-5 text-[#572670] mt-1 flex-shrink-0" />
                 <div>
                   <div className="text-sm font-medium text-white">Our Location</div>
-                  <div className="text-sm text-gray-300">560 S. Paseo Dorotea #4B<br/>Palm Springs, CA 92264</div>
+                  <div className="text-sm text-gray-300">560 S. Paseo Dorotea #4B<br />Palm Springs, CA 92264</div>
                 </div>
               </div>
               
@@ -117,26 +117,26 @@ const FooterSection = () => {
             <div>
               <h3 className="text-lg font-bold mb-6 text-white">Quick Links</h3>
               <ul className="space-y-3">
-                {quickLinks.map((link, index) => (
-                  <li key={index}>
+                {quickLinks.map((link, index) =>
+                <li key={index}>
                     <a href={link.href} className="text-gray-300 hover:text-[#572670] transition-colors text-sm">
                       {link.name}
                     </a>
                   </li>
-                ))}
+                )}
               </ul>
             </div>
             
             <div>
               <h4 className="text-md font-semibold mb-4 text-gray-200">Our Services</h4>
               <ul className="space-y-2">
-                {services.map((link, index) => (
-                  <li key={index}>
+                {services.map((link, index) =>
+                <li key={index}>
                     <a href={link.href} className="text-sm text-gray-400 hover:text-[#572670] transition-colors">
                       {link.name}
                     </a>
                   </li>
-                ))}
+                )}
               </ul>
             </div>
           </div>
@@ -146,26 +146,26 @@ const FooterSection = () => {
             <div>
               <h3 className="text-lg font-bold mb-6 text-white">Conditions We Treat</h3>
               <ul className="space-y-3">
-                {conditions.map((link, index) => (
-                  <li key={index}>
+                {conditions.map((link, index) =>
+                <li key={index}>
                     <a href={link.href} className="text-gray-300 hover:text-[#572670] transition-colors text-sm">
                       {link.name}
                     </a>
                   </li>
-                ))}
+                )}
               </ul>
             </div>
             
             <div>
               <h4 className="text-md font-semibold mb-4 text-gray-200">Resources</h4>
               <ul className="space-y-2">
-                {resources.map((link, index) => (
-                  <li key={index}>
+                {resources.map((link, index) =>
+                <li key={index}>
                     <a href={link.href} className="text-sm text-gray-400 hover:text-[#572670] transition-colors">
                       {link.name}
                     </a>
                   </li>
-                ))}
+                )}
               </ul>
             </div>
           </div>
@@ -175,26 +175,26 @@ const FooterSection = () => {
             <div>
               <h3 className="text-lg font-bold mb-6 text-white">Patient Care</h3>
               <ul className="space-y-3">
-                {businessLinks.map((link, index) => (
-                  <li key={index}>
+                {businessLinks.map((link, index) =>
+                <li key={index}>
                     <a href={link.href} className="text-gray-300 hover:text-[#572670] transition-colors text-sm">
                       {link.name}
                     </a>
                   </li>
-                ))}
+                )}
               </ul>
             </div>
             
             <div>
               <h4 className="text-md font-semibold mb-4 text-gray-200">Legal & Privacy</h4>
               <ul className="space-y-2">
-                {legalLinks.map((link, index) => (
-                  <li key={index}>
+                {legalLinks.map((link, index) =>
+                <li key={index}>
                     <a href={link.href} className="text-sm text-gray-400 hover:text-[#572670] transition-colors">
                       {link.name}
                     </a>
                   </li>
-                ))}
+                )}
               </ul>
             </div>
           </div>
@@ -216,16 +216,16 @@ const FooterSection = () => {
               </span>
               <a
                 href="#"
-                className="text-xs text-gray-400 hover:text-[#572670] transition-colors flex items-center gap-1"
-              >
+                className="text-xs text-gray-400 hover:text-[#572670] transition-colors flex items-center gap-1">
+
                 Site Map <ExternalLink className="h-3 w-3" />
               </a>
             </div>
           </div>
         </div>
       </div>
-    </footer>
-  );
+    </footer>);
+
 };
 
 export default FooterSection;

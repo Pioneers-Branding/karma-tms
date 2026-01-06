@@ -24,8 +24,8 @@ const HomePage = () => {
       <LocationContactSection />
       <QuickAccessSection />
       <FooterSection />
-    </div>
-  );
+    </div>);
+
 };
 
 export default HomePage;

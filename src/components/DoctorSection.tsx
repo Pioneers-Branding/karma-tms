@@ -1,51 +1,51 @@
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
-import { 
-  Award, 
-  GraduationCap, 
-  Users, 
-  Brain, 
+import {
+  Award,
+  GraduationCap,
+  Users,
+  Brain,
   Calendar,
   MapPin,
   Star,
   Stethoscope,
   Heart,
-  Shield
-} from 'lucide-react';
+  Shield } from
+'lucide-react';
 
 const DoctorSection = () => {
   const credentials = [
-    {
-      icon: GraduationCap,
-      title: "Double Board-Certified",
-      description: "Psychiatry and Addiction Medicine"
-    },
-    {
-      icon: Award,
-      title: "University of Pittsburgh",
-      description: "Residency Training"
-    },
-    {
-      icon: Users,
-      title: "Board Member",
-      description: "Society for Brain Mapping & Therapeutics"
-    },
-    {
-      icon: Brain,
-      title: "UC Riverside Faculty",
-      description: "School of Medicine"
-    }
-  ];
+  {
+    icon: GraduationCap,
+    title: "Double Board-Certified",
+    description: "Psychiatry and Addiction Medicine"
+  },
+  {
+    icon: Award,
+    title: "University of Pittsburgh",
+    description: "Residency Training"
+  },
+  {
+    icon: Users,
+    title: "Board Member",
+    description: "Society for Brain Mapping & Therapeutics"
+  },
+  {
+    icon: Brain,
+    title: "UC Riverside Faculty",
+    description: "School of Medicine"
+  }];
+
 
   const specialties = [
-    { name: 'Treatment-Resistant Depression', icon: Heart },
-    { name: 'Anxiety Disorders', icon: Shield },
-    { name: 'PTSD & Trauma', icon: Brain },
-    { name: 'Addiction Medicine', icon: Stethoscope },
-    { name: "Women's Mental Health", icon: Heart },
-    { name: 'Integrative Psychiatry', icon: Star }
-  ];
+  { name: 'Treatment-Resistant Depression', icon: Heart },
+  { name: 'Anxiety Disorders', icon: Shield },
+  { name: 'PTSD & Trauma', icon: Brain },
+  { name: 'Addiction Medicine', icon: Stethoscope },
+  { name: "Women's Mental Health", icon: Heart },
+  { name: 'Integrative Psychiatry', icon: Star }];
+
 
   return (
     <section className="py-20 bg-gradient-to-br from-white via-purple-50/30 to-white relative overflow-hidden">
@@ -65,8 +65,8 @@ const DoctorSection = () => {
                     <img
                       src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=600&h=750&fit=crop&crop=face"
                       alt="Dr. Keerthy Sunder - Psychiatrist"
-                      className="w-full h-full object-cover"
-                    />
+                      className="w-full h-full object-cover" />
+
                     
                     {/* Glassmorphism overlay */}
                     <div className="absolute bottom-0 left-0 right-0 bg-white/80 backdrop-blur-md p-8 border-t border-white/20">
@@ -143,10 +143,10 @@ const DoctorSection = () => {
               {credentials.map((credential, index) => {
                 const IconComponent = credential.icon;
                 return (
-                  <Card 
-                    key={index} 
-                    className="border-0 bg-gradient-to-br from-white to-gray-50/50 shadow-md hover:shadow-lg transition-all duration-300 group"
-                  >
+                  <Card
+                    key={index}
+                    className="border-0 bg-gradient-to-br from-white to-gray-50/50 shadow-md hover:shadow-lg transition-all duration-300 group">
+
                     <CardContent className="p-5">
                       <div className="flex items-start gap-4">
                         <div className="p-3 rounded-xl bg-gradient-to-br from-[#572670]/10 to-purple-100/20 group-hover:from-[#572670]/20 group-hover:to-purple-100/40 transition-all duration-300">
@@ -158,8 +158,8 @@ const DoctorSection = () => {
                         </div>
                       </div>
                     </CardContent>
-                  </Card>
-                );
+                  </Card>);
+
               })}
             </div>
 
@@ -170,14 +170,14 @@ const DoctorSection = () => {
                 {specialties.map((specialty, index) => {
                   const IconComponent = specialty.icon;
                   return (
-                    <div 
-                      key={index} 
-                      className="flex items-center gap-3 p-4 bg-white/80 backdrop-blur-sm rounded-xl border border-gray-100 hover:border-[#572670]/20 transition-all duration-300 group"
-                    >
+                    <div
+                      key={index}
+                      className="flex items-center gap-3 p-4 bg-white/80 backdrop-blur-sm rounded-xl border border-gray-100 hover:border-[#572670]/20 transition-all duration-300 group">
+
                       <IconComponent className="h-4 w-4 text-[#572670] group-hover:scale-110 transition-transform" />
                       <span className="text-sm font-medium text-gray-700">{specialty.name}</span>
-                    </div>
-                  );
+                    </div>);
+
                 })}
               </div>
             </div>
@@ -188,10 +188,10 @@ const DoctorSection = () => {
                 <Calendar className="h-4 w-4 mr-2" />
                 Schedule with Dr. Sunder
               </Button>
-              <Button 
-                variant="outline" 
-                className="border-2 border-[#572670]/30 text-[#572670] hover:bg-[#572670] hover:text-white px-8 py-3 transition-all duration-300"
-              >
+              <Button
+                variant="outline"
+                className="border-2 border-[#572670]/30 text-[#572670] hover:bg-[#572670] hover:text-white px-8 py-3 transition-all duration-300">
+
                 <Users className="h-4 w-4 mr-2" />
                 Learn More About Our Team
               </Button>
@@ -199,8 +199,8 @@ const DoctorSection = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>);
+
 };
 
 export default DoctorSection;

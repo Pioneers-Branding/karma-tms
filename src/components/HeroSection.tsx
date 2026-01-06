@@ -6,13 +6,13 @@ import { ArrowRight, CheckCircle, Shield, Clock, Users, Star, Zap, Play } from '
 
 const HeroSection = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
-  
+
   const backgroundImages = [
-    'https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=1920&h=1080&fit=crop&crop=center',
-    'https://images.unsplash.com/photo-1616941424163-e0c65236a7ca?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MTg3MTl8MHwxfHNlYXJjaHwxfHxBJTIwaGlnaC1xdWFsaXR5JTIwaW1hZ2UlMjBmcm9tJTIwVW5zcGxhc2glMkMlMjBsaWtlbHklMjBkZXBpY3RpbmclMjBhJTIwdmlzdWFsbHklMjBhcHBlYWxpbmclMjBzY2VuZSUyMG9yJTIwc3ViamVjdC58ZW58MHx8fHwxNzU1MDAwNzI0fDA&ixlib=rb-4.1.0&q=80&w=200$w=1920',
-    'https://images.unsplash.com/photo-1616941424163-e0c65236a7ca?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MTg3MTl8MHwxfHNlYXJjaHwxfHxBJTIwaGlnaC1xdWFsaXR5JTIwaW1hZ2UlMjBmcm9tJTIwVW5zcGxhc2glMkMlMjBsaWtlbHklMjBkZXBpY3RpbmclMjBhJTIwdmlzdWFsbHklMjBhcHBlYWxpbmclMjBzY2VuZSUyMG9yJTIwc3ViamVjdC58ZW58MHx8fHwxNzU1MDAwNzI0fDA&ixlib=rb-4.1.0&q=80&w=200$w=1920',
-    'https://images.unsplash.com/photo-1582750433449-648ed127bb54?w=1920&h=1080&fit=crop&crop=center'
-  ];
+  'https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=1920&h=1080&fit=crop&crop=center',
+  'https://images.unsplash.com/photo-1616941424163-e0c65236a7ca?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MTg3MTl8MHwxfHNlYXJjaHwxfHxBJTIwaGlnaC1xdWFsaXR5JTIwaW1hZ2UlMjBmcm9tJTIwVW5zcGxhc2glMkMlMjBsaWtlbHklMjBkZXBpY3RpbmclMjBhJTIwdmlzdWFsbHklMjBhcHBlYWxpbmclMjBzY2VuZSUyMG9yJTIwc3ViamVjdC58ZW58MHx8fHwxNzU1MDAwNzI0fDA&ixlib=rb-4.1.0&q=80&w=200$w=1920',
+  'https://images.unsplash.com/photo-1616941424163-e0c65236a7ca?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MTg3MTl8MHwxfHNlYXJjaHwxfHxBJTIwaGlnaC1xdWFsaXR5JTIwaW1hZ2UlMjBmcm9tJTIwVW5zcGxhc2glMkMlMjBsaWtlbHklMjBkZXBpY3RpbmclMjBhJTIwdmlzdWFsbHklMjBhcHBlYWxpbmclMjBzY2VuZSUyMG9yJTIwc3ViamVjdC58ZW58MHx8fHwxNzU1MDAwNzI0fDA&ixlib=rb-4.1.0&q=80&w=200$w=1920',
+  'https://images.unsplash.com/photo-1582750433449-648ed127bb54?w=1920&h=1080&fit=crop&crop=center'];
+
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -25,20 +25,20 @@ const HeroSection = () => {
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Dynamic Background Images */}
       <div className="absolute inset-0">
-        {backgroundImages.map((image, index) => (
-          <div
-            key={index}
-            className={`absolute inset-0 transition-all duration-1000 ease-in-out ${
-              index === currentImageIndex ? 'opacity-100 scale-100' : 'opacity-0 scale-105'
-            }`}
-            style={{
-              backgroundImage: `url(${image})`,
-              backgroundSize: 'cover',
-              backgroundPosition: 'center',
-              backgroundRepeat: 'no-repeat'
-            }}
-          />
-        ))}
+        {backgroundImages.map((image, index) =>
+        <div
+          key={index}
+          className={`absolute inset-0 transition-all duration-1000 ease-in-out ${
+          index === currentImageIndex ? 'opacity-100 scale-100' : 'opacity-0 scale-105'}`
+          }
+          style={{
+            backgroundImage: `url(${image})`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            backgroundRepeat: 'no-repeat'
+          }} />
+
+        )}
         
         {/* Gradient Overlays */}
         <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-transparent" />
@@ -48,7 +48,7 @@ const HeroSection = () => {
       
       {/* Content */}
       <div className="relative z-10 container mx-auto px-4 py-20">
-        <div className="max-w-6xl mx-auto">
+        <div className=" mx-auto">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* Left Column - Main Content */}
             <div className="text-white space-y-8">
@@ -79,19 +79,19 @@ const HeroSection = () => {
 
               {/* CTAs */}
               <div className="flex flex-col sm:flex-row gap-4">
-                <Button 
-                  size="lg" 
-                  className="bg-gradient-to-r from-[#572670] to-[#7c3d90] hover:from-[#7c3d90] hover:to-[#572670] text-white font-semibold px-8 py-4 text-lg shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-300"
-                >
+                <Button
+                  size="lg"
+                  className="bg-gradient-to-r from-[#572670] to-[#7c3d90] hover:from-[#7c3d90] hover:to-[#572670] text-white font-semibold px-8 py-4 text-lg shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-300">
+
                   <Zap className="h-5 w-5 mr-2" />
                   Take Our TMS Quiz
                   <ArrowRight className="h-5 w-5 ml-2" />
                 </Button>
-                <Button 
-                  size="lg" 
-                  variant="outline" 
-                  className="border-2 border-white text-white hover:bg-white hover:text-[#572670] px-8 py-4 text-lg backdrop-blur-sm bg-white/10 hover:bg-white transition-all duration-300"
-                >
+                <Button
+                  size="lg"
+                  variant="outline"
+                  className="border-2 border-white text-white hover:bg-white hover:text-[#572670] px-8 py-4 text-lg backdrop-blur-sm bg-white/10 hover:bg-white transition-all duration-300">
+
                   <Play className="h-5 w-5 mr-2" />
                   Watch How TMS Works
                 </Button>
@@ -200,20 +200,20 @@ const HeroSection = () => {
 
       {/* Image Indicators */}
       <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex space-x-2 z-10">
-        {backgroundImages.map((_, index) => (
-          <button
-            key={index}
-            onClick={() => setCurrentImageIndex(index)}
-            className={`w-3 h-3 rounded-full transition-all duration-300 ${
-              index === currentImageIndex 
-                ? 'bg-white scale-125' 
-                : 'bg-white/50 hover:bg-white/75'
-            }`}
-          />
-        ))}
+        {backgroundImages.map((_, index) =>
+        <button
+          key={index}
+          onClick={() => setCurrentImageIndex(index)}
+          className={`w-3 h-3 rounded-full transition-all duration-300 ${
+          index === currentImageIndex ?
+          'bg-white scale-125' :
+          'bg-white/50 hover:bg-white/75'}`
+          } />
+
+        )}
       </div>
-    </section>
-  );
+    </section>);
+
 };
 
 export default HeroSection;
