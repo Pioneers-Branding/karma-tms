@@ -575,7 +575,7 @@ const BlogPage = () => {
                     11: '/blog/four-as-stress-management',
                     12: '/blog/is-tms-therapy-permanent',
                     13: '/blog/is-tms-therapy-legitimate',
-                    14: '/blog/how-successful-tms-treatment',
+                    14: '/blog/how-successful-is-tms-treatment',
                     15: '/blog/screen-time-mental-health',
                     16: '/blog/mindfulness-stress-management',
                     17: '/blog/tech-mental-health-impact',
