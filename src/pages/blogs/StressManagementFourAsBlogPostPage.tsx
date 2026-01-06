@@ -290,7 +290,7 @@ const StressManagementFourAsBlogPostPage = () => {
             {/* Introduction */}
             <section ref={(el) => sectionsRef.current['introduction'] = el} className="mb-12">
               <img
-                src="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/6cfeb881-529d-42c6-875a-321eac7d440c.webp"
+                src="https://res.cloudinary.com/de4kw1t2i/image/upload/v1763376733/12_t62v1m.png"
                 alt="Stress management techniques and strategies"
                 className="w-full h-64 md:h-96 object-cover rounded-lg mb-6" />
 
