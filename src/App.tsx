@@ -48,9 +48,8 @@ import HelpingVeteransPTSDBlogPostPage from "./pages/blogs/HelpingVeteransPTSDBl
 import UnderstandingPTSDVeteransBlogPostPage from "./pages/blogs/UnderstandingPTSDVeteransBlogPostPage";
 import TMSAnxietyVeteransBlogPostPage from "./pages/blogs/TMSAnxietyVeteransBlogPostPage";
 import TMSMigraineVeteransBlogPostPage from "./pages/blogs/TMSMigraineVeteransBlogPostPage";
-import TMSHelpingVeteransMentalHealthBlogPostPage from "./pages/blogs/TMSHelpingVeteransMentalHealthBlogPostPage";
-import WhyTMSRequiresMultipleSessionsBlogPostPage from "./pages/blogs/WhyTMSRequiresMultipleSessionsBlogPostPage";
-import FourAsStressManagementBlogPostPage from "./pages/blogs/FourAsStressManagementBlogPostPage";
+import TMSMultipleSessionsBlogPostPage from "./pages/blogs/TMSMultipleSessionsBlogPostPage";
+import StressManagementFourAsBlogPostPage from "./pages/blogs/StressManagementFourAsBlogPostPage";
 import DisclaimerPage from "./pages/DisclaimerPage";
 
 const queryClient = new QueryClient();
@@ -114,6 +113,8 @@ const App = () =>
           <Route path="/blog/va-disability-benefits-depression-anxiety-ptsd" element={<VADisabilityBenefitsMentalHealthBlogPostPage />} />
           <Route path="/blog/tms-vs-medication-veterans-depression" element={<TMSvsMedicationVeteransBlogPostPage />} />
           <Route path="/blog/how-to-help-veterans-ptsd" element={<HelpingVeteransPTSDBlogPostPage />} />
+          <Route path="/blog/why-tms-requires-multiple-sessions" element={<TMSMultipleSessionsBlogPostPage />} />
+          <Route path="/blog/four-as-stress-management" element={<StressManagementFourAsBlogPostPage />} />
           <Route path="/blog" element={<BlogPage />} />
           <Route path="/blog/" element={<BlogPage />} />
           <Route path="/research-and-publications" element={<ResearchPage />} />
@@ -148,9 +149,6 @@ const App = () =>
           <Route path="/blogs/understanding-ptsd-veterans" element={<UnderstandingPTSDVeteransBlogPostPage />} />
           <Route path="/blogs/tms-anxiety-veterans" element={<TMSAnxietyVeteransBlogPostPage />} />
           <Route path="/blogs/tms-migraine-veterans" element={<TMSMigraineVeteransBlogPostPage />} />
-          <Route path="/blogs/tms-helping-veterans-mental-health" element={<TMSHelpingVeteransMentalHealthBlogPostPage />} />
-          <Route path="/blogs/why-tms-requires-multiple-sessions" element={<WhyTMSRequiresMultipleSessionsBlogPostPage />} />
-          <Route path="/blogs/4-as-stress-management" element={<FourAsStressManagementBlogPostPage />} />
           <Route path="/disclaimer" element={<DisclaimerPage />} />
           
           {/* Catch-all route redirects to home instead of 404 */}
