@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect, useRef, useMemo } from 'react';
 import Navigation from '@/components/Navigation';
 import FooterSection from '@/components/FooterSection';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
@@ -30,8 +30,31 @@ const blogCategories = [
 { id: 'wellness', label: 'Wellness Tips' }];
 
 
+// Nine blog thumbnail images from static resources
+const BLOG_THUMBNAILS = [
+  'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/f00dd3f4-cea1-4918-8fec-5976198e195f.webp', // viteren-intro
+  'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/dd7dd986-540f-4359-99af-39f398491cf0.webp', // viteran-tms
+  'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/7ace98a6-9efe-4403-aacf-892346fb07a8.webp', // viterna-dipression
+  'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/2ddc8d69-b09a-4f1d-bd47-6d783ceefbd1.webp', // dipresseion-treatment
+  'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/d3a1f368-2c44-4046-8568-532988b95c6d.webp', // karm-tms
+  'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/460c9673-d421-40be-a576-8470fafd54e6.webp', // what-is
+  'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/9705b922-d0fc-4d29-be10-acd507ce308c.webp', // Anxiety-disorder
+  'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/66e6e1ae-8cc3-4469-bfaf-b1f3f3d07006.webp', // expert-during
+  'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/9a1c77b8-54bb-4045-996a-4002e008a037.webp'  // during-ocd
+];
+
+// Fisher-Yates shuffle algorithm
+const shuffleArray = <T,>(array: T[]): T[] => {
+  const shuffled = [...array];
+  for (let i = shuffled.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+  }
+  return shuffled;
+};
+
 // Blog posts - Veterans TMS Therapy
-const generateUniqueBlogPosts = (): BlogPost[] => {
+const generateUniqueBlogPosts = (shuffledThumbnails: string[]): BlogPost[] => {
   const posts: BlogPost[] = [
   {
     id: 1,
@@ -45,7 +68,7 @@ const generateUniqueBlogPosts = (): BlogPost[] => {
       day: 'numeric'
     }),
     readTime: '12 min read',
-    image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/f00dd3f4-cea1-4918-8fec-5976198e195f.webp',
+    image: shuffledThumbnails[0],
     featured: true,
     rating: 5
   },
@@ -61,7 +84,7 @@ const generateUniqueBlogPosts = (): BlogPost[] => {
       day: 'numeric'
     }),
     readTime: '15 min read',
-    image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/dd7dd986-540f-4359-99af-39f398491cf0.webp',
+    image: shuffledThumbnails[1],
     featured: false,
     rating: 5
   },
@@ -77,7 +100,7 @@ const generateUniqueBlogPosts = (): BlogPost[] => {
       day: 'numeric'
     }),
     readTime: '18 min read',
-    image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/2ddc8d69-b09a-4f1d-bd47-6d783ceefbd1.webp',
+    image: shuffledThumbnails[2],
     featured: false,
     rating: 5
   },
@@ -93,7 +116,7 @@ const generateUniqueBlogPosts = (): BlogPost[] => {
       day: 'numeric'
     }),
     readTime: '16 min read',
-    image: 'https://images.unsplash.com/photo-1532679793267-861196432d0d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MTg3MTl8MHwxfHNlYXJjaHwxfHxBJTIwc2NlbmljJTIwaW1hZ2UlMjBzaG93Y2FzaW5nJTIwYSUyMHNlcmVuZSUyMGxhbmRzY2FwZSUyMHdpdGglMjB2aWJyYW50JTIwY29sb3JzJTIwYW5kJTIwbmF0dXJhbCUyMGJlYXV0eS58ZW58MHx8fHwxNzYyNzc4Mzc1fDA&ixlib=rb-4.1.0&q=80&w=200$w=800',
+    image: shuffledThumbnails[3],
     featured: false,
     rating: 5
   },
@@ -109,7 +132,7 @@ const generateUniqueBlogPosts = (): BlogPost[] => {
       day: 'numeric'
     }),
     readTime: '17 min read',
-    image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/02c362bd-cde2-431d-8820-a07a14939638.webp',
+    image: shuffledThumbnails[4],
     featured: false,
     rating: 5
   },
@@ -125,7 +148,7 @@ const generateUniqueBlogPosts = (): BlogPost[] => {
       day: 'numeric'
     }),
     readTime: '14 min read',
-    image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/02c362bd-cde2-431d-8820-a07a14939638.webp',
+    image: shuffledThumbnails[5],
     featured: false,
     rating: 5
   },
@@ -141,7 +164,7 @@ const generateUniqueBlogPosts = (): BlogPost[] => {
       day: 'numeric'
     }),
     readTime: '13 min read',
-    image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/9705b922-d0fc-4d29-be10-acd507ce308c.webp',
+    image: shuffledThumbnails[6],
     featured: false,
     rating: 5
   },
@@ -157,7 +180,7 @@ const generateUniqueBlogPosts = (): BlogPost[] => {
       day: 'numeric'
     }),
     readTime: '15 min read',
-    image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/76caee2d-5629-4dc1-a3b4-8c5cea23ede6.webp',
+    image: shuffledThumbnails[7],
     featured: false,
     rating: 5
   }];
@@ -167,7 +190,11 @@ const generateUniqueBlogPosts = (): BlogPost[] => {
 
 const BlogPage = () => {
   const [activeCategory, setActiveCategory] = useState('all');
-  const [allPosts] = useState<BlogPost[]>(generateUniqueBlogPosts());
+  
+  // Shuffle thumbnails once on component mount using useMemo
+  const shuffledThumbnails = useMemo(() => shuffleArray(BLOG_THUMBNAILS), []);
+  
+  const [allPosts] = useState<BlogPost[]>(generateUniqueBlogPosts(shuffledThumbnails));
   const [displayedPosts, setDisplayedPosts] = useState<BlogPost[]>([]);
   const [loading, setLoading] = useState(false);
   const [hasMore, setHasMore] = useState(true);
@@ -356,15 +383,15 @@ const BlogPage = () => {
                       key={post.id}
                       href={postLinks[post.id] || '/blog'}>
 
-                  <Card className="group cursor-pointer hover:shadow-lg transition-all duration-300 border-gray-200 hover:border-[#572670]/30">
-                      <div className="relative overflow-hidden rounded-t-lg">
+                  <Card className="group cursor-pointer hover:shadow-lg transition-all duration-300 border-gray-200 hover:border-[#572670]/30 overflow-hidden">
+                      <div className="relative overflow-hidden aspect-[16/9]">
                         <img
                             src={post.image}
                             alt={post.title}
-                            className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300" />
+                            className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
 
-                        <div className="absolute top-4 left-4">
-                          <Badge variant="secondary" className="bg-white/90 text-gray-700">
+                        <div className="absolute top-4 left-4 z-10">
+                          <Badge variant="secondary" className="bg-white/90 text-gray-700 backdrop-blur-sm">
                             {blogCategories.find((cat) => cat.id === post.category)?.label}
                           </Badge>
                         </div>
