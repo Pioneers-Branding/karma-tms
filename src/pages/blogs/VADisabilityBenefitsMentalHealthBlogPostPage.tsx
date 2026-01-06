@@ -10,16 +10,16 @@ import {
   BreadcrumbLink,
   BreadcrumbList,
   BreadcrumbPage,
-  BreadcrumbSeparator
-} from '@/components/ui/breadcrumb';
+  BreadcrumbSeparator } from
+'@/components/ui/breadcrumb';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import {
   Accordion,
   AccordionContent,
   AccordionItem,
-  AccordionTrigger
-} from '@/components/ui/accordion';
+  AccordionTrigger } from
+'@/components/ui/accordion';
 import { Calendar, Clock, User, CheckCircle2, ArrowRight, Phone, AlertCircle } from 'lucide-react';
 import AuthorBox from '@/components/AuthorBox';
 
@@ -28,15 +28,15 @@ const VADisabilityBenefitsMentalHealthBlogPostPage = () => {
   const sectionsRef = useRef<{[key: string]: HTMLElement | null;}>({});
 
   const tocItems = [
-    { id: 'introduction', label: 'Understanding VA Disability' },
-    { id: 'eligibility', label: 'Eligibility Criteria' },
-    { id: 'rating-system', label: 'Rating Percentages' },
-    { id: 'application-process', label: 'Application Process' },
-    { id: 'documentation', label: 'Documentation Requirements' },
-    { id: 'appeals', label: 'Appeals Process' },
-    { id: 'treatment-connection', label: 'Connection to Treatment' },
-    { id: 'faqs', label: 'Frequently Asked Questions' }
-  ];
+  { id: 'introduction', label: 'Understanding VA Disability' },
+  { id: 'eligibility', label: 'Eligibility Criteria' },
+  { id: 'rating-system', label: 'Rating Percentages' },
+  { id: 'application-process', label: 'Application Process' },
+  { id: 'documentation', label: 'Documentation Requirements' },
+  { id: 'appeals', label: 'Appeals Process' },
+  { id: 'treatment-connection', label: 'Connection to Treatment' },
+  { id: 'faqs', label: 'Frequently Asked Questions' }];
+
 
   useEffect(() => {
     const handleScroll = () => {
@@ -69,52 +69,52 @@ const VADisabilityBenefitsMentalHealthBlogPostPage = () => {
   };
 
   const faqs = [
-    {
-      question: 'Can you get VA disability for depression?',
-      answer: 'Yes, depression is one of the most commonly approved conditions for VA disability benefits. Veterans can receive disability compensation for depression if they can demonstrate a service connection—meaning their depression was caused by or aggravated during military service. The VA recognizes major depressive disorder as a serious mental health condition that can significantly impact daily functioning.'
-    },
-    {
-      question: 'How to get VA disability for depression?',
-      answer: 'To get VA disability for depression, you need to: 1) File a claim through VA.gov or work with a Veterans Service Officer (VSO), 2) Provide medical evidence of your depression diagnosis, 3) Establish a service connection through medical records or a nexus letter from a healthcare provider, 4) Attend a C&P (Compensation & Pension) exam if required, and 5) Document how your depression affects your daily life and work capacity.'
-    },
-    {
-      question: 'How much does VA pay for depression?',
-      answer: 'VA compensation for depression depends on your disability rating percentage. As of 2024, monthly payments range from $171.23 for a 10% rating to $3,737.85 for a 100% rating. Most veterans with depression receive ratings between 30% ($524.31/month) and 70% ($1,716.28/month), depending on severity. Additional compensation may be available for dependents.'
-    },
-    {
-      question: 'Does the VA give disability for depression?',
-      answer: 'Yes, the VA does give disability benefits for depression when veterans can establish a service connection. Depression is rated under the General Rating Formula for Mental Disorders, ranging from 0% to 100% based on symptom severity and functional impairment. The condition must be diagnosed by a qualified healthcare provider and shown to be related to or aggravated by military service.'
-    },
-    {
-      question: 'How do I claim anxiety with the VA?',
-      answer: 'Claiming anxiety with the VA (va anxiety) follows the same process as other mental health conditions: file a claim establishing service connection, provide medical documentation of your anxiety diagnosis, submit evidence linking your anxiety to military service, attend any required C&P exams, and describe how anxiety symptoms affect your daily activities. Anxiety disorders can include generalized anxiety disorder, panic disorder, and service-related phobias.'
-    },
-    {
-      question: 'What is involved in a PTSD VA claim?',
-      answer: 'A ptsd va claim requires: 1) Current diagnosis of PTSD from a healthcare provider, 2) Evidence of a stressor event during service (combat, assault, accident, etc.), 3) Medical nexus linking your PTSD to the stressor event, 4) Detailed description of symptoms and their impact on your life, and 5) Attendance at a C&P mental health examination. PTSD claims often receive higher ratings due to the severity of symptoms.'
-    }
-  ];
+  {
+    question: 'Can you get VA disability for depression?',
+    answer: 'Yes, depression is one of the most commonly approved conditions for VA disability benefits. Veterans can receive disability compensation for depression if they can demonstrate a service connection—meaning their depression was caused by or aggravated during military service. The VA recognizes major depressive disorder as a serious mental health condition that can significantly impact daily functioning.'
+  },
+  {
+    question: 'How to get VA disability for depression?',
+    answer: 'To get VA disability for depression, you need to: 1) File a claim through VA.gov or work with a Veterans Service Officer (VSO), 2) Provide medical evidence of your depression diagnosis, 3) Establish a service connection through medical records or a nexus letter from a healthcare provider, 4) Attend a C&P (Compensation & Pension) exam if required, and 5) Document how your depression affects your daily life and work capacity.'
+  },
+  {
+    question: 'How much does VA pay for depression?',
+    answer: 'VA compensation for depression depends on your disability rating percentage. As of 2024, monthly payments range from $171.23 for a 10% rating to $3,737.85 for a 100% rating. Most veterans with depression receive ratings between 30% ($524.31/month) and 70% ($1,716.28/month), depending on severity. Additional compensation may be available for dependents.'
+  },
+  {
+    question: 'Does the VA give disability for depression?',
+    answer: 'Yes, the VA does give disability benefits for depression when veterans can establish a service connection. Depression is rated under the General Rating Formula for Mental Disorders, ranging from 0% to 100% based on symptom severity and functional impairment. The condition must be diagnosed by a qualified healthcare provider and shown to be related to or aggravated by military service.'
+  },
+  {
+    question: 'How do I claim anxiety with the VA?',
+    answer: 'Claiming anxiety with the VA (va anxiety) follows the same process as other mental health conditions: file a claim establishing service connection, provide medical documentation of your anxiety diagnosis, submit evidence linking your anxiety to military service, attend any required C&P exams, and describe how anxiety symptoms affect your daily activities. Anxiety disorders can include generalized anxiety disorder, panic disorder, and service-related phobias.'
+  },
+  {
+    question: 'What is involved in a PTSD VA claim?',
+    answer: 'A ptsd va claim requires: 1) Current diagnosis of PTSD from a healthcare provider, 2) Evidence of a stressor event during service (combat, assault, accident, etc.), 3) Medical nexus linking your PTSD to the stressor event, 4) Detailed description of symptoms and their impact on your life, and 5) Attendance at a C&P mental health examination. PTSD claims often receive higher ratings due to the severity of symptoms.'
+  }];
+
 
   const relatedPosts = [
-    {
-      title: 'How TMS Therapy Helps Veterans Heal: A New Hope for PTSD',
-      excerpt: 'Discover how TMS therapy offers new hope for veterans struggling with PTSD, depression, and anxiety.',
-      link: '/blog/veterans-tms-therapy',
-      image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/f00dd3f4-cea1-4918-8fec-5976198e195f.webp'
-    },
-    {
-      title: 'TMS vs Medication for Veterans',
-      excerpt: 'Learn why veterans are choosing TMS therapy over traditional medication for depression treatment.',
-      link: '/blog/tms-vs-medication-veterans-depression',
-      image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/dd7dd986-540f-4359-99af-39f398491cf0.webp'
-    },
-    {
-      title: 'Inside the VA & Veterans\' Mental Health',
-      excerpt: 'Understanding VA mental health programs and accessing TMS therapy for PTSD treatment.',
-      link: '/blog/va-veterans-ptsd-tms-treatment',
-      image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/7ace98a6-9efe-4403-aacf-892346fb07a8.webp'
-    }
-  ];
+  {
+    title: 'How TMS Therapy Helps Veterans Heal: A New Hope for PTSD',
+    excerpt: 'Discover how TMS therapy offers new hope for veterans struggling with PTSD, depression, and anxiety.',
+    link: '/blog/veterans-tms-therapy',
+    image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/f00dd3f4-cea1-4918-8fec-5976198e195f.webp'
+  },
+  {
+    title: 'TMS vs Medication for Veterans',
+    excerpt: 'Learn why veterans are choosing TMS therapy over traditional medication for depression treatment.',
+    link: '/blog/tms-vs-medication-veterans-depression',
+    image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/dd7dd986-540f-4359-99af-39f398491cf0.webp'
+  },
+  {
+    title: 'Inside the VA & Veterans\' Mental Health',
+    excerpt: 'Understanding VA mental health programs and accessing TMS therapy for PTSD treatment.',
+    link: '/blog/va-veterans-ptsd-tms-treatment',
+    image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/7ace98a6-9efe-4403-aacf-892346fb07a8.webp'
+  }];
+
 
   const articleSchema = {
     '@context': 'https://schema.org',
@@ -124,8 +124,8 @@ const VADisabilityBenefitsMentalHealthBlogPostPage = () => {
     image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/2ddc8d69-b09a-4f1d-bd47-6d783ceefbd1.webp',
     author: {
       '@type': 'Person',
-      name: 'Dr. Apollo Thomas',
-      jobTitle: 'Medical Director, Board-Certified Psychiatrist',
+      name: 'Dr. Keerthy Sunder',
+      jobTitle: 'Board-Certified Psychiatrist | Medical Director at KarmaTMS',
       affiliation: {
         '@type': 'Organization',
         name: 'KarmaTMS'
@@ -168,17 +168,17 @@ const VADisabilityBenefitsMentalHealthBlogPostPage = () => {
         keywords="can you get va disability for depression, how to get va disability for depression, how much does va pay for depression, does the va give disability for depression, va anxiety, claiming anxiety va, ptsd va claim, va disability mental health"
         canonical="/blog/va-disability-benefits-depression-anxiety-ptsd"
         ogImage="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/2ddc8d69-b09a-4f1d-bd47-6d783ceefbd1.webp"
-        ogType="article"
-      />
+        ogType="article" />
+
 
       <StructuredData
         type="breadcrumb"
         breadcrumbs={[
-          { name: 'Home', url: '/' },
-          { name: 'Blog', url: '/blog' },
-          { name: 'VA Disability Benefits Guide', url: '/blog/va-disability-benefits-depression-anxiety-ptsd' }
-        ]}
-      />
+        { name: 'Home', url: '/' },
+        { name: 'Blog', url: '/blog' },
+        { name: 'VA Disability Benefits Guide', url: '/blog/va-disability-benefits-depression-anxiety-ptsd' }]
+        } />
+
 
       <script type="application/ld+json">{JSON.stringify(articleSchema)}</script>
       <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>
@@ -226,7 +226,7 @@ const VADisabilityBenefitsMentalHealthBlogPostPage = () => {
               </span>
               <span className="flex items-center gap-1 bg-white/10 px-3 py-1 rounded-full backdrop-blur-sm">
                 <User className="w-4 h-4" />
-                Dr. Apollo Thomas
+                Dr. Keerthy Sunder
               </span>
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
@@ -257,19 +257,19 @@ const VADisabilityBenefitsMentalHealthBlogPostPage = () => {
                 <CardContent className="p-6">
                   <h3 className="font-bold text-lg mb-4 text-[#572670]">Table of Contents</h3>
                   <nav className="space-y-2">
-                    {tocItems.map((item) => (
-                      <button
-                        key={item.id}
-                        onClick={() => scrollToSection(item.id)}
-                        className={`block w-full text-left px-3 py-2 rounded-md text-sm transition-all ${
-                          activeSection === item.id
-                            ? 'bg-[#572670] text-white font-medium'
-                            : 'text-gray-700 hover:bg-[#572670]/10'
-                        }`}
-                      >
+                    {tocItems.map((item) =>
+                    <button
+                      key={item.id}
+                      onClick={() => scrollToSection(item.id)}
+                      className={`block w-full text-left px-3 py-2 rounded-md text-sm transition-all ${
+                      activeSection === item.id ?
+                      'bg-[#572670] text-white font-medium' :
+                      'text-gray-700 hover:bg-[#572670]/10'}`
+                      }>
+
                         {item.label}
                       </button>
-                    ))}
+                    )}
                   </nav>
                   <div className="mt-6 pt-6 border-t">
                     <Button asChild className="w-full bg-[#572670] hover:bg-[#7B3FA0]">
@@ -288,8 +288,8 @@ const VADisabilityBenefitsMentalHealthBlogPostPage = () => {
               <img
                 src="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/2ddc8d69-b09a-4f1d-bd47-6d783ceefbd1.webp"
                 alt="VA disability benefits for veterans with mental health conditions"
-                className="w-full h-64 md:h-96 object-cover rounded-lg mb-6"
-              />
+                className="w-full h-64 md:h-96 object-cover rounded-lg mb-6" />
+
 
               <p className="text-xl text-gray-700 leading-relaxed">
                 If you're a veteran struggling with <strong>depression, anxiety, or PTSD</strong>, you may be entitled to disability compensation from the Department of Veterans Affairs. These benefits can provide crucial financial support and access to healthcare services while you focus on recovery. However, navigating the VA disability system can feel overwhelming. This comprehensive guide answers the most common questions veterans have: <strong>Can you get VA disability for depression?</strong> <strong>How to get VA disability for depression?</strong> <strong>How much does VA pay for depression?</strong> and more.
@@ -332,8 +332,8 @@ const VADisabilityBenefitsMentalHealthBlogPostPage = () => {
               <img
                 src="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/7ace98a6-9efe-4403-aacf-892346fb07a8.webp"
                 alt="Veterans dealing with depression and mental health challenges"
-                className="w-full h-64 object-cover rounded-lg mb-6"
-              />
+                className="w-full h-64 object-cover rounded-lg mb-6" />
+
 
               <p className="mb-6">
                 <strong>Does the VA give disability for depression?</strong> Yes, the VA provides disability compensation for depression ranging from 0% to 100%, depending on severity. Veterans receive monthly tax-free payments and access to VA healthcare services for their condition.
@@ -522,8 +522,8 @@ const VADisabilityBenefitsMentalHealthBlogPostPage = () => {
               <img
                 src="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/f00dd3f4-cea1-4918-8fec-5976198e195f.webp"
                 alt="Veterans receiving mental health treatment and support"
-                className="w-full h-64 object-cover rounded-lg mb-6"
-              />
+                className="w-full h-64 object-cover rounded-lg mb-6" />
+
             </section>
 
             {/* Section 4: Documentation Requirements */}
@@ -709,8 +709,8 @@ const VADisabilityBenefitsMentalHealthBlogPostPage = () => {
               <img
                 src="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/76caee2d-5629-4dc1-a3b4-8c5cea23ede6.webp"
                 alt="TMS therapy treatment for veterans with depression"
-                className="w-full h-64 object-cover rounded-lg mb-6"
-              />
+                className="w-full h-64 object-cover rounded-lg mb-6" />
+
 
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Why Veterans Choose KarmaTMS</h3>
               <p className="mb-4">
@@ -755,23 +755,23 @@ const VADisabilityBenefitsMentalHealthBlogPostPage = () => {
 
             {/* Author Box */}
             <AuthorBox
-              name="Dr. Apollo Thomas"
+              name="Dr. Keerthy Sunder"
               role="Board-Certified Psychiatrist | Medical Director at KarmaTMS"
-              bio="Dr. Apollo Thomas is a board-certified psychiatrist with extensive experience helping veterans navigate VA disability claims while providing cutting-edge mental health treatment. He specializes in treatment-resistant depression, PTSD, and anxiety disorders, with a focus on innovative therapies like TMS."
-              image="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/e46a0ae8-2974-432a-9a49-4a1e8300553b.png"
-            />
+              bio="Dr. Keerthy Sunder is a board-certified psychiatrist specializing in TMS therapy for veterans and treatment-resistant mental health conditions. With extensive experience in neuroscience and innovative treatment modalities, Dr. Sunder is dedicated to helping veterans overcome PTSD, depression, and anxiety through evidence-based, compassionate care."
+              image="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/6e11b9b5-a5e7-4213-8e90-24371919d086.webp" />
+
 
             {/* FAQ Section */}
             <section ref={(el) => sectionsRef.current['faqs'] = el} className="mb-12 mt-12">
               <h2 className="text-3xl font-bold text-[#572670] mb-6">Frequently Asked Questions</h2>
               
               <Accordion type="single" collapsible className="w-full space-y-2">
-                {faqs.map((faq, index) => (
-                  <AccordionItem
-                    key={index}
-                    value={`item-${index}`}
-                    className="border border-gray-200 rounded-lg px-4 data-[state=open]:border-[#572670]"
-                  >
+                {faqs.map((faq, index) =>
+                <AccordionItem
+                  key={index}
+                  value={`item-${index}`}
+                  className="border border-gray-200 rounded-lg px-4 data-[state=open]:border-[#572670]">
+
                     <AccordionTrigger className="text-left font-semibold hover:text-[#572670] hover:no-underline">
                       {faq.question}
                     </AccordionTrigger>
@@ -779,7 +779,7 @@ const VADisabilityBenefitsMentalHealthBlogPostPage = () => {
                       {faq.answer}
                     </AccordionContent>
                   </AccordionItem>
-                ))}
+                )}
               </Accordion>
             </section>
 
@@ -807,13 +807,13 @@ const VADisabilityBenefitsMentalHealthBlogPostPage = () => {
             <section className="mb-12">
               <h2 className="text-3xl font-bold text-[#572670] mb-6">Related Articles</h2>
               <div className="grid md:grid-cols-3 gap-6">
-                {relatedPosts.map((post, index) => (
-                  <Card key={index} className="border-[#572670]/20 overflow-hidden hover:shadow-lg transition-shadow">
+                {relatedPosts.map((post, index) =>
+                <Card key={index} className="border-[#572670]/20 overflow-hidden hover:shadow-lg transition-shadow">
                     <img
-                      src={post.image}
-                      alt={post.title}
-                      className="w-full h-48 object-cover"
-                    />
+                    src={post.image}
+                    alt={post.title}
+                    className="w-full h-48 object-cover" />
+
                     <CardContent className="p-6">
                       <h3 className="font-bold text-lg mb-2 hover:text-[#572670] transition-colors">
                         <Link to={post.link}>{post.title}</Link>
@@ -826,7 +826,7 @@ const VADisabilityBenefitsMentalHealthBlogPostPage = () => {
                       </Button>
                     </CardContent>
                   </Card>
-                ))}
+                )}
               </div>
             </section>
           </article>
@@ -834,8 +834,8 @@ const VADisabilityBenefitsMentalHealthBlogPostPage = () => {
       </div>
 
       <FooterSection />
-    </>
-  );
+    </>);
+
 };
 
 export default VADisabilityBenefitsMentalHealthBlogPostPage;

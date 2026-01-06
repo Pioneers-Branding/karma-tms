@@ -293,24 +293,24 @@ const BlogPage = () => {
                 {/* Posts Grid */}
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
                   {regularPosts.map((post) => {
-                    const postLinks: { [key: number]: string } = {
-                      1: '/blog/veterans-tms-therapy',
-                      2: '/blog/va-veterans-ptsd-tms-treatment',
-                      3: '/blog/va-disability-benefits-depression-anxiety-ptsd',
-                      4: '/blog/tms-vs-medication-veterans-depression',
-                      5: '/blog/how-to-help-veterans-ptsd'
-                    };
-                    return (
-                      <a
-                        key={post.id}
-                        href={postLinks[post.id] || '/blog'}>
+                  const postLinks: {[key: number]: string;} = {
+                    1: '/blog/veterans-tms-therapy',
+                    2: '/blog/va-veterans-ptsd-tms-treatment',
+                    3: '/blog/va-disability-benefits-depression-anxiety-ptsd',
+                    4: '/blog/tms-vs-medication-veterans-depression',
+                    5: '/blog/how-to-help-veterans-ptsd'
+                  };
+                  return (
+                    <a
+                      key={post.id}
+                      href={postLinks[post.id] || '/blog'}>
 
                   <Card className="group cursor-pointer hover:shadow-lg transition-all duration-300 border-gray-200 hover:border-[#572670]/30">
                       <div className="relative overflow-hidden rounded-t-lg">
                         <img
-                        src={post.image}
-                        alt={post.title}
-                        className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300" />
+                            src={post.image}
+                            alt={post.title}
+                            className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300" />
 
                         <div className="absolute top-4 left-4">
                           <Badge variant="secondary" className="bg-white/90 text-gray-700">
@@ -350,8 +350,8 @@ const BlogPage = () => {
                         </div>
                       </CardContent>
                     </Card>
-                    </a>
-                  );
+                    </a>);
+
                 })}
                 </div>
 

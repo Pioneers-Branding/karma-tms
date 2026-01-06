@@ -10,16 +10,16 @@ import {
   BreadcrumbLink,
   BreadcrumbList,
   BreadcrumbPage,
-  BreadcrumbSeparator
-} from '@/components/ui/breadcrumb';
+  BreadcrumbSeparator } from
+'@/components/ui/breadcrumb';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import {
   Accordion,
   AccordionContent,
   AccordionItem,
-  AccordionTrigger
-} from '@/components/ui/accordion';
+  AccordionTrigger } from
+'@/components/ui/accordion';
 import { Calendar, Clock, User, CheckCircle2, ArrowRight, Heart, Phone, MapPin } from 'lucide-react';
 import AuthorBox from '@/components/AuthorBox';
 
@@ -28,15 +28,15 @@ const HelpingVeteransPTSDBlogPostPage = () => {
   const sectionsRef = useRef<{[key: string]: HTMLElement | null;}>({});
 
   const tocItems = [
-    { id: 'understanding-ptsd', label: 'Understanding Veteran PTSD' },
-    { id: 'therapy-options', label: 'Therapy Options' },
-    { id: 'tms-for-ptsd', label: 'TMS for PTSD' },
-    { id: 'local-clinics', label: 'Local Karma TMS Clinics' },
-    { id: 'support-resources', label: 'Support Resources' },
-    { id: 'family-support', label: 'How Families Can Help' },
-    { id: 'finding-therapists', label: 'Finding Veteran Therapists' },
-    { id: 'faqs', label: 'Frequently Asked Questions' }
-  ];
+  { id: 'understanding-ptsd', label: 'Understanding Veteran PTSD' },
+  { id: 'therapy-options', label: 'Therapy Options' },
+  { id: 'tms-for-ptsd', label: 'TMS for PTSD' },
+  { id: 'local-clinics', label: 'Local Karma TMS Clinics' },
+  { id: 'support-resources', label: 'Support Resources' },
+  { id: 'family-support', label: 'How Families Can Help' },
+  { id: 'finding-therapists', label: 'Finding Veteran Therapists' },
+  { id: 'faqs', label: 'Frequently Asked Questions' }];
+
 
   useEffect(() => {
     const handleScroll = () => {
@@ -69,52 +69,52 @@ const HelpingVeteransPTSDBlogPostPage = () => {
   };
 
   const faqs = [
-    {
-      question: 'How to help PTSD veterans in your life?',
-      answer: 'How to help ptsd veterans starts with education, patience, and support without judgment. Learn about PTSD symptoms, avoid triggers, create a safe environment, encourage professional treatment, be patient with mood changes, offer to accompany them to appointments, and take care of your own mental health. Most importantly, listen without trying to fix everything—sometimes veterans just need to be heard.'
-    },
-    {
-      question: 'How to help veterans with PTSD find treatment?',
-      answer: 'How to help veterans with ptsd access treatment involves: helping them research options like TMS therapy, assisting with VA enrollment or insurance verification, offering to drive them to appointments, helping schedule consultations at facilities like KarmaTMS, connecting them with Veterans Service Organizations, and providing emotional support throughout the treatment process. Practical assistance removing barriers to care makes a significant difference.'
-    },
-    {
-      question: 'What are the best PTSD veterans organizations for support?',
-      answer: 'Top ptsd veterans organizations include: VA Vet Centers (community-based counseling), Wounded Warrior Project (comprehensive support), Team Red White & Blue (community building), Mission 22 (suicide prevention), The Mission Continues (service opportunities), Give an Hour (free mental health services), and local Veterans Service Organizations like VFW and American Legion. These organizations provide peer support, treatment resources, and community connection.'
-    },
-    {
-      question: 'Where can I find a veteran PTSD therapist near me?',
-      answer: 'Finding a veteran ptsd therapist or veteran therapist near me can be done through: VA.gov provider directory, Psychology Today\'s therapist finder (filter for veterans), Give an Hour provider network, local university counseling programs with veteran specializations, and specialized clinics like KarmaTMS that offer veteran-focused mental health care. Look for providers with military cultural competency training and trauma expertise.'
-    },
-    {
-      question: 'Is TMS therapy effective for veteran PTSD?',
-      answer: 'Yes, TMS therapy has shown significant effectiveness for veteran PTSD, with studies indicating 40-50% reduction in PTSD symptoms. TMS is particularly helpful for veterans who haven\'t responded to traditional therapy or medication. It targets the brain regions involved in trauma processing and fear response, offering a drug-free alternative that many veterans prefer.'
-    },
-    {
-      question: 'How can family members support a veteran with PTSD?',
-      answer: 'Family support is crucial for veterans with PTSD. Key ways to help include: educating yourself about PTSD, maintaining routines and stability, being patient with emotional outbursts, avoiding judgment, encouraging treatment, participating in family therapy, taking care of your own mental health, joining support groups for military families, and creating a trauma-sensitive home environment.'
-    }
-  ];
+  {
+    question: 'How to help PTSD veterans in your life?',
+    answer: 'How to help ptsd veterans starts with education, patience, and support without judgment. Learn about PTSD symptoms, avoid triggers, create a safe environment, encourage professional treatment, be patient with mood changes, offer to accompany them to appointments, and take care of your own mental health. Most importantly, listen without trying to fix everything—sometimes veterans just need to be heard.'
+  },
+  {
+    question: 'How to help veterans with PTSD find treatment?',
+    answer: 'How to help veterans with ptsd access treatment involves: helping them research options like TMS therapy, assisting with VA enrollment or insurance verification, offering to drive them to appointments, helping schedule consultations at facilities like KarmaTMS, connecting them with Veterans Service Organizations, and providing emotional support throughout the treatment process. Practical assistance removing barriers to care makes a significant difference.'
+  },
+  {
+    question: 'What are the best PTSD veterans organizations for support?',
+    answer: 'Top ptsd veterans organizations include: VA Vet Centers (community-based counseling), Wounded Warrior Project (comprehensive support), Team Red White & Blue (community building), Mission 22 (suicide prevention), The Mission Continues (service opportunities), Give an Hour (free mental health services), and local Veterans Service Organizations like VFW and American Legion. These organizations provide peer support, treatment resources, and community connection.'
+  },
+  {
+    question: 'Where can I find a veteran PTSD therapist near me?',
+    answer: 'Finding a veteran ptsd therapist or veteran therapist near me can be done through: VA.gov provider directory, Psychology Today\'s therapist finder (filter for veterans), Give an Hour provider network, local university counseling programs with veteran specializations, and specialized clinics like KarmaTMS that offer veteran-focused mental health care. Look for providers with military cultural competency training and trauma expertise.'
+  },
+  {
+    question: 'Is TMS therapy effective for veteran PTSD?',
+    answer: 'Yes, TMS therapy has shown significant effectiveness for veteran PTSD, with studies indicating 40-50% reduction in PTSD symptoms. TMS is particularly helpful for veterans who haven\'t responded to traditional therapy or medication. It targets the brain regions involved in trauma processing and fear response, offering a drug-free alternative that many veterans prefer.'
+  },
+  {
+    question: 'How can family members support a veteran with PTSD?',
+    answer: 'Family support is crucial for veterans with PTSD. Key ways to help include: educating yourself about PTSD, maintaining routines and stability, being patient with emotional outbursts, avoiding judgment, encouraging treatment, participating in family therapy, taking care of your own mental health, joining support groups for military families, and creating a trauma-sensitive home environment.'
+  }];
+
 
   const relatedPosts = [
-    {
-      title: 'How TMS Therapy Helps Veterans Heal',
-      excerpt: 'Comprehensive guide on TMS therapy for veterans with PTSD, depression, and anxiety.',
-      link: '/blog/veterans-tms-therapy',
-      image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/f00dd3f4-cea1-4918-8fec-5976198e195f.webp'
-    },
-    {
-      title: 'VA Disability Benefits for Mental Health',
-      excerpt: 'Learn how to get VA disability for depression, anxiety, and PTSD.',
-      link: '/blog/va-disability-benefits-depression-anxiety-ptsd',
-      image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/2ddc8d69-b09a-4f1d-bd47-6d783ceefbd1.webp'
-    },
-    {
-      title: 'TMS vs Medication for Veterans',
-      excerpt: 'Why veterans are choosing TMS therapy over traditional medication for depression.',
-      link: '/blog/tms-vs-medication-veterans-depression',
-      image: 'https://images.unsplash.com/photo-1750918619848-4a9b0484eea7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MTg3MTl8MHwxfHNlYXJjaHwxfHxBbiUyMGltYWdlJTIwZGVwaWN0aW5nJTIwYSUyMHNlcmVuZSUyMGxhbmRzY2FwZSUyMHdpdGglMjBhJTIwZm9jdXMlMjBvbiUyMG5hdHVyYWwlMjBlbGVtZW50cy58ZW58MHx8fHwxNzYyNzc4Mzc5fDA&ixlib=rb-4.1.0&q=80&w=200$w=800'
-    }
-  ];
+  {
+    title: 'How TMS Therapy Helps Veterans Heal',
+    excerpt: 'Comprehensive guide on TMS therapy for veterans with PTSD, depression, and anxiety.',
+    link: '/blog/veterans-tms-therapy',
+    image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/f00dd3f4-cea1-4918-8fec-5976198e195f.webp'
+  },
+  {
+    title: 'VA Disability Benefits for Mental Health',
+    excerpt: 'Learn how to get VA disability for depression, anxiety, and PTSD.',
+    link: '/blog/va-disability-benefits-depression-anxiety-ptsd',
+    image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/2ddc8d69-b09a-4f1d-bd47-6d783ceefbd1.webp'
+  },
+  {
+    title: 'TMS vs Medication for Veterans',
+    excerpt: 'Why veterans are choosing TMS therapy over traditional medication for depression.',
+    link: '/blog/tms-vs-medication-veterans-depression',
+    image: 'https://images.unsplash.com/photo-1750918619848-4a9b0484eea7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MTg3MTl8MHwxfHNlYXJjaHwxfHxBbiUyMGltYWdlJTIwZGVwaWN0aW5nJTIwYSUyMHNlcmVuZSUyMGxhbmRzY2FwZSUyMHdpdGglMjBhJTIwZm9jdXMlMjBvbiUyMG5hdHVyYWwlMjBlbGVtZW50cy58ZW58MHx8fHwxNzYyNzc4Mzc5fDA&ixlib=rb-4.1.0&q=80&w=200$w=800'
+  }];
+
 
   const articleSchema = {
     '@context': 'https://schema.org',
@@ -124,8 +124,8 @@ const HelpingVeteransPTSDBlogPostPage = () => {
     image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/02c362bd-cde2-431d-8820-a07a14939638.webp',
     author: {
       '@type': 'Person',
-      name: 'Dr. Apollo Thomas',
-      jobTitle: 'Medical Director, Board-Certified Psychiatrist',
+      name: 'Dr. Keerthy Sunder',
+      jobTitle: 'Board-Certified Psychiatrist | Medical Director at KarmaTMS',
       affiliation: {
         '@type': 'Organization',
         name: 'KarmaTMS'
@@ -168,17 +168,17 @@ const HelpingVeteransPTSDBlogPostPage = () => {
         keywords="how to help ptsd veterans, how to help veterans with ptsd, ptsd veterans organizations, veteran ptsd therapist, veteran therapist near me, ptsd support for veterans, helping veterans with ptsd"
         canonical="/blog/how-to-help-veterans-ptsd"
         ogImage="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/02c362bd-cde2-431d-8820-a07a14939638.webp"
-        ogType="article"
-      />
+        ogType="article" />
+
 
       <StructuredData
         type="breadcrumb"
         breadcrumbs={[
-          { name: 'Home', url: '/' },
-          { name: 'Blog', url: '/blog' },
-          { name: 'How to Help Veterans with PTSD', url: '/blog/how-to-help-veterans-ptsd' }
-        ]}
-      />
+        { name: 'Home', url: '/' },
+        { name: 'Blog', url: '/blog' },
+        { name: 'How to Help Veterans with PTSD', url: '/blog/how-to-help-veterans-ptsd' }]
+        } />
+
 
       <script type="application/ld+json">{JSON.stringify(articleSchema)}</script>
       <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>
@@ -226,7 +226,7 @@ const HelpingVeteransPTSDBlogPostPage = () => {
               </span>
               <span className="flex items-center gap-1 bg-white/10 px-3 py-1 rounded-full backdrop-blur-sm">
                 <User className="w-4 h-4" />
-                Dr. Apollo Thomas
+                Dr. Keerthy Sunder
               </span>
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
@@ -257,19 +257,19 @@ const HelpingVeteransPTSDBlogPostPage = () => {
                 <CardContent className="p-6">
                   <h3 className="font-bold text-lg mb-4 text-[#572670]">Table of Contents</h3>
                   <nav className="space-y-2">
-                    {tocItems.map((item) => (
-                      <button
-                        key={item.id}
-                        onClick={() => scrollToSection(item.id)}
-                        className={`block w-full text-left px-3 py-2 rounded-md text-sm transition-all ${
-                          activeSection === item.id
-                            ? 'bg-[#572670] text-white font-medium'
-                            : 'text-gray-700 hover:bg-[#572670]/10'
-                        }`}
-                      >
+                    {tocItems.map((item) =>
+                    <button
+                      key={item.id}
+                      onClick={() => scrollToSection(item.id)}
+                      className={`block w-full text-left px-3 py-2 rounded-md text-sm transition-all ${
+                      activeSection === item.id ?
+                      'bg-[#572670] text-white font-medium' :
+                      'text-gray-700 hover:bg-[#572670]/10'}`
+                      }>
+
                         {item.label}
                       </button>
-                    ))}
+                    )}
                   </nav>
                   <div className="mt-6 pt-6 border-t">
                     <Button asChild className="w-full bg-[#572670] hover:bg-[#7B3FA0]">
@@ -288,8 +288,8 @@ const HelpingVeteransPTSDBlogPostPage = () => {
               <img
                 src="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/02c362bd-cde2-431d-8820-a07a14939638.webp"
                 alt="Supporting veterans with PTSD through compassionate care"
-                className="w-full h-64 md:h-96 object-cover rounded-lg mb-6"
-              />
+                className="w-full h-64 md:h-96 object-cover rounded-lg mb-6" />
+
 
               <p className="text-xl text-gray-700 leading-relaxed">
                 If you're searching for <strong>how to help veterans with PTSD</strong> or <strong>how to help PTSD veterans</strong> in your life, you're taking an important first step. Post-Traumatic Stress Disorder affects up to 30% of veterans who served in combat zones, and the ripple effects touch families, friends, and communities. This comprehensive guide provides actionable ways to support veterans through PTSD recovery, from finding the right <strong>veteran PTSD therapist</strong> to understanding innovative treatments like TMS therapy available at local clinics.
@@ -350,8 +350,8 @@ const HelpingVeteransPTSDBlogPostPage = () => {
               <img
                 src="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/f00dd3f4-cea1-4918-8fec-5976198e195f.webp"
                 alt="Veterans receiving support for PTSD"
-                className="w-full h-64 object-cover rounded-lg mb-6"
-              />
+                className="w-full h-64 object-cover rounded-lg mb-6" />
+
             </section>
 
             {/* Therapy Options Section */}
@@ -456,8 +456,8 @@ const HelpingVeteransPTSDBlogPostPage = () => {
               <img
                 src="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/76caee2d-5629-4dc1-a3b4-8c5cea23ede6.webp"
                 alt="TMS therapy for veteran PTSD treatment"
-                className="w-full h-64 object-cover rounded-lg mb-6"
-              />
+                className="w-full h-64 object-cover rounded-lg mb-6" />
+
 
               <h3 className="text-2xl font-bold text-gray-900 mb-4">What to Expect from TMS Treatment</h3>
 
@@ -636,8 +636,8 @@ const HelpingVeteransPTSDBlogPostPage = () => {
               <img
                 src="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/157c49b6-b322-4aa5-b8d6-8ee41dc03a43.webp"
                 alt="Veterans support groups and community resources"
-                className="w-full h-64 object-cover rounded-lg mb-6"
-              />
+                className="w-full h-64 object-cover rounded-lg mb-6" />
+
             </section>
 
             {/* Family Support Section */}
@@ -830,23 +830,23 @@ const HelpingVeteransPTSDBlogPostPage = () => {
 
             {/* Author Box */}
             <AuthorBox
-              name="Dr. Apollo Thomas"
+              name="Dr. Keerthy Sunder"
               role="Board-Certified Psychiatrist | Medical Director at KarmaTMS"
-              bio="Dr. Apollo Thomas is a board-certified psychiatrist with deep expertise in treating veteran PTSD through innovative approaches including TMS therapy. He has dedicated his career to serving those who served, providing compassionate, evidence-based care that honors military culture while delivering cutting-edge treatment."
-              image="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/e46a0ae8-2974-432a-9a49-4a1e8300553b.png"
-            />
+              bio="Dr. Keerthy Sunder is a board-certified psychiatrist specializing in TMS therapy for veterans and treatment-resistant mental health conditions. With extensive experience in neuroscience and innovative treatment modalities, Dr. Sunder is dedicated to helping veterans overcome PTSD, depression, and anxiety through evidence-based, compassionate care."
+              image="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/6e11b9b5-a5e7-4213-8e90-24371919d086.webp" />
+
 
             {/* FAQ Section */}
             <section ref={(el) => sectionsRef.current['faqs'] = el} className="mb-12 mt-12">
               <h2 className="text-3xl font-bold text-[#572670] mb-6">Frequently Asked Questions</h2>
               
               <Accordion type="single" collapsible className="w-full space-y-2">
-                {faqs.map((faq, index) => (
-                  <AccordionItem
-                    key={index}
-                    value={`item-${index}`}
-                    className="border border-gray-200 rounded-lg px-4 data-[state=open]:border-[#572670]"
-                  >
+                {faqs.map((faq, index) =>
+                <AccordionItem
+                  key={index}
+                  value={`item-${index}`}
+                  className="border border-gray-200 rounded-lg px-4 data-[state=open]:border-[#572670]">
+
                     <AccordionTrigger className="text-left font-semibold hover:text-[#572670] hover:no-underline">
                       {faq.question}
                     </AccordionTrigger>
@@ -854,7 +854,7 @@ const HelpingVeteransPTSDBlogPostPage = () => {
                       {faq.answer}
                     </AccordionContent>
                   </AccordionItem>
-                ))}
+                )}
               </Accordion>
             </section>
 
@@ -882,13 +882,13 @@ const HelpingVeteransPTSDBlogPostPage = () => {
             <section className="mb-12">
               <h2 className="text-3xl font-bold text-[#572670] mb-6">Related Articles</h2>
               <div className="grid md:grid-cols-3 gap-6">
-                {relatedPosts.map((post, index) => (
-                  <Card key={index} className="border-[#572670]/20 overflow-hidden hover:shadow-lg transition-shadow">
+                {relatedPosts.map((post, index) =>
+                <Card key={index} className="border-[#572670]/20 overflow-hidden hover:shadow-lg transition-shadow">
                     <img
-                      src={post.image}
-                      alt={post.title}
-                      className="w-full h-48 object-cover"
-                    />
+                    src={post.image}
+                    alt={post.title}
+                    className="w-full h-48 object-cover" />
+
                     <CardContent className="p-6">
                       <h3 className="font-bold text-lg mb-2 hover:text-[#572670] transition-colors">
                         <Link to={post.link}>{post.title}</Link>
@@ -901,7 +901,7 @@ const HelpingVeteransPTSDBlogPostPage = () => {
                       </Button>
                     </CardContent>
                   </Card>
-                ))}
+                )}
               </div>
             </section>
           </article>
@@ -909,8 +909,8 @@ const HelpingVeteransPTSDBlogPostPage = () => {
       </div>
 
       <FooterSection />
-    </>
-  );
+    </>);
+
 };
 
 export default HelpingVeteransPTSDBlogPostPage;
