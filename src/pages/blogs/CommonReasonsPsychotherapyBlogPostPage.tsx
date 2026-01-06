@@ -276,7 +276,7 @@ const CommonReasonsPsychotherapyBlogPostPage = () => {
             {/* Introduction */}
             <div className="mb-12">
               <img
-                src="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/3a8c8944-5c3c-416d-acf8-9ca9871d172c.webp"
+                src="https://res.cloudinary.com/de4kw1t2i/image/upload/v1764138578/29_xocrto.png"
                 alt="Psychotherapy session concept"
                 className="w-full object-cover rounded-lg mb-6" />
 
