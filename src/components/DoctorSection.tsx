@@ -1,6 +1,7 @@
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
+import { Link } from 'react-router-dom';
 import {
   Award,
   GraduationCap,
@@ -182,17 +183,20 @@ const DoctorSection = () => {
 
             {/* Action Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
-              <Button className="bg-gradient-to-r from-[#572670] to-purple-600 hover:from-purple-600 hover:to-[#572670] text-white px-8 py-3 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
-                <Calendar className="h-4 w-4 mr-2" />
-                Schedule a Free Consultation 
-              </Button>
-              <Button
-                variant="outline"
-                className="border-2 border-[#572670]/30 text-[#572670] hover:bg-[#572670] hover:text-white px-8 py-3 transition-all duration-300">
-
-                <Users className="h-4 w-4 mr-2" />
-                Learn More About Our Team
-              </Button>
+              <Link to="/contact" aria-label="Schedule a free consultation" className="contents">
+                <Button className="bg-gradient-to-r from-[#572670] to-purple-600 hover:from-purple-600 hover:to-[#572670] text-white px-8 py-3 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                  <Calendar className="h-4 w-4 mr-2" />
+                  Schedule a Free Consultation 
+                </Button>
+              </Link>
+              <Link to="/team" aria-label="Learn about our team" className="contents">
+                <Button
+                  variant="outline"
+                  className="border-2 border-[#572670]/30 text-[#572670] hover:bg-[#572670] hover:text-white px-8 py-3 transition-all duration-300">
+                  <Users className="h-4 w-4 mr-2" />
+                  Learn More About Our Team
+                </Button>
+              </Link>
             </div>
           </div>
         </div>

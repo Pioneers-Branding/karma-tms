@@ -2,6 +2,7 @@ import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { Brain, Zap, TrendingUp, CheckCircle } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const HowTMSWorks = () => {
   return (
@@ -42,9 +43,11 @@ const HowTMSWorks = () => {
               </p>
             </CardContent>
           </Card>
-          <Button className="bg-[#572670] hover:bg-[#572670]/90 text-white px-8">
-            Learn More About the Science
-          </Button>
+          <Link to="/about" aria-label="Learn more about the science">
+            <Button className="bg-[#572670] hover:bg-[#572670]/90 text-white px-8">
+              Learn More About the Science
+            </Button>
+          </Link>
         </div>
       </div>
       

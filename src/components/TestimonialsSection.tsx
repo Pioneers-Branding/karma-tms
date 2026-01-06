@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
+import { Link } from 'react-router-dom';
 import { ChevronLeft, ChevronRight, Play, Star, Quote } from 'lucide-react';
 
 const TestimonialsSection = () => {
@@ -245,9 +246,11 @@ const TestimonialsSection = () => {
         </div>
 
         <div className="text-center">
-          <Button className="bg-[#572670] hover:bg-[#572670]/90 text-white px-8">
-            Read More Success Stories
-          </Button>
+          <Link to="/testimonials" aria-label="Read more success stories">
+            <Button className="bg-[#572670] hover:bg-[#572670]/90 text-white px-8">
+              Read More Success Stories
+            </Button>
+          </Link>
         </div>
       </div>
     </section>);
