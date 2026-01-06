@@ -36,7 +36,7 @@ const HeroSection = () => {
   {
     title: 'Advanced TMS Setup',
     image:
-    'https://res.cloudinary.com/de4kw1t2i/image/upload/v1763029482/Exomind_PIC_Female-Model3_0342_ENUS100_qx29w9.jpg',
+    'https://res.cloudinary.com/de4kw1t2i/image/upload/v1763029481/Exomind_PIC_Female-Model1_0961_ENUS100_zflpcx.jpg',
     alt: 'Advanced TMS therapy chair for depression treatment at KarmaTMS mental health center'
   }];
 
