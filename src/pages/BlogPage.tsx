@@ -108,7 +108,7 @@ const allBlogPosts: BlogPost[] = [
     day: 'numeric'
   }),
   readTime: '17 min read',
-  image: 'https://res.cloudinary.com/de4kw1t2i/image/upload/v1762863798/blog_2_ahwkma.png',
+  image: 'https://www.prtms.com/wp-content/uploads/2023/03/Dr.-Keerthy-Sunder-scaled.jpg',
   featured: false,
   rating: 5
 },
