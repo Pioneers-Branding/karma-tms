@@ -464,16 +464,16 @@ const AffiliationsPage = () => {
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button className="bg-white text-[#572670] hover:bg-gray-100 px-8 py-3 text-lg" asChild>
-                <Link to="/contact">
+                <Link to="/contact" className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 shadow h-9 bg-white text-[#572670] hover:bg-gray-100 px-8 py-3 text-lg">
                   <Users className="mr-2 h-5 w-5" />
-                  Partnership Inquiries
+                  PContact us
                 </Link>
               </Button>
               <Button variant="outline" className="border-white text-white hover:bg-white/10 px-8 py-3 text-lg bg-white text-[#572670]" asChild>
-                <Link to="/contact">
-                  <GraduationCap className="mr-2 h-5 w-5" />
-                  Speaking Requests
-                </Link>
+                
+
+
+
               </Button>
             </div>
           </motion.div>
