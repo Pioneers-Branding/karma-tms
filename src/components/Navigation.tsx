@@ -23,8 +23,8 @@ import {
   Heart,
   Shield,
   MapPin,
-  Sparkles
-} from 'lucide-react';
+  Sparkles } from
+'lucide-react';
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -44,48 +44,48 @@ const Navigation = () => {
 
   // Reorganized Link Arrays
   const aboutLinks = [
-    { name: 'About Karma TMS', href: '/about', icon: User },
-    { name: 'Our Team', href: '/team', icon: UserCheck }
-  ];
+  { name: 'About Karma TMS', href: '/about', icon: User },
+  { name: 'Our Team', href: '/team', icon: UserCheck }];
+
 
   const servicesLinks = [
-    { name: 'TMS Therapy', href: '/tms-therapy', icon: Brain },
-    { name: 'PrTMS', href: '/prtms', icon: Stethoscope },
-    { name: 'Brain Mapping', href: '/brain-mapping', icon: Brain },
-    { name: 'Medication Management', href: '/medication-management', icon: Shield }
-  ];
+  { name: 'TMS Therapy', href: '/tms-therapy', icon: Brain },
+  { name: 'PrTMS', href: '/prtms', icon: Stethoscope },
+  { name: 'Brain Mapping', href: '/brain-mapping', icon: Brain },
+  { name: 'Medication Management', href: '/medication-management', icon: Shield }];
+
 
   const wellnessLinks = [
-    { name: 'Exomind at KarmaTMS', href: '/resources/exomind-karmatms', icon: Sparkles }
-  ];
+  { name: 'Exomind at KarmaTMS', href: '/resources/exomind-karmatms', icon: Sparkles }];
+
 
   const conditionsLinks = [
-    { name: 'Depression', href: '/conditions/depression', icon: Heart },
-    { name: 'Anxiety Disorders', href: '/conditions/anxiety', icon: Shield },
-    { name: 'OCD', href: '/conditions/ocd', icon: Brain },
-    { name: 'PTSD', href: '/conditions/ptsd', icon: Heart },
-    { name: 'Bipolar Depression', href: '/conditions/bipolar', icon: Brain },
-    { name: 'Addiction Recovery', href: '/conditions/addiction', icon: Heart },
-    { name: "Women's Mood", href: '/conditions/womens-mood', icon: Heart }
-  ];
+  { name: 'Depression', href: '/conditions/depression', icon: Heart },
+  { name: 'Anxiety Disorders', href: '/conditions/anxiety', icon: Shield },
+  { name: 'OCD', href: '/conditions/ocd', icon: Brain },
+  { name: 'PTSD', href: '/conditions/ptsd', icon: Heart },
+  { name: 'Bipolar Depression', href: '/conditions/bipolar', icon: Brain },
+  { name: 'Addiction Recovery', href: '/conditions/addiction', icon: Heart },
+  { name: "Women's Mood", href: '/conditions/womens-mood', icon: Heart }];
+
 
   const locationsLinks = [
-    { name: 'Palm Springs', href: '/palm-springs', icon: MapPin },
-    { name: 'Twenty-Nine Palms', href: '/29-palms', icon: MapPin },
-    { name: 'Rancho Mirage', href: '/rancho-mirage', icon: MapPin }
-  ];
+  { name: 'Palm Springs', href: '/palm-springs', icon: MapPin },
+  { name: 'Twenty-Nine Palms', href: '/29-palms', icon: MapPin },
+  { name: 'Rancho Mirage', href: '/rancho-mirage', icon: MapPin }];
+
 
   const resourcesLinks = [
-    { name: 'Testimonials', href: '/testimonials', icon: Users },
-    { name: 'Research', href: '/research', icon: BookOpen },
-    { name: 'Blog', href: '/blog', icon: FileText },
-    { name: 'FAQs', href: '/faqs', icon: HelpCircle },
-    { name: 'Take Quiz', href: '/quiz', icon: Award }
-  ];
+  { name: 'Testimonials', href: '/testimonials', icon: Users },
+  { name: 'Research', href: '/research', icon: BookOpen },
+  { name: 'Blog', href: '/blog', icon: FileText },
+  { name: 'FAQs', href: '/faqs', icon: HelpCircle },
+  { name: 'Take Quiz', href: '/quiz', icon: Award }];
+
 
   // Helper component for desktop dropdowns to keep JSX clean
-  const NavDropdown = ({ label, links }) => (
-    <DropdownMenu>
+  const NavDropdown = ({ label, links }) =>
+  <DropdownMenu>
       <DropdownMenuTrigger asChild>
         <Button variant="ghost" className="text-white hover:text-white/80 hover:bg-white/10 flex items-center gap-1 transition-colors text-xs xl:text-sm px-2 xl:px-3">
           {label} <ChevronDown className="h-4 w-4" />
@@ -93,25 +93,25 @@ const Navigation = () => {
       </DropdownMenuTrigger>
       <DropdownMenuContent className="w-56 p-2 bg-white/95 backdrop-blur-md border-gray-200/50 shadow-xl">
         {links.map((link) => {
-          const IconComponent = link.icon;
-          return (
-            <Link key={link.href} to={link.href}>
+        const IconComponent = link.icon;
+        return (
+          <Link key={link.href} to={link.href}>
               <DropdownMenuItem className="cursor-pointer p-3 rounded-md hover:bg-[#572670]/10 transition-all duration-200 group">
                 <IconComponent className="h-4 w-4 mr-3 text-[#572670] group-hover:scale-110 transition-transform" />
                 <span className="font-medium">{link.name}</span>
               </DropdownMenuItem>
-            </Link>
-          );
-        })}
+            </Link>);
+
+      })}
       </DropdownMenuContent>
-    </DropdownMenu>
-  );
+    </DropdownMenu>;
+
 
   return (
     <header className={`sticky top-0 z-50 transition-all duration-300 ${
-      scrolled ?
-        'bg-[#572670]/95 backdrop-blur-sm shadow-lg border-b border-white/20' :
-        'bg-[#572670]/90 backdrop-blur-xs shadow-sm border-b border-white/10'}`
+    scrolled ?
+    'bg-[#572670]/95 backdrop-blur-sm shadow-lg border-b border-white/20' :
+    'bg-[#572670]/90 backdrop-blur-xs shadow-sm border-b border-white/10'}`
     }>
       <div className="w-full max-w-full overflow-hidden">
         <div className="max-w-[1600px] mx-auto px-2 sm:px-3 md:px-4 lg:px-6">
@@ -213,14 +213,14 @@ const Navigation = () => {
                     <div className="space-y-3">
                       <h3 className="font-semibold text-[#572670] text-sm uppercase tracking-wide">About Us</h3>
                       <div className="space-y-1">
-                        {aboutLinks.map((link) => (
-                          <Link key={link.href} to={link.href} onClick={handleLinkClick}>
+                        {aboutLinks.map((link) =>
+                        <Link key={link.href} to={link.href} onClick={handleLinkClick}>
                             <Button variant="ghost" className="w-full justify-start text-sm py-2.5 pl-4 hover:bg-[#572670]/5">
                               <link.icon className="h-4 w-4 mr-3 text-[#572670]/70" />
                               {link.name}
                             </Button>
                           </Link>
-                        ))}
+                        )}
                       </div>
                     </div>
 
@@ -230,14 +230,14 @@ const Navigation = () => {
                     <div className="space-y-3">
                       <h3 className="font-semibold text-[#572670] text-sm uppercase tracking-wide">Brain TMS</h3>
                       <div className="space-y-1">
-                        {servicesLinks.map((link) => (
-                          <Link key={link.href} to={link.href} onClick={handleLinkClick}>
+                        {servicesLinks.map((link) =>
+                        <Link key={link.href} to={link.href} onClick={handleLinkClick}>
                             <Button variant="ghost" className="w-full justify-start text-sm py-2.5 pl-4 hover:bg-[#572670]/5">
                               <link.icon className="h-4 w-4 mr-3 text-[#572670]/70" />
                               {link.name}
                             </Button>
                           </Link>
-                        ))}
+                        )}
                       </div>
                     </div>
 
@@ -247,14 +247,14 @@ const Navigation = () => {
                     <div className="space-y-3">
                       <h3 className="font-semibold text-[#572670] text-sm uppercase tracking-wide">Wellness TMS</h3>
                       <div className="space-y-1">
-                        {wellnessLinks.map((link) => (
-                          <Link key={link.href} to={link.href} onClick={handleLinkClick}>
+                        {wellnessLinks.map((link) =>
+                        <Link key={link.href} to={link.href} onClick={handleLinkClick}>
                             <Button variant="ghost" className="w-full justify-start text-sm py-2.5 pl-4 hover:bg-[#572670]/5">
                               <link.icon className="h-4 w-4 mr-3 text-[#572670]/70" />
                               {link.name}
                             </Button>
                           </Link>
-                        ))}
+                        )}
                       </div>
                     </div>
 
@@ -264,14 +264,14 @@ const Navigation = () => {
                     <div className="space-y-3">
                       <h3 className="font-semibold text-[#572670] text-sm uppercase tracking-wide">Conditions</h3>
                       <div className="space-y-1">
-                        {conditionsLinks.map((link) => (
-                          <Link key={link.href} to={link.href} onClick={handleLinkClick}>
+                        {conditionsLinks.map((link) =>
+                        <Link key={link.href} to={link.href} onClick={handleLinkClick}>
                             <Button variant="ghost" className="w-full justify-start text-sm py-2.5 pl-4 hover:bg-[#572670]/5">
                               <link.icon className="h-4 w-4 mr-3 text-[#572670]/70" />
                               {link.name}
                             </Button>
                           </Link>
-                        ))}
+                        )}
                       </div>
                     </div>
 
@@ -281,14 +281,14 @@ const Navigation = () => {
                     <div className="space-y-3">
                       <h3 className="font-semibold text-[#572670] text-sm uppercase tracking-wide">Locations</h3>
                       <div className="space-y-1">
-                        {locationsLinks.map((link) => (
-                          <Link key={link.href} to={link.href} onClick={handleLinkClick}>
+                        {locationsLinks.map((link) =>
+                        <Link key={link.href} to={link.href} onClick={handleLinkClick}>
                             <Button variant="ghost" className="w-full justify-start text-sm py-2.5 pl-4 hover:bg-[#572670]/5">
                               <link.icon className="h-4 w-4 mr-3 text-[#572670]/70" />
                               {link.name}
                             </Button>
                           </Link>
-                        ))}
+                        )}
                       </div>
                     </div>
 
@@ -298,14 +298,14 @@ const Navigation = () => {
                     <div className="space-y-3">
                       <h3 className="font-semibold text-[#572670] text-sm uppercase tracking-wide">Resources</h3>
                       <div className="space-y-1">
-                        {resourcesLinks.map((link) => (
-                          <Link key={link.href} to={link.href} onClick={handleLinkClick}>
+                        {resourcesLinks.map((link) =>
+                        <Link key={link.href} to={link.href} onClick={handleLinkClick}>
                             <Button variant="ghost" className="w-full justify-start text-sm py-2.5 pl-4 hover:bg-[#572670]/5">
                               <link.icon className="h-4 w-4 mr-3 text-[#572670]/70" />
                               {link.name}
                             </Button>
                           </Link>
-                        ))}
+                        )}
                       </div>
                     </div>
 
@@ -322,8 +322,8 @@ const Navigation = () => {
           </div>
         </div>
       </div>
-    </header>
-  );
+    </header>);
+
 };
 
 export default Navigation;

@@ -190,7 +190,7 @@ const FooterSection = () => {
             </div>
 
             <div className="pt-2">
-              <h4 className="text-md font-semibold mb-4 text-gray-200">Our Services</h4>
+              <h4 className="text-md font-semibold mb-4 text-gray-200">Brain TMS</h4>
               <ul className="space-y-2.5">
                 {services.map((link, index) =>
                 <li key={index}>
