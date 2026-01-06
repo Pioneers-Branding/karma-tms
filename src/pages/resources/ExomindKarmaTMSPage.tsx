@@ -299,7 +299,7 @@ const ExomindKarmaTMSPage = () => {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
               <img
-                src="https://res.cloudinary.com/de4kw1t2i/image/upload/v1766992389/IMG_5821_kzep6a.heic"
+                src="https://res.cloudinary.com/de4kw1t2i/image/upload/v1766992546/IMG_5821_cud7cg.jpg"
                 alt="KarmaTMS Rancho Mirage entrance"
                 className="rounded-lg shadow-xl" />
 
