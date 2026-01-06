@@ -286,7 +286,7 @@ const HelpingVeteransPTSDBlogPostPage = () => {
             {/* Introduction */}
             <section ref={(el) => sectionsRef.current['understanding-ptsd'] = el} className="mb-12">
               <img
-                src="https://res.cloudinary.com/de4kw1t2i/image/upload/v1762863799/blog_8_l0irim.png"
+                src="https://res.cloudinary.com/de4kw1t2i/image/upload/v1763033666/4_toy7pb.png"
                 alt="Supporting veterans with PTSD through compassionate care"
                 className="w-full h-64 md:h-96 object-cover rounded-lg mb-6" />
 
