@@ -11,21 +11,21 @@ import {
   BreadcrumbLink,
   BreadcrumbList,
   BreadcrumbPage,
-  BreadcrumbSeparator
-} from '@/components/ui/breadcrumb';
+  BreadcrumbSeparator } from
+'@/components/ui/breadcrumb';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import {
   Accordion,
   AccordionContent,
   AccordionItem,
-  AccordionTrigger
-} from '@/components/ui/accordion';
+  AccordionTrigger } from
+'@/components/ui/accordion';
 import { Calendar, Clock, User, CheckCircle2, ArrowRight } from 'lucide-react';
 
 export default function HowToAvoidStressDuringHolidaysBlogPostPage() {
   const [activeSection, setActiveSection] = useState('');
-  const sectionsRef = useRef<{ [key: string]: HTMLElement | null }>({});
+  const sectionsRef = useRef<{[key: string]: HTMLElement | null;}>({});
 
   const publishDate = '2025-11-22';
   const author = {
@@ -36,56 +36,56 @@ export default function HowToAvoidStressDuringHolidaysBlogPostPage() {
   };
 
   const tocItems = [
-    { id: 'introduction', label: 'Introduction' },
-    { id: 'why-stressful', label: 'Why Holidays Can Be Stressful' },
-    { id: 'tips', label: '7 Tips to Avoid Holiday Stress' },
-    { id: 'conclusion', label: 'Conclusion' },
-    { id: 'faqs', label: 'Frequently Asked Questions' }
-  ];
+  { id: 'introduction', label: 'Introduction' },
+  { id: 'why-stressful', label: 'Why Holidays Can Be Stressful' },
+  { id: 'tips', label: '7 Tips to Avoid Holiday Stress' },
+  { id: 'conclusion', label: 'Conclusion' },
+  { id: 'faqs', label: 'Frequently Asked Questions' }];
+
 
   const faqs = [
-    {
-      question: 'Why do I feel more anxious during the holidays?',
-      answer: 'Holiday anxiety is common and can stem from multiple factors including financial pressures, family obligations, social expectations, changes in routine, and the pressure to create "perfect" experiences. The combination of increased responsibilities, social gatherings, and disrupted sleep patterns can trigger or worsen anxiety symptoms. If you\'re struggling with holiday anxiety, consider reaching out to a mental health professional who can provide personalized strategies and support.'
-    },
-    {
-      question: 'How can I manage family stress during holiday gatherings?',
-      answer: 'Managing family stress requires setting clear boundaries, planning ahead, and having realistic expectations. Communicate your limits in advance, prepare conversation topics or activities, take regular breaks when needed, and remember it\'s okay to leave early if you feel overwhelmed. Consider bringing a supportive friend or partner, and don\'t hesitate to seek professional guidance if family dynamics consistently affect your mental health.'
-    },
-    {
-      question: 'What are some quick stress relief techniques for the holidays?',
-      answer: 'Quick stress relief techniques include deep breathing exercises (4-7-8 breathing), progressive muscle relaxation, taking a short walk, practicing mindfulness meditation for 5-10 minutes, listening to calming music, engaging in physical activity, or calling a supportive friend. Keep these tools readily available during the holiday season and practice them regularly, not just during moments of acute stress.'
-    },
-    {
-      question: 'How do I say no to holiday commitments without feeling guilty?',
-      answer: 'Saying no effectively involves being clear, kind, and firm. Use phrases like "I appreciate the invitation, but I won\'t be able to make it" without over-explaining. Remember that protecting your mental health and energy is not selfish—it\'s necessary. You can offer alternatives if appropriate, such as a shorter visit or celebrating at a different time. Practice saying no in low-stakes situations to build confidence.'
-    },
-    {
-      question: 'When should I seek professional help for holiday stress?',
-      answer: 'Seek professional help if holiday stress significantly interferes with daily functioning, triggers severe anxiety or depression, leads to substance abuse, causes persistent sleep problems, results in physical symptoms like chest pain or chronic headaches, or if you have thoughts of self-harm. At Karma TMS PC in Palm Springs, we offer comprehensive mental health services including therapy and innovative treatments like TMS therapy for those experiencing severe stress, anxiety, or depression.'
-    }
-  ];
+  {
+    question: 'Why do I feel more anxious during the holidays?',
+    answer: 'Holiday anxiety is common and can stem from multiple factors including financial pressures, family obligations, social expectations, changes in routine, and the pressure to create "perfect" experiences. The combination of increased responsibilities, social gatherings, and disrupted sleep patterns can trigger or worsen anxiety symptoms. If you\'re struggling with holiday anxiety, consider reaching out to a mental health professional who can provide personalized strategies and support.'
+  },
+  {
+    question: 'How can I manage family stress during holiday gatherings?',
+    answer: 'Managing family stress requires setting clear boundaries, planning ahead, and having realistic expectations. Communicate your limits in advance, prepare conversation topics or activities, take regular breaks when needed, and remember it\'s okay to leave early if you feel overwhelmed. Consider bringing a supportive friend or partner, and don\'t hesitate to seek professional guidance if family dynamics consistently affect your mental health.'
+  },
+  {
+    question: 'What are some quick stress relief techniques for the holidays?',
+    answer: 'Quick stress relief techniques include deep breathing exercises (4-7-8 breathing), progressive muscle relaxation, taking a short walk, practicing mindfulness meditation for 5-10 minutes, listening to calming music, engaging in physical activity, or calling a supportive friend. Keep these tools readily available during the holiday season and practice them regularly, not just during moments of acute stress.'
+  },
+  {
+    question: 'How do I say no to holiday commitments without feeling guilty?',
+    answer: 'Saying no effectively involves being clear, kind, and firm. Use phrases like "I appreciate the invitation, but I won\'t be able to make it" without over-explaining. Remember that protecting your mental health and energy is not selfish—it\'s necessary. You can offer alternatives if appropriate, such as a shorter visit or celebrating at a different time. Practice saying no in low-stakes situations to build confidence.'
+  },
+  {
+    question: 'When should I seek professional help for holiday stress?',
+    answer: 'Seek professional help if holiday stress significantly interferes with daily functioning, triggers severe anxiety or depression, leads to substance abuse, causes persistent sleep problems, results in physical symptoms like chest pain or chronic headaches, or if you have thoughts of self-harm. At Karma TMS PC in Palm Springs, we offer comprehensive mental health services including therapy and innovative treatments like TMS therapy for those experiencing severe stress, anxiety, or depression.'
+  }];
+
 
   const relatedPosts = [
-    {
-      title: 'What are the 4 A\'s of Stress Management?',
-      excerpt: 'Discover the 4 A\'s of stress management: Avoid, Alter, Adapt, and Accept. Learn practical strategies to reduce stress.',
-      link: '/blog/four-as-stress-management',
-      image: 'https://res.cloudinary.com/de4kw1t2i/image/upload/v1763376733/12_t62v1m.png'
-    },
-    {
-      title: 'Mindfulness Practices for Stress Management',
-      excerpt: 'Discover evidence-based mindfulness practices for stress management and anxiety reduction.',
-      link: '/blog/mindfulness-stress-management',
-      image: 'https://res.cloudinary.com/de4kw1t2i/image/upload/v1763376734/17_dnhevc.png'
-    },
-    {
-      title: 'Managing Anxiety Triggers in Everyday Life',
-      excerpt: 'Learn practical strategies to identify and manage anxiety triggers effectively in your daily routine.',
-      link: '/blog/managing-anxiety-triggers',
-      image: 'https://res.cloudinary.com/de4kw1t2i/image/upload/v1763376737/22_wiizht.png'
-    }
-  ];
+  {
+    title: 'What are the 4 A\'s of Stress Management?',
+    excerpt: 'Discover the 4 A\'s of stress management: Avoid, Alter, Adapt, and Accept. Learn practical strategies to reduce stress.',
+    link: '/blog/four-as-stress-management',
+    image: 'https://res.cloudinary.com/de4kw1t2i/image/upload/v1763376733/12_t62v1m.png'
+  },
+  {
+    title: 'Mindfulness Practices for Stress Management',
+    excerpt: 'Discover evidence-based mindfulness practices for stress management and anxiety reduction.',
+    link: '/blog/mindfulness-stress-management',
+    image: 'https://res.cloudinary.com/de4kw1t2i/image/upload/v1763376734/17_dnhevc.png'
+  },
+  {
+    title: 'Managing Anxiety Triggers in Everyday Life',
+    excerpt: 'Learn practical strategies to identify and manage anxiety triggers effectively in your daily routine.',
+    link: '/blog/managing-anxiety-triggers',
+    image: 'https://res.cloudinary.com/de4kw1t2i/image/upload/v1763376737/22_wiizht.png'
+  }];
+
 
   const structuredData = {
     '@context': 'https://schema.org',
@@ -163,8 +163,8 @@ export default function HowToAvoidStressDuringHolidaysBlogPostPage() {
         title="How to Avoid Stress During the Holidays? 7 Practical Tips | Karma TMS"
         description="Discover practical strategies to manage holiday stress with 7 actionable tips. Learn how to maintain mental wellness during the holiday season in Palm Springs."
         keywords="holiday stress, stress management, holiday anxiety, mental health holidays, stress relief tips, holiday wellness, stress management Palm Springs, holiday mental health, managing holiday stress, holiday self-care"
-        canonicalUrl="https://www.karmatms.com/blogs/how-to-avoid-stress-during-holidays"
-      />
+        canonicalUrl="https://www.karmatms.com/blogs/how-to-avoid-stress-during-holidays" />
+
 
       <StructuredData data={structuredData} />
       
@@ -246,19 +246,19 @@ export default function HowToAvoidStressDuringHolidaysBlogPostPage() {
                 <CardContent className="p-6">
                   <h3 className="font-bold text-lg mb-4 text-[#572670]">Table of Contents</h3>
                   <nav className="space-y-2">
-                    {tocItems.map((item) => (
-                      <button
-                        key={item.id}
-                        onClick={() => scrollToSection(item.id)}
-                        className={`block w-full text-left px-3 py-2 rounded-md text-sm transition-all ${
-                          activeSection === item.id
-                            ? 'bg-[#572670] text-white font-medium'
-                            : 'text-gray-700 hover:bg-[#572670]/10'
-                        }`}
-                      >
+                    {tocItems.map((item) =>
+                    <button
+                      key={item.id}
+                      onClick={() => scrollToSection(item.id)}
+                      className={`block w-full text-left px-3 py-2 rounded-md text-sm transition-all ${
+                      activeSection === item.id ?
+                      'bg-[#572670] text-white font-medium' :
+                      'text-gray-700 hover:bg-[#572670]/10'}`
+                      }>
+
                         {item.label}
                       </button>
-                    ))}
+                    )}
                   </nav>
                   <div className="mt-6 pt-6 border-t">
                     <Button asChild className="w-full bg-[#572670] hover:bg-[#7B3FA0]">
@@ -273,12 +273,12 @@ export default function HowToAvoidStressDuringHolidaysBlogPostPage() {
           {/* Article Content */}
           <article className="lg:col-span-3 prose prose-lg max-w-none">
             {/* Introduction */}
-            <div ref={(el) => (sectionsRef.current['introduction'] = el)} className="mb-12">
+            <div ref={(el) => sectionsRef.current['introduction'] = el} className="mb-12">
               <img
                 src="https://images.unsplash.com/photo-1512389142860-9c449e58a543?w=1200&h=630&fit=crop"
                 alt="Holiday stress and wellness"
-                className="w-full h-96 object-cover rounded-lg mb-6"
-              />
+                className="w-full h-96 object-cover rounded-lg mb-6" />
+
 
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
                 The holiday season should be a time of joy, connection, and celebration. However, for many people, it becomes a source of significant stress and anxiety. Between financial pressures, family obligations, social commitments, and the pressure to create perfect holiday experiences, it's easy to feel overwhelmed.
@@ -292,7 +292,7 @@ export default function HowToAvoidStressDuringHolidaysBlogPostPage() {
             </div>
 
             {/* Why Holidays Can Be Stressful */}
-            <section ref={(el) => (sectionsRef.current['why-stressful'] = el)} className="mb-12">
+            <section ref={(el) => sectionsRef.current['why-stressful'] = el} className="mb-12">
               <h2 className="text-3xl font-bold text-[#572670] mb-6">Why Are the Holidays So Stressful?</h2>
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
                 Understanding the root causes of holiday stress can help you better prepare and respond to these challenges. Here are the most common stressors people experience during the holiday season:
@@ -336,7 +336,7 @@ export default function HowToAvoidStressDuringHolidaysBlogPostPage() {
             </section>
 
             {/* 7 Tips */}
-            <section ref={(el) => (sectionsRef.current['tips'] = el)} className="mb-12">
+            <section ref={(el) => sectionsRef.current['tips'] = el} className="mb-12">
               <h2 className="text-3xl font-bold text-[#572670] mb-6">7 Practical Tips to Avoid Holiday Stress</h2>
               
               {/* Tip 1 */}
@@ -594,7 +594,7 @@ export default function HowToAvoidStressDuringHolidaysBlogPostPage() {
             </section>
 
             {/* Conclusion */}
-            <section ref={(el) => (sectionsRef.current['conclusion'] = el)} className="mb-12">
+            <section ref={(el) => sectionsRef.current['conclusion'] = el} className="mb-12">
               <h2 className="text-3xl font-bold text-[#572670] mb-6">Conclusion</h2>
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
                 The holidays don't have to be a time of overwhelming stress and anxiety. By implementing these seven practical strategies—planning early, setting realistic expectations, budgeting wisely, prioritizing self-care, learning to say no, staying active, and eating in moderation—you can significantly reduce holiday stress and actually enjoy this special time of year.
@@ -615,20 +615,20 @@ export default function HowToAvoidStressDuringHolidaysBlogPostPage() {
               name={author.name}
               role={author.credentials}
               bio={author.bio}
-              image={author.image}
-            />
+              image={author.image} />
+
 
             {/* FAQ Section */}
-            <section ref={(el) => (sectionsRef.current['faqs'] = el)} className="mb-12 mt-12">
+            <section ref={(el) => sectionsRef.current['faqs'] = el} className="mb-12 mt-12">
               <h2 className="text-3xl font-bold text-[#572670] mb-6">Frequently Asked Questions</h2>
               
               <Accordion type="single" collapsible className="w-full space-y-2">
-                {faqs.map((faq, index) => (
-                  <AccordionItem
-                    key={index}
-                    value={`item-${index}`}
-                    className="border border-gray-200 rounded-lg px-4 data-[state=open]:border-[#572670]"
-                  >
+                {faqs.map((faq, index) =>
+                <AccordionItem
+                  key={index}
+                  value={`item-${index}`}
+                  className="border border-gray-200 rounded-lg px-4 data-[state=open]:border-[#572670]">
+
                     <AccordionTrigger className="text-left font-semibold hover:text-[#572670] hover:no-underline">
                       {faq.question}
                     </AccordionTrigger>
@@ -636,7 +636,7 @@ export default function HowToAvoidStressDuringHolidaysBlogPostPage() {
                       {faq.answer}
                     </AccordionContent>
                   </AccordionItem>
-                ))}
+                )}
               </Accordion>
             </section>
 
@@ -673,13 +673,13 @@ export default function HowToAvoidStressDuringHolidaysBlogPostPage() {
             <section className="mb-12">
               <h2 className="text-3xl font-bold text-[#572670] mb-6">Related Articles</h2>
               <div className="grid md:grid-cols-3 gap-6">
-                {relatedPosts.map((post, index) => (
-                  <Card key={index} className="border-[#572670]/20 overflow-hidden hover:shadow-lg transition-shadow">
+                {relatedPosts.map((post, index) =>
+                <Card key={index} className="border-[#572670]/20 overflow-hidden hover:shadow-lg transition-shadow">
                     <img
-                      src={post.image}
-                      alt={post.title}
-                      className="w-full h-48 object-cover"
-                    />
+                    src={post.image}
+                    alt={post.title}
+                    className="w-full h-48 object-cover" />
+
                     <CardContent className="p-6">
                       <h3 className="font-bold text-lg mb-2 hover:text-[#572670] transition-colors">
                         <Link to={post.link}>{post.title}</Link>
@@ -692,7 +692,7 @@ export default function HowToAvoidStressDuringHolidaysBlogPostPage() {
                       </Button>
                     </CardContent>
                   </Card>
-                ))}
+                )}
               </div>
             </section>
           </article>
@@ -700,6 +700,6 @@ export default function HowToAvoidStressDuringHolidaysBlogPostPage() {
       </div>
 
       <FooterSection />
-    </>
-  );
+    </>);
+
 }

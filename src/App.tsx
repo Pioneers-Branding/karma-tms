@@ -72,6 +72,7 @@ import PsychiatristsBoostWellBeingThroughExpertCareForMentalHealth from "./pages
 import TMSTherapyForTreatmentResistantDepression from "./pages/blogs/TMSTherapyForTreatmentResistantDepression";
 import HowDoesADHDTreatmentWorkBlogPostPage from "./pages/blogs/HowDoesADHDTreatmentWorkBlogPostPage";
 import HowToAvoidStressDuringHolidaysBlogPostPage from "./pages/blogs/HowToAvoidStressDuringHolidaysBlogPostPage";
+import DoesTMSTherapyWorkForAnxiety from "./pages/blogs/DoesTMSTherapyWorkForAnxiety";
 import DisclaimerPage from "./pages/DisclaimerPage";
 
 const queryClient = new QueryClient();
@@ -158,6 +159,7 @@ const App = () =>
           <Route path="/blogs/TMSTherapyForTreatmentResistantDepression" element={<TMSTherapyForTreatmentResistantDepression />} />
           <Route path="/blogs/how-does-adhd-treatment-work" element={<HowDoesADHDTreatmentWorkBlogPostPage />} />
           <Route path="/blogs/how-to-avoid-stress-during-holidays" element={<HowToAvoidStressDuringHolidaysBlogPostPage />} />
+          <Route path="/blogs/DoesTMSTherapyWorkForAnxiety" element={<DoesTMSTherapyWorkForAnxiety />} />
           <Route path="/blog" element={<BlogPage />} />
           <Route path="/blog/" element={<BlogPage />} />
           <Route path="/research-and-publications" element={<ResearchPage />} />

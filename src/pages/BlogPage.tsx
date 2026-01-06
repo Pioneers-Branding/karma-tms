@@ -33,6 +33,22 @@ const blogCategories = [
 // Blog posts - Veterans TMS Therapy with fixed images
 const allBlogPosts: BlogPost[] = [
 {
+  id: 33,
+  title: 'Does TMS Therapy Work for Anxiety?',
+  excerpt: 'Discover how TMS therapy effectively treats anxiety disorders. Learn about success rates, benefits, treatment process, and what to expect from TMS for anxiety relief.',
+  category: 'tms-therapy',
+  author: 'Dr. Keerthy Sunder',
+  date: new Date(2025, 10, 28).toLocaleDateString('en-US', {
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric'
+  }),
+  readTime: '14 min read',
+  image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/9705b922-d0fc-4d29-be10-acd507ce308c.webp',
+  featured: false,
+  rating: 5
+},
+{
   id: 32,
   title: 'How to Avoid Stress During the Holidays?',
   excerpt: 'Discover practical strategies to manage holiday stress with 7 actionable tips. Learn how to maintain mental wellness during the holiday season.',
@@ -741,6 +757,7 @@ const BlogPage = () => {
                     1: '/blog/veterans-tms-therapy',
                     31: '/blogs/how-does-adhd-treatment-work',
                     32: '/blogs/how-to-avoid-stress-during-holidays',
+                    33: '/blogs/DoesTMSTherapyWorkForAnxiety',
                     2: '/blog/va-veterans-ptsd-tms-treatment',
                     3: '/blog/va-disability-benefits-depression-anxiety-ptsd',
                     4: '/blog/tms-vs-medication-veterans-depression',
