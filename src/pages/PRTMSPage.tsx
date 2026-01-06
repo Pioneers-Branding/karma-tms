@@ -180,11 +180,12 @@ const PRTMSPage = () => {
               Revolutionary AI-driven repetitive Transcranial Magnetic Stimulation that analyzes your unique brain patterns, treatment history, and symptoms to create a completely personalized treatment protocol with superior outcomes.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Link to="/contact">
               <Button className="bg-gradient-to-r from-[#572670] to-purple-600 hover:from-purple-700 hover:to-blue-700 text-lg px-8 py-4 rounded-full shadow-lg hover:shadow-xl transition-all duration-300">
                 <Phone className="w-5 h-5 mr-2" />
                 Get Personalized Assessment
               </Button>
-              
+            </Link>
 
 
 
