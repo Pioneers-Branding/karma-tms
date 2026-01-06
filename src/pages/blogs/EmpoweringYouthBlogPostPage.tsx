@@ -93,25 +93,26 @@ const EmpoweringYouthBlogPostPage = () => {
   }];
 
 
-  const relatedPosts = [
+const relatedPosts = [
   {
-    title: 'Managing Anxiety Triggers in Everyday Life',
-    excerpt: 'Learn practical strategies to identify and manage anxiety triggers effectively in your daily routine.',
-    link: '/blog/managing-anxiety-triggers',
-    image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/9705b922-d0fc-4d29-be10-acd507ce308c.webp'
+    title: 'TMS for Migraine Relief in Veterans',
+    excerpt: 'Learn how TMS helps veterans with migraines and comorbid conditions like PTSD and depression.',
+    link: '/blogs/tms-migraine-veterans',
+    image: 'https://res.cloudinary.com/de4kw1t2i/image/upload/v1762863799/blog_4_hzwvvb.png'
   },
   {
-    title: 'The Role of Family Dynamics in Mental Health Recovery',
-    excerpt: 'Discover how family relationships and dynamics influence mental health outcomes and recovery processes.',
-    link: '/blog/family-dynamics-mental-health',
-    image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/6cfeb881-529d-42c6-875a-321eac7d440c.webp'
+    title: 'TMS for Anxiety in Veterans',
+    excerpt: 'Discover how TMS helps veterans manage anxiety beyond medication.',
+    link: '/blogs/tms-anxiety-veterans',
+    image: 'https://res.cloudinary.com/de4kw1t2i/image/upload/v1762863798/blog_6_z1bbda.png'
   },
   {
-    title: 'Mindfulness Practices for Stress Management',
-    excerpt: 'Explore evidence-based mindfulness techniques for reducing stress and improving mental wellness.',
-    link: '/blog/mindfulness-stress-management',
-    image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/6cfeb881-529d-42c6-875a-321eac7d440c.webp'
-  }];
+    title: 'Understanding PTSD in Veterans',
+    excerpt: 'Complete guide to PTSD signs, symptoms, and treatment paths including TMS therapy.',
+    link: '/blogs/understanding-ptsd-veterans',
+    image: 'https://res.cloudinary.com/de4kw1t2i/image/upload/v1762863798/blog_2_ahwkma.png'
+  }
+];
 
 
   const articleSchema = {
