@@ -55,30 +55,30 @@ const HeroSection = () => {
           {/* Heading with Locations */}
           <div className="space-y-4 lg:space-y-6">
             <div className="flex flex-row gap-2">
-              <a 
-                href="https://maps.app.goo.gl/GMpLXnCToXK9c5Kk6" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="flex flex-row bg-blue-magenta text-white p-2 px-4 rounded-3xl w-fit items-center hover:scale-105 hover:shadow-lg transition-all duration-300 cursor-pointer"
-              >
+              <a
+                      href="https://maps.app.goo.gl/GMpLXnCToXK9c5Kk6"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex flex-row bg-blue-magenta text-white p-2 px-4 rounded-3xl w-fit items-center hover:scale-105 hover:shadow-lg transition-all duration-300 cursor-pointer">
+
                 <MapPin className="w-5 h-5 text-white mr-2" />
                 Palm Springs, CA
               </a>
-              <a 
-                href="https://maps.app.goo.gl/39Ep5D1cGtLvPAsw7" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="flex flex-row bg-blue-magenta text-white p-2 px-4 rounded-3xl w-fit items-center hover:scale-105 hover:shadow-lg transition-all duration-300 cursor-pointer"
-              >
+              <a
+                      href="https://maps.app.goo.gl/39Ep5D1cGtLvPAsw7"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex flex-row bg-blue-magenta text-white p-2 px-4 rounded-3xl w-fit items-center hover:scale-105 hover:shadow-lg transition-all duration-300 cursor-pointer">
+
                 <MapPin className="w-5 h-5 text-white mr-2" />
                 TwentyNine Palms
               </a>
-              <a 
-                href="https://maps.app.goo.gl/oKxXT5Jyhh8VoE3G9" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="flex flex-row bg-blue-magenta text-white p-2 px-4 rounded-3xl w-fit items-center hover:scale-105 hover:shadow-lg transition-all duration-300 cursor-pointer"
-              >
+              <a
+                      href="https://maps.app.goo.gl/6wyxkwnGZ5g2ua1a7"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex flex-row bg-blue-magenta text-white p-2 px-4 rounded-3xl w-fit items-center hover:scale-105 hover:shadow-lg transition-all duration-300 cursor-pointer">
+
                 <MapPin className="w-5 h-5 text-white mr-2" />
                 Rancho Mirage
               </a>
