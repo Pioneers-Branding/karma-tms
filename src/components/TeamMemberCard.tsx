@@ -61,7 +61,7 @@ const TeamMemberCard: React.FC<TeamMemberCardProps> = ({ member, index }) => {
                        ${isHovered ? 'transform -translate-y-2' : ''} overflow-hidden`}>
         <CardContent className="p-0">
           {/* Profile Image */}
-          <div className="relative h-48 overflow-hidden bg-gradient-to-br from-gray-100 to-gray-200">
+          <div className="relative h-72 overflow-hidden bg-gradient-to-br from-gray-100 to-gray-200">
             <img
               src={member.image}
               alt={member.name}
