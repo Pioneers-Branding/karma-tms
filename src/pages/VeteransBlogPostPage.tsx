@@ -10,35 +10,35 @@ import {
   BreadcrumbLink,
   BreadcrumbList,
   BreadcrumbPage,
-  BreadcrumbSeparator,
-} from '@/components/ui/breadcrumb';
+  BreadcrumbSeparator } from
+'@/components/ui/breadcrumb';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import {
   Accordion,
   AccordionContent,
   AccordionItem,
-  AccordionTrigger,
-} from '@/components/ui/accordion';
+  AccordionTrigger } from
+'@/components/ui/accordion';
 import { Calendar, Clock, User, CheckCircle2, ArrowRight, Phone } from 'lucide-react';
 
 const VeteransBlogPostPage = () => {
   const [activeSection, setActiveSection] = useState('');
-  const sectionsRef = useRef<{ [key: string]: HTMLElement | null }>({});
+  const sectionsRef = useRef<{[key: string]: HTMLElement | null;}>({});
 
   const tocItems = [
-    { id: 'what-is-tms', label: 'What is TMS Therapy?' },
-    { id: 'how-tms-helps', label: 'How TMS Helps Veterans' },
-    { id: 'va-availability', label: 'VA Hospital Availability' },
-    { id: 'success-stories', label: 'Success Stories' },
-    { id: 'treatment-process', label: 'Treatment Process' },
-    { id: 'faqs', label: 'Frequently Asked Questions' },
-  ];
+  { id: 'what-is-tms', label: 'What is TMS Therapy?' },
+  { id: 'how-tms-helps', label: 'How TMS Helps Veterans' },
+  { id: 'va-availability', label: 'VA Hospital Availability' },
+  { id: 'success-stories', label: 'Success Stories' },
+  { id: 'treatment-process', label: 'Treatment Process' },
+  { id: 'faqs', label: 'Frequently Asked Questions' }];
+
 
   useEffect(() => {
     const handleScroll = () => {
       const scrollPosition = window.scrollY + 150;
-      
+
       for (const item of tocItems) {
         const section = sectionsRef.current[item.id];
         if (section) {
@@ -66,52 +66,52 @@ const VeteransBlogPostPage = () => {
   };
 
   const faqs = [
-    {
-      question: 'Does the VA cover TMS therapy for veterans?',
-      answer: 'Many VA hospitals now offer TMS therapy for eligible veterans with treatment-resistant depression and PTSD. Coverage varies by location and individual eligibility. Contact your local VA medical center or Veterans Affairs TMS program to inquire about availability and coverage in your area.',
-    },
-    {
-      question: 'How long does TMS treatment take for veterans with PTSD?',
-      answer: 'A typical TMS treatment course for PTSD and depression lasts 4-6 weeks, with sessions occurring 5 days per week. Each session takes about 20-40 minutes. Many veterans begin noticing improvements within 2-3 weeks of starting treatment.',
-    },
-    {
-      question: 'Is TMS therapy safe for veterans with traumatic brain injury (TBI)?',
-      answer: 'TMS therapy is generally considered safe for veterans with mild to moderate TBI. However, each case must be evaluated individually by a qualified physician. TMS has shown promise in treating both TBI-related symptoms and concurrent mental health conditions common in veterans.',
-    },
-    {
-      question: 'What is the success rate of TMS for veterans with depression?',
-      answer: 'Clinical studies show that 50-60% of veterans with treatment-resistant depression experience significant symptom improvement with TMS therapy, and about one-third achieve complete remission. Success rates are particularly encouraging for veterans who haven\'t responded to traditional antidepressant medications.',
-    },
-    {
-      question: 'Can TMS help with service-related anxiety disorders?',
-      answer: 'Yes, TMS therapy has shown effectiveness in treating various anxiety disorders common among veterans, including generalized anxiety disorder, panic disorder, and anxiety symptoms associated with PTSD. The FDA has approved TMS for anxiety disorders, and research specific to veteran populations continues to show promising results.',
-    },
-    {
-      question: 'Are there any side effects of TMS therapy for veterans?',
-      answer: 'TMS therapy is well-tolerated with minimal side effects. The most common side effect is mild scalp discomfort or headache during or after treatment, which typically subsides within a week. Unlike medications, TMS doesn\'t cause weight gain, sexual dysfunction, or cognitive impairment, making it an attractive option for veterans.',
-    },
-  ];
+  {
+    question: 'Does the VA cover TMS therapy for veterans?',
+    answer: 'Many VA hospitals now offer TMS therapy for eligible veterans with treatment-resistant depression and PTSD. Coverage varies by location and individual eligibility. Contact your local VA medical center or Veterans Affairs TMS program to inquire about availability and coverage in your area.'
+  },
+  {
+    question: 'How long does TMS treatment take for veterans with PTSD?',
+    answer: 'A typical TMS treatment course for PTSD and depression lasts 4-6 weeks, with sessions occurring 5 days per week. Each session takes about 20-40 minutes. Many veterans begin noticing improvements within 2-3 weeks of starting treatment.'
+  },
+  {
+    question: 'Is TMS therapy safe for veterans with traumatic brain injury (TBI)?',
+    answer: 'TMS therapy is generally considered safe for veterans with mild to moderate TBI. However, each case must be evaluated individually by a qualified physician. TMS has shown promise in treating both TBI-related symptoms and concurrent mental health conditions common in veterans.'
+  },
+  {
+    question: 'What is the success rate of TMS for veterans with depression?',
+    answer: 'Clinical studies show that 50-60% of veterans with treatment-resistant depression experience significant symptom improvement with TMS therapy, and about one-third achieve complete remission. Success rates are particularly encouraging for veterans who haven\'t responded to traditional antidepressant medications.'
+  },
+  {
+    question: 'Can TMS help with service-related anxiety disorders?',
+    answer: 'Yes, TMS therapy has shown effectiveness in treating various anxiety disorders common among veterans, including generalized anxiety disorder, panic disorder, and anxiety symptoms associated with PTSD. The FDA has approved TMS for anxiety disorders, and research specific to veteran populations continues to show promising results.'
+  },
+  {
+    question: 'Are there any side effects of TMS therapy for veterans?',
+    answer: 'TMS therapy is well-tolerated with minimal side effects. The most common side effect is mild scalp discomfort or headache during or after treatment, which typically subsides within a week. Unlike medications, TMS doesn\'t cause weight gain, sexual dysfunction, or cognitive impairment, making it an attractive option for veterans.'
+  }];
+
 
   const relatedPosts = [
-    {
-      title: 'Understanding PTSD Treatment Options',
-      excerpt: 'Comprehensive guide to PTSD treatment approaches including therapy, medication, and innovative treatments.',
-      link: '/ptsd',
-      image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/02c362bd-cde2-431d-8820-a07a14939638.webp',
-    },
-    {
-      title: 'Depression Treatment That Works',
-      excerpt: 'Explore effective depression treatment options including TMS therapy, medication, and therapy approaches.',
-      link: '/depression',
-      image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/2ddc8d69-b09a-4f1d-bd47-6d783ceefbd1.webp',
-    },
-    {
-      title: 'TMS Therapy: A Complete Guide',
-      excerpt: 'Everything you need to know about Transcranial Magnetic Stimulation therapy and how it works.',
-      link: '/tms-therapy',
-      image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/76caee2d-5629-4dc1-a3b4-8c5cea23ede6.webp',
-    },
-  ];
+  {
+    title: 'Understanding PTSD Treatment Options',
+    excerpt: 'Comprehensive guide to PTSD treatment approaches including therapy, medication, and innovative treatments.',
+    link: '/ptsd',
+    image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/02c362bd-cde2-431d-8820-a07a14939638.webp'
+  },
+  {
+    title: 'Depression Treatment That Works',
+    excerpt: 'Explore effective depression treatment options including TMS therapy, medication, and therapy approaches.',
+    link: '/depression',
+    image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/2ddc8d69-b09a-4f1d-bd47-6d783ceefbd1.webp'
+  },
+  {
+    title: 'TMS Therapy: A Complete Guide',
+    excerpt: 'Everything you need to know about Transcranial Magnetic Stimulation therapy and how it works.',
+    link: '/tms-therapy',
+    image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/76caee2d-5629-4dc1-a3b4-8c5cea23ede6.webp'
+  }];
+
 
   const articleSchema = {
     '@context': 'https://schema.org',
@@ -125,36 +125,36 @@ const VeteransBlogPostPage = () => {
       jobTitle: 'Medical Director, Board-Certified Psychiatrist',
       affiliation: {
         '@type': 'Organization',
-        name: 'KarmaTMS',
-      },
+        name: 'KarmaTMS'
+      }
     },
     publisher: {
       '@type': 'Organization',
       name: 'KarmaTMS',
       logo: {
         '@type': 'ImageObject',
-        url: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/ebadb369-a58d-421c-b937-24f900be5867.png',
-      },
+        url: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/ebadb369-a58d-421c-b937-24f900be5867.png'
+      }
     },
     datePublished: '2024-01-15',
     dateModified: '2024-01-15',
     mainEntityOfPage: {
       '@type': 'WebPage',
-      '@id': 'https://karmatms.com/blog/veterans-tms-therapy',
-    },
+      '@id': 'https://karmatms.com/blog/veterans-tms-therapy'
+    }
   };
 
   const faqSchema = {
     '@context': 'https://schema.org',
     '@type': 'FAQPage',
-    mainEntity: faqs.map(faq => ({
+    mainEntity: faqs.map((faq) => ({
       '@type': 'Question',
       name: faq.question,
       acceptedAnswer: {
         '@type': 'Answer',
-        text: faq.answer,
-      },
-    })),
+        text: faq.answer
+      }
+    }))
   };
 
   return (
@@ -165,17 +165,17 @@ const VeteransBlogPostPage = () => {
         keywords="tms veterans, tms for veterans, veteran affairs tms, va hospital tms, veterans administration tms, depression treatment for veterans, va anxiety, ptsd treatment veterans, tms therapy veterans"
         canonical="/blog/veterans-tms-therapy"
         ogImage="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/02c362bd-cde2-431d-8820-a07a14939638.webp"
-        ogType="article"
-      />
+        ogType="article" />
+
 
       <StructuredData
         type="breadcrumb"
         breadcrumbs={[
-          { name: 'Home', url: '/' },
-          { name: 'Blog', url: '/blog' },
-          { name: 'TMS Therapy for Veterans', url: '/blog/veterans-tms-therapy' },
-        ]}
-      />
+        { name: 'Home', url: '/' },
+        { name: 'Blog', url: '/blog' },
+        { name: 'TMS Therapy for Veterans', url: '/blog/veterans-tms-therapy' }]
+        } />
+
 
       <script type="application/ld+json">
         {JSON.stringify(articleSchema)}
@@ -262,19 +262,19 @@ const VeteransBlogPostPage = () => {
                 <CardContent className="p-6">
                   <h3 className="font-bold text-lg mb-4 text-[#572670]">Table of Contents</h3>
                   <nav className="space-y-2">
-                    {tocItems.map((item) => (
-                      <button
-                        key={item.id}
-                        onClick={() => scrollToSection(item.id)}
-                        className={`block w-full text-left px-3 py-2 rounded-md text-sm transition-all ${
-                          activeSection === item.id
-                            ? 'bg-[#572670] text-white font-medium'
-                            : 'text-gray-700 hover:bg-[#572670]/10'
-                        }`}
-                      >
+                    {tocItems.map((item) =>
+                    <button
+                      key={item.id}
+                      onClick={() => scrollToSection(item.id)}
+                      className={`block w-full text-left px-3 py-2 rounded-md text-sm transition-all ${
+                      activeSection === item.id ?
+                      'bg-[#572670] text-white font-medium' :
+                      'text-gray-700 hover:bg-[#572670]/10'}`
+                      }>
+
                         {item.label}
                       </button>
-                    ))}
+                    )}
                   </nav>
                   <div className="mt-6 pt-6 border-t">
                     <Button asChild className="w-full bg-[#572670] hover:bg-[#7B3FA0]">
@@ -293,15 +293,15 @@ const VeteransBlogPostPage = () => {
               <img
                 src="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/02c362bd-cde2-431d-8820-a07a14939638.webp"
                 alt="Veteran receiving TMS therapy for PTSD treatment"
-                className="w-full h-64 md:h-96 object-cover rounded-lg mb-6"
-              />
+                className="w-full h-64 md:h-96 object-cover rounded-lg mb-6" />
+
               <p className="text-xl text-gray-700 leading-relaxed">
                 For too long, veterans returning from service have faced limited options when dealing with combat-related PTSD, depression, and anxiety. Traditional treatments don't work for everyone, and many veterans experience debilitating side effects from medications. But there's new hope: <strong>TMS therapy for veterans</strong> is emerging as a game-changing treatment that's helping thousands of service members reclaim their lives.
               </p>
             </div>
 
             {/* Section 1: What is TMS Therapy */}
-            <section ref={(el) => (sectionsRef.current['what-is-tms'] = el)} className="mb-12">
+            <section ref={(el) => sectionsRef.current['what-is-tms'] = el} className="mb-12">
               <h2 className="text-3xl font-bold text-[#572670] mb-6">What is TMS Therapy?</h2>
               <Card className="bg-gradient-to-br from-[#572670]/5 to-transparent border-[#572670]/20 mb-6">
                 <CardContent className="p-6">
@@ -319,8 +319,8 @@ const VeteransBlogPostPage = () => {
               <img
                 src="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/76caee2d-5629-4dc1-a3b4-8c5cea23ede6.webp"
                 alt="TMS therapy equipment and treatment process"
-                className="w-full h-64 object-cover rounded-lg mb-6"
-              />
+                className="w-full h-64 object-cover rounded-lg mb-6" />
+
 
               <div className="grid md:grid-cols-2 gap-4 my-6">
                 <Card className="border-[#572670]/20">
@@ -355,7 +355,7 @@ const VeteransBlogPostPage = () => {
             </section>
 
             {/* Section 2: How TMS Helps Veterans */}
-            <section ref={(el) => (sectionsRef.current['how-tms-helps'] = el)} className="mb-12">
+            <section ref={(el) => sectionsRef.current['how-tms-helps'] = el} className="mb-12">
               <h2 className="text-3xl font-bold text-[#572670] mb-6">How TMS Helps Veterans with PTSD, Depression & Anxiety</h2>
               
               <p className="mb-6">
@@ -392,8 +392,8 @@ const VeteransBlogPostPage = () => {
               <img
                 src="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/2ddc8d69-b09a-4f1d-bd47-6d783ceefbd1.webp"
                 alt="Depression treatment for veterans using TMS therapy"
-                className="w-full h-64 object-cover rounded-lg mb-6"
-              />
+                className="w-full h-64 object-cover rounded-lg mb-6" />
+
 
               <p className="mb-6">
                 TMS therapy helps veterans by:
@@ -412,7 +412,7 @@ const VeteransBlogPostPage = () => {
             </section>
 
             {/* Section 3: VA Hospital Availability */}
-            <section ref={(el) => (sectionsRef.current['va-availability'] = el)} className="mb-12">
+            <section ref={(el) => sectionsRef.current['va-availability'] = el} className="mb-12">
               <h2 className="text-3xl font-bold text-[#572670] mb-6">VA Hospital TMS Availability</h2>
               
               <p className="mb-6">
@@ -453,7 +453,7 @@ const VeteransBlogPostPage = () => {
             </section>
 
             {/* Section 4: Success Stories */}
-            <section ref={(el) => (sectionsRef.current['success-stories'] = el)} className="mb-12">
+            <section ref={(el) => sectionsRef.current['success-stories'] = el} className="mb-12">
               <h2 className="text-3xl font-bold text-[#572670] mb-6">Success Stories: Veterans Who Found Hope</h2>
               
               <p className="mb-8">
@@ -527,7 +527,7 @@ const VeteransBlogPostPage = () => {
             </section>
 
             {/* Section 5: Treatment Process */}
-            <section ref={(el) => (sectionsRef.current['treatment-process'] = el)} className="mb-12">
+            <section ref={(el) => sectionsRef.current['treatment-process'] = el} className="mb-12">
               <h2 className="text-3xl font-bold text-[#572670] mb-6">The TMS Treatment Process for Veterans</h2>
               
               <p className="mb-6">
@@ -633,8 +633,8 @@ const VeteransBlogPostPage = () => {
                   <img
                     src="https://images.unsplash.com/photo-1748288166888-f1bd5d6ef9ed?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MTg3MTl8MHwxfHNlYXJjaHwxfHxBJTIwcHJvZmVzc2lvbmFsJTIwcG9ydHJhaXQlMjBvZiUyMERyLiUyMEFwb2xsbyUyMFRob21hcyUyQyUyMGElMjBib2FyZC1jZXJ0aWZpZWQlMjBwc3ljaGlhdHJpc3QlMjBhbmQlMjBtZWRpY2FsJTIwZGlyZWN0b3IlMkMlMjBkZXBpY3RlZCUyMGluJTIwYSUyMGZvcm1hbCUyMHNldHRpbmcufGVufDB8fHx8MTc2MjQ5OTYyMXww&ixlib=rb-4.1.0&q=80&w=200$w=800"
                     alt="Dr. Apollo Thomas, Medical Director"
-                    className="w-32 h-32 rounded-full object-cover border-4 border-[#572670]/20"
-                  />
+                    className="w-32 h-32 rounded-full object-cover border-4 border-[#572670]/20" />
+
                   <div className="flex-1">
                     <h3 className="text-2xl font-bold text-[#572670] mb-2">About the Author</h3>
                     <p className="text-xl font-semibold mb-2">Dr. Apollo Thomas, MD</p>
@@ -653,16 +653,16 @@ const VeteransBlogPostPage = () => {
             </Card>
 
             {/* FAQ Section */}
-            <section ref={(el) => (sectionsRef.current['faqs'] = el)} className="mb-12">
+            <section ref={(el) => sectionsRef.current['faqs'] = el} className="mb-12">
               <h2 className="text-3xl font-bold text-[#572670] mb-6">Frequently Asked Questions</h2>
               
               <Accordion type="single" collapsible className="w-full space-y-2">
-                {faqs.map((faq, index) => (
-                  <AccordionItem
-                    key={index}
-                    value={`item-${index}`}
-                    className="border border-gray-200 rounded-lg px-4 data-[state=open]:border-[#572670]"
-                  >
+                {faqs.map((faq, index) =>
+                <AccordionItem
+                  key={index}
+                  value={`item-${index}`}
+                  className="border border-gray-200 rounded-lg px-4 data-[state=open]:border-[#572670]">
+
                     <AccordionTrigger className="text-left font-semibold hover:text-[#572670] hover:no-underline">
                       {faq.question}
                     </AccordionTrigger>
@@ -670,7 +670,7 @@ const VeteransBlogPostPage = () => {
                       {faq.answer}
                     </AccordionContent>
                   </AccordionItem>
-                ))}
+                )}
               </Accordion>
             </section>
 
@@ -701,13 +701,13 @@ const VeteransBlogPostPage = () => {
             <section className="mb-12">
               <h2 className="text-3xl font-bold text-[#572670] mb-6">Related Articles</h2>
               <div className="grid md:grid-cols-3 gap-6">
-                {relatedPosts.map((post, index) => (
-                  <Card key={index} className="border-[#572670]/20 overflow-hidden hover:shadow-lg transition-shadow">
+                {relatedPosts.map((post, index) =>
+                <Card key={index} className="border-[#572670]/20 overflow-hidden hover:shadow-lg transition-shadow">
                     <img
-                      src={post.image}
-                      alt={post.title}
-                      className="w-full h-48 object-cover"
-                    />
+                    src={post.image}
+                    alt={post.title}
+                    className="w-full h-48 object-cover" />
+
                     <CardContent className="p-6">
                       <h3 className="font-bold text-lg mb-2 hover:text-[#572670] transition-colors">
                         <Link to={post.link}>{post.title}</Link>
@@ -720,7 +720,7 @@ const VeteransBlogPostPage = () => {
                       </Button>
                     </CardContent>
                   </Card>
-                ))}
+                )}
               </div>
             </section>
           </article>
@@ -728,8 +728,8 @@ const VeteransBlogPostPage = () => {
       </div>
 
       <FooterSection />
-    </>
-  );
+    </>);
+
 };
 
 export default VeteransBlogPostPage;

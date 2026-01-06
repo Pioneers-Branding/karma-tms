@@ -30,7 +30,7 @@ const blogCategories = [
 { id: 'wellness', label: 'Wellness Tips' }];
 
 
-// Generate exactly 10 unique blog posts
+// Single blog post - Veterans TMS Therapy
 const generateUniqueBlogPosts = (): BlogPost[] => {
   const posts: BlogPost[] = [
   {
@@ -48,143 +48,7 @@ const generateUniqueBlogPosts = (): BlogPost[] => {
     image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/02c362bd-cde2-431d-8820-a07a14939638.webp',
     featured: true,
     rating: 5
-  },
-  {
-    id: 2,
-    title: 'Breaking the Stigma: Mental Health Awareness',
-    excerpt: 'Learn how we can collectively work to break down barriers and create supportive environments for those facing mental health challenges.',
-    category: 'mental-health',
-    author: 'Dr. Apollo Leung',
-    date: new Date(2024, 0, 20).toLocaleDateString('en-US', {
-      year: 'numeric',
-      month: 'long',
-      day: 'numeric'
-    }),
-    readTime: '6 min read',
-    image: 'https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?q=80&w=800&auto=format&fit=crop',
-    rating: 5
-  },
-  {
-    id: 3,
-    title: 'Latest Research in Depression Treatment',
-    excerpt: 'Explore groundbreaking research findings that are shaping the future of depression treatment and improving patient outcomes.',
-    category: 'research',
-    author: 'Dr. Benjamin Eylul',
-    date: new Date(2024, 1, 5).toLocaleDateString('en-US', {
-      year: 'numeric',
-      month: 'long',
-      day: 'numeric'
-    }),
-    readTime: '10 min read',
-    image: 'https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?q=80&w=800&auto=format&fit=crop',
-    rating: 5
-  },
-  {
-    id: 4,
-    title: 'Success Stories: Real Patient Experiences',
-    excerpt: 'Read inspiring stories from patients who have transformed their lives through our comprehensive mental health treatment programs.',
-    category: 'patient-stories',
-    author: 'Lyn Hanshaw',
-    date: new Date(2024, 1, 12).toLocaleDateString('en-US', {
-      year: 'numeric',
-      month: 'long',
-      day: 'numeric'
-    }),
-    readTime: '5 min read',
-    image: 'https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?q=80&w=800&auto=format&fit=crop',
-    rating: 5
-  },
-  {
-    id: 5,
-    title: 'Managing Anxiety in Daily Life',
-    excerpt: 'Practical strategies and evidence-based techniques to help manage anxiety and improve your overall quality of life.',
-    category: 'wellness',
-    author: 'Nicole Zozaya',
-    date: new Date(2024, 1, 18).toLocaleDateString('en-US', {
-      year: 'numeric',
-      month: 'long',
-      day: 'numeric'
-    }),
-    readTime: '7 min read',
-    image: 'https://images.unsplash.com/photo-1506126613408-eca07ce68773?q=80&w=800&auto=format&fit=crop',
-    rating: 4
-  },
-  {
-    id: 6,
-    title: 'The Science Behind TMS Technology',
-    excerpt: 'Dive deep into the neuroscience and technology that makes TMS therapy an effective treatment for various mental health conditions.',
-    category: 'tms-therapy',
-    author: 'Dr. Thomas Lim',
-    date: new Date(2024, 2, 1).toLocaleDateString('en-US', {
-      year: 'numeric',
-      month: 'long',
-      day: 'numeric'
-    }),
-    readTime: '9 min read',
-    image: 'https://images.unsplash.com/photo-1530026405186-ed1f139313f8?q=80&w=800&auto=format&fit=crop',
-    rating: 4
-  },
-  {
-    id: 7,
-    title: 'Holistic Approaches to Mental Wellness',
-    excerpt: 'Discover how combining traditional therapy with lifestyle changes can lead to comprehensive mental health improvement.',
-    category: 'wellness',
-    author: 'Dr. Apollo Leung',
-    date: new Date(2024, 2, 10).toLocaleDateString('en-US', {
-      year: 'numeric',
-      month: 'long',
-      day: 'numeric'
-    }),
-    readTime: '6 min read',
-    image: 'https://images.unsplash.com/photo-1499209974431-9dddcece7f88?q=80&w=800&auto=format&fit=crop',
-    rating: 4
-  },
-  {
-    id: 8,
-    title: 'Seasonal Affective Disorder: Signs and Solutions',
-    excerpt: 'Understanding SAD and how light therapy, TMS, and other interventions can help manage seasonal depression effectively.',
-    category: 'mental-health',
-    author: 'Dr. Benjamin Eylul',
-    date: new Date(2024, 2, 20).toLocaleDateString('en-US', {
-      year: 'numeric',
-      month: 'long',
-      day: 'numeric'
-    }),
-    readTime: '7 min read',
-    image: 'https://images.unsplash.com/photo-1542831371-29b0f74f9713?q=80&w=800&auto=format&fit=crop',
-    rating: 4
-  },
-  {
-    id: 9,
-    title: 'Building Resilience Through Difficult Times',
-    excerpt: 'Learn practical resilience-building strategies that can help you navigate life\'s challenges with greater strength and confidence.',
-    category: 'wellness',
-    author: 'Lyn Hanshaw',
-    date: new Date(2024, 3, 5).toLocaleDateString('en-US', {
-      year: 'numeric',
-      month: 'long',
-      day: 'numeric'
-    }),
-    readTime: '8 min read',
-    image: 'https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?q=80&w=800&auto=format&fit=crop',
-    rating: 4
-  },
-  {
-    id: 10,
-    title: 'The Role of Family Support in Recovery',
-    excerpt: 'Explore how family involvement and support systems play a crucial role in successful mental health treatment and long-term recovery.',
-    category: 'patient-stories',
-    author: 'Nicole Zozaya',
-    date: new Date(2024, 3, 15).toLocaleDateString('en-US', {
-      year: 'numeric',
-      month: 'long',
-      day: 'numeric'
-    }),
-    readTime: '6 min read',
-    image: 'https://images.unsplash.com/photo-1511632765486-a01980e01a18?q=80&w=800&auto=format&fit=crop',
-    rating: 4
   }];
-
 
   return posts;
 };
@@ -323,8 +187,10 @@ const BlogPage = () => {
                     </div>
                   </div>
                   
-                  <Button variant="secondary" className="w-fit bg-white text-blue-600 hover:bg-blue-50">
-                    Read Full Article <ArrowRight className="ml-2 h-4 w-4" />
+                  <Button asChild variant="secondary" className="w-fit bg-white text-blue-600 hover:bg-blue-50">
+                    <a href="/blog/veterans-tms-therapy">
+                      Read Full Article <ArrowRight className="ml-2 h-4 w-4" />
+                    </a>
                   </Button>
                 </div>
                 
@@ -363,7 +229,8 @@ const BlogPage = () => {
                 {/* Posts Grid */}
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
                   {regularPosts.map((post) =>
-                <Card key={post.id} className="group cursor-pointer hover:shadow-lg transition-all duration-300 border-gray-200 hover:border-blue-300">
+                <a key={post.id} href="/blog/veterans-tms-therapy">
+                  <Card className="group cursor-pointer hover:shadow-lg transition-all duration-300 border-gray-200 hover:border-blue-300">
                       <div className="relative overflow-hidden rounded-t-lg">
                         <img
                       src={post.image}
@@ -408,6 +275,7 @@ const BlogPage = () => {
                         </div>
                       </CardContent>
                     </Card>
+                  </a>
                 )}
                 </div>
 
