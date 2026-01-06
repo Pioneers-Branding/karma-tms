@@ -3,29 +3,29 @@ import { ChevronLeft, ChevronRight, Star, Users, Award, TrendingUp, Brain, Shiel
 
 const HeroSection = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
-  
+
   const slides = [
-    {
-      title: "Advanced Deep TMS Technology",
-      image: "/api/placeholder/400/300",
-      alt: "Deep TMS treatment session"
-    },
-    {
-      title: "Comfortable Treatment Environment", 
-      image: "/api/placeholder/400/300",
-      alt: "Modern TMS clinic interior"
-    },
-    {
-      title: "FDA-Approved Treatment",
-      image: "/api/placeholder/400/300", 
-      alt: "TMS device and certification"
-    },
-    {
-      title: "Expert Medical Team",
-      image: "/api/placeholder/400/300",
-      alt: "Professional medical staff"
-    }
-  ];
+  {
+    title: "Advanced Deep TMS Technology",
+    image: "/api/placeholder/400/300",
+    alt: "Deep TMS treatment session"
+  },
+  {
+    title: "Comfortable Treatment Environment",
+    image: "/api/placeholder/400/300",
+    alt: "Modern TMS clinic interior"
+  },
+  {
+    title: "FDA-Approved Treatment",
+    image: "/api/placeholder/400/300",
+    alt: "TMS device and certification"
+  },
+  {
+    title: "Expert Medical Team",
+    image: "/api/placeholder/400/300",
+    alt: "Professional medical staff"
+  }];
+
 
   const nextSlide = () => {
     setCurrentSlide((prev) => (prev + 1) % slides.length);
@@ -36,17 +36,17 @@ const HeroSection = () => {
   };
 
   const conditions = [
-    "Depression (Treatment-Resistant)",
-    "Anxiety Disorders", 
-    "OCD (Obsessive Compulsive Disorder)",
-    "PTSD (Post-Traumatic Stress)",
-    "Bipolar Depression",
-    "Addiction Recovery Support"
-  ];
+  "Depression (Treatment-Resistant)",
+  "Anxiety Disorders",
+  "OCD (Obsessive Compulsive Disorder)",
+  "PTSD (Post-Traumatic Stress)",
+  "Bipolar Depression",
+  "Addiction Recovery Support"];
+
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-violet-50 to-indigo-50 py-4 sm:py-6 lg:py-8 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-7xl mx-auto">
+    <div className=" bg-gradient-to-br from-violet-50 to-indigo-50 py-4 sm:py-6 lg:py-8 px-4 sm:px-6 lg:px-8">
+      <div className="container mx-auto">
         <div className="bg-white rounded-3xl shadow-2xl overflow-hidden">
           <div className="grid lg:grid-cols-2 xl:grid-cols-5 min-h-[800px] lg:min-h-[900px]">
             
@@ -73,11 +73,11 @@ const HeroSection = () => {
                 {/* Image Slider */}
                 <div className="relative bg-white rounded-3xl shadow-xl overflow-hidden group">
                   <div className="relative h-48 sm:h-64 lg:h-72 xl:h-80">
-                    <img 
+                    <img
                       src={slides[currentSlide].image}
                       alt={slides[currentSlide].alt}
-                      className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                    />
+                      className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
+
                     <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent" />
                     <div className="absolute bottom-4 left-4 right-4">
                       <h3 className="text-white font-semibold text-lg lg:text-xl drop-shadow-lg">
@@ -87,32 +87,32 @@ const HeroSection = () => {
                   </div>
                   
                   {/* Slider Controls */}
-                  <button 
+                  <button
                     onClick={prevSlide}
-                    className="absolute left-4 top-1/2 -translate-y-1/2 bg-white/95 hover:bg-white rounded-full p-3 shadow-xl transition-all duration-300 hover:scale-110 hover:shadow-2xl backdrop-blur-sm"
-                  >
+                    className="absolute left-4 top-1/2 -translate-y-1/2 bg-white/95 hover:bg-white rounded-full p-3 shadow-xl transition-all duration-300 hover:scale-110 hover:shadow-2xl backdrop-blur-sm">
+
                     <ChevronLeft className="w-5 h-5 text-indigo-600" />
                   </button>
-                  <button 
+                  <button
                     onClick={nextSlide}
-                    className="absolute right-4 top-1/2 -translate-y-1/2 bg-white/95 hover:bg-white rounded-full p-3 shadow-xl transition-all duration-300 hover:scale-110 hover:shadow-2xl backdrop-blur-sm"
-                  >
+                    className="absolute right-4 top-1/2 -translate-y-1/2 bg-white/95 hover:bg-white rounded-full p-3 shadow-xl transition-all duration-300 hover:scale-110 hover:shadow-2xl backdrop-blur-sm">
+
                     <ChevronRight className="w-5 h-5 text-indigo-600" />
                   </button>
                   
                   {/* Slide Indicators */}
                   <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex space-x-2">
-                    {slides.map((_, index) => (
-                      <button
-                        key={index}
-                        onClick={() => setCurrentSlide(index)}
-                        className={`w-2.5 h-2.5 rounded-full transition-all duration-300 ${
-                          index === currentSlide 
-                            ? 'bg-white scale-125 shadow-lg' 
-                            : 'bg-white/60 hover:bg-white/80'
-                        }`}
-                      />
-                    ))}
+                    {slides.map((_, index) =>
+                    <button
+                      key={index}
+                      onClick={() => setCurrentSlide(index)}
+                      className={`w-2.5 h-2.5 rounded-full transition-all duration-300 ${
+                      index === currentSlide ?
+                      'bg-white scale-125 shadow-lg' :
+                      'bg-white/60 hover:bg-white/80'}`
+                      } />
+
+                    )}
                   </div>
                 </div>
 
@@ -149,29 +149,29 @@ const HeroSection = () => {
                     <input
                       type="text"
                       placeholder="Full Name"
-                      className="w-full px-4 lg:px-5 py-3 lg:py-4 border border-gray-200 rounded-2xl focus:ring-2 focus:ring-violet-500 focus:border-transparent outline-none transition-all duration-300 bg-white/90 backdrop-blur-sm hover:bg-white text-sm lg:text-base"
-                    />
+                      className="w-full px-4 lg:px-5 py-3 lg:py-4 border border-gray-200 rounded-2xl focus:ring-2 focus:ring-violet-500 focus:border-transparent outline-none transition-all duration-300 bg-white/90 backdrop-blur-sm hover:bg-white text-sm lg:text-base" />
+
                   </div>
                   
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <input
                       type="email"
                       placeholder="Email Address"
-                      className="w-full px-4 lg:px-5 py-3 lg:py-4 border border-gray-200 rounded-2xl focus:ring-2 focus:ring-violet-500 focus:border-transparent outline-none transition-all duration-300 bg-white/90 backdrop-blur-sm hover:bg-white text-sm lg:text-base"
-                    />
+                      className="w-full px-4 lg:px-5 py-3 lg:py-4 border border-gray-200 rounded-2xl focus:ring-2 focus:ring-violet-500 focus:border-transparent outline-none transition-all duration-300 bg-white/90 backdrop-blur-sm hover:bg-white text-sm lg:text-base" />
+
                     <input
                       type="tel"
                       placeholder="Phone Number"
-                      className="w-full px-4 lg:px-5 py-3 lg:py-4 border border-gray-200 rounded-2xl focus:ring-2 focus:ring-violet-500 focus:border-transparent outline-none transition-all duration-300 bg-white/90 backdrop-blur-sm hover:bg-white text-sm lg:text-base"
-                    />
+                      className="w-full px-4 lg:px-5 py-3 lg:py-4 border border-gray-200 rounded-2xl focus:ring-2 focus:ring-violet-500 focus:border-transparent outline-none transition-all duration-300 bg-white/90 backdrop-blur-sm hover:bg-white text-sm lg:text-base" />
+
                   </div>
                   
                   <div>
                     <select className="w-full px-4 lg:px-5 py-3 lg:py-4 border border-gray-200 rounded-2xl focus:ring-2 focus:ring-violet-500 focus:border-transparent outline-none transition-all duration-300 bg-white/90 backdrop-blur-sm hover:bg-white text-sm lg:text-base">
                       <option value="">Select Condition</option>
-                      {conditions.map((condition, index) => (
-                        <option key={index} value={condition}>{condition}</option>
-                      ))}
+                      {conditions.map((condition, index) =>
+                      <option key={index} value={condition}>{condition}</option>
+                      )}
                     </select>
                   </div>
                   
@@ -179,8 +179,8 @@ const HeroSection = () => {
                     <textarea
                       placeholder="Tell us about your situation and how we can help..."
                       rows={4}
-                      className="w-full px-4 lg:px-5 py-3 lg:py-4 border border-gray-200 rounded-2xl focus:ring-2 focus:ring-violet-500 focus:border-transparent outline-none transition-all duration-300 resize-none bg-white/90 backdrop-blur-sm hover:bg-white text-sm lg:text-base"
-                    ></textarea>
+                      className="w-full px-4 lg:px-5 py-3 lg:py-4 border border-gray-200 rounded-2xl focus:ring-2 focus:ring-violet-500 focus:border-transparent outline-none transition-all duration-300 resize-none bg-white/90 backdrop-blur-sm hover:bg-white text-sm lg:text-base">
+                    </textarea>
                   </div>
                 </div>
               </div>
@@ -241,8 +241,8 @@ const HeroSection = () => {
           </div>
         </div>
       </div>
-    </div>
-  );
+    </div>);
+
 };
 
 export default HeroSection;
