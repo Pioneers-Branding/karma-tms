@@ -95,23 +95,24 @@ const VeteransBlogPostPage = () => {
 
   const relatedPosts = [
   {
-    title: 'Inside the VA & Veterans\' Mental Health: How TMS Fits Into Modern PTSD Treatment',
-    excerpt: 'Learn about VA mental health programs, PTSD treatment options, and how veterans can access TMS therapy through VA or private providers.',
-    link: '/blog/va-veterans-ptsd-tms-treatment',
-    image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/dd7dd986-540f-4359-99af-39f398491cf0.webp'
+    title: 'TMS for Migraine Relief in Veterans',
+    excerpt: 'Learn how TMS helps veterans with migraines and comorbid conditions like PTSD and depression.',
+    link: '/blogs/tms-migraine-veterans',
+    image: 'https://res.cloudinary.com/de4kw1t2i/image/upload/v1762863799/blog_4_hzwvvb.png'
   },
   {
-    title: 'Understanding PTSD Treatment Options',
-    excerpt: 'Comprehensive guide to PTSD treatment approaches including therapy, medication, and innovative treatments.',
-    link: '/ptsd',
-    image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/02c362bd-cde2-431d-8820-a07a14939638.webp'
+    title: 'TMS for Anxiety in Veterans',
+    excerpt: 'Discover how TMS helps veterans manage anxiety beyond medication.',
+    link: '/blogs/tms-anxiety-veterans',
+    image: 'https://res.cloudinary.com/de4kw1t2i/image/upload/v1762863798/blog_6_z1bbda.png'
   },
   {
-    title: 'TMS Therapy: A Complete Guide',
-    excerpt: 'Everything you need to know about Transcranial Magnetic Stimulation therapy and how it works.',
-    link: '/tms-therapy',
-    image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/76caee2d-5629-4dc1-a3b4-8c5cea23ede6.webp'
-  }];
+    title: 'Understanding PTSD in Veterans',
+    excerpt: 'Complete guide to PTSD signs, symptoms, and treatment paths including TMS therapy.',
+    link: '/blogs/understanding-ptsd-veterans',
+    image: 'https://res.cloudinary.com/de4kw1t2i/image/upload/v1762863798/blog_2_ahwkma.png'
+  }
+];
 
 
   const articleSchema = {
