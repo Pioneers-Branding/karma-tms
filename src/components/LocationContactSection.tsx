@@ -35,7 +35,7 @@ const LocationContactSection = () => {
                 },
                 {
                   label: "Address 2",
-                  lines: ["560 S. Paseo Dorotea, Suite 4A", "Palm Springs, CA 92264"]
+                  lines: ["35400 Bob Hope Dr, Rancho Mirage, CA 92270"]
                 },
                 {
                   label: "Address 3",
