@@ -98,7 +98,7 @@ const EmpoweringYouthBlogPostPage = () => {
     title: 'TMS for Migraine Relief in Veterans',
     excerpt: 'Learn how TMS helps veterans with migraines and comorbid conditions like PTSD and depression.',
     link: '/blogs/tms-migraine-veterans',
-    image: 'https://res.cloudinary.com/de4kw1t2i/image/upload/v1762863799/blog_4_hzwvvb.png'
+    image: 'https://res.cloudinary.com/de4kw1t2i/image/upload/v1763033673/7_lnxkrv.png'
   },
   {
     title: 'TMS for Anxiety in Veterans',
