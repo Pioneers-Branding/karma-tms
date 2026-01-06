@@ -43,7 +43,7 @@ const BipolarPage = () => {
               <img
                 src="https://res.cloudinary.com/de4kw1t2i/image/upload/v1761742435/IMG_5128_fci7xz.jpg"
                 alt="Bipolar disorder brain activity"
-                className="rounded-lg shadow-2xl w-full h-full max-h-[400px] object-cover" />
+                className="rounded-lg shadow-2xl w-full h-full max-h-[400px] object-cover object-bottom" />
 
             </div>
           </div>
