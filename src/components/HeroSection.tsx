@@ -66,7 +66,7 @@ const HeroSection = () => {
                 </div>
 
                 {/* Image Slider */}
-                <div className="relative bg-white rounded-3xl shadow-xl overflow-hidden group">
+                <div className="relative bg-white rounded-3xl overflow-hidden group">
                   <div className="relative h-48 sm:h-64 lg:h-72 xl:h-80">
                     <img
                       src={slides[currentSlide].image}
@@ -113,10 +113,10 @@ const HeroSection = () => {
 
                 {/* CTA Buttons */}
                 <div className="flex flex-col sm:flex-row gap-4 lg:gap-6">
-                  <button className="flex-1 bg-gradient-to-r from-blue-magenta via-blue-magenta/70 to-blue-magenta text-white font-semibold py-2 lg:py-3 px-4 rounded-full shadow-xl hover:shadow-2xl transform hover:-translate-y-1 transition-all duration-300 text-center text-base lg:text-lg hover:scale-[1.02]">
+                  <button className="flex-1 bg-gradient-to-r from-blue-magenta via-blue-magenta/70 to-blue-magenta text-white font-semibold py-2 lg:py-3 px-4 rounded-full  transform hover:-translate-y-1 transition-all duration-300 text-center text-base lg:text-lg hover:scale-[1.02]">
                     Take Mental Health Quiz
                   </button>
-                  <button className="flex-1 bg-white border-2 border-blue-magenta text-blue-magenta font-semibold py-2 lg:py-3 px-4 rounded-full shadow-xl hover:shadow-2xl transform hover:-translate-y-1 transition-all duration-300 text-center text-base lg:text-lg hover:scale-[1.02] hover:border-blue-magenta/30 hover:text-white hover:bg-blue-magenta/40">
+                  <button className="flex-1 bg-white border-2 border-blue-magenta text-blue-magenta font-semibold py-2 lg:py-3 px-4 rounded-full transform hover:-translate-y-1 transition-all duration-300 text-center text-base lg:text-lg hover:scale-[1.02] hover:border-blue-magenta/30 hover:text-white hover:bg-blue-magenta/40">
                     View Treatments
                   </button>
                 </div>
