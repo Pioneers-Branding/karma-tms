@@ -95,22 +95,22 @@ const TMSMultipleSessionsBlogPostPage = () => {
 
   const relatedPosts = [
   {
-    title: 'TMS Therapy: A Complete Guide',
-    excerpt: 'Everything you need to know about Transcranial Magnetic Stimulation therapy and how it works.',
-    link: '/tms-therapy',
-    image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/76caee2d-5629-4dc1-a3b4-8c5cea23ede6.webp'
+    title: 'TMS for Migraine Relief in Veterans',
+    excerpt: 'Learn how TMS helps veterans with migraines and comorbid conditions like PTSD and depression.',
+    link: '/blogs/tms-migraine-veterans',
+    image: 'https://res.cloudinary.com/de4kw1t2i/image/upload/v1763033673/7_lnxkrv.png'
   },
   {
-    title: 'How TMS Therapy Helps Veterans',
-    excerpt: 'Discover how TMS therapy offers new hope for veterans struggling with PTSD, depression, and anxiety.',
-    link: '/blog/veterans-tms-therapy',
-    image: 'https://res.cloudinary.com/de4kw1t2i/image/upload/v1763036078/0_zutd9g.png'
+    title: 'TMS for Anxiety in Veterans',
+    excerpt: 'Discover how TMS helps veterans manage anxiety beyond medication.',
+    link: '/blogs/tms-anxiety-veterans',
+    image: 'https://res.cloudinary.com/de4kw1t2i/image/upload/v1763033666/6_rrkhgo.png'
   },
   {
-    title: 'Understanding Depression Treatment',
-    excerpt: 'Comprehensive guide to depression treatment options including therapy, medication, and innovative treatments.',
-    link: '/depression',
-    image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/7ace98a6-9efe-4403-aacf-892346fb07a8.webp'
+    title: 'Understanding PTSD in Veterans',
+    excerpt: 'Complete guide to PTSD signs, symptoms, and treatment paths including TMS therapy.',
+    link: '/blogs/understanding-ptsd-veterans',
+    image: 'https://res.cloudinary.com/de4kw1t2i/image/upload/v1763033666/5_kvtlku.png'
   }];
 
 
@@ -291,7 +291,7 @@ const TMSMultipleSessionsBlogPostPage = () => {
               <img
                 src="https://res.cloudinary.com/de4kw1t2i/image/upload/v1763376733/11_itsgyr.png"
                 alt="TMS therapy session showing treatment process"
-                className="w-full h-64 md:h-96 object-cover rounded-lg mb-6" />
+                className="w-full  md:h-96 object-cover rounded-lg mb-6" />
 
               <p className="text-xl text-gray-700 leading-relaxed">
                 One of the most common questions we hear from patients considering <Link to="/tms-therapy" className="text-[#572670] hover:underline font-medium">TMS therapy</Link> is: "Why do I need so many sessions?" It's a fair question, especially when you're investing time and resources into treatment. The answer lies in understanding how the brain changes and heals—a process called <strong>neuroplasticity</strong>.
@@ -430,7 +430,7 @@ const TMSMultipleSessionsBlogPostPage = () => {
               <img
                 src="https://images.unsplash.com/photo-1664902273035-82c35762a0b1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MTg3MTl8MHwxfHNlYXJjaHwxfHxBbiUyMGltYWdlJTIwc2hvd2luZyUyMGElMjBUTVMlMjB0cmVhdG1lbnQlMjBjaGFpciUyMGFuZCUyMGVxdWlwbWVudCUyMHNldHVwLnxlbnwwfHx8fDE3NjMzNjI2OTd8MA&ixlib=rb-4.1.0&q=80&w=200$w=800"
                 alt="TMS treatment chair and equipment"
-                className="w-full h-64 object-cover rounded-lg mb-6" />
+                className="w-full  object-cover rounded-lg mb-6" />
 
             </section>
 
@@ -548,7 +548,7 @@ const TMSMultipleSessionsBlogPostPage = () => {
                     <img
                     src={post.image}
                     alt={post.title}
-                    className="w-full h-48 object-cover" />
+                    className="w-full  object-cover" />
 
                     <CardContent className="p-6">
                       <h3 className="font-bold text-lg mb-2 hover:text-[#572670] transition-colors">
