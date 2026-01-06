@@ -295,7 +295,7 @@ const VeteransBlogPostPage = () => {
               <img
                 src="https://res.cloudinary.com/de4kw1t2i/image/upload/v1763036078/0_zutd9g.png"
                 alt="Veteran receiving TMS therapy for PTSD treatment"
-                className="w-full  md:h-96 object-cover rounded-lg mb-6" />
+                className="w-full   object-cover rounded-lg mb-6" />
 
               <p className="text-xl text-gray-700 leading-relaxed">
                 For too long, veterans returning from service have faced limited options when dealing with combat-related PTSD, depression, and anxiety. Traditional treatments don't work for everyone, and many veterans experience debilitating side effects from medications. But there's new hope: <strong>TMS therapy for veterans</strong> is emerging as a game-changing treatment that's helping thousands of service members reclaim their lives.
