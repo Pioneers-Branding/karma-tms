@@ -130,7 +130,7 @@ const HeroSection = () => {
             </div>
 
             {/* Right Section - Form & Stats */}
-            <div className="xl:col-span-2 bg-gradient-to-br from-indigo-600 via-violet-600 to-purple-700 p-4 sm:p-4 md:p-4 lg:p-6 xl:p-8 flex flex-col">
+            <div className="xl:col-span-2 bg-gradient-to-br from-blue-magenta via-blue-magenta/70 to-blue-magenta p-4 sm:p-4 md:p-4 lg:p-6 xl:p-8 flex flex-col">
               
               {/* Contact Form */}
               <div className="bg-white/95 backdrop-blur-lg rounded-3xl p-4 shadow-2xl flex-grow border border-white/20">
