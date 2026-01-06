@@ -139,8 +139,8 @@ const TMSvsMedicationVeteransBlogPostPage = () => {
         url: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/ebadb369-a58d-421c-b937-24f900be5867.png'
       }
     },
-    datePublished: '2024-10-06',
-    dateModified: '2024-10-06',
+    datePublished: '2025-10-06',
+    dateModified: '2025-10-06',
     mainEntityOfPage: {
       '@type': 'WebPage',
       '@id': 'https://karmatms.com/blog/tms-vs-medication-veterans-depression'
@@ -218,7 +218,7 @@ const TMSvsMedicationVeteransBlogPostPage = () => {
             <div className="flex flex-wrap justify-center gap-4 mb-6 text-sm">
               <span className="flex items-center gap-1 bg-white/10 px-3 py-1 rounded-full backdrop-blur-sm">
                 <Calendar className="w-4 h-4" />
-                October 6, 2024
+                October 6, 2025
               </span>
               <span className="flex items-center gap-1 bg-white/10 px-3 py-1 rounded-full backdrop-blur-sm">
                 <Clock className="w-4 h-4" />
