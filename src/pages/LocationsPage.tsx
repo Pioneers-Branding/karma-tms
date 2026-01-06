@@ -18,7 +18,7 @@ const LocationsPage = () => {
 
     phone: '760-760-5675',
     hours: 'Monday - Friday: 8:00 AM - 6:00 PM',
-    image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/b65c46ad-dd56-4c76-bfc8-9fbe25e9b7af.jpg',
+    image: 'https://images.unsplash.com/photo-1706203644358-9a16606dcff7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MTg3MTl8MHwxfHNlYXJjaHwxfHxBJTIwc2NlbmljJTIwdmlldyUyMG9mJTIwYSUyMGRlc2VydCUyMGxhbmRzY2FwZSUyMHdpdGglMjBtb3VudGFpbnMlMjBpbiUyMHRoZSUyMGJhY2tncm91bmQlMjBhbmQlMjBhJTIwY2xlYXIlMjBibHVlJTIwc2t5LnxlbnwwfHx8fDE3NjM3MjYxNTR8MA&ixlib=rb-4.1.0&q=80&w=200$w=1920',
     description: 'Serving Palm Springs, Desert Hot Springs, Cathedral City, Rancho Mirage, Palm Desert, Indian Wells, La Quinta, and surrounding areas.'
   },
   {
@@ -29,7 +29,7 @@ const LocationsPage = () => {
 
     phone: '760-760-5675',
     hours: 'Monday - Friday: 8:00 AM - 6:00 PM',
-    image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/d85b7133-76b3-47d9-8904-c6b4ffc09e40.jpeg',
+    image: 'https://images.unsplash.com/photo-1706203644358-9a16606dcff7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MTg3MTl8MHwxfHNlYXJjaHwxfHxBJTIwc2NlbmljJTIwdmlldyUyMG9mJTIwYSUyMGRlc2VydCUyMGxhbmRzY2FwZSUyMHdpdGglMjBtb3VudGFpbnMlMjBpbiUyMHRoZSUyMGJhY2tncm91bmQlMjBhbmQlMjBhJTIwY2xlYXIlMjBibHVlJTIwc2t5LnxlbnwwfHx8fDE3NjM3MjYxNTR8MA&ixlib=rb-4.1.0&q=80&w=200$w=1920',
     description: 'Conveniently located near Marine Corps Base Twentynine Palms, serving military families and the High Desert community.'
   }];
 
@@ -41,7 +41,7 @@ const LocationsPage = () => {
         description="Find KarmaTMS locations in Palm Springs, Rancho Mirage, and Twentynine Palms. Multiple TMS therapy centers serving Southern California. Call (760) 760-5675."
         keywords="KarmaTMS locations, TMS therapy Palm Springs, TMS therapy Rancho Mirage, TMS therapy Twentynine Palms, mental health centers California"
         canonical="/locations"
-        ogImage="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/ab4091f6-2a9f-4462-909c-148d587ba88f.jpg" />
+        ogImage="https://images.unsplash.com/photo-1706203644358-9a16606dcff7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MTg3MTl8MHwxfHNlYXJjaHwxfHxBJTIwc2NlbmljJTIwdmlldyUyMG9mJTIwYSUyMGRlc2VydCUyMGxhbmRzY2FwZSUyMHdpdGglMjBtb3VudGFpbnMlMjBpbiUyMHRoZSUyMGJhY2tncm91bmQlMjBhbmQlMjBhJTIwY2xlYXIlMjBibHVlJTIwc2t5LnxlbnwwfHx8fDE3NjM3MjYxNTR8MA&ixlib=rb-4.1.0&q=80&w=200$w=1920" />
 
       <StructuredData
         type="localBusiness"
@@ -73,7 +73,7 @@ const LocationsPage = () => {
       {/* Hero Section */}
       <div className="relative bg-gradient-to-br from-blue-900 via-blue-800 to-teal-700 text-white py-20">
         <div className="absolute inset-0 opacity-10">
-          <div className="absolute inset-0 bg-[url('https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/ab4091f6-2a9f-4462-909c-148d587ba88f.jpg')] bg-cover bg-center" />
+          <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1706203644358-9a16606dcff7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MTg3MTl8MHwxfHNlYXJjaHwxfHxBJTIwc2NlbmljJTIwdmlldyUyMG9mJTIwYSUyMGRlc2VydCUyMGxhbmRzY2FwZSUyMHdpdGglMjBtb3VudGFpbnMlMjBpbiUyMHRoZSUyMGJhY2tncm91bmQlMjBhbmQlMjBhJTIwY2xlYXIlMjBibHVlJTIwc2t5LnxlbnwwfHx8fDE3NjM3MjYxNTR8MA&ixlib=rb-4.1.0&q=80&w=200$w=1920')] bg-cover bg-center" />
         </div>
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-3xl">

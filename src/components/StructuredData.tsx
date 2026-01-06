@@ -31,7 +31,7 @@ const StructuredData = ({
     "description": "Leading TMS therapy center providing advanced depression treatment, anxiety therapy, and mental health services in Palm Springs and Southern California.",
     "url": "https://karmatms.com",
     "logo": "https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/ebadb369-a58d-421c-b937-24f900be5867.png",
-    "image": "https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/d85b7133-76b3-47d9-8904-c6b4ffc09e40.jpeg",
+    "image": "https://images.unsplash.com/photo-1661007022307-ca570f3564d7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MTg3MTl8MHwxfHNlYXJjaHwxfHxBJTIwc2VyZW5lJTIwaW1hZ2UlMjBkZXBpY3RpbmclMjBhJTIwdHJhbnF1aWwlMjBuYXR1cmFsJTIwbGFuZHNjYXBlJTIwd2l0aCUyMGElMjBmb2N1cyUyMG9uJTIwbWVudGFsJTIwaGVhbHRoJTIwYW5kJTIwd2VsbG5lc3MlMjB0aGVtZXMufGVufDB8fHx8MTc2MzcyNjE1NXww&ixlib=rb-4.1.0&q=80&w=200$w=1920",
     "telephone": "+1-760-760-5675",
     "email": "contact@karmatms.com",
     "priceRange": "$$",
@@ -150,7 +150,7 @@ const StructuredData = ({
     "@context": "https://schema.org",
     "@type": "MedicalClinic",
     "name": `KarmaTMS - ${location.name}`,
-    "image": "https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/d85b7133-76b3-47d9-8904-c6b4ffc09e40.jpeg",
+    "image": "https://images.unsplash.com/photo-1661007022307-ca570f3564d7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MTg3MTl8MHwxfHNlYXJjaHwxfHxBJTIwc2VyZW5lJTIwaW1hZ2UlMjBkZXBpY3RpbmclMjBhJTIwdHJhbnF1aWwlMjBuYXR1cmFsJTIwbGFuZHNjYXBlJTIwd2l0aCUyMGElMjBmb2N1cyUyMG9uJTIwbWVudGFsJTIwaGVhbHRoJTIwYW5kJTIwd2VsbG5lc3MlMjB0aGVtZXMufGVufDB8fHx8MTc2MzcyNjE1NXww&ixlib=rb-4.1.0&q=80&w=200$w=1920",
     "telephone": location.telephone,
     "address": {
       "@type": "PostalAddress",

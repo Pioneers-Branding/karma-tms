@@ -39,6 +39,7 @@ import ConditionsPage from "./pages/ConditionsPage";
 import LocationsPage from "./pages/LocationsPage";
 import PalmSpringsPage from "./pages/PalmSpringsPage";
 import TwentyNinePalmsPage from "./pages/TwentyNinePalmsPage";
+import RanchoMiragePage from "./pages/RanchoMiragePage";
 import VeteransPage from "./pages/VeteransPage";
 import VeteransBlogPostPage from "./pages/blogs/VeteransBlogPostPage";
 import VAVeteransPTSDTMSBlogPostPage from "./pages/blogs/VAVeteransPTSDTMSBlogPostPage";
@@ -162,6 +163,11 @@ const App = () =>
           <Route path="/privacy-policy/" element={<PrivacyPage />} />
           {/* Keep old route for backwards compatibility */}
           <Route path="/privacy" element={<PrivacyPage />} />
+          
+          {/* Location Routes */}
+          <Route path="/palm-springs" element={<PalmSpringsPage />} />
+          <Route path="/29-palms" element={<TwentyNinePalmsPage />} />
+          <Route path="/rancho-mirage" element={<RanchoMiragePage />} />
           
           {/* Veterans & Disclaimer Routes */}
           <Route path="/veterans" element={<VeteransPage />} />

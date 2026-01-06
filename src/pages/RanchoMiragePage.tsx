@@ -6,60 +6,60 @@ import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
-import { MapPin, Phone, Clock, Mail, Navigation as NavIcon, Building2, CheckCircle, Star, Award, Shield } from 'lucide-react';
+import { MapPin, Phone, Clock, Mail, Navigation as NavIcon, Building2, CheckCircle, Star, Award, Shield, Heart } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
-const TwentyNinePalmsPage = () => {
+const RanchoMiragePage = () => {
   const treatments = [
-  { name: 'TMS Therapy', desc: 'FDA-approved treatment for depression and PTSD' },
-  { name: 'PR-TMS', desc: 'Personalized protocol for military mental health' },
-  { name: 'Brain Mapping', desc: 'qEEG analysis for precise treatment' },
-  { name: 'PTSD Treatment', desc: 'Specialized care for combat trauma' },
-  { name: 'Medication Management', desc: 'Expert psychiatric medication monitoring' },
-  { name: 'Psychiatric Evaluations', desc: 'Comprehensive mental health assessments' }];
+  { name: 'TMS Therapy', desc: 'Advanced treatment for treatment-resistant depression' },
+  { name: 'PR-TMS', desc: 'Personalized protocols based on brain mapping' },
+  { name: 'Brain Mapping (qEEG)', desc: 'Precision diagnostics for optimal outcomes' },
+  { name: 'Neurofeedback', desc: 'Non-invasive brain training therapy' },
+  { name: 'Medication Management', desc: 'Board-certified psychiatric care' },
+  { name: 'Anxiety & OCD Treatment', desc: 'Specialized care for anxiety disorders' }];
 
 
   const faqs = [
   {
-    q: 'Do you treat veterans and active military at your Twentynine Palms location?',
-    a: 'Absolutely! We proudly serve active duty military and veterans from MCAGCC Twentynine Palms. We accept Tricare and VA benefits, and our team has specialized training in treating PTSD, combat-related trauma, and military mental health conditions.'
+    q: 'Where is KarmaTMS Rancho Mirage located?',
+    a: 'We are located at 35400 Bob Hope Dr. Suite 206-B in Rancho Mirage, CA 92270. Our office is easily accessible from Palm Desert, Indian Wells, La Quinta, and throughout the Coachella Valley.'
   },
   {
-    q: 'Where is KarmaTMS Twentynine Palms located?',
-    a: 'We are conveniently located at 72724 29 Palms Hwy, Suite 107-B in Twentynine Palms, CA 92277. Our facility is easily accessible from the Marine Corps base and throughout the High Desert region.'
+    q: 'What makes Rancho Mirage location different?',
+    a: 'Our Rancho Mirage office offers the same exceptional care as our Palm Springs location with convenient access for residents of the eastern Coachella Valley. We feature state-of-the-art facilities in a luxurious, comfortable setting.'
   },
   {
-    q: 'How effective is TMS therapy for PTSD?',
-    a: 'TMS therapy has shown significant effectiveness for PTSD treatment, particularly when combined with other therapies. Many veterans experience substantial reduction in PTSD symptoms including intrusive thoughts, hypervigilance, and anxiety.'
+    q: 'Do you accept Medicare and private insurance?',
+    a: 'Yes! We accept Medicare, most major insurance plans including Blue Cross Blue Shield, Aetna, Cigna, United Healthcare, and many others. Our staff will verify your coverage and handle all pre-authorization.'
   },
   {
-    q: 'What insurance do you accept in Twentynine Palms?',
-    a: 'We accept Tricare, VA benefits, Medicare, and most major insurance plans. Our team specializes in working with military insurance and will handle all authorization for you.'
+    q: 'How effective is TMS therapy for depression?',
+    a: 'TMS therapy has an 80%+ success rate for treatment-resistant depression. Many patients experience significant improvement or complete remission of symptoms. Results are long-lasting with proper maintenance.'
   },
   {
-    q: 'How long does TMS treatment take?',
-    a: 'A typical TMS treatment course is 4-6 weeks with sessions 5 days per week. Each session takes about 20-30 minutes, and you can return to duty or normal activities immediately afterward.'
+    q: 'What conditions do you treat at Rancho Mirage?',
+    a: 'We specialize in treating depression, anxiety disorders, OCD, PTSD, bipolar disorder, and other mental health conditions. We also offer medication management and comprehensive psychiatric evaluations.'
   },
   {
-    q: 'Do you serve other communities besides Twentynine Palms?',
-    a: 'Yes! We serve the entire High Desert region including Yucca Valley, Joshua Tree, Desert Hot Springs, and surrounding communities. Many patients also come from Palm Springs and Coachella Valley.'
+    q: 'Is TMS therapy painful?',
+    a: 'No, TMS therapy is non-invasive and well-tolerated. You may feel a tapping sensation during treatment, but most patients find it comfortable. There is no anesthesia or sedation required, and no downtime.'
   }];
 
 
   const benefits = [
-  { icon: Shield, text: 'Veterans Specialized Care' },
-  { icon: Award, text: 'Tricare Accepted' },
-  { icon: Star, text: 'PTSD Expertise' },
-  { icon: CheckCircle, text: 'Military Friendly' }];
+  { icon: Award, text: 'Luxury Facilities' },
+  { icon: Star, text: 'Concierge Care' },
+  { icon: Shield, text: 'Privacy Focused' },
+  { icon: Heart, text: 'Holistic Approach' }];
 
 
   return (
     <div className="min-h-screen">
       <SEO
-        title="KarmaTMS Twentynine Palms | TMS Therapy for Veterans & Military | (760) 760-5675"
-        description="TMS therapy in Twentynine Palms, CA near MCAGCC. Specialized PTSD treatment for veterans and active military. Depression and anxiety care. Tricare accepted."
-        keywords="TMS therapy 29 Palms, Twentynine Palms mental health, PTSD treatment Marines, veterans TMS therapy, Tricare TMS, MCAGCC mental health"
-        canonical="/29-palms"
+        title="KarmaTMS Rancho Mirage | TMS Therapy & Mental Health Clinic | (760) 760-5675"
+        description="Premier TMS therapy in Rancho Mirage, CA. Advanced depression treatment, anxiety therapy, and psychiatric care. Luxury mental health services in Coachella Valley."
+        keywords="TMS therapy Rancho Mirage, depression treatment Rancho Mirage, mental health Rancho Mirage, psychiatrist Rancho Mirage, anxiety treatment Coachella Valley"
+        canonical="/rancho-mirage"
         ogImage="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/b65c46ad-dd56-4c76-bfc8-9fbe25e9b7af.jpg" />
 
 
@@ -67,12 +67,12 @@ const TwentyNinePalmsPage = () => {
         type="localBusiness"
         locations={[
         {
-          name: 'KarmaTMS Twentynine Palms',
+          name: 'KarmaTMS Rancho Mirage',
           address: {
-            streetAddress: '72724 29 Palms Hwy. Suite 107-B',
-            addressLocality: 'Twentynine Palms',
+            streetAddress: '35400 Bob Hope Dr. Suite 206-B',
+            addressLocality: 'Rancho Mirage',
             addressRegion: 'CA',
-            postalCode: '92277'
+            postalCode: '92270'
           },
           telephone: '+1-760-760-5675'
         }]
@@ -84,15 +84,15 @@ const TwentyNinePalmsPage = () => {
       {/* Hero Section */}
       <div className="relative bg-gradient-to-br from-blue-900 via-blue-800 to-teal-700 text-white py-24 lg:py-32">
         <div className="absolute inset-0 opacity-20">
-          <div className="absolute inset-0 bg-[url('https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/b65c46ad-dd56-4c76-bfc8-9fbe25e9b7af.jpg')] bg-cover bg-center" />
+          <div className="absolute inset-0 bg-[url('https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/ab4091f6-2a9f-4462-909c-148d587ba88f.jpg')] bg-cover bg-center" />
         </div>
         <div className="container mx-auto px-4 relative z-10">
-          <Badge className="mb-4 bg-blue-500/20 text-white border-blue-300">Twentynine Palms Location</Badge>
+          <Badge className="mb-4 bg-blue-500/20 text-white border-blue-300">Rancho Mirage Location</Badge>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-            TMS Therapy in Twentynine Palms, CA
+            TMS Therapy in Rancho Mirage, California
           </h1>
           <p className="text-xl lg:text-2xl text-blue-100 max-w-3xl mb-8">
-            Specialized mental health treatment for military families and the High Desert community - PTSD, depression, and anxiety care
+            Luxury mental health care with advanced TMS therapy for depression, anxiety, and treatment-resistant conditions
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <Link to="/contact">
@@ -114,20 +114,20 @@ const TwentyNinePalmsPage = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-12">
-              <h2 className="text-3xl lg:text-4xl font-bold mb-6">Serving the High Desert & Military Community</h2>
+              <h2 className="text-3xl lg:text-4xl font-bold mb-6">Premier Mental Health Care in Rancho Mirage</h2>
               <p className="text-xl text-gray-700 leading-relaxed max-w-4xl mx-auto">
-                KarmaTMS Twentynine Palms is proud to serve active duty military, veterans, and families from Marine Corps Air Ground Combat Center and throughout the Morongo Basin.
+                KarmaTMS Rancho Mirage provides world-class mental health treatment in an exclusive, comfortable setting. Located on Bob Hope Drive, we serve Palm Desert, Indian Wells, La Quinta, and the entire Coachella Valley.
               </p>
             </div>
 
             <div className="grid lg:grid-cols-2 gap-12 items-center mb-12">
               <div>
-                <h3 className="text-2xl font-bold mb-4">Why Military Families Choose KarmaTMS</h3>
+                <h3 className="text-2xl font-bold mb-4">Exceptional Care in a Luxury Setting</h3>
                 <p className="text-lg text-gray-700 mb-4">
-                  Located conveniently on 29 Palms Highway, our facility provides easy access for those stationed at MCAGCC and residents throughout the High Desert. We understand the unique mental health challenges faced by military personnel and their families.
+                  Our Rancho Mirage location combines cutting-edge <Link to="/tms-therapy" className="text-blue-600 hover:underline">TMS therapy technology</Link> with personalized, concierge-level care. We understand that mental health treatment requires privacy, comfort, and expertise.
                 </p>
                 <p className="text-lg text-gray-700 mb-6">
-                  Our team has specialized experience treating <Link to="/conditions/ptsd" className="text-blue-600 hover:underline">PTSD</Link>, combat-related trauma, <Link to="/depression" className="text-blue-600 hover:underline">depression</Link>, and <Link to="/anxiety" className="text-blue-600 hover:underline">anxiety</Link> common among service members. We accept Tricare and work seamlessly with military insurance.
+                  Whether you're dealing with <Link to="/depression" className="text-blue-600 hover:underline">treatment-resistant depression</Link>, <Link to="/anxiety" className="text-blue-600 hover:underline">anxiety disorders</Link>, or other mental health challenges, our experienced team provides compassionate, evidence-based care in a luxurious, discrete environment.
                 </p>
                 <div className="grid grid-cols-2 gap-4">
                   {benefits.map((benefit, idx) =>
@@ -140,8 +140,8 @@ const TwentyNinePalmsPage = () => {
               </div>
               <div className="relative h-96 rounded-xl overflow-hidden shadow-2xl">
                 <img
-                  src="https://images.unsplash.com/photo-1664902265139-934219cee42f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MTg3MTl8MHwxfHNlYXJjaHwxfHxBbiUyMGFkdmFuY2VkJTIwVE1TJTIwdGhlcmFweSUyMGVxdWlwbWVudCUyMHNldHVwJTIwaW4lMjBhJTIwY2xpbmljYWwlMjBlbnZpcm9ubWVudC58ZW58MHx8fHwxNzYzNzI2MTY3fDA&ixlib=rb-4.1.0&q=80&w=200$w=1920"
-                  alt="Advanced TMS therapy equipment at Twentynine Palms facility"
+                  src="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/d85b7133-76b3-47d9-8904-c6b4ffc09e40.jpeg"
+                  alt="Elegant KarmaTMS Rancho Mirage facility entrance"
                   className="w-full h-full object-cover" />
 
               </div>
@@ -155,9 +155,9 @@ const TwentyNinePalmsPage = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-5xl mx-auto">
             <div className="text-center mb-12">
-              <h2 className="text-3xl lg:text-4xl font-bold mb-4">Mental Health Services for Military Families</h2>
+              <h2 className="text-3xl lg:text-4xl font-bold mb-4">Comprehensive Mental Health Services</h2>
               <p className="text-xl text-gray-700">
-                Comprehensive, evidence-based treatments designed for service members
+                Advanced treatments tailored to your individual needs
               </p>
             </div>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -171,15 +171,15 @@ const TwentyNinePalmsPage = () => {
                 </Card>
               )}
             </div>
-            <div className="text-center mt-10 space-y-4">
-              <Link to="/veterans">
+            <div className="text-center mt-10">
+              <Link to="/tms-therapy">
                 <Button size="lg" className="bg-blue-600 hover:bg-blue-700 mr-4">
-                  Veterans Services
+                  Learn About TMS
                 </Button>
               </Link>
-              <Link to="/tms-therapy">
+              <Link to="/team">
                 <Button size="lg" variant="outline">
-                  Learn About TMS
+                  Meet Our Doctors
                 </Button>
               </Link>
             </div>
@@ -191,34 +191,34 @@ const TwentyNinePalmsPage = () => {
       <div className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
-            <h2 className="text-3xl lg:text-4xl font-bold text-center mb-12">Our Twentynine Palms Facility</h2>
+            <h2 className="text-3xl lg:text-4xl font-bold text-center mb-12">Experience Our Rancho Mirage Facility</h2>
             <div className="grid md:grid-cols-3 gap-6">
               <div className="relative h-72 rounded-xl overflow-hidden shadow-lg group">
                 <img
                   src="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/d85b7133-76b3-47d9-8904-c6b4ffc09e40.jpeg"
-                  alt="Professional and welcoming entrance at Twentynine Palms location"
+                  alt="Luxurious reception area at Rancho Mirage mental health clinic"
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" />
 
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
-                <p className="absolute bottom-4 left-4 text-white font-semibold">Facility Entrance</p>
+                <p className="absolute bottom-4 left-4 text-white font-semibold">Elegant Reception</p>
               </div>
               <div className="relative h-72 rounded-xl overflow-hidden shadow-lg group">
                 <img
-                  src="https://images.unsplash.com/photo-1664902265139-934219cee42f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MTg3MTl8MHwxfHNlYXJjaHwxfHxBbiUyMGFkdmFuY2VkJTIwVE1TJTIwdGhlcmFweSUyMGVxdWlwbWVudCUyMHNldHVwJTIwaW4lMjBhJTIwY2xpbmljYWwlMjBlbnZpcm9ubWVudC58ZW58MHx8fHwxNzYzNzI2MTY3fDA&ixlib=rb-4.1.0&q=80&w=200$w=1920"
-                  alt="State-of-the-art TMS treatment chair for veteran care"
+                  src="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/031012db-9570-41de-bb30-96c6fa482330.png"
+                  alt="Premium TMS therapy equipment in Rancho Mirage"
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" />
 
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
-                <p className="absolute bottom-4 left-4 text-white font-semibold">TMS Equipment</p>
+                <p className="absolute bottom-4 left-4 text-white font-semibold">Advanced Technology</p>
               </div>
               <div className="relative h-72 rounded-xl overflow-hidden shadow-lg group">
                 <img
-                  src="https://images.unsplash.com/photo-1758205307891-fa9abee1704a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MTg3MTl8MHwxfHNlYXJjaHwxfHxDb21mb3J0YWJsZSUyMHRyZWF0bWVudCUyMGVudmlyb25tZW50JTIwZm9yJTIwbWlsaXRhcnklMjBwYXRpZW50c3xlbnwwfHx8fDE3NjM3MjYxNjV8MA&ixlib=rb-4.1.0&q=80&w=200$w=1920"
-                  alt="Comfortable treatment environment for military patients"
+                  src="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/e3bc971e-e2ab-4334-ac23-0b9876309934.webp"
+                  alt="Comfortable private treatment room for TMS therapy"
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" />
 
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
-                <p className="absolute bottom-4 left-4 text-white font-semibold">Treatment Room</p>
+                <p className="absolute bottom-4 left-4 text-white font-semibold">Private Treatment</p>
               </div>
             </div>
           </div>
@@ -229,34 +229,34 @@ const TwentyNinePalmsPage = () => {
       <div className="py-20 bg-gradient-to-br from-blue-50 to-teal-50">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl lg:text-4xl font-bold mb-6">Why Twentynine Palms Trusts KarmaTMS</h2>
+            <h2 className="text-3xl lg:text-4xl font-bold mb-6">Why Choose KarmaTMS Rancho Mirage?</h2>
             <div className="grid md:grid-cols-2 gap-8 text-left mt-12">
-              <div className="flex gap-4">
-                <Shield className="w-8 h-8 text-blue-600 flex-shrink-0 mt-1" />
-                <div>
-                  <h3 className="text-xl font-bold mb-2">Military-Focused Care</h3>
-                  <p className="text-gray-700">Our team specializes in treating service members and <Link to="/veterans" className="text-blue-600 hover:underline">understands military culture</Link> and the challenges of active duty life.</p>
-                </div>
-              </div>
               <div className="flex gap-4">
                 <Award className="w-8 h-8 text-blue-600 flex-shrink-0 mt-1" />
                 <div>
-                  <h3 className="text-xl font-bold mb-2">Tricare Experts</h3>
-                  <p className="text-gray-700">We handle all <Link to="/insurance-pricing" className="text-blue-600 hover:underline">Tricare authorization and paperwork</Link> to make your care seamless and stress-free.</p>
+                  <h3 className="text-xl font-bold mb-2">Leading Experts</h3>
+                  <p className="text-gray-700"><Link to="/team" className="text-blue-600 hover:underline">Board-certified psychiatrists</Link> with extensive experience in TMS therapy and treatment-resistant conditions.</p>
                 </div>
               </div>
               <div className="flex gap-4">
                 <Star className="w-8 h-8 text-blue-600 flex-shrink-0 mt-1" />
                 <div>
-                  <h3 className="text-xl font-bold mb-2">PTSD Specialists</h3>
-                  <p className="text-gray-700">Proven success treating combat trauma, PTSD, and deployment-related mental health conditions with TMS therapy.</p>
+                  <h3 className="text-xl font-bold mb-2">Concierge Service</h3>
+                  <p className="text-gray-700">Personalized care with dedicated support staff who manage every aspect of your treatment journey.</p>
                 </div>
               </div>
               <div className="flex gap-4">
-                <CheckCircle className="w-8 h-8 text-blue-600 flex-shrink-0 mt-1" />
+                <Shield className="w-8 h-8 text-blue-600 flex-shrink-0 mt-1" />
                 <div>
-                  <h3 className="text-xl font-bold mb-2">Convenient Location</h3>
-                  <p className="text-gray-700">Easy access from MCAGCC and throughout the High Desert with ample parking and flexible scheduling.</p>
+                  <h3 className="text-xl font-bold mb-2">Privacy & Discretion</h3>
+                  <p className="text-gray-700">Confidential care in a private, luxurious setting designed for your comfort and peace of mind.</p>
+                </div>
+              </div>
+              <div className="flex gap-4">
+                <Heart className="w-8 h-8 text-blue-600 flex-shrink-0 mt-1" />
+                <div>
+                  <h3 className="text-xl font-bold mb-2">Comprehensive Care</h3>
+                  <p className="text-gray-700">Integrated approach combining TMS, <Link to="/medication-management" className="text-blue-600 hover:underline">medication management</Link>, and therapeutic support.</p>
                 </div>
               </div>
             </div>
@@ -267,22 +267,22 @@ const TwentyNinePalmsPage = () => {
       {/* How to Get Here */}
       <div className="py-20 bg-white">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl lg:text-4xl font-bold text-center mb-12">Visit Our Twentynine Palms Location</h2>
+          <h2 className="text-3xl lg:text-4xl font-bold text-center mb-12">Visit Our Rancho Mirage Location</h2>
           
           <div className="max-w-3xl mx-auto">
             <Card className="overflow-hidden shadow-xl mb-8">
               <CardContent className="p-8">
                 <div className="flex items-center gap-2 mb-6">
                   <Building2 className="w-6 h-6 text-blue-600" />
-                  <h3 className="text-2xl font-bold">Twentynine Palms Office</h3>
+                  <h3 className="text-2xl font-bold">Rancho Mirage Office</h3>
                 </div>
                 
                 <div className="space-y-4 mb-6">
                   <div className="flex items-start gap-3">
                     <MapPin className="w-5 h-5 text-blue-600 mt-1 flex-shrink-0" />
                     <div>
-                      <p className="font-medium">72724 29 Palms Hwy. Suite 107-B</p>
-                      <p className="text-gray-600">Twentynine Palms, CA 92277</p>
+                      <p className="font-medium">35400 Bob Hope Dr. Suite 206-B</p>
+                      <p className="text-gray-600">Rancho Mirage, CA 92270</p>
                     </div>
                   </div>
                   
@@ -311,7 +311,7 @@ const TwentyNinePalmsPage = () => {
 
                 <div className="space-y-3">
                   <a
-                    href="https://www.google.com/maps/dir//72724+29+Palms+Hwy.+Suite+107-B,+Twentynine+Palms,+CA+92277"
+                    href="https://www.google.com/maps/dir//35400+Bob+Hope+Dr.+Suite+206-B,+Rancho+Mirage,+CA+92270"
                     target="_blank"
                     rel="noopener noreferrer">
 
@@ -336,14 +336,14 @@ const TwentyNinePalmsPage = () => {
 
             <div className="rounded-lg overflow-hidden shadow-xl mb-8">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1062016.4517834329!2d-116.0506014535588!3d34.38433374709146!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dac7321e9b6815%3A0x62c554cae9215d22!2s72724%2029%20Palms%20Hwy%20%23107%2C%20Twentynine%20Palms%2C%20CA%2092277!5e0!3m2!1sen!2sus!4v1756473308013!5m2!1sen!2sus"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d229186.20144231617!2d-116.58782004243615!3d33.797083618942274!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dafd449b434721%3A0xf3719bcb5804db!2s35400%20Bob%20Hope%20Dr%20STE%20206%2C%20Rancho%20Mirage%2C%20CA%2092270!5e0!3m2!1sen!2sus!4v1756473962862!5m2!1sen!2sus"
                 width="100%"
                 height="400"
                 style={{ border: 0 }}
                 allowFullScreen
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                title="Map of KarmaTMS Twentynine Palms Location" />
+                title="Map of KarmaTMS Rancho Mirage Location" />
 
             </div>
 
@@ -351,10 +351,11 @@ const TwentyNinePalmsPage = () => {
               <CardContent className="p-8">
                 <h3 className="text-xl font-bold mb-4">Driving Directions</h3>
                 <div className="space-y-3 text-gray-700">
-                  <p><strong>From MCAGCC Main Gate:</strong> Head north on Adobe Road to Highway 62, turn right (east), continue to 29 Palms Hwy, we're on the right in Suite 107-B.</p>
-                  <p><strong>From Yucca Valley:</strong> Take Highway 62 east toward Twentynine Palms, location is on 29 Palms Highway just past the main commercial district.</p>
-                  <p><strong>From Palm Springs:</strong> Take I-10 east to Highway 62 north, follow through Yucca Valley to Twentynine Palms.</p>
-                  <p className="text-sm italic mt-4">Ample free parking available • Easy access from base</p>
+                  <p><strong>From Palm Desert:</strong> Head east on Highway 111, turn left on Bob Hope Drive, our office is on the right in Suite 206-B.</p>
+                  <p><strong>From Indian Wells:</strong> Take Highway 111 north to Bob Hope Drive, turn right, location is on the right side.</p>
+                  <p><strong>From La Quinta:</strong> Take Washington Street north to Highway 111, turn right, then left on Bob Hope Drive.</p>
+                  <p><strong>From Palm Springs:</strong> Take Highway 111 southeast through Cathedral City toward Rancho Mirage, turn right on Bob Hope Drive.</p>
+                  <p className="text-sm italic mt-4">Ample covered parking • Easily accessible from all Coachella Valley communities</p>
                 </div>
               </CardContent>
             </Card>
@@ -391,10 +392,9 @@ const TwentyNinePalmsPage = () => {
       {/* Final CTA Section */}
       <div className="py-20 bg-gradient-to-br from-blue-900 via-blue-800 to-teal-700 text-white">
         <div className="container mx-auto px-4 text-center">
-          <Shield className="w-16 h-16 mx-auto mb-6 opacity-80" />
-          <h2 className="text-3xl lg:text-4xl font-bold mb-6">Proud to Serve Those Who Serve</h2>
+          <h2 className="text-3xl lg:text-4xl font-bold mb-6">Begin Your Journey to Better Mental Health</h2>
           <p className="text-xl text-blue-100 mb-10 max-w-2xl mx-auto">
-            If you're a service member, veteran, or military family member struggling with PTSD, depression, or anxiety, we're here to help. Schedule your consultation today.
+            Experience the difference that personalized, luxury mental health care can make. Schedule your consultation at KarmaTMS Rancho Mirage today.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link to="/contact">
@@ -421,4 +421,4 @@ const TwentyNinePalmsPage = () => {
 
 };
 
-export default TwentyNinePalmsPage;
+export default RanchoMiragePage;
