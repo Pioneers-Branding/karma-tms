@@ -33,6 +33,22 @@ const blogCategories = [
 // Blog posts - Veterans TMS Therapy with fixed images
 const allBlogPosts: BlogPost[] = [
 {
+  id: 35,
+  title: 'Can You Get Disability for Depression? Understanding Your Rights, Benefits, and Treatment Options',
+  excerpt: 'Complete guide to disability benefits for depression, covering SSDI and SSI eligibility, application process, documentation requirements, and treatment options including TMS therapy.',
+  category: 'mental-health',
+  author: 'Dr. Keerthy Sunder',
+  date: new Date(2025, 11, 2).toLocaleDateString('en-US', {
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric'
+  }),
+  readTime: '16 min read',
+  image: 'https://res.cloudinary.com/de4kw1t2i/image/upload/v1765015452/37_kghe3l.png',
+  featured: false,
+  rating: 5
+},
+{
   id: 34,
   title: 'Is Depression a Disability? Understanding Rights, Treatment, and Support Options',
   excerpt: 'Comprehensive guide on depression as a disability, including legal rights, workplace accommodations, treatment options like TMS therapy, and support resources.',
@@ -775,6 +791,7 @@ const BlogPage = () => {
                     32: '/blog/how-to-avoid-stress-during-holidays',
                     33: '/blog/does-tms-therapy-work-for-anxiety',
                     34: '/blog/is-depression-a-disability',
+                    35: '/blog/can-you-get-disability-for-depression',
                     2: '/blog/va-veterans-ptsd-tms-treatment',
                     3: '/blog/va-disability-benefits-depression-anxiety-ptsd',
                     4: '/blog/tms-vs-medication-veterans-depression',
