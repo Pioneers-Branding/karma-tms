@@ -110,7 +110,7 @@ const EmpoweringYouthBlogPostPage = () => {
     title: 'Understanding PTSD in Veterans',
     excerpt: 'Complete guide to PTSD signs, symptoms, and treatment paths including TMS therapy.',
     link: '/blogs/understanding-ptsd-veterans',
-    image: 'https://res.cloudinary.com/de4kw1t2i/image/upload/v1762863798/blog_2_ahwkma.png'
+    image: 'https://res.cloudinary.com/de4kw1t2i/image/upload/v1763033666/5_kvtlku.png'
   }];
 
 
