@@ -12,134 +12,134 @@ const ResearchPage = () => {
   const [selectedCategory, setSelectedCategory] = useState('all');
 
   const researchArticles = [
-    {
-      title: 'Efficacy and Safety of Transcranial Magnetic Stimulation in the Treatment of Major Depressive Disorder',
-      authors: 'George, M.S., Lisanby, S.H., Avery, D.',
-      journal: 'American Journal of Psychiatry',
-      year: '2010',
-      impact: 'High Impact',
-      pubmedId: '20123456',
-      category: 'depression',
-      abstract: 'This comprehensive meta-analysis examines the efficacy and safety profile of repetitive transcranial magnetic stimulation (rTMS) in treating major depressive disorder.',
-      link: 'https://pubmed.ncbi.nlm.nih.gov/20123456/'
-    },
-    {
-      title: 'TMS for Treatment-Resistant Depression: Clinical Outcomes and Predictive Factors',
-      authors: 'O\'Reardon, J.P., Solvason, H.B., Janicak, P.G.',
-      journal: 'Biological Psychiatry',
-      year: '2007',
-      impact: 'High Impact',
-      pubmedId: '17234567',
-      category: 'depression',
-      abstract: 'Landmark study demonstrating the effectiveness of TMS in patients who have not responded to traditional antidepressant medications.',
-      link: 'https://pubmed.ncbi.nlm.nih.gov/17234567/'
-    },
-    {
-      title: 'Repetitive TMS for the Treatment of Anxiety Disorders: A Systematic Review',
-      authors: 'Dilkov, D., Hawken, E.R., Kaludiev, E.',
-      journal: 'Journal of Psychiatric Research',
-      year: '2017',
-      impact: 'Medium Impact',
-      pubmedId: '28345678',
-      category: 'anxiety',
-      abstract: 'Systematic review of TMS applications in various anxiety disorders including GAD, panic disorder, and PTSD.',
-      link: 'https://pubmed.ncbi.nlm.nih.gov/28345678/'
-    },
-    {
-      title: 'TMS in Obsessive-Compulsive Disorder: Clinical Efficacy and Neural Mechanisms',
-      authors: 'Berlim, M.T., Neufeld, N.H., Van den Eynde, F.',
-      journal: 'Expert Review of Neurotherapeutics',
-      year: '2013',
-      impact: 'Medium Impact',
-      pubmedId: '23456789',
-      category: 'ocd',
-      abstract: 'Comprehensive review of TMS protocols and outcomes in treating obsessive-compulsive disorder.',
-      link: 'https://pubmed.ncbi.nlm.nih.gov/23456789/'
-    }
-  ];
+  {
+    title: 'Efficacy and Safety of Transcranial Magnetic Stimulation in the Treatment of Major Depressive Disorder',
+    authors: 'George, M.S., Lisanby, S.H., Avery, D.',
+    journal: 'American Journal of Psychiatry',
+    year: '2010',
+    impact: 'High Impact',
+    pubmedId: '20123456',
+    category: 'depression',
+    abstract: 'This comprehensive meta-analysis examines the efficacy and safety profile of repetitive transcranial magnetic stimulation (rTMS) in treating major depressive disorder.',
+    link: 'https://pubmed.ncbi.nlm.nih.gov/20123456/'
+  },
+  {
+    title: 'TMS for Treatment-Resistant Depression: Clinical Outcomes and Predictive Factors',
+    authors: 'O\'Reardon, J.P., Solvason, H.B., Janicak, P.G.',
+    journal: 'Biological Psychiatry',
+    year: '2007',
+    impact: 'High Impact',
+    pubmedId: '17234567',
+    category: 'depression',
+    abstract: 'Landmark study demonstrating the effectiveness of TMS in patients who have not responded to traditional antidepressant medications.',
+    link: 'https://pubmed.ncbi.nlm.nih.gov/17234567/'
+  },
+  {
+    title: 'Repetitive TMS for the Treatment of Anxiety Disorders: A Systematic Review',
+    authors: 'Dilkov, D., Hawken, E.R., Kaludiev, E.',
+    journal: 'Journal of Psychiatric Research',
+    year: '2017',
+    impact: 'Medium Impact',
+    pubmedId: '28345678',
+    category: 'anxiety',
+    abstract: 'Systematic review of TMS applications in various anxiety disorders including GAD, panic disorder, and PTSD.',
+    link: 'https://pubmed.ncbi.nlm.nih.gov/28345678/'
+  },
+  {
+    title: 'TMS in Obsessive-Compulsive Disorder: Clinical Efficacy and Neural Mechanisms',
+    authors: 'Berlim, M.T., Neufeld, N.H., Van den Eynde, F.',
+    journal: 'Expert Review of Neurotherapeutics',
+    year: '2013',
+    impact: 'Medium Impact',
+    pubmedId: '23456789',
+    category: 'ocd',
+    abstract: 'Comprehensive review of TMS protocols and outcomes in treating obsessive-compulsive disorder.',
+    link: 'https://pubmed.ncbi.nlm.nih.gov/23456789/'
+  }];
+
 
   const awards = [
-    {
-      title: 'FDA Clearance for TMS Therapy',
-      organization: 'U.S. Food and Drug Administration',
-      year: '2008',
-      description: 'FDA cleared TMS therapy for treatment-resistant major depressive disorder',
-      icon: Award
-    },
-    {
-      title: 'APA Practice Guidelines Recognition',
-      organization: 'American Psychiatric Association',
-      year: '2010',
-      description: 'TMS included in APA practice guidelines for major depressive disorder',
-      icon: BookOpen
-    },
-    {
-      title: 'CMS Coverage Decision',
-      organization: 'Centers for Medicare & Medicaid Services',
-      year: '2018',
-      description: 'CMS approved coverage for TMS therapy nationwide',
-      icon: Award
-    }
-  ];
+  {
+    title: 'FDA Clearance for TMS Therapy',
+    organization: 'U.S. Food and Drug Administration',
+    year: '2008',
+    description: 'FDA cleared TMS therapy for treatment-resistant major depressive disorder',
+    icon: Award
+  },
+  {
+    title: 'APA Practice Guidelines Recognition',
+    organization: 'American Psychiatric Association',
+    year: '2010',
+    description: 'TMS included in APA practice guidelines for major depressive disorder',
+    icon: BookOpen
+  },
+  {
+    title: 'CMS Coverage Decision',
+    organization: 'Centers for Medicare & Medicaid Services',
+    year: '2018',
+    description: 'CMS approved coverage for TMS therapy nationwide',
+    icon: Award
+  }];
+
 
   const pdfLibrary = [
-    {
-      title: 'TMS Therapy Patient Guide',
-      description: 'Comprehensive guide to understanding TMS treatment',
-      pages: 24,
-      size: '2.3 MB',
-      downloadUrl: '#'
-    },
-    {
-      title: 'Clinical Research Summary 2024',
-      description: 'Latest clinical findings and research updates',
-      pages: 16,
-      size: '1.8 MB',
-      downloadUrl: '#'
-    },
-    {
-      title: 'Insurance Coverage Guide',
-      description: 'Understanding insurance coverage for TMS therapy',
-      pages: 12,
-      size: '1.2 MB',
-      downloadUrl: '#'
-    },
-    {
-      title: 'What to Expect During Treatment',
-      description: 'Step-by-step treatment process overview',
-      pages: 8,
-      size: '0.9 MB',
-      downloadUrl: '#'
-    }
-  ];
+  {
+    title: 'TMS Therapy Patient Guide',
+    description: 'Comprehensive guide to understanding TMS treatment',
+    pages: 24,
+    size: '2.3 MB',
+    downloadUrl: '#'
+  },
+  {
+    title: 'Clinical Research Summary 2024',
+    description: 'Latest clinical findings and research updates',
+    pages: 16,
+    size: '1.8 MB',
+    downloadUrl: '#'
+  },
+  {
+    title: 'Insurance Coverage Guide',
+    description: 'Understanding insurance coverage for TMS therapy',
+    pages: 12,
+    size: '1.2 MB',
+    downloadUrl: '#'
+  },
+  {
+    title: 'What to Expect During Treatment',
+    description: 'Step-by-step treatment process overview',
+    pages: 8,
+    size: '0.9 MB',
+    downloadUrl: '#'
+  }];
+
 
   const pressArticles = [
-    {
-      title: 'Revolutionary TMS Therapy Shows Promise for Depression Treatment',
-      publication: 'Desert Sun',
-      date: '2024-01-15',
-      summary: 'Local Palm Springs clinic leading the way in innovative depression treatment.',
-      link: '#'
-    },
-    {
-      title: 'Breakthrough Mental Health Treatment Available in Coachella Valley',
-      publication: 'CV Independent',
-      date: '2024-02-03',
-      summary: 'Patients find hope with non-invasive TMS therapy at Karma TMS.',
-      link: '#'
-    },
-    {
-      title: 'FDA-Approved TMS Therapy Offers New Hope for Mental Health',
-      publication: 'Palm Springs Life',
-      date: '2024-01-28',
-      summary: 'Comprehensive coverage of TMS therapy benefits and availability.',
-      link: '#'
-    }
-  ];
+  {
+    title: 'Revolutionary TMS Therapy Shows Promise for Depression Treatment',
+    publication: 'Desert Sun',
+    date: '2024-01-15',
+    summary: 'Local Palm Springs clinic leading the way in innovative depression treatment.',
+    link: '#'
+  },
+  {
+    title: 'Breakthrough Mental Health Treatment Available in Coachella Valley',
+    publication: 'CV Independent',
+    date: '2024-02-03',
+    summary: 'Patients find hope with non-invasive TMS therapy at Karma TMS.',
+    link: '#'
+  },
+  {
+    title: 'FDA-Approved TMS Therapy Offers New Hope for Mental Health',
+    publication: 'Palm Springs Life',
+    date: '2024-01-28',
+    summary: 'Comprehensive coverage of TMS therapy benefits and availability.',
+    link: '#'
+  }];
 
-  const filteredArticles = selectedCategory === 'all' ? 
-    researchArticles : 
-    researchArticles.filter(article => article.category === selectedCategory);
+
+  const filteredArticles = selectedCategory === 'all' ?
+  researchArticles :
+  researchArticles.filter((article) => article.category === selectedCategory);
 
   return (
     <div className="min-h-screen bg-white">
@@ -189,8 +189,8 @@ const ResearchPage = () => {
                   height="384"
                   frameBorder="0"
                   className="w-full h-full"
-                  title="PubMed Research Database"
-                />
+                  title="PubMed Research Database" />
+
               </div>
             </CardContent>
           </Card>
@@ -198,26 +198,26 @@ const ResearchPage = () => {
           {/* Research Articles with Filtering */}
           <div className="mb-8">
             <div className="flex flex-wrap gap-2 justify-center">
-              {['all', 'depression', 'anxiety', 'ocd'].map(category => (
-                <Badge
-                  key={category}
-                  variant={selectedCategory === category ? 'default' : 'outline'}
-                  className={`cursor-pointer capitalize ${
-                    selectedCategory === category 
-                      ? 'bg-[#572670] hover:bg-[#572670]/90' 
-                      : 'hover:bg-[#572670]/10'
-                  }`}
-                  onClick={() => setSelectedCategory(category)}
-                >
+              {['all', 'depression', 'anxiety', 'ocd'].map((category) =>
+              <Badge
+                key={category}
+                variant={selectedCategory === category ? 'default' : 'outline'}
+                className={`cursor-pointer capitalize ${
+                selectedCategory === category ?
+                'bg-[#572670] hover:bg-[#572670]/90' :
+                'hover:bg-[#572670]/10'}`
+                }
+                onClick={() => setSelectedCategory(category)}>
+
                   {category === 'all' ? 'All Studies' : category.toUpperCase()}
                 </Badge>
-              ))}
+              )}
             </div>
           </div>
 
           <div className="grid md:grid-cols-2 gap-6">
-            {filteredArticles.map((article, index) => (
-              <Card key={index} className="hover:shadow-lg transition-shadow">
+            {filteredArticles.map((article, index) =>
+            <Card key={index} className="hover:shadow-lg transition-shadow">
                 <CardContent className="p-6">
                   <div className="flex items-start justify-between mb-3">
                     <Badge variant="secondary" className="text-xs">
@@ -244,18 +244,18 @@ const ResearchPage = () => {
                     {article.abstract}
                   </p>
                   
-                  <Button 
-                    variant="outline" 
-                    size="sm" 
-                    className="w-full"
-                    onClick={() => window.open(article.link, '_blank')}
-                  >
+                  <Button
+                  variant="outline"
+                  size="sm"
+                  className="w-full"
+                  onClick={() => window.open(article.link, '_blank')}>
+
                     View on PubMed
                     <ExternalLink className="ml-2 h-4 w-4" />
                   </Button>
                 </CardContent>
               </Card>
-            ))}
+            )}
           </div>
         </div>
       </section>
@@ -273,8 +273,8 @@ const ResearchPage = () => {
           </div>
 
           <div className="grid md:grid-cols-3 gap-6">
-            {awards.map((award, index) => (
-              <Card key={index} className="text-center hover:shadow-lg transition-shadow">
+            {awards.map((award, index) =>
+            <Card key={index} className="text-center hover:shadow-lg transition-shadow">
                 <CardContent className="p-8">
                   <div className="w-16 h-16 bg-[#572670] rounded-full flex items-center justify-center mx-auto mb-4">
                     <award.icon className="h-8 w-8 text-white" />
@@ -293,7 +293,7 @@ const ResearchPage = () => {
                   </p>
                 </CardContent>
               </Card>
-            ))}
+            )}
           </div>
         </div>
       </section>
@@ -311,8 +311,8 @@ const ResearchPage = () => {
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {pdfLibrary.map((pdf, index) => (
-              <Card key={index} className="hover:shadow-lg transition-shadow">
+            {pdfLibrary.map((pdf, index) =>
+            <Card key={index} className="hover:shadow-lg transition-shadow">
                 <CardContent className="p-6 text-center">
                   <div className="w-16 h-16 bg-red-100 rounded-lg flex items-center justify-center mx-auto mb-4">
                     <FileText className="h-8 w-8 text-red-600" />
@@ -327,16 +327,16 @@ const ResearchPage = () => {
                     <span>{pdf.pages} pages</span>
                     <span>{pdf.size}</span>
                   </div>
-                  <Button 
-                    className="w-full bg-[#572670] hover:bg-[#572670]/90"
-                    onClick={() => window.open(pdf.downloadUrl, '_blank')}
-                  >
+                  <Button
+                  className="w-full bg-[#572670] hover:bg-[#572670]/90"
+                  onClick={() => window.open(pdf.downloadUrl, '_blank')}>
+
                     <Download className="mr-2 h-4 w-4" />
                     Download PDF
                   </Button>
                 </CardContent>
               </Card>
-            ))}
+            )}
           </div>
         </div>
       </section>
@@ -354,8 +354,8 @@ const ResearchPage = () => {
           </div>
 
           <div className="max-w-4xl mx-auto space-y-6">
-            {pressArticles.map((article, index) => (
-              <Card key={index} className="hover:shadow-lg transition-shadow">
+            {pressArticles.map((article, index) =>
+            <Card key={index} className="hover:shadow-lg transition-shadow">
                 <CardContent className="p-6">
                   <div className="flex items-start justify-between">
                     <div className="flex-1">
@@ -375,24 +375,24 @@ const ResearchPage = () => {
                         {article.summary}
                       </p>
                     </div>
-                    <Button 
-                      variant="ghost" 
-                      size="sm"
-                      onClick={() => window.open(article.link, '_blank')}
-                    >
+                    <Button
+                    variant="ghost"
+                    size="sm"
+                    onClick={() => window.open(article.link, '_blank')}>
+
                       <ExternalLink className="h-4 w-4" />
                     </Button>
                   </div>
                 </CardContent>
               </Card>
-            ))}
+            )}
           </div>
         </div>
       </section>
 
       <FooterSection />
-    </div>
-  );
+    </div>);
+
 };
 
 export default ResearchPage;

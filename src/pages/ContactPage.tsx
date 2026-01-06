@@ -24,7 +24,7 @@ const ContactPage = () => {
   const { toast } = useToast();
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
-    setFormData(prev => ({
+    setFormData((prev) => ({
       ...prev,
       [e.target.name]: e.target.value
     }));
@@ -38,7 +38,7 @@ const ContactPage = () => {
     setTimeout(() => {
       toast({
         title: "Message Sent Successfully!",
-        description: "We'll get back to you within 24 hours.",
+        description: "We'll get back to you within 24 hours."
       });
       setFormData({
         name: '',
@@ -54,42 +54,42 @@ const ContactPage = () => {
   };
 
   const businessHours = [
-    { day: 'Monday - Friday', hours: '8:00 AM - 6:00 PM' },
-    { day: 'Saturday', hours: '9:00 AM - 2:00 PM' },
-    { day: 'Sunday', hours: 'Closed' },
-    { day: 'Emergency Line', hours: '24/7 Available' }
-  ];
+  { day: 'Monday - Friday', hours: '8:00 AM - 6:00 PM' },
+  { day: 'Saturday', hours: '9:00 AM - 2:00 PM' },
+  { day: 'Sunday', hours: 'Closed' },
+  { day: 'Emergency Line', hours: '24/7 Available' }];
+
 
   const quickActions = [
-    {
-      icon: Phone,
-      title: 'Call Now',
-      subtitle: '(760) 832-4090',
-      action: () => window.location.href = 'tel:+17608324090',
-      color: 'bg-green-600 hover:bg-green-700'
-    },
-    {
-      icon: MessageSquare,
-      title: 'Text Us',
-      subtitle: 'Quick Response',
-      action: () => window.location.href = 'sms:+17608324090',
-      color: 'bg-blue-600 hover:bg-blue-700'
-    },
-    {
-      icon: Calendar,
-      title: 'Book Online',
-      subtitle: 'Schedule Now',
-      action: () => window.open('#', '_blank'),
-      color: 'bg-[#572670] hover:bg-[#572670]/90'
-    },
-    {
-      icon: Mail,
-      title: 'Email Us',
-      subtitle: 'info@karmatms.com',
-      action: () => window.location.href = 'mailto:info@karmatms.com',
-      color: 'bg-purple-600 hover:bg-purple-700'
-    }
-  ];
+  {
+    icon: Phone,
+    title: 'Call Now',
+    subtitle: '(760) 832-4090',
+    action: () => window.location.href = 'tel:+17608324090',
+    color: 'bg-green-600 hover:bg-green-700'
+  },
+  {
+    icon: MessageSquare,
+    title: 'Text Us',
+    subtitle: 'Quick Response',
+    action: () => window.location.href = 'sms:+17608324090',
+    color: 'bg-blue-600 hover:bg-blue-700'
+  },
+  {
+    icon: Calendar,
+    title: 'Book Online',
+    subtitle: 'Schedule Now',
+    action: () => window.open('#', '_blank'),
+    color: 'bg-[#572670] hover:bg-[#572670]/90'
+  },
+  {
+    icon: Mail,
+    title: 'Email Us',
+    subtitle: 'info@karmatms.com',
+    action: () => window.location.href = 'mailto:info@karmatms.com',
+    color: 'bg-purple-600 hover:bg-purple-700'
+  }];
+
 
   return (
     <div className="min-h-screen bg-white">
@@ -115,19 +115,19 @@ const ContactPage = () => {
       <section className="py-8 bg-gray-50 border-b">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-            {quickActions.map((action, index) => (
-              <Button
-                key={index}
-                onClick={action.action}
-                className={`${action.color} text-white p-6 h-auto flex flex-col items-center gap-3 transition-transform hover:scale-105`}
-              >
+            {quickActions.map((action, index) =>
+            <Button
+              key={index}
+              onClick={action.action}
+              className={`${action.color} text-white p-6 h-auto flex flex-col items-center gap-3 transition-transform hover:scale-105`}>
+
                 <action.icon className="h-8 w-8" />
                 <div className="text-center">
                   <div className="font-bold text-sm">{action.title}</div>
                   <div className="text-xs opacity-90">{action.subtitle}</div>
                 </div>
               </Button>
-            ))}
+            )}
           </div>
         </div>
       </section>
@@ -155,8 +155,8 @@ const ContactPage = () => {
                         onChange={handleInputChange}
                         required
                         placeholder="Your full name"
-                        className="mt-1"
-                      />
+                        className="mt-1" />
+
                     </div>
                     <div>
                       <Label htmlFor="email">Email Address *</Label>
@@ -168,8 +168,8 @@ const ContactPage = () => {
                         onChange={handleInputChange}
                         required
                         placeholder="your@email.com"
-                        className="mt-1"
-                      />
+                        className="mt-1" />
+
                     </div>
                   </div>
 
@@ -183,8 +183,8 @@ const ContactPage = () => {
                         value={formData.phone}
                         onChange={handleInputChange}
                         placeholder="(760) 123-4567"
-                        className="mt-1"
-                      />
+                        className="mt-1" />
+
                     </div>
                     <div>
                       <Label htmlFor="subject">Subject *</Label>
@@ -194,8 +194,8 @@ const ContactPage = () => {
                         value={formData.subject}
                         onChange={handleInputChange}
                         required
-                        className="mt-1 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
-                      >
+                        className="mt-1 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50">
+
                         <option value="">Select a subject</option>
                         <option value="consultation">Free Consultation</option>
                         <option value="appointment">Schedule Appointment</option>
@@ -216,8 +216,8 @@ const ContactPage = () => {
                       required
                       placeholder="Please tell us how we can help you..."
                       rows={5}
-                      className="mt-1"
-                    />
+                      className="mt-1" />
+
                   </div>
 
                   <div className="grid md:grid-cols-2 gap-4">
@@ -228,8 +228,8 @@ const ContactPage = () => {
                         name="preferredContact"
                         value={formData.preferredContact}
                         onChange={handleInputChange}
-                        className="mt-1 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
-                      >
+                        className="mt-1 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50">
+
                         <option value="phone">Phone Call</option>
                         <option value="email">Email</option>
                         <option value="text">Text Message</option>
@@ -242,8 +242,8 @@ const ContactPage = () => {
                         name="urgency"
                         value={formData.urgency}
                         onChange={handleInputChange}
-                        className="mt-1 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
-                      >
+                        className="mt-1 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50">
+
                         <option value="normal">Normal</option>
                         <option value="urgent">Urgent</option>
                         <option value="emergency">Emergency</option>
@@ -251,11 +251,11 @@ const ContactPage = () => {
                     </div>
                   </div>
 
-                  <Button 
-                    type="submit" 
+                  <Button
+                    type="submit"
                     disabled={isSubmitting}
-                    className="w-full bg-[#572670] hover:bg-[#572670]/90 text-white py-3"
-                  >
+                    className="w-full bg-[#572670] hover:bg-[#572670]/90 text-white py-3">
+
                     {isSubmitting ? 'Sending...' : 'Send Message'}
                     <Send className="ml-2 h-4 w-4" />
                   </Button>
@@ -290,21 +290,21 @@ const ContactPage = () => {
                     Business Hours
                   </h4>
                   <div className="space-y-2">
-                    {businessHours.map((schedule, index) => (
-                      <div key={index} className="flex justify-between items-center py-1">
+                    {businessHours.map((schedule, index) =>
+                    <div key={index} className="flex justify-between items-center py-1">
                         <span className="text-gray-700">{schedule.day}</span>
                         <span className="font-medium text-[#572670]">{schedule.hours}</span>
                       </div>
-                    ))}
+                    )}
                   </div>
                 </div>
 
                 <div className="pt-4 border-t">
-                  <Button 
-                    variant="outline" 
+                  <Button
+                    variant="outline"
                     className="w-full"
-                    onClick={() => window.open('https://maps.google.com', '_blank')}
-                  >
+                    onClick={() => window.open('https://maps.google.com', '_blank')}>
+
                     Get Directions
                     <ChevronRight className="ml-2 h-4 w-4" />
                   </Button>
@@ -323,16 +323,16 @@ const ContactPage = () => {
                     variant="outline"
                     size="icon"
                     className="rounded-full hover:bg-blue-50 hover:border-blue-300"
-                    onClick={() => window.open('https://facebook.com', '_blank')}
-                  >
+                    onClick={() => window.open('https://facebook.com', '_blank')}>
+
                     <Facebook className="h-5 w-5 text-blue-600" />
                   </Button>
                   <Button
                     variant="outline"
                     size="icon"
                     className="rounded-full hover:bg-pink-50 hover:border-pink-300"
-                    onClick={() => window.open('https://instagram.com', '_blank')}
-                  >
+                    onClick={() => window.open('https://instagram.com', '_blank')}>
+
                     <Instagram className="h-5 w-5 text-pink-600" />
                   </Button>
                 </div>
@@ -342,35 +342,6 @@ const ContactPage = () => {
               </CardContent>
             </Card>
 
-            {/* Emergency Contact */}
-            <Card className="shadow-lg border-red-200">
-              <CardContent className="p-6 bg-red-50">
-                <div className="text-center">
-                  <h3 className="font-bold text-lg text-red-800 mb-2">
-                    Mental Health Emergency?
-                  </h3>
-                  <p className="text-red-700 mb-4">
-                    If you're experiencing a mental health emergency, please reach out for immediate help.
-                  </p>
-                  <div className="space-y-2">
-                    <Button 
-                      variant="destructive"
-                      className="w-full"
-                      onClick={() => window.location.href = 'tel:988'}
-                    >
-                      Call 988 - Suicide & Crisis Lifeline
-                    </Button>
-                    <Button 
-                      variant="outline"
-                      className="w-full border-red-300 text-red-700 hover:bg-red-50"
-                      onClick={() => window.location.href = 'tel:911'}
-                    >
-                      Call 911 - Emergency Services
-                    </Button>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
           </div>
         </div>
       </div>
@@ -393,16 +364,16 @@ const ContactPage = () => {
                 allowFullScreen
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                title="Karma TMS Location Map"
-              />
+                title="Karma TMS Location Map" />
+
             </div>
           </Card>
         </div>
       </section>
 
       <FooterSection />
-    </div>
-  );
+    </div>);
+
 };
 
 export default ContactPage;
