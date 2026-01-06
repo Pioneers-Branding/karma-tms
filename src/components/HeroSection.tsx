@@ -21,9 +21,9 @@ const HeroSection = () => {
     alt: "Palm Springs"
   },
   {
-    title: "Expert Medical Team",
-    image: "/api/placeholder/400/300",
-    alt: "Professional medical staff"
+    title: "Advanced TMS Setup",
+    image: "https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/031012db-9570-41de-bb30-96c6fa482330.png",
+    alt: "TMS-Chair"
   }];
 
 
