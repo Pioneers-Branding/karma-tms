@@ -30,8 +30,12 @@ const TeamPage: React.FC = () => {
       <Navigation />
       
       {/* Hero Section */}
-      <section className="pt-24 pb-16">
-        <div className="container mx-auto px-4">
+      <section
+        className="pt-24 pb-16 bg-cover bg-center bg-no-repeat relative"
+        style={{ backgroundImage: "url('https://res.cloudinary.com/de4kw1t2i/image/upload/v1765537416/-7261_itcxch.png')" }}>
+
+        <div className="absolute inset-0 bg-gradient-to-br from-white/90 to-purple-50/90"></div>
+        <div className="container mx-auto px-4 relative z-10">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -50,6 +54,29 @@ const TeamPage: React.FC = () => {
               Our board-certified physicians and mental health professionals bring decades of combined 
               experience in TMS therapy, psychiatry, and innovative mental health treatments.
             </p>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* Our Team Image Section */}
+      <section className="py-16 bg-white">
+        <div className="container mx-auto px-4">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8 }}
+            className="text-center">
+            <h2 className="text-3xl lg:text-5xl font-bold text-gray-900 mb-8">
+              Our Team
+            </h2>
+            <div className="max-w-5xl mx-auto rounded-2xl overflow-hidden shadow-xl">
+              <img
+                src="https://res.cloudinary.com/de4kw1t2i/image/upload/v1765537415/-7333_i1ejb8.png"
+                alt="Our Team"
+                className="w-full h-auto object-cover" />
+
+            </div>
           </motion.div>
         </div>
       </section>
