@@ -93,13 +93,24 @@ const ManagingAnxietyTriggersBlogPostPage = () => {
   }];
 
 
-  const relatedPosts = [
-
+ const relatedPosts = [
   {
-    title: 'Stress Management: The Four A\'s Approach',
-    excerpt: 'Learn practical strategies for managing stress in our digital age.',
-    link: '/blog/four-as-stress-management',
-    image: 'https://res.cloudinary.com/de4kw1t2i/image/upload/v1763376733/12_t62v1m.png'
+    title: 'TMS for Migraine Relief in Veterans',
+    excerpt: 'Learn how TMS helps veterans with migraines and comorbid conditions like PTSD and depression.',
+    link: '/blogs/tms-migraine-veterans',
+    image: 'https://res.cloudinary.com/de4kw1t2i/image/upload/v1763033673/7_lnxkrv.png'
+  },
+  {
+    title: 'TMS for Anxiety in Veterans',
+    excerpt: 'Discover how TMS helps veterans manage anxiety beyond medication.',
+    link: '/blogs/tms-anxiety-veterans',
+    image: 'https://res.cloudinary.com/de4kw1t2i/image/upload/v1763033666/6_rrkhgo.png'
+  },
+  {
+    title: 'Understanding PTSD in Veterans',
+    excerpt: 'Complete guide to PTSD signs, symptoms, and treatment paths including TMS therapy.',
+    link: '/blogs/understanding-ptsd-veterans',
+    image: 'https://res.cloudinary.com/de4kw1t2i/image/upload/v1763033666/5_kvtlku.png'
   }];
 
 
