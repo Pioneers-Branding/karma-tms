@@ -439,11 +439,12 @@ const RuralMentalHealthcareBlogPostPage = () => {
             </section>
 
             {/* Author Box */}
-            <AuthorBox
-              name="KarmaTMS"
-              role="Mental Health Treatment Center"
-              bio="KarmaTMS is dedicated to providing accessible, innovative mental health treatments including TMS therapy to communities throughout Southern California. We believe everyone deserves access to quality mental healthcare, regardless of location."
-              image="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/ebadb369-a58d-421c-b937-24f900be5867.png" />
+              <AuthorBox
+              name="Dr. Keerthy Sunder"
+              role="Board-Certified Psychiatrist | Medical Director at KarmaTMS"
+              bio="Dr. Keerthy Sunder is a board-certified psychiatrist specializing in TMS therapy for veterans and treatment-resistant mental health conditions. With extensive experience in neuroscience and innovative treatment modalities, Dr. Sunder is dedicated to helping veterans overcome PTSD, depression, and anxiety through evidence-based, compassionate care."
+              image="https://www.prtms.com/wp-content/uploads/2023/03/Dr.-Keerthy-Sunder-scaled.jpg" />
+
 
 
             {/* FAQ Section */}
