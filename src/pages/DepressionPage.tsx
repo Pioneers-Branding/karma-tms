@@ -35,7 +35,7 @@ const DepressionPage = () => {
             <div>
               <Badge className="bg-white/20 text-white mb-4">Depression Treatment</Badge>
               <h1 className="text-4xl lg:text-5xl font-bold mb-6">
-                KarmaTMS Therapy for Depression Treatment
+                Therapy for Depression Treatment in KarmaTMS
               </h1>
               <p className="text-xl text-white/90 mb-8">
                 FDA-approved, non-invasive treatment that offers new hope for those with treatment-resistant depression.
