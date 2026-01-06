@@ -123,7 +123,7 @@ const ExomindKarmaTMSPage = () => {
             </div>
             <div className="relative">
               <img
-                src="https://images.unsplash.com/photo-1631563020941-c0c6bc534b8e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MTg3MTl8MHwxfHNlYXJjaHwxfHxBbiUyMGltYWdlJTIwc2hvd2Nhc2luZyUyMEV4b21pbmQlMjBUTVMlMjB0ZWNobm9sb2d5JTIwaW4lMjBhY3Rpb24ufGVufDB8fHx8MTc2Njc0OTMzOXww&ixlib=rb-4.1.0&q=80&w=200$w=800"
+                src="https://res.cloudinary.com/de4kw1t2i/image/upload/v1763031147/Exomind_PIC_Unit_0943_ENUS100_ocbm6q.jpg"
                 alt="Exomind TMS technology in action"
                 className="rounded-lg shadow-lg" />
 
