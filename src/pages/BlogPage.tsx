@@ -32,15 +32,15 @@ const blogCategories = [
 
 // Nine blog thumbnail images from static resources
 const BLOG_THUMBNAILS = [
-  'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/f00dd3f4-cea1-4918-8fec-5976198e195f.webp', // viteren-intro
-  'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/dd7dd986-540f-4359-99af-39f398491cf0.webp', // viteran-tms
-  'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/7ace98a6-9efe-4403-aacf-892346fb07a8.webp', // viterna-dipression
-  'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/2ddc8d69-b09a-4f1d-bd47-6d783ceefbd1.webp', // dipresseion-treatment
-  'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/d3a1f368-2c44-4046-8568-532988b95c6d.webp', // karm-tms
-  'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/460c9673-d421-40be-a576-8470fafd54e6.webp', // what-is
-  'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/9705b922-d0fc-4d29-be10-acd507ce308c.webp', // Anxiety-disorder
-  'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/66e6e1ae-8cc3-4469-bfaf-b1f3f3d07006.webp', // expert-during
-  'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/9a1c77b8-54bb-4045-996a-4002e008a037.webp'  // during-ocd
+'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/f00dd3f4-cea1-4918-8fec-5976198e195f.webp', // viteren-intro
+'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/dd7dd986-540f-4359-99af-39f398491cf0.webp', // viteran-tms
+'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/7ace98a6-9efe-4403-aacf-892346fb07a8.webp', // viterna-dipression
+'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/2ddc8d69-b09a-4f1d-bd47-6d783ceefbd1.webp', // dipresseion-treatment
+'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/d3a1f368-2c44-4046-8568-532988b95c6d.webp', // karm-tms
+'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/460c9673-d421-40be-a576-8470fafd54e6.webp', // what-is
+'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/9705b922-d0fc-4d29-be10-acd507ce308c.webp', // Anxiety-disorder
+'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/66e6e1ae-8cc3-4469-bfaf-b1f3f3d07006.webp', // expert-during
+'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/9a1c77b8-54bb-4045-996a-4002e008a037.webp' // during-ocd
 ];
 
 // Fisher-Yates shuffle algorithm
@@ -190,10 +190,10 @@ const generateUniqueBlogPosts = (shuffledThumbnails: string[]): BlogPost[] => {
 
 const BlogPage = () => {
   const [activeCategory, setActiveCategory] = useState('all');
-  
+
   // Shuffle thumbnails once on component mount using useMemo
   const shuffledThumbnails = useMemo(() => shuffleArray(BLOG_THUMBNAILS), []);
-  
+
   const [allPosts] = useState<BlogPost[]>(generateUniqueBlogPosts(shuffledThumbnails));
   const [displayedPosts, setDisplayedPosts] = useState<BlogPost[]>([]);
   const [loading, setLoading] = useState(false);

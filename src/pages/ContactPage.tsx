@@ -33,13 +33,13 @@ const ContactPage = () => {
     action: () => window.location.href = 'sms:+17608324090',
     color: 'bg-blue-600 hover:bg-blue-700'
   },
-  {
-    icon: Calendar,
-    title: 'Book Online',
-    subtitle: 'Schedule Now',
-    action: () => window.open('#', '_blank'),
-    color: 'bg-[#572670] hover:bg-[#572670]/90'
-  },
+
+
+
+
+
+
+
   {
     icon: Mail,
     title: 'Email Us',
@@ -113,7 +113,7 @@ const ContactPage = () => {
       {/* Quick Contact Actions */}
       <section className="py-8 bg-gray-50 border-b">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
             {quickActions.map((action, index) =>
             <Button
               key={index}
