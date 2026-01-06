@@ -275,7 +275,7 @@ export default function HowToAvoidStressDuringHolidaysBlogPostPage() {
             {/* Introduction */}
             <div ref={(el) => sectionsRef.current['introduction'] = el} className="mb-12">
               <img
-                src="https://images.unsplash.com/photo-1512389142860-9c449e58a543?w=1200&h=630&fit=crop"
+                src="https://res.cloudinary.com/de4kw1t2i/image/upload/v1764569001/33_qndz86.png"
                 alt="Holiday stress and wellness"
                 className="w-full h-96 object-cover rounded-lg mb-6" />
 
