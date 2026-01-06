@@ -7,8 +7,8 @@ const PatientOnboardingPage = () => {
         title="Patient Onboarding | Karma TMS"
         description="Begin your journey to mental wellness. Complete our patient onboarding form to start TMS therapy at Karma TMS."
         keywords="patient onboarding, TMS therapy registration, mental health intake, Karma TMS enrollment"
-        canonicalUrl="/patient-onboarding"
-      />
+        canonicalUrl="/patient-onboarding" />
+
 
       <div className="w-full h-screen overflow-hidden">
         <iframe
@@ -23,11 +23,11 @@ const PatientOnboardingPage = () => {
             padding: 0
           }}
           allow="geolocation; microphone; camera"
-          loading="lazy"
-        />
+          loading="lazy" />
+
       </div>
-    </>
-  );
+    </>);
+
 };
 
 export default PatientOnboardingPage;
