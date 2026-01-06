@@ -38,13 +38,13 @@ const TestimonialsSection = () => {
     avatar: "https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/327f2e46-5752-43d4-8ed8-24a0c6697f7c.png"
   },
   {
-    name: "Al W.",
+    name: "Nicole J.",
     location: "Rancho Mirage, CA",
     condition: "Major Depression",
     rating: 5,
-    quote: "At 68, I thought I'd have to live with depression forever. Dr. Sunder and TMS proved me wrong. I'm more active and happier than I've been in decades.",
+    quote: "TMS therapy changed my life! This was a leap of faith and it worked out for me, TMS saved my life!",
     hasVideo: false,
-    avatar: "https://images.unsplash.com/photo-1540569014015-19a7be504e3a?w=100&h=100&fit=crop&crop=face"
+    avatar: "https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/962f349b-14de-4a40-b25d-849dc7d20c24.png"
   },
   {
     name: "Brittany B.",
