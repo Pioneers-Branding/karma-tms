@@ -250,24 +250,7 @@ const MentalHealthFirstAidBlogPostPage = () => {
       </section>
 
       {/* Crisis Resources Banner */}
-      <div className="bg-red-50 border-y border-red-200 py-4">
-        <div className="container mx-auto px-4">
-          <div className="flex flex-wrap items-center justify-center gap-6 text-sm">
-            <div className="flex items-center gap-2">
-              <Phone className="w-5 h-5 text-red-600" />
-              <span className="font-semibold">Crisis Lifeline: 988</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <Phone className="w-5 h-5 text-red-600" />
-              <span className="font-semibold">Crisis Text: Text HOME to 741741</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <Phone className="w-5 h-5 text-red-600" />
-              <span className="font-semibold">Emergency: 911</span>
-            </div>
-          </div>
-        </div>
-      </div>
+     
 
       {/* Main Content */}
       <div className="container mx-auto px-4 py-12">
