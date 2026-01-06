@@ -46,7 +46,7 @@ const AddictionPage = () => {
             </div>
             <div className="relative">
               <img
-                src="https://images.unsplash.com/photo-1564121211835-e88c852648ab?q=80&w=800"
+                src="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/9aecfa40-4be1-41df-82d2-0a81dba0e2d6.webp"
                 alt="Recovery and healing journey"
                 className="rounded-lg shadow-2xl" />
 
@@ -90,7 +90,7 @@ const AddictionPage = () => {
             </div>
             <div className="relative">
               <img
-                src="https://images.unsplash.com/photo-1621623400803-eb543c652996?q=80&w=800"
+                src="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/b8e4fadb-8922-451e-acf8-84c5fae922ad.webp"
                 alt="Brain pathways in addiction"
                 className="rounded-lg shadow-lg" />
 
@@ -369,7 +369,7 @@ const AddictionPage = () => {
             </div>
             <div className="relative">
               <img
-                src="https://images.unsplash.com/photo-1620147512372-9e00421556bb?q=80&w=800"
+                src="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/c1e0ca78-b524-46b5-9a67-3ad906778a05.webp"
                 alt="Supportive recovery environment"
                 className="rounded-lg shadow-lg" />
 
