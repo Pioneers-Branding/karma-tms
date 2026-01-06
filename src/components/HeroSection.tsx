@@ -14,7 +14,7 @@ const HeroSection = () => {
 
   const backgroundImages = [
   'https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=1920&h=1080&fit=crop&crop=center',
-  'https://images.unsplash.com/photo-1616941424163-e0c65236a7ca?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MTg3MTl8MHwxfHNlYXJjaHwxfHxBJTIwaGlnaC1xdWFsaXR5JTIwaW1hZ2UlMjBmcm9tJTIwVW5zcGxhc2glMkMlMjBsaWtlbHklMjBkZXBpY3RpbmclMjBhJTIwdmlzdWFsbHklMjBhcHBlYWxpbmclMjBzY2VuZSUyMG9yJTIwc3ViamVjdC58ZW58MHx8fHwxNzU1MDAwNzI0fDA&ixlib=rb-4.1.0&q=80&w=200$w=1920',
+  'https://karmatms.com/wp-content/uploads/2024/09/64f25e1d7ad0910405ab506b-2.jpeg',
   'https://images.unsplash.com/photo-1582750433449-648ed127bb54?w=1920&h=1080&fit=crop&crop=center',
   'https://images.unsplash.com/photo-1551601651-2a8555f1a136?w=1920&h=1080&fit=crop&crop=center'];
 
