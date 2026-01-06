@@ -118,7 +118,7 @@ const TestimonialsSection = () => {
                       </div>
                     </div> :
 
-                  <Avatar className="w-48 h-48 lg:w-64 lg:h-64 border-4 border-white/30">
+                  <Avatar className="w-48 h-48 lg:w-64 lg:h-64 ">
                       <AvatarImage src={currentData.avatar} alt={currentData.name} />
                       <AvatarFallback className="text-4xl bg-white/20 text-white">
                         {currentData.name.charAt(0)}
