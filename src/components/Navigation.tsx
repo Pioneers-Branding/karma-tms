@@ -99,33 +99,35 @@ const Navigation = () => {
           </Link>
 
           {/* Desktop Navigation - Hidden on mobile/tablet */}
-          <nav className="hidden xl:flex items-center space-x-6">
+          <nav className="hidden xl:flex items-center gap-2 2xl:gap-4 flex-1 justify-center mx-4">
             <Link to="/">
-              <Button variant="ghost" className="text-white hover:text-white/80 hover:bg-white/10 transition-colors text-sm">
-                <Home className="h-4 w-4 mr-2" />
-                Home
+              <Button variant="ghost" className="text-white hover:text-white/80 hover:bg-white/10 transition-colors text-sm px-2 2xl:px-3">
+                <Home className="h-4 w-4 xl:mr-1.5 2xl:mr-2" />
+                <span className="hidden 2xl:inline">Home</span>
               </Button>
             </Link>
             
             <Link to="/about">
-              <Button variant="ghost" className="text-white hover:text-white/80 hover:bg-white/10 transition-colors text-sm">
-                <User className="h-4 w-4 mr-2" />
-                About
+              <Button variant="ghost" className="text-white hover:text-white/80 hover:bg-white/10 transition-colors text-sm px-2 2xl:px-3">
+                <User className="h-4 w-4 xl:mr-1.5 2xl:mr-2" />
+                <span className="hidden 2xl:inline">About</span>
               </Button>
             </Link>
             
             <Link to="/team">
-              <Button variant="ghost" className="text-white hover:text-white/80 hover:bg-white/10 transition-colors text-sm">
-                <UserCheck className="h-4 w-4 mr-2" />
-                Our Team
+              <Button variant="ghost" className="text-white hover:text-white/80 hover:bg-white/10 transition-colors text-sm px-2 2xl:px-3">
+                <UserCheck className="h-4 w-4 xl:mr-1.5 2xl:mr-2" />
+                <span className="hidden 2xl:inline">Our Team</span>
               </Button>
             </Link>
 
             {/* Services Dropdown */}
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
-                <Button variant="ghost" className="text-white hover:text-white/80 hover:bg-white/10 flex items-center gap-1 transition-colors text-sm">
-                  Services <ChevronDown className="h-4 w-4" />
+                <Button variant="ghost" className="text-white hover:text-white/80 hover:bg-white/10 flex items-center gap-1 transition-colors text-sm px-2 2xl:px-3">
+                  <span className="hidden 2xl:inline">Services</span>
+                  <span className="2xl:hidden">Svcs</span>
+                  <ChevronDown className="h-3 w-3" />
                 </Button>
               </DropdownMenuTrigger>
               <DropdownMenuContent className="w-56 p-2 bg-white/95 backdrop-blur-md border-gray-200/50 shadow-xl">
@@ -146,8 +148,10 @@ const Navigation = () => {
             {/* Conditions Dropdown */}
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
-                <Button variant="ghost" className="text-white hover:text-white/80 hover:bg-white/10 flex items-center gap-1 transition-colors text-sm">
-                  Conditions <ChevronDown className="h-4 w-4" />
+                <Button variant="ghost" className="text-white hover:text-white/80 hover:bg-white/10 flex items-center gap-1 transition-colors text-sm px-2 2xl:px-3">
+                  <span className="hidden 2xl:inline">Conditions</span>
+                  <span className="2xl:hidden">Cond</span>
+                  <ChevronDown className="h-3 w-3" />
                 </Button>
               </DropdownMenuTrigger>
               <DropdownMenuContent className="w-56 p-2 bg-white/95 backdrop-blur-md border-gray-200/50 shadow-xl">
@@ -168,8 +172,10 @@ const Navigation = () => {
             {/* Resources Dropdown */}
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
-                <Button variant="ghost" className="text-white hover:text-white/80 hover:bg-white/10 flex items-center gap-1 transition-colors text-sm">
-                  Resources <ChevronDown className="h-4 w-4" />
+                <Button variant="ghost" className="text-white hover:text-white/80 hover:bg-white/10 flex items-center gap-1 transition-colors text-sm px-2 2xl:px-3">
+                  <span className="hidden 2xl:inline">Resources</span>
+                  <span className="2xl:hidden">Res</span>
+                  <ChevronDown className="h-3 w-3" />
                 </Button>
               </DropdownMenuTrigger>
               <DropdownMenuContent className="w-56 p-2 bg-white/95 backdrop-blur-md border-gray-200/50 shadow-xl">
@@ -190,8 +196,10 @@ const Navigation = () => {
             {/* Patient Care Dropdown */}
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
-                <Button variant="ghost" className="text-white hover:text-white/80 hover:bg-white/10 flex items-center gap-1 transition-colors text-sm">
-                  Patient Care <ChevronDown className="h-4 w-4" />
+                <Button variant="ghost" className="text-white hover:text-white/80 hover:bg-white/10 flex items-center gap-1 transition-colors text-sm px-2 2xl:px-3">
+                  <span className="hidden 2xl:inline">Patient Care</span>
+                  <span className="2xl:hidden">Patient</span>
+                  <ChevronDown className="h-3 w-3" />
                 </Button>
               </DropdownMenuTrigger>
               <DropdownMenuContent className="w-56 p-2 bg-white/95 backdrop-blur-md border-gray-200/50 shadow-xl">
@@ -210,22 +218,21 @@ const Navigation = () => {
             </DropdownMenu>
 
             <Link to="/contact">
-              <Button variant="ghost" className="text-white hover:text-white/80 hover:bg-white/10 transition-colors text-sm">
-                <Mail className="h-4 w-4 mr-2" />
-                Contact
+              <Button variant="ghost" className="text-white hover:text-white/80 hover:bg-white/10 transition-colors text-sm px-2 2xl:px-3">
+                <Mail className="h-4 w-4 xl:mr-1.5 2xl:mr-2" />
+                <span className="hidden 2xl:inline">Contact</span>
               </Button>
             </Link>
           </nav>
 
           {/* Phone Number - Responsive visibility */}
-          <div className="hidden lg:flex items-center">
+          <div className="hidden xl:flex items-center flex-shrink-0">
             <Button
               variant="outline"
               size="sm"
-              className="border-white/30 text-white bg-white/5 hover:bg-white hover:text-[#572670] hover:border-white transition-all duration-300 px-3 lg:px-6 text-xs lg:text-sm">
-              <Phone className="h-3 w-3 lg:h-4 lg:w-4 mr-1 lg:mr-2" />
-              <span className="hidden lg:inline">760-760-5675</span>
-              <span className="lg:hidden">Call</span>
+              className="border-white/30 text-white bg-white/5 hover:bg-white hover:text-[#572670] hover:border-white transition-all duration-300 px-3 xl:px-4 2xl:px-6 text-sm whitespace-nowrap">
+              <Phone className="h-4 w-4 mr-2" />
+              760-760-5675
             </Button>
           </div>
 
