@@ -274,7 +274,7 @@ const PalmSpringsPage = () => {
         <div className="container mx-auto px-4">
           <h2 className="text-3xl lg:text-4xl font-bold text-center mb-12">Visit Our Palm Springs Locations</h2>
           
-          <div className="grid lg:grid-cols-2 gap-10 max-w-6xl mx-auto">
+          <div className="max-w-xl mx-auto w-full">
             {/* Main Palm Springs Office */}
             <Card className="overflow-hidden shadow-xl">
               <CardContent className="p-8">
@@ -354,82 +354,82 @@ const PalmSpringsPage = () => {
             </Card>
 
             {/* Rancho Mirage Office */}
-            <Card className="overflow-hidden shadow-xl">
-              <CardContent className="p-8">
-                <div className="flex items-center gap-2 mb-6">
-                  <Building2 className="w-6 h-6 text-purple-600" />
-                  <h3 className="text-2xl font-bold">Rancho Mirage Office</h3>
-                </div>
-                
-                <div className="space-y-4 mb-6">
-                  <div className="flex items-start gap-3">
-                    <MapPin className="w-5 h-5 text-purple-600 mt-1 flex-shrink-0" />
-                    <div>
-                      <p className="font-medium">35400 Bob Hope Dr. Suite 206-B</p>
-                      <p className="text-gray-600">Rancho Mirage, CA 92270</p>
-                    </div>
-                  </div>
-                  
-                  <div className="flex items-start gap-3">
-                    <Phone className="w-5 h-5 text-purple-600 mt-1 flex-shrink-0" />
-                    <a href="tel:7607605675" className="hover:text-purple-600 transition-colors font-medium">
-                      (760) 760-5675
-                    </a>
-                  </div>
-                  
-                  <div className="flex items-start gap-3">
-                    <Clock className="w-5 h-5 text-purple-600 mt-1 flex-shrink-0" />
-                    <div>
-                      <p className="font-medium">Monday - Friday: 8:00 AM - 6:00 PM</p>
-                      <p className="text-gray-600">Saturday - Sunday: Closed</p>
-                    </div>
-                  </div>
-                  
-                  <div className="flex items-start gap-3">
-                    <Mail className="w-5 h-5 text-purple-600 mt-1 flex-shrink-0" />
-                    <a href="mailto:contact@karmatms.com" className="hover:text-purple-600 transition-colors">
-                      contact@karmatms.com
-                    </a>
-                  </div>
-                </div>
+            
 
-                <div className="space-y-3">
-                  <a
-                    href="https://www.google.com/maps/dir//35400+Bob+Hope+Dr.+Suite+206-B,+Rancho+Mirage,+CA+92270"
-                    target="_blank"
-                    rel="noopener noreferrer">
 
-                    <Button variant="outline" className="w-full group">
-                      <NavIcon className="w-4 h-4 mr-2 group-hover:translate-x-1 transition-transform" />
-                      Get Directions
-                    </Button>
-                  </a>
-                  <a
-                    href="https://g.page/r/your-google-business-link"
-                    target="_blank"
-                    rel="noopener noreferrer">
 
-                    <Button variant="outline" className="w-full">
-                      <Star className="w-4 h-4 mr-2" />
-                      View on Google
-                    </Button>
-                  </a>
-                </div>
 
-                <div className="mt-6 rounded-lg overflow-hidden">
-                  <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d229186.20144231617!2d-116.58782004243615!3d33.797083618942274!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dafd449b434721%3A0xf3719bcb5804db!2s35400%20Bob%20Hope%20Dr%20STE%20206%2C%20Rancho%20Mirage%2C%20CA%2092270!5e0!3m2!1sen!2sus!4v1756473962862!5m2!1sen!2sus"
-                    width="100%"
-                    height="300"
-                    style={{ border: 0 }}
-                    allowFullScreen
-                    loading="lazy"
-                    referrerPolicy="no-referrer-when-downgrade"
-                    title="Map of KarmaTMS Rancho Mirage Office" />
 
-                </div>
-              </CardContent>
-            </Card>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
           </div>
 
           <div className="max-w-4xl mx-auto mt-12">
