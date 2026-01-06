@@ -53,7 +53,7 @@ const TeamFilters: React.FC<TeamFiltersProps> = ({
         className="flex items-center gap-3 mb-6">
 
         <Filter className="text-gray-600" size={24} />
-        <h3 className="text-2xl font-bold text-gray-900">Filter Our Team</h3>
+        <h3 className="text-2xl font-bold text-gray-900">Our Team Members</h3>
       </motion.div>
 
       <div className="flex flex-wrap justify-center gap-4">
