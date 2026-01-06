@@ -15,7 +15,7 @@ const AnxietyPage = () => {
       <SEO
         title="Anxiety Treatment Center in Palm Springs | Karma TMS PC"
         description="Karma TMS PC offers personalized and effective anxiety treatment in Palm Springs using advanced therapy to help you regain calm, balance, and emotional well-being."
-        keywords="anxiety therapy palm springs ca, anxiety treatment palm springs, anxiety treatment center in palm springs"
+        keywords="anxiety therapy Palm Springs, CA, anxiety treatment palm springs, anxiety treatment center in palm springs"
         canonical="https://www.karmatms.com/conditions/anxiety" />
 
       <StructuredData
