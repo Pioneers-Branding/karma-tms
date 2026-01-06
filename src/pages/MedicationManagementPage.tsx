@@ -20,7 +20,7 @@ const MedicationManagementPage = () => {
     description: 'Every decision prioritizes your individual needs, preferences, and quality of life',
     icon: <Heart className="w-8 h-8" />,
     details: 'We believe you are the expert on your own experience. Our role is to provide medical expertise while honoring your personal values, goals, and concerns about medication treatment.',
-    color: 'from-red-500 to-pink-500'
+    color: 'from-violet-500 to-purple-500'
   },
   {
     principle: 'Minimal Effective Dose',
@@ -41,7 +41,7 @@ const MedicationManagementPage = () => {
     description: 'Combining medication with therapy, lifestyle changes, and complementary treatments',
     icon: <Brain className="w-8 h-8" />,
     details: 'Medication is just one tool in your healing journey. We integrate pharmaceutical interventions with psychotherapy, nutrition, exercise, and other evidence-based approaches.',
-    color: 'from-green-500 to-violet-500'
+    color: 'from-purple-500 to-violet-500'
   }];
 
 
@@ -184,7 +184,7 @@ const MedicationManagementPage = () => {
     'Reduced empathy',
     'Emotional instability'],
 
-    color: 'from-[#572670] to-pink-500'
+    color: 'from-[#572670] to-violet-500'
   },
   {
     category: 'Social/Behavioral',
@@ -198,7 +198,7 @@ const MedicationManagementPage = () => {
     'Work/school performance',
     'Daily functioning issues'],
 
-    color: 'from-green-500 to-violet-500'
+    color: 'from-purple-500 to-violet-500'
   }];
 
 
@@ -395,9 +395,9 @@ const MedicationManagementPage = () => {
                     </div>
                     
                     <div className="lg:col-span-1">
-                      <div className="bg-gradient-to-r from-green-100 to-purple-100 rounded-lg p-4">
+                      <div className="bg-gradient-to-r from-violet-100 to-purple-100 rounded-lg p-4">
                         <h4 className="font-bold text-gray-900 mb-2 flex items-center">
-                          <CheckCircle className="w-4 h-4 text-green-600 mr-2" />
+                          <CheckCircle className="w-4 h-4 text-purple-600 mr-2" />
                           Success Criteria
                         </h4>
                         <p className="text-gray-700 text-sm">{phase.successCriteria}</p>
@@ -424,7 +424,7 @@ const MedicationManagementPage = () => {
                     </p>
                   </div>
                   <div>
-                    <Shield className="w-12 h-12 text-green-500 mx-auto mb-4" />
+                    <Shield className="w-12 h-12 text-purple-500 mx-auto mb-4" />
                     <h4 className="font-bold text-gray-900 mb-2">Professional Supervision</h4>
                     <p className="text-gray-600 text-sm">
                       Our medical team provides careful monitoring throughout the tapering process, adjusting the plan based on your individual response and needs.
@@ -523,17 +523,17 @@ const MedicationManagementPage = () => {
                   <Progress
                     value={totalTracked / totalEffects * 100}
                     className={`h-4 ${
-                    totalTracked === 0 ? 'text-green-500' :
-                    totalTracked <= totalEffects * 0.25 ? 'text-yellow-500' :
-                    totalTracked <= totalEffects * 0.5 ? 'text-orange-500' : 'text-red-500'}`
+                    totalTracked === 0 ? 'text-purple-500' :
+                    totalTracked <= totalEffects * 0.25 ? 'text-purple-500' :
+                    totalTracked <= totalEffects * 0.5 ? 'text-purple-500' : 'text-violet-500'}`
                     } />
 
                 </div>
                 
                 <div className="space-y-4">
                   {totalTracked === 0 &&
-                  <div className="bg-green-100 border border-green-300 rounded-lg p-4">
-                      <p className="text-green-800 font-semibold text-center">
+                  <div className="bg-purple-100 border border-violet-300 rounded-lg p-4">
+                      <p className="text-purple-800 font-semibold text-center">
                         ✅ Excellent! No significant side effects reported.
                       </p>
                     </div>
@@ -548,8 +548,8 @@ const MedicationManagementPage = () => {
                   }
                   
                   {totalTracked > totalEffects * 0.25 && totalTracked <= totalEffects * 0.5 &&
-                  <div className="bg-orange-100 border border-orange-300 rounded-lg p-4">
-                      <p className="text-orange-800 font-semibold text-center">
+                  <div className="bg-violet-100 border border-purple-300 rounded-lg p-4">
+                      <p className="text-purple-800 font-semibold text-center">
                         ⚠️ Moderate side effect burden - Medication review recommended.
                       </p>
                     </div>
