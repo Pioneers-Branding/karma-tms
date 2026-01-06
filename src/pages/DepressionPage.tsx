@@ -54,7 +54,7 @@ const DepressionPage = () => {
             </div>
             <div className="relative">
               <img
-                src="https://images.unsplash.com/photo-1590564310808-f93b5f8d662d?q=80&w=800"
+                src="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/d3a1f368-2c44-4046-8568-532988b95c6d.webp"
                 alt="KarmaTMS depression therapy session with TMS therapy equipment for treatment-resistant depression"
                 className="rounded-lg shadow-2xl" />
 
