@@ -60,7 +60,7 @@ const allBlogPosts: BlogPost[] = [
     day: 'numeric'
   }),
   readTime: '15 min read',
-  image: 'https://res.cloudinary.com/de4kw1t2i/image/upload/v1762863799/blog_10_bcw7ze.png',
+  image: 'https://res.cloudinary.com/de4kw1t2i/image/upload/v1763033664/1_w61pyl.png',
   featured: false,
   rating: 5
 },
