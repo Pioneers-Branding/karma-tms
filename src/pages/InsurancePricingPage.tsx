@@ -4,6 +4,7 @@ import { motion } from 'motion/react';
 import Navigation from '@/components/Navigation';
 import FooterSection from '@/components/FooterSection';
 import { Button } from '@/components/ui/button';
+import { Link } from 'react-router-dom';
 import { Badge } from '@/components/ui/badge';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Input } from '@/components/ui/input';
@@ -153,144 +154,27 @@ const InsurancePricingPage = () => {
               insurance plans and offer flexible payment options to make TMS therapy affordable for everyone.
             </p>
             <div className="flex flex-wrap justify-center gap-4">
-              <Button className="bg-[#572670] hover:bg-[#572670]/90 px-8 py-3 text-lg">
-                <Shield className="mr-2 h-5 w-5" />
-                Verify Insurance
+              <Button className="bg-[#572670] hover:bg-[#572670]/90 px-8 py-3 text-lg" asChild>
+                <Link to="/contact">
+                  <Shield className="mr-2 h-5 w-5" />
+                  Verify Insurance
+                </Link>
               </Button>
-              <Button variant="outline" className="border-[#572670] text-[#572670] hover:bg-[#572670]/10 px-8 py-3 text-lg">
-                <Phone className="mr-2 h-5 w-5" />
-                Call for Pricing: 760-760-5675
+              <Button variant="outline" className="border-[#572670] text-[#572670] hover:bg-[#572670]/10 px-8 py-3 text-lg" asChild>
+                <Link to="/contact">
+                  <Phone className="mr-2 h-5 w-5" />
+                  Call for Pricing: 760-760-5675
+                </Link>
               </Button>
             </div>
           </motion.div>
         </div>
       </section>
 
-      {/* Insurance Verification Widget */}
-      <section className="py-20 bg-white">
-        <div className="container mx-auto px-4">
-          <motion.div
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            variants={fadeInUp}
-            className="text-center mb-16">
-            
-            <h2 className="text-4xl font-bold text-gray-900 mb-6">
-              Verify Your <span className="text-[#572670]">Insurance Coverage</span>
-            </h2>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              Get instant verification of your TMS therapy coverage. We'll check your benefits 
-              and provide you with detailed information about your out-of-pocket costs.
-            </p>
-          </motion.div>
-
-          <div className="max-w-2xl mx-auto">
-            <Card className="shadow-2xl border-2 border-[#572670]/10">
-              <CardHeader className="bg-gradient-to-r from-[#572670]/5 to-purple-100/30">
-                <CardTitle className="text-2xl text-center flex items-center justify-center gap-3">
-                  <Shield className="h-6 w-6 text-[#572670]" />
-                  Insurance Verification
-                </CardTitle>
-              </CardHeader>
-              <CardContent className="p-8">
-                <form onSubmit={handleInsuranceVerification} className="space-y-6">
-                  <div className="grid md:grid-cols-2 gap-4">
-                    <div>
-                      <Label htmlFor="firstName">First Name *</Label>
-                      <Input
-                        id="firstName"
-                        value={insuranceForm.firstName}
-                        onChange={(e) => setInsuranceForm({ ...insuranceForm, firstName: e.target.value })}
-                        required />
-
-                    </div>
-                    <div>
-                      <Label htmlFor="lastName">Last Name *</Label>
-                      <Input
-                        id="lastName"
-                        value={insuranceForm.lastName}
-                        onChange={(e) => setInsuranceForm({ ...insuranceForm, lastName: e.target.value })}
-                        required />
-
-                    </div>
-                  </div>
-
-                  <div className="grid md:grid-cols-2 gap-4">
-                    <div>
-                      <Label htmlFor="dateOfBirth">Date of Birth *</Label>
-                      <Input
-                        id="dateOfBirth"
-                        type="date"
-                        value={insuranceForm.dateOfBirth}
-                        onChange={(e) => setInsuranceForm({ ...insuranceForm, dateOfBirth: e.target.value })}
-                        required />
-
-                    </div>
-                    <div>
-                      <Label htmlFor="phone">Phone Number *</Label>
-                      <Input
-                        id="phone"
-                        type="tel"
-                        value={insuranceForm.phone}
-                        onChange={(e) => setInsuranceForm({ ...insuranceForm, phone: e.target.value })}
-                        required />
-
-                    </div>
-                  </div>
-
-                  <div>
-                    <Label htmlFor="insuranceProvider">Insurance Provider *</Label>
-                    <Select value={insuranceForm.insuranceProvider} onValueChange={(value) => setInsuranceForm({ ...insuranceForm, insuranceProvider: value })}>
-                      <SelectTrigger>
-                        <SelectValue placeholder="Select your insurance provider" />
-                      </SelectTrigger>
-                      <SelectContent>
-                        <SelectItem value="aetna">Aetna</SelectItem>
-                        <SelectItem value="anthem">Anthem Blue Cross</SelectItem>
-                        <SelectItem value="cigna">Cigna</SelectItem>
-                        <SelectItem value="united">UnitedHealthcare</SelectItem>
-                        <SelectItem value="kaiser">Kaiser Permanente</SelectItem>
-                        <SelectItem value="medicare">Medicare</SelectItem>
-                        <SelectItem value="other">Other</SelectItem>
-                      </SelectContent>
-                    </Select>
-                  </div>
-
-                  <div className="grid md:grid-cols-2 gap-4">
-                    <div>
-                      <Label htmlFor="policyNumber">Policy/Member ID Number *</Label>
-                      <Input
-                        id="policyNumber"
-                        value={insuranceForm.policyNumber}
-                        onChange={(e) => setInsuranceForm({ ...insuranceForm, policyNumber: e.target.value })}
-                        required />
-
-                    </div>
-                    <div>
-                      <Label htmlFor="groupNumber">Group Number (if applicable)</Label>
-                      <Input
-                        id="groupNumber"
-                        value={insuranceForm.groupNumber}
-                        onChange={(e) => setInsuranceForm({ ...insuranceForm, groupNumber: e.target.value })} />
-
-                    </div>
-                  </div>
-
-                  <Button type="submit" className="w-full bg-[#572670] hover:bg-[#572670]/90 py-3 text-lg">
-                    <CheckCircle className="mr-2 h-5 w-5" />
-                    Verify My Insurance Coverage
-                  </Button>
-
-                  <p className="text-sm text-gray-600 text-center">
-                    We'll contact you within 24 hours with your coverage details and estimated costs.
-                  </p>
-                </form>
-              </CardContent>
-            </Card>
-          </div>
-        </div>
-      </section>
+      {/* Insurance Verification Widget - removed as requested */}
+      {/*
+      <section className="py-20 bg-white"> ... </section>
+      */}
 
       {/* Accepted Insurance */}
       <section className="py-20 bg-gradient-to-br from-slate-50 to-purple-50">
@@ -349,67 +233,10 @@ const InsurancePricingPage = () => {
         </div>
       </section>
 
-      {/* Cash Pay Pricing Table */}
-      <section className="py-20 bg-white">
-        <div className="container mx-auto px-4">
-          <motion.div
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            variants={fadeInUp}
-            className="text-center mb-16">
-            
-            <h2 className="text-4xl font-bold text-gray-900 mb-6">
-              Self-Pay <span className="text-[#572670]">Pricing</span>
-            </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Transparent pricing for patients paying out-of-pocket or using HSA/FSA funds. 
-              All prices include comprehensive care and ongoing support.
-            </p>
-          </motion.div>
-
-          <div className="max-w-6xl mx-auto">
-            <div className="grid lg:grid-cols-2 gap-6">
-              {cashPayPricing.map((service, index) =>
-              <motion.div
-                key={service.service}
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: index * 0.1 }}>
-
-                  <Card className="h-full hover:shadow-xl transition-all duration-300 border-l-4 border-l-[#572670]">
-                    <CardContent className="p-8">
-                      <div className="flex justify-between items-start mb-4">
-                        <div className="flex-1">
-                          <h3 className="text-2xl font-bold text-gray-900 mb-2">{service.service}</h3>
-                          <p className="text-gray-600 mb-3">{service.description}</p>
-                        </div>
-                        <div className="text-right ml-4">
-                          <div className="text-3xl font-bold text-[#572670]">{service.price}</div>
-                          <div className="text-sm text-gray-500">{service.duration}</div>
-                        </div>
-                      </div>
-                      
-                      <div>
-                        <h4 className="font-semibold text-gray-900 mb-2">Includes:</h4>
-                        <ul className="space-y-1">
-                          {service.includes.map((item, idx) =>
-                        <li key={idx} className="flex items-start gap-2">
-                              <CheckCircle className="h-4 w-4 text-[#572670] flex-shrink-0 mt-0.5" />
-                              <span className="text-sm text-gray-600">{item}</span>
-                            </li>
-                        )}
-                        </ul>
-                      </div>
-                    </CardContent>
-                  </Card>
-                </motion.div>
-              )}
-            </div>
-          </div>
-        </div>
-      </section>
+      {/* Self-Pay Pricing - removed as requested */}
+      {/*
+      <section className="py-20 bg-white"> ... </section>
+      */}
 
       {/* Financing Options Banner */}
       <section className="py-20 bg-gradient-to-r from-[#572670] to-purple-600">
@@ -461,9 +288,11 @@ const InsurancePricingPage = () => {
           </div>
 
           <div className="text-center mt-12">
-            <Button className="bg-white text-[#572670] hover:bg-gray-100 px-8 py-3 text-lg">
-              <Calculator className="mr-2 h-5 w-5" />
-              Learn About Financing Options
+            <Button className="bg-white text-[#572670] hover:bg-gray-100 px-8 py-3 text-lg" asChild>
+              <Link to="/contact">
+                <Calculator className="mr-2 h-5 w-5" />
+                Learn About Financing Options
+              </Link>
             </Button>
           </div>
         </div>

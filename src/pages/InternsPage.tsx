@@ -4,6 +4,7 @@ import { motion } from 'motion/react';
 import Navigation from '@/components/Navigation';
 import FooterSection from '@/components/FooterSection';
 import { Button } from '@/components/ui/button';
+import { Link } from 'react-router-dom';
 import { Badge } from '@/components/ui/badge';
 import { Card, CardContent } from '@/components/ui/card';
 import { Input } from '@/components/ui/input';
@@ -190,14 +191,13 @@ const InternsPage = () => {
               under the guidance of leading professionals.
             </p>
             <div className="flex flex-wrap justify-center gap-4">
-              <Button className="bg-[#572670] hover:bg-[#572670]/90 px-8 py-3 text-lg">
-                <FileText className="mr-2 h-5 w-5" />
-                Apply Now
+              <Button className="bg-[#572670] hover:bg-[#572670]/90 px-8 py-3 text-lg" asChild>
+                <Link to="/contact">
+                  <FileText className="mr-2 h-5 w-5" />
+                  Apply Now
+                </Link>
               </Button>
-              <Button variant="outline" className="border-[#572670] text-[#572670] hover:bg-[#572670]/10 px-8 py-3 text-lg">
-                <BookOpen className="mr-2 h-5 w-5" />
-                Download Program Guide
-              </Button>
+              {/* Removed non-functional 'Download Program Guide' button as requested */}
             </div>
           </motion.div>
         </div>
@@ -372,16 +372,15 @@ const InternsPage = () => {
                       <div className="text-center">
                         <div className="text-2xl font-bold text-gray-900 mb-1">{rotation.spots}</div>
                         <div className="text-sm text-gray-600 mb-3">Spots Available</div>
-                        <Button
-                        className={`${
-                        rotation.available ?
-                        'bg-[#572670] hover:bg-[#572670]/90' :
-                        'bg-gray-400 cursor-not-allowed'}`
-                        }
-                        disabled={!rotation.available}>
-
-                          {rotation.available ? 'Apply' : 'Full'}
-                        </Button>
+                        {rotation.available ? (
+                          <Button className="bg-[#572670] hover:bg-[#572670]/90" asChild>
+                            <Link to="/contact">Apply</Link>
+                          </Button>
+                        ) : (
+                          <Button className="bg-gray-400 cursor-not-allowed" disabled>
+                            Full
+                          </Button>
+                        )}
                       </div>
                     </div>
                   </CardContent>

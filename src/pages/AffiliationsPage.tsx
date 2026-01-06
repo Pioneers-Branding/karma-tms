@@ -4,6 +4,7 @@ import { motion } from 'motion/react';
 import Navigation from '@/components/Navigation';
 import FooterSection from '@/components/FooterSection';
 import { Button } from '@/components/ui/button';
+import { Link } from 'react-router-dom';
 import { Badge } from '@/components/ui/badge';
 import { Card, CardContent } from '@/components/ui/card';
 import {
@@ -210,13 +211,17 @@ const AffiliationsPage = () => {
               medical publications for our innovative approach to mental health treatment.
             </p>
             <div className="flex flex-wrap justify-center gap-4">
-              <Button className="bg-[#572670] hover:bg-[#572670]/90 px-8 py-3 text-lg">
-                <BookOpen className="mr-2 h-5 w-5" />
-                View Publications
+              <Button className="bg-[#572670] hover:bg-[#572670]/90 px-8 py-3 text-lg" asChild>
+                <Link to="/about">
+                  <BookOpen className="mr-2 h-5 w-5" />
+                  View Publications
+                </Link>
               </Button>
-              <Button variant="outline" className="border-[#572670] text-[#572670] hover:bg-[#572670]/10 px-8 py-3 text-lg">
-                <Building2 className="mr-2 h-5 w-5" />
-                Research Partnerships
+              <Button variant="outline" className="border-[#572670] text-[#572670] hover:bg-[#572670]/10 px-8 py-3 text-lg" asChild>
+                <Link to="/contact">
+                  <Building2 className="mr-2 h-5 w-5" />
+                  Research Partnerships
+                </Link>
               </Button>
             </div>
           </motion.div>
@@ -300,12 +305,14 @@ const AffiliationsPage = () => {
 
                       {/* Link */}
                       <Button
-                      variant="outline"
-                      className="w-full border-[#572670] text-[#572670] hover:bg-[#572670]/10"
-                      onClick={() => window.open('#', '_blank')}>
-
-                        <ExternalLink className="h-4 w-4 mr-2" />
-                        Learn More
+                        variant="outline"
+                        className="w-full border-[#572670] text-[#572670] hover:bg-[#572670]/10"
+                        asChild
+                      >
+                        <Link to="/about">
+                          <ExternalLink className="h-4 w-4 mr-2" />
+                          Learn More
+                        </Link>
                       </Button>
                     </div>
                   </CardContent>
@@ -456,13 +463,17 @@ const AffiliationsPage = () => {
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button className="bg-white text-[#572670] hover:bg-gray-100 px-8 py-3 text-lg">
-                <Users className="mr-2 h-5 w-5" />
-                Partnership Inquiries
+              <Button className="bg-white text-[#572670] hover:bg-gray-100 px-8 py-3 text-lg" asChild>
+                <Link to="/contact">
+                  <Users className="mr-2 h-5 w-5" />
+                  Partnership Inquiries
+                </Link>
               </Button>
-              <Button variant="outline" className="border-white text-white hover:bg-white/10 px-8 py-3 text-lg bg-white text-[#572670]">
-                <GraduationCap className="mr-2 h-5 w-5" />
-                Speaking Requests
+              <Button variant="outline" className="border-white text-white hover:bg-white/10 px-8 py-3 text-lg bg-white text-[#572670]" asChild>
+                <Link to="/contact">
+                  <GraduationCap className="mr-2 h-5 w-5" />
+                  Speaking Requests
+                </Link>
               </Button>
             </div>
           </motion.div>

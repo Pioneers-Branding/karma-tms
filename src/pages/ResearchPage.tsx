@@ -309,48 +309,17 @@ const ResearchPage = () => {
         </div>
       </section>
 
-      {/* PDF Library */}
-      <section className="py-12">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
-              Resource Library
-            </h2>
-            <p className="text-lg text-gray-600">
-              Download comprehensive guides and research materials
-            </p>
+      {/* Resource Library - hidden as requested */}
+      {false && (
+        <section className="py-12">
+          <div className="container mx-auto px-4">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">Resource Library</h2>
+              <p className="text-lg text-gray-600">Download comprehensive guides and research materials</p>
+            </div>
           </div>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {pdfLibrary.map((pdf, index) =>
-            <Card key={index} className="hover:shadow-lg transition-shadow">
-                <CardContent className="p-6 text-center">
-                  <div className="w-16 h-16 bg-red-100 rounded-lg flex items-center justify-center mx-auto mb-4">
-                    <FileText className="h-8 w-8 text-red-600" />
-                  </div>
-                  <h3 className="font-bold text-lg text-gray-900 mb-2">
-                    {pdf.title}
-                  </h3>
-                  <p className="text-gray-600 text-sm mb-3">
-                    {pdf.description}
-                  </p>
-                  <div className="flex justify-between text-xs text-gray-500 mb-4">
-                    <span>{pdf.pages} pages</span>
-                    <span>{pdf.size}</span>
-                  </div>
-                  <Button
-                  className="w-full bg-[#572670] hover:bg-[#572670]/90"
-                  onClick={() => window.open(pdf.downloadUrl, '_blank')}>
-
-                    <Download className="mr-2 h-4 w-4" />
-                    Download PDF
-                  </Button>
-                </CardContent>
-              </Card>
-            )}
-          </div>
-        </div>
-      </section>
+        </section>
+      )}
 
       {/* Press Mentions */}
       <section className="py-12 bg-gray-50">
