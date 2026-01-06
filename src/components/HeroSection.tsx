@@ -134,7 +134,7 @@ const HeroSection = () => {
                     <Heart className="w-5 h-5 lg:w-6 lg:h-6 text-violet-600 mr-2" />
                     Get In Touch
                   </h2>
-                  <button className="bg-gradient-to-r from-indigo-600 to-violet-600 text-white font-semibold py-2 px-4 lg:px-6 rounded-full shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all duration-300 text-sm lg:text-base hover:scale-105">
+                  <button className="bg-gradient-to-r from-blue-magenta via-blue-magenta/70 to-blue-magenta text-white font-semibold py-2 px-4 lg:px-6 rounded-full shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all duration-300 text-sm lg:text-base hover:scale-105">
                     Send
                   </button>
                 </div>
