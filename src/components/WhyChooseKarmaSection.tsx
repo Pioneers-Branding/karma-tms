@@ -2,30 +2,31 @@ import React from 'react';
 
 const WhyChooseKarmaSection = () => {
   const commitmentSections = [
-  {
-    title: "A Promise Reflected in Every Window",
-    description: "Our windows are designed to enhance your home's beauty and functionality, ensuring quality and reliability in every installation.",
-    image: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800&h=600&fit=crop&crop=center",
-    overlay: true
-  },
-  {
-    title: "Promise of Purposeful Innovation",
-    description: "Experience the latest advancements in door and window technology, crafted to meet your needs for efficiency, security, and style.",
-    image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&h=600&fit=crop&crop=center",
-    overlay: true
-  },
-  {
-    title: "Protecting Green Environment",
-    description: "We prioritize eco-friendly materials and practices, making it easy for you to contribute to a healthier planet with every purchase.",
-    image: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=800&h=600&fit=crop&crop=center",
-    overlay: false
-  },
-  {
-    title: "Thinking For Customers Benefit",
-    description: "We offer personalized solutions and exceptional service to make your home improvement journey seamless and rewarding.",
-    image: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800&h=600&fit=crop&crop=center",
-    overlay: true
-  }];
+    {
+      title: "Personalized Treatment Plans",
+      description: "Our expert team designs a unique TMS therapy plan tailored to your specific needs, ensuring the most effective and targeted treatment possible.",
+      image: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800&h=600&fit=crop&crop=center",
+      overlay: true
+    },
+    {
+      title: "Experienced and Compassionate Staff",
+      description: "You'll be guided by our highly trained and caring professionals who are dedicated to making your TMS journey comfortable, safe, and successful.",
+      image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&h=600&fit=crop&crop=center",
+      overlay: true
+    },
+    {
+      title: "State-of-the-Art Technology",
+      description: "We use the latest advancements in TMS technology to deliver precise and powerful therapy, maximizing therapeutic benefits with minimal discomfort.",
+      image: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=800&h=600&fit=crop&crop=center",
+      overlay: false
+    },
+    {
+      title: "Holistic and Integrated Care",
+      description: "Our approach extends beyond TMS therapy. We integrate mental health support and resources to promote your overall well-being and long-term recovery.",
+      image: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800&h=600&fit=crop&crop=center",
+      overlay: true
+    }
+  ];
 
 
   return (
@@ -34,10 +35,10 @@ const WhyChooseKarmaSection = () => {
         {/* Header */}
         <div className="text-center max-w-4xl mx-auto mb-16">
           <h2 className="text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
-            Discover Our Commitment to Excellence
+            Why Choose Karma TMS?
           </h2>
           <p className="text-xl text-gray-600 leading-relaxed">
-            A Commitment to Sustainability and Customer Satisfaction
+            Experience advanced, compassionate, and personalized TMS therapy for lasting change.
           </p>
         </div>
 
@@ -113,8 +114,8 @@ const WhyChooseKarmaSection = () => {
           </div>
         </div>
       </div>
-    </section>);
-
+    </section>
+  );
 };
 
 export default WhyChooseKarmaSection;
