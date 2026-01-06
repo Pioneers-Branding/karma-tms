@@ -97,22 +97,22 @@ const TMSvsMedicationVeteransBlogPostPage = () => {
 
   const relatedPosts = [
   {
-    title: 'How TMS Therapy Helps Veterans Heal',
-    excerpt: 'Comprehensive guide on TMS therapy for veterans with PTSD, depression, and anxiety.',
-    link: '/blog/veterans-tms-therapy',
-    image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/f00dd3f4-cea1-4918-8fec-5976198e195f.webp'
+    title: 'TMS for Migraine Relief in Veterans',
+    excerpt: 'Learn how TMS helps veterans with migraines and comorbid conditions like PTSD and depression.',
+    link: '/blogs/tms-migraine-veterans',
+    image: 'https://res.cloudinary.com/de4kw1t2i/image/upload/v1763033673/7_lnxkrv.png'
   },
   {
-    title: 'VA Disability Benefits for Mental Health',
-    excerpt: 'Learn how to get VA disability for depression, anxiety, and PTSD.',
-    link: '/blog/va-disability-benefits-depression-anxiety-ptsd',
-    image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/2ddc8d69-b09a-4f1d-bd47-6d783ceefbd1.webp'
+    title: 'TMS for Anxiety in Veterans',
+    excerpt: 'Discover how TMS helps veterans manage anxiety beyond medication.',
+    link: '/blogs/tms-anxiety-veterans',
+    image: 'https://res.cloudinary.com/de4kw1t2i/image/upload/v1763033666/6_rrkhgo.png'
   },
   {
-    title: 'Inside the VA & Veterans\' Mental Health',
-    excerpt: 'Understanding VA programs and accessing TMS therapy through VA or private options.',
-    link: '/blog/va-veterans-ptsd-tms-treatment',
-    image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/dd7dd986-540f-4359-99af-39f398491cf0.webp'
+    title: 'Understanding PTSD in Veterans',
+    excerpt: 'Complete guide to PTSD signs, symptoms, and treatment paths including TMS therapy.',
+    link: '/blogs/understanding-ptsd-veterans',
+    image: 'https://res.cloudinary.com/de4kw1t2i/image/upload/v1763033666/5_kvtlku.png'
   }];
 
 
