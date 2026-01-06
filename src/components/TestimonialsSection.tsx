@@ -28,14 +28,14 @@ const TestimonialsSection = () => {
     avatar: "https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/e46a0ae8-2974-432a-9a49-4a1e8300553b.png"
   },
   {
-    name: "Andrej Z.",
+    name: "Benjamin A.",
     location: "Cathedral City, CA",
     condition: "Anxiety & Depression",
     rating: 5,
-    quote: "The convenience of 20-minute sessions that fit into my lunch break made all the difference. I could continue working while getting the treatment I needed.",
-    hasVideo: true,
+    quote: "My TMS experience was life changing. I went from being in bed for weeks and months to rejoining life again. The science behind this technology is the hope so many of us need.If you’re thinking about TMS therapy I highly recommend it.",
+    hasVideo: false,
     videoId: "dQw4w9WgXcQ",
-    avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop&crop=face"
+    avatar: "https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/327f2e46-5752-43d4-8ed8-24a0c6697f7c.png"
   },
   {
     name: "Al W.",
