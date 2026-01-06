@@ -127,8 +127,8 @@ const HeroSection = () => {
                       <Input
                         id="name"
                         placeholder="Enter your full name"
-                        className="bg-white/20 border-white/30 text-white placeholder-white/70 focus:bg-white/30 focus:border-white/50"
-                      />
+                        className="bg-white/20 border-white/30 text-white placeholder-white/70 focus:bg-white/30 focus:border-white/50" />
+
                     </div>
                     
                     <div className="grid grid-cols-2 gap-4">
@@ -138,8 +138,8 @@ const HeroSection = () => {
                           id="phone"
                           type="tel"
                           placeholder="(760) 123-4567"
-                          className="bg-white/20 border-white/30 text-white placeholder-white/70 focus:bg-white/30 focus:border-white/50"
-                        />
+                          className="bg-white/20 border-white/30 text-white placeholder-white/70 focus:bg-white/30 focus:border-white/50" />
+
                       </div>
                       <div className="space-y-2">
                         <Label htmlFor="email" className="text-white text-sm font-medium">Email</Label>
@@ -147,8 +147,8 @@ const HeroSection = () => {
                           id="email"
                           type="email"
                           placeholder="your@email.com"
-                          className="bg-white/20 border-white/30 text-white placeholder-white/70 focus:bg-white/30 focus:border-white/50"
-                        />
+                          className="bg-white/20 border-white/30 text-white placeholder-white/70 focus:bg-white/30 focus:border-white/50" />
+
                       </div>
                     </div>
                     
@@ -175,22 +175,22 @@ const HeroSection = () => {
                         id="message"
                         placeholder="Tell us more about how we can help you..."
                         className="bg-white/20 border-white/30 text-white placeholder-white/70 focus:bg-white/30 focus:border-white/50 resize-none"
-                        rows={3}
-                      />
+                        rows={3} />
+
                     </div>
                     
                     <div className="flex items-center space-x-2">
-                      <Checkbox 
-                        id="consent" 
-                        className="border-white/30 data-[state=checked]:bg-white data-[state=checked]:text-[#572670]"
-                      />
+                      <Checkbox
+                        id="consent"
+                        className="border-white/30 data-[state=checked]:bg-white data-[state=checked]:text-[#572670]" />
+
                       <Label htmlFor="consent" className="text-white text-xs leading-4">
                         I consent to be contacted by Karma TMS and authorize the use of this data for clinical evaluation and treatment recommendations.
                       </Label>
                     </div>
                     
-                    <Button 
-                      type="submit" 
+                    <Button
+                      type="submit"
                       className="w-full bg-white text-[#572670] hover:bg-white/90 font-semibold py-3 transition-all duration-300 shadow-lg hover:shadow-xl">
                       Schedule Your Consultation
                       <ArrowRight className="h-4 w-4 ml-2" />

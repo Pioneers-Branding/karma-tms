@@ -101,15 +101,15 @@ const TestimonialsSection = () => {
                       {/* YouTube Embed */}
                       <div className="aspect-video bg-black rounded-lg overflow-hidden shadow-2xl">
                         <iframe
-                          width="100%"
-                          height="100%"
-                          src={`https://www.youtube.com/embed/${currentData.videoId}?controls=1&modestbranding=1`}
-                          title={`${currentData.name} Testimonial`}
-                          frameBorder="0"
-                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                          allowFullScreen
-                          className="rounded-lg"
-                        ></iframe>
+                        width="100%"
+                        height="100%"
+                        src={`https://www.youtube.com/embed/${currentData.videoId}?controls=1&modestbranding=1`}
+                        title={`${currentData.name} Testimonial`}
+                        frameBorder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowFullScreen
+                        className="rounded-lg">
+                      </iframe>
                       </div>
                       <div className="absolute -bottom-6 left-1/2 transform -translate-x-1/2">
                         <div className="bg-white text-[#572670] px-4 py-2 rounded-full text-sm font-semibold shadow-lg">
