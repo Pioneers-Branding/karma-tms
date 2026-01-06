@@ -18,13 +18,13 @@ const HeroSection = () => {
   {
     title: 'Advanced TMS at KarmaTMS',
     image:
-    'https://res.cloudinary.com/de4kw1t2i/image/upload/v1759239428/ktms_irodne.jpg',
+    'https://res.cloudinary.com/de4kw1t2i/image/upload/v1761742451/IMG_9537_VSCO_uw6qok.jpg',
     alt: 'KarmaTMS mental health center entrance in Palm Springs offering advanced TMS therapy for depression treatment'
   },
   {
     title: 'Find us in Palm Springs',
     image:
-    'https://res.cloudinary.com/de4kw1t2i/image/upload/v1761742451/IMG_9537_VSCO_uw6qok.jpg',
+    'https://res.cloudinary.com/de4kw1t2i/image/upload/v1759239428/ktms_irodne.jpg',
     alt: 'Palm Springs California location for KarmaTMS depression and anxiety treatment center'
   },
   {
