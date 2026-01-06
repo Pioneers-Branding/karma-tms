@@ -286,7 +286,7 @@ const VADisabilityBenefitsMentalHealthBlogPostPage = () => {
             {/* Introduction */}
             <section ref={(el) => sectionsRef.current['introduction'] = el} className="mb-12">
               <img
-                src="https://res.cloudinary.com/de4kw1t2i/image/upload/v1762863798/blog_1_efmoo3.png"
+                src="https://res.cloudinary.com/de4kw1t2i/image/upload/v1763033665/2_tv5b86.png"
                 alt="VA disability benefits for veterans with mental health conditions"
                 className="w-full h-64 md:h-96 object-cover rounded-lg mb-6" />
 
