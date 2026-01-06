@@ -284,7 +284,7 @@ const DepressionErectileDysfunctionBlogPostPage = () => {
             {/* Introduction */}
             <div className="mb-12">
               <img
-                src="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/2ddc8d69-b09a-4f1d-bd47-6d783ceefbd1.webp"
+                src="https://res.cloudinary.com/de4kw1t2i/image/upload/v1764138577/24_guuewg.png"
                 alt="Depression and erectile dysfunction connection"
                 className="w-full object-cover rounded-lg mb-6" />
 
