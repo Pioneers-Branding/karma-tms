@@ -358,7 +358,7 @@ const DepressionPage = () => {
             </div>
             <div className="relative">
               <img
-                src="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/031012db-9570-41de-bb30-96c6fa482330.png"
+                src="https://images.unsplash.com/photo-1570105954248-fa0c1376edfe?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MTg3MTl8MHwxfHNlYXJjaHwxfHxBJTIwVE1TJTIwdHJlYXRtZW50JTIwY2hhaXIlMjB1c2VkJTIwZm9yJTIwZGVwcmVzc2lvbiUyMHRoZXJhcHkufGVufDB8fHx8MTc1OTIzNjY3MXww&ixlib=rb-4.1.0&q=80&w=200$w=800"
                 alt="TMS treatment chair"
                 className="rounded-lg shadow-lg" />
 

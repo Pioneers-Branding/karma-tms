@@ -7,7 +7,7 @@ const HeroSection = () => {
   const slides = [
   {
     title: "Advanced TMS at KarmaTMS",
-    image: "https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/d85b7133-76b3-47d9-8904-c6b4ffc09e40.jpeg",
+    image: "https://images.unsplash.com/photo-1655732329737-6e5596a5421c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MTg3MTl8MHwxfHNlYXJjaHwxfHxBJTIwbW9kZXJuJTIwYW5kJTIwd2VsY29taW5nJTIwZW50cmFuY2UlMjB0byUyMEthcm1hJTIwVE1TJTJDJTIwc2hvd2Nhc2luZyUyMGl0cyUyMGFkdmFuY2VkJTIwZmFjaWxpdGllcy58ZW58MHx8fHwxNzU5MjM2NjYzfDA&ixlib=rb-4.1.0&q=80&w=200$w=1920",
     alt: "Karma TMS entrance"
   },
   {

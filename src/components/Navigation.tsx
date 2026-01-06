@@ -92,7 +92,7 @@ const Navigation = () => {
           {/* Logo - Responsive sizing */}
           <Link to="/" className="flex items-center flex-shrink-0">
             <img
-              src="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/ebadb369-a58d-421c-b937-24f900be5867.png"
+              src="https://images.unsplash.com/photo-1673825495275-f070b2e00dec?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MTg3MTl8MHwxfHNlYXJjaHwxfHxBJTIwbG9nbyUyMGltYWdlJTIwZm9yJTIwS2FybWElMjBUTVMlMkMlMjBmZWF0dXJpbmclMjBhJTIwc3R5bGl6ZWQlMjBkZXNpZ24ufGVufDB8fHx8MTc1OTIzNjY2NXww&ixlib=rb-4.1.0&q=80&w=200$w=200"
               alt="Karma TMS"
               className="h-8 w-auto sm:h-10 md:h-12 transition-all duration-200" />
 

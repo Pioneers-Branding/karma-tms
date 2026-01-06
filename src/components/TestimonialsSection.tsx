@@ -15,8 +15,32 @@ const TestimonialsSection = () => {
     rating: 5,
     quote: "Depression is a miserable way to deal with life on a daily basis. When the med dont seem to do the trick ,TMS therapy is a sensible addition to treatment that has helped me in the battle.",
     hasVideo: false,
-    videoId: "xewffol4oOQ", // Example YouTube ID
-    avatar: "https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/498a0642-bb81-4bcf-8933-201f433ed83a.png"
+    videoId: "xewffol4oOQ",
+    videoType: "youtube",
+    avatar: "https://images.unsplash.com/photo-1750056393306-ac672d0dbb8c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MTg3MTl8MHwxfHNlYXJjaHwxfHxBJTIwcGxhY2Vob2xkZXIlMjBhdmF0YXIlMjBpbWFnZSUyMGZvciUyMGElMjB0ZXN0aW1vbmlhbCUyMHNlY3Rpb24ufGVufDB8fHx8MTc1OTIzNjY1OHww&ixlib=rb-4.1.0&q=80&w=200$w=512"
+  },
+  {
+    name: "Spanish Patient B",
+    location: "Coachella Valley, CA",
+    condition: "Depression Treatment",
+    rating: 5,
+    quote: "Testimonio en español sobre mi experiencia transformadora con la terapia TMS en Karma TMS.",
+    hasVideo: true,
+    videoId: "1106562016",
+    videoType: "vimeo",
+    avatar: "https://images.unsplash.com/photo-1750056393306-ac672d0dbb8c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MTg3MTl8MHwxfHNlYXJjaHwxfHxBJTIwcGxhY2Vob2xkZXIlMjBhdmF0YXIlMjBpbWFnZSUyMGZvciUyMGElMjB0ZXN0aW1vbmlhbCUyMHNlY3Rpb24ufGVufDB8fHx8MTc1OTIzNjY1OHww&ixlib=rb-4.1.0&q=80&w=200$w=512"
+  },
+  {
+    name: "Spanish Patient A",
+    location: "Coachella Valley, CA",
+    condition: "Mental Health Treatment",
+    rating: 5,
+    quote: "La terapia TMS ha cambiado mi vida. Recomiendo este tratamiento a cualquier persona que busque una solución efectiva.",
+    hasVideo: true,
+    videoId: "1098237681",
+    videoType: "vimeo",
+    vimeoHash: "b204c02062",
+    avatar: "https://images.unsplash.com/photo-1750056393306-ac672d0dbb8c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MTg3MTl8MHwxfHNlYXJjaHwxfHxBJTIwcGxhY2Vob2xkZXIlMjBhdmF0YXIlMjBpbWFnZSUyMGZvciUyMGElMjB0ZXN0aW1vbmlhbCUyMHNlY3Rpb24ufGVufDB8fHx8MTc1OTIzNjY1OHww&ixlib=rb-4.1.0&q=80&w=200$w=512"
   },
   {
     name: "Thomas M.",
@@ -25,7 +49,8 @@ const TestimonialsSection = () => {
     rating: 5,
     quote: "TMS has helped me incredibly.It took more then half way throughout the sessions to see results but it definitely started to kick in. I highly recommend anyone sufferings with depression etc to try TMS.",
     hasVideo: false,
-    avatar: "https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/e46a0ae8-2974-432a-9a49-4a1e8300553b.png"
+    videoType: "youtube",
+    avatar: "https://images.unsplash.com/photo-1750056393306-ac672d0dbb8c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MTg3MTl8MHwxfHNlYXJjaHwxfHxBJTIwcGxhY2Vob2xkZXIlMjBhdmF0YXIlMjBpbWFnZSUyMGZvciUyMGElMjB0ZXN0aW1vbmlhbCUyMHNlY3Rpb24ufGVufDB8fHx8MTc1OTIzNjY1OHww&ixlib=rb-4.1.0&q=80&w=200$w=512"
   },
   {
     name: "Benjamin A.",
@@ -35,7 +60,8 @@ const TestimonialsSection = () => {
     quote: "My TMS experience was life changing. I went from being in bed for weeks and months to rejoining life again. The science behind this technology is the hope so many of us need.If you’re thinking about TMS therapy I highly recommend it.",
     hasVideo: false,
     videoId: "dQw4w9WgXcQ",
-    avatar: "https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/327f2e46-5752-43d4-8ed8-24a0c6697f7c.png"
+    videoType: "youtube",
+    avatar: "https://images.unsplash.com/photo-1750056393306-ac672d0dbb8c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MTg3MTl8MHwxfHNlYXJjaHwxfHxBJTIwcGxhY2Vob2xkZXIlMjBhdmF0YXIlMjBpbWFnZSUyMGZvciUyMGElMjB0ZXN0aW1vbmlhbCUyMHNlY3Rpb24ufGVufDB8fHx8MTc1OTIzNjY1OHww&ixlib=rb-4.1.0&q=80&w=200$w=512"
   },
   {
     name: "Nicole J.",
@@ -44,7 +70,8 @@ const TestimonialsSection = () => {
     rating: 5,
     quote: "TMS therapy changed my life! This was a leap of faith and it worked out for me, TMS saved my life!",
     hasVideo: false,
-    avatar: "https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/962f349b-14de-4a40-b25d-849dc7d20c24.png"
+    videoType: "youtube",
+    avatar: "https://images.unsplash.com/photo-1750056393306-ac672d0dbb8c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MTg3MTl8MHwxfHNlYXJjaHwxfHxBJTIwcGxhY2Vob2xkZXIlMjBhdmF0YXIlMjBpbWFnZSUyMGZvciUyMGElMjB0ZXN0aW1vbmlhbCUyMHNlY3Rpb24ufGVufDB8fHx8MTc1OTIzNjY1OHww&ixlib=rb-4.1.0&q=80&w=200$w=512"
   },
   {
     name: "Lynette I.",
@@ -54,7 +81,8 @@ const TestimonialsSection = () => {
     quote: "I have had treatment-resistant clinical depression since childhood. [TMS] proved to be a life-changing decision, since after completing the recommended number of treatments, I experienced, for the first time, life without the dark cycles of depression",
     hasVideo: false,
     videoId: "dQw4w9WgXcQ",
-    avatar: "https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/41b87b04-674f-4cd2-a399-5d68da1ab78e.png"
+    videoType: "youtube",
+    avatar: "https://images.unsplash.com/photo-1750056393306-ac672d0dbb8c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MTg3MTl8MHwxfHNlYXJjaHwxfHxBJTIwcGxhY2Vob2xkZXIlMjBhdmF0YXIlMjBpbWFnZSUyMGZvciUyMGElMjB0ZXN0aW1vbmlhbCUyMHNlY3Rpb24ufGVufDB8fHx8MTc1OTIzNjY1OHww&ixlib=rb-4.1.0&q=80&w=200$w=512"
   }];
 
 
@@ -90,18 +118,31 @@ const TestimonialsSection = () => {
                 <div className="relative bg-gradient-to-br from-[#572670] to-[#572670]/80 p-8 lg:p-12 flex items-center justify-center">
                   {currentData.hasVideo ?
                   <div className="relative w-full max-w-md">
-                      {/* YouTube Embed */}
+                      {/* Video Embed */}
                       <div className="aspect-video bg-black rounded-lg overflow-hidden shadow-2xl">
-                        <iframe
-                        width="100%"
-                        height="100%"
-                        src={`https://www.youtube.com/embed/${currentData.videoId}?controls=1&modestbranding=1`}
-                        title={`${currentData.name} Testimonial`}
-                        frameBorder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowFullScreen
-                        className="rounded-lg">
-                      </iframe>
+                        {currentData.videoType === 'vimeo' ? (
+                          <div style={{ padding: '56.25% 0 0 0', position: 'relative' }}>
+                            <iframe
+                              src={`https://player.vimeo.com/video/${currentData.videoId}${currentData.vimeoHash ? `?h=${currentData.vimeoHash}&` : '?'}badge=0&autopause=0&player_id=0&app_id=58479`}
+                              frameBorder="0"
+                              allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+                              style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }}
+                              title={`${currentData.name} Testimonial`}
+                              className="rounded-lg"
+                            />
+                          </div>
+                        ) : (
+                          <iframe
+                            width="100%"
+                            height="100%"
+                            src={`https://www.youtube.com/embed/${currentData.videoId}?controls=1&modestbranding=1`}
+                            title={`${currentData.name} Testimonial`}
+                            frameBorder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowFullScreen
+                            className="rounded-lg"
+                          />
+                        )}
                       </div>
                       <div className="absolute -bottom-6 left-1/2 transform -translate-x-1/2">
                         <div className="bg-white text-[#572670] px-4 py-2 rounded-full text-sm font-semibold shadow-lg">

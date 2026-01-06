@@ -150,7 +150,7 @@ const AboutPage = () => {
 
               <div className="relative rounded-3xl overflow-hidden shadow-2xl">
                 <img
-                  src="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/d85b7133-76b3-47d9-8904-c6b4ffc09e40.jpeg"
+                  src="https://images.unsplash.com/photo-1565466550182-0a93dad09f63?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MTg3MTl8MHwxfHNlYXJjaHwxfHxBJTIwbW9kZXJuJTIwY2xpbmljJTIwZW50cmFuY2UlMjB3aXRoJTIwYSUyMHdlbGNvbWluZyUyMGRlc2lnbiUyQyUyMGZlYXR1cmluZyUyMGElMjBnbGFzcyUyMGRvb3IlMjBhbmQlMjBhJTIwY2xlYW4lMkMlMjBwcm9mZXNzaW9uYWwlMjBhcHBlYXJhbmNlLnxlbnwwfHx8fDE3NTkyMzY2Njl8MA&ixlib=rb-4.1.0&q=80&w=200$w=1920"
                   alt="Karma TMS Clinic Entrance"
                   className="w-full h-96 object-cover" />
 
@@ -261,7 +261,7 @@ const AboutPage = () => {
                     </div>
                     <div className="relative">
                       <img
-                      src="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/031012db-9570-41de-bb30-96c6fa482330.png"
+                      src="https://images.unsplash.com/photo-1565466550182-0a93dad09f63?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MTg3MTl8MHwxfHNlYXJjaHwxfHxBJTIwcHJvZmVzc2lvbmFsJTIwY2xpbmljJTIwZW50cmFuY2UlMjBmZWF0dXJpbmclMjBhJTIwZ2xhc3MlMjBkb29yJTIwYW5kJTIwYSUyMGNsZWFuJTJDJTIwd2VsY29taW5nJTIwZGVzaWduLnxlbnwwfHx8fDE3NTkyMzY3MDJ8MA&ixlib=rb-4.1.0&q=80&w=200$w=1920"
                       alt="TMS Treatment Chair"
                       className="w-full h-80 object-contain rounded-2xl bg-gray-50 p-6" />
                     </div>
