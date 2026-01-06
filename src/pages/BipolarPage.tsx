@@ -363,7 +363,7 @@ const BipolarPage = () => {
             </div>
             <div className="relative">
               <img
-                src="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/a5282574-816a-449c-bb06-db229b0bf423.webp"
+                src="https://res.cloudinary.com/de4kw1t2i/image/upload/v1765797976/neurocare-TMS3407_Clinician-Patient-Apollo-Greiner_wglqfe.jpg"
                 alt="Medical monitoring and care"
                 className="rounded-lg shadow-lg max-h-[600px]" />
 
