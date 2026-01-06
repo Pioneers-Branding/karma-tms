@@ -22,7 +22,7 @@ const PalmSpringsPage = () => {
   const faqs = [
   {
     q: 'Where is KarmaTMS Palm Springs located?',
-    a: 'We have two convenient locations in the Coachella Valley: our main office at 560 S. Paseo Dorotea Suite 4-B in Palm Springs, and our Rancho Mirage office at 35400 Bob Hope Dr. Suite 206-B.'
+    a: 'We have two convenient locations in the Coachella Valley: our main office at 560 S. Paseo Dorotea Suite 4-B in Palm Springs, and our Rancho Mirage office at 35400 Bob Hope Dr. Suite 206.'
   },
   {
     q: 'What insurance do you accept in Palm Springs?',
@@ -69,7 +69,7 @@ const PalmSpringsPage = () => {
         {
           name: 'KarmaTMS Palm Springs',
           address: {
-            streetAddress: '560 S. Paseo Dorotea Suite 4-B',
+            streetAddress: '560 S. Paseo Dorotea Suite 4',
             addressLocality: 'Palm Springs',
             addressRegion: 'CA',
             postalCode: '92264'
@@ -79,7 +79,7 @@ const PalmSpringsPage = () => {
         {
           name: 'KarmaTMS Rancho Mirage',
           address: {
-            streetAddress: '35400 Bob Hope Dr. Suite 206-B',
+            streetAddress: '35400 Bob Hope Dr. Suite 206',
             addressLocality: 'Rancho Mirage',
             addressRegion: 'CA',
             postalCode: '92270'
