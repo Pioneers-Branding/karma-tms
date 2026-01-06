@@ -460,10 +460,11 @@ const WomensMoodPage = () => {
               the compassionate, expert care you deserve during this important time.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="bg-[#572670] hover:bg-[#572670]/90">
+              <Link to="/contact"><Button size="lg" className="bg-[#572670] hover:bg-[#572670]/90">
                 <Calendar className="h-5 w-5 mr-2" />
                 Schedule Your Consultation
               </Button>
+              </Link>
               <Link to="/tms-quiz">
                 <Button size="lg" variant="outline">
                   <ArrowRight className="h-5 w-5 mr-2" />
