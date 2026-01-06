@@ -287,7 +287,7 @@ export default function TMSMigraineVeteransBlogPostPage() {
               <img
                 src="https://res.cloudinary.com/de4kw1t2i/image/upload/v1763033673/7_lnxkrv.png"
                 alt="TMS for Migraine Relief in Veterans"
-                className="w-full  md:h-96 object-cover rounded-lg mb-6" />
+                className="w-full  object-cover rounded-lg mb-6" />
 
             </div>
 
