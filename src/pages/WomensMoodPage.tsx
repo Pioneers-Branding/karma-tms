@@ -98,7 +98,7 @@ const WomensMoodPage = () => {
             </div>
             <div className="relative">
               <img
-                src="https://res.cloudinary.com/de4kw1t2i/image/upload/v1759239473/TMS_Chair_jgdar0.png"
+                src="https://res.cloudinary.com/de4kw1t2i/image/upload/v1763031168/Exomind_PIC_Unit_0943_ENUS100_lmh0bj.jpg"
                 alt="Women's mental health support and understanding"
                 className="rounded-lg shadow-lg" />
 
