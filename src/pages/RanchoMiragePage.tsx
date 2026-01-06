@@ -161,7 +161,7 @@ const RanchoMiragePage = () => {
           <div className="max-w-6xl mx-auto">
             {/* Header */}
             <div className="text-center mb-12">
-              <Badge className="mb-4 bg-yellow-500/20 text-yellow-300 border-yellow-400 text-sm font-semibold px-4 py-2">
+              <Badge className="text-[#ffffff] inline-flex items-center rounded-md border transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 shadow hover:bg-primary/80 mb-4 border-white text-sm font-semibold px-4 py-2">
                 🏆 EXCLUSIVE TO RANCHO MIRAGE
               </Badge>
               <h2 className="text-3xl lg:text-5xl font-bold mb-6 bg-gradient-to-r from-white via-purple-100 to-white bg-clip-text text-transparent">
@@ -181,8 +181,8 @@ const RanchoMiragePage = () => {
                 <img
                   src="https://res.cloudinary.com/de4kw1t2i/image/upload/v1763031168/Exomind_PIC_Unit_0943_ENUS100_lmh0bj.jpg"
                   alt="Exomind TMS device - premium technology"
-                  className="w-full h-full object-cover"
-                />
+                  className="w-full h-full object-cover" />
+
                 <div className="absolute inset-0 bg-gradient-to-t from-purple-900/80 via-purple-900/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                 <div className="absolute bottom-0 left-0 right-0 p-6 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
                   <p className="text-white font-semibold text-lg">Advanced Precision Technology</p>
@@ -193,8 +193,8 @@ const RanchoMiragePage = () => {
                 <img
                   src="https://res.cloudinary.com/de4kw1t2i/image/upload/v1763029483/Exomind_PIC_Female-Model5_0251_ENUS100_rfryxl.jpg"
                   alt="Patient receiving Exomind TMS treatment"
-                  className="w-full h-full object-cover"
-                />
+                  className="w-full h-full object-cover" />
+
                 <div className="absolute inset-0 bg-gradient-to-t from-purple-900/80 via-purple-900/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                 <div className="absolute bottom-0 left-0 right-0 p-6 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
                   <p className="text-white font-semibold text-lg">Comfortable Treatment Experience</p>
@@ -205,8 +205,8 @@ const RanchoMiragePage = () => {
                 <img
                   src="https://res.cloudinary.com/de4kw1t2i/image/upload/v1763029483/Exomind_PIC_Unit_0095_ENUS100_ldgsng.jpg"
                   alt="Exomind device close-up showing advanced features"
-                  className="w-full h-full object-cover"
-                />
+                  className="w-full h-full object-cover" />
+
                 <div className="absolute inset-0 bg-gradient-to-t from-purple-900/80 via-purple-900/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                 <div className="absolute bottom-0 left-0 right-0 p-6 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
                   <p className="text-white font-semibold text-lg">Best-in-Field Innovation</p>
