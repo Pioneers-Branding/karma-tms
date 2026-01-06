@@ -15,7 +15,7 @@ const TestimonialsSection = () => {
     rating: 5,
     quote: "After trying multiple medications for years with little success, TMS has given me my life back. The improvement in my mood and energy has been remarkable.",
     hasVideo: true,
-    videoId: "dQw4w9WgXcQ", // Example YouTube ID
+    videoId: "xewffol4oOQ", // Example YouTube ID
     avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=face"
   },
   {
