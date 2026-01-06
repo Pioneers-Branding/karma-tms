@@ -642,9 +642,7 @@ const VeteransBlogPostPage = () => {
                       Board-Certified Psychiatrist | Medical Director at KarmaTMS
                     </p>
                   
-                    <Button asChild variant="outline" className="border-[#572670] text-[#572670]">
-                      <Link to="/team">View Full Bio</Link>
-                    </Button>
+                   
                   </div>
                 </div>
               </CardContent>
