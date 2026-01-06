@@ -287,7 +287,7 @@ const PsychiatristsBoostWellBeingThroughExpertCareForMentalHealth = () => {
             {/* Introduction */}
             <div className="mb-12">
               <img
-                src="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/66e6e1ae-8cc3-4469-bfaf-b1f3f3d07006.webp"
+                src="https://res.cloudinary.com/de4kw1t2i/image/upload/v1764138578/31_n1knmb.png"
                 alt="Psychiatrist providing expert mental health care"
                 className="w-full object-cover rounded-lg mb-6" />
 
@@ -387,10 +387,7 @@ const PsychiatristsBoostWellBeingThroughExpertCareForMentalHealth = () => {
             <section ref={(el) => sectionsRef.current['tms-therapy'] = el} className="mb-12">
               <h2 className="text-3xl font-bold text-[#572670] mb-6">TMS Therapy: A Modern Psychiatric Innovation</h2>
               
-              <img
-                src="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/76caee2d-5629-4dc1-a3b4-8c5cea23ede6.webp"
-                alt="TMS Therapy treatment"
-                className="w-full object-cover rounded-lg mb-6" />
+             
 
               <p className="mb-4">
                 Transcranial Magnetic Stimulation represents one of the most significant advances in psychiatric treatment in recent decades. This FDA-approved therapy allows psychiatrists to:
