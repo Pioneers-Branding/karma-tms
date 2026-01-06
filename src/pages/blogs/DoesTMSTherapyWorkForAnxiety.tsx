@@ -297,7 +297,7 @@ const DoesTMSTherapyWorkForAnxiety = () => {
             {/* Introduction */}
             <div className="mb-12">
               <img
-                src="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/9705b922-d0fc-4d29-be10-acd507ce308c.webp"
+                src="https://res.cloudinary.com/de4kw1t2i/image/upload/v1764569002/34_g1u7jn.png"
                 alt="TMS therapy for anxiety treatment"
                 className="w-full object-cover rounded-lg mb-6" />
 
