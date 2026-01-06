@@ -525,7 +525,7 @@ const ExomindKarmaTMSPage = () => {
                     <Phone className="h-6 w-6 text-purple-600 mt-1 flex-shrink-0" />
                     <div>
                       <h3 className="font-semibold text-gray-900 mb-2">Call Us</h3>
-                      <a href="tel:760-760-5675" className="text-purple-600 font-medium text-lg hover:underline">
+                      <a href="tel:760-760-5675" className="text-[#4e4e4e] font-medium text-lg hover:underline">
                         (760) 760-5675
                       </a>
                     </div>
