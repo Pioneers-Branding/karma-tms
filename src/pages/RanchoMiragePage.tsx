@@ -321,7 +321,7 @@ const RanchoMiragePage = () => {
                     </Button>
                   </a>
                   <a
-                    href="https://g.page/r/your-google-business-link"
+                    href="#"
                     target="_blank"
                     rel="noopener noreferrer">
 
