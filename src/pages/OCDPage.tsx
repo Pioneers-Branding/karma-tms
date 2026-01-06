@@ -371,7 +371,7 @@ const OCDPage = () => {
             </div>
             <div className="relative">
               <img
-                src="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/dc48a774-38fc-40dd-9723-d016e82f221f.webp"
+                src="https://res.cloudinary.com/de4kw1t2i/image/upload/v1763029482/Exomind_PIC_Female-Model2_0125_ENUS100_rxgzxk.jpg"
                 alt="Deep TMS treatment for OCD"
                 className="rounded-lg shadow-lg" />
 
