@@ -40,8 +40,8 @@ import LocationsPage from "./pages/LocationsPage";
 import PalmSpringsPage from "./pages/PalmSpringsPage";
 import TwentyNinePalmsPage from "./pages/TwentyNinePalmsPage";
 import VeteransPage from "./pages/VeteransPage";
-import VeteransBlogPostPage from "./pages/VeteransBlogPostPage";
-import VAVeteransPTSDTMSBlogPostPage from "./pages/VAVeteransPTSDTMSBlogPostPage";
+import VeteransBlogPostPage from "./pages/blogs/VeteransBlogPostPage";
+import VAVeteransPTSDTMSBlogPostPage from "./pages/blogs/VAVeteransPTSDTMSBlogPostPage";
 import DisclaimerPage from "./pages/DisclaimerPage";
 
 const queryClient = new QueryClient();
