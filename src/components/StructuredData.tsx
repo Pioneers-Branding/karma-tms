@@ -14,10 +14,10 @@ interface Location {
 interface StructuredDataProps {
   type?: 'organization' | 'medicalBusiness' | 'localBusiness' | 'breadcrumb';
   locations?: Location[];
-  breadcrumbs?: Array<{ name: string; url: string }>;
+  breadcrumbs?: Array<{name: string;url: string;}>;
 }
 
-const StructuredData = ({ 
+const StructuredData = ({
   type = 'organization',
   locations,
   breadcrumbs
@@ -39,40 +39,40 @@ const StructuredData = ({
     "paymentAccepted": "Cash, Credit Card, Insurance",
     "openingHours": "Mo-Fr 08:00-18:00",
     "medicalSpecialty": [
-      "Psychiatry",
-      "Mental Health",
-      "Depression Treatment",
-      "Anxiety Treatment"
-    ],
+    "Psychiatry",
+    "Mental Health",
+    "Depression Treatment",
+    "Anxiety Treatment"],
+
     "hasOfferCatalog": {
       "@type": "OfferCatalog",
       "name": "Mental Health Services",
       "itemListElement": [
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "MedicalTherapy",
-            "name": "TMS Therapy",
-            "description": "Transcranial Magnetic Stimulation therapy for depression and mental health"
-          }
-        },
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "MedicalTherapy",
-            "name": "Depression Treatment",
-            "description": "FDA-approved treatment for treatment-resistant depression"
-          }
-        },
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "MedicalTherapy",
-            "name": "Anxiety Treatment",
-            "description": "Advanced therapy for anxiety disorders"
-          }
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "MedicalTherapy",
+          "name": "TMS Therapy",
+          "description": "Transcranial Magnetic Stimulation therapy for depression and mental health"
         }
-      ]
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "MedicalTherapy",
+          "name": "Depression Treatment",
+          "description": "FDA-approved treatment for treatment-resistant depression"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "MedicalTherapy",
+          "name": "Anxiety Treatment",
+          "description": "Advanced therapy for anxiety disorders"
+        }
+      }]
+
     },
     "aggregateRating": {
       "@type": "AggregateRating",
@@ -82,71 +82,71 @@ const StructuredData = ({
       "worstRating": "1"
     },
     "address": [
-      {
-        "@type": "PostalAddress",
-        "streetAddress": "560 S. Paseo Dorotea Suite 4-B",
-        "addressLocality": "Palm Springs",
-        "addressRegion": "CA",
-        "postalCode": "92264",
-        "addressCountry": "US"
-      },
-      {
-        "@type": "PostalAddress",
-        "streetAddress": "35400 Bob Hope Dr. Suite 206-B",
-        "addressLocality": "Rancho Mirage",
-        "addressRegion": "CA",
-        "postalCode": "92270",
-        "addressCountry": "US"
-      },
-      {
-        "@type": "PostalAddress",
-        "streetAddress": "72724 29 Palms Hwy. Suite 107-B",
-        "addressLocality": "Twentynine Palms",
-        "addressRegion": "CA",
-        "postalCode": "92277",
-        "addressCountry": "US"
-      }
-    ],
+    {
+      "@type": "PostalAddress",
+      "streetAddress": "560 S. Paseo Dorotea Suite 4-B",
+      "addressLocality": "Palm Springs",
+      "addressRegion": "CA",
+      "postalCode": "92264",
+      "addressCountry": "US"
+    },
+    {
+      "@type": "PostalAddress",
+      "streetAddress": "35400 Bob Hope Dr. Suite 206-B",
+      "addressLocality": "Rancho Mirage",
+      "addressRegion": "CA",
+      "postalCode": "92270",
+      "addressCountry": "US"
+    },
+    {
+      "@type": "PostalAddress",
+      "streetAddress": "72724 29 Palms Hwy. Suite 107-B",
+      "addressLocality": "Twentynine Palms",
+      "addressRegion": "CA",
+      "postalCode": "92277",
+      "addressCountry": "US"
+    }],
+
     "geo": [
-      {
-        "@type": "GeoCoordinates",
-        "latitude": "33.8303",
-        "longitude": "-116.5453"
-      }
-    ],
+    {
+      "@type": "GeoCoordinates",
+      "latitude": "33.8303",
+      "longitude": "-116.5453"
+    }],
+
     "areaServed": [
-      {
-        "@type": "City",
-        "name": "Palm Springs",
-        "containedIn": {
-          "@type": "State",
-          "name": "California"
-        }
-      },
-      {
-        "@type": "City",
-        "name": "Rancho Mirage",
-        "containedIn": {
-          "@type": "State",
-          "name": "California"
-        }
-      },
-      {
-        "@type": "City",
-        "name": "Twentynine Palms",
-        "containedIn": {
-          "@type": "State",
-          "name": "California"
-        }
+    {
+      "@type": "City",
+      "name": "Palm Springs",
+      "containedIn": {
+        "@type": "State",
+        "name": "California"
       }
-    ],
+    },
+    {
+      "@type": "City",
+      "name": "Rancho Mirage",
+      "containedIn": {
+        "@type": "State",
+        "name": "California"
+      }
+    },
+    {
+      "@type": "City",
+      "name": "Twentynine Palms",
+      "containedIn": {
+        "@type": "State",
+        "name": "California"
+      }
+    }],
+
     "sameAs": [
-      "https://www.facebook.com/karmatms",
-      "https://www.instagram.com/karmatms"
-    ]
+    "https://www.facebook.com/karmatms",
+    "https://www.instagram.com/karmatms"]
+
   };
 
-  const localBusinessSchema = locations?.map(location => ({
+  const localBusinessSchema = locations?.map((location) => ({
     "@context": "https://schema.org",
     "@type": "MedicalClinic",
     "name": `KarmaTMS - ${location.name}`,
@@ -179,19 +179,19 @@ const StructuredData = ({
     }))
   };
 
-  const schema = type === 'breadcrumb' 
-    ? breadcrumbSchema 
-    : type === 'localBusiness' && localBusinessSchema 
-      ? localBusinessSchema 
-      : baseOrganization;
+  const schema = type === 'breadcrumb' ?
+  breadcrumbSchema :
+  type === 'localBusiness' && localBusinessSchema ?
+  localBusinessSchema :
+  baseOrganization;
 
   return (
     <Helmet>
       <script type="application/ld+json">
         {JSON.stringify(schema)}
       </script>
-    </Helmet>
-  );
+    </Helmet>);
+
 };
 
 export default StructuredData;

@@ -12,21 +12,21 @@ import { Brain, Shield, CheckCircle, ArrowRight, Calendar, Heart, Award, Zap } f
 const AnxietyPage = () => {
   return (
     <div className="min-h-screen">
-      <SEO 
+      <SEO
         title="TMS Therapy for Anxiety Disorders | KarmaTMS Mental Health Treatment"
         description="Effective TMS therapy for anxiety disorders. Karma mental health specialists treat GAD, panic disorder, and social anxiety. Non-invasive treatment in Palm Springs."
         keywords="TMS therapy anxiety, anxiety treatment Palm Springs, KarmaTMS anxiety, generalized anxiety disorder treatment, panic disorder therapy, social anxiety treatment"
         canonical="/anxiety"
-        ogImage="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/e3bc971e-e2ab-4334-ac23-0b9876309934.webp"
-      />
-      <StructuredData 
+        ogImage="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/e3bc971e-e2ab-4334-ac23-0b9876309934.webp" />
+
+      <StructuredData
         type="breadcrumb"
         breadcrumbs={[
-          { name: "Home", url: "/" },
-          { name: "Conditions", url: "/conditions" },
-          { name: "Anxiety Treatment", url: "/anxiety" }
-        ]}
-      />
+        { name: "Home", url: "/" },
+        { name: "Conditions", url: "/conditions" },
+        { name: "Anxiety Treatment", url: "/anxiety" }]
+        } />
+
       <Navigation />
       
       {/* Hero Section */}

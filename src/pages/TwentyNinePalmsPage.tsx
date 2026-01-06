@@ -10,56 +10,56 @@ import { Link } from 'react-router-dom';
 
 const TwentyNinePalmsPage = () => {
   const services = [
-    'TMS Therapy',
-    'PR-TMS (Personalized Repetitive TMS)',
-    'Brain Mapping (qEEG)',
-    'Neurofeedback',
-    'Medication Management',
-    'PTSD Treatment'
-  ];
+  'TMS Therapy',
+  'PR-TMS (Personalized Repetitive TMS)',
+  'Brain Mapping (qEEG)',
+  'Neurofeedback',
+  'Medication Management',
+  'PTSD Treatment'];
+
 
   const features = [
-    {
-      icon: Shield,
-      title: 'Veterans Welcome',
-      description: 'Proud to serve military personnel and their families with specialized care'
-    },
-    {
-      icon: Heart,
-      title: 'Compassionate Care',
-      description: 'Understanding the unique challenges faced by military communities'
-    },
-    {
-      icon: Users,
-      title: 'Community Focused',
-      description: 'Serving Twentynine Palms and the High Desert region'
-    }
-  ];
+  {
+    icon: Shield,
+    title: 'Veterans Welcome',
+    description: 'Proud to serve military personnel and their families with specialized care'
+  },
+  {
+    icon: Heart,
+    title: 'Compassionate Care',
+    description: 'Understanding the unique challenges faced by military communities'
+  },
+  {
+    icon: Users,
+    title: 'Community Focused',
+    description: 'Serving Twentynine Palms and the High Desert region'
+  }];
+
 
   return (
     <div className="min-h-screen">
-      <SEO 
+      <SEO
         title="KarmaTMS Twentynine Palms | TMS Therapy for Veterans & Military | (760) 760-5675"
         description="KarmaTMS Twentynine Palms - TMS therapy near Marine Corps Base. PTSD treatment for veterans and military families. Depression & mental health services."
         keywords="KarmaTMS Twentynine Palms, TMS therapy 29 Palms, veterans mental health, PTSD treatment military, Marine Corps Base mental health"
         canonical="/29-palms"
-        ogImage="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/031012db-9570-41de-bb30-96c6fa482330.png"
-      />
-      <StructuredData 
+        ogImage="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/031012db-9570-41de-bb30-96c6fa482330.png" />
+
+      <StructuredData
         type="localBusiness"
         locations={[
-          {
-            name: "Twentynine Palms",
-            address: {
-              streetAddress: "72724 29 Palms Hwy. Suite 107-B",
-              addressLocality: "Twentynine Palms",
-              addressRegion: "CA",
-              postalCode: "92277"
-            },
-            telephone: "+1-760-760-5675"
-          }
-        ]}
-      />
+        {
+          name: "Twentynine Palms",
+          address: {
+            streetAddress: "72724 29 Palms Hwy. Suite 107-B",
+            addressLocality: "Twentynine Palms",
+            addressRegion: "CA",
+            postalCode: "92277"
+          },
+          telephone: "+1-760-760-5675"
+        }]
+        } />
+
       <Navigation />
       
       {/* Hero Section */}
@@ -105,11 +105,11 @@ const TwentyNinePalmsPage = () => {
               </div>
             </div>
             <div className="relative h-96 rounded-lg overflow-hidden shadow-xl">
-              <img 
+              <img
                 src="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/e3bc971e-e2ab-4334-ac23-0b9876309934.webp"
                 alt="TMS Therapy Equipment"
-                className="w-full h-full object-cover"
-              />
+                className="w-full h-full object-cover" />
+
             </div>
           </div>
         </div>
@@ -120,8 +120,8 @@ const TwentyNinePalmsPage = () => {
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-center mb-12">Why Choose Our 29 Palms Location</h2>
           <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto mb-16">
-            {features.map((feature, idx) => (
-              <Card key={idx} className="text-center hover:shadow-lg transition-shadow">
+            {features.map((feature, idx) =>
+            <Card key={idx} className="text-center hover:shadow-lg transition-shadow">
                 <CardContent className="p-8">
                   <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-blue-100 mb-6">
                     <feature.icon className="w-8 h-8 text-blue-600" />
@@ -130,7 +130,7 @@ const TwentyNinePalmsPage = () => {
                   <p className="text-gray-600">{feature.description}</p>
                 </CardContent>
               </Card>
-            ))}
+            )}
           </div>
 
           {/* Contact Information */}
@@ -193,8 +193,8 @@ const TwentyNinePalmsPage = () => {
                 allowFullScreen
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                title="Map of Twentynine Palms Location"
-              />
+                title="Map of Twentynine Palms Location" />
+
             </div>
           </div>
         </div>
@@ -213,11 +213,11 @@ const TwentyNinePalmsPage = () => {
             </div>
 
             <div className="grid md:grid-cols-2 gap-4">
-              {services.map((service, idx) => (
-                <Card key={idx} className="p-6 hover:shadow-lg transition-shadow">
+              {services.map((service, idx) =>
+              <Card key={idx} className="p-6 hover:shadow-lg transition-shadow">
                   <p className="font-medium text-lg">{service}</p>
                 </Card>
-              ))}
+              )}
             </div>
           </div>
         </div>
@@ -248,8 +248,8 @@ const TwentyNinePalmsPage = () => {
       </div>
 
       <FooterSection />
-    </div>
-  );
+    </div>);
+
 };
 
 export default TwentyNinePalmsPage;

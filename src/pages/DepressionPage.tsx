@@ -12,21 +12,21 @@ import { Brain, Heart, CheckCircle, ArrowRight, Calendar, Shield, Award, Users }
 const DepressionPage = () => {
   return (
     <div className="min-h-screen">
-      <SEO 
+      <SEO
         title="TMS Therapy for Depression Treatment | KarmaTMS Palm Springs"
         description="FDA-approved TMS therapy for treatment-resistant depression. 60-70% success rate with KarmaTMS. Non-invasive depression treatment in Palm Springs. Call now."
         keywords="TMS therapy depression, depression treatment Palm Springs, treatment-resistant depression, KarmaTMS depression, transcranial magnetic stimulation depression"
         canonical="/depression"
-        ogImage="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/e3bc971e-e2ab-4334-ac23-0b9876309934.webp"
-      />
-      <StructuredData 
+        ogImage="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/e3bc971e-e2ab-4334-ac23-0b9876309934.webp" />
+
+      <StructuredData
         type="breadcrumb"
         breadcrumbs={[
-          { name: "Home", url: "/" },
-          { name: "Conditions", url: "/conditions" },
-          { name: "Depression Treatment", url: "/depression" }
-        ]}
-      />
+        { name: "Home", url: "/" },
+        { name: "Conditions", url: "/conditions" },
+        { name: "Depression Treatment", url: "/depression" }]
+        } />
+
       <Navigation />
       
       {/* Hero Section */}

@@ -9,79 +9,79 @@ import { Brain, Heart, Shield, Zap, Users, Moon, Activity, Target } from "lucide
 
 const ConditionsPage = () => {
   const conditions = [
-    {
-      title: "Depression",
-      description: "Evidence-based TMS treatment for major depressive disorder, treatment-resistant depression, and seasonal affective disorder.",
-      icon: Brain,
-      link: "/depression/",
-      color: "from-blue-500 to-cyan-500"
-    },
-    {
-      title: "Anxiety Disorders",
-      description: "Effective treatment for generalized anxiety disorder, panic disorder, and social anxiety with non-invasive TMS therapy.",
-      icon: Heart,
-      link: "/anxiety/",
-      color: "from-purple-500 to-pink-500"
-    },
-    {
-      title: "OCD",
-      description: "FDA-cleared TMS treatment for obsessive-compulsive disorder with proven clinical effectiveness.",
-      icon: Shield,
-      link: "/ocd/",
-      color: "from-green-500 to-emerald-500"
-    },
-    {
-      title: "PTSD",
-      description: "Innovative TMS therapy for post-traumatic stress disorder, helping veterans and trauma survivors find relief.",
-      icon: Zap,
-      link: "/conditions/ptsd",
-      color: "from-orange-500 to-red-500"
-    },
-    {
-      title: "Bipolar Disorder",
-      description: "Specialized TMS protocols for bipolar disorder treatment, supporting mood stabilization and reducing episodes.",
-      icon: Activity,
-      link: "/conditions/bipolar",
-      color: "from-indigo-500 to-purple-500"
-    },
-    {
-      title: "Addiction",
-      description: "TMS therapy targeting brain circuits involved in addiction, supporting recovery and reducing cravings.",
-      icon: Target,
-      link: "/conditions/addiction",
-      color: "from-red-500 to-pink-500"
-    },
-    {
-      title: "Stress Management",
-      description: "Advanced stress management techniques using TMS therapy and neurofeedback for lasting relief.",
-      icon: Moon,
-      link: "/stress-management/",
-      color: "from-teal-500 to-cyan-500"
-    },
-    {
-      title: "Women's Mood Disorders",
-      description: "Specialized care for perinatal depression, PMDD, and other mood disorders unique to women's health.",
-      icon: Users,
-      link: "/conditions/womens-mood",
-      color: "from-pink-500 to-rose-500"
-    }
-  ];
+  {
+    title: "Depression",
+    description: "Evidence-based TMS treatment for major depressive disorder, treatment-resistant depression, and seasonal affective disorder.",
+    icon: Brain,
+    link: "/depression/",
+    color: "from-blue-500 to-cyan-500"
+  },
+  {
+    title: "Anxiety Disorders",
+    description: "Effective treatment for generalized anxiety disorder, panic disorder, and social anxiety with non-invasive TMS therapy.",
+    icon: Heart,
+    link: "/anxiety/",
+    color: "from-purple-500 to-pink-500"
+  },
+  {
+    title: "OCD",
+    description: "FDA-cleared TMS treatment for obsessive-compulsive disorder with proven clinical effectiveness.",
+    icon: Shield,
+    link: "/ocd/",
+    color: "from-green-500 to-emerald-500"
+  },
+  {
+    title: "PTSD",
+    description: "Innovative TMS therapy for post-traumatic stress disorder, helping veterans and trauma survivors find relief.",
+    icon: Zap,
+    link: "/conditions/ptsd",
+    color: "from-orange-500 to-red-500"
+  },
+  {
+    title: "Bipolar Disorder",
+    description: "Specialized TMS protocols for bipolar disorder treatment, supporting mood stabilization and reducing episodes.",
+    icon: Activity,
+    link: "/conditions/bipolar",
+    color: "from-indigo-500 to-purple-500"
+  },
+  {
+    title: "Addiction",
+    description: "TMS therapy targeting brain circuits involved in addiction, supporting recovery and reducing cravings.",
+    icon: Target,
+    link: "/conditions/addiction",
+    color: "from-red-500 to-pink-500"
+  },
+  {
+    title: "Stress Management",
+    description: "Advanced stress management techniques using TMS therapy and neurofeedback for lasting relief.",
+    icon: Moon,
+    link: "/stress-management/",
+    color: "from-teal-500 to-cyan-500"
+  },
+  {
+    title: "Women's Mood Disorders",
+    description: "Specialized care for perinatal depression, PMDD, and other mood disorders unique to women's health.",
+    icon: Users,
+    link: "/conditions/womens-mood",
+    color: "from-pink-500 to-rose-500"
+  }];
+
 
   return (
     <>
-      <SEO 
+      <SEO
         title="Mental Health Conditions Treated at KarmaTMS | Depression, Anxiety, OCD & More"
         description="KarmaTMS treats depression, anxiety, OCD, PTSD, bipolar disorder, and addiction with advanced TMS therapy. Expert mental health care in Palm Springs."
         keywords="KarmaTMS conditions, depression treatment, anxiety disorders, OCD treatment, PTSD therapy, bipolar treatment, mental health conditions"
-        canonical="/conditions"
-      />
-      <StructuredData 
+        canonical="/conditions" />
+
+      <StructuredData
         type="breadcrumb"
         breadcrumbs={[
-          { name: "Home", url: "/" },
-          { name: "Conditions We Treat", url: "/conditions" }
-        ]}
-      />
+        { name: "Home", url: "/" },
+        { name: "Conditions We Treat", url: "/conditions" }]
+        } />
+
       <Navigation />
       <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white">
         {/* Hero Section */}
@@ -130,8 +130,8 @@ const ConditionsPage = () => {
                         </Link>
                       </Button>
                     </CardContent>
-                  </Card>
-                );
+                  </Card>);
+
               })}
             </div>
           </div>
@@ -160,8 +160,8 @@ const ConditionsPage = () => {
         </section>
       </div>
       <FooterSection />
-    </>
-  );
+    </>);
+
 };
 
 export default ConditionsPage;

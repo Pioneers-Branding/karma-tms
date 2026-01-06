@@ -119,24 +119,24 @@ const TeamMemberCard: React.FC<TeamMemberCardProps> = ({ member, index }) => {
 
             {/* Specialties Preview */}
             <div className="flex flex-wrap gap-1 pt-2">
-              {member.specialties && member.specialties.length > 0 ? (
-                <>
-                  {member.specialties.slice(0, 2).map((specialty, idx) => (
-                    <Badge key={idx} variant="outline" className="text-xs border-[#572670]/30 text-[#572670]">
+              {member.specialties && member.specialties.length > 0 ?
+              <>
+                  {member.specialties.slice(0, 2).map((specialty, idx) =>
+                <Badge key={idx} variant="outline" className="text-xs border-[#572670]/30 text-[#572670]">
                       {specialty}
                     </Badge>
-                  ))}
-                  {member.specialties.length > 2 && (
-                    <Badge variant="outline" className="text-xs border-gray-300 text-gray-500">
+                )}
+                  {member.specialties.length > 2 &&
+                <Badge variant="outline" className="text-xs border-gray-300 text-gray-500">
                       +{member.specialties.length - 2} more
                     </Badge>
-                  )}
-                </>
-              ) : (
-                <Badge variant="outline" className="text-xs border-[#572670]/30 text-[#572670]">
+                }
+                </> :
+
+              <Badge variant="outline" className="text-xs border-[#572670]/30 text-[#572670]">
                   {member.credentials}
                 </Badge>
-              )}
+              }
             </div>
 
             {/* View Profile Button */}
@@ -184,11 +184,11 @@ const TeamMemberCard: React.FC<TeamMemberCardProps> = ({ member, index }) => {
                         <Badge variant="outline" className="mr-2 mb-2 border-[#572670]/30 text-[#572670]">
                           {member.credentials}
                         </Badge>
-                        {member.certifications && member.certifications.map((cert, idx) => (
-                          <Badge key={idx} variant="outline" className="mr-2 mb-2 border-[#572670]/30 text-[#572670]">
+                        {member.certifications && member.certifications.map((cert, idx) =>
+                        <Badge key={idx} variant="outline" className="mr-2 mb-2 border-[#572670]/30 text-[#572670]">
                             {cert}
                           </Badge>
-                        ))}
+                        )}
                       </div>
                     </div>
 
@@ -204,15 +204,15 @@ const TeamMemberCard: React.FC<TeamMemberCardProps> = ({ member, index }) => {
                     {/* Education */}
                     <div>
                       <h4 className="font-semibold text-gray-900 mb-3">Education</h4>
-                      {member.education && member.education.length > 0 ? (
-                        <ul className="space-y-1 text-sm text-gray-700">
-                          {member.education.map((edu, idx) => (
-                            <li key={idx}>• {edu}</li>
-                          ))}
-                        </ul>
-                      ) : (
-                        <p className="text-gray-700 text-sm">Contact for details</p>
-                      )}
+                      {member.education && member.education.length > 0 ?
+                      <ul className="space-y-1 text-sm text-gray-700">
+                          {member.education.map((edu, idx) =>
+                        <li key={idx}>• {edu}</li>
+                        )}
+                        </ul> :
+
+                      <p className="text-gray-700 text-sm">Contact for details</p>
+                      }
                     </div>
 
                     {/* Specialties */}

@@ -2,17 +2,17 @@ import { useParams, Link, Navigate } from 'react-router-dom';
 import { ArrowLeft, Mail, Phone, GraduationCap, Award, Briefcase, Heart } from 'lucide-react';
 import Navigation from '@/components/Navigation';
 import FooterSection from '@/components/FooterSection';
-import { getTeamMemberBySlug } from '@/data/teamData';
+import { teamMembers } from '@/data/teamData';
 import { Button } from '@/components/ui/button';
 
 export default function TeamMemberPage() {
-  const { slug } = useParams<{ slug: string }>();
-  
+  const { slug } = useParams<{slug: string;}>();
+
   if (!slug) {
     return <Navigate to="/team" replace />;
   }
 
-  const member = getTeamMemberBySlug(slug);
+  const member = teamMembers.find((member) => member.slug === slug);
 
   if (!member) {
     return <Navigate to="/team" replace />;
@@ -24,10 +24,10 @@ export default function TeamMemberPage() {
       
       {/* Breadcrumb Navigation */}
       <div className="container mx-auto px-4 pt-24 pb-8">
-        <Link 
-          to="/team" 
-          className="inline-flex items-center text-teal-600 hover:text-teal-700 transition-colors"
-        >
+        <Link
+          to="/team"
+          className="inline-flex items-center text-teal-600 hover:text-teal-700 transition-colors">
+
           <ArrowLeft className="w-4 h-4 mr-2" />
           Back to Team
         </Link>
@@ -45,8 +45,8 @@ export default function TeamMemberPage() {
                     <img
                       src={member.image}
                       alt={member.name}
-                      className="w-full h-full object-cover"
-                    />
+                      className="w-full h-full object-cover" />
+
                   </div>
                   <div className="absolute -bottom-4 -right-4 bg-gradient-to-r from-teal-500 to-purple-500 rounded-xl p-4 shadow-lg">
                     <Heart className="w-8 h-8 text-white" />
@@ -73,8 +73,8 @@ export default function TeamMemberPage() {
                 <div className="flex flex-wrap gap-4">
                   <Button
                     asChild
-                    className="bg-gradient-to-r from-teal-500 to-teal-600 hover:from-teal-600 hover:to-teal-700"
-                  >
+                    className="bg-gradient-to-r from-teal-500 to-teal-600 hover:from-teal-600 hover:to-teal-700">
+
                     <Link to="/contact">
                       <Mail className="w-4 h-4 mr-2" />
                       Request Appointment
@@ -83,8 +83,8 @@ export default function TeamMemberPage() {
                   <Button
                     variant="outline"
                     asChild
-                    className="border-teal-600 text-teal-600 hover:bg-teal-50"
-                  >
+                    className="border-teal-600 text-teal-600 hover:bg-teal-50">
+
                     <a href="tel:+17607705000">
                       <Phone className="w-4 h-4 mr-2" />
                       (760) 770-5000
@@ -106,15 +106,15 @@ export default function TeamMemberPage() {
               Areas of Expertise
             </h2>
             <div className="grid sm:grid-cols-2 gap-4">
-              {member.specialties.map((specialty, index) => (
-                <div
-                  key={index}
-                  className="flex items-center p-4 bg-gradient-to-r from-teal-50 to-purple-50 rounded-lg"
-                >
+              {member.specialties.map((specialty, index) =>
+              <div
+                key={index}
+                className="flex items-center p-4 bg-gradient-to-r from-teal-50 to-purple-50 rounded-lg">
+
                   <div className="w-2 h-2 bg-teal-600 rounded-full mr-3"></div>
                   <span className="text-gray-800 font-medium">{specialty}</span>
                 </div>
-              ))}
+              )}
             </div>
           </div>
         </div>
@@ -129,8 +129,8 @@ export default function TeamMemberPage() {
               {member.bio}
             </p>
 
-            {member.approach && (
-              <div className="bg-gradient-to-r from-teal-50 to-purple-50 rounded-xl p-6 mb-8">
+            {member.approach &&
+            <div className="bg-gradient-to-r from-teal-50 to-purple-50 rounded-xl p-6 mb-8">
                 <h3 className="text-xl font-semibold text-gray-900 mb-3 flex items-center">
                   <Heart className="w-5 h-5 mr-2 text-teal-600" />
                   Treatment Approach
@@ -139,10 +139,10 @@ export default function TeamMemberPage() {
                   {member.approach}
                 </p>
               </div>
-            )}
+            }
 
-            {member.experience && (
-              <div className="mb-8">
+            {member.experience &&
+            <div className="mb-8">
                 <h3 className="text-xl font-semibold text-gray-900 mb-3 flex items-center">
                   <Briefcase className="w-5 h-5 mr-2 text-teal-600" />
                   Experience
@@ -151,55 +151,55 @@ export default function TeamMemberPage() {
                   {member.experience}
                 </p>
               </div>
-            )}
+            }
           </div>
         </div>
       </div>
 
       {/* Education & Certifications */}
-      {(member.education || member.certifications) && (
-        <div className="container mx-auto px-4 pb-16">
+      {(member.education || member.certifications) &&
+      <div className="container mx-auto px-4 pb-16">
           <div className="max-w-6xl mx-auto">
             <div className="grid md:grid-cols-2 gap-8">
               {/* Education */}
-              {member.education && (
-                <div className="bg-white rounded-2xl shadow-lg p-8">
+              {member.education &&
+            <div className="bg-white rounded-2xl shadow-lg p-8">
                   <h2 className="text-2xl font-bold text-gray-900 mb-6 flex items-center">
                     <GraduationCap className="w-7 h-7 mr-3 text-teal-600" />
                     Education
                   </h2>
                   <ul className="space-y-4">
-                    {member.education.map((edu, index) => (
-                      <li key={index} className="flex items-start">
+                    {member.education.map((edu, index) =>
+                <li key={index} className="flex items-start">
                         <div className="w-2 h-2 bg-teal-600 rounded-full mr-3 mt-2"></div>
                         <span className="text-gray-700">{edu}</span>
                       </li>
-                    ))}
+                )}
                   </ul>
                 </div>
-              )}
+            }
 
               {/* Certifications */}
-              {member.certifications && (
-                <div className="bg-white rounded-2xl shadow-lg p-8">
+              {member.certifications &&
+            <div className="bg-white rounded-2xl shadow-lg p-8">
                   <h2 className="text-2xl font-bold text-gray-900 mb-6 flex items-center">
                     <Award className="w-7 h-7 mr-3 text-purple-600" />
                     Certifications
                   </h2>
                   <ul className="space-y-4">
-                    {member.certifications.map((cert, index) => (
-                      <li key={index} className="flex items-start">
+                    {member.certifications.map((cert, index) =>
+                <li key={index} className="flex items-start">
                         <div className="w-2 h-2 bg-purple-600 rounded-full mr-3 mt-2"></div>
                         <span className="text-gray-700">{cert}</span>
                       </li>
-                    ))}
+                )}
                   </ul>
                 </div>
-              )}
+            }
             </div>
           </div>
         </div>
-      )}
+      }
 
       {/* Call to Action */}
       <div className="container mx-auto px-4 pb-16">
@@ -215,8 +215,8 @@ export default function TeamMemberPage() {
               <Button
                 size="lg"
                 asChild
-                className="bg-white text-teal-600 hover:bg-gray-100"
-              >
+                className="bg-white text-teal-600 hover:bg-gray-100">
+
                 <Link to="/contact">
                   Request Appointment
                 </Link>
@@ -225,8 +225,8 @@ export default function TeamMemberPage() {
                 size="lg"
                 variant="outline"
                 asChild
-                className="border-white text-white hover:bg-white/10"
-              >
+                className="border-white text-white hover:bg-white/10">
+
                 <a href="tel:+17607705000">
                   Call (760) 770-5000
                 </a>
@@ -237,6 +237,6 @@ export default function TeamMemberPage() {
       </div>
 
       <FooterSection />
-    </div>
-  );
+    </div>);
+
 }

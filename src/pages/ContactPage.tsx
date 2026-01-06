@@ -96,47 +96,47 @@ const ContactPage = () => {
 
   return (
     <div className="min-h-screen bg-white">
-      <SEO 
+      <SEO
         title="Contact KarmaTMS | TMS Therapy in Palm Springs | (760) 760-5675"
         description="Contact KarmaTMS for depression treatment & mental health services in Palm Springs. Call (760) 760-5675. Multiple locations serving Southern California."
         keywords="contact KarmaTMS, TMS therapy Palm Springs, mental health consultation, KarmaTMS locations, depression treatment contact"
-        canonical="/contact"
-      />
-      <StructuredData 
+        canonical="/contact" />
+
+      <StructuredData
         type="localBusiness"
         locations={[
-          {
-            name: "Palm Springs",
-            address: {
-              streetAddress: "560 S. Paseo Dorotea Suite 4-B",
-              addressLocality: "Palm Springs",
-              addressRegion: "CA",
-              postalCode: "92264"
-            },
-            telephone: "+1-760-760-5675"
+        {
+          name: "Palm Springs",
+          address: {
+            streetAddress: "560 S. Paseo Dorotea Suite 4-B",
+            addressLocality: "Palm Springs",
+            addressRegion: "CA",
+            postalCode: "92264"
           },
-          {
-            name: "Rancho Mirage",
-            address: {
-              streetAddress: "35400 Bob Hope Dr. Suite 206-B",
-              addressLocality: "Rancho Mirage",
-              addressRegion: "CA",
-              postalCode: "92270"
-            },
-            telephone: "+1-760-760-5675"
+          telephone: "+1-760-760-5675"
+        },
+        {
+          name: "Rancho Mirage",
+          address: {
+            streetAddress: "35400 Bob Hope Dr. Suite 206-B",
+            addressLocality: "Rancho Mirage",
+            addressRegion: "CA",
+            postalCode: "92270"
           },
-          {
-            name: "Twentynine Palms",
-            address: {
-              streetAddress: "72724 29 Palms Hwy. Suite 107-B",
-              addressLocality: "Twentynine Palms",
-              addressRegion: "CA",
-              postalCode: "92277"
-            },
-            telephone: "+1-760-760-5675"
-          }
-        ]}
-      />
+          telephone: "+1-760-760-5675"
+        },
+        {
+          name: "Twentynine Palms",
+          address: {
+            streetAddress: "72724 29 Palms Hwy. Suite 107-B",
+            addressLocality: "Twentynine Palms",
+            addressRegion: "CA",
+            postalCode: "92277"
+          },
+          telephone: "+1-760-760-5675"
+        }]
+        } />
+
       <Navigation />
       
       {/* Hero Section */}

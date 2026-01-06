@@ -10,68 +10,68 @@ import { Link } from 'react-router-dom';
 
 const PalmSpringsPage = () => {
   const addresses = [
-    {
-      label: 'Main Office',
-      line1: '560 S. Paseo Dorotea Suite 4-B',
-      line2: 'Palm Springs, CA 92264',
-      mapUrl: 'https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d424310.5120877356!2d-116.4998743!3d33.8142259!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80db1c9045959abb%3A0xc2bd31e818075a39!2s560%20S%20Paseo%20Dorotea%20Suite%204B%2C%20Palm%20Springs%2C%20CA%2092264%2C%20USA!5e0!3m2!1sen!2sin!4v1756392856101!5m2!1sen!2sin'
-    },
-    {
-      label: 'Rancho Mirage Office',
-      line1: '35400 Bob Hope Dr. Suite 206-B',
-      line2: 'Rancho Mirage, CA 92270',
-      mapUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d229186.20144231617!2d-116.58782004243615!3d33.797083618942274!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dafd449b434721%3A0xf3719bcb5804db!2s35400%20Bob%20Hope%20Dr%20STE%20206%2C%20Rancho%20Mirage%2C%20CA%2092270!5e0!3m2!1sen!2sus!4v1756473962862!5m2!1sen!2sus'
-    }
-  ];
+  {
+    label: 'Main Office',
+    line1: '560 S. Paseo Dorotea Suite 4-B',
+    line2: 'Palm Springs, CA 92264',
+    mapUrl: 'https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d424310.5120877356!2d-116.4998743!3d33.8142259!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80db1c9045959abb%3A0xc2bd31e818075a39!2s560%20S%20Paseo%20Dorotea%20Suite%204B%2C%20Palm%20Springs%2C%20CA%2092264%2C%20USA!5e0!3m2!1sen!2sin!4v1756392856101!5m2!1sen!2sin'
+  },
+  {
+    label: 'Rancho Mirage Office',
+    line1: '35400 Bob Hope Dr. Suite 206-B',
+    line2: 'Rancho Mirage, CA 92270',
+    mapUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d229186.20144231617!2d-116.58782004243615!3d33.797083618942274!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dafd449b434721%3A0xf3719bcb5804db!2s35400%20Bob%20Hope%20Dr%20STE%20206%2C%20Rancho%20Mirage%2C%20CA%2092270!5e0!3m2!1sen!2sus!4v1756473962862!5m2!1sen!2sus'
+  }];
+
 
   const serviceAreas = [
-    'Palm Springs', 'Desert Hot Springs', 'Cathedral City', 'Rancho Mirage',
-    'Palm Desert', 'Indian Wells', 'La Quinta', 'Indio', 'Coachella Valley'
-  ];
+  'Palm Springs', 'Desert Hot Springs', 'Cathedral City', 'Rancho Mirage',
+  'Palm Desert', 'Indian Wells', 'La Quinta', 'Indio', 'Coachella Valley'];
+
 
   const services = [
-    'TMS Therapy',
-    'PR-TMS (Personalized Repetitive TMS)',
-    'Brain Mapping (qEEG)',
-    'Neurofeedback',
-    'Medication Management',
-    'Psychiatric Evaluations'
-  ];
+  'TMS Therapy',
+  'PR-TMS (Personalized Repetitive TMS)',
+  'Brain Mapping (qEEG)',
+  'Neurofeedback',
+  'Medication Management',
+  'Psychiatric Evaluations'];
+
 
   return (
     <div className="min-h-screen">
-      <SEO 
+      <SEO
         title="KarmaTMS Palm Springs | TMS Therapy & Depression Treatment | (760) 760-5675"
         description="KarmaTMS Palm Springs - Premier TMS therapy center serving Coachella Valley. Depression treatment, anxiety therapy. Two convenient locations. Call (760) 760-5675."
         keywords="KarmaTMS Palm Springs, TMS therapy Palm Springs, depression treatment Palm Springs, mental health Palm Springs, Coachella Valley TMS"
         canonical="/palm-springs"
-        ogImage="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/b65c46ad-dd56-4c76-bfc8-9fbe25e9b7af.jpg"
-      />
-      <StructuredData 
+        ogImage="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/b65c46ad-dd56-4c76-bfc8-9fbe25e9b7af.jpg" />
+
+      <StructuredData
         type="localBusiness"
         locations={[
-          {
-            name: "Palm Springs Main Office",
-            address: {
-              streetAddress: "560 S. Paseo Dorotea Suite 4-B",
-              addressLocality: "Palm Springs",
-              addressRegion: "CA",
-              postalCode: "92264"
-            },
-            telephone: "+1-760-760-5675"
+        {
+          name: "Palm Springs Main Office",
+          address: {
+            streetAddress: "560 S. Paseo Dorotea Suite 4-B",
+            addressLocality: "Palm Springs",
+            addressRegion: "CA",
+            postalCode: "92264"
           },
-          {
-            name: "Rancho Mirage Office",
-            address: {
-              streetAddress: "35400 Bob Hope Dr. Suite 206-B",
-              addressLocality: "Rancho Mirage",
-              addressRegion: "CA",
-              postalCode: "92270"
-            },
-            telephone: "+1-760-760-5675"
-          }
-        ]}
-      />
+          telephone: "+1-760-760-5675"
+        },
+        {
+          name: "Rancho Mirage Office",
+          address: {
+            streetAddress: "35400 Bob Hope Dr. Suite 206-B",
+            addressLocality: "Rancho Mirage",
+            addressRegion: "CA",
+            postalCode: "92270"
+          },
+          telephone: "+1-760-760-5675"
+        }]
+        } />
+
       <Navigation />
       
       {/* Hero Section */}
@@ -117,11 +117,11 @@ const PalmSpringsPage = () => {
               </div>
             </div>
             <div className="relative h-96 rounded-lg overflow-hidden shadow-xl">
-              <img 
+              <img
                 src="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/d85b7133-76b3-47d9-8904-c6b4ffc09e40.jpeg"
                 alt="Karma TMS Facility"
-                className="w-full h-full object-cover"
-              />
+                className="w-full h-full object-cover" />
+
             </div>
           </div>
         </div>
@@ -133,8 +133,8 @@ const PalmSpringsPage = () => {
           <h2 className="text-3xl font-bold text-center mb-12">Location Details</h2>
           
           <div className="grid lg:grid-cols-2 gap-8 max-w-6xl mx-auto mb-12">
-            {addresses.map((address, idx) => (
-              <Card key={idx} className="overflow-hidden">
+            {addresses.map((address, idx) =>
+            <Card key={idx} className="overflow-hidden">
                 <CardContent className="p-8">
                   <div className="flex items-center gap-2 mb-6">
                     <Building2 className="w-6 h-6 text-blue-600" />
@@ -180,26 +180,26 @@ const PalmSpringsPage = () => {
                   </Button>
                 </CardContent>
               </Card>
-            ))}
+            )}
           </div>
 
           {/* Maps */}
           <div className="grid lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
-            {addresses.map((address, idx) => (
-              <div key={idx} className="rounded-lg overflow-hidden shadow-lg">
+            {addresses.map((address, idx) =>
+            <div key={idx} className="rounded-lg overflow-hidden shadow-lg">
                 <iframe
-                  src={address.mapUrl}
-                  width="100%"
-                  height="400"
-                  style={{ border: 0 }}
-                  allowFullScreen
-                  loading="lazy"
-                  referrerPolicy="no-referrer-when-downgrade"
-                  title={`Map of ${address.label}`}
-                  className="w-full"
-                />
+                src={address.mapUrl}
+                width="100%"
+                height="400"
+                style={{ border: 0 }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title={`Map of ${address.label}`}
+                className="w-full" />
+
               </div>
-            ))}
+            )}
           </div>
         </div>
       </div>
@@ -217,22 +217,22 @@ const PalmSpringsPage = () => {
             </div>
 
             <div className="grid md:grid-cols-2 gap-4 mb-12">
-              {services.map((service, idx) => (
-                <Card key={idx} className="p-6 hover:shadow-lg transition-shadow">
+              {services.map((service, idx) =>
+              <Card key={idx} className="p-6 hover:shadow-lg transition-shadow">
                   <p className="font-medium text-lg">{service}</p>
                 </Card>
-              ))}
+              )}
             </div>
 
             <Card className="bg-gradient-to-br from-blue-50 to-teal-50 border-blue-200">
               <CardContent className="p-8 text-center">
                 <h3 className="text-xl font-bold mb-4">Service Areas</h3>
                 <div className="flex flex-wrap gap-2 justify-center">
-                  {serviceAreas.map((area) => (
-                    <Badge key={area} variant="secondary" className="px-3 py-1">
+                  {serviceAreas.map((area) =>
+                  <Badge key={area} variant="secondary" className="px-3 py-1">
                       {area}
                     </Badge>
-                  ))}
+                  )}
                 </div>
               </CardContent>
             </Card>
@@ -263,8 +263,8 @@ const PalmSpringsPage = () => {
       </div>
 
       <FooterSection />
-    </div>
-  );
+    </div>);
+
 };
 
 export default PalmSpringsPage;

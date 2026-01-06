@@ -10,62 +10,62 @@ import { Link } from 'react-router-dom';
 
 const VeteransPage = () => {
   const benefits = [
-    {
-      icon: Shield,
-      title: 'Specialized PTSD Treatment',
-      description: 'Evidence-based TMS therapy specifically effective for combat-related PTSD and trauma'
-    },
-    {
-      icon: Brain,
-      title: 'Non-Invasive Solution',
-      description: 'FDA-cleared treatment with no medication side effects or systemic impact'
-    },
-    {
-      icon: Heart,
-      title: 'Understanding Care',
-      description: 'Staff trained in military culture and the unique challenges faced by veterans'
-    },
-    {
-      icon: Users,
-      title: 'Family Support',
-      description: 'Resources and guidance for family members supporting veterans through treatment'
-    }
-  ];
+  {
+    icon: Shield,
+    title: 'Specialized PTSD Treatment',
+    description: 'Evidence-based TMS therapy specifically effective for combat-related PTSD and trauma'
+  },
+  {
+    icon: Brain,
+    title: 'Non-Invasive Solution',
+    description: 'FDA-cleared treatment with no medication side effects or systemic impact'
+  },
+  {
+    icon: Heart,
+    title: 'Understanding Care',
+    description: 'Staff trained in military culture and the unique challenges faced by veterans'
+  },
+  {
+    icon: Users,
+    title: 'Family Support',
+    description: 'Resources and guidance for family members supporting veterans through treatment'
+  }];
+
 
   const conditions = [
-    'Post-Traumatic Stress Disorder (PTSD)',
-    'Major Depressive Disorder',
-    'Anxiety Disorders',
-    'Combat-Related Trauma',
-    'Treatment-Resistant Depression',
-    'Adjustment Disorders'
-  ];
+  'Post-Traumatic Stress Disorder (PTSD)',
+  'Major Depressive Disorder',
+  'Anxiety Disorders',
+  'Combat-Related Trauma',
+  'Treatment-Resistant Depression',
+  'Adjustment Disorders'];
+
 
   const whyTMS = [
-    'No medication interactions',
-    'Non-systemic treatment',
-    'Proven effective for PTSD',
-    'Minimal side effects',
-    'Outpatient procedure',
-    'Can continue daily activities'
-  ];
+  'No medication interactions',
+  'Non-systemic treatment',
+  'Proven effective for PTSD',
+  'Minimal side effects',
+  'Outpatient procedure',
+  'Can continue daily activities'];
+
 
   return (
     <div className="min-h-screen">
-      <SEO 
+      <SEO
         title="KarmaTMS Veterans Services | TMS Therapy for PTSD & Military Mental Health"
         description="Specialized KarmaTMS therapy for veterans and military personnel. PTSD treatment, depression care near Marine Corps Base. TRICARE accepted. Call (760) 760-5675."
         keywords="KarmaTMS veterans, TMS therapy PTSD, veterans mental health, military PTSD treatment, TRICARE TMS therapy, Marine Corps mental health"
         canonical="/veterans"
-        ogImage="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/e3bc971e-e2ab-4334-ac23-0b9876309934.webp"
-      />
-      <StructuredData 
+        ogImage="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/e3bc971e-e2ab-4334-ac23-0b9876309934.webp" />
+
+      <StructuredData
         type="breadcrumb"
         breadcrumbs={[
-          { name: "Home", url: "/" },
-          { name: "Veterans Services", url: "/veterans" }
-        ]}
-      />
+        { name: "Home", url: "/" },
+        { name: "Veterans Services", url: "/veterans" }]
+        } />
+
       <Navigation />
       
       {/* Hero Section */}
@@ -114,8 +114,8 @@ const VeteransPage = () => {
           </div>
 
           <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
-            {benefits.map((benefit, idx) => (
-              <Card key={idx} className="hover:shadow-lg transition-shadow">
+            {benefits.map((benefit, idx) =>
+            <Card key={idx} className="hover:shadow-lg transition-shadow">
                 <CardContent className="p-8">
                   <div className="flex items-start gap-4">
                     <div className="flex-shrink-0">
@@ -130,7 +130,7 @@ const VeteransPage = () => {
                   </div>
                 </CardContent>
               </Card>
-            ))}
+            )}
           </div>
         </div>
       </div>
@@ -147,20 +147,20 @@ const VeteransPage = () => {
                   conditions commonly experienced by veterans and military personnel.
                 </p>
                 <div className="space-y-3">
-                  {conditions.map((condition, idx) => (
-                    <div key={idx} className="flex items-start gap-3">
+                  {conditions.map((condition, idx) =>
+                  <div key={idx} className="flex items-start gap-3">
                       <CheckCircle2 className="w-6 h-6 text-green-600 flex-shrink-0 mt-1" />
                       <p className="text-lg font-medium">{condition}</p>
                     </div>
-                  ))}
+                  )}
                 </div>
               </div>
               <div className="relative h-96 rounded-lg overflow-hidden shadow-xl">
-                <img 
+                <img
                   src="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/031012db-9570-41de-bb30-96c6fa482330.png"
                   alt="TMS Treatment Chair"
-                  className="w-full h-full object-cover"
-                />
+                  className="w-full h-full object-cover" />
+
               </div>
             </div>
           </div>
@@ -180,8 +180,8 @@ const VeteransPage = () => {
             </div>
 
             <div className="grid md:grid-cols-2 gap-6 mb-12">
-              {whyTMS.map((item, idx) => (
-                <Card key={idx} className="border-l-4 border-l-blue-600">
+              {whyTMS.map((item, idx) =>
+              <Card key={idx} className="border-l-4 border-l-blue-600">
                   <CardContent className="p-6">
                     <div className="flex items-center gap-3">
                       <CheckCircle2 className="w-5 h-5 text-blue-600 flex-shrink-0" />
@@ -189,7 +189,7 @@ const VeteransPage = () => {
                     </div>
                   </CardContent>
                 </Card>
-              ))}
+              )}
             </div>
 
             <Card className="bg-gradient-to-br from-blue-50 to-teal-50 border-blue-200">
@@ -308,8 +308,8 @@ const VeteransPage = () => {
       </div>
 
       <FooterSection />
-    </div>
-  );
+    </div>);
+
 };
 
 export default VeteransPage;

@@ -51,8 +51,8 @@ const SEO = ({
       <meta name="author" content="KarmaTMS" />
       <meta name="geo.region" content="US-CA" />
       <meta name="geo.placename" content="Palm Springs, California" />
-    </Helmet>
-  );
+    </Helmet>);
+
 };
 
 export default SEO;
