@@ -11,16 +11,16 @@ import {
   BreadcrumbLink,
   BreadcrumbList,
   BreadcrumbPage,
-  BreadcrumbSeparator
-} from '@/components/ui/breadcrumb';
+  BreadcrumbSeparator } from
+'@/components/ui/breadcrumb';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import {
   Accordion,
   AccordionContent,
   AccordionItem,
-  AccordionTrigger
-} from '@/components/ui/accordion';
+  AccordionTrigger } from
+'@/components/ui/accordion';
 import { Calendar, Clock, User, CheckCircle2, ArrowRight, Phone } from 'lucide-react';
 
 export default function TMSAnxietyVeteransBlogPostPage() {
@@ -36,63 +36,63 @@ export default function TMSAnxietyVeteransBlogPostPage() {
   };
 
   const tocItems = [
-    { id: 'understanding-anxiety', label: 'Understanding Anxiety in Veterans' },
-    { id: 'standalone-disorder', label: 'Anxiety as a Standalone Disorder' },
-    { id: 'recognizing-anxiety', label: 'Recognizing Anxiety in Veterans' },
-    { id: 'va-support', label: 'VA Anxiety Support and Resources' },
-    { id: 'how-tms-works', label: 'How TMS Works for Anxiety' },
-    { id: 'brain-regulation', label: 'Brain Regulation Through TMS' },
-    { id: 'treatment-benefits', label: 'Benefits of TMS for Veterans' },
-    { id: 'faqs', label: 'Frequently Asked Questions' }
-  ];
+  { id: 'understanding-anxiety', label: 'Understanding Anxiety in Veterans' },
+  { id: 'standalone-disorder', label: 'Anxiety as a Standalone Disorder' },
+  { id: 'recognizing-anxiety', label: 'Recognizing Anxiety in Veterans' },
+  { id: 'va-support', label: 'VA Anxiety Support and Resources' },
+  { id: 'how-tms-works', label: 'How TMS Works for Anxiety' },
+  { id: 'brain-regulation', label: 'Brain Regulation Through TMS' },
+  { id: 'treatment-benefits', label: 'Benefits of TMS for Veterans' },
+  { id: 'faqs', label: 'Frequently Asked Questions' }];
+
 
   const faqs = [
-    {
-      question: 'Can TMS therapy help with veteran anxiety disorders?',
-      answer: 'Yes, TMS therapy has shown significant effectiveness in treating various anxiety disorders in veterans. Clinical studies demonstrate that 60-70% of patients show significant anxiety reduction, with over 50% achieving remission of anxiety symptoms. TMS works by targeting specific brain regions involved in anxiety regulation, offering relief without the systemic side effects of medications.'
-    },
-    {
-      question: 'How does TMS for anxiety differ from traditional medication?',
-      answer: 'Unlike medications that work systemically throughout the body and often cause side effects like weight gain or sexual dysfunction, TMS provides targeted brain stimulation to anxiety centers. TMS promotes lasting neuroplastic changes without requiring daily pills, and many veterans experience sustained improvement after completing treatment without ongoing medication.'
-    },
-    {
-      question: 'Is TMS covered by VA benefits for anxiety treatment?',
-      answer: 'TMS is increasingly available through VA facilities for veterans with treatment-resistant depression, and coverage is expanding for anxiety disorders. Veterans should check with their local VA facility about TMS availability. Many private TMS providers like Karma TMS also work with veterans to explore coverage options and payment plans.'
-    },
-    {
-      question: 'What types of anxiety disorders can TMS treat in veterans?',
-      answer: 'TMS has shown effectiveness for various anxiety disorders including Generalized Anxiety Disorder (GAD), Panic Disorder, Social Anxiety Disorder, and anxiety that occurs independently from PTSD. The treatment can be particularly beneficial for veterans with treatment-resistant anxiety who haven\'t found relief through traditional medications or therapy alone.'
-    },
-    {
-      question: 'How long does it take to see results from TMS for anxiety?',
-      answer: 'Most veterans begin noticing improvements within 3-4 weeks of starting TMS treatment. A typical treatment course lasts 4-6 weeks with daily sessions (5 days per week), and improvements often continue after treatment completion as the brain continues to benefit from the neuroplastic changes induced by TMS.'
-    },
-    {
-      question: 'Can TMS be combined with other anxiety treatments?',
-      answer: 'Yes, TMS can be effectively combined with therapy (such as Cognitive Behavioral Therapy), reduced medication doses, or other treatments. Many veterans find that TMS enhances the effectiveness of therapy and allows them to reduce or eliminate anxiety medications over time. This comprehensive approach often provides the best outcomes.'
-    }
-  ];
+  {
+    question: 'Can TMS therapy help with veteran anxiety disorders?',
+    answer: 'Yes, TMS therapy has shown significant effectiveness in treating various anxiety disorders in veterans. Clinical studies demonstrate that 60-70% of patients show significant anxiety reduction, with over 50% achieving remission of anxiety symptoms. TMS works by targeting specific brain regions involved in anxiety regulation, offering relief without the systemic side effects of medications.'
+  },
+  {
+    question: 'How does TMS for anxiety differ from traditional medication?',
+    answer: 'Unlike medications that work systemically throughout the body and often cause side effects like weight gain or sexual dysfunction, TMS provides targeted brain stimulation to anxiety centers. TMS promotes lasting neuroplastic changes without requiring daily pills, and many veterans experience sustained improvement after completing treatment without ongoing medication.'
+  },
+  {
+    question: 'Is TMS covered by VA benefits for anxiety treatment?',
+    answer: 'TMS is increasingly available through VA facilities for veterans with treatment-resistant depression, and coverage is expanding for anxiety disorders. Veterans should check with their local VA facility about TMS availability. Many private TMS providers like Karma TMS also work with veterans to explore coverage options and payment plans.'
+  },
+  {
+    question: 'What types of anxiety disorders can TMS treat in veterans?',
+    answer: 'TMS has shown effectiveness for various anxiety disorders including Generalized Anxiety Disorder (GAD), Panic Disorder, Social Anxiety Disorder, and anxiety that occurs independently from PTSD. The treatment can be particularly beneficial for veterans with treatment-resistant anxiety who haven\'t found relief through traditional medications or therapy alone.'
+  },
+  {
+    question: 'How long does it take to see results from TMS for anxiety?',
+    answer: 'Most veterans begin noticing improvements within 3-4 weeks of starting TMS treatment. A typical treatment course lasts 4-6 weeks with daily sessions (5 days per week), and improvements often continue after treatment completion as the brain continues to benefit from the neuroplastic changes induced by TMS.'
+  },
+  {
+    question: 'Can TMS be combined with other anxiety treatments?',
+    answer: 'Yes, TMS can be effectively combined with therapy (such as Cognitive Behavioral Therapy), reduced medication doses, or other treatments. Many veterans find that TMS enhances the effectiveness of therapy and allows them to reduce or eliminate anxiety medications over time. This comprehensive approach often provides the best outcomes.'
+  }];
+
 
   const relatedPosts = [
-    {
-      title: 'Understanding PTSD in Veterans',
-      excerpt: 'Learn about PTSD signs, symptoms, and treatment paths for veterans.',
-      link: '/blogs/understanding-ptsd-veterans',
-      image: 'https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=800&auto=format'
-    },
-    {
-      title: 'VA Approves TMS for Veterans',
-      excerpt: 'Discover how to access TMS therapy through VA benefits.',
-      link: '/blogs/va-veterans-ptsd-tms',
-      image: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=800&auto=format'
-    },
-    {
-      title: 'TMS for Migraine Relief in Veterans',
-      excerpt: 'Learn how TMS helps veterans with migraines and comorbid conditions.',
-      link: '/blogs/tms-migraine-veterans',
-      image: 'https://images.unsplash.com/photo-1559757175-0eb30cd8c063?w=800&auto=format'
-    }
-  ];
+  {
+    title: 'Understanding PTSD in Veterans',
+    excerpt: 'Learn about PTSD signs, symptoms, and treatment paths for veterans.',
+    link: '/blogs/understanding-ptsd-veterans',
+    image: 'https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=800&auto=format'
+  },
+  {
+    title: 'VA Approves TMS for Veterans',
+    excerpt: 'Discover how to access TMS therapy through VA benefits.',
+    link: '/blogs/va-veterans-ptsd-tms',
+    image: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=800&auto=format'
+  },
+  {
+    title: 'TMS for Migraine Relief in Veterans',
+    excerpt: 'Learn how TMS helps veterans with migraines and comorbid conditions.',
+    link: '/blogs/tms-migraine-veterans',
+    image: 'https://images.unsplash.com/photo-1559757175-0eb30cd8c063?w=800&auto=format'
+  }];
+
 
   const structuredData = {
     '@context': 'https://schema.org',
@@ -170,8 +170,8 @@ export default function TMSAnxietyVeteransBlogPostPage() {
         title="TMS for Anxiety in Veterans: Beyond Medication Treatment | Karma TMS"
         description="Learn how TMS therapy helps veterans with anxiety disorders. Discover how brain stimulation regulates anxiety centers beyond traditional medication. VA anxiety support available."
         keywords="va anxiety, veteran anxiety, veterans with anxiety, anxiety for veterans, TMS for anxiety, veteran anxiety treatment, anxiety disorder veterans"
-        canonicalUrl="https://www.karmatms.com/blogs/tms-anxiety-veterans"
-      />
+        canonicalUrl="https://www.karmatms.com/blogs/tms-anxiety-veterans" />
+
 
       <StructuredData data={structuredData} />
       
@@ -256,19 +256,19 @@ export default function TMSAnxietyVeteransBlogPostPage() {
                 <CardContent className="p-6">
                   <h3 className="font-bold text-lg mb-4 text-[#572670]">Table of Contents</h3>
                   <nav className="space-y-2">
-                    {tocItems.map((item) => (
-                      <button
-                        key={item.id}
-                        onClick={() => scrollToSection(item.id)}
-                        className={`block w-full text-left px-3 py-2 rounded-md text-sm transition-all ${
-                          activeSection === item.id
-                            ? 'bg-[#572670] text-white font-medium'
-                            : 'text-gray-700 hover:bg-[#572670]/10'
-                        }`}
-                      >
+                    {tocItems.map((item) =>
+                    <button
+                      key={item.id}
+                      onClick={() => scrollToSection(item.id)}
+                      className={`block w-full text-left px-3 py-2 rounded-md text-sm transition-all ${
+                      activeSection === item.id ?
+                      'bg-[#572670] text-white font-medium' :
+                      'text-gray-700 hover:bg-[#572670]/10'}`
+                      }>
+
                         {item.label}
                       </button>
-                    ))}
+                    )}
                   </nav>
                   <div className="mt-6 pt-6 border-t">
                     <Button asChild className="w-full bg-[#572670] hover:bg-[#7B3FA0]">
@@ -287,12 +287,12 @@ export default function TMSAnxietyVeteransBlogPostPage() {
               <img
                 src="https://res.cloudinary.com/de4kw1t2i/image/upload/v1763033666/6_rrkhgo.png"
                 alt="TMS for Anxiety in Veterans"
-                className="w-full h-64 md:h-96 object-cover rounded-lg mb-6"
-              />
+                className="w-full  md:h-96 object-cover rounded-lg mb-6" />
+
             </div>
 
             {/* Section 1: Understanding Anxiety */}
-            <section ref={(el) => (sectionsRef.current['understanding-anxiety'] = el)} className="mb-12">
+            <section ref={(el) => sectionsRef.current['understanding-anxiety'] = el} className="mb-12">
               <h2 className="text-3xl font-bold text-[#572670] mb-6">Understanding Anxiety in Veterans</h2>
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
                 Anxiety disorders affect millions of veterans, often as a standalone condition separate from PTSD. While many associate veteran mental health primarily with combat-related PTSD, veteran anxiety can manifest independently and requires specialized attention and treatment.
@@ -303,7 +303,7 @@ export default function TMSAnxietyVeteransBlogPostPage() {
             </section>
 
             {/* Section 2: Standalone Disorder */}
-            <section ref={(el) => (sectionsRef.current['standalone-disorder'] = el)} className="mb-12">
+            <section ref={(el) => sectionsRef.current['standalone-disorder'] = el} className="mb-12">
               <h2 className="text-3xl font-bold text-[#572670] mb-6">Anxiety as a Standalone Disorder in Veterans</h2>
               
               <Card className="bg-gradient-to-br from-[#572670]/5 to-transparent border-[#572670]/20 mb-6">
@@ -335,13 +335,10 @@ export default function TMSAnxietyVeteransBlogPostPage() {
             </section>
 
             {/* Section 3: Recognizing Anxiety */}
-            <section ref={(el) => (sectionsRef.current['recognizing-anxiety'] = el)} className="mb-12">
+            <section ref={(el) => sectionsRef.current['recognizing-anxiety'] = el} className="mb-12">
               <h2 className="text-3xl font-bold text-[#572670] mb-6">Recognizing Anxiety in Veterans</h2>
-              <img
-                src="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/66e6e1ae-8cc3-4469-bfaf-b1f3f3d07006.webp"
-                alt="Understanding anxiety in veterans"
-                className="w-full h-64 md:h-80 object-cover rounded-lg mb-6"
-              />
+              
+
 
               <div className="grid md:grid-cols-2 gap-6 mb-6">
                 <Card className="border-l-4 border-[#572670]">
@@ -411,7 +408,7 @@ export default function TMSAnxietyVeteransBlogPostPage() {
             </section>
 
             {/* Section 4: VA Support */}
-            <section ref={(el) => (sectionsRef.current['va-support'] = el)} className="mb-12">
+            <section ref={(el) => sectionsRef.current['va-support'] = el} className="mb-12">
               <h2 className="text-3xl font-bold text-[#572670] mb-6">VA Anxiety Support and Resources</h2>
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
                 The Department of Veterans Affairs (VA) recognizes anxiety disorders as a significant health concern for veterans and offers various support services:
@@ -451,13 +448,10 @@ export default function TMSAnxietyVeteransBlogPostPage() {
             </section>
 
             {/* Section 5: How TMS Works */}
-            <section ref={(el) => (sectionsRef.current['how-tms-works'] = el)} className="mb-12">
+            <section ref={(el) => sectionsRef.current['how-tms-works'] = el} className="mb-12">
               <h2 className="text-3xl font-bold text-[#572670] mb-6">How TMS Works for Anxiety</h2>
-              <img
-                src="https://images.unsplash.com/photo-1662596594694-a7ec7c2f8979?w=800&auto=format"
-                alt="TMS therapy for anxiety"
-                className="w-full h-64 md:h-80 object-cover rounded-lg mb-6"
-              />
+             
+
 
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
                 Transcranial Magnetic Stimulation (TMS) is a non-invasive treatment that uses magnetic pulses to stimulate specific areas of the brain involved in mood regulation and anxiety processing.
@@ -530,7 +524,7 @@ export default function TMSAnxietyVeteransBlogPostPage() {
             </section>
 
             {/* Section 6: Brain Regulation */}
-            <section ref={(el) => (sectionsRef.current['brain-regulation'] = el)} className="mb-12">
+            <section ref={(el) => sectionsRef.current['brain-regulation'] = el} className="mb-12">
               <h2 className="text-3xl font-bold text-[#572670] mb-6">Brain Regulation Through TMS: Beyond Symptom Management</h2>
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
                 Unlike medications that work systemically throughout the body, TMS offers targeted brain regulation:
@@ -596,7 +590,7 @@ export default function TMSAnxietyVeteransBlogPostPage() {
             </section>
 
             {/* Section 7: Treatment Benefits */}
-            <section ref={(el) => (sectionsRef.current['treatment-benefits'] = el)} className="mb-12">
+            <section ref={(el) => sectionsRef.current['treatment-benefits'] = el} className="mb-12">
               <h2 className="text-3xl font-bold text-[#572670] mb-6">Benefits of TMS for Veterans with Anxiety</h2>
               
               <div className="space-y-6">
@@ -757,20 +751,20 @@ export default function TMSAnxietyVeteransBlogPostPage() {
               name={author.name}
               role={author.credentials}
               bio={author.bio}
-              image={author.image}
-            />
+              image={author.image} />
+
 
             {/* FAQ Section */}
-            <section ref={(el) => (sectionsRef.current['faqs'] = el)} className="mb-12 mt-12">
+            <section ref={(el) => sectionsRef.current['faqs'] = el} className="mb-12 mt-12">
               <h2 className="text-3xl font-bold text-[#572670] mb-6">Frequently Asked Questions</h2>
               
               <Accordion type="single" collapsible className="w-full space-y-2">
-                {faqs.map((faq, index) => (
-                  <AccordionItem
-                    key={index}
-                    value={`item-${index}`}
-                    className="border border-gray-200 rounded-lg px-4 data-[state=open]:border-[#572670]"
-                  >
+                {faqs.map((faq, index) =>
+                <AccordionItem
+                  key={index}
+                  value={`item-${index}`}
+                  className="border border-gray-200 rounded-lg px-4 data-[state=open]:border-[#572670]">
+
                     <AccordionTrigger className="text-left font-semibold hover:text-[#572670] hover:no-underline">
                       {faq.question}
                     </AccordionTrigger>
@@ -778,7 +772,7 @@ export default function TMSAnxietyVeteransBlogPostPage() {
                       {faq.answer}
                     </AccordionContent>
                   </AccordionItem>
-                ))}
+                )}
               </Accordion>
             </section>
 
@@ -815,13 +809,13 @@ export default function TMSAnxietyVeteransBlogPostPage() {
             <section className="mb-12">
               <h2 className="text-3xl font-bold text-[#572670] mb-6">Related Articles</h2>
               <div className="grid md:grid-cols-3 gap-6">
-                {relatedPosts.map((post, index) => (
-                  <Card key={index} className="border-[#572670]/20 overflow-hidden hover:shadow-lg transition-shadow">
+                {relatedPosts.map((post, index) =>
+                <Card key={index} className="border-[#572670]/20 overflow-hidden hover:shadow-lg transition-shadow">
                     <img
-                      src={post.image}
-                      alt={post.title}
-                      className="w-full h-48 object-cover"
-                    />
+                    src={post.image}
+                    alt={post.title}
+                    className="w-full h-48 object-cover" />
+
                     <CardContent className="p-6">
                       <h3 className="font-bold text-lg mb-2 hover:text-[#572670] transition-colors">
                         <Link to={post.link}>{post.title}</Link>
@@ -834,7 +828,7 @@ export default function TMSAnxietyVeteransBlogPostPage() {
                       </Button>
                     </CardContent>
                   </Card>
-                ))}
+                )}
               </div>
             </section>
           </article>
@@ -842,6 +836,6 @@ export default function TMSAnxietyVeteransBlogPostPage() {
       </div>
 
       <FooterSection />
-    </>
-  );
+    </>);
+
 }
