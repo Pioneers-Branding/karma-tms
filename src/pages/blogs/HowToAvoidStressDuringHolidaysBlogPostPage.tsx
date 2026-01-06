@@ -229,7 +229,7 @@ export default function HowToAvoidStressDuringHolidaysBlogPostPage() {
                 <Link to="/contact">Schedule Consultation</Link>
               </Button>
               <Button asChild size="lg" variant="outline" className="border-white text-white hover:bg-white/10">
-                <Link to="/team">Meet Our Providers</Link>
+                
               </Button>
             </div>
           </div>
@@ -657,10 +657,10 @@ export default function HowToAvoidStressDuringHolidaysBlogPostPage() {
                     </Link>
                   </Button>
                   <Button asChild size="lg" variant="outline" className="border-white text-white hover:bg-white/10">
-                    <Link to="/team" className="inline-flex items-center gap-2">
-                      <User className="h-5 w-5" />
-                      Meet Our Team
-                    </Link>
+                    
+
+
+
                   </Button>
                 </div>
                 <p className="mt-6 text-white/90">
