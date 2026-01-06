@@ -102,7 +102,7 @@ const HeroSection = () => {
                 </span>
                 for Mental Health in Palm Springs
               </h1>
-              <p className="text-[16px] text-base sm:text-lg lg:text-xl max-w-2xl">
+              <p className="text-sm sm:text-base lg:text-lg max-w-2xl">
                 Revolutionary FDA-cleared treatment for depression, anxiety, OCD,
                 and PTSD. Our mental health facilities in Palm Springs provide
                 breakthrough results with advanced TMS technology, offering
