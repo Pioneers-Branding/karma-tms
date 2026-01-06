@@ -287,7 +287,7 @@ const IsTMSTherapyPermanentBlogPostPage = () => {
               <img
                 src="https://res.cloudinary.com/de4kw1t2i/image/upload/v1763376733/13_nl6y75.png"
                 alt="TMS therapy treatment session"
-                className="w-full h-64 md:h-96 object-cover rounded-lg mb-6" />
+                className="w-full md:h-96 object-cover rounded-lg mb-6" />
 
               <p className="text-xl text-gray-700 leading-relaxed">
                 One of the most common questions people ask when considering <Link to="/tms-therapy" className="text-[#572670] hover:underline font-medium">TMS therapy</Link> is: "Are the results permanent?" It's a crucial question that deserves a thorough, honest answer. While TMS therapy doesn't offer a permanent "cure" for depression, it can provide long-lasting relief that significantly improves quality of life—often for years after treatment completion.
@@ -333,7 +333,7 @@ const IsTMSTherapyPermanentBlogPostPage = () => {
               <img
                 src="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/d3a1f368-2c44-4046-8568-532988b95c6d.webp"
                 alt="Long-term TMS therapy results"
-                className="w-full h-64 object-cover rounded-lg mb-6" />
+                className="w-full  object-cover rounded-lg mb-6" />
 
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Research Findings on TMS Longevity</h3>
 
