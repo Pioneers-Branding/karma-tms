@@ -93,7 +93,7 @@ const FamilyDynamicsMentalHealthBlogPostPage = () => {
   }];
 
 
-const relatedPosts = [
+  const relatedPosts = [
   {
     title: 'TMS for Migraine Relief in Veterans',
     excerpt: 'Learn how TMS helps veterans with migraines and comorbid conditions like PTSD and depression.',
@@ -605,7 +605,7 @@ const relatedPosts = [
                   key={index}
                   className="border-[#572670]/20 overflow-hidden hover:shadow-lg transition-shadow">
 
-                    <img src={post.image} alt={post.title} className="w-full h-48 object-cover" />
+                    <img src={post.image} alt={post.title} className="w-full  object-cover" />
                     <CardContent className="p-6">
                       <h3 className="font-bold text-lg mb-2 hover:text-[#572670] transition-colors">
                         <Link to={post.link}>{post.title}</Link>
