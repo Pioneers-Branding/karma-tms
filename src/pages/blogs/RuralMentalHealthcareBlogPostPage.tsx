@@ -10,16 +10,16 @@ import {
   BreadcrumbLink,
   BreadcrumbList,
   BreadcrumbPage,
-  BreadcrumbSeparator
-} from '@/components/ui/breadcrumb';
+  BreadcrumbSeparator } from
+'@/components/ui/breadcrumb';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import {
   Accordion,
   AccordionContent,
   AccordionItem,
-  AccordionTrigger
-} from '@/components/ui/accordion';
+  AccordionTrigger } from
+'@/components/ui/accordion';
 import { Calendar, Clock, User, CheckCircle2, ArrowRight } from 'lucide-react';
 import AuthorBox from '@/components/AuthorBox';
 
@@ -28,13 +28,13 @@ const RuralMentalHealthcareBlogPostPage = () => {
   const sectionsRef = useRef<{[key: string]: HTMLElement | null;}>({});
 
   const tocItems = [
-    { id: 'challenges', label: 'Challenges in Rural Communities' },
-    { id: 'barriers', label: 'Access Barriers' },
-    { id: 'solutions', label: 'Innovative Solutions' },
-    { id: 'tms-rural', label: 'TMS Therapy for Rural Areas' },
-    { id: 'resources', label: 'Available Resources' },
-    { id: 'faqs', label: 'Frequently Asked Questions' }
-  ];
+  { id: 'challenges', label: 'Challenges in Rural Communities' },
+  { id: 'barriers', label: 'Access Barriers' },
+  { id: 'solutions', label: 'Innovative Solutions' },
+  { id: 'tms-rural', label: 'TMS Therapy for Rural Areas' },
+  { id: 'resources', label: 'Available Resources' },
+  { id: 'faqs', label: 'Frequently Asked Questions' }];
+
 
   useEffect(() => {
     const handleScroll = () => {
@@ -67,48 +67,48 @@ const RuralMentalHealthcareBlogPostPage = () => {
   };
 
   const faqs = [
-    {
-      question: 'What are the biggest mental health challenges facing rural communities?',
-      answer: 'Rural communities face unique mental health challenges including limited access to mental health professionals, lack of specialized care facilities, stigma around mental health, economic hardships, and geographic isolation. These factors often result in delayed treatment and worse outcomes.'
-    },
-    {
-      question: 'How can telehealth help rural mental healthcare access?',
-      answer: 'Telehealth eliminates geographic barriers by providing remote access to mental health professionals through video consultations, online therapy platforms, and digital mental health tools. This allows rural residents to receive care without traveling long distances.'
-    },
-    {
-      question: 'Is TMS therapy available in rural areas?',
-      answer: 'While TMS therapy centers are traditionally located in urban areas, more clinics are expanding services to rural communities through satellite locations and mobile units. Some facilities also offer flexible scheduling to accommodate patients traveling from rural areas.'
-    },
-    {
-      question: 'What mental health resources are available for rural residents?',
-      answer: 'Resources include community health centers, crisis hotlines (988 Suicide & Crisis Lifeline), teletherapy platforms, rural health clinics, faith-based counseling, and mobile mental health units. Many states also have rural mental health grant programs.'
-    },
-    {
-      question: 'How can rural communities reduce mental health stigma?',
-      answer: 'Reducing stigma requires community education programs, peer support groups, integrating mental health into primary care, promoting success stories, and training community leaders to recognize and address mental health concerns openly.'
-    }
-  ];
+  {
+    question: 'What are the biggest mental health challenges facing rural communities?',
+    answer: 'Rural communities face unique mental health challenges including limited access to mental health professionals, lack of specialized care facilities, stigma around mental health, economic hardships, and geographic isolation. These factors often result in delayed treatment and worse outcomes.'
+  },
+  {
+    question: 'How can telehealth help rural mental healthcare access?',
+    answer: 'Telehealth eliminates geographic barriers by providing remote access to mental health professionals through video consultations, online therapy platforms, and digital mental health tools. This allows rural residents to receive care without traveling long distances.'
+  },
+  {
+    question: 'Is TMS therapy available in rural areas?',
+    answer: 'While TMS therapy centers are traditionally located in urban areas, more clinics are expanding services to rural communities through satellite locations and mobile units. Some facilities also offer flexible scheduling to accommodate patients traveling from rural areas.'
+  },
+  {
+    question: 'What mental health resources are available for rural residents?',
+    answer: 'Resources include community health centers, crisis hotlines (988 Suicide & Crisis Lifeline), teletherapy platforms, rural health clinics, faith-based counseling, and mobile mental health units. Many states also have rural mental health grant programs.'
+  },
+  {
+    question: 'How can rural communities reduce mental health stigma?',
+    answer: 'Reducing stigma requires community education programs, peer support groups, integrating mental health into primary care, promoting success stories, and training community leaders to recognize and address mental health concerns openly.'
+  }];
+
 
   const relatedPosts = [
-    {
-      title: 'TMS Therapy: A New Hope for Depression Treatment',
-      excerpt: 'Discover how TMS therapy is revolutionizing depression treatment with non-invasive brain stimulation.',
-      link: '/tms-therapy',
-      image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/76caee2d-5629-4dc1-a3b4-8c5cea23ede6.webp'
-    },
-    {
-      title: 'Mindfulness Practices for Stress Management',
-      excerpt: 'Evidence-based mindfulness techniques to reduce stress and improve mental wellness.',
-      link: '/blog/mindfulness-stress-management',
-      image: 'https://res.cloudinary.com/de4kw1t2i/image/upload/v1763376734/17_dnhevc.png'
-    },
-    {
-      title: 'Mental Health First Aid: How to Help Someone in Crisis',
-      excerpt: 'Learn essential skills to recognize crisis signs and provide immediate mental health support.',
-      link: '/blog/mental-health-first-aid',
-      image: 'https://res.cloudinary.com/de4kw1t2i/image/upload/v1763376735/19_luad51.png'
-    }
-  ];
+  {
+    title: 'TMS Therapy: A New Hope for Depression Treatment',
+    excerpt: 'Discover how TMS therapy is revolutionizing depression treatment with non-invasive brain stimulation.',
+    link: '/tms-therapy',
+    image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/76caee2d-5629-4dc1-a3b4-8c5cea23ede6.webp'
+  },
+  {
+    title: 'Mindfulness Practices for Stress Management',
+    excerpt: 'Evidence-based mindfulness techniques to reduce stress and improve mental wellness.',
+    link: '/blog/mindfulness-stress-management',
+    image: 'https://res.cloudinary.com/de4kw1t2i/image/upload/v1763376734/17_dnhevc.png'
+  },
+  {
+    title: 'Mental Health First Aid: How to Help Someone in Crisis',
+    excerpt: 'Learn essential skills to recognize crisis signs and provide immediate mental health support.',
+    link: '/blog/mental-health-first-aid',
+    image: 'https://res.cloudinary.com/de4kw1t2i/image/upload/v1763376735/19_luad51.png'
+  }];
+
 
   const articleSchema = {
     '@context': 'https://schema.org',
@@ -157,17 +157,17 @@ const RuralMentalHealthcareBlogPostPage = () => {
         keywords="rural mental health, telehealth mental health, mental health access, rural healthcare, community mental health, TMS therapy rural areas"
         canonical="/blog/rural-mental-healthcare"
         ogImage="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/5a26ae21-6fa8-4af4-8fba-bc048cb7cc0f.webp"
-        ogType="article"
-      />
+        ogType="article" />
+
 
       <StructuredData
         type="breadcrumb"
         breadcrumbs={[
-          { name: 'Home', url: '/' },
-          { name: 'Blog', url: '/blog' },
-          { name: 'Rural Mental Healthcare', url: '/blog/rural-mental-healthcare' }
-        ]}
-      />
+        { name: 'Home', url: '/' },
+        { name: 'Blog', url: '/blog' },
+        { name: 'Rural Mental Healthcare', url: '/blog/rural-mental-healthcare' }]
+        } />
+
 
       <script type="application/ld+json">
         {JSON.stringify(articleSchema)}
@@ -243,19 +243,19 @@ const RuralMentalHealthcareBlogPostPage = () => {
                 <CardContent className="p-6">
                   <h3 className="font-bold text-lg mb-4 text-[#572670]">Table of Contents</h3>
                   <nav className="space-y-2">
-                    {tocItems.map((item) => (
-                      <button
-                        key={item.id}
-                        onClick={() => scrollToSection(item.id)}
-                        className={`block w-full text-left px-3 py-2 rounded-md text-sm transition-all ${
-                          activeSection === item.id
-                            ? 'bg-[#572670] text-white font-medium'
-                            : 'text-gray-700 hover:bg-[#572670]/10'
-                        }`}
-                      >
+                    {tocItems.map((item) =>
+                    <button
+                      key={item.id}
+                      onClick={() => scrollToSection(item.id)}
+                      className={`block w-full text-left px-3 py-2 rounded-md text-sm transition-all ${
+                      activeSection === item.id ?
+                      'bg-[#572670] text-white font-medium' :
+                      'text-gray-700 hover:bg-[#572670]/10'}`
+                      }>
+
                         {item.label}
                       </button>
-                    ))}
+                    )}
                   </nav>
                   <div className="mt-6 pt-6 border-t">
                     <Button asChild className="w-full bg-[#572670] hover:bg-[#7B3FA0]">
@@ -274,8 +274,8 @@ const RuralMentalHealthcareBlogPostPage = () => {
               <img
                 src="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/5a26ae21-6fa8-4af4-8fba-bc048cb7cc0f.webp"
                 alt="Rural community mental healthcare"
-                className="w-full object-cover rounded-lg mb-6"
-              />
+                className="w-full object-cover rounded-lg mb-6" />
+
 
               <p className="text-xl text-gray-700 leading-relaxed">
                 Mental health challenges don't discriminate by geography, yet access to quality mental healthcare varies dramatically between urban and rural communities. For the nearly 46 million Americans living in rural areas, finding mental health support can be a significant challenge. This comprehensive guide explores the unique mental health needs of rural communities and the innovative solutions emerging to bridge the care gap.
@@ -389,8 +389,8 @@ const RuralMentalHealthcareBlogPostPage = () => {
               <img
                 src="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/76caee2d-5629-4dc1-a3b4-8c5cea23ede6.webp"
                 alt="TMS therapy equipment"
-                className="w-full object-cover rounded-lg mb-6"
-              />
+                className="w-full object-cover rounded-lg mb-6" />
+
 
               <div className="grid md:grid-cols-2 gap-4 my-6">
                 <Card className="border-[#572670]/20">
@@ -443,20 +443,20 @@ const RuralMentalHealthcareBlogPostPage = () => {
               name="KarmaTMS"
               role="Mental Health Treatment Center"
               bio="KarmaTMS is dedicated to providing accessible, innovative mental health treatments including TMS therapy to communities throughout Southern California. We believe everyone deserves access to quality mental healthcare, regardless of location."
-              image="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/ebadb369-a58d-421c-b937-24f900be5867.png"
-            />
+              image="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/ebadb369-a58d-421c-b937-24f900be5867.png" />
+
 
             {/* FAQ Section */}
             <section ref={(el) => sectionsRef.current['faqs'] = el} className="mb-12 mt-12">
               <h2 className="text-3xl font-bold text-[#572670] mb-6">Frequently Asked Questions</h2>
               
               <Accordion type="single" collapsible className="w-full space-y-2">
-                {faqs.map((faq, index) => (
-                  <AccordionItem
-                    key={index}
-                    value={`item-${index}`}
-                    className="border border-gray-200 rounded-lg px-4 data-[state=open]:border-[#572670]"
-                  >
+                {faqs.map((faq, index) =>
+                <AccordionItem
+                  key={index}
+                  value={`item-${index}`}
+                  className="border border-gray-200 rounded-lg px-4 data-[state=open]:border-[#572670]">
+
                     <AccordionTrigger className="text-left font-semibold hover:text-[#572670] hover:no-underline">
                       {faq.question}
                     </AccordionTrigger>
@@ -464,7 +464,7 @@ const RuralMentalHealthcareBlogPostPage = () => {
                       {faq.answer}
                     </AccordionContent>
                   </AccordionItem>
-                ))}
+                )}
               </Accordion>
             </section>
 
@@ -492,13 +492,13 @@ const RuralMentalHealthcareBlogPostPage = () => {
             <section className="mb-12">
               <h2 className="text-3xl font-bold text-[#572670] mb-6">Related Articles</h2>
               <div className="grid md:grid-cols-3 gap-6">
-                {relatedPosts.map((post, index) => (
-                  <Card key={index} className="border-[#572670]/20 overflow-hidden hover:shadow-lg transition-shadow">
+                {relatedPosts.map((post, index) =>
+                <Card key={index} className="border-[#572670]/20 overflow-hidden hover:shadow-lg transition-shadow">
                     <img
-                      src={post.image}
-                      alt={post.title}
-                      className="w-full object-cover"
-                    />
+                    src={post.image}
+                    alt={post.title}
+                    className="w-full object-cover" />
+
                     <CardContent className="p-6">
                       <h3 className="font-bold text-lg mb-2 hover:text-[#572670] transition-colors">
                         <Link to={post.link}>{post.title}</Link>
@@ -511,7 +511,7 @@ const RuralMentalHealthcareBlogPostPage = () => {
                       </Button>
                     </CardContent>
                   </Card>
-                ))}
+                )}
               </div>
             </section>
           </article>
@@ -519,8 +519,8 @@ const RuralMentalHealthcareBlogPostPage = () => {
       </div>
 
       <FooterSection />
-    </>
-  );
+    </>);
+
 };
 
 export default RuralMentalHealthcareBlogPostPage;

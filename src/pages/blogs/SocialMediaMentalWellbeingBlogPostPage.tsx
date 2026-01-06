@@ -10,16 +10,16 @@ import {
   BreadcrumbLink,
   BreadcrumbList,
   BreadcrumbPage,
-  BreadcrumbSeparator
-} from '@/components/ui/breadcrumb';
+  BreadcrumbSeparator } from
+'@/components/ui/breadcrumb';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import {
   Accordion,
   AccordionContent,
   AccordionItem,
-  AccordionTrigger
-} from '@/components/ui/accordion';
+  AccordionTrigger } from
+'@/components/ui/accordion';
 import { Calendar, Clock, User, CheckCircle2, ArrowRight, AlertTriangle } from 'lucide-react';
 import AuthorBox from '@/components/AuthorBox';
 
@@ -28,13 +28,13 @@ const SocialMediaMentalWellbeingBlogPostPage = () => {
   const sectionsRef = useRef<{[key: string]: HTMLElement | null;}>({});
 
   const tocItems = [
-    { id: 'impact', label: 'The Impact of Social Media' },
-    { id: 'negative-effects', label: 'Negative Effects' },
-    { id: 'positive-aspects', label: 'Positive Aspects' },
-    { id: 'warning-signs', label: 'Warning Signs' },
-    { id: 'healthy-habits', label: 'Healthy Social Media Habits' },
-    { id: 'faqs', label: 'Frequently Asked Questions' }
-  ];
+  { id: 'impact', label: 'The Impact of Social Media' },
+  { id: 'negative-effects', label: 'Negative Effects' },
+  { id: 'positive-aspects', label: 'Positive Aspects' },
+  { id: 'warning-signs', label: 'Warning Signs' },
+  { id: 'healthy-habits', label: 'Healthy Social Media Habits' },
+  { id: 'faqs', label: 'Frequently Asked Questions' }];
+
 
   useEffect(() => {
     const handleScroll = () => {
@@ -67,48 +67,48 @@ const SocialMediaMentalWellbeingBlogPostPage = () => {
   };
 
   const faqs = [
-    {
-      question: 'How much social media use is too much?',
-      answer: 'Research suggests that more than 3 hours per day on social media significantly increases the risk of mental health issues. However, quality matters more than quantity—even short periods of negative social media experiences can impact wellbeing. Pay attention to how you feel after using social media rather than just tracking time.'
-    },
-    {
-      question: 'Can social media cause depression and anxiety?',
-      answer: 'While social media doesn\'t directly cause mental health conditions, heavy use is strongly associated with increased rates of depression, anxiety, loneliness, and poor self-esteem. Social comparison, cyberbullying, FOMO (fear of missing out), and sleep disruption from screen time all contribute to these effects.'
-    },
-    {
-      question: 'What are the signs that social media is affecting my mental health?',
-      answer: 'Warning signs include feeling anxious or depressed after using social media, constant comparison to others, disrupted sleep patterns, neglecting real-life relationships, decreased productivity, and feeling compelled to check platforms constantly. If you experience these symptoms, it may be time to reassess your social media habits.'
-    },
-    {
-      question: 'How can I use social media more mindfully?',
-      answer: 'Practice mindful social media use by setting time limits, turning off notifications, curating your feed to follow positive accounts, avoiding doomscrolling, engaging authentically rather than passively scrolling, and taking regular digital detox breaks. Be intentional about when and why you use each platform.'
-    },
-    {
-      question: 'Should I delete social media entirely?',
-      answer: 'A complete social media break isn\'t necessary for everyone. Instead, focus on creating a healthier relationship with these platforms. Consider reducing usage, unfollowing accounts that trigger negative feelings, and being more selective about your engagement. Some people benefit from temporary breaks or deleting specific platforms that cause the most stress.'
-    }
-  ];
+  {
+    question: 'How much social media use is too much?',
+    answer: 'Research suggests that more than 3 hours per day on social media significantly increases the risk of mental health issues. However, quality matters more than quantity—even short periods of negative social media experiences can impact wellbeing. Pay attention to how you feel after using social media rather than just tracking time.'
+  },
+  {
+    question: 'Can social media cause depression and anxiety?',
+    answer: 'While social media doesn\'t directly cause mental health conditions, heavy use is strongly associated with increased rates of depression, anxiety, loneliness, and poor self-esteem. Social comparison, cyberbullying, FOMO (fear of missing out), and sleep disruption from screen time all contribute to these effects.'
+  },
+  {
+    question: 'What are the signs that social media is affecting my mental health?',
+    answer: 'Warning signs include feeling anxious or depressed after using social media, constant comparison to others, disrupted sleep patterns, neglecting real-life relationships, decreased productivity, and feeling compelled to check platforms constantly. If you experience these symptoms, it may be time to reassess your social media habits.'
+  },
+  {
+    question: 'How can I use social media more mindfully?',
+    answer: 'Practice mindful social media use by setting time limits, turning off notifications, curating your feed to follow positive accounts, avoiding doomscrolling, engaging authentically rather than passively scrolling, and taking regular digital detox breaks. Be intentional about when and why you use each platform.'
+  },
+  {
+    question: 'Should I delete social media entirely?',
+    answer: 'A complete social media break isn\'t necessary for everyone. Instead, focus on creating a healthier relationship with these platforms. Consider reducing usage, unfollowing accounts that trigger negative feelings, and being more selective about your engagement. Some people benefit from temporary breaks or deleting specific platforms that cause the most stress.'
+  }];
+
 
   const relatedPosts = [
-    {
-      title: 'The Impact of Screen Time on Mental Health',
-      excerpt: 'Understand how excessive screen time affects mental wellness and strategies to find balance.',
-      link: '/blog/screen-time-mental-health',
-      image: 'https://res.cloudinary.com/de4kw1t2i/image/upload/v1763376734/16_ekice5.png'
-    },
-    {
-      title: 'Tech And Mental Health: The Impact Of Technology',
-      excerpt: 'Explore both positive and negative effects of technology on mental health.',
-      link: '/blog/tech-mental-health-impact',
-      image: 'https://res.cloudinary.com/de4kw1t2i/image/upload/v1763376734/18_jkbrlx.png'
-    },
-    {
-      title: 'Managing Anxiety Triggers in Everyday Life',
-      excerpt: 'Learn practical strategies to identify and manage anxiety triggers effectively.',
-      link: '/blog/managing-anxiety-triggers',
-      image: 'https://res.cloudinary.com/de4kw1t2i/image/upload/v1763376737/22_wiizht.png'
-    }
-  ];
+  {
+    title: 'The Impact of Screen Time on Mental Health',
+    excerpt: 'Understand how excessive screen time affects mental wellness and strategies to find balance.',
+    link: '/blog/screen-time-mental-health',
+    image: 'https://res.cloudinary.com/de4kw1t2i/image/upload/v1763376734/16_ekice5.png'
+  },
+  {
+    title: 'Tech And Mental Health: The Impact Of Technology',
+    excerpt: 'Explore both positive and negative effects of technology on mental health.',
+    link: '/blog/tech-mental-health-impact',
+    image: 'https://res.cloudinary.com/de4kw1t2i/image/upload/v1763376734/18_jkbrlx.png'
+  },
+  {
+    title: 'Managing Anxiety Triggers in Everyday Life',
+    excerpt: 'Learn practical strategies to identify and manage anxiety triggers effectively.',
+    link: '/blog/managing-anxiety-triggers',
+    image: 'https://res.cloudinary.com/de4kw1t2i/image/upload/v1763376737/22_wiizht.png'
+  }];
+
 
   const articleSchema = {
     '@context': 'https://schema.org',
@@ -157,17 +157,17 @@ const SocialMediaMentalWellbeingBlogPostPage = () => {
         keywords="social media mental health, social media anxiety, social media depression, digital wellbeing, FOMO, social comparison, healthy social media use"
         canonical="/blog/social-media-mental-wellbeing"
         ogImage="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/0df1c6f4-54ea-43f5-aeab-67608371a640.webp"
-        ogType="article"
-      />
+        ogType="article" />
+
 
       <StructuredData
         type="breadcrumb"
         breadcrumbs={[
-          { name: 'Home', url: '/' },
-          { name: 'Blog', url: '/blog' },
-          { name: 'Social Media & Mental Wellbeing', url: '/blog/social-media-mental-wellbeing' }
-        ]}
-      />
+        { name: 'Home', url: '/' },
+        { name: 'Blog', url: '/blog' },
+        { name: 'Social Media & Mental Wellbeing', url: '/blog/social-media-mental-wellbeing' }]
+        } />
+
 
       <script type="application/ld+json">
         {JSON.stringify(articleSchema)}
@@ -243,19 +243,19 @@ const SocialMediaMentalWellbeingBlogPostPage = () => {
                 <CardContent className="p-6">
                   <h3 className="font-bold text-lg mb-4 text-[#572670]">Table of Contents</h3>
                   <nav className="space-y-2">
-                    {tocItems.map((item) => (
-                      <button
-                        key={item.id}
-                        onClick={() => scrollToSection(item.id)}
-                        className={`block w-full text-left px-3 py-2 rounded-md text-sm transition-all ${
-                          activeSection === item.id
-                            ? 'bg-[#572670] text-white font-medium'
-                            : 'text-gray-700 hover:bg-[#572670]/10'
-                        }`}
-                      >
+                    {tocItems.map((item) =>
+                    <button
+                      key={item.id}
+                      onClick={() => scrollToSection(item.id)}
+                      className={`block w-full text-left px-3 py-2 rounded-md text-sm transition-all ${
+                      activeSection === item.id ?
+                      'bg-[#572670] text-white font-medium' :
+                      'text-gray-700 hover:bg-[#572670]/10'}`
+                      }>
+
                         {item.label}
                       </button>
-                    ))}
+                    )}
                   </nav>
                   <div className="mt-6 pt-6 border-t">
                     <Button asChild className="w-full bg-[#572670] hover:bg-[#7B3FA0]">
@@ -274,8 +274,8 @@ const SocialMediaMentalWellbeingBlogPostPage = () => {
               <img
                 src="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/0df1c6f4-54ea-43f5-aeab-67608371a640.webp"
                 alt="Social media and mental health concept"
-                className="w-full object-cover rounded-lg mb-6"
-              />
+                className="w-full object-cover rounded-lg mb-6" />
+
 
               <p className="text-xl text-gray-700 leading-relaxed">
                 In today's hyperconnected world, social media has become an integral part of daily life for billions of people. While these platforms offer unprecedented opportunities for connection and self-expression, mounting research reveals a complex relationship between social media use and mental health. Understanding this impact is crucial for developing healthier digital habits and protecting your psychological wellbeing.
@@ -302,8 +302,8 @@ const SocialMediaMentalWellbeingBlogPostPage = () => {
               <img
                 src="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/88d0408f-19ff-48a1-80bd-5553928c7047.webp"
                 alt="Digital wellbeing concept"
-                className="w-full object-cover rounded-lg mb-6"
-              />
+                className="w-full object-cover rounded-lg mb-6" />
+
             </section>
 
             {/* Section 2: Negative Effects */}
@@ -534,20 +534,20 @@ const SocialMediaMentalWellbeingBlogPostPage = () => {
               name="karmatmsdev"
               role="Mental Health Content Team"
               bio="The KarmaTMS content team is dedicated to providing evidence-based information on mental health topics that impact daily life. We believe in empowering individuals with knowledge to make informed decisions about their mental wellbeing in the digital age."
-              image="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/ebadb369-a58d-421c-b937-24f900be5867.png"
-            />
+              image="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/ebadb369-a58d-421c-b937-24f900be5867.png" />
+
 
             {/* FAQ Section */}
             <section ref={(el) => sectionsRef.current['faqs'] = el} className="mb-12 mt-12">
               <h2 className="text-3xl font-bold text-[#572670] mb-6">Frequently Asked Questions</h2>
               
               <Accordion type="single" collapsible className="w-full space-y-2">
-                {faqs.map((faq, index) => (
-                  <AccordionItem
-                    key={index}
-                    value={`item-${index}`}
-                    className="border border-gray-200 rounded-lg px-4 data-[state=open]:border-[#572670]"
-                  >
+                {faqs.map((faq, index) =>
+                <AccordionItem
+                  key={index}
+                  value={`item-${index}`}
+                  className="border border-gray-200 rounded-lg px-4 data-[state=open]:border-[#572670]">
+
                     <AccordionTrigger className="text-left font-semibold hover:text-[#572670] hover:no-underline">
                       {faq.question}
                     </AccordionTrigger>
@@ -555,7 +555,7 @@ const SocialMediaMentalWellbeingBlogPostPage = () => {
                       {faq.answer}
                     </AccordionContent>
                   </AccordionItem>
-                ))}
+                )}
               </Accordion>
             </section>
 
@@ -583,13 +583,13 @@ const SocialMediaMentalWellbeingBlogPostPage = () => {
             <section className="mb-12">
               <h2 className="text-3xl font-bold text-[#572670] mb-6">Related Articles</h2>
               <div className="grid md:grid-cols-3 gap-6">
-                {relatedPosts.map((post, index) => (
-                  <Card key={index} className="border-[#572670]/20 overflow-hidden hover:shadow-lg transition-shadow">
+                {relatedPosts.map((post, index) =>
+                <Card key={index} className="border-[#572670]/20 overflow-hidden hover:shadow-lg transition-shadow">
                     <img
-                      src={post.image}
-                      alt={post.title}
-                      className="w-full object-cover"
-                    />
+                    src={post.image}
+                    alt={post.title}
+                    className="w-full object-cover" />
+
                     <CardContent className="p-6">
                       <h3 className="font-bold text-lg mb-2 hover:text-[#572670] transition-colors">
                         <Link to={post.link}>{post.title}</Link>
@@ -602,7 +602,7 @@ const SocialMediaMentalWellbeingBlogPostPage = () => {
                       </Button>
                     </CardContent>
                   </Card>
-                ))}
+                )}
               </div>
             </section>
           </article>
@@ -610,8 +610,8 @@ const SocialMediaMentalWellbeingBlogPostPage = () => {
       </div>
 
       <FooterSection />
-    </>
-  );
+    </>);
+
 };
 
 export default SocialMediaMentalWellbeingBlogPostPage;

@@ -67,6 +67,9 @@ import MentalHealthCommunityViolenceBlogPostPage from "./pages/blogs/MentalHealt
 import RuralMentalHealthcareBlogPostPage from "./pages/blogs/RuralMentalHealthcareBlogPostPage";
 import SocialMediaMentalWellbeingBlogPostPage from "./pages/blogs/SocialMediaMentalWellbeingBlogPostPage";
 import CommonReasonsPsychotherapyBlogPostPage from "./pages/blogs/CommonReasonsPsychotherapyBlogPostPage";
+import ExploringTheMultifacetedDynamicsOfSuicideInTheElderlyPopulation from "./pages/blogs/ExploringTheMultifacetedDynamicsOfSuicideInTheElderlyPopulation";
+import PsychiatristsBoostWellBeingThroughExpertCareForMentalHealth from "./pages/blogs/PsychiatristsBoostWellBeingThroughExpertCareForMentalHealth";
+import TMSTherapyForTreatmentResistantDepression from "./pages/blogs/TMSTherapyForTreatmentResistantDepression";
 import DisclaimerPage from "./pages/DisclaimerPage";
 
 const queryClient = new QueryClient();
@@ -148,6 +151,9 @@ const App = () =>
           <Route path="/blog/rural-mental-healthcare" element={<RuralMentalHealthcareBlogPostPage />} />
           <Route path="/blog/social-media-mental-wellbeing" element={<SocialMediaMentalWellbeingBlogPostPage />} />
           <Route path="/blog/common-reasons-psychotherapy" element={<CommonReasonsPsychotherapyBlogPostPage />} />
+          <Route path="/blogs/ExploringTheMultifacetedDynamicsOfSuicideInTheElderlyPopulation" element={<ExploringTheMultifacetedDynamicsOfSuicideInTheElderlyPopulation />} />
+          <Route path="/blogs/PsychiatristsBoostWellBeingThroughExpertCareForMentalHealth" element={<PsychiatristsBoostWellBeingThroughExpertCareForMentalHealth />} />
+          <Route path="/blogs/TMSTherapyForTreatmentResistantDepression" element={<TMSTherapyForTreatmentResistantDepression />} />
           <Route path="/blog" element={<BlogPage />} />
           <Route path="/blog/" element={<BlogPage />} />
           <Route path="/research-and-publications" element={<ResearchPage />} />

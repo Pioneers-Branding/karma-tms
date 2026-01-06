@@ -10,16 +10,16 @@ import {
   BreadcrumbLink,
   BreadcrumbList,
   BreadcrumbPage,
-  BreadcrumbSeparator
-} from '@/components/ui/breadcrumb';
+  BreadcrumbSeparator } from
+'@/components/ui/breadcrumb';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import {
   Accordion,
   AccordionContent,
   AccordionItem,
-  AccordionTrigger
-} from '@/components/ui/accordion';
+  AccordionTrigger } from
+'@/components/ui/accordion';
 import { Calendar, Clock, User, CheckCircle2, ArrowRight } from 'lucide-react';
 import AuthorBox from '@/components/AuthorBox';
 
@@ -28,13 +28,13 @@ const CommonReasonsPsychotherapyBlogPostPage = () => {
   const sectionsRef = useRef<{[key: string]: HTMLElement | null;}>({});
 
   const tocItems = [
-    { id: 'what-is', label: 'What is Psychotherapy?' },
-    { id: 'common-reasons', label: 'Most Common Reasons' },
-    { id: 'when-to-seek', label: 'When to Seek Help' },
-    { id: 'types-therapy', label: 'Types of Therapy' },
-    { id: 'benefits', label: 'Benefits of Therapy' },
-    { id: 'faqs', label: 'Frequently Asked Questions' }
-  ];
+  { id: 'what-is', label: 'What is Psychotherapy?' },
+  { id: 'common-reasons', label: 'Most Common Reasons' },
+  { id: 'when-to-seek', label: 'When to Seek Help' },
+  { id: 'types-therapy', label: 'Types of Therapy' },
+  { id: 'benefits', label: 'Benefits of Therapy' },
+  { id: 'faqs', label: 'Frequently Asked Questions' }];
+
 
   useEffect(() => {
     const handleScroll = () => {
@@ -67,52 +67,52 @@ const CommonReasonsPsychotherapyBlogPostPage = () => {
   };
 
   const faqs = [
-    {
-      question: 'How do I know if I need therapy?',
-      answer: 'Consider therapy if you experience persistent feelings of sadness or anxiety, struggle with daily functioning, have difficulty managing relationships, experience significant life changes, or feel overwhelmed. You don\'t need to be in crisis—therapy can be beneficial for personal growth and developing coping skills even when you\'re functioning well.'
-    },
-    {
-      question: 'How long does therapy typically last?',
-      answer: 'The duration varies based on your needs and goals. Some people benefit from short-term therapy (8-12 sessions) for specific issues, while others engage in longer-term therapy for complex concerns or ongoing support. Your therapist will work with you to develop a treatment plan that fits your situation.'
-    },
-    {
-      question: 'Is therapy confidential?',
-      answer: 'Yes, therapy is confidential with few exceptions. Therapists are legally and ethically required to maintain your privacy. Exceptions include situations where there is imminent risk of harm to yourself or others, suspected child or elder abuse, or when legally compelled by court order. Your therapist will explain confidentiality policies in your first session.'
-    },
-    {
-      question: 'What\'s the difference between a therapist, psychologist, and psychiatrist?',
-      answer: 'Therapists/counselors have master\'s degrees and provide talk therapy. Psychologists have doctoral degrees (PhD or PsyD) and can perform psychological testing and therapy. Psychiatrists are medical doctors who can prescribe medication and provide therapy. The best choice depends on your specific needs—many people work with both a therapist and psychiatrist.'
-    },
-    {
-      question: 'How much does therapy cost?',
-      answer: 'Costs vary widely based on location, provider credentials, and whether you use insurance. Sessions typically range from $100-300 per hour. Many insurance plans cover mental health services, though coverage varies. Some therapists offer sliding scale fees based on income, and community mental health centers often provide lower-cost options.'
-    },
-    {
-      question: 'What if I don\'t connect with my therapist?',
-      answer: 'The therapeutic relationship is crucial for success. If you don\'t feel comfortable after a few sessions, it\'s completely appropriate to discuss your concerns with your therapist or seek a different provider. Finding the right fit may take time, but it\'s worth the effort for effective treatment.'
-    }
-  ];
+  {
+    question: 'How do I know if I need therapy?',
+    answer: 'Consider therapy if you experience persistent feelings of sadness or anxiety, struggle with daily functioning, have difficulty managing relationships, experience significant life changes, or feel overwhelmed. You don\'t need to be in crisis—therapy can be beneficial for personal growth and developing coping skills even when you\'re functioning well.'
+  },
+  {
+    question: 'How long does therapy typically last?',
+    answer: 'The duration varies based on your needs and goals. Some people benefit from short-term therapy (8-12 sessions) for specific issues, while others engage in longer-term therapy for complex concerns or ongoing support. Your therapist will work with you to develop a treatment plan that fits your situation.'
+  },
+  {
+    question: 'Is therapy confidential?',
+    answer: 'Yes, therapy is confidential with few exceptions. Therapists are legally and ethically required to maintain your privacy. Exceptions include situations where there is imminent risk of harm to yourself or others, suspected child or elder abuse, or when legally compelled by court order. Your therapist will explain confidentiality policies in your first session.'
+  },
+  {
+    question: 'What\'s the difference between a therapist, psychologist, and psychiatrist?',
+    answer: 'Therapists/counselors have master\'s degrees and provide talk therapy. Psychologists have doctoral degrees (PhD or PsyD) and can perform psychological testing and therapy. Psychiatrists are medical doctors who can prescribe medication and provide therapy. The best choice depends on your specific needs—many people work with both a therapist and psychiatrist.'
+  },
+  {
+    question: 'How much does therapy cost?',
+    answer: 'Costs vary widely based on location, provider credentials, and whether you use insurance. Sessions typically range from $100-300 per hour. Many insurance plans cover mental health services, though coverage varies. Some therapists offer sliding scale fees based on income, and community mental health centers often provide lower-cost options.'
+  },
+  {
+    question: 'What if I don\'t connect with my therapist?',
+    answer: 'The therapeutic relationship is crucial for success. If you don\'t feel comfortable after a few sessions, it\'s completely appropriate to discuss your concerns with your therapist or seek a different provider. Finding the right fit may take time, but it\'s worth the effort for effective treatment.'
+  }];
+
 
   const relatedPosts = [
-    {
-      title: 'Managing Anxiety Triggers in Everyday Life',
-      excerpt: 'Learn practical strategies to identify and manage anxiety triggers effectively.',
-      link: '/blog/managing-anxiety-triggers',
-      image: 'https://res.cloudinary.com/de4kw1t2i/image/upload/v1763376737/22_wiizht.png'
-    },
-    {
-      title: 'The Role of Family Dynamics in Mental Health Recovery',
-      excerpt: 'Discover how family relationships influence mental health outcomes and recovery.',
-      link: '/blog/family-dynamics-mental-health',
-      image: 'https://res.cloudinary.com/de4kw1t2i/image/upload/v1763376735/21_tyzclt.png'
-    },
-    {
-      title: 'Mental Health First Aid: How to Help Someone in Crisis',
-      excerpt: 'Essential skills to recognize crisis signs and provide immediate support.',
-      link: '/blog/mental-health-first-aid',
-      image: 'https://res.cloudinary.com/de4kw1t2i/image/upload/v1763376735/19_luad51.png'
-    }
-  ];
+  {
+    title: 'Managing Anxiety Triggers in Everyday Life',
+    excerpt: 'Learn practical strategies to identify and manage anxiety triggers effectively.',
+    link: '/blog/managing-anxiety-triggers',
+    image: 'https://res.cloudinary.com/de4kw1t2i/image/upload/v1763376737/22_wiizht.png'
+  },
+  {
+    title: 'The Role of Family Dynamics in Mental Health Recovery',
+    excerpt: 'Discover how family relationships influence mental health outcomes and recovery.',
+    link: '/blog/family-dynamics-mental-health',
+    image: 'https://res.cloudinary.com/de4kw1t2i/image/upload/v1763376735/21_tyzclt.png'
+  },
+  {
+    title: 'Mental Health First Aid: How to Help Someone in Crisis',
+    excerpt: 'Essential skills to recognize crisis signs and provide immediate support.',
+    link: '/blog/mental-health-first-aid',
+    image: 'https://res.cloudinary.com/de4kw1t2i/image/upload/v1763376735/19_luad51.png'
+  }];
+
 
   const articleSchema = {
     '@context': 'https://schema.org',
@@ -161,17 +161,17 @@ const CommonReasonsPsychotherapyBlogPostPage = () => {
         keywords="psychotherapy, reasons for therapy, when to see therapist, mental health counseling, therapy benefits, depression therapy, anxiety therapy"
         canonical="/blog/common-reasons-psychotherapy"
         ogImage="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/3a8c8944-5c3c-416d-acf8-9ca9871d172c.webp"
-        ogType="article"
-      />
+        ogType="article" />
+
 
       <StructuredData
         type="breadcrumb"
         breadcrumbs={[
-          { name: 'Home', url: '/' },
-          { name: 'Blog', url: '/blog' },
-          { name: 'Common Reasons for Psychotherapy', url: '/blog/common-reasons-psychotherapy' }
-        ]}
-      />
+        { name: 'Home', url: '/' },
+        { name: 'Blog', url: '/blog' },
+        { name: 'Common Reasons for Psychotherapy', url: '/blog/common-reasons-psychotherapy' }]
+        } />
+
 
       <script type="application/ld+json">
         {JSON.stringify(articleSchema)}
@@ -247,19 +247,19 @@ const CommonReasonsPsychotherapyBlogPostPage = () => {
                 <CardContent className="p-6">
                   <h3 className="font-bold text-lg mb-4 text-[#572670]">Table of Contents</h3>
                   <nav className="space-y-2">
-                    {tocItems.map((item) => (
-                      <button
-                        key={item.id}
-                        onClick={() => scrollToSection(item.id)}
-                        className={`block w-full text-left px-3 py-2 rounded-md text-sm transition-all ${
-                          activeSection === item.id
-                            ? 'bg-[#572670] text-white font-medium'
-                            : 'text-gray-700 hover:bg-[#572670]/10'
-                        }`}
-                      >
+                    {tocItems.map((item) =>
+                    <button
+                      key={item.id}
+                      onClick={() => scrollToSection(item.id)}
+                      className={`block w-full text-left px-3 py-2 rounded-md text-sm transition-all ${
+                      activeSection === item.id ?
+                      'bg-[#572670] text-white font-medium' :
+                      'text-gray-700 hover:bg-[#572670]/10'}`
+                      }>
+
                         {item.label}
                       </button>
-                    ))}
+                    )}
                   </nav>
                   <div className="mt-6 pt-6 border-t">
                     <Button asChild className="w-full bg-[#572670] hover:bg-[#7B3FA0]">
@@ -278,8 +278,8 @@ const CommonReasonsPsychotherapyBlogPostPage = () => {
               <img
                 src="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/3a8c8944-5c3c-416d-acf8-9ca9871d172c.webp"
                 alt="Psychotherapy session concept"
-                className="w-full object-cover rounded-lg mb-6"
-              />
+                className="w-full object-cover rounded-lg mb-6" />
+
 
               <p className="text-xl text-gray-700 leading-relaxed">
                 Seeking therapy is one of the most courageous and important steps you can take for your mental health. Yet many people wonder whether their struggles are "serious enough" to warrant professional help. The truth is, you don't need to be in crisis to benefit from therapy. This comprehensive guide explores the most common reasons people seek psychotherapy and helps you determine if therapy might be right for you.
@@ -649,20 +649,20 @@ const CommonReasonsPsychotherapyBlogPostPage = () => {
               name="karmatmsdev"
               role="Mental Health Content Team"
               bio="The KarmaTMS content team is committed to providing comprehensive, evidence-based information about mental health treatments. We believe that understanding when and why to seek help is the first step toward better mental health."
-              image="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/ebadb369-a58d-421c-b937-24f900be5867.png"
-            />
+              image="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/ebadb369-a58d-421c-b937-24f900be5867.png" />
+
 
             {/* FAQ Section */}
             <section ref={(el) => sectionsRef.current['faqs'] = el} className="mb-12 mt-12">
               <h2 className="text-3xl font-bold text-[#572670] mb-6">Frequently Asked Questions</h2>
               
               <Accordion type="single" collapsible className="w-full space-y-2">
-                {faqs.map((faq, index) => (
-                  <AccordionItem
-                    key={index}
-                    value={`item-${index}`}
-                    className="border border-gray-200 rounded-lg px-4 data-[state=open]:border-[#572670]"
-                  >
+                {faqs.map((faq, index) =>
+                <AccordionItem
+                  key={index}
+                  value={`item-${index}`}
+                  className="border border-gray-200 rounded-lg px-4 data-[state=open]:border-[#572670]">
+
                     <AccordionTrigger className="text-left font-semibold hover:text-[#572670] hover:no-underline">
                       {faq.question}
                     </AccordionTrigger>
@@ -670,7 +670,7 @@ const CommonReasonsPsychotherapyBlogPostPage = () => {
                       {faq.answer}
                     </AccordionContent>
                   </AccordionItem>
-                ))}
+                )}
               </Accordion>
             </section>
 
@@ -698,13 +698,13 @@ const CommonReasonsPsychotherapyBlogPostPage = () => {
             <section className="mb-12">
               <h2 className="text-3xl font-bold text-[#572670] mb-6">Related Articles</h2>
               <div className="grid md:grid-cols-3 gap-6">
-                {relatedPosts.map((post, index) => (
-                  <Card key={index} className="border-[#572670]/20 overflow-hidden hover:shadow-lg transition-shadow">
+                {relatedPosts.map((post, index) =>
+                <Card key={index} className="border-[#572670]/20 overflow-hidden hover:shadow-lg transition-shadow">
                     <img
-                      src={post.image}
-                      alt={post.title}
-                      className="w-full object-cover"
-                    />
+                    src={post.image}
+                    alt={post.title}
+                    className="w-full object-cover" />
+
                     <CardContent className="p-6">
                       <h3 className="font-bold text-lg mb-2 hover:text-[#572670] transition-colors">
                         <Link to={post.link}>{post.title}</Link>
@@ -717,7 +717,7 @@ const CommonReasonsPsychotherapyBlogPostPage = () => {
                       </Button>
                     </CardContent>
                   </Card>
-                ))}
+                )}
               </div>
             </section>
           </article>
@@ -725,8 +725,8 @@ const CommonReasonsPsychotherapyBlogPostPage = () => {
       </div>
 
       <FooterSection />
-    </>
-  );
+    </>);
+
 };
 
 export default CommonReasonsPsychotherapyBlogPostPage;

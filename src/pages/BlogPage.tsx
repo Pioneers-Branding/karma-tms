@@ -33,6 +33,54 @@ const blogCategories = [
 // Blog posts - Veterans TMS Therapy with fixed images
 const allBlogPosts: BlogPost[] = [
 {
+  id: 28,
+  title: 'Exploring the Multifaceted Dynamics of Suicide in the Elderly Population',
+  excerpt: 'A comprehensive analysis of suicide risk factors, prevention strategies, and mental health interventions for elderly populations.',
+  category: 'tms-therapy',
+  author: 'karmatmsdev',
+  date: new Date(2024, 7, 2).toLocaleDateString('en-US', {
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric'
+  }),
+  readTime: '15 min read',
+  image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/62abea2f-775f-47a7-ad22-2bfc58d01038.webp',
+  featured: false,
+  rating: 5
+},
+{
+  id: 29,
+  title: 'Psychiatrists Boost Well-Being Through Expert Care For Mental Health',
+  excerpt: 'Discover how psychiatrists provide comprehensive mental health care through evidence-based treatments, personalized approaches, and innovative therapies like TMS.',
+  category: 'tms-therapy',
+  author: 'karmatmsdev',
+  date: new Date(2024, 6, 2).toLocaleDateString('en-US', {
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric'
+  }),
+  readTime: '12 min read',
+  image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/66e6e1ae-8cc3-4469-bfaf-b1f3f3d07006.webp',
+  featured: false,
+  rating: 5
+},
+{
+  id: 30,
+  title: 'TMS Therapy for Treatment Resistant Depression',
+  excerpt: 'Comprehensive guide to TMS therapy as an effective treatment for treatment-resistant depression, including success rates, benefits, and what to expect.',
+  category: 'tms-therapy',
+  author: 'karmatmsdev',
+  date: new Date(2024, 4, 28).toLocaleDateString('en-US', {
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric'
+  }),
+  readTime: '14 min read',
+  image: 'https://images.unsplash.com/photo-1747301136652-63964ac1fd95?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MTg3MTl8MHwxfHNlYXJjaHwxfHxBJTIwd2VicCUyMGltYWdlJTIwaG9zdGVkJTIwb24lMjBhJTIwc2VydmVyJTJDJTIwbGlrZWx5JTIwdXNlZCUyMGFzJTIwYSUyMHZpc3VhbCUyMGVsZW1lbnQlMjBpbiUyMGElMjBibG9nJTIwb3IlMjBhcnRpY2xlLnxlbnwwfHx8fDE3NjQwNzExOTF8MA&ixlib=rb-4.1.0&q=80&w=200$w=1200',
+  featured: false,
+  rating: 5
+},
+{
   id: 25,
   title: 'Prioritizing Mental Healthcare in Rural Communities',
   excerpt: 'Addressing mental health access challenges in rural areas. Discover innovative solutions, telehealth options, and resources for improving mental healthcare.',
@@ -684,7 +732,10 @@ const BlogPage = () => {
                     24: '/blogs/mental-health-community-violence',
                     25: '/blog/rural-mental-healthcare',
                     26: '/blog/social-media-mental-wellbeing',
-                    27: '/blog/common-reasons-psychotherapy'
+                    27: '/blog/common-reasons-psychotherapy',
+                    28: '/blogs/ExploringTheMultifacetedDynamicsOfSuicideInTheElderlyPopulation',
+                    29: '/blogs/PsychiatristsBoostWellBeingThroughExpertCareForMentalHealth',
+                    30: '/blogs/TMSTherapyForTreatmentResistantDepression'
                   };
                   return (
                     <a
