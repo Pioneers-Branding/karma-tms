@@ -111,8 +111,8 @@ const HowTMSWorks = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>);
+
 };
 
 export default HowTMSWorks;

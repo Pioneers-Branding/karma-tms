@@ -4,49 +4,49 @@ import { ArrowRight, Brain, Heart, Shield, Users, Zap, Clock } from 'lucide-reac
 
 const ConditionsSection = () => {
   const conditions = [
-    {
-      icon: Brain,
-      title: 'Depression',
-      subtitle: 'Treatment-Resistant',
-      description: 'FDA-approved for major depressive disorder when multiple antidepressants haven\'t worked effectively.',
-      stats: '75% improvement rate'
-    },
-    {
-      icon: Heart,
-      title: 'Anxiety Disorders',
-      subtitle: 'Generalized & Specific',
-      description: 'Effective treatment for various anxiety disorders including GAD, social anxiety, and panic disorder.',
-      stats: 'Significant relief in 6-8 weeks'
-    },
-    {
-      icon: Shield,
-      title: 'PTSD & Trauma',
-      subtitle: 'Post-Traumatic Stress',
-      description: 'Targeted therapy for trauma-related disorders and complex PTSD symptoms.',
-      stats: 'Clinically proven results'
-    },
-    {
-      icon: Zap,
-      title: 'OCD',
-      subtitle: 'Obsessive-Compulsive',
-      description: 'Specialized TMS protocols for obsessive-compulsive disorder and related conditions.',
-      stats: 'FDA-approved protocol'
-    },
-    {
-      icon: Users,
-      title: 'Women\'s Mood Disorders',
-      subtitle: 'Perinatal & Hormonal',
-      description: 'Safe treatment for postpartum depression, perinatal mood disorders, and hormone-related conditions.',
-      stats: 'Safe during pregnancy'
-    },
-    {
-      icon: Clock,
-      title: 'Stress & Adjustment',
-      subtitle: 'Life Transitions',
-      description: 'Treatment for chronic stress, adjustment disorders, and major life transition challenges.',
-      stats: 'Rapid symptom relief'
-    }
-  ];
+  {
+    icon: Brain,
+    title: 'Depression',
+    subtitle: 'Treatment-Resistant',
+    description: 'FDA-approved for major depressive disorder when multiple antidepressants haven\'t worked effectively.',
+    stats: '75% improvement rate'
+  },
+  {
+    icon: Heart,
+    title: 'Anxiety Disorders',
+    subtitle: 'Generalized & Specific',
+    description: 'Effective treatment for various anxiety disorders including GAD, social anxiety, and panic disorder.',
+    stats: 'Significant relief in 6-8 weeks'
+  },
+  {
+    icon: Shield,
+    title: 'PTSD & Trauma',
+    subtitle: 'Post-Traumatic Stress',
+    description: 'Targeted therapy for trauma-related disorders and complex PTSD symptoms.',
+    stats: 'Clinically proven results'
+  },
+  {
+    icon: Zap,
+    title: 'OCD',
+    subtitle: 'Obsessive-Compulsive',
+    description: 'Specialized TMS protocols for obsessive-compulsive disorder and related conditions.',
+    stats: 'FDA-approved protocol'
+  },
+  {
+    icon: Users,
+    title: 'Women\'s Mood Disorders',
+    subtitle: 'Perinatal & Hormonal',
+    description: 'Safe treatment for postpartum depression, perinatal mood disorders, and hormone-related conditions.',
+    stats: 'Safe during pregnancy'
+  },
+  {
+    icon: Clock,
+    title: 'Stress & Adjustment',
+    subtitle: 'Life Transitions',
+    description: 'Treatment for chronic stress, adjustment disorders, and major life transition challenges.',
+    stats: 'Rapid symptom relief'
+  }];
+
 
   return (
     <section className="py-20 bg-gray-50">
@@ -91,8 +91,8 @@ const ConditionsSection = () => {
                     </Button>
                   </div>
                 </CardContent>
-              </Card>
-            );
+              </Card>);
+
           })}
         </div>
 
@@ -102,8 +102,8 @@ const ConditionsSection = () => {
           </Button>
         </div>
       </div>
-    </section>
-  );
+    </section>);
+
 };
 
 export default ConditionsSection;

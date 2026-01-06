@@ -8,28 +8,28 @@ const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const servicesLinks = [
-    { name: 'TMS Therapy', href: '/tms-therapy' },
-    { name: 'PrTMS', href: '/prtms' },
-    { name: 'Brain Mapping', href: '/brain-mapping' },
-    { name: 'Neurofeedback', href: '/neurofeedback' },
-    { name: 'Medication Management', href: '/medication-management' }
-  ];
+  { name: 'TMS Therapy', href: '/tms-therapy' },
+  { name: 'PrTMS', href: '/prtms' },
+  { name: 'Brain Mapping', href: '/brain-mapping' },
+  { name: 'Neurofeedback', href: '/neurofeedback' },
+  { name: 'Medication Management', href: '/medication-management' }];
+
 
   const conditionsLinks = [
-    { name: 'Depression', href: '/conditions/depression' },
-    { name: 'Anxiety', href: '/conditions/anxiety' },
-    { name: 'OCD', href: '/conditions/ocd' },
-    { name: 'PTSD', href: '/conditions/ptsd' },
-    { name: 'Stress', href: '/conditions/stress' },
-    { name: 'Women\'s Mood', href: '/conditions/womens-mood' }
-  ];
+  { name: 'Depression', href: '/conditions/depression' },
+  { name: 'Anxiety', href: '/conditions/anxiety' },
+  { name: 'OCD', href: '/conditions/ocd' },
+  { name: 'PTSD', href: '/conditions/ptsd' },
+  { name: 'Stress', href: '/conditions/stress' },
+  { name: 'Women\'s Mood', href: '/conditions/womens-mood' }];
+
 
   const resourcesLinks = [
-    { name: 'Testimonials', href: '/testimonials' },
-    { name: 'Research', href: '/research' },
-    { name: 'Blog', href: '/blog' },
-    { name: 'FAQs', href: '/faqs' }
-  ];
+  { name: 'Testimonials', href: '/testimonials' },
+  { name: 'Research', href: '/research' },
+  { name: 'Blog', href: '/blog' },
+  { name: 'FAQs', href: '/faqs' }];
+
 
   return (
     <header className="bg-white shadow-sm sticky top-0 z-50 border-b">
@@ -37,11 +37,11 @@ const Navigation = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex items-center space-x-2">
-            <img 
-              src="/logo-white.png" 
-              alt="Karma TMS" 
-              className="h-8 w-auto"
-            />
+            <img
+              src="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/ebadb369-a58d-421c-b937-24f900be5867.png"
+              alt="Karma TMS"
+              className="h-8 w-auto brightness-0" />
+
             <span className="text-xl font-bold text-[#572670]">Karma TMS</span>
           </div>
 
@@ -65,11 +65,11 @@ const Navigation = () => {
                 </Button>
               </DropdownMenuTrigger>
               <DropdownMenuContent className="w-56">
-                {servicesLinks.map((link) => (
-                  <DropdownMenuItem key={link.href} className="cursor-pointer">
+                {servicesLinks.map((link) =>
+                <DropdownMenuItem key={link.href} className="cursor-pointer">
                     {link.name}
                   </DropdownMenuItem>
-                ))}
+                )}
               </DropdownMenuContent>
             </DropdownMenu>
 
@@ -81,11 +81,11 @@ const Navigation = () => {
                 </Button>
               </DropdownMenuTrigger>
               <DropdownMenuContent className="w-56">
-                {conditionsLinks.map((link) => (
-                  <DropdownMenuItem key={link.href} className="cursor-pointer">
+                {conditionsLinks.map((link) =>
+                <DropdownMenuItem key={link.href} className="cursor-pointer">
                     {link.name}
                   </DropdownMenuItem>
-                ))}
+                )}
               </DropdownMenuContent>
             </DropdownMenu>
 
@@ -97,11 +97,11 @@ const Navigation = () => {
                 </Button>
               </DropdownMenuTrigger>
               <DropdownMenuContent className="w-56">
-                {resourcesLinks.map((link) => (
-                  <DropdownMenuItem key={link.href} className="cursor-pointer">
+                {resourcesLinks.map((link) =>
+                <DropdownMenuItem key={link.href} className="cursor-pointer">
                     {link.name}
                   </DropdownMenuItem>
-                ))}
+                )}
               </DropdownMenuContent>
             </DropdownMenu>
 
@@ -143,29 +143,29 @@ const Navigation = () => {
                   
                   <div className="pl-4 space-y-1">
                     <p className="font-medium text-gray-900 mb-2">Services</p>
-                    {servicesLinks.map((link) => (
-                      <Button key={link.href} variant="ghost" className="w-full justify-start text-sm">
+                    {servicesLinks.map((link) =>
+                    <Button key={link.href} variant="ghost" className="w-full justify-start text-sm">
                         {link.name}
                       </Button>
-                    ))}
+                    )}
                   </div>
 
                   <div className="pl-4 space-y-1">
                     <p className="font-medium text-gray-900 mb-2">Conditions</p>
-                    {conditionsLinks.map((link) => (
-                      <Button key={link.href} variant="ghost" className="w-full justify-start text-sm">
+                    {conditionsLinks.map((link) =>
+                    <Button key={link.href} variant="ghost" className="w-full justify-start text-sm">
                         {link.name}
                       </Button>
-                    ))}
+                    )}
                   </div>
 
                   <div className="pl-4 space-y-1">
                     <p className="font-medium text-gray-900 mb-2">Resources</p>
-                    {resourcesLinks.map((link) => (
-                      <Button key={link.href} variant="ghost" className="w-full justify-start text-sm">
+                    {resourcesLinks.map((link) =>
+                    <Button key={link.href} variant="ghost" className="w-full justify-start text-sm">
                         {link.name}
                       </Button>
-                    ))}
+                    )}
                   </div>
 
                   <Button variant="ghost" className="w-full justify-start">Contact</Button>
@@ -188,8 +188,8 @@ const Navigation = () => {
           </Sheet>
         </div>
       </div>
-    </header>
-  );
+    </header>);
+
 };
 
 export default Navigation;

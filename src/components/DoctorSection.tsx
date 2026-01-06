@@ -5,27 +5,27 @@ import { Award, GraduationCap, Users, Brain } from 'lucide-react';
 
 const DoctorSection = () => {
   const credentials = [
-    {
-      icon: GraduationCap,
-      title: "Double Board-Certified",
-      description: "Psychiatry and Addiction Medicine"
-    },
-    {
-      icon: Award,
-      title: "University of Pittsburgh",
-      description: "Residency Training"
-    },
-    {
-      icon: Users,
-      title: "Board Member",
-      description: "Society for Brain Mapping & Therapeutics"
-    },
-    {
-      icon: Brain,
-      title: "UC Riverside Faculty",
-      description: "School of Medicine"
-    }
-  ];
+  {
+    icon: GraduationCap,
+    title: "Double Board-Certified",
+    description: "Psychiatry and Addiction Medicine"
+  },
+  {
+    icon: Award,
+    title: "University of Pittsburgh",
+    description: "Residency Training"
+  },
+  {
+    icon: Users,
+    title: "Board Member",
+    description: "Society for Brain Mapping & Therapeutics"
+  },
+  {
+    icon: Brain,
+    title: "UC Riverside Faculty",
+    description: "School of Medicine"
+  }];
+
 
   return (
     <section className="py-20 bg-white">
@@ -39,8 +39,8 @@ const DoctorSection = () => {
                   <img
                     src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=600&h=750&fit=crop&crop=face"
                     alt="Dr. Keerthy Sunder - Psychiatrist"
-                    className="w-full h-full object-cover"
-                  />
+                    className="w-full h-full object-cover" />
+
                   <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/50 to-transparent p-6">
                     <h3 className="text-white text-2xl font-bold mb-2">Dr. Keerthy Sunder</h3>
                     <p className="text-white/90">Board-Certified Psychiatrist</p>
@@ -102,8 +102,8 @@ const DoctorSection = () => {
                         </div>
                       </div>
                     </CardContent>
-                  </Card>
-                );
+                  </Card>);
+
               })}
             </div>
 
@@ -112,17 +112,17 @@ const DoctorSection = () => {
               <h4 className="font-bold text-gray-900">Professional Focus Areas:</h4>
               <div className="flex flex-wrap gap-2">
                 {[
-                  'Treatment-Resistant Depression',
-                  'Anxiety Disorders',
-                  'PTSD & Trauma',
-                  'Addiction Medicine',
-                  'Women\'s Mental Health',
-                  'Integrative Psychiatry'
-                ].map((area, index) => (
-                  <span key={index} className="text-sm bg-white px-3 py-1 rounded-full text-gray-700 border">
+                'Treatment-Resistant Depression',
+                'Anxiety Disorders',
+                'PTSD & Trauma',
+                'Addiction Medicine',
+                'Women\'s Mental Health',
+                'Integrative Psychiatry'].
+                map((area, index) =>
+                <span key={index} className="text-sm bg-white px-3 py-1 rounded-full text-gray-700 border">
                     {area}
                   </span>
-                ))}
+                )}
               </div>
             </div>
 
@@ -137,8 +137,8 @@ const DoctorSection = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>);
+
 };
 
 export default DoctorSection;
