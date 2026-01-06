@@ -121,8 +121,8 @@ const FooterSection = () => {
                 <Mail className="h-5 w-5 text-[#572670]" />
                 <div>
                   <div className="text-sm font-medium text-white">Email</div>
-                  <a href="mailto:info@karmatms.com" className="text-sm text-gray-300 hover:text-[#572670] transition-colors">
-                    info@karmatms.com
+                  <a href="mailto:contact@karmatms.com" className="text-sm text-gray-300 hover:text-[#572670] transition-colors">
+                    contact@karmatms.com
                   </a>
                 </div>
               </div>
