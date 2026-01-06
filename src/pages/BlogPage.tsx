@@ -76,7 +76,7 @@ const allBlogPosts: BlogPost[] = [
     day: 'numeric'
   }),
   readTime: '12 min read',
-  image: 'https://images.unsplash.com/photo-1705565535215-3dd46e7b99a7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MTg3MTl8MHwxfHNlYXJjaHwxfHxBJTIwcGhvdG9ncmFwaCUyMGZyb20lMjBVbnNwbGFzaCUyQyUyMGxpa2VseSUyMGRlcGljdGluZyUyMGElMjBzY2VuZSUyMG9yJTIwc3ViamVjdCUyMHJlbGF0ZWQlMjB0byUyMHRoZSUyMGNvbnRleHQlMjBvZiUyMHRoZSUyMGJsb2clMjBwb3N0LnxlbnwwfHx8fDE3NjQ0MTE0ODh8MA&ixlib=rb-4.1.0&q=80&w=200$w=1200',
+  image: 'https://res.cloudinary.com/de4kw1t2i/image/upload/v1764569001/35_morbs0.png',
   featured: false,
   rating: 5
 },
