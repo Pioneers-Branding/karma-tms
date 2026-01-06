@@ -293,8 +293,8 @@ const TestimonialsPage = () => {
                 </p>
                 <Link to="/contact">
                 <Button
-                  variant="secondary"
-                  className="bg-white text-[#572670] hover:bg-gray-100">
+                    variant="secondary"
+                    className="bg-white text-[#572670] hover:bg-gray-100">
 
                   Schedule Your Free Consultation
                   <ChevronRight className="ml-2 h-4 w-4" />
