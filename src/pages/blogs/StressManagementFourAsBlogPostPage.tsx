@@ -292,7 +292,7 @@ const StressManagementFourAsBlogPostPage = () => {
               <img
                 src="https://res.cloudinary.com/de4kw1t2i/image/upload/v1763376733/12_t62v1m.png"
                 alt="Stress management techniques and strategies"
-                className="w-full  md:h-96 object-cover rounded-lg mb-6" />
+                className="w-full   object-cover rounded-lg mb-6" />
 
               <p className="text-xl text-gray-700 leading-relaxed mb-6">
                 Stress is inevitable—it's how we respond to it that matters. The <strong>4 A's of stress management</strong>—Avoid, Alter, Adapt, and Accept—provide a simple yet powerful framework for handling life's pressures. Whether you're dealing with work stress, relationship challenges, or general overwhelm, understanding these four strategies can transform how you navigate difficult situations.
