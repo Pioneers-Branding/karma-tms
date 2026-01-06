@@ -22,7 +22,7 @@ const HeroSection = () => {
   },
   {
     title: "Advanced TMS Setup",
-    image: "https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/e3bc971e-e2ab-4334-ac23-0b9876309934.webp",
+    image: "https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/2f824ef5-3d22-4a4f-a5df-6414bb0776f6.jpg",
     alt: "TMS-Chair"
   }];
 
