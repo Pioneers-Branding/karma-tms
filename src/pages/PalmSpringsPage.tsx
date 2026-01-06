@@ -200,12 +200,12 @@ const PalmSpringsPage = () => {
             <div className="grid md:grid-cols-3 gap-6">
               <div className="relative h-72 rounded-xl overflow-hidden shadow-lg group">
                 <img
-                  src="https://images.unsplash.com/photo-1731510861193-cb13e86436ac?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MTg3MTl8MHwxfHNlYXJjaHwxfHxBJTIwbW9kZXJuJTIwYnVpbGRpbmclMjBzdXJyb3VuZGVkJTIwYnklMjBncmVlbmVyeSUyQyUyMGNhcHR1cmVkJTIwaW4lMjBhJTIwaGlnaC1yZXNvbHV0aW9uJTIwaW1hZ2UufGVufDB8fHx8MTc2MzcyNjE2NHww&ixlib=rb-4.1.0&q=80&w=200$w=1920"
+                  src="https://res.cloudinary.com/de4kw1t2i/image/upload/v1763039658/2_miiwgx.jpg"
                   alt="KarmaTMS Palm Springs entrance and reception area"
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" />
 
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
-                <p className="absolute bottom-4 left-4 text-white font-semibold">Welcoming Reception</p>
+                <p className="absolute bottom-4 left-4 text-white font-semibold">Clinic Entrance</p>
               </div>
               <div className="relative h-72 rounded-xl overflow-hidden shadow-lg group">
                 <img
@@ -218,7 +218,7 @@ const PalmSpringsPage = () => {
               </div>
               <div className="relative h-72 rounded-xl overflow-hidden shadow-lg group">
                 <img
-                  src="https://images.unsplash.com/photo-1723152928488-d10054adb893?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MTg3MTl8MHwxfHNlYXJjaHwxfHxBJTIwcGF0aWVudCUyMHJlY2VpdmluZyUyMFRNUyUyMHRoZXJhcHklMjB0cmVhdG1lbnQlMjBpbiUyMFBhbG0lMjBTcHJpbmdzLnxlbnwwfHx8fDE3NjM3MjYxNTJ8MA&ixlib=rb-4.1.0&q=80&w=200$w=1920"
+                  src="https://res.cloudinary.com/de4kw1t2i/image/upload/v1761916023/Image_20251021_173517_696_amecqm.jpg"
                   alt="Patient receiving TMS therapy treatment in Palm Springs"
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" />
 
