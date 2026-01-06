@@ -95,23 +95,24 @@ const PsychiatristsBoostWellBeingThroughExpertCareForMentalHealth = () => {
 
   const relatedPosts = [
   {
-    title: 'TMS Therapy for Treatment Resistant Depression',
-    excerpt: 'Discover how TMS offers new hope for those who haven\'t found relief with traditional treatments.',
-    link: '/blogs/TMSTherapyForTreatmentResistantDepression',
-    image: 'https://images.unsplash.com/photo-1688126507367-b7cb61e19f30?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MTg3MTl8MHwxfHNlYXJjaHwxfHxBJTIwd2VicCUyMGltYWdlJTIwaG9zdGVkJTIwb24lMjBhJTIwc2VydmVyJTJDJTIwcG9zc2libHklMjByZWxhdGVkJTIwdG8lMjBtZW50YWwlMjBoZWFsdGglMjBvciUyMHBzeWNoaWF0cnkufGVufDB8fHx8MTc2NDEzNzk4N3ww&ixlib=rb-4.1.0&q=80&w=200$w=800'
+    title: 'TMS for Migraine Relief in Veterans',
+    excerpt: 'Learn how TMS helps veterans with migraines and comorbid conditions like PTSD and depression.',
+    link: '/blogs/tms-migraine-veterans',
+    image: 'https://res.cloudinary.com/de4kw1t2i/image/upload/v1763033673/7_lnxkrv.png'
   },
   {
-    title: 'Understanding Depression Treatment',
-    excerpt: 'Comprehensive guide to depression symptoms and treatment options.',
-    link: '/depression',
-    image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/2ddc8d69-b09a-4f1d-bd47-6d783ceefbd1.webp'
+    title: 'TMS for Anxiety in Veterans',
+    excerpt: 'Discover how TMS helps veterans manage anxiety beyond medication.',
+    link: '/blogs/tms-anxiety-veterans',
+    image: 'https://res.cloudinary.com/de4kw1t2i/image/upload/v1763033666/6_rrkhgo.png'
   },
   {
-    title: 'Anxiety Treatment Options',
-    excerpt: 'Learn about effective approaches to managing anxiety disorders.',
-    link: '/anxiety',
-    image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/9705b922-d0fc-4d29-be10-acd507ce308c.webp'
+    title: 'Understanding PTSD in Veterans',
+    excerpt: 'Complete guide to PTSD signs, symptoms, and treatment paths including TMS therapy.',
+    link: '/blogs/understanding-ptsd-veterans',
+    image: 'https://res.cloudinary.com/de4kw1t2i/image/upload/v1763033666/5_kvtlku.png'
   }];
+
 
 
   const articleSchema = {
