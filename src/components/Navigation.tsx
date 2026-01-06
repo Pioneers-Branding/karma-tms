@@ -87,7 +87,7 @@ const Navigation = () => {
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden lg:flex items-center space-x-8">
+          <nav className="hidden md:flex items-center space-x-8">
             <Link key="/" to="/">
               <Button variant="ghost" className="text-white hover:text-white/80 hover:bg-white/10 transition-colors">
                 <Home className="h-4 w-4 mr-2" />
@@ -219,7 +219,7 @@ const Navigation = () => {
 
           {/* Mobile Menu Button */}
           <Sheet open={isOpen} onOpenChange={setIsOpen}>
-            <SheetTrigger asChild className="md:hidden">
+            <SheetTrigger asChild className="lg:hidden">
               <Button variant="ghost" size="icon" className="text-white">
                 <Menu className="h-6 w-6" />
               </Button>
