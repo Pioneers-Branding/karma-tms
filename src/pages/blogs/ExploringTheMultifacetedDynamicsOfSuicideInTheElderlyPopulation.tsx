@@ -128,7 +128,7 @@ const ExploringTheMultifacetedDynamicsOfSuicideInTheElderlyPopulation = () => {
             {/* Introduction */}
             <div className="mb-12">
               <img
-                src="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/62abea2f-775f-47a7-ad22-2bfc58d01038.webp"
+                src="https://res.cloudinary.com/de4kw1t2i/image/upload/v1764138579/30_lx4lub.png"
                 alt="Elderly mental health and suicide prevention"
                 className="w-full object-cover rounded-lg mb-6" />
 
