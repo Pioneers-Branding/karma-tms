@@ -6,7 +6,7 @@ const HeroSection = () => {
 
   const slides = [
   {
-    title: "Advanced Deep TMS at KarmaTMS",
+    title: "Advanced TMS at KarmaTMS",
     image: "https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/d85b7133-76b3-47d9-8904-c6b4ffc09e40.jpeg",
     alt: "Karma TMS entrance"
   },
@@ -16,7 +16,7 @@ const HeroSection = () => {
     alt: "Palm Springs view"
   },
   {
-    title: "Best Deep TMS in Palm Springs",
+    title: "Best TMS in Palm Springs",
     image: "https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/ab4091f6-2a9f-4462-909c-148d587ba88f.jpg",
     alt: "Palm Springs"
   },
