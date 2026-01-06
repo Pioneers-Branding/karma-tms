@@ -24,7 +24,7 @@ const ExomindKarmaTMSPage = () => {
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-purple-600 via-purple-700 to-indigo-800 text-white py-20 px-4 overflow-hidden">
-        <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=1920')] bg-cover bg-center opacity-10"></div>
+        <div className="absolute inset-0 bg-[url('https://res.cloudinary.com/de4kw1t2i/image/upload/v1763031168/Exomind_PIC_Unit_0943_ENUS100_lmh0bj.jpg')] bg-cover bg-center opacity-10"></div>
         <div className="max-w-7xl mx-auto relative z-10">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
