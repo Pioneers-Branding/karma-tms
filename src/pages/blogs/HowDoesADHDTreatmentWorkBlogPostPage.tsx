@@ -11,23 +11,23 @@ import {
   BreadcrumbLink,
   BreadcrumbList,
   BreadcrumbPage,
-  BreadcrumbSeparator
-} from '@/components/ui/breadcrumb';
+  BreadcrumbSeparator } from
+'@/components/ui/breadcrumb';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import {
   Accordion,
   AccordionContent,
   AccordionItem,
-  AccordionTrigger
-} from '@/components/ui/accordion';
+  AccordionTrigger } from
+'@/components/ui/accordion';
 import { Calendar, Clock, User, CheckCircle2, ArrowRight } from 'lucide-react';
 
 export default function HowDoesADHDTreatmentWorkBlogPostPage() {
   const [activeSection, setActiveSection] = useState('');
   const sectionsRef = useRef({});
 
-  const publishDate = new Date().toISOString().split('T')[0];
+  const publishDate = '2025-11-15';
   const author = {
     name: 'Dr. Keerthy Sunder',
     credentials: 'MD, Board-Certified Psychiatrist',
@@ -36,60 +36,64 @@ export default function HowDoesADHDTreatmentWorkBlogPostPage() {
   };
 
   const tocItems = [
-    { id: 'understanding-adhd', label: 'Understanding ADHD' },
-    { id: 'how-treatment-works', label: 'How ADHD Treatment Works' },
-    { id: 'benefits', label: 'Benefits of ADHD Treatment' },
-    { id: 'summary', label: 'Summary' },
-    { id: 'faqs', label: 'Frequently Asked Questions' }
-  ];
+  { id: 'understanding-adhd', label: 'Understanding ADHD' },
+  { id: 'how-treatment-works', label: 'How ADHD Treatment Works' },
+  { id: 'benefits', label: 'Benefits of ADHD Treatment' },
+  { id: 'summary', label: 'Summary' },
+  { id: 'faqs', label: 'Frequently Asked Questions' }];
+
 
   const faqs = [
-    {
-      question: 'What is the most effective ADHD treatment?',
-      answer: 'The most effective ADHD treatment typically involves a combination of medication and behavioral therapy. Stimulant medications like methylphenidate and amphetamines have shown 70-80% effectiveness in reducing ADHD symptoms. When combined with behavioral interventions like CBT and psychoeducation, treatment outcomes improve significantly. The best approach is individualized based on age, symptom severity, and specific needs.'
-    },
-    {
-      question: 'How long does ADHD treatment take to work?',
-      answer: 'Stimulant medications typically begin working within 30-60 minutes and reach peak effectiveness within 1-2 hours. However, finding the right medication and dose may take several weeks. Behavioral therapies show gradual improvements over weeks to months. Most people notice significant symptom improvement within the first month of starting a comprehensive treatment plan.'
-    },
-    {
-      question: 'Can ADHD be treated without medication?',
-      answer: 'Yes, ADHD can be managed without medication using behavioral therapy, cognitive behavioral therapy (CBT), lifestyle modifications, organizational skills training, and environmental adjustments. However, for moderate to severe ADHD, medication combined with therapy typically produces the best results. Non-medication approaches work best for mild ADHD or when medications cause intolerable side effects.'
-    },
-    {
-      question: 'What are the side effects of ADHD medications?',
-      answer: 'Common side effects of ADHD medications include decreased appetite, sleep difficulties, headaches, stomach upset, increased heart rate, and mood changes. Most side effects are mild and temporary, often improving within a few weeks. Your doctor can adjust dosages or switch medications to minimize side effects while maintaining effectiveness.'
-    },
-    {
-      question: 'Is ADHD treatment covered by insurance?',
-      answer: 'Most insurance plans cover ADHD treatment, including diagnostic evaluations, medications, and therapy sessions. Coverage varies by plan, so it\'s important to verify your specific benefits. At Karma TMS, we work with various insurance providers and can help you understand your coverage options for ADHD treatment in Palm Springs and surrounding areas.'
-    },
-    {
-      question: 'How do I know if ADHD treatment is working?',
-      answer: 'Signs that ADHD treatment is working include improved focus and attention, better organizational skills, reduced impulsivity, improved academic or work performance, better social relationships, and enhanced emotional regulation. Regular follow-ups with your healthcare provider help monitor progress and make necessary adjustments to optimize treatment outcomes.'
-    }
-  ];
+  {
+    question: 'What is the most effective ADHD treatment?',
+    answer: 'The most effective ADHD treatment typically involves a combination of medication and behavioral therapy. Stimulant medications like methylphenidate and amphetamines have shown 70-80% effectiveness in reducing ADHD symptoms. When combined with behavioral interventions like CBT and psychoeducation, treatment outcomes improve significantly. The best approach is individualized based on age, symptom severity, and specific needs.'
+  },
+  {
+    question: 'How long does ADHD treatment take to work?',
+    answer: 'Stimulant medications typically begin working within 30-60 minutes and reach peak effectiveness within 1-2 hours. However, finding the right medication and dose may take several weeks. Behavioral therapies show gradual improvements over weeks to months. Most people notice significant symptom improvement within the first month of starting a comprehensive treatment plan.'
+  },
+  {
+    question: 'Can ADHD be treated without medication?',
+    answer: 'Yes, ADHD can be managed without medication using behavioral therapy, cognitive behavioral therapy (CBT), lifestyle modifications, organizational skills training, and environmental adjustments. However, for moderate to severe ADHD, medication combined with therapy typically produces the best results. Non-medication approaches work best for mild ADHD or when medications cause intolerable side effects.'
+  },
+  {
+    question: 'What are the side effects of ADHD medications?',
+    answer: 'Common side effects of ADHD medications include decreased appetite, sleep difficulties, headaches, stomach upset, increased heart rate, and mood changes. Most side effects are mild and temporary, often improving within a few weeks. Your doctor can adjust dosages or switch medications to minimize side effects while maintaining effectiveness.'
+  },
+  {
+    question: 'Is ADHD treatment covered by insurance?',
+    answer: 'Most insurance plans cover ADHD treatment, including diagnostic evaluations, medications, and therapy sessions. Coverage varies by plan, so it\'s important to verify your specific benefits. At Karma TMS, we work with various insurance providers and can help you understand your coverage options for ADHD treatment in Palm Springs and surrounding areas.'
+  },
+  {
+    question: 'How do I know if ADHD treatment is working?',
+    answer: 'Signs that ADHD treatment is working include improved focus and attention, better organizational skills, reduced impulsivity, improved academic or work performance, better social relationships, and enhanced emotional regulation. Regular follow-ups with your healthcare provider help monitor progress and make necessary adjustments to optimize treatment outcomes.'
+  },
+  {
+    question: 'Are there any natural alternatives to ADHD medication?',
+    answer: 'Yes, several natural approaches can complement or, in mild cases, serve as alternatives to ADHD medication. These include regular aerobic exercise (which boosts dopamine levels), omega-3 fatty acid supplements, mindfulness meditation, adequate sleep, structured routines, and dietary modifications. However, while these natural interventions can be helpful, they are most effective when combined with professional guidance and may not be sufficient for moderate to severe ADHD.'
+  }];
+
 
   const relatedPosts = [
-    {
-      title: 'TMS Therapy for Treatment Resistant Depression',
-      excerpt: 'Comprehensive guide to TMS therapy as an effective treatment for treatment-resistant depression.',
-      link: '/blogs/TMSTherapyForTreatmentResistantDepression',
-      image: 'https://res.cloudinary.com/de4kw1t2i/image/upload/v1764138579/32_og3ayd.png'
-    },
-    {
-      title: 'Managing Anxiety Triggers in Everyday Life',
-      excerpt: 'Learn practical strategies to identify and manage anxiety triggers effectively in your daily routine.',
-      link: '/blog/managing-anxiety-triggers',
-      image: 'https://res.cloudinary.com/de4kw1t2i/image/upload/v1763376737/22_wiizht.png'
-    },
-    {
-      title: 'Psychiatrists Boost Well-Being Through Expert Care',
-      excerpt: 'Discover how psychiatrists provide comprehensive mental health care through evidence-based treatments.',
-      link: '/blogs/PsychiatristsBoostWellBeingThroughExpertCareForMentalHealth',
-      image: 'https://res.cloudinary.com/de4kw1t2i/image/upload/v1764138578/31_n1knmb.png'
-    }
-  ];
+  {
+    title: 'TMS Therapy for Treatment Resistant Depression',
+    excerpt: 'Comprehensive guide to TMS therapy as an effective treatment for treatment-resistant depression.',
+    link: '/blogs/TMSTherapyForTreatmentResistantDepression',
+    image: 'https://res.cloudinary.com/de4kw1t2i/image/upload/v1764138579/32_og3ayd.png'
+  },
+  {
+    title: 'Managing Anxiety Triggers in Everyday Life',
+    excerpt: 'Learn practical strategies to identify and manage anxiety triggers effectively in your daily routine.',
+    link: '/blog/managing-anxiety-triggers',
+    image: 'https://res.cloudinary.com/de4kw1t2i/image/upload/v1763376737/22_wiizht.png'
+  },
+  {
+    title: 'Psychiatrists Boost Well-Being Through Expert Care',
+    excerpt: 'Discover how psychiatrists provide comprehensive mental health care through evidence-based treatments.',
+    link: '/blogs/PsychiatristsBoostWellBeingThroughExpertCareForMentalHealth',
+    image: 'https://res.cloudinary.com/de4kw1t2i/image/upload/v1764138578/31_n1knmb.png'
+  }];
+
 
   const structuredData = {
     '@context': 'https://schema.org',
@@ -167,8 +171,8 @@ export default function HowDoesADHDTreatmentWorkBlogPostPage() {
         title="How Does ADHD Treatment Work? Complete Guide | Karma TMS"
         description="Comprehensive guide to ADHD treatment including medication, behavioral therapy, CBT, and lifestyle modifications. Learn effective ADHD management strategies in Palm Springs."
         keywords="ADHD treatment, ADHD medication, behavioral therapy, CBT for ADHD, ADHD management, neurodevelopmental disorder, Palm Springs ADHD treatment, ADHD therapy, stimulant medication, non-stimulant ADHD treatment"
-        canonicalUrl="https://www.karmatms.com/blogs/how-does-adhd-treatment-work"
-      />
+        canonicalUrl="https://www.karmatms.com/blogs/how-does-adhd-treatment-work" />
+
 
       <StructuredData data={structuredData} />
       
@@ -211,7 +215,7 @@ export default function HowDoesADHDTreatmentWorkBlogPostPage() {
             <div className="flex flex-wrap justify-center gap-4 mb-6 text-sm">
               <span className="flex items-center gap-1 bg-white/10 px-3 py-1 rounded-full backdrop-blur-sm">
                 <Calendar className="w-4 h-4" />
-                {new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
+                November 15, 2025
               </span>
               <span className="flex items-center gap-1 bg-white/10 px-3 py-1 rounded-full backdrop-blur-sm">
                 <Clock className="w-4 h-4" />
@@ -250,19 +254,19 @@ export default function HowDoesADHDTreatmentWorkBlogPostPage() {
                 <CardContent className="p-6">
                   <h3 className="font-bold text-lg mb-4 text-[#572670]">Table of Contents</h3>
                   <nav className="space-y-2">
-                    {tocItems.map((item) => (
-                      <button
-                        key={item.id}
-                        onClick={() => scrollToSection(item.id)}
-                        className={`block w-full text-left px-3 py-2 rounded-md text-sm transition-all ${
-                          activeSection === item.id ?
-                            'bg-[#572670] text-white font-medium' :
-                            'text-gray-700 hover:bg-[#572670]/10'
-                        }`}
-                      >
+                    {tocItems.map((item) =>
+                    <button
+                      key={item.id}
+                      onClick={() => scrollToSection(item.id)}
+                      className={`block w-full text-left px-3 py-2 rounded-md text-sm transition-all ${
+                      activeSection === item.id ?
+                      'bg-[#572670] text-white font-medium' :
+                      'text-gray-700 hover:bg-[#572670]/10'}`
+                      }>
+
                         {item.label}
                       </button>
-                    ))}
+                    )}
                   </nav>
                   <div className="mt-6 pt-6 border-t">
                     <Button asChild className="w-full bg-[#572670] hover:bg-[#7B3FA0]">
@@ -281,8 +285,8 @@ export default function HowDoesADHDTreatmentWorkBlogPostPage() {
               <img
                 src="https://images.unsplash.com/photo-1710767904391-145c3d62aa10?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MTg3MTl8MHwxfHNlYXJjaHwxfHxBJTIwY3JvcHBlZCUyMGltYWdlJTIwZnJvbSUyMFVuc3BsYXNoJTIwc2hvd2Nhc2luZyUyMGElMjB2aXN1YWxseSUyMGFwcGVhbGluZyUyMHNjZW5lLnxlbnwwfHx8fDE3NjQ0MTE0ODZ8MA&ixlib=rb-4.1.0&q=80&w=200$w=1200"
                 alt="ADHD Treatment and Therapy"
-                className="w-full object-cover rounded-lg mb-6"
-              />
+                className="w-full object-cover rounded-lg mb-6" />
+
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
                 Attention-Deficit/Hyperactivity Disorder (ADHD) affects millions of children and adults, impacting focus, impulse control, and daily functioning. Understanding how ADHD treatment works is crucial for those seeking effective management strategies. This comprehensive guide explores the various treatment approaches, from <Link to="/medication-management" className="text-[#572670] hover:underline">medication management</Link> to behavioral therapies and lifestyle modifications.
               </p>
@@ -722,20 +726,20 @@ export default function HowDoesADHDTreatmentWorkBlogPostPage() {
               name={author.name}
               role={author.credentials}
               bio={author.bio}
-              image={author.image}
-            />
+              image={author.image} />
+
 
             {/* FAQ Section */}
             <section ref={(el) => sectionsRef.current['faqs'] = el} className="mb-12 mt-12">
               <h2 className="text-3xl font-bold text-[#572670] mb-6">Frequently Asked Questions</h2>
               
               <Accordion type="single" collapsible className="w-full space-y-2">
-                {faqs.map((faq, index) => (
-                  <AccordionItem
-                    key={index}
-                    value={`item-${index}`}
-                    className="border border-gray-200 rounded-lg px-4 data-[state=open]:border-[#572670]"
-                  >
+                {faqs.map((faq, index) =>
+                <AccordionItem
+                  key={index}
+                  value={`item-${index}`}
+                  className="border border-gray-200 rounded-lg px-4 data-[state=open]:border-[#572670]">
+
                     <AccordionTrigger className="text-left font-semibold hover:text-[#572670] hover:no-underline">
                       {faq.question}
                     </AccordionTrigger>
@@ -743,7 +747,7 @@ export default function HowDoesADHDTreatmentWorkBlogPostPage() {
                       {faq.answer}
                     </AccordionContent>
                   </AccordionItem>
-                ))}
+                )}
               </Accordion>
             </section>
 
@@ -780,13 +784,13 @@ export default function HowDoesADHDTreatmentWorkBlogPostPage() {
             <section className="mb-12">
               <h2 className="text-3xl font-bold text-[#572670] mb-6">Related Articles</h2>
               <div className="grid md:grid-cols-3 gap-6">
-                {relatedPosts.map((post, index) => (
-                  <Card key={index} className="border-[#572670]/20 overflow-hidden hover:shadow-lg transition-shadow">
+                {relatedPosts.map((post, index) =>
+                <Card key={index} className="border-[#572670]/20 overflow-hidden hover:shadow-lg transition-shadow">
                     <img
-                      src={post.image}
-                      alt={post.title}
-                      className="w-full object-cover"
-                    />
+                    src={post.image}
+                    alt={post.title}
+                    className="w-full object-cover" />
+
                     <CardContent className="p-6">
                       <h3 className="font-bold text-lg mb-2 hover:text-[#572670] transition-colors">
                         <Link to={post.link}>{post.title}</Link>
@@ -799,7 +803,7 @@ export default function HowDoesADHDTreatmentWorkBlogPostPage() {
                       </Button>
                     </CardContent>
                   </Card>
-                ))}
+                )}
               </div>
             </section>
           </article>
@@ -807,6 +811,6 @@ export default function HowDoesADHDTreatmentWorkBlogPostPage() {
       </div>
 
       <FooterSection />
-    </>
-  );
+    </>);
+
 }

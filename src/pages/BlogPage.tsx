@@ -38,7 +38,7 @@ const allBlogPosts: BlogPost[] = [
   excerpt: 'Comprehensive guide to ADHD treatment including medication, behavioral therapy, CBT, and lifestyle modifications. Learn how effective ADHD management works.',
   category: 'mental-health',
   author: 'Dr. Keerthy Sunder',
-  date: new Date().toLocaleDateString('en-US', {
+  date: new Date(2025, 10, 15).toLocaleDateString('en-US', {
     year: 'numeric',
     month: 'long',
     day: 'numeric'
