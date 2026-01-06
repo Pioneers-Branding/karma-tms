@@ -12,4 +12,5 @@ html {
 /* Remove default margin on body */
 body {
   margin: 0;
+  font-family: 'Outfit', sans-serif;
 }
