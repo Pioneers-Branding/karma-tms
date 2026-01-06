@@ -433,17 +433,17 @@ const PalmSpringsPage = () => {
           </div>
 
           <div className="max-w-4xl mx-auto mt-12">
-            <Card className="bg-purple-50 border-purple-200">
-              <CardContent className="p-8">
-                <h3 className="text-xl font-bold mb-4">Driving Directions</h3>
-                <div className="space-y-3 text-gray-700">
-                  <p><strong>From I-10:</strong> Take the Gene Autry Trail exit, head south, turn right on Ramon Road, then left on Paseo Dorotea.</p>
-                  <p><strong>From Downtown Palm Springs:</strong> Head south on Palm Canyon Drive, turn left on Ramon Road, right on Paseo Dorotea.</p>
-                  <p><strong>From Palm Desert:</strong> Take Highway 111 west toward Palm Springs, turn right on Gene Autry Trail, then follow above directions.</p>
-                  <p className="text-sm italic mt-4">Free parking available at both locations</p>
-                </div>
-              </CardContent>
-            </Card>
+            
+
+
+
+
+
+
+
+
+
+
           </div>
         </div>
       </div>
