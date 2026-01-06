@@ -137,8 +137,8 @@ const VeteransBlogPostPage = () => {
         url: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/ebadb369-a58d-421c-b937-24f900be5867.png'
       }
     },
-    datePublished: '2024-09-15',
-    dateModified: '2024-09-15',
+    datePublished: '2025-09-15',
+    dateModified: '2025-09-15',
     mainEntityOfPage: {
       '@type': 'WebPage',
       '@id': 'https://karmatms.com/blog/veterans-tms-therapy'
@@ -221,7 +221,7 @@ const VeteransBlogPostPage = () => {
             <div className="flex flex-wrap justify-center gap-4 mb-6 text-sm">
               <span className="flex items-center gap-1 bg-white/10 px-3 py-1 rounded-full backdrop-blur-sm">
                 <Calendar className="w-4 h-4" />
-                September 15, 2024
+                September 15, 2025
               </span>
               <span className="flex items-center gap-1 bg-white/10 px-3 py-1 rounded-full backdrop-blur-sm">
                 <Clock className="w-4 h-4" />
