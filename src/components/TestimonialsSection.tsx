@@ -28,7 +28,7 @@ const TestimonialsSection = () => {
     hasVideo: true,
     videoId: "1106562016",
     videoType: "vimeo",
-    avatar: "https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/2f824ef5-3d22-4a4f-a5df-6414bb0776f6.jpg"
+    avatar: "https://images.unsplash.com/photo-1484863137850-59afcfe05386?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
     name: "Spanish Patient A",
@@ -40,7 +40,7 @@ const TestimonialsSection = () => {
     videoId: "1098237681",
     videoType: "vimeo",
     vimeoHash: "b204c02062",
-    avatar: "https://images.unsplash.com/photo-1510511293580-9d525c6d8913?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MTg3MTl8MHwxfHNlYXJjaHwxfHxBJTIwZ2VuZXJpYyUyMGF2YXRhciUyMG9yJTIwcHJvZmlsZSUyMHBpY3R1cmUlMjBvZiUyMGElMjBwZXJzb24ufGVufDB8fHx8MTc1OTIzNzE0OHww&ixlib=rb-4.1.0&q=80&w=200$w=512"
+    avatar: "https://images.unsplash.com/photo-1565979612809-d90c6ca38df9?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
     name: "Thomas M.",
@@ -50,7 +50,7 @@ const TestimonialsSection = () => {
     quote: "TMS has helped me incredibly.It took more then half way throughout the sessions to see results but it definitely started to kick in. I highly recommend anyone sufferings with depression etc to try TMS.",
     hasVideo: false,
     videoType: "youtube",
-    avatar: "https://images.unsplash.com/photo-1615843423179-bea071facf96?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MTg3MTl8MHwxfHNlYXJjaHwxfHxBJTIwcGxhY2Vob2xkZXIlMjBpbWFnZSUyMG9mJTIwYSUyMGdlbmVyaWMlMjBhdmF0YXIlMjBvciUyMHByb2ZpbGUlMjBwaWN0dXJlLnxlbnwwfHx8fDE3NTkyMzcxNDR8MA&ixlib=rb-4.1.0&q=80&w=200$w=512"
+    avatar: "https://images.unsplash.com/photo-1521119989659-a83eee488004?q=80&w=1023&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
     name: "Benjamin A.",
@@ -61,7 +61,7 @@ const TestimonialsSection = () => {
     hasVideo: false,
     videoId: "dQw4w9WgXcQ",
     videoType: "youtube",
-    avatar: "https://images.unsplash.com/photo-1510511293580-9d525c6d8913?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MTg3MTl8MHwxfHNlYXJjaHwxfHxBJTIwZ2VuZXJpYyUyMGF2YXRhciUyMG9yJTIwcHJvZmlsZSUyMHBpY3R1cmUlMjBvZiUyMGElMjBwZXJzb24ufGVufDB8fHx8MTc1OTIzNzE0OHww&ixlib=rb-4.1.0&q=80&w=200$w=512"
+    avatar: "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
     name: "Nicole J.",
@@ -71,7 +71,7 @@ const TestimonialsSection = () => {
     quote: "TMS therapy changed my life! This was a leap of faith and it worked out for me, TMS saved my life!",
     hasVideo: false,
     videoType: "youtube",
-    avatar: "https://images.unsplash.com/photo-1510511293580-9d525c6d8913?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MTg3MTl8MHwxfHNlYXJjaHwxfHxBJTIwZ2VuZXJpYyUyMGF2YXRhciUyMG9yJTIwcHJvZmlsZSUyMHBpY3R1cmUlMjBvZiUyMGElMjBwZXJzb24ufGVufDB8fHx8MTc1OTIzNzE0OHww&ixlib=rb-4.1.0&q=80&w=200$w=512"
+    avatar: "https://images.unsplash.com/photo-1501196354995-cbb51c65aaea?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
     name: "Lynette I.",
@@ -82,7 +82,7 @@ const TestimonialsSection = () => {
     hasVideo: false,
     videoId: "dQw4w9WgXcQ",
     videoType: "youtube",
-    avatar: "https://images.unsplash.com/photo-1510511293580-9d525c6d8913?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MTg3MTl8MHwxfHNlYXJjaHwxfHxBJTIwZ2VuZXJpYyUyMGF2YXRhciUyMG9yJTIwcHJvZmlsZSUyMHBpY3R1cmUlMjBvZiUyMGElMjBwZXJzb24ufGVufDB8fHx8MTc1OTIzNzE0OHww&ixlib=rb-4.1.0&q=80&w=200$w=512"
+    avatar: "https://images.unsplash.com/photo-1561917210-1c5ad65d3ce4?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   }];
 
 
