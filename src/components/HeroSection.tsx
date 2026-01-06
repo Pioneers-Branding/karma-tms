@@ -70,8 +70,8 @@ const HeroSection = () => {
                   href="https://share.google/5d1EU2i2b6WbjZLQc"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-white text-[11px] flex flex-row bg-blue-magenta p-1 px-4 rounded-xl w-fit items-center hover:scale-105 hover:shadow-lg transition-all duration-300 cursor-pointer"
-                >
+                  className="text-white text-[11px] flex flex-row bg-blue-magenta p-1 px-4 rounded-xl w-fit items-center hover:scale-105 hover:shadow-lg transition-all duration-300 cursor-pointer">
+
 
                   <MapPin className="w-5 h-5 text-white mr-2" />
                   Palm Springs, CA
@@ -80,8 +80,8 @@ const HeroSection = () => {
                   href="https://share.google/e8yhlNFFaLaN8z1d1"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-white text-[11px] flex flex-row bg-blue-magenta p-1 px-4 rounded-xl w-fit items-center hover:scale-105 hover:shadow-lg transition-all duration-300 cursor-pointer"
-                >
+                  className="text-white text-[11px] flex flex-row bg-blue-magenta p-1 px-4 rounded-xl w-fit items-center hover:scale-105 hover:shadow-lg transition-all duration-300 cursor-pointer">
+
 
                   <MapPin className="w-5 h-5 text-white mr-2" />
                   TwentyNine Palms
@@ -90,8 +90,8 @@ const HeroSection = () => {
                   href="https://maps.app.goo.gl/6wyxkwnGZ5g2ua1a7"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-white text-[11px] flex flex-row bg-blue-magenta p-1 px-4 rounded-xl w-fit items-center hover:scale-105 hover:shadow-lg transition-all duration-300 cursor-pointer"
-                >
+                  className="text-white text-[11px] flex flex-row bg-blue-magenta p-1 px-4 rounded-xl w-fit items-center hover:scale-105 hover:shadow-lg transition-all duration-300 cursor-pointer">
+
 
                   <MapPin className="w-5 h-5 text-white mr-2" />
                   Rancho Mirage
@@ -131,15 +131,15 @@ const HeroSection = () => {
               {/* Slider Controls */}
               <button
                 onClick={prevSlide}
-                className="absolute left-4 top-1/2 -translate-y-1/2 bg-white/95 hover:bg-white rounded-full p-3 shadow-xl transition-all duration-300 hover:scale-110 hover:shadow-2xl backdrop-blur-sm"
-              >
+                className="absolute left-4 top-1/2 -translate-y-1/2 bg-white/95 hover:bg-white rounded-full p-3 shadow-xl transition-all duration-300 hover:scale-110 hover:shadow-2xl backdrop-blur-sm">
+
 
                 <ChevronLeft className="w-5 h-5 text-indigo-600" />
               </button>
               <button
                 onClick={nextSlide}
-                className="absolute right-4 top-1/2 -translate-y-1/2 bg-white/95 hover:bg-white rounded-full p-3 shadow-xl transition-all duration-300 hover:scale-110 hover:shadow-2xl backdrop-blur-sm"
-              >
+                className="absolute right-4 top-1/2 -translate-y-1/2 bg-white/95 hover:bg-white rounded-full p-3 shadow-xl transition-all duration-300 hover:scale-110 hover:shadow-2xl backdrop-blur-sm">
+
 
                 <ChevronRight className="w-5 h-5 text-indigo-600" />
               </button>

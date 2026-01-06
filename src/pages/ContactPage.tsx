@@ -119,8 +119,8 @@ const ContactPage = () => {
             <Button
               key={index}
               onClick={action.action}
-              className={`${action.color} text-white p-6 h-auto flex flex-col items-center gap-3 transition-transform hover:scale-105`}
-            >
+              className={`${action.color} text-white p-6 h-auto flex flex-col items-center gap-3 transition-transform hover:scale-105`}>
+
 
                 <action.icon className="h-8 w-8" />
                 <div className="text-center">
@@ -145,7 +145,7 @@ const ContactPage = () => {
                 </CardTitle>
               </CardHeader>
               <CardContent className="p-6">
-                <form method="post" action="#" autoComplete="on" className="space-y-6">
+                <form accept-charset="UTF-8" action='https://app.formester.com/forms/3KjFtZ7yT/submissions' autoComplete="on" className="space-y-6" method="POST">
                   <div className="grid md:grid-cols-2 gap-4">
                     <div>
                       <Label htmlFor="name">Full Name *</Label>
@@ -187,8 +187,8 @@ const ContactPage = () => {
                         id="subject"
                         name="subject"
                         required
-                        className="mt-1 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
-                      >
+                        className="mt-1 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50">
+
 
                         <option value="">Select a subject</option>
                         <option value="consultation">Free Consultation</option>
@@ -218,8 +218,8 @@ const ContactPage = () => {
                       <select
                         id="preferredContact"
                         name="preferredContact"
-                        className="mt-1 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
-                      >
+                        className="mt-1 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50">
+
 
                         <option value="phone">Phone Call</option>
                         <option value="email">Email</option>
@@ -231,8 +231,8 @@ const ContactPage = () => {
                       <select
                         id="urgency"
                         name="urgency"
-                        className="mt-1 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
-                      >
+                        className="mt-1 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50">
+
 
                         <option value="normal">Normal</option>
                         <option value="urgent">Urgent</option>
@@ -243,8 +243,8 @@ const ContactPage = () => {
 
                   <Button
                     type="submit"
-                    className="w-full bg-[#572670] hover:bg-[#572670]/90 text-white py-3"
-                  >
+                    className="w-full bg-[#572670] hover:bg-[#572670]/90 text-white py-3">
+
 
                     Send Message
                     <Send className="ml-2 h-4 w-4" />
@@ -293,8 +293,8 @@ const ContactPage = () => {
                   <Button
                     variant="outline"
                     className="w-full"
-                    onClick={() => window.open('https://maps.google.com', '_blank')}
-                  >
+                    onClick={() => window.open('https://maps.google.com', '_blank')}>
+
 
                     Get Directions
                     <ChevronRight className="ml-2 h-4 w-4" />
@@ -314,8 +314,8 @@ const ContactPage = () => {
                     variant="outline"
                     size="icon"
                     className="rounded-full hover:bg-blue-50 hover:border-blue-300"
-                    onClick={() => window.open('https://facebook.com', '_blank')}
-                  >
+                    onClick={() => window.open('https://facebook.com', '_blank')}>
+
 
                     <Facebook className="h-5 w-5 text-blue-600" />
                   </Button>
@@ -323,8 +323,8 @@ const ContactPage = () => {
                     variant="outline"
                     size="icon"
                     className="rounded-full hover:bg-pink-50 hover:border-pink-300"
-                    onClick={() => window.open('https://instagram.com', '_blank')}
-                  >
+                    onClick={() => window.open('https://instagram.com', '_blank')}>
+
 
                     <Instagram className="h-5 w-5 text-pink-600" />
                   </Button>
