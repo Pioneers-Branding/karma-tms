@@ -48,7 +48,7 @@ const HeroSection = () => {
     <div className="py-4 ">
       <div className="max-w-[1500px] mx-auto w-full">
         <div className="bg-white w-full  overflow-hidden">
-          <div className="grid lg:grid-cols-2 xl:grid-cols-5 min-h-[800px] lg:min-h-[900px]">
+          <div className="grid lg:grid-cols-2 xl:grid-cols-5 ">
             
             {/* Left Section - Content */}
             <div className="xl:col-span-3 bg-gradient-to-br from-violet-50 via-indigo-50 to-purple-50 p-4  lg:p-6 xl:p-8 flex flex-col justify-center">
