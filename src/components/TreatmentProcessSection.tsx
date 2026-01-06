@@ -2,6 +2,7 @@ import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { ClipboardList, CreditCard, FileText, Clock, BarChart3, ArrowRight, CheckCircle } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const TreatmentProcessSection = () => {
   const steps = [
@@ -145,10 +146,12 @@ const TreatmentProcessSection = () => {
               <p className="text-xl mb-6 text-white/90">
                 Take the first step toward mental wellness with our proven TMS therapy.
               </p>
-              <Button className="bg-white text-[#572670] hover:bg-gray-100 px-8 py-3 text-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
-                <Clock className="h-5 w-5 mr-2" />
-                Start Your Journey Today
-                <ArrowRight className="h-5 w-5 ml-2" />
+              <Button asChild className="bg-white text-[#572670] hover:bg-gray-100 px-8 py-3 text-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                <Link to="/contact" aria-label="Start your journey today - Contact">
+                  <Clock className="h-5 w-5 mr-2" />
+                  Start your journey today
+                  <ArrowRight className="h-5 w-5 ml-2" />
+                </Link>
               </Button>
             </CardContent>
           </Card>
