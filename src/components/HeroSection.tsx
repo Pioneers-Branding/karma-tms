@@ -28,10 +28,10 @@ const HeroSection = () => {
     alt: 'Palm Springs California location for KarmaTMS depression and anxiety treatment center'
   },
   {
-    title: 'Best TMS in Palm Springs',
+    title: 'Industry Best Devices',
     image:
-    'https://res.cloudinary.com/de4kw1t2i/image/upload/v1759239508/pssunset_zbbsur.jpg',
-    alt: 'Palm Springs sunset view near Karma mental health TMS therapy center'
+    'https://res.cloudinary.com/de4kw1t2i/image/upload/v1765370575/apollo-consultation_1_peyxur.webp',
+    alt: 'Apollo TMS Device'
   },
   {
     title: 'Advanced TMS Setup',
