@@ -30,7 +30,7 @@ const HeroSection = () => {
   {
     title: 'Industry Best Devices',
     image:
-    'https://res.cloudinary.com/de4kw1t2i/image/upload/v1765370575/apollo-consultation_1_peyxur.webp',
+    'https://res.cloudinary.com/de4kw1t2i/image/upload/v1766054048/apollo-consultation_1_peyxur_1_fuidsc.png',
     alt: 'Apollo TMS Device'
   },
   {
