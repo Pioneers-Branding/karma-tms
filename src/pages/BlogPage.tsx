@@ -245,10 +245,10 @@ const BlogPage = () => {
                 {/* Posts Grid */}
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
                   {regularPosts.map((post) =>
-                <a 
-                  key={post.id} 
-                  href={post.id === 1 ? '/blog/veterans-tms-therapy' : '/blog/va-veterans-ptsd-tms-treatment'}
-                >
+                <a
+                  key={post.id}
+                  href={post.id === 1 ? '/blog/veterans-tms-therapy' : '/blog/va-veterans-ptsd-tms-treatment'}>
+
                   <Card className="group cursor-pointer hover:shadow-lg transition-all duration-300 border-gray-200 hover:border-[#572670]/30">
                       <div className="relative overflow-hidden rounded-t-lg">
                         <img

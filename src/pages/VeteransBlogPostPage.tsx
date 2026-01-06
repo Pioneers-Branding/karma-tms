@@ -21,6 +21,7 @@ import {
   AccordionTrigger } from
 '@/components/ui/accordion';
 import { Calendar, Clock, User, CheckCircle2, ArrowRight, Phone } from 'lucide-react';
+import AuthorBox from '@/components/AuthorBox';
 
 const VeteransBlogPostPage = () => {
   const [activeSection, setActiveSection] = useState('');
@@ -627,26 +628,11 @@ const VeteransBlogPostPage = () => {
             </section>
 
             {/* Author Box */}
-            <Card className="bg-gradient-to-r from-[#572670]/5 to-transparent border-[#572670]/30 mb-12">
-              <CardContent className="p-8">
-                <div className="flex flex-col md:flex-row gap-6 items-start">
-                  <img
-                    src="https://www.prtms.com/wp-content/uploads/2023/03/Dr.-Keerthy-Sunder-scaled.jpg"
-                    alt="Dr. Apollo Thomas, Medical Director"
-                    className="w-32 h-32 rounded-full object-cover border-4 border-[#572670]/20" />
-
-                  <div className="flex-1">
-                    <h3 className="text-2xl font-bold text-[#572670] mb-2">About the Author</h3>
-                    <p className="text-xl font-semibold mb-2">Dr. Keerthy Sunder </p>
-                    <p className="text-gray-600 mb-4">
-                      Board-Certified Psychiatrist | Medical Director at KarmaTMS
-                    </p>
-                  
-                   
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
+            <AuthorBox
+              name="Dr. Keerthy Sunder"
+              role="Board-Certified Psychiatrist | Medical Director at KarmaTMS"
+              image="https://www.prtms.com/wp-content/uploads/2023/03/Dr.-Keerthy-Sunder-scaled.jpg"
+            />
 
             {/* FAQ Section */}
             <section ref={(el) => sectionsRef.current['faqs'] = el} className="mb-12">

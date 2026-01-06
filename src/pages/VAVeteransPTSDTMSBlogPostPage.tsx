@@ -10,30 +10,31 @@ import {
   BreadcrumbLink,
   BreadcrumbList,
   BreadcrumbPage,
-  BreadcrumbSeparator,
-} from '@/components/ui/breadcrumb';
+  BreadcrumbSeparator } from
+'@/components/ui/breadcrumb';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import {
   Accordion,
   AccordionContent,
   AccordionItem,
-  AccordionTrigger,
-} from '@/components/ui/accordion';
+  AccordionTrigger } from
+'@/components/ui/accordion';
 import { Calendar, Clock, User, CheckCircle2, ArrowRight, Phone } from 'lucide-react';
+import AuthorBox from '@/components/AuthorBox';
 
 const VAVeteransPTSDTMSBlogPostPage = () => {
   const [activeSection, setActiveSection] = useState('');
   const sectionsRef = useRef<{[key: string]: HTMLElement | null;}>({});
 
   const tocItems = [
-    { id: 'va-mental-health', label: 'VA Mental Health Programs' },
-    { id: 'ptsd-treatment-va', label: 'PTSD Treatment Through VA' },
-    { id: 'tms-va-programs', label: 'TMS in VA Programs' },
-    { id: 'va-vs-private', label: 'VA vs. Private Treatment' },
-    { id: 'how-to-access', label: 'How to Access Care' },
-    { id: 'faqs', label: 'Frequently Asked Questions' },
-  ];
+  { id: 'va-mental-health', label: 'VA Mental Health Programs' },
+  { id: 'ptsd-treatment-va', label: 'PTSD Treatment Through VA' },
+  { id: 'tms-va-programs', label: 'TMS in VA Programs' },
+  { id: 'va-vs-private', label: 'VA vs. Private Treatment' },
+  { id: 'how-to-access', label: 'How to Access Care' },
+  { id: 'faqs', label: 'Frequently Asked Questions' }];
+
 
   useEffect(() => {
     const handleScroll = () => {
@@ -66,52 +67,52 @@ const VAVeteransPTSDTMSBlogPostPage = () => {
   };
 
   const faqs = [
-    {
-      question: 'How do I file a PTSD VA claim for TMS therapy?',
-      answer: 'To file a ptsd va claim for TMS therapy, start by obtaining a diagnosis from a VA psychiatrist or mental health professional. Document your symptoms and treatment history. Then submit a claim through your VA healthcare provider or online at VA.gov. Your provider will need to establish that you have treatment-resistant depression or PTSD and that TMS is medically necessary.',
-    },
-    {
-      question: 'What resources are available at ptsd.va.gov for treatment?',
-      answer: 'The www ptsd va gov treatment portal provides comprehensive resources including treatment options, eligibility criteria, provider directories, and evidence-based therapy information. Veterans can access the PTSD Coach mobile app, find local VA facilities offering TMS, and learn about clinical trials. The ptsd va gov professional section also offers training materials for healthcare providers.',
-    },
-    {
-      question: 'Does the Veterans Administration TMS program cover all costs?',
-      answer: 'Coverage through veterans administration tms programs depends on your VA eligibility and enrollment status. Eligible veterans typically receive full coverage for TMS therapy when it\'s deemed medically necessary. However, wait times can be significant. Many veterans choose to supplement VA care with private providers like KarmaTMS for faster access.',
-    },
-    {
-      question: 'What is TMS training for VA employees?',
-      answer: 'TMS training for va employees includes comprehensive education on Transcranial Magnetic Stimulation protocols, safety procedures, patient selection criteria, and treatment administration. VA staff receive specialized training to ensure they can deliver evidence-based TMS therapy to veterans with PTSD and treatment-resistant depression.',
-    },
-    {
-      question: 'Can I get TMS therapy if I\'m not enrolled in VA healthcare?',
-      answer: 'Yes. Veterans not enrolled in VA healthcare or those seeking faster access can pursue TMS therapy at private facilities like KarmaTMS. We offer specialized veterans programs with flexible payment options and work with many insurance providers. You don\'t need a VA referral to receive treatment at our facilities.',
-    },
-    {
-      question: 'How long is the wait for TMS therapy through the VA?',
-      answer: 'Wait times for veterans administration tms programs vary significantly by location and can range from several weeks to several months. Many VA facilities have limited TMS equipment and trained staff. Veterans seeking immediate treatment often choose private providers where appointments can typically be scheduled within days.',
-    },
-  ];
+  {
+    question: 'How do I file a PTSD VA claim for TMS therapy?',
+    answer: 'To file a ptsd va claim for TMS therapy, start by obtaining a diagnosis from a VA psychiatrist or mental health professional. Document your symptoms and treatment history. Then submit a claim through your VA healthcare provider or online at VA.gov. Your provider will need to establish that you have treatment-resistant depression or PTSD and that TMS is medically necessary.'
+  },
+  {
+    question: 'What resources are available at ptsd.va.gov for treatment?',
+    answer: 'The www ptsd va gov treatment portal provides comprehensive resources including treatment options, eligibility criteria, provider directories, and evidence-based therapy information. Veterans can access the PTSD Coach mobile app, find local VA facilities offering TMS, and learn about clinical trials. The ptsd va gov professional section also offers training materials for healthcare providers.'
+  },
+  {
+    question: 'Does the Veterans Administration TMS program cover all costs?',
+    answer: 'Coverage through veterans administration tms programs depends on your VA eligibility and enrollment status. Eligible veterans typically receive full coverage for TMS therapy when it\'s deemed medically necessary. However, wait times can be significant. Many veterans choose to supplement VA care with private providers like KarmaTMS for faster access.'
+  },
+  {
+    question: 'What is TMS training for VA employees?',
+    answer: 'TMS training for va employees includes comprehensive education on Transcranial Magnetic Stimulation protocols, safety procedures, patient selection criteria, and treatment administration. VA staff receive specialized training to ensure they can deliver evidence-based TMS therapy to veterans with PTSD and treatment-resistant depression.'
+  },
+  {
+    question: 'Can I get TMS therapy if I\'m not enrolled in VA healthcare?',
+    answer: 'Yes. Veterans not enrolled in VA healthcare or those seeking faster access can pursue TMS therapy at private facilities like KarmaTMS. We offer specialized veterans programs with flexible payment options and work with many insurance providers. You don\'t need a VA referral to receive treatment at our facilities.'
+  },
+  {
+    question: 'How long is the wait for TMS therapy through the VA?',
+    answer: 'Wait times for veterans administration tms programs vary significantly by location and can range from several weeks to several months. Many VA facilities have limited TMS equipment and trained staff. Veterans seeking immediate treatment often choose private providers where appointments can typically be scheduled within days.'
+  }];
+
 
   const relatedPosts = [
-    {
-      title: 'How TMS Therapy Helps Veterans Heal: A New Hope for PTSD',
-      excerpt: 'Comprehensive guide on TMS therapy for veterans with PTSD, depression, and anxiety. Learn about success stories and treatment options.',
-      link: '/blog/veterans-tms-therapy',
-      image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/f00dd3f4-cea1-4918-8fec-5976198e195f.webp',
-    },
-    {
-      title: 'Understanding PTSD Treatment Options',
-      excerpt: 'Comprehensive guide to PTSD treatment approaches including therapy, medication, and innovative treatments.',
-      link: '/ptsd',
-      image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/02c362bd-cde2-431d-8820-a07a14939638.webp',
-    },
-    {
-      title: 'TMS Therapy: A Complete Guide',
-      excerpt: 'Everything you need to know about Transcranial Magnetic Stimulation therapy and how it works.',
-      link: '/tms-therapy',
-      image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/76caee2d-5629-4dc1-a3b4-8c5cea23ede6.webp',
-    },
-  ];
+  {
+    title: 'How TMS Therapy Helps Veterans Heal: A New Hope for PTSD',
+    excerpt: 'Comprehensive guide on TMS therapy for veterans with PTSD, depression, and anxiety. Learn about success stories and treatment options.',
+    link: '/blog/veterans-tms-therapy',
+    image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/f00dd3f4-cea1-4918-8fec-5976198e195f.webp'
+  },
+  {
+    title: 'Understanding PTSD Treatment Options',
+    excerpt: 'Comprehensive guide to PTSD treatment approaches including therapy, medication, and innovative treatments.',
+    link: '/ptsd',
+    image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/02c362bd-cde2-431d-8820-a07a14939638.webp'
+  },
+  {
+    title: 'TMS Therapy: A Complete Guide',
+    excerpt: 'Everything you need to know about Transcranial Magnetic Stimulation therapy and how it works.',
+    link: '/tms-therapy',
+    image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/76caee2d-5629-4dc1-a3b4-8c5cea23ede6.webp'
+  }];
+
 
   const articleSchema = {
     '@context': 'https://schema.org',
@@ -125,23 +126,23 @@ const VAVeteransPTSDTMSBlogPostPage = () => {
       jobTitle: 'Medical Director, Board-Certified Psychiatrist',
       affiliation: {
         '@type': 'Organization',
-        name: 'KarmaTMS',
-      },
+        name: 'KarmaTMS'
+      }
     },
     publisher: {
       '@type': 'Organization',
       name: 'KarmaTMS',
       logo: {
         '@type': 'ImageObject',
-        url: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/ebadb369-a58d-421c-b937-24f900be5867.png',
-      },
+        url: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/ebadb369-a58d-421c-b937-24f900be5867.png'
+      }
     },
     datePublished: '2024-01-20',
     dateModified: '2024-01-20',
     mainEntityOfPage: {
       '@type': 'WebPage',
-      '@id': 'https://karmatms.com/blog/va-veterans-ptsd-tms-treatment',
-    },
+      '@id': 'https://karmatms.com/blog/va-veterans-ptsd-tms-treatment'
+    }
   };
 
   const faqSchema = {
@@ -152,9 +153,9 @@ const VAVeteransPTSDTMSBlogPostPage = () => {
       name: faq.question,
       acceptedAnswer: {
         '@type': 'Answer',
-        text: faq.answer,
-      },
-    })),
+        text: faq.answer
+      }
+    }))
   };
 
   return (
@@ -165,17 +166,17 @@ const VAVeteransPTSDTMSBlogPostPage = () => {
         keywords="ptsd for veterans, ptsd va gov professional, www ptsd va gov treatment, ptsd va claim, veterans administration tms, tms training for va employees, va mental health, tms therapy veterans, ptsd treatment va"
         canonical="/blog/va-veterans-ptsd-tms-treatment"
         ogImage="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/dd7dd986-540f-4359-99af-39f398491cf0.webp"
-        ogType="article"
-      />
+        ogType="article" />
+
 
       <StructuredData
         type="breadcrumb"
         breadcrumbs={[
-          { name: 'Home', url: '/' },
-          { name: 'Blog', url: '/blog' },
-          { name: 'VA & Veterans PTSD TMS Treatment', url: '/blog/va-veterans-ptsd-tms-treatment' },
-        ]}
-      />
+        { name: 'Home', url: '/' },
+        { name: 'Blog', url: '/blog' },
+        { name: 'VA & Veterans PTSD TMS Treatment', url: '/blog/va-veterans-ptsd-tms-treatment' }]
+        } />
+
 
       <script type="application/ld+json">{JSON.stringify(articleSchema)}</script>
 
@@ -241,8 +242,8 @@ const VAVeteransPTSDTMSBlogPostPage = () => {
                 asChild
                 size="lg"
                 variant="outline"
-                className="border-white text-white hover:bg-white/10"
-              >
+                className="border-white text-white hover:bg-white/10">
+
                 <Link to="/contact">Schedule Consultation</Link>
               </Button>
             </div>
@@ -260,19 +261,19 @@ const VAVeteransPTSDTMSBlogPostPage = () => {
                 <CardContent className="p-6">
                   <h3 className="font-bold text-lg mb-4 text-[#572670]">Table of Contents</h3>
                   <nav className="space-y-2">
-                    {tocItems.map((item) => (
-                      <button
-                        key={item.id}
-                        onClick={() => scrollToSection(item.id)}
-                        className={`block w-full text-left px-3 py-2 rounded-md text-sm transition-all ${
-                          activeSection === item.id
-                            ? 'bg-[#572670] text-white font-medium'
-                            : 'text-gray-700 hover:bg-[#572670]/10'
-                        }`}
-                      >
+                    {tocItems.map((item) =>
+                    <button
+                      key={item.id}
+                      onClick={() => scrollToSection(item.id)}
+                      className={`block w-full text-left px-3 py-2 rounded-md text-sm transition-all ${
+                      activeSection === item.id ?
+                      'bg-[#572670] text-white font-medium' :
+                      'text-gray-700 hover:bg-[#572670]/10'}`
+                      }>
+
                         {item.label}
                       </button>
-                    ))}
+                    )}
                   </nav>
                   <div className="mt-6 pt-6 border-t">
                     <Button asChild className="w-full bg-[#572670] hover:bg-[#7B3FA0]">
@@ -291,8 +292,8 @@ const VAVeteransPTSDTMSBlogPostPage = () => {
               <img
                 src="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/dd7dd986-540f-4359-99af-39f398491cf0.webp"
                 alt="VA veterans PTSD TMS therapy treatment"
-                className="w-full h-64 md:h-96 object-cover rounded-lg mb-6"
-              />
+                className="w-full h-64 md:h-96 object-cover rounded-lg mb-6" />
+
 
               <p className="text-xl text-gray-700 leading-relaxed">
                 The Department of Veterans Affairs (VA) has long been at the forefront of providing mental
@@ -305,7 +306,7 @@ const VAVeteransPTSDTMSBlogPostPage = () => {
             </div>
 
             {/* Section 1: VA Mental Health Programs */}
-            <section ref={(el) => (sectionsRef.current['va-mental-health'] = el)} className="mb-12">
+            <section ref={(el) => sectionsRef.current['va-mental-health'] = el} className="mb-12">
               <h2 className="text-3xl font-bold text-[#572670] mb-6">
                 Understanding VA Mental Health Programs
               </h2>
@@ -352,8 +353,8 @@ const VAVeteransPTSDTMSBlogPostPage = () => {
               <img
                 src="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/f00dd3f4-cea1-4918-8fec-5976198e195f.webp"
                 alt="Veterans receiving mental health support"
-                className="w-full h-64 object-cover rounded-lg mb-6"
-              />
+                className="w-full h-64 object-cover rounded-lg mb-6" />
+
 
               <h3 className="text-2xl font-bold text-gray-900 mb-4">
                 The PTSD VA Gov Professional Resources
@@ -375,7 +376,7 @@ const VAVeteransPTSDTMSBlogPostPage = () => {
             </section>
 
             {/* Section 2: PTSD Treatment Through VA */}
-            <section ref={(el) => (sectionsRef.current['ptsd-treatment-va'] = el)} className="mb-12">
+            <section ref={(el) => sectionsRef.current['ptsd-treatment-va'] = el} className="mb-12">
               <h2 className="text-3xl font-bold text-[#572670] mb-6">
                 PTSD Treatment Options Through the VA
               </h2>
@@ -416,8 +417,8 @@ const VAVeteransPTSDTMSBlogPostPage = () => {
               <img
                 src="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/02c362bd-cde2-431d-8820-a07a14939638.webp"
                 alt="PTSD treatment for veterans"
-                className="w-full h-64 object-cover rounded-lg mb-6"
-              />
+                className="w-full h-64 object-cover rounded-lg mb-6" />
+
 
               <Card className="bg-blue-50 border-blue-200 mb-6">
                 <CardContent className="p-6">
@@ -433,7 +434,7 @@ const VAVeteransPTSDTMSBlogPostPage = () => {
             </section>
 
             {/* Section 3: TMS in VA Programs */}
-            <section ref={(el) => (sectionsRef.current['tms-va-programs'] = el)} className="mb-12">
+            <section ref={(el) => sectionsRef.current['tms-va-programs'] = el} className="mb-12">
               <h2 className="text-3xl font-bold text-[#572670] mb-6">
                 How TMS Fits Into Veterans Administration Programs
               </h2>
@@ -448,8 +449,8 @@ const VAVeteransPTSDTMSBlogPostPage = () => {
               <img
                 src="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/76caee2d-5629-4dc1-a3b4-8c5cea23ede6.webp"
                 alt="TMS therapy equipment for veterans"
-                className="w-full h-64 object-cover rounded-lg mb-6"
-              />
+                className="w-full h-64 object-cover rounded-lg mb-6" />
+
 
               <h3 className="text-2xl font-bold text-gray-900 mb-4">VA's Investment in TMS Technology</h3>
               <p className="mb-6">
@@ -510,7 +511,7 @@ const VAVeteransPTSDTMSBlogPostPage = () => {
             </section>
 
             {/* Section 4: VA vs. Private Treatment */}
-            <section ref={(el) => (sectionsRef.current['va-vs-private'] = el)} className="mb-12">
+            <section ref={(el) => sectionsRef.current['va-vs-private'] = el} className="mb-12">
               <h2 className="text-3xl font-bold text-[#572670] mb-6">
                 VA-Approved vs. Private TMS Treatment Options
               </h2>
@@ -568,8 +569,8 @@ const VAVeteransPTSDTMSBlogPostPage = () => {
               <img
                 src="https://images.unsplash.com/photo-1642844819197-5f5f21b89ff8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MTg3MTl8MHwxfHNlYXJjaHwxfHxNb2Rlcm4lMjBUTVMlMjB0aGVyYXB5JTIwY2hhaXJ8ZW58MHx8fHwxNzYyNzcyMjU2fDA&ixlib=rb-4.1.0&q=80&w=200$w=800"
                 alt="Modern TMS therapy chair"
-                className="w-full h-64 object-cover rounded-lg mb-6"
-              />
+                className="w-full h-64 object-cover rounded-lg mb-6" />
+
 
               <Card className="bg-gradient-to-br from-green-50 to-transparent border-green-200 mb-6">
                 <CardContent className="p-6">
@@ -606,7 +607,7 @@ const VAVeteransPTSDTMSBlogPostPage = () => {
             </section>
 
             {/* Section 5: How to Access Care */}
-            <section ref={(el) => (sectionsRef.current['how-to-access'] = el)} className="mb-12">
+            <section ref={(el) => sectionsRef.current['how-to-access'] = el} className="mb-12">
               <h2 className="text-3xl font-bold text-[#572670] mb-6">
                 How Veterans Can Access TMS Therapy
               </h2>
@@ -763,48 +764,30 @@ const VAVeteransPTSDTMSBlogPostPage = () => {
             </section>
 
             {/* Author Box */}
-            <Card className="bg-gradient-to-r from-[#572670]/5 to-transparent border-[#572670]/30 mb-12">
-              <CardContent className="p-8">
-                <div className="flex flex-col md:flex-row gap-6 items-start">
-                  <img
-                    src="https://images.unsplash.com/photo-1748288166888-f1bd5d6ef9ed?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MTg3MTl8MHwxfHNlYXJjaHwxfHxBJTIwcHJvZmVzc2lvbmFsJTIwcG9ydHJhaXQlMjBvZiUyMERyLiUyMEFwb2xsbyUyMFRob21hcyUyQyUyME1lZGljYWwlMjBEaXJlY3RvciUyQyUyMGRpc3BsYXllZCUyMGluJTIwYSUyMGNpcmN1bGFyJTIwZnJhbWUufGVufDB8fHx8MTc2Mjc3MjI1N3ww&ixlib=rb-4.1.0&q=80&w=200$w=800"
-                    alt="Dr. Apollo Thomas, Medical Director"
-                    className="w-32 h-32 rounded-full object-cover border-4 border-[#572670]/20"
-                  />
-                  <div className="flex-1">
-                    <h3 className="text-2xl font-bold text-[#572670] mb-2">About the Author</h3>
-                    <p className="text-xl font-semibold mb-2">Dr. Apollo Thomas</p>
-                    <p className="text-gray-600 mb-4">
-                      Board-Certified Psychiatrist | Medical Director at KarmaTMS
-                    </p>
-                    <p className="text-gray-700">
-                      Dr. Thomas has dedicated his career to advancing mental health care for veterans,
-                      specializing in innovative treatments for PTSD and treatment-resistant depression. He
-                      works closely with VA programs and has trained numerous healthcare providers in TMS
-                      therapy protocols.
-                    </p>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
+            <AuthorBox
+              name="Dr. Apollo Thomas"
+              role="Board-Certified Psychiatrist | Medical Director at KarmaTMS"
+              bio="Dr. Thomas has dedicated his career to advancing mental health care for veterans, specializing in innovative treatments for PTSD and treatment-resistant depression. He works closely with VA programs and has trained numerous healthcare providers in TMS therapy protocols."
+              image="https://images.unsplash.com/photo-1748288166888-f1bd5d6ef9ed?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MTg3MTl8MHwxfHNlYXJjaHwxfHxBJTIwcHJvZmVzc2lvbmFsJTIwcG9ydHJhaXQlMjBvZiUyMERyLiUyMEFwb2xsbyUyMFRob21hcyUyQyUyME1lZGljYWwlMjBEaXJlY3RvciUyQyUyMGRpc3BsYXllZCUyMGluJTIwYSUyMGNpcmN1bGFyJTIwZnJhbWUufGVufDB8fHx8MTc2Mjc3MjI1N3ww&ixlib=rb-4.1.0&q=80&w=200$w=800"
+            />
 
             {/* FAQ Section */}
-            <section ref={(el) => (sectionsRef.current['faqs'] = el)} className="mb-12">
+            <section ref={(el) => sectionsRef.current['faqs'] = el} className="mb-12">
               <h2 className="text-3xl font-bold text-[#572670] mb-6">Frequently Asked Questions</h2>
 
               <Accordion type="single" collapsible className="w-full space-y-2">
-                {faqs.map((faq, index) => (
-                  <AccordionItem
-                    key={index}
-                    value={`item-${index}`}
-                    className="border border-gray-200 rounded-lg px-4 data-[state=open]:border-[#572670]"
-                  >
+                {faqs.map((faq, index) =>
+                <AccordionItem
+                  key={index}
+                  value={`item-${index}`}
+                  className="border border-gray-200 rounded-lg px-4 data-[state=open]:border-[#572670]">
+
                     <AccordionTrigger className="text-left font-semibold hover:text-[#572670] hover:no-underline">
                       {faq.question}
                     </AccordionTrigger>
                     <AccordionContent className="text-gray-700 pt-2 pb-4">{faq.answer}</AccordionContent>
                   </AccordionItem>
-                ))}
+                )}
               </Accordion>
             </section>
 
@@ -826,8 +809,8 @@ const VAVeteransPTSDTMSBlogPostPage = () => {
                     asChild
                     size="lg"
                     variant="outline"
-                    className="border-white text-white hover:bg-white/10"
-                  >
+                    className="border-white text-white hover:bg-white/10">
+
                     <Link to="/veterans">Learn About Veterans Program</Link>
                   </Button>
                 </div>
@@ -838,11 +821,11 @@ const VAVeteransPTSDTMSBlogPostPage = () => {
             <section className="mb-12">
               <h2 className="text-3xl font-bold text-[#572670] mb-6">Related Articles</h2>
               <div className="grid md:grid-cols-3 gap-6">
-                {relatedPosts.map((post, index) => (
-                  <Card
-                    key={index}
-                    className="border-[#572670]/20 overflow-hidden hover:shadow-lg transition-shadow"
-                  >
+                {relatedPosts.map((post, index) =>
+                <Card
+                  key={index}
+                  className="border-[#572670]/20 overflow-hidden hover:shadow-lg transition-shadow">
+
                     <img src={post.image} alt={post.title} className="w-full h-48 object-cover" />
                     <CardContent className="p-6">
                       <h3 className="font-bold text-lg mb-2 hover:text-[#572670] transition-colors">
@@ -850,17 +833,17 @@ const VAVeteransPTSDTMSBlogPostPage = () => {
                       </h3>
                       <p className="text-gray-600 text-sm mb-4">{post.excerpt}</p>
                       <Button
-                        asChild
-                        variant="ghost"
-                        className="text-[#572670] p-0 h-auto hover:bg-transparent"
-                      >
+                      asChild
+                      variant="ghost"
+                      className="text-[#572670] p-0 h-auto hover:bg-transparent">
+
                         <Link to={post.link} className="inline-flex items-center gap-2">
                           Read More <ArrowRight className="w-4 h-4" />
                         </Link>
                       </Button>
                     </CardContent>
                   </Card>
-                ))}
+                )}
               </div>
             </section>
           </article>
@@ -868,8 +851,8 @@ const VAVeteransPTSDTMSBlogPostPage = () => {
       </div>
 
       <FooterSection />
-    </>
-  );
+    </>);
+
 };
 
 export default VAVeteransPTSDTMSBlogPostPage;
