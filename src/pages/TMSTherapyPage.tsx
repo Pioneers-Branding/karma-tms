@@ -307,8 +307,7 @@ const TMSTherapyPage = () => {
                 
                 <div className="lg:w-1/2">
                   <div className="relative">
-                    <div className={`w-32 h-32 mx-auto bg-gradient-to-br from-blue-magenta to-purple-600 rounded-full flex items-center justify-center text-white text-4xl shadow-2xl`
-                  }>
+                    <div className={"w-32 h-32 mx-auto bg-gradient-to-br from-blue-magenta to-purple-600 rounded-full flex items-center justify-center text-white text-4xl shadow-2xl"}>
                       {step.icon}
                     </div>
                   </div>
