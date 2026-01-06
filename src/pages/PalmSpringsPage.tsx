@@ -209,7 +209,7 @@ const PalmSpringsPage = () => {
               </div>
               <div className="relative h-72 rounded-xl overflow-hidden shadow-lg group">
                 <img
-                  src="https://res.cloudinary.com/de4kw1t2i/image/upload/v1761916023/Image_20251021_173517_696_amecqm.jpg"
+                  src="https://i.ibb.co/PKpk09j/Whats-App-Image-2025-11-24-at-16-40-49-9fa65505.jpg"
                   alt="Advanced TMS therapy chair at Palm Springs location"
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" />
 
