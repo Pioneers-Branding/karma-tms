@@ -73,7 +73,7 @@ const DoctorSection = () => {
                     <div className="absolute bottom-0 left-0 right-0 bg-white/80 backdrop-blur-md p-8 border-t border-white/20">
                       <h3 className="text-gray-900 text-3xl font-bold mb-2">Dr. Keerthy Sunder</h3>
                       <p className="text-[#572670] font-semibold text-lg">Board-Certified Psychiatrist</p>
-                      <div className="flex items-center gap-2 mt-3">
+                      <div className="flex items-center gap-2 mt-2">
                         <MapPin className="h-4 w-4 text-gray-600" />
                         <span className="text-gray-600 text-sm">Palm Springs, CA</span>
                       </div>
