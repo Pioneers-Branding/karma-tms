@@ -637,7 +637,7 @@ const VeteransBlogPostPage = () => {
 
                   <div className="flex-1">
                     <h3 className="text-2xl font-bold text-[#572670] mb-2">About the Author</h3>
-                    <p className="text-xl font-semibold mb-2">Dr. Keerthy , MD</p>
+                    <p className="text-xl font-semibold mb-2">Dr. Keerthy Sunder </p>
                     <p className="text-gray-600 mb-4">
                       Board-Certified Psychiatrist | Medical Director at KarmaTMS
                     </p>
