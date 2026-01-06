@@ -200,7 +200,7 @@ const PalmSpringsPage = () => {
             <div className="grid md:grid-cols-3 gap-6">
               <div className="relative h-72 rounded-xl overflow-hidden shadow-lg group">
                 <img
-                  src="https://res.cloudinary.com/de4kw1t2i/image/upload/v1763039658/2_miiwgx.jpg"
+                  src="https://res.cloudinary.com/de4kw1t2i/image/upload/v1761742451/IMG_9537_VSCO_uw6qok.jpg"
                   alt="KarmaTMS Palm Springs entrance and reception area"
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" />
 
@@ -218,7 +218,7 @@ const PalmSpringsPage = () => {
               </div>
               <div className="relative h-72 rounded-xl overflow-hidden shadow-lg group">
                 <img
-                  src="https://res.cloudinary.com/de4kw1t2i/image/upload/v1761916023/Image_20251021_173517_696_amecqm.jpg"
+                  src="https://res.cloudinary.com/de4kw1t2i/image/upload/v1761742435/IMG_5128_fci7xz.jpg"
                   alt="Patient receiving TMS therapy treatment in Palm Springs"
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" />
 
