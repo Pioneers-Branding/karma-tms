@@ -195,7 +195,7 @@ const RanchoMiragePage = () => {
             <div className="grid md:grid-cols-3 gap-6">
               <div className="relative h-72 rounded-xl overflow-hidden shadow-lg group">
                 <img
-                  src="https://i.ibb.co/675zy4wB/treatment.webp"
+                  src="https://i.ibb.co/svRMccr4/rancho-mirage-rancho-mirage-ca-primaryphoto.webp"
                   alt="Luxurious reception area at Rancho Mirage mental health clinic"
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" />
 
