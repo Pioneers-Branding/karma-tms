@@ -310,7 +310,7 @@ const TwentyNinePalmsPage = () => {
 
                 <div className="space-y-3">
                   <a
-                    href="https://www.google.com/maps/dir//72724+29+Palms+Hwy.+Suite+107-B,+Twentynine+Palms,+CA+92277"
+                    href="https://share.google/xal7Ao0BlsOZIVP7t"
                     target="_blank"
                     rel="noopener noreferrer">
 
@@ -320,7 +320,7 @@ const TwentyNinePalmsPage = () => {
                     </Button>
                   </a>
                   <a
-                    href="https://g.page/r/your-google-business-link"
+                    href="https://maps.app.goo.gl/HF9GXoiQUX4BPxPL8"
                     target="_blank"
                     rel="noopener noreferrer">
 
