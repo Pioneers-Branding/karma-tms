@@ -96,10 +96,7 @@ const LocationContactSection = () => {
                 Call Now
               </a>
             </Button>
-            <Button variant="outline" className="border-[#572670] text-[#572670] hover:bg-[#572670] hover:text-white px-8 flex items-center gap-2 justify-center">
-              <Navigation className="h-4 w-4" />
-              Get Directions
-            </Button>
+        
           </div>
         </CardContent>
       </Card>
