@@ -46,7 +46,7 @@ const HeroSection = () => {
 
   return (
     <div className=" ">
-      <div className=" w-full mt-6">
+      <div className=" w-full mt-4">
         <div className="w-full overflow-hidden">
           <div className="grid lg:grid-cols-2 xl:grid-cols-5 ">
             
