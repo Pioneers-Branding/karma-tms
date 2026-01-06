@@ -106,7 +106,7 @@ const LocationContactSection = () => {
       <div className="flex flex-col gap-6 h-full">
         {[
             "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d424310.5120877356!2d-116.4998743!3d33.8142259!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80db1c9045959abb%3A0xc2bd31e818075a39!2s560%20S%20Paseo%20Dorotea%20Suite%204B%2C%20Palm%20Springs%2C%20CA%2092264%2C%20USA!5e0!3m2!1sen!2sin!4v1756392856101!5m2!1sen!2sin",
-            "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d424309.85087984125!2d-116.4998861!3d33.8143592!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80db1c90466d7ad5%3A0xa80f0108a79bdc4a!2s560%20S%20Paseo%20Dorotea%20%23%204%2C%20Palm%20Springs%2C%20CA%2092264%2C%20USA!5e0!3m2!1sen!2sin!4v1756392958791!5m2!1sen!2sin",
+            "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3314.9257040027996!2d-116.5024492238026!3d33.81423033025973!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80db1c9045959abb%3A0xfa96503b01ff6bbe!2s560%20S%20Paseo%20Dorotea%20Suite%204A%2C%20Palm%20Springs%2C%20CA%2092264!5e0!3m2!1sen!2sus!4v1756471872188!5m2!1sen!2sus",
             "https://www.google.com/maps/embed?pb=!1m13!1m8!1m3!1d422708.5929338998!2d-116.0756245!3d34.1358287!3m2!1i1024!2i768!4f13.1!3m2!1m1!2s!5e0!3m2!1sen!2sin!4v1756393003558!5m2!1sen!2sin"].
             map((src, idx) =>
             <Card key={idx} className="shadow-xl border-0 flex-grow overflow-hidden rounded-lg">
