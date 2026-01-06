@@ -833,7 +833,7 @@ const HelpingVeteransPTSDBlogPostPage = () => {
               name="Dr. Keerthy Sunder"
               role="Board-Certified Psychiatrist | Medical Director at KarmaTMS"
               bio="Dr. Keerthy Sunder is a board-certified psychiatrist specializing in TMS therapy for veterans and treatment-resistant mental health conditions. With extensive experience in neuroscience and innovative treatment modalities, Dr. Sunder is dedicated to helping veterans overcome PTSD, depression, and anxiety through evidence-based, compassionate care."
-              image="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/6e11b9b5-a5e7-4213-8e90-24371919d086.webp" />
+              image="https://images.unsplash.com/photo-1678940805950-73f2127f9d4e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MTg3MTl8MHwxfHNlYXJjaHwxfHxBJTIwcHJvZmVzc2lvbmFsJTIwcG9ydHJhaXQlMjBvZiUyMERyLiUyMEtlZXJ0aHklMjBTdW5kZXIlMkMlMjBhJTIwYm9hcmQtY2VydGlmaWVkJTIwcHN5Y2hpYXRyaXN0JTIwYW5kJTIwbWVkaWNhbCUyMGRpcmVjdG9yJTIwYXQlMjBLYXJtYVRNUy58ZW58MHx8fHwxNzYyNzgxMjg2fDA&ixlib=rb-4.1.0&q=80&w=200$w=800" />
 
 
             {/* FAQ Section */}
