@@ -121,7 +121,7 @@ const BrainMappingPage = () => {
       <Navigation />
       
       {/* Hero Section */}
-      <section className="relative pt-32 pb-20 px-4">
+      <section className="relative bg-gradient-to-r from-purple-100 to-violet-100 pt-32 pb-20 px-4">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <Badge className="mb-6 bg-gradient-to-r from-[#572670] to-purple-600 text-white">
