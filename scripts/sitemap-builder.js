@@ -4,7 +4,7 @@ const path = require('path');
 // Configuration
 const DOMAIN = 'https://karmatms.com';
 const OUTPUT_DIR = path.join(__dirname, '../dist/public');
-const OUTPUT_FILE = path.join(OUTPUT_DIR, 'sitemap.xml');
+const OUTPUT_FILE = path.join(OUTPUT_DIR, 'sitemap-dynamic.xml');
 
 // Define all routes
 const routes = [
