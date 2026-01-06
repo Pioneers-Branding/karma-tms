@@ -91,7 +91,7 @@ const FooterSection = () => {
               </div>
             </div>
                         {/* Contact Details */}
-            <div className="space-y-4 pt-4 border-t border-gray-700/50">
+            <div className="space-y-1 pt-3 border-t border-gray-700/50">
               <div className="group">
                 <div className="flex items-center gap-3 p-3 rounded-lg hover:bg-white/5 transition-all duration-200">
                   <Phone className="h-5 w-5 text-[#572670] flex-shrink-0" />
