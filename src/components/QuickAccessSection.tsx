@@ -34,7 +34,7 @@ const QuickAccessSection = () => {
   }];
 
   return (
-    <section className="py-20 bg-gray-50">
+    <section className="py-16 bg-gray-50">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
@@ -68,7 +68,7 @@ const QuickAccessSection = () => {
                   <Link to={resource.link} className="w-full">
                     <Button
                       variant="outline"
-                      className="w-full border-[#572670] text-[#572670] hover:bg-[#572670] hover:text-white group-hover:shadow-md transition-all">
+                      className=" mt-3 w-full border-[#572670] text-[#572670] hover:bg-[#572670] hover:text-white group-hover:shadow-md transition">
 
                       {resource.cta}
                       <ExternalLink className="h-4 w-4 ml-2" />
