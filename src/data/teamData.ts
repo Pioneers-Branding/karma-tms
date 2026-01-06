@@ -34,21 +34,7 @@ export const teamMembers: TeamMember[] = [
   location: 'Palm Springs, CA',
   email: 'ychen@karmatms.com'
 },
-{
-  id: 'waseem-khader',
-  name: 'Waseem Khader D.O.',
-  title: 'Family Medicine Physician',
-  specialization: 'Family Medicine & Addiction Medicine',
-  category: 'medical',
-  image: 'https://res.cloudinary.com/de4kw1t2i/image/upload/v1759237115/WaseemKhader-1_xymodc.webp', // drwaseem
-  bio: 'Dr. Waseem Khader provides comprehensive family medicine care with a specialized focus on addiction medicine. He takes a patient-centered approach to treating substance use disorders within the context of overall health and wellness.',
-  credentials: ['D.O.', 'Board Certified Family Medicine', 'Addiction Medicine Certified'],
-  experience: '10+ years in Family and Addiction Medicine',
-  education: 'Western University College of Osteopathic Medicine',
-  languages: ['English', 'Arabic', 'Spanish'],
-  location: 'Palm Springs, CA',
-  email: 'wkhader@karmatms.com'
-},
+
 {
   id: 'jack-zhang',
   name: 'Jack Yong Zhang D.O.',
@@ -79,36 +65,8 @@ export const teamMembers: TeamMember[] = [
   location: 'Palm Springs, CA',
   email: 'tborn@karmatms.com'
 },
-{
-  id: 'vaidya-anupama',
-  name: 'Vaidya Anupama K',
-  title: 'Ayurvedic Practitioner',
-  specialization: 'Ayurvedic Medicine',
-  category: 'medical',
-  image: 'https://res.cloudinary.com/de4kw1t2i/image/upload/v1759237107/VaidyaAnupamaK-1_awuqcn.webp', // drvaidya
-  bio: 'Vaidya Anupama K brings traditional Ayurvedic wisdom to modern mental health care. She specializes in constitutional assessment, herbal protocols, and mind-body practices that support psychological well-being and recovery.',
-  credentials: ['B.A.M.S.', 'Certified Ayurvedic Practitioner', 'Panchakarma Specialist'],
-  experience: '15+ years in Ayurvedic Medicine',
-  education: 'Gujarat Ayurved University, California College of Ayurveda',
-  languages: ['English', 'Sanskrit', 'Hindi', 'Gujarati'],
-  location: 'Palm Springs, CA',
-  email: 'anupama@karmatms.com'
-},
-{
-  id: 'rachel-mcduffie',
-  name: 'Rachel McDuffie PA-C',
-  title: 'Physician Associate',
-  specialization: 'Mental Health Care',
-  category: 'medical',
-  image: 'https://res.cloudinary.com/de4kw1t2i/image/upload/v1759237095/RachelMcDuffie1_xkmzbm.webp', // drrachel
-  bio: 'Rachel McDuffie PA-C provides comprehensive mental health assessments and treatment support. She works closely with our medical team to ensure coordinated care and optimal treatment outcomes for all patients.',
-  credentials: ['PA-C', 'Master of Physician Assistant Studies', 'Mental Health Certified'],
-  experience: '7+ years as Physician Associate',
-  education: 'University of Southern California PA Program',
-  languages: ['English', 'Spanish'],
-  location: 'Palm Springs, CA',
-  email: 'rmcduffie@karmatms.com'
-},
+
+
 {
   id: 'punit-patel',
   name: 'Punit Patel PA-C',
