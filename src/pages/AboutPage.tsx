@@ -237,8 +237,7 @@ const AboutPage = () => {
                         <p className="text-lg text-gray-700 leading-relaxed">
                           Founded in 2015 in the heart of Palm Springs, Karma TMS emerged from a vision to 
                           bring cutting-edge mental health treatment to Southern California. Our founder, 
-                          Dr. Sunder, witnessed firsthand the transformative power of TMS therapy 
-                          during her residency at UCLA.
+                          Dr. Keerthy Sunder.
                         </p>
                         <p className="text-lg text-gray-700 leading-relaxed">
                           What started as a small clinic has grown into a leading center for innovative 
