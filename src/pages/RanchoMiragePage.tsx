@@ -150,6 +150,119 @@ const RanchoMiragePage = () => {
         </div>
       </div>
 
+      {/* Exomind Exclusive Section */}
+      <div className="py-20 bg-gradient-to-br from-purple-900 via-indigo-900 to-purple-800 text-white relative overflow-hidden">
+        <div className="absolute inset-0 opacity-10">
+          <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_50%,rgba(120,119,198,0.3),transparent_50%)]" />
+          <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_80%,rgba(99,102,241,0.3),transparent_50%)]" />
+        </div>
+        
+        <div className="container mx-auto px-4 relative z-10">
+          <div className="max-w-6xl mx-auto">
+            {/* Header */}
+            <div className="text-center mb-12">
+              <Badge className="mb-4 bg-yellow-500/20 text-yellow-300 border-yellow-400 text-sm font-semibold px-4 py-2">
+                🏆 EXCLUSIVE TO RANCHO MIRAGE
+              </Badge>
+              <h2 className="text-3xl lg:text-5xl font-bold mb-6 bg-gradient-to-r from-white via-purple-100 to-white bg-clip-text text-transparent">
+                Introducing Exomind: The Future of TMS Therapy
+              </h2>
+              <p className="text-xl lg:text-2xl text-purple-100 max-w-3xl mx-auto mb-4">
+                KarmaTMS Rancho Mirage is proud to be the <span className="font-bold text-yellow-300">first and only location</span> to offer cutting-edge Exomind devices
+              </p>
+              <p className="text-lg text-purple-200 max-w-2xl mx-auto">
+                Experience the most advanced TMS technology available, exclusively at our Rancho Mirage facility
+              </p>
+            </div>
+
+            {/* Image Grid */}
+            <div className="grid md:grid-cols-3 gap-6 mb-12">
+              <div className="group relative h-80 rounded-2xl overflow-hidden shadow-2xl transform transition-all duration-300 hover:scale-105 hover:shadow-3xl">
+                <img
+                  src="https://res.cloudinary.com/de4kw1t2i/image/upload/v1763031168/Exomind_PIC_Unit_0943_ENUS100_lmh0bj.jpg"
+                  alt="Exomind TMS device - premium technology"
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-purple-900/80 via-purple-900/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                <div className="absolute bottom-0 left-0 right-0 p-6 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                  <p className="text-white font-semibold text-lg">Advanced Precision Technology</p>
+                </div>
+              </div>
+              
+              <div className="group relative h-80 rounded-2xl overflow-hidden shadow-2xl transform transition-all duration-300 hover:scale-105 hover:shadow-3xl">
+                <img
+                  src="https://res.cloudinary.com/de4kw1t2i/image/upload/v1763029483/Exomind_PIC_Female-Model5_0251_ENUS100_rfryxl.jpg"
+                  alt="Patient receiving Exomind TMS treatment"
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-purple-900/80 via-purple-900/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                <div className="absolute bottom-0 left-0 right-0 p-6 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                  <p className="text-white font-semibold text-lg">Comfortable Treatment Experience</p>
+                </div>
+              </div>
+              
+              <div className="group relative h-80 rounded-2xl overflow-hidden shadow-2xl transform transition-all duration-300 hover:scale-105 hover:shadow-3xl">
+                <img
+                  src="https://res.cloudinary.com/de4kw1t2i/image/upload/v1763029483/Exomind_PIC_Unit_0095_ENUS100_ldgsng.jpg"
+                  alt="Exomind device close-up showing advanced features"
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-purple-900/80 via-purple-900/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                <div className="absolute bottom-0 left-0 right-0 p-6 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                  <p className="text-white font-semibold text-lg">Best-in-Field Innovation</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Features Grid */}
+            <div className="grid md:grid-cols-3 gap-6 mb-10">
+              <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20 hover:bg-white/15 transition-all duration-300">
+                <Star className="w-10 h-10 text-yellow-300 mb-4" />
+                <h3 className="text-xl font-bold mb-2">Best-in-Field Technology</h3>
+                <p className="text-purple-100">
+                  Exomind represents the pinnacle of TMS innovation, offering superior precision and effectiveness
+                </p>
+              </div>
+              
+              <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20 hover:bg-white/15 transition-all duration-300">
+                <Award className="w-10 h-10 text-yellow-300 mb-4" />
+                <h3 className="text-xl font-bold mb-2">Exclusive Availability</h3>
+                <p className="text-purple-100">
+                  Only available at our Rancho Mirage location - nowhere else in the region
+                </p>
+              </div>
+              
+              <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20 hover:bg-white/15 transition-all duration-300">
+                <CheckCircle className="w-10 h-10 text-yellow-300 mb-4" />
+                <h3 className="text-xl font-bold mb-2">First to Offer</h3>
+                <p className="text-purple-100">
+                  KarmaTMS Rancho Mirage is pioneering access to this breakthrough technology
+                </p>
+              </div>
+            </div>
+
+            {/* CTA */}
+            <div className="text-center">
+              <p className="text-lg text-purple-100 mb-6">
+                Be among the first to experience the most advanced TMS therapy available
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <Link to="/contact">
+                  <Button size="lg" className="bg-yellow-500 text-purple-900 hover:bg-yellow-400 font-bold text-lg px-10 shadow-xl">
+                    Schedule Your Exomind Consultation
+                  </Button>
+                </Link>
+                <Link to="/resources/exomind-karma-tms">
+                  <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10 text-lg px-10 bg-black text-white">
+                    Learn More About Exomind
+                  </Button>
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
       {/* Treatments Section */}
       <div className="py-20 bg-gray-50">
         <div className="container mx-auto px-4">
