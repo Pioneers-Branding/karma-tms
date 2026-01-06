@@ -184,10 +184,10 @@ const PRTMSPage = () => {
                 <Phone className="w-5 h-5 mr-2" />
                 Get Personalized Assessment
               </Button>
-              <Button variant="outline" className="border-[#572670] text-[#572670] hover:bg-[#572670] hover:text-white text-lg px-8 py-4 rounded-full">
-                <FileText className="w-5 h-5 mr-2" />
-                Download Clinical Data
-              </Button>
+              
+
+
+
             </div>
           </div>
         </div>

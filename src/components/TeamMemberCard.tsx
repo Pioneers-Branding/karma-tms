@@ -108,26 +108,26 @@ const TeamMemberCard: React.FC<TeamMemberCardProps> = ({ member, index }) => {
 
             {/* Credentials Preview */}
             <div className="flex flex-wrap gap-1 pt-2">
-              {member.credentials && member.credentials.length > 0 ? (
-                <>
-                  {member.credentials.slice(0, 2).map((credential, idx) => (
-                    <Badge key={idx} variant="outline" className="text-xs border-[#572670]/30 text-[#572670]">
+              {member.credentials && member.credentials.length > 0 ?
+              <>
+                  {member.credentials.slice(0, 2).map((credential, idx) =>
+                <Badge key={idx} variant="outline" className="text-xs border-[#572670]/30 text-[#572670]">
                       {credential}
                     </Badge>
-                  ))}
-                  {member.credentials.length > 2 && (
-                    <Badge variant="outline" className="text-xs border-gray-300 text-gray-500">
+                )}
+                  {member.credentials.length > 2 &&
+                <Badge variant="outline" className="text-xs border-gray-300 text-gray-500">
                       +{member.credentials.length - 2} more
                     </Badge>
-                  )}
-                </>
-              ) : null}
+                }
+                </> :
+              null}
             </div>
           </div>
         </CardContent>
       </Card>
-    </motion.div>
-  );
+    </motion.div>);
+
 };
 
 export default TeamMemberCard;
