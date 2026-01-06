@@ -159,6 +159,54 @@ const allBlogPosts: BlogPost[] = [
   image: 'https://res.cloudinary.com/de4kw1t2i/image/upload/v1763033673/7_lnxkrv.png',
   featured: false,
   rating: 5
+},
+{
+  id: 9,
+  title: 'How TMS is helping Veterans Address Mental Health Challenges?',
+  excerpt: 'Discover how TMS therapy is revolutionizing mental health treatment for veterans. Learn about success rates, conditions treated, and why veterans are choosing TMS for PTSD, depression, and anxiety.',
+  category: 'tms-therapy',
+  author: 'KarmatmsAdmin',
+  date: new Date(2025, 7, 11).toLocaleDateString('en-US', {
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric'
+  }),
+  readTime: '10 min read',
+  image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/f00dd3f4-cea1-4918-8fec-5976198e195f.webp',
+  featured: false,
+  rating: 5
+},
+{
+  id: 10,
+  title: 'Why does TMS Require Multiple Sessions?',
+  excerpt: 'Understand the science behind why TMS therapy requires multiple sessions to be effective. Learn about neuroplasticity, treatment timelines, and how repeated sessions create lasting changes in brain function.',
+  category: 'tms-therapy',
+  author: 'KarmatmsAdmin',
+  date: new Date(2025, 6, 22).toLocaleDateString('en-US', {
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric'
+  }),
+  readTime: '12 min read',
+  image: 'https://images.unsplash.com/photo-1601648933230-1fcd7e547bc3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MTg3MTl8MHwxfHNlYXJjaHwxfHxBJTIwd2ViJTIwaW1hZ2UlMjBob3N0ZWQlMjBvbiUyMGElMjBjbG91ZCUyMHN0b3JhZ2UlMjBzZXJ2aWNlJTJDJTIwbGlrZWx5JTIwZGVwaWN0aW5nJTIwYSUyMHJlbGV2YW50JTIwdmlzdWFsJTIwZm9yJTIwdGhlJTIwYXNzb2NpYXRlZCUyMGJsb2clMjBwb3N0LnxlbnwwfHx8fDE3NjMzNjE5ODV8MA&ixlib=rb-4.1.0&q=80&w=200$w=800',
+  featured: false,
+  rating: 5
+},
+{
+  id: 11,
+  title: 'What are the 4 A\'s of Stress Management?',
+  excerpt: 'Master the four essential strategies for managing stress effectively: Avoid, Alter, Accept, and Adapt. Learn practical techniques to reduce stress and improve your mental health.',
+  category: 'wellness',
+  author: 'KarmatmsAdmin',
+  date: new Date(2025, 6, 11).toLocaleDateString('en-US', {
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric'
+  }),
+  readTime: '8 min read',
+  image: 'https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=800',
+  featured: false,
+  rating: 5
 }];
 
 
@@ -344,7 +392,10 @@ const BlogPage = () => {
                     5: '/blog/how-to-help-veterans-ptsd',
                     6: '/blogs/understanding-ptsd-veterans',
                     7: '/blogs/tms-anxiety-veterans',
-                    8: '/blogs/tms-migraine-veterans'
+                    8: '/blogs/tms-migraine-veterans',
+                    9: '/blogs/tms-helping-veterans-mental-health',
+                    10: '/blogs/why-tms-requires-multiple-sessions',
+                    11: '/blogs/4-as-stress-management'
                   };
                   return (
                     <a

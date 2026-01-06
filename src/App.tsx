@@ -48,6 +48,9 @@ import HelpingVeteransPTSDBlogPostPage from "./pages/blogs/HelpingVeteransPTSDBl
 import UnderstandingPTSDVeteransBlogPostPage from "./pages/blogs/UnderstandingPTSDVeteransBlogPostPage";
 import TMSAnxietyVeteransBlogPostPage from "./pages/blogs/TMSAnxietyVeteransBlogPostPage";
 import TMSMigraineVeteransBlogPostPage from "./pages/blogs/TMSMigraineVeteransBlogPostPage";
+import TMSHelpingVeteransMentalHealthBlogPostPage from "./pages/blogs/TMSHelpingVeteransMentalHealthBlogPostPage";
+import WhyTMSRequiresMultipleSessionsBlogPostPage from "./pages/blogs/WhyTMSRequiresMultipleSessionsBlogPostPage";
+import FourAsStressManagementBlogPostPage from "./pages/blogs/FourAsStressManagementBlogPostPage";
 import DisclaimerPage from "./pages/DisclaimerPage";
 
 const queryClient = new QueryClient();
@@ -145,6 +148,9 @@ const App = () =>
           <Route path="/blogs/understanding-ptsd-veterans" element={<UnderstandingPTSDVeteransBlogPostPage />} />
           <Route path="/blogs/tms-anxiety-veterans" element={<TMSAnxietyVeteransBlogPostPage />} />
           <Route path="/blogs/tms-migraine-veterans" element={<TMSMigraineVeteransBlogPostPage />} />
+          <Route path="/blogs/tms-helping-veterans-mental-health" element={<TMSHelpingVeteransMentalHealthBlogPostPage />} />
+          <Route path="/blogs/why-tms-requires-multiple-sessions" element={<WhyTMSRequiresMultipleSessionsBlogPostPage />} />
+          <Route path="/blogs/4-as-stress-management" element={<FourAsStressManagementBlogPostPage />} />
           <Route path="/disclaimer" element={<DisclaimerPage />} />
           
           {/* Catch-all route redirects to home instead of 404 */}
