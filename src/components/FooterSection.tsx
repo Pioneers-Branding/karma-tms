@@ -90,6 +90,42 @@ const FooterSection = () => {
                 <span className="text-xs font-medium text-gray-300">FDA-Approved Treatment</span>
               </div>
             </div>
+                        {/* Contact Details */}
+            <div className="space-y-4 pt-4 border-t border-gray-700/50">
+              <div className="group">
+                <div className="flex items-center gap-3 p-3 rounded-lg hover:bg-white/5 transition-all duration-200">
+                  <Phone className="h-5 w-5 text-[#572670] flex-shrink-0" />
+                  <div>
+                    <div className="text-xs font-semibold text-gray-400 uppercase tracking-wide mb-0.5">Call Us</div>
+                    <a href="tel:760-760-5675" className="text-sm font-medium text-white hover:text-[#572670] transition-colors">
+                      760-760-5675
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div className="group">
+                <div className="flex items-center gap-3 p-3 rounded-lg hover:bg-white/5 transition-all duration-200">
+                  <Mail className="h-5 w-5 text-[#572670] flex-shrink-0" />
+                  <div>
+                    <div className="text-xs font-semibold text-gray-400 uppercase tracking-wide mb-0.5">Email</div>
+                    <a href="mailto:contact@karmatms.com" className="text-sm font-medium text-white hover:text-[#572670] transition-colors break-all">
+                      contact@karmatms.com
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div className="group">
+                <div className="flex items-center gap-3 p-3 rounded-lg hover:bg-white/5 transition-all duration-200">
+                  <Clock className="h-5 w-5 text-[#572670] flex-shrink-0" />
+                  <div>
+                    <div className="text-xs font-semibold text-gray-400 uppercase tracking-wide mb-0.5">Hours</div>
+                    <div className="text-sm font-medium text-white">Mon-Fri: 8AM-6PM</div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
 
           {/* Contact Info - Separate Column */}
@@ -135,42 +171,7 @@ const FooterSection = () => {
               </div>
             </div>
 
-            {/* Contact Details */}
-            <div className="space-y-4 pt-4 border-t border-gray-700/50">
-              <div className="group">
-                <div className="flex items-center gap-3 p-3 rounded-lg hover:bg-white/5 transition-all duration-200">
-                  <Phone className="h-5 w-5 text-[#572670] flex-shrink-0" />
-                  <div>
-                    <div className="text-xs font-semibold text-gray-400 uppercase tracking-wide mb-0.5">Call Us</div>
-                    <a href="tel:760-760-5675" className="text-sm font-medium text-white hover:text-[#572670] transition-colors">
-                      760-760-5675
-                    </a>
-                  </div>
-                </div>
-              </div>
 
-              <div className="group">
-                <div className="flex items-center gap-3 p-3 rounded-lg hover:bg-white/5 transition-all duration-200">
-                  <Mail className="h-5 w-5 text-[#572670] flex-shrink-0" />
-                  <div>
-                    <div className="text-xs font-semibold text-gray-400 uppercase tracking-wide mb-0.5">Email</div>
-                    <a href="mailto:contact@karmatms.com" className="text-sm font-medium text-white hover:text-[#572670] transition-colors break-all">
-                      contact@karmatms.com
-                    </a>
-                  </div>
-                </div>
-              </div>
-
-              <div className="group">
-                <div className="flex items-center gap-3 p-3 rounded-lg hover:bg-white/5 transition-all duration-200">
-                  <Clock className="h-5 w-5 text-[#572670] flex-shrink-0" />
-                  <div>
-                    <div className="text-xs font-semibold text-gray-400 uppercase tracking-wide mb-0.5">Hours</div>
-                    <div className="text-sm font-medium text-white">Mon-Fri: 8AM-6PM</div>
-                  </div>
-                </div>
-              </div>
-            </div>
           </div>
 
           {/* Quick Links & Services */}
