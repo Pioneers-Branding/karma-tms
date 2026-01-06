@@ -49,7 +49,7 @@ const HeroSection = () => {
     <div className="">
       <div className="w-full mt-4">
         <div className="w-full overflow-hidden">
-          <div className="grid lg:grid-cols-2 xl:grid-cols-5">
+          <div className="grid lg:grid-cols-2 xl:grid-cols-5 items-center min-h-[75vh]"> {/* Vertically center */}
             {/* Left Section */}
             <div className="xl:col-span-3 p-4 lg:p-6 xl:p-8 flex flex-col justify-center">
               <div className="space-y-6 lg:space-y-8">
@@ -142,96 +142,96 @@ const HeroSection = () => {
             </div>
 
             {/* Right Section */}
-            <div className="xl:col-span-2 bg-gradient-to-br from-blue-magenta via-blue-magenta/70 to-blue-magenta rounded-3xl m-2 p-2 sm:p-2 md:p-2 lg:p-4 xl:p-8 flex flex-col h-full">
-              {/* Contact Form */}
-              <div className="bg-white/95 backdrop-blur-lg rounded-3xl p-4 lg:pb-3 shadow-2xl border border-white/20">
-                <div className="flex justify-between items-center mb-4 lg:mb-8">
-                  <h2 className="text-xl lg:text-2xl font-bold text-gray-900 flex items-center">
-                    <Heart className="w-5 h-5 lg:w-6 lg:h-6 text-violet-600 mr-2" />
-                    Get In Touch
-                  </h2>
-                  <Link to="/contact">
-                    <button className="bg-gradient-to-r from-blue-magenta via-blue-magenta/70 to-blue-magenta text-white font-semibold py-2 px-4 lg:px-6 rounded-full transform hover:-translate-y-0.5 transition-all duration-300 text-sm lg:text-base hover:scale-105">
-                      Send
-                    </button>
-                  </Link>
-                </div>
-                <div className="space-y-4 lg:space-y-5">
-                  <div>
-                    <input
-                      type="text"
-                      placeholder="Full Name"
-                      className="w-full px-4 lg:px-5 py-3 lg:py-4 border border-gray-200 rounded-2xl focus:ring-2 focus:ring-violet-500 focus:border-transparent outline-none transition-all duration-300 bg-white/90 backdrop-blur-sm hover:bg-white text-sm lg:text-base" />
+            <div className="xl:col-span-2 flex flex-col items-center justify-center min-h-[75vh]"> {/* Use min-h and vertical centering */}
+              <div className="bg-gradient-to-br from-blue-magenta via-blue-magenta/70 to-blue-magenta rounded-3xl w-full flex flex-col items-center py-6 px-4 sm:px-6 lg:px-8 xl:px-10">
+                {/* Contact Form */}
+                <div className="bg-white/95 backdrop-blur-lg rounded-3xl w-full max-w-md mx-auto p-6 shadow-2xl border border-white/20">
+                  <div className="flex justify-between items-center mb-4 lg:mb-6">
+                    <h2 className="text-xl lg:text-2xl font-bold text-gray-900 flex items-center">
+                      <Heart className="w-5 h-5 lg:w-6 lg:h-6 text-violet-600 mr-2" />
+                      Get In Touch
+                    </h2>
+                    <Link to="/contact">
+                      <button className="bg-gradient-to-r from-blue-magenta via-blue-magenta/70 to-blue-magenta text-white font-semibold py-2 px-4 lg:px-6 rounded-full transform hover:-translate-y-0.5 transition-all duration-300 text-sm lg:text-base hover:scale-105">
+                        Send
+                      </button>
+                    </Link>
                   </div>
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    <input
-                      type="email"
-                      placeholder="Email Address"
-                      className="w-full px-4 lg:px-5 py-3 lg:py-4 border border-gray-200 rounded-2xl focus:ring-2 focus:ring-violet-500 focus:border-transparent outline-none transition-all duration-300 bg-white/90 backdrop-blur-sm hover:bg-white text-sm lg:text-base" />
-                    <input
-                      type="tel"
-                      placeholder="Phone Number"
-                      className="w-full px-4 lg:px-5 py-3 lg:py-4 border border-gray-200 rounded-2xl focus:ring-2 focus:ring-violet-500 focus:border-transparent outline-none transition-all duration-300 bg-white/90 backdrop-blur-sm hover:bg-white text-sm lg:text-base" />
-                  </div>
-                  <div>
-                    <select className="w-full px-4 lg:px-5 py-3 lg:py-4 border border-gray-200 rounded-2xl focus:ring-2 focus:ring-violet-500 focus:border-transparent outline-none transition-all duration-300 bg-white/90 backdrop-blur-sm hover:bg-white text-sm lg:text-base">
-                      <option value="">Select Condition</option>
-                      {conditions.map((condition, index) =>
-                        <option key={index} value={condition}>{condition}</option>
-                      )}
-                    </select>
-                  </div>
-                  <div>
-                    <textarea
-                      placeholder="Tell us about your situation and how we can help. Our mental health counselors in Palm Springs, CA are here to support you..."
-                      rows={4}
-                      className="w-full px-4 lg:px-5 py-3 lg:py-4 border border-gray-200 rounded-2xl focus:ring-2 focus:ring-violet-500 focus:border-transparent outline-none transition-all duration-300 resize-none bg-white/90 backdrop-blur-sm hover:bg-white text-sm lg:text-base"
-                    ></textarea>
-                  </div>
-                </div>
-              </div>
-              {/* Stats Section - No margin between form and stats */}
-              <div className="space-y-4 lg:space-y-6">
-                {/* Main Stats */}
-                <div className="grid grid-cols-2 gap-4 lg:gap-6">
-                  <div className="bg-white/90 backdrop-blur-lg rounded-2xl lg:rounded-3xl p-4 lg:p-6 text-center shadow-xl border border-white/20 hover:bg-white/95 transition-all duration-300 hover:scale-105">
-                    <div className="text-2xl lg:text-3xl xl:text-4xl font-bold bg-gradient-to-r from-indigo-600 to-violet-600 bg-clip-text text-transparent">85%</div>
-                    <div className="text-xs lg:text-sm font-semibold text-gray-700 mt-1 lg:mt-2">Success Rate</div>
-                  </div>
-                  <div className="bg-white/90 backdrop-blur-lg rounded-2xl lg:rounded-3xl p-4 lg:p-6 text-center shadow-xl border border-white/20 hover:bg-white/95 transition-all duration-300 hover:scale-105">
-                    <div className="text-2xl lg:text-3xl xl:text-4xl font-bold bg-gradient-to-r from-violet-600 to-purple-600 bg-clip-text text-transparent">10K+</div>
-                    <div className="text-xs lg:text-sm font-semibold text-gray-700 mt-1 lg:mt-2">Patients Treated</div>
+                  <div className="space-y-4 lg:space-y-5">
+                    <div>
+                      <input
+                        type="text"
+                        placeholder="Full Name"
+                        className="w-full px-4 lg:px-5 py-3 lg:py-4 border border-gray-200 rounded-2xl focus:ring-2 focus:ring-violet-500 focus:border-transparent outline-none transition-all duration-300 bg-white/90 backdrop-blur-sm hover:bg-white text-sm lg:text-base" />
+                    </div>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                      <input
+                        type="email"
+                        placeholder="Email Address"
+                        className="w-full px-4 lg:px-5 py-3 lg:py-4 border border-gray-200 rounded-2xl focus:ring-2 focus:ring-violet-500 focus:border-transparent outline-none transition-all duration-300 bg-white/90 backdrop-blur-sm hover:bg-white text-sm lg:text-base" />
+                      <input
+                        type="tel"
+                        placeholder="Phone Number"
+                        className="w-full px-4 lg:px-5 py-3 lg:py-4 border border-gray-200 rounded-2xl focus:ring-2 focus:ring-violet-500 focus:border-transparent outline-none transition-all duration-300 bg-white/90 backdrop-blur-sm hover:bg-white text-sm lg:text-base" />
+                    </div>
+                    <div>
+                      <select className="w-full px-4 lg:px-5 py-3 lg:py-4 border border-gray-200 rounded-2xl focus:ring-2 focus:ring-violet-500 focus:border-transparent outline-none transition-all duration-300 bg-white/90 backdrop-blur-sm hover:bg-white text-sm lg:text-base">
+                        <option value="">Select Condition</option>
+                        {conditions.map((condition, index) =>
+                          <option key={index} value={condition}>{condition}</option>
+                        )}
+                      </select>
+                    </div>
+                    <div>
+                      <textarea
+                        placeholder="Tell us about your situation and how we can help. Our mental health counselors in Palm Springs, CA are here to support you..."
+                        rows={4}
+                        className="w-full px-4 lg:px-5 py-3 lg:py-4 border border-gray-200 rounded-2xl focus:ring-2 focus:ring-violet-500 focus:border-transparent outline-none transition-all duration-300 resize-none bg-white/90 backdrop-blur-sm hover:bg-white text-sm lg:text-base"
+                      ></textarea>
+                    </div>
                   </div>
                 </div>
-                {/* Additional Stats */}
-                <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 lg:gap-4">
-                  <div className="bg-white/80 backdrop-blur-lg rounded-xl lg:rounded-2xl p-3 lg:p-4 text-center shadow-lg border border-white/10 hover:bg-white/90 transition-all duration-300 hover:scale-105">
-                    <div className="flex items-center justify-center mb-1 lg:mb-2">
-                      <Star className="w-3 h-3 lg:w-4 lg:h-4 text-yellow-500 mr-1" />
-                      <span className="text-base lg:text-lg font-bold text-gray-800">4.9</span>
+                {/* Stats Section */}
+                <div className="w-full max-w-md mx-auto mt-4 space-y-4 lg:space-y-6">
+                  <div className="grid grid-cols-2 gap-4 lg:gap-6">
+                    <div className="bg-white/90 backdrop-blur-lg rounded-2xl lg:rounded-3xl p-4 lg:p-6 text-center shadow-xl border border-white/20 hover:bg-white/95 transition-all duration-300 hover:scale-105">
+                      <div className="text-2xl lg:text-3xl xl:text-4xl font-bold bg-gradient-to-r from-indigo-600 to-violet-600 bg-clip-text text-transparent">85%</div>
+                      <div className="text-xs lg:text-sm font-semibold text-gray-700 mt-1 lg:mt-2">Success Rate</div>
                     </div>
-                    <div className="text-[10px] lg:text-xs font-medium text-gray-600">Rating</div>
+                    <div className="bg-white/90 backdrop-blur-lg rounded-2xl lg:rounded-3xl p-4 lg:p-6 text-center shadow-xl border border-white/20 hover:bg-white/95 transition-all duration-300 hover:scale-105">
+                      <div className="text-2xl lg:text-3xl xl:text-4xl font-bold bg-gradient-to-r from-violet-600 to-purple-600 bg-clip-text text-transparent">10K+</div>
+                      <div className="text-xs lg:text-sm font-semibold text-gray-700 mt-1 lg:mt-2">Patients Treated</div>
+                    </div>
                   </div>
-                  <div className="bg-white/80 backdrop-blur-lg rounded-xl lg:rounded-2xl p-3 lg:p-4 text-center shadow-lg border border-white/10 hover:bg-white/90 transition-all duration-300 hover:scale-105">
-                    <div className="flex items-center justify-center mb-1 lg:mb-2">
-                      <Shield className="w-3 h-3 lg:w-4 lg:h-4 text-green-500 mr-1" />
-                      <span className="text-base lg:text-lg font-bold text-gray-800">FDA</span>
+                  <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 lg:gap-4">
+                    <div className="bg-white/80 backdrop-blur-lg rounded-xl lg:rounded-2xl p-3 lg:p-4 text-center shadow-lg border border-white/10 hover:bg-white/90 transition-all duration-300 hover:scale-105">
+                      <div className="flex items-center justify-center mb-1 lg:mb-2">
+                        <Star className="w-3 h-3 lg:w-4 lg:h-4 text-yellow-500 mr-1" />
+                        <span className="text-base lg:text-lg font-bold text-gray-800">4.9</span>
+                      </div>
+                      <div className="text-[10px] lg:text-xs font-medium text-gray-600">Rating</div>
                     </div>
-                    <div className="text-[10px] lg:text-xs font-medium text-gray-600">Cleared</div>
-                  </div>
-                  <div className="bg-white/80 backdrop-blur-lg rounded-xl lg:rounded-2xl p-3 lg:p-4 text-center shadow-lg border border-white/10 hover:bg-white/90 transition-all duration-300 hover:scale-105">
-                    <div className="flex items-center justify-center mb-1 lg:mb-2">
-                      <Clock className="w-3 h-3 lg:w-4 lg:h-4 text-indigo-500 mr-1" />
-                      <span className="text-base lg:text-lg font-bold text-gray-800">15+</span>
+                    <div className="bg-white/80 backdrop-blur-lg rounded-xl lg:rounded-2xl p-3 lg:p-4 text-center shadow-lg border border-white/10 hover:bg-white/90 transition-all duration-300 hover:scale-105">
+                      <div className="flex items-center justify-center mb-1 lg:mb-2">
+                        <Shield className="w-3 h-3 lg:w-4 lg:h-4 text-green-500 mr-1" />
+                        <span className="text-base lg:text-lg font-bold text-gray-800">FDA</span>
+                      </div>
+                      <div className="text-[10px] lg:text-xs font-medium text-gray-600">Cleared</div>
                     </div>
-                    <div className="text-[10px] lg:text-xs font-medium text-gray-600">Years Exp.</div>
-                  </div>
-                  <div className="bg-white/80 backdrop-blur-lg rounded-xl lg:rounded-2xl p-3 lg:p-4 text-center shadow-lg border border-white/10 hover:bg-white/90 transition-all duration-300 hover:scale-105">
-                    <div className="flex items-center justify-center mb-1 lg:mb-2">
-                      <TrendingUp className="w-3 h-3 lg:w-4 lg:h-4 text-violet-500 mr-1" />
-                      <span className="text-base lg:text-lg font-bold text-gray-800">92%</span>
+                    <div className="bg-white/80 backdrop-blur-lg rounded-xl lg:rounded-2xl p-3 lg:p-4 text-center shadow-lg border border-white/10 hover:bg-white/90 transition-all duration-300 hover:scale-105">
+                      <div className="flex items-center justify-center mb-1 lg:mb-2">
+                        <Clock className="w-3 h-3 lg:w-4 lg:h-4 text-indigo-500 mr-1" />
+                        <span className="text-base lg:text-lg font-bold text-gray-800">15+</span>
+                      </div>
+                      <div className="text-[10px] lg:text-xs font-medium text-gray-600">Years Exp.</div>
                     </div>
-                    <div className="text-[10px] lg:text-xs font-medium text-gray-600">Satisfaction</div>
+                    <div className="bg-white/80 backdrop-blur-lg rounded-xl lg:rounded-2xl p-3 lg:p-4 text-center shadow-lg border border-white/10 hover:bg-white/90 transition-all duration-300 hover:scale-105">
+                      <div className="flex items-center justify-center mb-1 lg:mb-2">
+                        <TrendingUp className="w-3 h-3 lg:w-4 lg:h-4 text-violet-500 mr-1" />
+                        <span className="text-base lg:text-lg font-bold text-gray-800">92%</span>
+                      </div>
+                      <div className="text-[10px] lg:text-xs font-medium text-gray-600">Satisfaction</div>
+                    </div>
                   </div>
                 </div>
               </div>
