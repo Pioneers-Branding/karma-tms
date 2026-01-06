@@ -165,7 +165,7 @@ const PRTMSPage = () => {
       <Navigation />
       
       {/* Hero Section */}
-      <section className="relative pt-32 pb-16 px-4 overflow-hidden">
+      <section className="relative bg-gradient-to-r from-purple-100 to-violet-100 pt-32 pb-16 px-4 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-[#572670]/5 via-transparent to-blue-600/5"></div>
         <div className="max-w-7xl mx-auto relative">
           <div className="text-center mb-12">
