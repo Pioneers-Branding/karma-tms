@@ -168,7 +168,7 @@ const Navigation = () => {
           <div className="hidden lg:flex items-center">
             <Button
               variant="outline"
-              className="border-white/30 text-white hover:bg-white hover:text-[#572670] hover:border-white transition-all duration-300 px-6">
+              className="border-white/30 text-purple-800 hover:bg-white hover:text-[#572670] hover:border-white transition-all duration-300 px-6">
 
               <Phone className="h-4 w-4 mr-2" />
               760-760-5675
