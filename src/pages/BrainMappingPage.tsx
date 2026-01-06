@@ -86,7 +86,7 @@ const BrainMappingPage = () => {
     title: 'Objective Measurement',
     description: 'Unlike subjective assessments, qEEG provides measurable brain activity data',
     icon: <TrendingUp className="w-8 h-8" />,
-    color: 'from-blue-500 to-purple-500'
+    color: 'from-violet-500 to-purple-500'
   },
   {
     title: 'Treatment Precision',
@@ -98,7 +98,7 @@ const BrainMappingPage = () => {
     title: 'Progress Tracking',
     description: 'Monitors how your brain responds to treatment over time',
     icon: <Activity className="w-8 h-8" />,
-    color: 'from-green-500 to-blue-500'
+    color: 'from-violet-500 to-purple-500'
   },
   {
     title: 'Personalized Protocols',
@@ -117,17 +117,17 @@ const BrainMappingPage = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-purple-50">
+    <div className="min-h-screen bg-gradient-to-br from-violet-50 via-white to-purple-50">
       <Navigation />
       
       {/* Hero Section */}
       <section className="relative pt-32 pb-20 px-4">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
-            <Badge className="mb-6 bg-gradient-to-r from-[#572670] to-blue-600 text-white">
+            <Badge className="mb-6 bg-gradient-to-r from-[#572670] to-purple-600 text-white">
               Advanced Brain Assessment
             </Badge>
-            <h1 className="text-5xl lg:text-7xl font-bold mb-8 bg-gradient-to-r from-[#572670] via-purple-600 to-blue-600 bg-clip-text text-transparent">
+            <h1 className="text-5xl lg:text-7xl font-bold mb-8 bg-gradient-to-r from-[#572670] via-purple-600 to-purple-600 bg-clip-text text-transparent">
               Brain Mapping
             </h1>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-10">
@@ -135,7 +135,7 @@ const BrainMappingPage = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link to="/contact">
-              <Button className="bg-gradient-to-r from-[#572670] to-purple-600 hover:from-purple-700 hover:to-blue-700 text-lg px-8 py-3">
+              <Button className="bg-gradient-to-r from-[#572670] to-purple-600 hover:from-purple-700 hover:to-violet-700 text-lg px-8 py-3">
                 <Phone className="w-5 h-5 mr-2" />
                 Schedule Brain Map
               </Button>
@@ -149,7 +149,7 @@ const BrainMappingPage = () => {
       <section className="py-20 px-4">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
-            <Badge className="mb-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white">
+            <Badge className="mb-4 bg-gradient-to-r from-violet-600 to-purple-600 text-white">
               Understanding qEEG
             </Badge>
             <h2 className="text-4xl font-bold mb-6 text-gray-900">
@@ -162,7 +162,7 @@ const BrainMappingPage = () => {
 
           <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
             <div className="space-y-6">
-              <Card className="bg-gradient-to-br from-white to-blue-50 border-0 shadow-lg">
+              <Card className="bg-gradient-to-br from-white to-purple-50 border-0 shadow-lg">
                 <CardContent className="p-6">
                   <h3 className="text-xl font-bold mb-4 text-gray-900">The Science Behind qEEG</h3>
                   <p className="text-gray-600 mb-4">
@@ -178,15 +178,15 @@ const BrainMappingPage = () => {
                       Theta waves (4-8 Hz) - Creativity and deep states
                     </li>
                     <li className="flex items-center">
-                      <div className="w-2 h-2 bg-blue-600 rounded-full mr-3"></div>
+                      <div className="w-2 h-2 bg-violet-600 rounded-full mr-3"></div>
                       Alpha waves (8-12 Hz) - Relaxation and flow
                     </li>
                     <li className="flex items-center">
-                      <div className="w-2 h-2 bg-green-600 rounded-full mr-3"></div>
+                      <div className="w-2 h-2 bg-violet-600 rounded-full mr-3"></div>
                       Beta waves (12-30 Hz) - Active thinking and focus
                     </li>
                     <li className="flex items-center">
-                      <div className="w-2 h-2 bg-orange-600 rounded-full mr-3"></div>
+                      <div className="w-2 h-2 bg-violet-600 rounded-full mr-3"></div>
                       Gamma waves (30-100 Hz) - High-level cognition
                     </li>
                   </ul>
@@ -231,10 +231,10 @@ const BrainMappingPage = () => {
       </section>
 
       {/* Heat-map Gallery */}
-      <section className="py-20 px-4 bg-gradient-to-br from-purple-50 to-blue-50">
+      <section className="py-20 px-4 bg-gradient-to-br from-purple-50 to-purple-50">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
-            <Badge className="mb-4 bg-gradient-to-r from-purple-600 to-blue-600 text-white">
+            <Badge className="mb-4 bg-gradient-to-r from-purple-600 to-violet-600 text-white">
               Brain Activity Visualizations
             </Badge>
             <h2 className="text-4xl font-bold mb-6 text-gray-900">
@@ -358,7 +358,7 @@ const BrainMappingPage = () => {
                         <p className="text-gray-600">{step.description}</p>
                       </div>
                     </div>
-                    <Badge className="w-fit bg-gradient-to-r from-blue-500 to-purple-500 text-white">
+                    <Badge className="w-fit bg-gradient-to-r from-violet-500 to-purple-500 text-white">
                       {step.duration}
                     </Badge>
                   </CardHeader>
@@ -368,7 +368,7 @@ const BrainMappingPage = () => {
                     </p>
                     
                     {index === 0 &&
-                  <div className="bg-gradient-to-r from-blue-100 to-purple-100 rounded-lg p-6">
+                  <div className="bg-gradient-to-r from-purple-100 to-purple-100 rounded-lg p-6">
                         <h4 className="font-bold text-gray-900 mb-4">What We'll Review:</h4>
                         <div className="grid md:grid-cols-2 gap-4">
                           <ul className="space-y-2 text-gray-700">
@@ -386,7 +386,7 @@ const BrainMappingPage = () => {
                   }
 
                     {index === 2 &&
-                  <div className="bg-gradient-to-r from-green-100 to-blue-100 rounded-lg p-6">
+                  <div className="bg-gradient-to-r from-violet-100 to-violet-100 rounded-lg p-6">
                         <h4 className="font-bold text-gray-900 mb-4">Map Color Guide:</h4>
                         <div className="grid md:grid-cols-2 gap-4">
                           <div className="space-y-2">
@@ -401,11 +401,11 @@ const BrainMappingPage = () => {
                           </div>
                           <div className="space-y-2">
                             <div className="flex items-center">
-                              <div className="w-4 h-4 bg-green-500 rounded mr-3"></div>
+                              <div className="w-4 h-4 bg-purple-500 rounded mr-3"></div>
                               <span className="text-gray-700">Normal Activity (Green)</span>
                             </div>
                             <div className="flex items-center">
-                              <div className="w-4 h-4 bg-blue-500 rounded mr-3"></div>
+                              <div className="w-4 h-4 bg-violet-500 rounded mr-3"></div>
                               <span className="text-gray-700">Low Activity (Blue)</span>
                             </div>
                           </div>
@@ -418,7 +418,7 @@ const BrainMappingPage = () => {
                         <h4 className="font-bold text-gray-900 mb-4">Recommended Next Steps:</h4>
                         <div className="space-y-4">
                           <Link to="/prtms">
-                            <Button className="w-full bg-gradient-to-r from-[#572670] to-purple-600 hover:from-purple-700 hover:to-blue-700 justify-start">
+                            <Button className="w-full bg-gradient-to-r from-[#572670] to-purple-600 hover:from-purple-700 hover:to-purple-700 justify-start">
                               <ArrowRight className="w-4 h-4 mr-2" />
                               Personalized rTMS Protocol
                             </Button>
@@ -448,7 +448,7 @@ const BrainMappingPage = () => {
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link to="/contact">
-                  <Button className="bg-gradient-to-r from-[#572670] to-purple-600 hover:from-purple-700 hover:to-blue-700">
+                  <Button className="bg-gradient-to-r from-[#572670] to-purple-600 hover:from-purple-700 hover:to-violet-700">
                     <Phone className="w-4 h-4 mr-2" />
                     Schedule Assessment
                   </Button>
