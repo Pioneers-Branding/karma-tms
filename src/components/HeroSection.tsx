@@ -88,7 +88,7 @@ const HeroSection = () => {
               Effective<span className="bg-gradient-to-r from-blue-magenta via-blue-magenta/70 to-blue-magenta bg-clip-text text-transparent">TMS Therapy </span> for Mental Health in Palm Springs
             </h1>
             <p className="text-base sm:text-lg lg:text-xl text-gray-700 leading-relaxed max-w-2xl">
-              Revolutionary FDA-cleared treatment for depression, anxiety, OCD, and PTSD. Our mental health facilities in palm springs provide breakthrough results with advanced TMS technology, offering comprehensive mental health care in Palm Springs, CA, through our experienced mental health counselors.
+              Revolutionary FDA-cleared treatment for depression, anxiety, OCD, and PTSD. Our mental health facilities in Palm Springs provide breakthrough results with advanced TMS technology, offering comprehensive mental health care in Palm Springs, CA, through our experienced mental health counselors.
             </p>
           </div>
 
