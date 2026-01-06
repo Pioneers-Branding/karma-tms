@@ -6,6 +6,7 @@ import FooterSection from '@/components/FooterSection';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
+import SEO from '@/components/SEO'
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from '@/components/ui/collapsible';
 import { ChevronDown, Brain, Shield, Clock, Users, Award, CheckCircle, ArrowRight, Star, TrendingUp, HeadphonesIcon } from 'lucide-react';
 import { Link } from 'react-router-dom';
