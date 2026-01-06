@@ -8,8 +8,8 @@ const ConditionsSection = () => {
     icon: Brain,
     title: 'Depression',
     subtitle: 'Treatment-Resistant',
-    description: 'FDA-approved for major depressive disorder when multiple antidepressants haven\'t worked effectively.',
-    stats: '75% improvement rate'
+    description: 'FDA-cleared for major depressive disorder when multiple antidepressants haven\'t worked effectively.',
+    stats: '85% improvement rate'
   },
   {
     icon: Heart,
@@ -30,7 +30,7 @@ const ConditionsSection = () => {
     title: 'OCD',
     subtitle: 'Obsessive-Compulsive',
     description: 'Specialized TMS protocols for obsessive-compulsive disorder and related conditions.',
-    stats: 'FDA-approved protocol'
+    stats: 'FDA-cleared protocol'
   },
   {
     icon: Users,
