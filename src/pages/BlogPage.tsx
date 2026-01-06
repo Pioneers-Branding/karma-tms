@@ -755,16 +755,16 @@ const BlogPage = () => {
                   {regularPosts.map((post, index) => {
                   const postLinks: {[key: number]: string;} = {
                     1: '/blog/veterans-tms-therapy',
-                    31: '/blogs/how-does-adhd-treatment-work',
-                    32: '/blogs/how-to-avoid-stress-during-holidays',
-                    33: '/blogs/DoesTMSTherapyWorkForAnxiety',
+                    31: '/blog/how-does-adhd-treatment-work',
+                    32: '/blog/how-to-avoid-stress-during-holidays',
+                    33: '/blog/does-tms-therapy-work-for-anxiety',
                     2: '/blog/va-veterans-ptsd-tms-treatment',
                     3: '/blog/va-disability-benefits-depression-anxiety-ptsd',
                     4: '/blog/tms-vs-medication-veterans-depression',
                     5: '/blog/how-to-help-veterans-ptsd',
-                    6: '/blogs/understanding-ptsd-veterans',
-                    7: '/blogs/tms-anxiety-veterans',
-                    8: '/blogs/tms-migraine-veterans',
+                    6: '/blog/understanding-ptsd-veterans',
+                    7: '/blog/tms-anxiety-veterans',
+                    8: '/blog/tms-migraine-veterans',
                     9: '/blog/veterans-tms-therapy',
                     10: '/blog/why-tms-requires-multiple-sessions',
                     11: '/blog/four-as-stress-management',
@@ -778,15 +778,15 @@ const BlogPage = () => {
                     19: '/blog/empowering-youth-emotional-resilience',
                     20: '/blog/family-dynamics-mental-health',
                     21: '/blog/managing-anxiety-triggers',
-                    22: '/blogs/depression-erectile-dysfunction',
-                    23: '/blogs/connecting-teens-mental-wellness',
-                    24: '/blogs/mental-health-community-violence',
+                    22: '/blog/depression-erectile-dysfunction',
+                    23: '/blog/connecting-teens-mental-wellness',
+                    24: '/blog/mental-health-community-violence',
                     25: '/blog/rural-mental-healthcare',
                     26: '/blog/social-media-mental-wellbeing',
                     27: '/blog/common-reasons-psychotherapy',
-                    28: '/blogs/ExploringTheMultifacetedDynamicsOfSuicideInTheElderlyPopulation',
-                    29: '/blogs/PsychiatristsBoostWellBeingThroughExpertCareForMentalHealth',
-                    30: '/blogs/TMSTherapyForTreatmentResistantDepression'
+                    28: '/blog/exploring-multifaceted-dynamics-suicide-elderly-population',
+                    29: '/blog/psychiatrists-boost-well-being-expert-care-mental-health',
+                    30: '/blog/tms-therapy-treatment-resistant-depression'
                   };
                   return (
                     <a
