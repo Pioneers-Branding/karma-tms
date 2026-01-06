@@ -379,7 +379,7 @@ const AnxietyPage = () => {
             </div>
             <div className="relative">
               <img
-                src="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/66e6e1ae-8cc3-4469-bfaf-b1f3f3d07006.webp"
+                src="https://res.cloudinary.com/de4kw1t2i/image/upload/v1765370575/apollo-consultation_1_peyxur.webp"
                 alt="Anxiety treatment session"
                 className="rounded-lg shadow-lg max-h-[600px] mx-auto" />
 
