@@ -209,7 +209,7 @@ const PalmSpringsPage = () => {
               </div>
               <div className="relative h-72 rounded-xl overflow-hidden shadow-lg group">
                 <img
-                  src="https://images.unsplash.com/photo-1709418354370-082f0359a03d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MTg3MTl8MHwxfHNlYXJjaHwxfHxBbiUyMGFkdmFuY2VkJTIwVE1TJTIwdGhlcmFweSUyMGNoYWlyJTIwYXQlMjB0aGUlMjBQYWxtJTIwU3ByaW5ncyUyMGxvY2F0aW9uJTJDJTIwc2hvd2Nhc2luZyUyMGElMjBtb2Rlcm4lMjBhbmQlMjBjb21mb3J0YWJsZSUyMHNldHVwJTIwZm9yJTIwbWVudGFsJTIwaGVhbHRoJTIwdHJlYXRtZW50cy58ZW58MHx8fHwxNzYzNzI2MTU5fDA&ixlib=rb-4.1.0&q=80&w=200$w=1920"
+                  src="https://res.cloudinary.com/de4kw1t2i/image/upload/v1761916023/Image_20251021_173517_696_amecqm.jpg"
                   alt="Advanced TMS therapy chair at Palm Springs location"
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" />
 
