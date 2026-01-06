@@ -55,7 +55,7 @@ const FooterSection = () => {
   },
   {
     label: 'Location 2',
-    addressLines: ['560 S. Paseo Dorotea, Suite 4A', 'Palm Springs, CA 92264']
+    addressLines: ["35400 Bob Hope Dr Ste #206", "Rancho Mirage, CA 92270"]
   },
   {
     label: 'Location 3',
