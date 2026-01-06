@@ -11,7 +11,7 @@ export default function TMSAnxietyVeteransBlogPostPage() {
   const author = {
     name: 'Dr. Keerthy Sunder',
     credentials: 'MD, Board-Certified Psychiatrist',
-    image: 'https://res.cloudinary.com/de4kw1t2i/image/upload/v1762863799/blog_8_l0irim.png',
+    image: 'https://www.prtms.com/wp-content/uploads/2023/03/Dr.-Keerthy-Sunder-scaled.jpg',
     bio: 'Dr. Keerthy Sunder is a board-certified psychiatrist specializing in TMS therapy and treatment-resistant mental health conditions. With extensive experience treating veterans, Dr. Sunder is dedicated to providing innovative, evidence-based care to those who have served our country.'
   };
 
