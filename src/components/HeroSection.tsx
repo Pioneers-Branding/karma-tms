@@ -132,7 +132,7 @@ const HeroSection = () => {
       {/* Right Section - Form & Stats */}
       <div className="xl:col-span-2 bg-gradient-to-br from-blue-magenta via-blue-magenta/70 to-blue-magenta rounded-3xl m-2 p-2 sm:p-2 md:p-2 lg:p-4 xl:p-6 flex flex-col">
         {/* Contact Form */}
-        <div className="bg-white/95 backdrop-blur-lg rounded-3xl p-4 shadow-2xl flex border border-white/20">
+        <div className="bg-white/95 backdrop-blur-lg rounded-3xl p-4 shadow-2xl flex-grow border border-white/20">
           <div className="flex justify-between items-center mb-4 lg:mb-8">
             <h2 className="text-xl lg:text-2xl font-bold text-gray-900 flex items-center">
               <Heart className="w-5 h-5 lg:w-6 lg:h-6 text-violet-600 mr-2" />
