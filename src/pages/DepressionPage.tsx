@@ -13,11 +13,10 @@ const DepressionPage = () => {
   return (
     <div className="min-h-screen">
       <SEO
-        title="TMS Therapy for Depression Treatment | KarmaTMS Palm Springs"
-        description="FDA-approved TMS therapy for treatment-resistant depression. 60-70% success rate with KarmaTMS. Non-invasive depression treatment in Palm Springs. Call now."
-        keywords="TMS therapy depression, depression treatment Palm Springs, treatment-resistant depression, KarmaTMS depression, transcranial magnetic stimulation depression"
-        canonical="/depression"
-        ogImage="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/e3bc971e-e2ab-4334-ac23-0b9876309934.webp" />
+        title="Depression Treatment Center in Palm Springs | Karma TMS PC"
+        description="Karma TMS PC offers advanced and compassionate Depression Treatment in Palm Springs, providing personalized and expert mental health care for lasting recovery."
+        keywords="depression treatment center palm springs, depression palm springs ca, depression therapy palm springs ca"
+        canonical="https://www.karmatms.com/conditions/depression" />
 
       <StructuredData
         type="breadcrumb"
