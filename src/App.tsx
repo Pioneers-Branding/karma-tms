@@ -64,6 +64,9 @@ import ManagingAnxietyTriggersBlogPostPage from "./pages/blogs/ManagingAnxietyTr
 import DepressionErectileDysfunctionBlogPostPage from "./pages/blogs/DepressionErectileDysfunctionBlogPostPage";
 import ConnectingTeensMentalWellnessBlogPostPage from "./pages/blogs/ConnectingTeensMentalWellnessBlogPostPage";
 import MentalHealthCommunityViolenceBlogPostPage from "./pages/blogs/MentalHealthCommunityViolenceBlogPostPage";
+import RuralMentalHealthcareBlogPostPage from "./pages/blogs/RuralMentalHealthcareBlogPostPage";
+import SocialMediaMentalWellbeingBlogPostPage from "./pages/blogs/SocialMediaMentalWellbeingBlogPostPage";
+import CommonReasonsPsychotherapyBlogPostPage from "./pages/blogs/CommonReasonsPsychotherapyBlogPostPage";
 import DisclaimerPage from "./pages/DisclaimerPage";
 
 const queryClient = new QueryClient();
@@ -142,6 +145,9 @@ const App = () =>
           <Route path="/blogs/depression-erectile-dysfunction" element={<DepressionErectileDysfunctionBlogPostPage />} />
           <Route path="/blogs/connecting-teens-mental-wellness" element={<ConnectingTeensMentalWellnessBlogPostPage />} />
           <Route path="/blogs/mental-health-community-violence" element={<MentalHealthCommunityViolenceBlogPostPage />} />
+          <Route path="/blog/rural-mental-healthcare" element={<RuralMentalHealthcareBlogPostPage />} />
+          <Route path="/blog/social-media-mental-wellbeing" element={<SocialMediaMentalWellbeingBlogPostPage />} />
+          <Route path="/blog/common-reasons-psychotherapy" element={<CommonReasonsPsychotherapyBlogPostPage />} />
           <Route path="/blog" element={<BlogPage />} />
           <Route path="/blog/" element={<BlogPage />} />
           <Route path="/research-and-publications" element={<ResearchPage />} />

@@ -10,16 +10,16 @@ import {
   BreadcrumbLink,
   BreadcrumbList,
   BreadcrumbPage,
-  BreadcrumbSeparator
-} from '@/components/ui/breadcrumb';
+  BreadcrumbSeparator } from
+'@/components/ui/breadcrumb';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import {
   Accordion,
   AccordionContent,
   AccordionItem,
-  AccordionTrigger
-} from '@/components/ui/accordion';
+  AccordionTrigger } from
+'@/components/ui/accordion';
 import { Calendar, Clock, User, CheckCircle2, ArrowRight } from 'lucide-react';
 import AuthorBox from '@/components/AuthorBox';
 
@@ -28,13 +28,13 @@ const DepressionErectileDysfunctionBlogPostPage = () => {
   const sectionsRef = useRef<{[key: string]: HTMLElement | null;}>({});
 
   const tocItems = [
-    { id: 'understanding-connection', label: 'Understanding the Connection' },
-    { id: 'biological-factors', label: 'Biological Factors' },
-    { id: 'psychological-impact', label: 'Psychological Impact' },
-    { id: 'medication-effects', label: 'Medication Effects' },
-    { id: 'treatment-options', label: 'Treatment Options' },
-    { id: 'faqs', label: 'Frequently Asked Questions' }
-  ];
+  { id: 'understanding-connection', label: 'Understanding the Connection' },
+  { id: 'biological-factors', label: 'Biological Factors' },
+  { id: 'psychological-impact', label: 'Psychological Impact' },
+  { id: 'medication-effects', label: 'Medication Effects' },
+  { id: 'treatment-options', label: 'Treatment Options' },
+  { id: 'faqs', label: 'Frequently Asked Questions' }];
+
 
   useEffect(() => {
     const handleScroll = () => {
@@ -67,52 +67,52 @@ const DepressionErectileDysfunctionBlogPostPage = () => {
   };
 
   const faqs = [
-    {
-      question: 'Can depression alone cause erectile dysfunction?',
-      answer: 'Yes, depression can directly cause erectile dysfunction through multiple mechanisms. Depression affects neurotransmitters like serotonin and dopamine that regulate sexual desire and arousal. It also impacts energy levels, self-esteem, and emotional connection—all crucial for healthy sexual function.'
-    },
-    {
-      question: 'Will treating my depression improve erectile dysfunction?',
-      answer: 'In many cases, yes. Studies show that effectively treating depression often leads to significant improvements in sexual function. However, it\'s important to work with your healthcare provider to find treatments that address both conditions, as some antidepressants can worsen ED symptoms.'
-    },
-    {
-      question: 'How does TMS therapy help with depression-related ED?',
-      answer: 'TMS therapy treats depression without the sexual side effects commonly associated with antidepressants. By addressing the root cause of depression through brain stimulation, TMS can improve both mood and sexual function naturally, without medication-induced ED.'
-    },
-    {
-      question: 'Is erectile dysfunction from depression permanent?',
-      answer: 'No, erectile dysfunction caused by depression is typically not permanent. When depression is effectively treated, sexual function usually improves. The timeline varies by individual, but many men notice improvements within weeks to months of starting effective depression treatment.'
-    },
-    {
-      question: 'Should I talk to my doctor about both depression and ED?',
-      answer: 'Absolutely. Open communication with your healthcare provider about both conditions is essential for effective treatment. Many men feel embarrassed discussing ED, but it\'s a common medical concern that deserves professional attention, especially when linked to depression.'
-    },
-    {
-      question: 'Can lifestyle changes help with both conditions?',
-      answer: 'Yes, lifestyle modifications can benefit both depression and ED. Regular exercise, healthy diet, adequate sleep, stress management, and limiting alcohol can improve mood, energy, and sexual function. These changes work synergistically with professional treatment.'
-    }
-  ];
+  {
+    question: 'Can depression alone cause erectile dysfunction?',
+    answer: 'Yes, depression can directly cause erectile dysfunction through multiple mechanisms. Depression affects neurotransmitters like serotonin and dopamine that regulate sexual desire and arousal. It also impacts energy levels, self-esteem, and emotional connection—all crucial for healthy sexual function.'
+  },
+  {
+    question: 'Will treating my depression improve erectile dysfunction?',
+    answer: 'In many cases, yes. Studies show that effectively treating depression often leads to significant improvements in sexual function. However, it\'s important to work with your healthcare provider to find treatments that address both conditions, as some antidepressants can worsen ED symptoms.'
+  },
+  {
+    question: 'How does TMS therapy help with depression-related ED?',
+    answer: 'TMS therapy treats depression without the sexual side effects commonly associated with antidepressants. By addressing the root cause of depression through brain stimulation, TMS can improve both mood and sexual function naturally, without medication-induced ED.'
+  },
+  {
+    question: 'Is erectile dysfunction from depression permanent?',
+    answer: 'No, erectile dysfunction caused by depression is typically not permanent. When depression is effectively treated, sexual function usually improves. The timeline varies by individual, but many men notice improvements within weeks to months of starting effective depression treatment.'
+  },
+  {
+    question: 'Should I talk to my doctor about both depression and ED?',
+    answer: 'Absolutely. Open communication with your healthcare provider about both conditions is essential for effective treatment. Many men feel embarrassed discussing ED, but it\'s a common medical concern that deserves professional attention, especially when linked to depression.'
+  },
+  {
+    question: 'Can lifestyle changes help with both conditions?',
+    answer: 'Yes, lifestyle modifications can benefit both depression and ED. Regular exercise, healthy diet, adequate sleep, stress management, and limiting alcohol can improve mood, energy, and sexual function. These changes work synergistically with professional treatment.'
+  }];
+
 
   const relatedPosts = [
-    {
-      title: 'How TMS Therapy Helps Veterans Heal',
-      excerpt: 'Discover how TMS therapy offers veterans new hope for PTSD, depression, and anxiety.',
-      link: '/blog/veterans-tms-therapy',
-      image: 'https://res.cloudinary.com/de4kw1t2i/image/upload/v1763036078/0_zutd9g.png'
-    },
-    {
-      title: 'TMS vs Medication for Depression',
-      excerpt: 'Compare TMS therapy and medication for depression treatment.',
-      link: '/blog/tms-vs-medication-veterans-depression',
-      image: 'https://res.cloudinary.com/de4kw1t2i/image/upload/v1763033665/3_zl830g.png'
-    },
-    {
-      title: 'Is TMS Therapy Permanent?',
-      excerpt: 'Explore the long-term effectiveness of TMS therapy for lasting relief.',
-      link: '/blog/is-tms-therapy-permanent',
-      image: 'https://res.cloudinary.com/de4kw1t2i/image/upload/v1763376733/13_nl6y75.png'
-    }
-  ];
+  {
+    title: 'How TMS Therapy Helps Veterans Heal',
+    excerpt: 'Discover how TMS therapy offers veterans new hope for PTSD, depression, and anxiety.',
+    link: '/blog/veterans-tms-therapy',
+    image: 'https://res.cloudinary.com/de4kw1t2i/image/upload/v1763036078/0_zutd9g.png'
+  },
+  {
+    title: 'TMS vs Medication for Depression',
+    excerpt: 'Compare TMS therapy and medication for depression treatment.',
+    link: '/blog/tms-vs-medication-veterans-depression',
+    image: 'https://res.cloudinary.com/de4kw1t2i/image/upload/v1763033665/3_zl830g.png'
+  },
+  {
+    title: 'Is TMS Therapy Permanent?',
+    excerpt: 'Explore the long-term effectiveness of TMS therapy for lasting relief.',
+    link: '/blog/is-tms-therapy-permanent',
+    image: 'https://res.cloudinary.com/de4kw1t2i/image/upload/v1763376733/13_nl6y75.png'
+  }];
+
 
   const articleSchema = {
     '@context': 'https://schema.org',
@@ -161,17 +161,17 @@ const DepressionErectileDysfunctionBlogPostPage = () => {
         keywords="depression erectile dysfunction, ED and depression, mental health sexual dysfunction, depression treatment ED, TMS therapy for depression, sexual side effects antidepressants"
         canonical="/blogs/depression-erectile-dysfunction"
         ogImage="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/2ddc8d69-b09a-4f1d-bd47-6d783ceefbd1.webp"
-        ogType="article"
-      />
+        ogType="article" />
+
 
       <StructuredData
         type="breadcrumb"
         breadcrumbs={[
-          { name: 'Home', url: '/' },
-          { name: 'Blog', url: '/blog' },
-          { name: 'Depression and Erectile Dysfunction', url: '/blogs/depression-erectile-dysfunction' }
-        ]}
-      />
+        { name: 'Home', url: '/' },
+        { name: 'Blog', url: '/blog' },
+        { name: 'Depression and Erectile Dysfunction', url: '/blogs/depression-erectile-dysfunction' }]
+        } />
+
 
       <script type="application/ld+json">
         {JSON.stringify(articleSchema)}
@@ -255,19 +255,19 @@ const DepressionErectileDysfunctionBlogPostPage = () => {
                 <CardContent className="p-6">
                   <h3 className="font-bold text-lg mb-4 text-[#572670]">Table of Contents</h3>
                   <nav className="space-y-2">
-                    {tocItems.map((item) => (
-                      <button
-                        key={item.id}
-                        onClick={() => scrollToSection(item.id)}
-                        className={`block w-full text-left px-3 py-2 rounded-md text-sm transition-all ${
-                          activeSection === item.id
-                            ? 'bg-[#572670] text-white font-medium'
-                            : 'text-gray-700 hover:bg-[#572670]/10'
-                        }`}
-                      >
+                    {tocItems.map((item) =>
+                    <button
+                      key={item.id}
+                      onClick={() => scrollToSection(item.id)}
+                      className={`block w-full text-left px-3 py-2 rounded-md text-sm transition-all ${
+                      activeSection === item.id ?
+                      'bg-[#572670] text-white font-medium' :
+                      'text-gray-700 hover:bg-[#572670]/10'}`
+                      }>
+
                         {item.label}
                       </button>
-                    ))}
+                    )}
                   </nav>
                   <div className="mt-6 pt-6 border-t">
                     <Button asChild className="w-full bg-[#572670] hover:bg-[#7B3FA0]">
@@ -286,8 +286,8 @@ const DepressionErectileDysfunctionBlogPostPage = () => {
               <img
                 src="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/2ddc8d69-b09a-4f1d-bd47-6d783ceefbd1.webp"
                 alt="Depression and erectile dysfunction connection"
-                className="w-full object-cover rounded-lg mb-6"
-              />
+                className="w-full object-cover rounded-lg mb-6" />
+
 
               <p className="text-xl text-gray-700 leading-relaxed">
                 The relationship between depression and erectile dysfunction (ED) is far more complex than many people realize. These two conditions often coexist, creating a cyclical pattern where each exacerbates the other. Understanding this connection is crucial for effective treatment and recovery. Whether depression leads to ED, or ED triggers depression, addressing both conditions simultaneously offers the best path forward.
@@ -547,20 +547,20 @@ const DepressionErectileDysfunctionBlogPostPage = () => {
               name="karmatmsdev"
               role="Mental Health Content Specialist at KarmaTMS"
               bio="Dedicated to providing evidence-based mental health information and resources. Our team works with medical professionals to deliver accurate, compassionate content on depression, anxiety, and innovative treatments like TMS therapy."
-              image="https://www.prtms.com/wp-content/uploads/2023/03/Dr.-Keerthy-Sunder-scaled.jpg"
-            />
+              image="https://www.prtms.com/wp-content/uploads/2023/03/Dr.-Keerthy-Sunder-scaled.jpg" />
+
 
             {/* FAQ Section */}
             <section ref={(el) => sectionsRef.current['faqs'] = el} className="mb-12 mt-12">
               <h2 className="text-3xl font-bold text-[#572670] mb-6">Frequently Asked Questions</h2>
               
               <Accordion type="single" collapsible className="w-full space-y-2">
-                {faqs.map((faq, index) => (
-                  <AccordionItem
-                    key={index}
-                    value={`item-${index}`}
-                    className="border border-gray-200 rounded-lg px-4 data-[state=open]:border-[#572670]"
-                  >
+                {faqs.map((faq, index) =>
+                <AccordionItem
+                  key={index}
+                  value={`item-${index}`}
+                  className="border border-gray-200 rounded-lg px-4 data-[state=open]:border-[#572670]">
+
                     <AccordionTrigger className="text-left font-semibold hover:text-[#572670] hover:no-underline">
                       {faq.question}
                     </AccordionTrigger>
@@ -568,7 +568,7 @@ const DepressionErectileDysfunctionBlogPostPage = () => {
                       {faq.answer}
                     </AccordionContent>
                   </AccordionItem>
-                ))}
+                )}
               </Accordion>
             </section>
 
@@ -596,13 +596,13 @@ const DepressionErectileDysfunctionBlogPostPage = () => {
             <section className="mb-12">
               <h2 className="text-3xl font-bold text-[#572670] mb-6">Related Articles</h2>
               <div className="grid md:grid-cols-3 gap-6">
-                {relatedPosts.map((post, index) => (
-                  <Card key={index} className="border-[#572670]/20 overflow-hidden hover:shadow-lg transition-shadow">
+                {relatedPosts.map((post, index) =>
+                <Card key={index} className="border-[#572670]/20 overflow-hidden hover:shadow-lg transition-shadow">
                     <img
-                      src={post.image}
-                      alt={post.title}
-                      className="w-full object-cover"
-                    />
+                    src={post.image}
+                    alt={post.title}
+                    className="w-full object-cover" />
+
                     <CardContent className="p-6">
                       <h3 className="font-bold text-lg mb-2 hover:text-[#572670] transition-colors">
                         <Link to={post.link}>{post.title}</Link>
@@ -615,7 +615,7 @@ const DepressionErectileDysfunctionBlogPostPage = () => {
                       </Button>
                     </CardContent>
                   </Card>
-                ))}
+                )}
               </div>
             </section>
           </article>
@@ -623,8 +623,8 @@ const DepressionErectileDysfunctionBlogPostPage = () => {
       </div>
 
       <FooterSection />
-    </>
-  );
+    </>);
+
 };
 
 export default DepressionErectileDysfunctionBlogPostPage;

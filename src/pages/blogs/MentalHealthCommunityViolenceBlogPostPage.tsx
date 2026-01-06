@@ -10,16 +10,16 @@ import {
   BreadcrumbLink,
   BreadcrumbList,
   BreadcrumbPage,
-  BreadcrumbSeparator
-} from '@/components/ui/breadcrumb';
+  BreadcrumbSeparator } from
+'@/components/ui/breadcrumb';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import {
   Accordion,
   AccordionContent,
   AccordionItem,
-  AccordionTrigger
-} from '@/components/ui/accordion';
+  AccordionTrigger } from
+'@/components/ui/accordion';
 import { Calendar, Clock, User, CheckCircle2, ArrowRight, Phone, Heart } from 'lucide-react';
 import AuthorBox from '@/components/AuthorBox';
 
@@ -28,13 +28,13 @@ const MentalHealthCommunityViolenceBlogPostPage = () => {
   const sectionsRef = useRef<{[key: string]: HTMLElement | null;}>({});
 
   const tocItems = [
-    { id: 'understanding-impact', label: 'Understanding the Impact' },
-    { id: 'trauma-responses', label: 'Trauma Responses' },
-    { id: 'coping-strategies', label: 'Immediate Coping Strategies' },
-    { id: 'community-resources', label: 'Community Resources' },
-    { id: 'building-resilience', label: 'Building Long-term Resilience' },
-    { id: 'faqs', label: 'Frequently Asked Questions' }
-  ];
+  { id: 'understanding-impact', label: 'Understanding the Impact' },
+  { id: 'trauma-responses', label: 'Trauma Responses' },
+  { id: 'coping-strategies', label: 'Immediate Coping Strategies' },
+  { id: 'community-resources', label: 'Community Resources' },
+  { id: 'building-resilience', label: 'Building Long-term Resilience' },
+  { id: 'faqs', label: 'Frequently Asked Questions' }];
+
 
   useEffect(() => {
     const handleScroll = () => {
@@ -67,52 +67,52 @@ const MentalHealthCommunityViolenceBlogPostPage = () => {
   };
 
   const faqs = [
-    {
-      question: 'How long do psychological effects of community violence last?',
-      answer: 'The duration varies significantly by individual and depends on factors like proximity to violence, previous trauma history, available support, and access to treatment. Some people recover within weeks, while others experience long-lasting effects requiring professional intervention. Early support significantly improves outcomes.'
-    },
-    {
-      question: 'Can witnessing violence cause PTSD even if I wasn\'t directly harmed?',
-      answer: 'Absolutely. Witnessing violence, learning about violence to loved ones, or repeated exposure to violent details can all cause PTSD. Secondary trauma is real and deserves the same attention and treatment as direct trauma exposure.'
-    },
-    {
-      question: 'How do I talk to children about community violence?',
-      answer: 'Be honest but age-appropriate. Reassure them of safety measures while acknowledging their feelings. Limit their media exposure to violent events. Answer their questions honestly but simply. Maintain routines to provide stability. Watch for changes in behavior that might indicate distress.'
-    },
-    {
-      question: 'What if I can\'t afford mental health treatment?',
-      answer: 'Many resources exist for low-cost or free mental health support: community health centers, crisis hotlines, support groups, employee assistance programs, sliding-scale therapy, university training clinics, and online resources. The 988 Suicide & Crisis Lifeline and SAMHSA National Helpline (1-800-662-4357) can connect you with local resources.'
-    },
-    {
-      question: 'How can I support someone affected by community violence?',
-      answer: 'Listen without judgment, validate their feelings, offer practical help (meals, childcare, etc.), respect their pace of recovery, educate yourself about trauma responses, avoid pushing them to talk before they\'re ready, and encourage professional support while respecting their autonomy.'
-    },
-    {
-      question: 'When should I seek professional help after exposure to violence?',
-      answer: 'Seek help if symptoms persist beyond a month, interfere with daily functioning, cause significant distress, include thoughts of self-harm, or if you\'re using substances to cope. However, you don\'t need to wait—early intervention often prevents more serious problems.'
-    }
-  ];
+  {
+    question: 'How long do psychological effects of community violence last?',
+    answer: 'The duration varies significantly by individual and depends on factors like proximity to violence, previous trauma history, available support, and access to treatment. Some people recover within weeks, while others experience long-lasting effects requiring professional intervention. Early support significantly improves outcomes.'
+  },
+  {
+    question: 'Can witnessing violence cause PTSD even if I wasn\'t directly harmed?',
+    answer: 'Absolutely. Witnessing violence, learning about violence to loved ones, or repeated exposure to violent details can all cause PTSD. Secondary trauma is real and deserves the same attention and treatment as direct trauma exposure.'
+  },
+  {
+    question: 'How do I talk to children about community violence?',
+    answer: 'Be honest but age-appropriate. Reassure them of safety measures while acknowledging their feelings. Limit their media exposure to violent events. Answer their questions honestly but simply. Maintain routines to provide stability. Watch for changes in behavior that might indicate distress.'
+  },
+  {
+    question: 'What if I can\'t afford mental health treatment?',
+    answer: 'Many resources exist for low-cost or free mental health support: community health centers, crisis hotlines, support groups, employee assistance programs, sliding-scale therapy, university training clinics, and online resources. The 988 Suicide & Crisis Lifeline and SAMHSA National Helpline (1-800-662-4357) can connect you with local resources.'
+  },
+  {
+    question: 'How can I support someone affected by community violence?',
+    answer: 'Listen without judgment, validate their feelings, offer practical help (meals, childcare, etc.), respect their pace of recovery, educate yourself about trauma responses, avoid pushing them to talk before they\'re ready, and encourage professional support while respecting their autonomy.'
+  },
+  {
+    question: 'When should I seek professional help after exposure to violence?',
+    answer: 'Seek help if symptoms persist beyond a month, interfere with daily functioning, cause significant distress, include thoughts of self-harm, or if you\'re using substances to cope. However, you don\'t need to wait—early intervention often prevents more serious problems.'
+  }];
+
 
   const relatedPosts = [
-    {
-      title: 'Understanding PTSD in Veterans',
-      excerpt: 'A comprehensive guide to recognizing PTSD signs, symptoms, and treatment paths.',
-      link: '/blogs/understanding-ptsd-veterans',
-      image: 'https://res.cloudinary.com/de4kw1t2i/image/upload/v1763033666/5_kvtlku.png'
-    },
-    {
-      title: 'Mental Health First Aid: How to Help Someone in Crisis',
-      excerpt: 'Learn essential mental health first aid skills for crisis situations.',
-      link: '/blog/mental-health-first-aid',
-      image: 'https://res.cloudinary.com/de4kw1t2i/image/upload/v1763376735/19_luad51.png'
-    },
-    {
-      title: 'Managing Anxiety Triggers in Everyday Life',
-      excerpt: 'Learn practical strategies to identify and manage anxiety triggers effectively.',
-      link: '/blog/managing-anxiety-triggers',
-      image: 'https://res.cloudinary.com/de4kw1t2i/image/upload/v1763376737/22_wiizht.png'
-    }
-  ];
+  {
+    title: 'Understanding PTSD in Veterans',
+    excerpt: 'A comprehensive guide to recognizing PTSD signs, symptoms, and treatment paths.',
+    link: '/blogs/understanding-ptsd-veterans',
+    image: 'https://res.cloudinary.com/de4kw1t2i/image/upload/v1763033666/5_kvtlku.png'
+  },
+  {
+    title: 'Mental Health First Aid: How to Help Someone in Crisis',
+    excerpt: 'Learn essential mental health first aid skills for crisis situations.',
+    link: '/blog/mental-health-first-aid',
+    image: 'https://res.cloudinary.com/de4kw1t2i/image/upload/v1763376735/19_luad51.png'
+  },
+  {
+    title: 'Managing Anxiety Triggers in Everyday Life',
+    excerpt: 'Learn practical strategies to identify and manage anxiety triggers effectively.',
+    link: '/blog/managing-anxiety-triggers',
+    image: 'https://res.cloudinary.com/de4kw1t2i/image/upload/v1763376737/22_wiizht.png'
+  }];
+
 
   const articleSchema = {
     '@context': 'https://schema.org',
@@ -161,17 +161,17 @@ const MentalHealthCommunityViolenceBlogPostPage = () => {
         keywords="community violence, trauma recovery, PTSD treatment, mental health resources, trauma-informed care, violence exposure, community mental health, crisis support"
         canonical="/blogs/mental-health-community-violence"
         ogImage="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/b3740a3e-1c6d-4eb7-8300-432f7cb4655c.webp"
-        ogType="article"
-      />
+        ogType="article" />
+
 
       <StructuredData
         type="breadcrumb"
         breadcrumbs={[
-          { name: 'Home', url: '/' },
-          { name: 'Blog', url: '/blog' },
-          { name: 'Mental Health & Community Violence', url: '/blogs/mental-health-community-violence' }
-        ]}
-      />
+        { name: 'Home', url: '/' },
+        { name: 'Blog', url: '/blog' },
+        { name: 'Mental Health & Community Violence', url: '/blogs/mental-health-community-violence' }]
+        } />
+
 
       <script type="application/ld+json">
         {JSON.stringify(articleSchema)}
@@ -255,19 +255,19 @@ const MentalHealthCommunityViolenceBlogPostPage = () => {
                 <CardContent className="p-6">
                   <h3 className="font-bold text-lg mb-4 text-[#572670]">Table of Contents</h3>
                   <nav className="space-y-2">
-                    {tocItems.map((item) => (
-                      <button
-                        key={item.id}
-                        onClick={() => scrollToSection(item.id)}
-                        className={`block w-full text-left px-3 py-2 rounded-md text-sm transition-all ${
-                          activeSection === item.id
-                            ? 'bg-[#572670] text-white font-medium'
-                            : 'text-gray-700 hover:bg-[#572670]/10'
-                        }`}
-                      >
+                    {tocItems.map((item) =>
+                    <button
+                      key={item.id}
+                      onClick={() => scrollToSection(item.id)}
+                      className={`block w-full text-left px-3 py-2 rounded-md text-sm transition-all ${
+                      activeSection === item.id ?
+                      'bg-[#572670] text-white font-medium' :
+                      'text-gray-700 hover:bg-[#572670]/10'}`
+                      }>
+
                         {item.label}
                       </button>
-                    ))}
+                    )}
                   </nav>
                   <div className="mt-6 pt-6 border-t">
                     <div className="bg-red-50 border border-red-200 rounded-lg p-4 mb-4">
@@ -291,8 +291,8 @@ const MentalHealthCommunityViolenceBlogPostPage = () => {
               <img
                 src="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/b3740a3e-1c6d-4eb7-8300-432f7cb4655c.webp"
                 alt="Community support and mental health resources"
-                className="w-full object-cover rounded-lg mb-6"
-              />
+                className="w-full object-cover rounded-lg mb-6" />
+
 
               <p className="text-xl text-gray-700 leading-relaxed">
                 Community violence—whether a shooting, assault, or other traumatic event—leaves invisible wounds that can persist long after physical injuries heal. The psychological impact extends beyond direct victims to witnesses, first responders, families, and entire communities. Understanding these effects and knowing where to turn for help is crucial for healing and recovery. This comprehensive guide provides evidence-based information on coping with trauma, accessing mental health resources, and building long-term resilience.
@@ -641,20 +641,20 @@ const MentalHealthCommunityViolenceBlogPostPage = () => {
               name="karmatmsdev"
               role="Mental Health Content Specialist at KarmaTMS"
               bio="Dedicated to providing evidence-based mental health information and resources. Our team works with medical professionals to deliver accurate, compassionate content on depression, anxiety, and innovative treatments like TMS therapy."
-              image="https://www.prtms.com/wp-content/uploads/2023/03/Dr.-Keerthy-Sunder-scaled.jpg"
-            />
+              image="https://www.prtms.com/wp-content/uploads/2023/03/Dr.-Keerthy-Sunder-scaled.jpg" />
+
 
             {/* FAQ Section */}
             <section ref={(el) => sectionsRef.current['faqs'] = el} className="mb-12 mt-12">
               <h2 className="text-3xl font-bold text-[#572670] mb-6">Frequently Asked Questions</h2>
               
               <Accordion type="single" collapsible className="w-full space-y-2">
-                {faqs.map((faq, index) => (
-                  <AccordionItem
-                    key={index}
-                    value={`item-${index}`}
-                    className="border border-gray-200 rounded-lg px-4 data-[state=open]:border-[#572670]"
-                  >
+                {faqs.map((faq, index) =>
+                <AccordionItem
+                  key={index}
+                  value={`item-${index}`}
+                  className="border border-gray-200 rounded-lg px-4 data-[state=open]:border-[#572670]">
+
                     <AccordionTrigger className="text-left font-semibold hover:text-[#572670] hover:no-underline">
                       {faq.question}
                     </AccordionTrigger>
@@ -662,7 +662,7 @@ const MentalHealthCommunityViolenceBlogPostPage = () => {
                       {faq.answer}
                     </AccordionContent>
                   </AccordionItem>
-                ))}
+                )}
               </Accordion>
             </section>
 
@@ -690,13 +690,13 @@ const MentalHealthCommunityViolenceBlogPostPage = () => {
             <section className="mb-12">
               <h2 className="text-3xl font-bold text-[#572670] mb-6">Related Articles</h2>
               <div className="grid md:grid-cols-3 gap-6">
-                {relatedPosts.map((post, index) => (
-                  <Card key={index} className="border-[#572670]/20 overflow-hidden hover:shadow-lg transition-shadow">
+                {relatedPosts.map((post, index) =>
+                <Card key={index} className="border-[#572670]/20 overflow-hidden hover:shadow-lg transition-shadow">
                     <img
-                      src={post.image}
-                      alt={post.title}
-                      className="w-full object-cover"
-                    />
+                    src={post.image}
+                    alt={post.title}
+                    className="w-full object-cover" />
+
                     <CardContent className="p-6">
                       <h3 className="font-bold text-lg mb-2 hover:text-[#572670] transition-colors">
                         <Link to={post.link}>{post.title}</Link>
@@ -709,7 +709,7 @@ const MentalHealthCommunityViolenceBlogPostPage = () => {
                       </Button>
                     </CardContent>
                   </Card>
-                ))}
+                )}
               </div>
             </section>
           </article>
@@ -717,8 +717,8 @@ const MentalHealthCommunityViolenceBlogPostPage = () => {
       </div>
 
       <FooterSection />
-    </>
-  );
+    </>);
+
 };
 
 export default MentalHealthCommunityViolenceBlogPostPage;

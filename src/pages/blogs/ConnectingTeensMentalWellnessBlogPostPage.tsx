@@ -10,16 +10,16 @@ import {
   BreadcrumbLink,
   BreadcrumbList,
   BreadcrumbPage,
-  BreadcrumbSeparator
-} from '@/components/ui/breadcrumb';
+  BreadcrumbSeparator } from
+'@/components/ui/breadcrumb';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import {
   Accordion,
   AccordionContent,
   AccordionItem,
-  AccordionTrigger
-} from '@/components/ui/accordion';
+  AccordionTrigger } from
+'@/components/ui/accordion';
 import { Calendar, Clock, User, CheckCircle2, ArrowRight, AlertTriangle } from 'lucide-react';
 import AuthorBox from '@/components/AuthorBox';
 
@@ -28,13 +28,13 @@ const ConnectingTeensMentalWellnessBlogPostPage = () => {
   const sectionsRef = useRef<{[key: string]: HTMLElement | null;}>({});
 
   const tocItems = [
-    { id: 'communication-barriers', label: 'Understanding Communication Barriers' },
-    { id: 'building-trust', label: 'Building Trust and Safety' },
-    { id: 'warning-signs', label: 'Recognizing Warning Signs' },
-    { id: 'conversation-strategies', label: 'Effective Conversation Strategies' },
-    { id: 'professional-help', label: 'When to Seek Professional Help' },
-    { id: 'faqs', label: 'Frequently Asked Questions' }
-  ];
+  { id: 'communication-barriers', label: 'Understanding Communication Barriers' },
+  { id: 'building-trust', label: 'Building Trust and Safety' },
+  { id: 'warning-signs', label: 'Recognizing Warning Signs' },
+  { id: 'conversation-strategies', label: 'Effective Conversation Strategies' },
+  { id: 'professional-help', label: 'When to Seek Professional Help' },
+  { id: 'faqs', label: 'Frequently Asked Questions' }];
+
 
   useEffect(() => {
     const handleScroll = () => {
@@ -67,52 +67,52 @@ const ConnectingTeensMentalWellnessBlogPostPage = () => {
   };
 
   const faqs = [
-    {
-      question: 'How do I start a mental health conversation with my teen?',
-      answer: 'Choose a relaxed, private setting and start with open-ended questions like "How have you been feeling lately?" Avoid judgmental language and be prepared to listen more than you talk. Share your own experiences with stress or difficult emotions to normalize the conversation.'
-    },
-    {
-      question: 'What if my teen refuses to talk about their feelings?',
-      answer: 'Respect their boundaries while maintaining availability. Let them know you\'re there when they\'re ready. Consider alternative communication methods like texting or writing notes. Sometimes teens open up more during shared activities rather than formal sit-down conversations.'
-    },
-    {
-      question: 'How can I tell if my teen needs professional help?',
-      answer: 'Warning signs include persistent sadness lasting more than two weeks, withdrawal from activities and friends, significant changes in eating or sleeping patterns, declining grades, risky behaviors, or any mention of self-harm or suicide. When in doubt, consult a mental health professional.'
-    },
-    {
-      question: 'What should I avoid saying to my struggling teen?',
-      answer: 'Avoid dismissive phrases like "It\'s just a phase," "Other people have it worse," or "Just think positive." Don\'t minimize their feelings or offer quick fixes. Instead, validate their emotions and show you take their concerns seriously.'
-    },
-    {
-      question: 'How do I balance giving space with staying involved?',
-      answer: 'Respect their growing independence while maintaining consistent check-ins. Set clear boundaries about safety and communication. Stay involved in their lives by attending events, meeting friends, and showing interest in their activities without being intrusive.'
-    },
-    {
-      question: 'Can social media really affect my teen\'s mental health?',
-      answer: 'Yes, research shows excessive social media use is linked to increased anxiety, depression, and poor sleep in teenagers. It can create unrealistic comparisons, cyberbullying, and fear of missing out (FOMO). Set healthy limits and discuss social media literacy.'
-    }
-  ];
+  {
+    question: 'How do I start a mental health conversation with my teen?',
+    answer: 'Choose a relaxed, private setting and start with open-ended questions like "How have you been feeling lately?" Avoid judgmental language and be prepared to listen more than you talk. Share your own experiences with stress or difficult emotions to normalize the conversation.'
+  },
+  {
+    question: 'What if my teen refuses to talk about their feelings?',
+    answer: 'Respect their boundaries while maintaining availability. Let them know you\'re there when they\'re ready. Consider alternative communication methods like texting or writing notes. Sometimes teens open up more during shared activities rather than formal sit-down conversations.'
+  },
+  {
+    question: 'How can I tell if my teen needs professional help?',
+    answer: 'Warning signs include persistent sadness lasting more than two weeks, withdrawal from activities and friends, significant changes in eating or sleeping patterns, declining grades, risky behaviors, or any mention of self-harm or suicide. When in doubt, consult a mental health professional.'
+  },
+  {
+    question: 'What should I avoid saying to my struggling teen?',
+    answer: 'Avoid dismissive phrases like "It\'s just a phase," "Other people have it worse," or "Just think positive." Don\'t minimize their feelings or offer quick fixes. Instead, validate their emotions and show you take their concerns seriously.'
+  },
+  {
+    question: 'How do I balance giving space with staying involved?',
+    answer: 'Respect their growing independence while maintaining consistent check-ins. Set clear boundaries about safety and communication. Stay involved in their lives by attending events, meeting friends, and showing interest in their activities without being intrusive.'
+  },
+  {
+    question: 'Can social media really affect my teen\'s mental health?',
+    answer: 'Yes, research shows excessive social media use is linked to increased anxiety, depression, and poor sleep in teenagers. It can create unrealistic comparisons, cyberbullying, and fear of missing out (FOMO). Set healthy limits and discuss social media literacy.'
+  }];
+
 
   const relatedPosts = [
-    {
-      title: 'Empowering Youth: Strategies for Building Emotional Resilience',
-      excerpt: 'Discover proven strategies for building emotional resilience in young people.',
-      link: '/blog/empowering-youth-emotional-resilience',
-      image: 'https://res.cloudinary.com/de4kw1t2i/image/upload/v1763376734/20_xdad6g.png'
-    },
-    {
-      title: 'Managing Anxiety Triggers in Everyday Life',
-      excerpt: 'Learn practical strategies to identify and manage anxiety triggers effectively.',
-      link: '/blog/managing-anxiety-triggers',
-      image: 'https://res.cloudinary.com/de4kw1t2i/image/upload/v1763376737/22_wiizht.png'
-    },
-    {
-      title: 'Mental Health First Aid: How to Help Someone in Crisis',
-      excerpt: 'Learn essential mental health first aid skills for crisis situations.',
-      link: '/blog/mental-health-first-aid',
-      image: 'https://res.cloudinary.com/de4kw1t2i/image/upload/v1763376735/19_luad51.png'
-    }
-  ];
+  {
+    title: 'Empowering Youth: Strategies for Building Emotional Resilience',
+    excerpt: 'Discover proven strategies for building emotional resilience in young people.',
+    link: '/blog/empowering-youth-emotional-resilience',
+    image: 'https://res.cloudinary.com/de4kw1t2i/image/upload/v1763376734/20_xdad6g.png'
+  },
+  {
+    title: 'Managing Anxiety Triggers in Everyday Life',
+    excerpt: 'Learn practical strategies to identify and manage anxiety triggers effectively.',
+    link: '/blog/managing-anxiety-triggers',
+    image: 'https://res.cloudinary.com/de4kw1t2i/image/upload/v1763376737/22_wiizht.png'
+  },
+  {
+    title: 'Mental Health First Aid: How to Help Someone in Crisis',
+    excerpt: 'Learn essential mental health first aid skills for crisis situations.',
+    link: '/blog/mental-health-first-aid',
+    image: 'https://res.cloudinary.com/de4kw1t2i/image/upload/v1763376735/19_luad51.png'
+  }];
+
 
   const articleSchema = {
     '@context': 'https://schema.org',
@@ -161,17 +161,17 @@ const ConnectingTeensMentalWellnessBlogPostPage = () => {
         keywords="teen mental health, parent teen communication, adolescent mental wellness, teenage depression, teen anxiety, parenting strategies, mental health conversations, warning signs teens"
         canonical="/blogs/connecting-teens-mental-wellness"
         ogImage="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/62abea2f-775f-47a7-ad22-2bfc58d01038.webp"
-        ogType="article"
-      />
+        ogType="article" />
+
 
       <StructuredData
         type="breadcrumb"
         breadcrumbs={[
-          { name: 'Home', url: '/' },
-          { name: 'Blog', url: '/blog' },
-          { name: 'Connecting with Teens', url: '/blogs/connecting-teens-mental-wellness' }
-        ]}
-      />
+        { name: 'Home', url: '/' },
+        { name: 'Blog', url: '/blog' },
+        { name: 'Connecting with Teens', url: '/blogs/connecting-teens-mental-wellness' }]
+        } />
+
 
       <script type="application/ld+json">
         {JSON.stringify(articleSchema)}
@@ -255,19 +255,19 @@ const ConnectingTeensMentalWellnessBlogPostPage = () => {
                 <CardContent className="p-6">
                   <h3 className="font-bold text-lg mb-4 text-[#572670]">Table of Contents</h3>
                   <nav className="space-y-2">
-                    {tocItems.map((item) => (
-                      <button
-                        key={item.id}
-                        onClick={() => scrollToSection(item.id)}
-                        className={`block w-full text-left px-3 py-2 rounded-md text-sm transition-all ${
-                          activeSection === item.id
-                            ? 'bg-[#572670] text-white font-medium'
-                            : 'text-gray-700 hover:bg-[#572670]/10'
-                        }`}
-                      >
+                    {tocItems.map((item) =>
+                    <button
+                      key={item.id}
+                      onClick={() => scrollToSection(item.id)}
+                      className={`block w-full text-left px-3 py-2 rounded-md text-sm transition-all ${
+                      activeSection === item.id ?
+                      'bg-[#572670] text-white font-medium' :
+                      'text-gray-700 hover:bg-[#572670]/10'}`
+                      }>
+
                         {item.label}
                       </button>
-                    ))}
+                    )}
                   </nav>
                   <div className="mt-6 pt-6 border-t">
                     <Button asChild className="w-full bg-[#572670] hover:bg-[#7B3FA0]">
@@ -286,8 +286,8 @@ const ConnectingTeensMentalWellnessBlogPostPage = () => {
               <img
                 src="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/62abea2f-775f-47a7-ad22-2bfc58d01038.webp"
                 alt="Parent connecting with teenager about mental health"
-                className="w-full object-cover rounded-lg mb-6"
-              />
+                className="w-full object-cover rounded-lg mb-6" />
+
 
               <p className="text-xl text-gray-700 leading-relaxed">
                 Navigating the teenage years can be challenging for both adolescents and their parents. As teens face unprecedented pressures from academics, social media, peer relationships, and identity formation, mental health concerns are rising at alarming rates. Creating an environment where teens feel safe discussing their mental wellness is crucial—and often more difficult than it seems. This comprehensive guide will help you build bridges of communication, recognize when your teen is struggling, and provide the support they need.
@@ -619,20 +619,20 @@ const ConnectingTeensMentalWellnessBlogPostPage = () => {
               name="karmatmsdev"
               role="Mental Health Content Specialist at KarmaTMS"
               bio="Dedicated to providing evidence-based mental health information and resources. Our team works with medical professionals to deliver accurate, compassionate content on depression, anxiety, and innovative treatments like TMS therapy."
-              image="https://www.prtms.com/wp-content/uploads/2023/03/Dr.-Keerthy-Sunder-scaled.jpg"
-            />
+              image="https://www.prtms.com/wp-content/uploads/2023/03/Dr.-Keerthy-Sunder-scaled.jpg" />
+
 
             {/* FAQ Section */}
             <section ref={(el) => sectionsRef.current['faqs'] = el} className="mb-12 mt-12">
               <h2 className="text-3xl font-bold text-[#572670] mb-6">Frequently Asked Questions</h2>
               
               <Accordion type="single" collapsible className="w-full space-y-2">
-                {faqs.map((faq, index) => (
-                  <AccordionItem
-                    key={index}
-                    value={`item-${index}`}
-                    className="border border-gray-200 rounded-lg px-4 data-[state=open]:border-[#572670]"
-                  >
+                {faqs.map((faq, index) =>
+                <AccordionItem
+                  key={index}
+                  value={`item-${index}`}
+                  className="border border-gray-200 rounded-lg px-4 data-[state=open]:border-[#572670]">
+
                     <AccordionTrigger className="text-left font-semibold hover:text-[#572670] hover:no-underline">
                       {faq.question}
                     </AccordionTrigger>
@@ -640,7 +640,7 @@ const ConnectingTeensMentalWellnessBlogPostPage = () => {
                       {faq.answer}
                     </AccordionContent>
                   </AccordionItem>
-                ))}
+                )}
               </Accordion>
             </section>
 
@@ -668,13 +668,13 @@ const ConnectingTeensMentalWellnessBlogPostPage = () => {
             <section className="mb-12">
               <h2 className="text-3xl font-bold text-[#572670] mb-6">Related Articles</h2>
               <div className="grid md:grid-cols-3 gap-6">
-                {relatedPosts.map((post, index) => (
-                  <Card key={index} className="border-[#572670]/20 overflow-hidden hover:shadow-lg transition-shadow">
+                {relatedPosts.map((post, index) =>
+                <Card key={index} className="border-[#572670]/20 overflow-hidden hover:shadow-lg transition-shadow">
                     <img
-                      src={post.image}
-                      alt={post.title}
-                      className="w-full object-cover"
-                    />
+                    src={post.image}
+                    alt={post.title}
+                    className="w-full object-cover" />
+
                     <CardContent className="p-6">
                       <h3 className="font-bold text-lg mb-2 hover:text-[#572670] transition-colors">
                         <Link to={post.link}>{post.title}</Link>
@@ -687,7 +687,7 @@ const ConnectingTeensMentalWellnessBlogPostPage = () => {
                       </Button>
                     </CardContent>
                   </Card>
-                ))}
+                )}
               </div>
             </section>
           </article>
@@ -695,8 +695,8 @@ const ConnectingTeensMentalWellnessBlogPostPage = () => {
       </div>
 
       <FooterSection />
-    </>
-  );
+    </>);
+
 };
 
 export default ConnectingTeensMentalWellnessBlogPostPage;

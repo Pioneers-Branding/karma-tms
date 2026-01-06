@@ -33,6 +33,54 @@ const blogCategories = [
 // Blog posts - Veterans TMS Therapy with fixed images
 const allBlogPosts: BlogPost[] = [
 {
+  id: 25,
+  title: 'Prioritizing Mental Healthcare in Rural Communities',
+  excerpt: 'Addressing mental health access challenges in rural areas. Discover innovative solutions, telehealth options, and resources for improving mental healthcare.',
+  category: 'tms-therapy',
+  author: 'karmatms',
+  date: new Date(2024, 9, 1).toLocaleDateString('en-US', {
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric'
+  }),
+  readTime: '14 min read',
+  image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/5a26ae21-6fa8-4af4-8fba-bc048cb7cc0f.webp',
+  featured: false,
+  rating: 5
+},
+{
+  id: 26,
+  title: 'Discover the Impact of Social Media on Your Mental Well-being',
+  excerpt: 'Understanding how social media affects mental health. Learn about negative effects, warning signs, and strategies for healthier social media habits.',
+  category: 'tms-therapy',
+  author: 'karmatmsdev',
+  date: new Date(2024, 7, 16).toLocaleDateString('en-US', {
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric'
+  }),
+  readTime: '13 min read',
+  image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/0df1c6f4-54ea-43f5-aeab-67608371a640.webp',
+  featured: false,
+  rating: 5
+},
+{
+  id: 27,
+  title: 'Most Common Reasons People Seek Psychotherapy',
+  excerpt: 'Comprehensive guide on the most common reasons people seek therapy, from depression and anxiety to personal growth. Learn when to seek help.',
+  category: 'tms-therapy',
+  author: 'karmatmsdev',
+  date: new Date(2024, 7, 7).toLocaleDateString('en-US', {
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric'
+  }),
+  readTime: '15 min read',
+  image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/3a8c8944-5c3c-416d-acf8-9ca9871d172c.webp',
+  featured: false,
+  rating: 5
+},
+{
   id: 22,
   title: 'Understanding the Complex Connection between Depression and Erectile Dysfunction',
   excerpt: 'Explore the bidirectional relationship between depression and erectile dysfunction. Learn about biological factors, psychological impact, and comprehensive treatment options.',
@@ -633,7 +681,10 @@ const BlogPage = () => {
                     21: '/blog/managing-anxiety-triggers',
                     22: '/blogs/depression-erectile-dysfunction',
                     23: '/blogs/connecting-teens-mental-wellness',
-                    24: '/blogs/mental-health-community-violence'
+                    24: '/blogs/mental-health-community-violence',
+                    25: '/blog/rural-mental-healthcare',
+                    26: '/blog/social-media-mental-wellbeing',
+                    27: '/blog/common-reasons-psychotherapy'
                   };
                   return (
                     <a
