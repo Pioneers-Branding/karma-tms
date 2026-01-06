@@ -118,10 +118,10 @@ const HeroSection = () => {
 
                 {/* CTA Buttons */}
                 <div className="flex flex-col sm:flex-row gap-4 lg:gap-6">
-                  <button className="flex-1 bg-gradient-to-r from-indigo-600 via-violet-600 to-purple-600 text-white font-semibold py-4 lg:py-5 px-8 rounded-full shadow-xl hover:shadow-2xl transform hover:-translate-y-1 transition-all duration-300 text-center text-base lg:text-lg hover:scale-[1.02]">
+                  <button className="flex-1 bg-gradient-to-r from-indigo-600 via-violet-600 to-purple-600 text-white font-semibold py-2 lg:py-3 px-4 rounded-full shadow-xl hover:shadow-2xl transform hover:-translate-y-1 transition-all duration-300 text-center text-base lg:text-lg hover:scale-[1.02]">
                     Take Mental Health Quiz
                   </button>
-                  <button className="flex-1 bg-white border-2 border-violet-200 text-violet-700 font-semibold py-4 lg:py-5 px-8 rounded-full shadow-xl hover:shadow-2xl transform hover:-translate-y-1 transition-all duration-300 text-center text-base lg:text-lg hover:scale-[1.02] hover:border-violet-300 hover:bg-violet-50">
+                  <button className="flex-1 bg-white border-2 border-violet-200 text-violet-700 font-semibold py-2 lg:py-3 px-4 rounded-full shadow-xl hover:shadow-2xl transform hover:-translate-y-1 transition-all duration-300 text-center text-base lg:text-lg hover:scale-[1.02] hover:border-violet-300 hover:bg-violet-50">
                     View Treatments
                   </button>
                 </div>
