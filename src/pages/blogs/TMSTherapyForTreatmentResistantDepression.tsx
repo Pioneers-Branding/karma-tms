@@ -96,24 +96,23 @@ const TMSTherapyForTreatmentResistantDepression = () => {
 
   const relatedPosts = [
   {
-    title: 'Psychiatrists Boost Well-Being Through Expert Care',
-    excerpt: 'Understanding the comprehensive role of psychiatrists in mental health treatment.',
-    link: '/blogs/PsychiatristsBoostWellBeingThroughExpertCareForMentalHealth',
-    image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/66e6e1ae-8cc3-4469-bfaf-b1f3f3d07006.webp'
+    title: 'Managing Anxiety Triggers in Everyday Life',
+    excerpt: 'Learn practical strategies to identify and manage anxiety triggers effectively.',
+    link: '/blog/managing-anxiety-triggers',
+    image: 'https://res.cloudinary.com/de4kw1t2i/image/upload/v1763376737/22_wiizht.png'
   },
   {
-    title: 'Understanding Depression',
-    excerpt: 'Comprehensive guide to depression symptoms and available treatments.',
-    link: '/depression',
-    image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/2ddc8d69-b09a-4f1d-bd47-6d783ceefbd1.webp'
+    title: 'The Role of Family Dynamics in Mental Health Recovery',
+    excerpt: 'Discover how family relationships influence mental health outcomes and recovery.',
+    link: '/blog/family-dynamics-mental-health',
+    image: 'https://res.cloudinary.com/de4kw1t2i/image/upload/v1763376735/21_tyzclt.png'
   },
   {
-    title: 'TMS Therapy for Veterans',
-    excerpt: 'How TMS helps veterans overcome PTSD, depression, and anxiety.',
-    link: '/blog/veterans-tms-therapy',
-    image: 'https://res.cloudinary.com/de4kw1t2i/image/upload/v1763036078/0_zutd9g.png'
+    title: 'Mental Health First Aid: How to Help Someone in Crisis',
+    excerpt: 'Essential skills to recognize crisis signs and provide immediate support.',
+    link: '/blog/mental-health-first-aid',
+    image: 'https://res.cloudinary.com/de4kw1t2i/image/upload/v1763376735/19_luad51.png'
   }];
-
 
   const articleSchema = {
     '@context': 'https://schema.org',
