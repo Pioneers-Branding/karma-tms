@@ -238,7 +238,7 @@ const IsDepressionADisabilityBlogPostPage = () => {
                 <Link to="/contact">Schedule Consultation</Link>
               </Button>
               <Button asChild size="lg" variant="outline" className="border-white text-white hover:bg-white/10">
-                <Link to="/tms-therapy">Learn About TMS</Link>
+                
               </Button>
             </div>
           </div>
@@ -722,7 +722,7 @@ const IsDepressionADisabilityBlogPostPage = () => {
                   <CardContent className="p-6">
                     <h4 className="font-bold text-lg mb-2">Medication Management</h4>
                     <p className="text-gray-700">
-                      <Link to="/medication-management" className="text-[#572670] hover:underline">Antidepressant medications</Link> can be effective for many people. Working with a psychiatrist ensures proper medication selection, dosing, and monitoring for side effects.
+                      <Link to="/medication-management" className="text-[#572670] hover:underline">Antidepressant medications in palm springs</Link>  can be effective for many people. Working with a psychiatrist ensures proper medication selection, dosing, and monitoring for side effects.
                     </p>
                   </CardContent>
                 </Card>
