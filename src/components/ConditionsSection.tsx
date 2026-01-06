@@ -103,11 +103,7 @@ const ConditionsSection = () => {
           })}
         </div>
 
-        <div className="text-center mt-12">
-          <Button className="bg-[#572670] hover:bg-[#572670]/90 text-white px-8 py-3">
-            See All Conditions We Treat
-          </Button>
-        </div>
+       
       </div>
     </section>);
 
