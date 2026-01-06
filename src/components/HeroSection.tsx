@@ -56,7 +56,7 @@ const HeroSection = () => {
                 
                 {/* Heading */}
                 <div className="space-y-4 lg:space-y-6">
-                  <div className="flex flex-row bg-blue-magenta/50 p-2">
+                  <div className="bg-blue-magenta/50 p-2">
                   <MapPin className="w-5 h-5 text-violet-500" /> Palm Springs , CA
                   </div>
 
