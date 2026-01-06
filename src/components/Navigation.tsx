@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from '@/components/ui/dropdown-menu';
 import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from '@/components/ui/sheet';
+import { Link } from 'react-router-dom';
 import {
   Menu,
   ChevronDown,
@@ -44,11 +45,11 @@ const Navigation = () => {
 
   const conditionsLinks = [
   { name: 'Depression', href: '/conditions/depression', icon: Heart },
-  { name: 'Anxiety', href: '/conditions/anxiety', icon: Shield },
+  { name: 'Anxiety Disorders', href: '/conditions/anxiety', icon: Shield },
   { name: 'OCD', href: '/conditions/ocd', icon: Brain },
   { name: 'PTSD', href: '/conditions/ptsd', icon: Heart },
-  { name: 'Stress', href: '/conditions/stress', icon: Shield },
-  { name: "Women's Mood", href: '/conditions/womens-mood', icon: Heart }];
+  { name: 'Bipolar Depression', href: '/conditions/bipolar', icon: Brain },
+  { name: 'Addiction Recovery', href: '/conditions/addiction', icon: Heart }];
 
 
   const resourcesLinks = [
@@ -123,13 +124,13 @@ const Navigation = () => {
                 {conditionsLinks.map((link) => {
                   const IconComponent = link.icon;
                   return (
-                    <DropdownMenuItem
-                      key={link.href}
-                      className="cursor-pointer p-3 rounded-md hover:bg-[#572670]/10 transition-all duration-200 group">
-
-                      <IconComponent className="h-4 w-4 mr-3 text-[#572670] group-hover:scale-110 transition-transform" />
-                      <span className="font-medium">{link.name}</span>
-                    </DropdownMenuItem>);
+                    <Link key={link.href} to={link.href}>
+                      <DropdownMenuItem
+                        className="cursor-pointer p-3 rounded-md hover:bg-[#572670]/10 transition-all duration-200 group">
+                        <IconComponent className="h-4 w-4 mr-3 text-[#572670] group-hover:scale-110 transition-transform" />
+                        <span className="font-medium">{link.name}</span>
+                      </DropdownMenuItem>
+                    </Link>);
 
                 })}
               </DropdownMenuContent>
@@ -219,10 +220,12 @@ const Navigation = () => {
                     {conditionsLinks.map((link) => {
                       const IconComponent = link.icon;
                       return (
-                        <Button key={link.href} variant="ghost" className="w-full justify-start text-sm py-2">
-                          <IconComponent className="h-4 w-4 mr-3 text-[#572670]" />
-                          {link.name}
-                        </Button>);
+                        <Link key={link.href} to={link.href}>
+                          <Button variant="ghost" className="w-full justify-start text-sm py-2">
+                            <IconComponent className="h-4 w-4 mr-3 text-[#572670]" />
+                            {link.name}
+                          </Button>
+                        </Link>);
 
                     })}
                   </div>
