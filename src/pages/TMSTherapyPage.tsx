@@ -183,7 +183,7 @@ const TMSTherapyPage = () => {
             <img
               src="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/6cfeb881-529d-42c6-875a-321eac7d440c.webp"
               alt="TMS Treatment Chair"
-              className="w-full h-auto rounded-2xl shadow-2xl" />
+              className="w-full h-auto max-h-[600px] object-cover rounded-2xl shadow-2xl" />
 
             <div className="absolute inset-0 bg-gradient-to-r from-blue-magenta/20 to-purple-600/20 rounded-2xl"></div>
           </motion.div>

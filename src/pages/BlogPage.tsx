@@ -104,22 +104,28 @@ const BlogPage = () => {
   }, [hasMore, loading]);
 
   const loadMorePosts = async () => {
-    if (loading) return;
+    if (loading || posts.length >= 40) {
+      setHasMore(false);
+      return;
+    }
 
     setLoading(true);
 
     // Simulate API call
     setTimeout(() => {
-      const newPosts = generateBlogPosts(6).map((post) => ({
+      const remainingPosts = 40 - posts.length;
+      const postsToAdd = Math.min(6, remainingPosts);
+      
+      const newPosts = generateBlogPosts(postsToAdd).map((post, index) => ({
         ...post,
-        id: post.id + posts.length,
+        id: posts.length + index + 1,
         featured: false
       }));
 
       setPosts((prev) => [...prev, ...newPosts]);
       setPage((prev) => prev + 1);
 
-      if (page >= 5) {// Limit to 5 pages for demo
+      if (posts.length + postsToAdd >= 40) {
         setHasMore(false);
       }
 

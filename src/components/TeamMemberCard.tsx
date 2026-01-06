@@ -35,7 +35,7 @@ const TeamMemberCard: React.FC<TeamMemberCardProps> = ({ member, index }) => {
 
   const categoryColors = {
     medical: 'from-[#572670] to-purple-600',
-    administrative: 'from-teal-500 to-cyan-600'
+    administrative: 'from-[#572670] to-purple-600'
   };
 
   const categoryIcons = {
