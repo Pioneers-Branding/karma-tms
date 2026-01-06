@@ -642,10 +642,7 @@ const DoesTMSTherapyWorkForAnxiety = () => {
             <section ref={(el) => sectionsRef.current['karma-experience'] = el} className="mb-12">
               <h2 className="text-3xl font-bold text-[#572670] mb-6">TMS Therapy Experience at Karma TMS</h2>
               
-              <img
-                src="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/d85b7133-76b3-47d9-8904-c6b4ffc09e40.jpeg"
-                alt="Karma TMS clinic entrance"
-                className="w-full object-cover rounded-lg mb-6" />
+             
 
 
               <p className="mb-6">
