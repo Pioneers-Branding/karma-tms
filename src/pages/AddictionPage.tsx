@@ -371,7 +371,7 @@ const AddictionPage = () => {
             </div>
             <div className="relative">
               <img
-                src="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/c1e0ca78-b524-46b5-9a67-3ad906778a05.webp"
+                src="https://res.cloudinary.com/de4kw1t2i/image/upload/v1765537416/-7341_porvmt.png"
                 alt="Supportive recovery environment"
                 className="rounded-lg shadow-lg" />
 
