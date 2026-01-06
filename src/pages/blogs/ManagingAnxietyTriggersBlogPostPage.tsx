@@ -93,24 +93,15 @@ const ManagingAnxietyTriggersBlogPostPage = () => {
   }];
 
 
-  const relatedPosts = [
-  {
-    title: 'TMS for Anxiety: A Promising Path Beyond Medication',
-    excerpt: 'Explore how TMS therapy offers relief from anxiety through brain regulation without medication side effects.',
-    link: '/blogs/tms-anxiety-veterans',
-    image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/9705b922-d0fc-4d29-be10-acd507ce308c.webp'
+ const relatedPosts = [   
+    {  
+         title: 'Understanding Anxiety Disorders',     excerpt: 'Explore how anxiety develops and effective treatment options including TMS therapy.',     link: '/anxiety',     image: 'https://res.cloudinary.com/de4kw1t2i/image/upload/v1763376737/22_wiizht.png'
   },
   {
-    title: 'Mindfulness Practices for Stress Management',
-    excerpt: 'Learn evidence-based mindfulness techniques to reduce stress and manage anxiety effectively.',
-    link: '/blog/mindfulness-stress-management',
-    image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/6cfeb881-529d-42c6-875a-321eac7d440c.webp'
-  },
-  {
-    title: 'What are the 4 A\'s of Stress Management?',
-    excerpt: 'Discover the Avoid, Alter, Adapt, and Accept framework for effective stress management.',
+    title: 'Stress Management: The Four A\'s Approach',
+    excerpt: 'Learn practical strategies for managing stress in our digital age.',
     link: '/blog/four-as-stress-management',
-    image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/6cfeb881-529d-42c6-875a-321eac7d440c.webp'
+    image: 'https://res.cloudinary.com/de4kw1t2i/image/upload/v1763376733/12_t62v1m.png'
   }];
 
 
