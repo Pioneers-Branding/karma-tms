@@ -317,7 +317,7 @@ const PalmSpringsPage = () => {
 
                 <div className="space-y-3">
                   <a
-                    href="https://www.google.com/maps/dir//560+S.+Paseo+Dorotea+Suite+4-B,+Palm+Springs,+CA+92264"
+                    href="https://maps.app.goo.gl/hJP949mZGLuHLn7Y9"
                     target="_blank"
                     rel="noopener noreferrer">
 
@@ -327,7 +327,7 @@ const PalmSpringsPage = () => {
                     </Button>
                   </a>
                   <a
-                    href="https://g.page/r/your-google-business-link"
+                    href="https://share.google/GWzNWuU6YMH3nHXQP"
                     target="_blank"
                     rel="noopener noreferrer">
 
