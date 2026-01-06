@@ -119,7 +119,7 @@ const IsDepressionADisabilityBlogPostPage = () => {
     '@type': 'Article',
     headline: 'Is Depression a Disability? Understanding Rights, Treatment, and Support Options',
     description: 'Learn if depression and anxiety qualify as disabilities under ADA & SSA laws. Discover treatments like TMS that restore wellness and independence.',
-    image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/2ddc8d69-b09a-4f1d-bd47-6d783ceefbd1.webp',
+    image: 'https://res.cloudinary.com/de4kw1t2i/image/upload/v1765015452/37_kghe3l.png',
     author: {
       '@type': 'Person',
       name: 'KarmaTMS Medical Team'
@@ -284,7 +284,7 @@ const IsDepressionADisabilityBlogPostPage = () => {
             {/* Introduction */}
             <div className="mb-12">
               <img
-                src="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/2ddc8d69-b09a-4f1d-bd47-6d783ceefbd1.webp"
+                src="https://res.cloudinary.com/de4kw1t2i/image/upload/v1765015452/37_kghe3l.png"
                 alt="Depression disability rights and treatment"
                 className="w-full object-cover rounded-lg mb-6" />
 
