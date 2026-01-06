@@ -116,7 +116,7 @@ const HeroSection = () => {
                   <button className="flex-1 bg-gradient-to-r from-blue-magenta via-blue-magenta/70 to-blue-magenta text-white font-semibold py-2 lg:py-3 px-4 rounded-full  transform hover:-translate-y-1 transition-all duration-300 text-center text-base lg:text-lg hover:scale-[1.02]">
                     Take Mental Health Quiz
                   </button>
-                  <button className="flex-1 bg-white border-2 border-blue-magenta text-blue-magenta font-semibold py-2 lg:py-3 px-4 rounded-full transform hover:-translate-y-1 transition-all duration-300 text-center text-base lg:text-lg hover:scale-[1.02] hover:border-blue-magenta/30 hover:text-white hover:bg-blue-magenta/40">
+                  <button className="flex-1 bg-white border-2 border-blue-magenta text-blue-magenta font-semibold py-2 lg:py-3 px-4 rounded-full transform hover:-translate-y-1 transition-all duration-300 text-center text-base lg:text-lg hover:scale-[1.02] hover:border-blue-magenta/30 hover:text-white hover:bg-blue-magenta/70">
                     View Treatments
                   </button>
                 </div>
