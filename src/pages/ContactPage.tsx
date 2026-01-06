@@ -177,6 +177,7 @@ const ContactPage = () => {
                         id="phone"
                         name="phone"
                         type="tel"
+                        required
                         placeholder="(760) 123-4567"
                         className="mt-1" />
 
