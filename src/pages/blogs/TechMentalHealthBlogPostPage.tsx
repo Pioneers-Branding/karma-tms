@@ -93,24 +93,24 @@ const TechMentalHealthBlogPostPage = () => {
   }];
 
 
-  const relatedPosts = [
+const relatedPosts = [
   {
-    title: 'The Impact of Screen Time on Mental Health',
-    excerpt: 'Explore research on how screen time affects depression, anxiety, and overall wellbeing.',
-    link: '/blog/screen-time-mental-health',
-    image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/6cfeb881-529d-42c6-875a-321eac7d440c.webp'
+    title: 'TMS for Migraine Relief in Veterans',
+    excerpt: 'Learn how TMS helps veterans with migraines and comorbid conditions like PTSD and depression.',
+    link: '/blogs/tms-migraine-veterans',
+    image: 'https://res.cloudinary.com/de4kw1t2i/image/upload/v1763033673/7_lnxkrv.png'
   },
   {
-    title: 'Mindfulness Practices for Stress Management',
-    excerpt: 'Learn evidence-based mindfulness techniques to reduce stress in our digital world.',
-    link: '/blog/mindfulness-stress-management',
-    image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/6cfeb881-529d-42c6-875a-321eac7d440c.webp'
+    title: 'TMS for Anxiety in Veterans',
+    excerpt: 'Discover how TMS helps veterans manage anxiety beyond medication.',
+    link: '/blogs/tms-anxiety-veterans',
+    image: 'https://res.cloudinary.com/de4kw1t2i/image/upload/v1763033666/6_rrkhgo.png'
   },
   {
-    title: 'Understanding Anxiety Disorders',
-    excerpt: 'Comprehensive guide to anxiety symptoms and modern treatment options.',
-    link: '/anxiety',
-    image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/9705b922-d0fc-4d29-be10-acd507ce308c.webp'
+    title: 'Understanding PTSD in Veterans',
+    excerpt: 'Complete guide to PTSD signs, symptoms, and treatment paths including TMS therapy.',
+    link: '/blogs/understanding-ptsd-veterans',
+    image: 'https://res.cloudinary.com/de4kw1t2i/image/upload/v1763033666/5_kvtlku.png'
   }];
 
 
@@ -290,7 +290,7 @@ const TechMentalHealthBlogPostPage = () => {
               <img
                 src="https://res.cloudinary.com/de4kw1t2i/image/upload/v1763376734/18_jkbrlx.png"
                 alt="Technology and mental health connection"
-                className="w-full h-64 md:h-96 object-cover rounded-lg mb-6" />
+                className="w-full  md:h-96 object-cover rounded-lg mb-6" />
 
 
               <p className="text-xl text-gray-700 leading-relaxed">
@@ -664,7 +664,7 @@ const TechMentalHealthBlogPostPage = () => {
                     <img
                     src={post.image}
                     alt={post.title}
-                    className="w-full h-48 object-cover" />
+                    className="w-full  object-cover" />
 
                     <CardContent className="p-6">
                       <h3 className="font-bold text-lg mb-2 hover:text-[#572670] transition-colors">
