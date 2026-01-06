@@ -95,7 +95,7 @@ const ContactPage = () => {
       <Navigation />
       
       {/* Hero Section */}
-      <section className="pt-24 pb-8 bg-gradient-to-br from-[#572670] to-[#572670]/80">
+      <section className="pt-24 pb-8 bg-gradient-to-br from-[#572670] to-[#572670]/80 bg-center bg-cover bg-no-repeat" style={{ backgroundImage: 'url(https://res.cloudinary.com/de4kw1t2i/image/upload/v1765537415/-7271_gly3ma.png)' }}>
         <div className="container mx-auto px-4 text-center">
           <h1 className="text-4xl lg:text-6xl font-bold text-white mb-4">
             Contact KarmaTMS Mental Health Center
