@@ -22,7 +22,7 @@ const RanchoMiragePage = () => {
   const faqs = [
   {
     q: 'Where is KarmaTMS Rancho Mirage located?',
-    a: 'We are located at 35400 Bob Hope Dr. Suite 206-B in Rancho Mirage, CA 92270. Our office is easily accessible from Palm Desert, Indian Wells, La Quinta, and throughout the Coachella Valley.'
+    a: 'We are located at 35400 Bob Hope Dr. Suite 206 in Rancho Mirage, CA 92270. Our office is easily accessible from Palm Desert, Indian Wells, La Quinta, and throughout the Coachella Valley.'
   },
   {
     q: 'What makes Rancho Mirage location different?',
@@ -69,7 +69,7 @@ const RanchoMiragePage = () => {
         {
           name: 'KarmaTMS Rancho Mirage',
           address: {
-            streetAddress: '35400 Bob Hope Dr. Suite 206-B',
+            streetAddress: '35400 Bob Hope Dr. Suite 206',
             addressLocality: 'Rancho Mirage',
             addressRegion: 'CA',
             postalCode: '92270'
