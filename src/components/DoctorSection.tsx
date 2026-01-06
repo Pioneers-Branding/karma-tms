@@ -49,7 +49,7 @@ const DoctorSection = () => {
 
 
   return (
-    <section className="py-20 bg-gradient-to-br from-white via-purple-50/30 to-white relative overflow-hidden">
+    <section className="py-16 bg-gradient-to-br from-white via-purple-50/30 to-white relative overflow-hidden">
       {/* Background Elements */}
       <div className="absolute top-20 left-10 w-32 h-32 bg-[#572670]/5 rounded-full blur-3xl"></div>
       <div className="absolute bottom-20 right-10 w-40 h-40 bg-purple-300/20 rounded-full blur-3xl"></div>
