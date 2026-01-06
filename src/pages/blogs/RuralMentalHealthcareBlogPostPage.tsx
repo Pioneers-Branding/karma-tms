@@ -90,7 +90,7 @@ const RuralMentalHealthcareBlogPostPage = () => {
 
 
   const relatedPosts = [
-  
+
   {
     title: 'Mindfulness Practices for Stress Management',
     excerpt: 'Evidence-based mindfulness techniques to reduce stress and improve mental wellness.',
