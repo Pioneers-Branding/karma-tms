@@ -243,7 +243,7 @@ const AboutPage = () => {
                           What started as a small clinic has grown into a leading center for innovative 
                           mental health care, treating over 5,000 patients and maintaining a 95% success 
                           rate. We've expanded our services to include <Link to="/brain-mapping" className="text-[#572670] hover:underline">brain mapping</Link>, 
-                          <Link to="/neurofeedback" className="text-[#572670] hover:underline ml-1">neurofeedback</Link>, and comprehensive 
+                          and comprehensive 
                           <Link to="/medication-management" className="text-[#572670] hover:underline ml-1">medication management</Link>.
                         </p>
                         <div className="flex items-start gap-3">
@@ -430,10 +430,10 @@ const AboutPage = () => {
               Contact us today to learn more about our innovative TMS treatments and how we can help you reclaim your life.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a href="tel:760-760-5675">
+              <a href="tel:951-297-8375">
                 <Button className="bg-white text-[#572670] hover:bg-gray-100 px-8 py-3 text-lg">
                   <Phone className="mr-2 h-5 w-5" />
-                  Call Now: 760-760-5675
+                  Call Now: 951-297-8375
                 </Button>
               </a>
               <Link to="/contact">
