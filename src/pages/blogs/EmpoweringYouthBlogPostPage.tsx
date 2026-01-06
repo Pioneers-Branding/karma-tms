@@ -104,7 +104,7 @@ const EmpoweringYouthBlogPostPage = () => {
     title: 'TMS for Anxiety in Veterans',
     excerpt: 'Discover how TMS helps veterans manage anxiety beyond medication.',
     link: '/blogs/tms-anxiety-veterans',
-    image: 'https://res.cloudinary.com/de4kw1t2i/image/upload/v1762863798/blog_6_z1bbda.png'
+    image: 'https://res.cloudinary.com/de4kw1t2i/image/upload/v1763033666/6_rrkhgo.png'
   },
   {
     title: 'Understanding PTSD in Veterans',
