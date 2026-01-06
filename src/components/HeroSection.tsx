@@ -13,9 +13,7 @@ const HeroSection = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   const backgroundImages = [
-  'https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=1920&h=1080&fit=crop&crop=center',
   'https://karmatms.com/wp-content/uploads/2024/09/64f25e1d7ad0910405ab506b-2.jpeg',
-  'https://images.unsplash.com/photo-1582750433449-648ed127bb54?w=1920&h=1080&fit=crop&crop=center',
   'https://content.r9cdn.net/rimg/dimg/bb/85/130e54d5-city-35219-16bfbb46ea8.jpg?crop=true&width=1020&height=498'];
 
 
