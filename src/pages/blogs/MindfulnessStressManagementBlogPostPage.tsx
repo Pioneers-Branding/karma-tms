@@ -93,24 +93,24 @@ const MindfulnessStressManagementBlogPostPage = () => {
   }];
 
 
-  const relatedPosts = [
+ const relatedPosts = [
   {
-    title: 'Stress Management: The Four A\'s Approach',
-    excerpt: 'Learn practical strategies for managing stress through Avoid, Alter, Adapt, and Accept.',
-    link: '/blog/four-as-stress-management',
-    image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/76caee2d-5629-4dc1-a3b4-8c5cea23ede6.webp'
+    title: 'TMS for Migraine Relief in Veterans',
+    excerpt: 'Learn how TMS helps veterans with migraines and comorbid conditions like PTSD and depression.',
+    link: '/blogs/tms-migraine-veterans',
+    image: 'https://res.cloudinary.com/de4kw1t2i/image/upload/v1763033673/7_lnxkrv.png'
   },
   {
-    title: 'Understanding Anxiety Disorders',
-    excerpt: 'Explore anxiety symptoms and treatment options including TMS therapy.',
-    link: '/anxiety',
-    image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/9705b922-d0fc-4d29-be10-acd507ce308c.webp'
+    title: 'TMS for Anxiety in Veterans',
+    excerpt: 'Discover how TMS helps veterans manage anxiety beyond medication.',
+    link: '/blogs/tms-anxiety-veterans',
+    image: 'https://res.cloudinary.com/de4kw1t2i/image/upload/v1763033666/6_rrkhgo.png'
   },
   {
-    title: 'The Impact of Screen Time on Mental Health',
-    excerpt: 'Learn how digital habits affect your mental wellbeing and how to create balance.',
-    link: '/blog/screen-time-mental-health',
-    image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/6cfeb881-529d-42c6-875a-321eac7d440c.webp'
+    title: 'Understanding PTSD in Veterans',
+    excerpt: 'Complete guide to PTSD signs, symptoms, and treatment paths including TMS therapy.',
+    link: '/blogs/understanding-ptsd-veterans',
+    image: 'https://res.cloudinary.com/de4kw1t2i/image/upload/v1763033666/5_kvtlku.png'
   }];
 
 
@@ -669,7 +669,7 @@ const MindfulnessStressManagementBlogPostPage = () => {
                     <img
                     src={post.image}
                     alt={post.title}
-                    className="w-full h-48 object-cover" />
+                    className="w-full  object-cover" />
 
                     <CardContent className="p-6">
                       <h3 className="font-bold text-lg mb-2 hover:text-[#572670] transition-colors">
