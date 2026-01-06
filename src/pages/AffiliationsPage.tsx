@@ -460,7 +460,7 @@ const AffiliationsPage = () => {
                 <Users className="mr-2 h-5 w-5" />
                 Partnership Inquiries
               </Button>
-              <Button variant="outline" className="border-white text-white hover:bg-white/10 px-8 py-3 text-lg">
+              <Button variant="outline" className="border-white text-white hover:bg-white/10 px-8 py-3 text-lg bg-white text-[#572670]">
                 <GraduationCap className="mr-2 h-5 w-5" />
                 Speaking Requests
               </Button>

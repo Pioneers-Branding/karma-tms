@@ -55,8 +55,8 @@ const TestimonialsSection = () => {
     hasVideo: false,
     videoId: "dQw4w9WgXcQ",
     avatar: "https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/41b87b04-674f-4cd2-a399-5d68da1ab78e.png"
-  }
-  ];
+  }];
+
 
 
   const nextTestimonial = () => {

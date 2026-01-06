@@ -434,7 +434,7 @@ const AboutPage = () => {
                 Call Now: 760-760-5675
               </Button>
               <Link to="/book">
-                <Button variant="outline" className="border-white text-white hover:bg-white/10 px-8 py-3 text-lg">
+                <Button variant="outline" className="border-white text-white hover:bg-white/10 px-8 py-3 text-lg bg-black text-white">
                   Schedule Consultation
                 </Button>
               </Link>

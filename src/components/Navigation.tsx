@@ -1,7 +1,10 @@
+
 import { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from '@/components/ui/dropdown-menu';
 import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from '@/components/ui/sheet';
+import { ScrollArea } from '@/components/ui/scroll-area';
+import { Separator } from '@/components/ui/separator';
 import { Link } from 'react-router-dom';
 import {
   Menu,
@@ -23,9 +26,9 @@ import {
   HandHelping,
   Calendar,
   Wallet,
-  BookA } from
-
-'lucide-react';
+  BookA,
+  X
+} from 'lucide-react';
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -39,69 +42,80 @@ const Navigation = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const servicesLinks = [
-  { name: 'TMS Therapy', href: '/tms-therapy', icon: Brain },
-  { name: 'PrTMS', href: '/prtms', icon: Stethoscope },
-  { name: 'Brain Mapping', href: '/brain-mapping', icon: Brain },
-  { name: 'Neurofeedback', href: '/neurofeedback', icon: FileText },
-  { name: 'Medication Management', href: '/medication-management', icon: Shield }];
+  // Close mobile menu when clicking on a link
+  const handleLinkClick = () => {
+    setIsOpen(false);
+  };
 
+  const servicesLinks = [
+    { name: 'TMS Therapy', href: '/tms-therapy', icon: Brain },
+    { name: 'PrTMS', href: '/prtms', icon: Stethoscope },
+    { name: 'Brain Mapping', href: '/brain-mapping', icon: Brain },
+    { name: 'Neurofeedback', href: '/neurofeedback', icon: FileText },
+    { name: 'Medication Management', href: '/medication-management', icon: Shield }
+  ];
 
   const conditionsLinks = [
-  { name: 'Depression', href: '/conditions/depression', icon: Heart },
-  { name: 'Anxiety Disorders', href: '/conditions/anxiety', icon: Shield },
-  { name: 'OCD', href: '/conditions/ocd', icon: Brain },
-  { name: 'PTSD', href: '/conditions/ptsd', icon: Heart },
-  { name: 'Bipolar Depression', href: '/conditions/bipolar', icon: Brain },
-  { name: 'Addiction Recovery', href: '/conditions/addiction', icon: Heart },
-  { name: "Women's Mood", href: '/conditions/womens-mood', icon: Heart }];
-
+    { name: 'Depression', href: '/conditions/depression', icon: Heart },
+    { name: 'Anxiety Disorders', href: '/conditions/anxiety', icon: Shield },
+    { name: 'OCD', href: '/conditions/ocd', icon: Brain },
+    { name: 'PTSD', href: '/conditions/ptsd', icon: Heart },
+    { name: 'Bipolar Depression', href: '/conditions/bipolar', icon: Brain },
+    { name: 'Addiction Recovery', href: '/conditions/addiction', icon: Heart },
+    { name: "Women's Mood", href: '/conditions/womens-mood', icon: Heart }
+  ];
 
   const resourcesLinks = [
-  { name: 'Testimonials', href: '/testimonials', icon: Users },
-  { name: 'Research', href: '/research', icon: BookOpen },
-  { name: 'Blog', href: '/blog', icon: FileText },
-  { name: 'FAQs', href: '/faqs', icon: HelpCircle },
-  { name: 'Take Quiz', href: '/quiz', icon: Award }];
+    { name: 'Testimonials', href: '/testimonials', icon: Users },
+    { name: 'Research', href: '/research', icon: BookOpen },
+    { name: 'Blog', href: '/blog', icon: FileText },
+    { name: 'FAQs', href: '/faqs', icon: HelpCircle },
+    { name: 'Take Quiz', href: '/quiz', icon: Award }
+  ];
 
   const patientLinks = [
-  { name: 'Affiliations', href: '/affiliations', icon: HandHelping },
-  { name: 'Internships', href: '/interns', icon: BookA },
-  { name: 'Insurance & Pricing', href: '/insurance-pricing', icon: Wallet },
-  { name: 'Book Appointment', href: '/book', icon: Calendar }];
-
+    { name: 'Affiliations', href: '/affiliations', icon: HandHelping },
+    { name: 'Internships', href: '/interns', icon: BookA },
+    { name: 'Insurance & Pricing', href: '/insurance-pricing', icon: Wallet },
+    { name: 'Book Appointment', href: '/book', icon: Calendar }
+  ];
 
   return (
-    <header className={`sticky top-0 z-50 transition-all duration-100 ${
-    scrolled ?
-    'bg-[#572670]/95 backdrop-blur-sm m-0 shadow-lg border-b border-white/20 rounded-bl-2xl rounded-br-2xl' :
-    'bg-[#572670]/90 backdrop-blur-xs m-2 shadow-sm border-b border-white/10 rounded-2xl'}`}>
-      <div className="max-w-[1600px] mx-auto px-4">
-        <div className="flex items-center justify-between h-16">
-          {/* Logo */}
-          <Link key="/" to="/" className="flex items-center">
+    <header className={`sticky top-0 z-50 transition-all duration-300 ${
+      scrolled 
+        ? 'bg-[#572670]/95 backdrop-blur-sm shadow-lg border-b border-white/20' 
+        : 'bg-[#572670]/90 backdrop-blur-xs shadow-sm border-b border-white/10'
+    }`}>
+      <div className="max-w-[1600px] mx-auto px-3 sm:px-4 lg:px-6">
+        <div className="flex items-center justify-between h-14 sm:h-16 lg:h-18">
+          
+          {/* Logo - Responsive sizing */}
+          <Link to="/" className="flex items-center flex-shrink-0">
             <img
               src="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/ebadb369-a58d-421c-b937-24f900be5867.png"
               alt="Karma TMS"
-              className="h-12 w-auto" />
+              className="h-8 w-auto sm:h-10 md:h-12 transition-all duration-200"
+            />
           </Link>
 
-          {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center space-x-8">
-            <Link key="/" to="/">
-              <Button variant="ghost" className="text-white hover:text-white/80 hover:bg-white/10 transition-colors">
+          {/* Desktop Navigation - Hidden on mobile/tablet */}
+          <nav className="hidden xl:flex items-center space-x-6">
+            <Link to="/">
+              <Button variant="ghost" className="text-white hover:text-white/80 hover:bg-white/10 transition-colors text-sm">
                 <Home className="h-4 w-4 mr-2" />
                 Home
               </Button>
             </Link>
-            <Link key="/about" to="/about">
-              <Button variant="ghost" className="text-white hover:text-white/80 hover:bg-white/10 transition-colors">
+            
+            <Link to="/about">
+              <Button variant="ghost" className="text-white hover:text-white/80 hover:bg-white/10 transition-colors text-sm">
                 <User className="h-4 w-4 mr-2" />
                 About
               </Button>
             </Link>
-            <Link key="/team" to="/team">
-              <Button variant="ghost" className="text-white hover:text-white/80 hover:bg-white/10 transition-colors">
+            
+            <Link to="/team">
+              <Button variant="ghost" className="text-white hover:text-white/80 hover:bg-white/10 transition-colors text-sm">
                 <UserCheck className="h-4 w-4 mr-2" />
                 Our Team
               </Button>
@@ -110,7 +124,7 @@ const Navigation = () => {
             {/* Services Dropdown */}
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
-                <Button variant="ghost" className="text-white hover:text-white/80 hover:bg-white/10 flex items-center gap-1 transition-colors">
+                <Button variant="ghost" className="text-white hover:text-white/80 hover:bg-white/10 flex items-center gap-1 transition-colors text-sm">
                   Services <ChevronDown className="h-4 w-4" />
                 </Button>
               </DropdownMenuTrigger>
@@ -119,13 +133,12 @@ const Navigation = () => {
                   const IconComponent = link.icon;
                   return (
                     <Link key={link.href} to={link.href}>
-                      <DropdownMenuItem
-                        className="cursor-pointer p-3 rounded-md hover:bg-[#572670]/10 transition-all duration-200 group">
+                      <DropdownMenuItem className="cursor-pointer p-3 rounded-md hover:bg-[#572670]/10 transition-all duration-200 group">
                         <IconComponent className="h-4 w-4 mr-3 text-[#572670] group-hover:scale-110 transition-transform" />
                         <span className="font-medium">{link.name}</span>
                       </DropdownMenuItem>
-                    </Link>);
-
+                    </Link>
+                  );
                 })}
               </DropdownMenuContent>
             </DropdownMenu>
@@ -133,7 +146,7 @@ const Navigation = () => {
             {/* Conditions Dropdown */}
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
-                <Button variant="ghost" className="text-white hover:text-white/80 hover:bg-white/10 flex items-center gap-1 transition-colors">
+                <Button variant="ghost" className="text-white hover:text-white/80 hover:bg-white/10 flex items-center gap-1 transition-colors text-sm">
                   Conditions <ChevronDown className="h-4 w-4" />
                 </Button>
               </DropdownMenuTrigger>
@@ -142,13 +155,12 @@ const Navigation = () => {
                   const IconComponent = link.icon;
                   return (
                     <Link key={link.href} to={link.href}>
-                      <DropdownMenuItem
-                        className="cursor-pointer p-3 rounded-md hover:bg-[#572670]/10 transition-all duration-200 group">
+                      <DropdownMenuItem className="cursor-pointer p-3 rounded-md hover:bg-[#572670]/10 transition-all duration-200 group">
                         <IconComponent className="h-4 w-4 mr-3 text-[#572670] group-hover:scale-110 transition-transform" />
                         <span className="font-medium">{link.name}</span>
                       </DropdownMenuItem>
-                    </Link>);
-
+                    </Link>
+                  );
                 })}
               </DropdownMenuContent>
             </DropdownMenu>
@@ -156,7 +168,7 @@ const Navigation = () => {
             {/* Resources Dropdown */}
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
-                <Button variant="ghost" className="text-white hover:text-white/80 hover:bg-white/10 flex items-center gap-1 transition-colors">
+                <Button variant="ghost" className="text-white hover:text-white/80 hover:bg-white/10 flex items-center gap-1 transition-colors text-sm">
                   Resources <ChevronDown className="h-4 w-4" />
                 </Button>
               </DropdownMenuTrigger>
@@ -165,13 +177,12 @@ const Navigation = () => {
                   const IconComponent = link.icon;
                   return (
                     <Link key={link.href} to={link.href}>
-                      <DropdownMenuItem
-                        className="cursor-pointer p-3 rounded-md hover:bg-[#572670]/10 transition-all duration-200 group">
+                      <DropdownMenuItem className="cursor-pointer p-3 rounded-md hover:bg-[#572670]/10 transition-all duration-200 group">
                         <IconComponent className="h-4 w-4 mr-3 text-[#572670] group-hover:scale-110 transition-transform" />
                         <span className="font-medium">{link.name}</span>
                       </DropdownMenuItem>
-                    </Link>);
-
+                    </Link>
+                  );
                 })}
               </DropdownMenuContent>
             </DropdownMenu>
@@ -179,7 +190,7 @@ const Navigation = () => {
             {/* Patient Care Dropdown */}
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
-                <Button variant="ghost" className="text-white hover:text-white/80 hover:bg-white/10 flex items-center gap-1 transition-colors">
+                <Button variant="ghost" className="text-white hover:text-white/80 hover:bg-white/10 flex items-center gap-1 transition-colors text-sm">
                   Patient Care <ChevronDown className="h-4 w-4" />
                 </Button>
               </DropdownMenuTrigger>
@@ -188,148 +199,182 @@ const Navigation = () => {
                   const IconComponent = link.icon;
                   return (
                     <Link key={link.href} to={link.href}>
-                      <DropdownMenuItem
-                        className="cursor-pointer p-3 rounded-md hover:bg-[#572670]/10 transition-all duration-200 group">
+                      <DropdownMenuItem className="cursor-pointer p-3 rounded-md hover:bg-[#572670]/10 transition-all duration-200 group">
                         <IconComponent className="h-4 w-4 mr-3 text-[#572670] group-hover:scale-110 transition-transform" />
                         <span className="font-medium">{link.name}</span>
                       </DropdownMenuItem>
-                    </Link>);
-
+                    </Link>
+                  );
                 })}
               </DropdownMenuContent>
             </DropdownMenu>
 
-            <Link key="/contact" to="/contact">
-              <Button variant="ghost" className="text-white hover:text-white/80 hover:bg-white/10 transition-colors">
+            <Link to="/contact">
+              <Button variant="ghost" className="text-white hover:text-white/80 hover:bg-white/10 transition-colors text-sm">
                 <Mail className="h-4 w-4 mr-2" />
                 Contact
               </Button>
             </Link>
           </nav>
 
-          {/* Phone Number */}
+          {/* Phone Number - Responsive visibility */}
           <div className="hidden lg:flex items-center">
             <Button
               variant="outline"
-              className="border-white/30 text-purple-800 hover:bg-white hover:text-[#572670] hover:border-white transition-all duration-300 px-6">
-              <Phone className="h-4 w-4 mr-2" />
-              760-760-5675
+              size="sm"
+              className="border-white/30 text-white bg-white/5 hover:bg-white hover:text-[#572670] hover:border-white transition-all duration-300 px-3 lg:px-6 text-xs lg:text-sm">
+              <Phone className="h-3 w-3 lg:h-4 lg:w-4 mr-1 lg:mr-2" />
+              <span className="hidden lg:inline">760-760-5675</span>
+              <span className="lg:hidden">Call</span>
             </Button>
           </div>
 
-          {/* Mobile Menu Button */}
+          {/* Mobile Menu Button - Visible on mobile/tablet */}
           <Sheet open={isOpen} onOpenChange={setIsOpen}>
-            <SheetTrigger asChild className="lg:hidden">
-              <Button variant="ghost" size="icon" className="text-white">
-                <Menu className="h-6 w-6" />
+            <SheetTrigger asChild className="xl:hidden">
+              <Button variant="ghost" size="icon" className="text-white hover:bg-white/10 transition-colors">
+                <Menu className="h-5 w-5 sm:h-6 sm:w-6" />
               </Button>
             </SheetTrigger>
-            <SheetContent side="right" className="w-80 bg-white/95 backdrop-blur-md">
-              <SheetHeader>
-                <SheetTitle className="text-[#572670] text-xl">Menu</SheetTitle>
+            
+            <SheetContent side="right" className="w-[85vw] sm:w-80 bg-white/95 backdrop-blur-md border-l border-gray-200/50">
+              <SheetHeader className="pb-4">
+                <div className="flex items-center justify-between">
+                  <SheetTitle className="text-[#572670] text-lg sm:text-xl font-bold">Menu</SheetTitle>
+                </div>
               </SheetHeader>
-              <div className="mt-6 space-y-4">
-                <div className="space-y-2">
-                  <Link key="/" to="/">
-                    <Button variant="ghost" className="w-full justify-start">
-                      <Home className="h-4 w-4 mr-3" />
-                      Home
-                    </Button>
-                  </Link>
-                  <Link key="/about" to="/about">
-                    <Button variant="ghost" className="w-full justify-start">
-                      <User className="h-4 w-4 mr-3" />
-                      About
-                    </Button>
-                  </Link>
-                  <Link key="/team" to="/team">
-                    <Button variant="ghost" className="w-full justify-start">
-                      <UserCheck className="h-4 w-4 mr-3" />
-                      Our Team
-                    </Button>
-                  </Link>
-
-                  <div className="pl-4 space-y-2">
-                    <p className="font-medium text-gray-900 mb-3 text-sm uppercase tracking-wide">Services</p>
-                    {servicesLinks.map((link) => {
-                      const IconComponent = link.icon;
-                      return (
-                        <Link key={link.href} to={link.href}>
-                          <Button variant="ghost" className="w-full justify-start text-sm py-2">
-                            <IconComponent className="h-4 w-4 mr-3 text-[#572670]" />
-                            {link.name}
-                          </Button>
-                        </Link>);
-
-                    })}
+              
+              <ScrollArea className="h-[calc(100vh-120px)] -mx-6 px-6">
+                <div className="space-y-6">
+                  
+                  {/* Main Navigation */}
+                  <div className="space-y-2">
+                    <Link to="/" onClick={handleLinkClick}>
+                      <Button variant="ghost" className="w-full justify-start text-base py-3 hover:bg-[#572670]/10">
+                        <Home className="h-5 w-5 mr-3 text-[#572670]" />
+                        Home
+                      </Button>
+                    </Link>
+                    
+                    <Link to="/about" onClick={handleLinkClick}>
+                      <Button variant="ghost" className="w-full justify-start text-base py-3 hover:bg-[#572670]/10">
+                        <User className="h-5 w-5 mr-3 text-[#572670]" />
+                        About
+                      </Button>
+                    </Link>
+                    
+                    <Link to="/team" onClick={handleLinkClick}>
+                      <Button variant="ghost" className="w-full justify-start text-base py-3 hover:bg-[#572670]/10">
+                        <UserCheck className="h-5 w-5 mr-3 text-[#572670]" />
+                        Our Team
+                      </Button>
+                    </Link>
+                    
+                    <Link to="/contact" onClick={handleLinkClick}>
+                      <Button variant="ghost" className="w-full justify-start text-base py-3 hover:bg-[#572670]/10">
+                        <Mail className="h-5 w-5 mr-3 text-[#572670]" />
+                        Contact
+                      </Button>
+                    </Link>
                   </div>
 
-                  <div className="pl-4 space-y-2">
-                    <p className="font-medium text-gray-900 mb-3 text-sm uppercase tracking-wide">Conditions</p>
-                    {conditionsLinks.map((link) => {
-                      const IconComponent = link.icon;
-                      return (
-                        <Link key={link.href} to={link.href}>
-                          <Button variant="ghost" className="w-full justify-start text-sm py-2">
-                            <IconComponent className="h-4 w-4 mr-3 text-[#572670]" />
-                            {link.name}
-                          </Button>
-                        </Link>);
+                  <Separator />
 
-                    })}
+                  {/* Services Section */}
+                  <div className="space-y-3">
+                    <h3 className="font-semibold text-[#572670] text-sm uppercase tracking-wide">Services</h3>
+                    <div className="space-y-1">
+                      {servicesLinks.map((link) => {
+                        const IconComponent = link.icon;
+                        return (
+                          <Link key={link.href} to={link.href} onClick={handleLinkClick}>
+                            <Button variant="ghost" className="w-full justify-start text-sm py-2.5 pl-4 hover:bg-[#572670]/5">
+                              <IconComponent className="h-4 w-4 mr-3 text-[#572670]/70" />
+                              {link.name}
+                            </Button>
+                          </Link>
+                        );
+                      })}
+                    </div>
                   </div>
 
-                  <div className="pl-4 space-y-2">
-                    <p className="font-medium text-gray-900 mb-3 text-sm uppercase tracking-wide">Resources</p>
-                    {resourcesLinks.map((link) => {
-                      const IconComponent = link.icon;
-                      return (
-                        <Link key={link.href} to={link.href}>
-                          <Button variant="ghost" className="w-full justify-start text-sm py-2">
-                            <IconComponent className="h-4 w-4 mr-3 text-[#572670]" />
-                            {link.name}
-                          </Button>
-                        </Link>);
+                  <Separator />
 
-                    })}
+                  {/* Conditions Section */}
+                  <div className="space-y-3">
+                    <h3 className="font-semibold text-[#572670] text-sm uppercase tracking-wide">Conditions</h3>
+                    <div className="space-y-1">
+                      {conditionsLinks.map((link) => {
+                        const IconComponent = link.icon;
+                        return (
+                          <Link key={link.href} to={link.href} onClick={handleLinkClick}>
+                            <Button variant="ghost" className="w-full justify-start text-sm py-2.5 pl-4 hover:bg-[#572670]/5">
+                              <IconComponent className="h-4 w-4 mr-3 text-[#572670]/70" />
+                              {link.name}
+                            </Button>
+                          </Link>
+                        );
+                      })}
+                    </div>
                   </div>
 
-                  <div className="pl-4 space-y-2">
-                    <p className="font-medium text-gray-900 mb-3 text-sm uppercase tracking-wide">Patient Care</p>
-                    {patientLinks.map((link) => {
-                      const IconComponent = link.icon;
-                      return (
-                        <Link key={link.href} to={link.href}>
-                          <Button variant="ghost" className="w-full justify-start text-sm py-2">
-                            <IconComponent className="h-4 w-4 mr-3 text-[#572670]" />
-                            {link.name}
-                          </Button>
-                        </Link>);
+                  <Separator />
 
-                    })}
+                  {/* Resources Section */}
+                  <div className="space-y-3">
+                    <h3 className="font-semibold text-[#572670] text-sm uppercase tracking-wide">Resources</h3>
+                    <div className="space-y-1">
+                      {resourcesLinks.map((link) => {
+                        const IconComponent = link.icon;
+                        return (
+                          <Link key={link.href} to={link.href} onClick={handleLinkClick}>
+                            <Button variant="ghost" className="w-full justify-start text-sm py-2.5 pl-4 hover:bg-[#572670]/5">
+                              <IconComponent className="h-4 w-4 mr-3 text-[#572670]/70" />
+                              {link.name}
+                            </Button>
+                          </Link>
+                        );
+                      })}
+                    </div>
                   </div>
 
-                  <Link key="/contact" to="/contact">
-                    <Button variant="ghost" className="w-full justify-start">
-                      <Mail className="h-4 w-4 mr-3" />
-                      Contact
+                  <Separator />
+
+                  {/* Patient Care Section */}
+                  <div className="space-y-3">
+                    <h3 className="font-semibold text-[#572670] text-sm uppercase tracking-wide">Patient Care</h3>
+                    <div className="space-y-1">
+                      {patientLinks.map((link) => {
+                        const IconComponent = link.icon;
+                        return (
+                          <Link key={link.href} to={link.href} onClick={handleLinkClick}>
+                            <Button variant="ghost" className="w-full justify-start text-sm py-2.5 pl-4 hover:bg-[#572670]/5">
+                              <IconComponent className="h-4 w-4 mr-3 text-[#572670]/70" />
+                              {link.name}
+                            </Button>
+                          </Link>
+                        );
+                      })}
+                    </div>
+                  </div>
+
+                  <Separator />
+
+                  {/* Call to Action */}
+                  <div className="pt-4 pb-6">
+                    <Button className="w-full bg-[#572670] hover:bg-[#572670]/90 text-white py-3 text-base font-medium">
+                      <Phone className="h-5 w-5 mr-2" />
+                      Call 760-760-5675
                     </Button>
-                  </Link>
+                  </div>
                 </div>
-
-                <div className="border-t pt-6">
-                  <Button className="w-full bg-[#572670] hover:bg-[#572670]/90 text-black">
-                    <Phone className="h-4 w-4 mr-2" />
-                    760-760-5675
-                  </Button>
-                </div>
-              </div>
+              </ScrollArea>
             </SheetContent>
           </Sheet>
         </div>
       </div>
-    </header>);
-
+    </header>
+  );
 };
 
 export default Navigation;
