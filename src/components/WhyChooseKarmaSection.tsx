@@ -38,7 +38,7 @@ const WhyChooseKarmaSection = () => {
             Why Choose Karma TMS for Mental Health in Palm Springs?
           </h2>
           <p className="text-xl text-gray-600 leading-relaxed">
-            Experience advanced, compassionate, and personalized TMS therapy for lasting change at one of the leading mental health facilities in palm springs, supported by dedicated mental health counselors in palm springs ca.
+            Experience advanced, compassionate, and personalized TMS therapy for lasting results at one of Palm Springs’ leading mental health centers, supported by dedicated and experienced counselors in Palm Springs, CA
           </p>
         </div>
 
