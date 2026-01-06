@@ -41,9 +41,9 @@ const BipolarPage = () => {
             </div>
             <div className="relative">
               <img
-                src="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/8131cc49-7899-46f0-abe3-cdbb89395242.webp"
+                src="https://res.cloudinary.com/de4kw1t2i/image/upload/v1761742435/IMG_5128_fci7xz.jpg"
                 alt="Bipolar disorder brain activity"
-                className="rounded-lg shadow-2xl" />
+                className="rounded-lg shadow-2xl w-full h-full max-h-[400px] object-cover" />
 
             </div>
           </div>
