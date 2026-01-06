@@ -305,10 +305,10 @@ const AffiliationsPage = () => {
 
                       {/* Link */}
                       <Button
-                        variant="outline"
-                        className="w-full border-[#572670] text-[#572670] hover:bg-[#572670]/10"
-                        asChild
-                      >
+                      variant="outline"
+                      className="w-full border-[#572670] text-[#572670] hover:bg-[#572670]/10"
+                      asChild>
+
                         <Link to="/about">
                           <ExternalLink className="h-4 w-4 mr-2" />
                           Learn More

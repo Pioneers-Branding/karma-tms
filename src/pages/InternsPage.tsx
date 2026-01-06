@@ -372,15 +372,15 @@ const InternsPage = () => {
                       <div className="text-center">
                         <div className="text-2xl font-bold text-gray-900 mb-1">{rotation.spots}</div>
                         <div className="text-sm text-gray-600 mb-3">Spots Available</div>
-                        {rotation.available ? (
-                          <Button className="bg-[#572670] hover:bg-[#572670]/90" asChild>
+                        {rotation.available ?
+                      <Button className="bg-[#572670] hover:bg-[#572670]/90" asChild>
                             <Link to="/contact">Apply</Link>
-                          </Button>
-                        ) : (
-                          <Button className="bg-gray-400 cursor-not-allowed" disabled>
+                          </Button> :
+
+                      <Button className="bg-gray-400 cursor-not-allowed" disabled>
                             Full
                           </Button>
-                        )}
+                      }
                       </div>
                     </div>
                   </CardContent>
