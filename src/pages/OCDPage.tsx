@@ -48,7 +48,7 @@ const OCDPage = () => {
             </div>
             <div className="relative">
               <img
-                src="https://res.cloudinary.com/de4kw1t2i/image/upload/v1761733382/patient-in-tms_erqhyf.webp"
+                src="https://res.cloudinary.com/de4kw1t2i/image/upload/v1763030646/Exomind_PIC_Male-Model6_0070_ENUS100_q2zhyt.jpg"
                 alt="Brain imaging for OCD treatment"
                 className="rounded-lg shadow-2xl" />
 
