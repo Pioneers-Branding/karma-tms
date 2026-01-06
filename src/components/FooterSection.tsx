@@ -15,7 +15,6 @@ const FooterSection = () => {
   { name: 'TMS Therapy', href: '/tms-therapy' },
   { name: 'PrTMS', href: '/prtms' },
   { name: 'Brain Mapping', href: '/brain-mapping' },
-  { name: 'Neurofeedback', href: '/neurofeedback' },
   { name: 'Medication Management', href: '/medication-management' }];
 
 
