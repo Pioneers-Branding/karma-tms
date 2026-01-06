@@ -23,9 +23,9 @@ import {
   HandHelping,
   Calendar,
   Wallet,
-  BookA
-} from
-  'lucide-react';
+  BookA } from
+
+'lucide-react';
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -40,42 +40,42 @@ const Navigation = () => {
   }, []);
 
   const servicesLinks = [
-    { name: 'TMS Therapy', href: '/tms-therapy', icon: Brain },
-    { name: 'PrTMS', href: '/prtms', icon: Stethoscope },
-    { name: 'Brain Mapping', href: '/brain-mapping', icon: Brain },
-    { name: 'Neurofeedback', href: '/neurofeedback', icon: FileText },
-    { name: 'Medication Management', href: '/medication-management', icon: Shield }];
+  { name: 'TMS Therapy', href: '/tms-therapy', icon: Brain },
+  { name: 'PrTMS', href: '/prtms', icon: Stethoscope },
+  { name: 'Brain Mapping', href: '/brain-mapping', icon: Brain },
+  { name: 'Neurofeedback', href: '/neurofeedback', icon: FileText },
+  { name: 'Medication Management', href: '/medication-management', icon: Shield }];
 
 
   const conditionsLinks = [
-    { name: 'Depression', href: '/conditions/depression', icon: Heart },
-    { name: 'Anxiety Disorders', href: '/conditions/anxiety', icon: Shield },
-    { name: 'OCD', href: '/conditions/ocd', icon: Brain },
-    { name: 'PTSD', href: '/conditions/ptsd', icon: Heart },
-    { name: 'Bipolar Depression', href: '/conditions/bipolar', icon: Brain },
-    { name: 'Addiction Recovery', href: '/conditions/addiction', icon: Heart },
-    { name: "Women's Mood", href: '/conditions/womens-mood', icon: Heart }];
+  { name: 'Depression', href: '/conditions/depression', icon: Heart },
+  { name: 'Anxiety Disorders', href: '/conditions/anxiety', icon: Shield },
+  { name: 'OCD', href: '/conditions/ocd', icon: Brain },
+  { name: 'PTSD', href: '/conditions/ptsd', icon: Heart },
+  { name: 'Bipolar Depression', href: '/conditions/bipolar', icon: Brain },
+  { name: 'Addiction Recovery', href: '/conditions/addiction', icon: Heart },
+  { name: "Women's Mood", href: '/conditions/womens-mood', icon: Heart }];
 
 
   const resourcesLinks = [
-    { name: 'Testimonials', href: '/testimonials', icon: Users },
-    { name: 'Research', href: '/research', icon: BookOpen },
-    { name: 'Blog', href: '/blog', icon: FileText },
-    { name: 'FAQs', href: '/faqs', icon: HelpCircle },
-    { name: 'Take Quiz', href: '/quiz', icon: Award }];
+  { name: 'Testimonials', href: '/testimonials', icon: Users },
+  { name: 'Research', href: '/research', icon: BookOpen },
+  { name: 'Blog', href: '/blog', icon: FileText },
+  { name: 'FAQs', href: '/faqs', icon: HelpCircle },
+  { name: 'Take Quiz', href: '/quiz', icon: Award }];
 
   const patientLinks = [
-    { name: 'Affiliations', href: '/affiliations', icon: HandHelping },
-    { name: 'Internships', href: '/interns', icon: BookA },
-    { name: 'Insurance & Pricing', href: '/insurance-pricing', icon: Wallet },
-    { name: 'Book Appointment', href: '/book', icon: Calendar }];
+  { name: 'Affiliations', href: '/affiliations', icon: HandHelping },
+  { name: 'Internships', href: '/interns', icon: BookA },
+  { name: 'Insurance & Pricing', href: '/insurance-pricing', icon: Wallet },
+  { name: 'Book Appointment', href: '/book', icon: Calendar }];
 
 
   return (
     <header className={`sticky top-0 z-50 transition-all duration-100 ${
-      scrolled ?
-        'bg-[#572670]/95 backdrop-blur-sm m-0 shadow-lg border-b border-white/20 rounded-bl-2xl rounded-br-2xl' :
-        'bg-[#572670]/90 backdrop-blur-xs m-2 shadow-sm border-b border-white/10 rounded-2xl'}`}>
+    scrolled ?
+    'bg-[#572670]/95 backdrop-blur-sm m-0 shadow-lg border-b border-white/20 rounded-bl-2xl rounded-br-2xl' :
+    'bg-[#572670]/90 backdrop-blur-xs m-2 shadow-sm border-b border-white/10 rounded-2xl'}`}>
       <div className="max-w-[1600px] mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
@@ -124,8 +124,8 @@ const Navigation = () => {
                         <IconComponent className="h-4 w-4 mr-3 text-[#572670] group-hover:scale-110 transition-transform" />
                         <span className="font-medium">{link.name}</span>
                       </DropdownMenuItem>
-                    </Link>
-                  );
+                    </Link>);
+
                 })}
               </DropdownMenuContent>
             </DropdownMenu>
@@ -147,8 +147,8 @@ const Navigation = () => {
                         <IconComponent className="h-4 w-4 mr-3 text-[#572670] group-hover:scale-110 transition-transform" />
                         <span className="font-medium">{link.name}</span>
                       </DropdownMenuItem>
-                    </Link>
-                  );
+                    </Link>);
+
                 })}
               </DropdownMenuContent>
             </DropdownMenu>
@@ -170,8 +170,8 @@ const Navigation = () => {
                         <IconComponent className="h-4 w-4 mr-3 text-[#572670] group-hover:scale-110 transition-transform" />
                         <span className="font-medium">{link.name}</span>
                       </DropdownMenuItem>
-                    </Link>
-                  );
+                    </Link>);
+
                 })}
               </DropdownMenuContent>
             </DropdownMenu>
@@ -193,8 +193,8 @@ const Navigation = () => {
                         <IconComponent className="h-4 w-4 mr-3 text-[#572670] group-hover:scale-110 transition-transform" />
                         <span className="font-medium">{link.name}</span>
                       </DropdownMenuItem>
-                    </Link>
-                  );
+                    </Link>);
+
                 })}
               </DropdownMenuContent>
             </DropdownMenu>
@@ -259,8 +259,8 @@ const Navigation = () => {
                             <IconComponent className="h-4 w-4 mr-3 text-[#572670]" />
                             {link.name}
                           </Button>
-                        </Link>
-                      );
+                        </Link>);
+
                     })}
                   </div>
 
@@ -274,8 +274,8 @@ const Navigation = () => {
                             <IconComponent className="h-4 w-4 mr-3 text-[#572670]" />
                             {link.name}
                           </Button>
-                        </Link>
-                      );
+                        </Link>);
+
                     })}
                   </div>
 
@@ -289,8 +289,8 @@ const Navigation = () => {
                             <IconComponent className="h-4 w-4 mr-3 text-[#572670]" />
                             {link.name}
                           </Button>
-                        </Link>
-                      );
+                        </Link>);
+
                     })}
                   </div>
 
@@ -304,8 +304,8 @@ const Navigation = () => {
                             <IconComponent className="h-4 w-4 mr-3 text-[#572670]" />
                             {link.name}
                           </Button>
-                        </Link>
-                      );
+                        </Link>);
+
                     })}
                   </div>
 
@@ -328,8 +328,8 @@ const Navigation = () => {
           </Sheet>
         </div>
       </div>
-    </header>
-  );
+    </header>);
+
 };
 
 export default Navigation;
