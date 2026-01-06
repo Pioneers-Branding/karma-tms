@@ -93,26 +93,26 @@ const VAVeteransPTSDTMSBlogPostPage = () => {
   }];
 
 
-  const relatedPosts = [
+ const relatedPosts = [
   {
-    title: 'How TMS Therapy Helps Veterans Heal: A New Hope for PTSD',
-    excerpt: 'Comprehensive guide on TMS therapy for veterans with PTSD, depression, and anxiety. Learn about success stories and treatment options.',
-    link: '/blog/veterans-tms-therapy',
-    image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/f00dd3f4-cea1-4918-8fec-5976198e195f.webp'
+    title: 'TMS for Migraine Relief in Veterans',
+    excerpt: 'Learn how TMS helps veterans with migraines and comorbid conditions like PTSD and depression.',
+    link: '/blogs/tms-migraine-veterans',
+    image: 'https://res.cloudinary.com/de4kw1t2i/image/upload/v1762863799/blog_4_hzwvvb.png'
   },
   {
-    title: 'Understanding PTSD Treatment Options',
-    excerpt: 'Comprehensive guide to PTSD treatment approaches including therapy, medication, and innovative treatments.',
-    link: '/ptsd',
-    image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/02c362bd-cde2-431d-8820-a07a14939638.webp'
+    title: 'TMS for Anxiety in Veterans',
+    excerpt: 'Discover how TMS helps veterans manage anxiety beyond medication.',
+    link: '/blogs/tms-anxiety-veterans',
+    image: 'https://res.cloudinary.com/de4kw1t2i/image/upload/v1762863798/blog_6_z1bbda.png'
   },
   {
-    title: 'TMS Therapy: A Complete Guide',
-    excerpt: 'Everything you need to know about Transcranial Magnetic Stimulation therapy and how it works.',
-    link: '/tms-therapy',
-    image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/76caee2d-5629-4dc1-a3b4-8c5cea23ede6.webp'
-  }];
-
+    title: 'Understanding PTSD in Veterans',
+    excerpt: 'Complete guide to PTSD signs, symptoms, and treatment paths including TMS therapy.',
+    link: '/blogs/understanding-ptsd-veterans',
+    image: 'https://res.cloudinary.com/de4kw1t2i/image/upload/v1762863798/blog_2_ahwkma.png'
+  }
+];
 
   const articleSchema = {
     '@context': 'https://schema.org',
@@ -289,7 +289,7 @@ const VAVeteransPTSDTMSBlogPostPage = () => {
               <img
                 src="https://res.cloudinary.com/de4kw1t2i/image/upload/v1763033664/1_w61pyl.png"
                 alt="VA veterans PTSD TMS therapy treatment"
-                className="w-full h-64 md:h-96 object-cover rounded-lg mb-6" />
+                className="w-full  md:h-96 object-cover rounded-lg mb-6" />
 
 
               <p className="text-xl text-gray-700 leading-relaxed">
@@ -350,7 +350,7 @@ const VAVeteransPTSDTMSBlogPostPage = () => {
               <img
                 src="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/f00dd3f4-cea1-4918-8fec-5976198e195f.webp"
                 alt="Veterans receiving mental health support"
-                className="w-full h-64 object-cover rounded-lg mb-6" />
+                className="w-full  object-cover rounded-lg mb-6" />
 
 
               <h3 className="text-2xl font-bold text-gray-900 mb-4">
@@ -414,7 +414,7 @@ const VAVeteransPTSDTMSBlogPostPage = () => {
               <img
                 src="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/02c362bd-cde2-431d-8820-a07a14939638.webp"
                 alt="PTSD treatment for veterans"
-                className="w-full h-64 object-cover rounded-lg mb-6" />
+                className="w-full  object-cover rounded-lg mb-6" />
 
 
               <Card className="bg-blue-50 border-blue-200 mb-6">
@@ -443,10 +443,7 @@ const VAVeteransPTSDTMSBlogPostPage = () => {
                 system.
               </p>
 
-              <img
-                src="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/76caee2d-5629-4dc1-a3b4-8c5cea23ede6.webp"
-                alt="TMS therapy equipment for veterans"
-                className="w-full h-64 object-cover rounded-lg mb-6" />
+             
 
 
               <h3 className="text-2xl font-bold text-gray-900 mb-4">VA's Investment in TMS Technology</h3>
@@ -563,10 +560,6 @@ const VAVeteransPTSDTMSBlogPostPage = () => {
                 </table>
               </div>
 
-              <img
-                src="https://images.unsplash.com/photo-1642844819197-5f5f21b89ff8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MTg3MTl8MHwxfHNlYXJjaHwxfHxNb2Rlcm4lMjBUTVMlMjB0aGVyYXB5JTIwY2hhaXJ8ZW58MHx8fHwxNzYyNzcyMjU2fDA&ixlib=rb-4.1.0&q=80&w=200$w=800"
-                alt="Modern TMS therapy chair"
-                className="w-full h-64 object-cover rounded-lg mb-6" />
 
 
               <Card className="bg-gradient-to-br from-green-50 to-transparent border-green-200 mb-6">
@@ -815,7 +808,7 @@ const VAVeteransPTSDTMSBlogPostPage = () => {
                   key={index}
                   className="border-[#572670]/20 overflow-hidden hover:shadow-lg transition-shadow">
 
-                    <img src={post.image} alt={post.title} className="w-full h-48 object-cover" />
+                    <img src={post.image} alt={post.title} className="w-full  object-cover" />
                     <CardContent className="p-6">
                       <h3 className="font-bold text-lg mb-2 hover:text-[#572670] transition-colors">
                         <Link to={post.link}>{post.title}</Link>
