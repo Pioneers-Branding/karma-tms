@@ -162,16 +162,16 @@ const RanchoMiragePage = () => {
             {/* Header */}
             <div className="text-center mb-12">
               <Badge className="text-[#ffffff] inline-flex items-center rounded-md border transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 shadow hover:bg-primary/80 mb-4 border-white text-sm font-semibold px-4 py-2">
-                🏆 EXCLUSIVE TO RANCHO MIRAGE
+                🏆 ADVANCED MENTAL HEALTH TREATMENT
               </Badge>
               <h2 className="text-3xl lg:text-5xl font-bold mb-6 bg-gradient-to-r from-white via-purple-100 to-white bg-clip-text text-transparent">
-                Introducing Exomind: The Future of TMS Therapy
+                Advanced TMS Therapy with Exomind Technology
               </h2>
               <p className="text-xl lg:text-2xl text-purple-100 max-w-3xl mx-auto mb-4">
-                KarmaTMS Rancho Mirage is proud to be the <span className="font-bold text-yellow-300">first and only location</span> to offer cutting-edge Exomind devices
+                KarmaTMS Rancho Mirage offers <span className="font-bold text-yellow-300">cutting-edge Exomind TMS therapy</span> for treatment-resistant depression, anxiety disorders, and mental health conditions
               </p>
               <p className="text-lg text-purple-200 max-w-2xl mx-auto">
-                Experience the most advanced TMS technology available, exclusively at our Rancho Mirage facility
+                Experience innovative transcranial magnetic stimulation technology with precision-targeted treatment protocols for depression, anxiety, OCD, and PTSD at our Rancho Mirage mental health clinic
               </p>
             </div>
 
