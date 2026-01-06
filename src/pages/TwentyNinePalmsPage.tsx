@@ -84,7 +84,7 @@ const TwentyNinePalmsPage = () => {
       {/* Hero Section */}
       <div className="relative bg-gradient-to-br from-purple-900 via-purple-800 to-purple-700 text-white py-24 lg:py-32">
         <div className="absolute inset-0 opacity-20">
-          <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1706203644358-9a16606dcff7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MTg3MTl8MHwxfHNlYXJjaHwxfHxBJTIwc2NlbmljJTIwdmlldyUyMG9mJTIwYSUyMGRlc2VydCUyMGxhbmRzY2FwZSUyMHdpdGglMjBtb3VudGFpbnMlMjBpbiUyMHRoZSUyMGJhY2tncm91bmQlMjBhbmQlMjBhJTIwY2xlYXIlMjBibHVlJTIwc2t5LnxlbnwwfHx8fDE3NjM3MjYxNTR8MA&ixlib=rb-4.1.0&q=80&w=200$w=1920')] bg-cover bg-center" />
+          <div className="absolute inset-0 bg-[url('https://res.cloudinary.com/de4kw1t2i/image/upload/v1763039658/2_miiwgx.jpg" />
         </div>
         <div className="container mx-auto px-4 relative z-10">
           <Badge className="mb-4 bg-purple-500/20 text-white border-purple-300">Twentynine Palms Location</Badge>
