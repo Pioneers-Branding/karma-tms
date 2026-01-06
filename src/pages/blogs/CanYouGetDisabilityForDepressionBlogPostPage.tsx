@@ -10,16 +10,16 @@ import {
   BreadcrumbLink,
   BreadcrumbList,
   BreadcrumbPage,
-  BreadcrumbSeparator
-} from '@/components/ui/breadcrumb';
+  BreadcrumbSeparator } from
+'@/components/ui/breadcrumb';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import {
   Accordion,
   AccordionContent,
   AccordionItem,
-  AccordionTrigger
-} from '@/components/ui/accordion';
+  AccordionTrigger } from
+'@/components/ui/accordion';
 import { Calendar, Clock, User, CheckCircle2, ArrowRight, Shield } from 'lucide-react';
 import AuthorBox from '@/components/AuthorBox';
 
@@ -28,14 +28,14 @@ const CanYouGetDisabilityForDepressionBlogPostPage = () => {
   const sectionsRef = useRef<{[key: string]: HTMLElement | null;}>({});
 
   const tocItems = [
-    { id: 'understanding-disability', label: 'Understanding Disability for Depression' },
-    { id: 'ssdi-vs-ssi', label: 'SSDI vs SSI Benefits' },
-    { id: 'eligibility-criteria', label: 'Eligibility Criteria' },
-    { id: 'application-process', label: 'Application Process' },
-    { id: 'short-vs-long-term', label: 'Short-Term vs Long-Term Disability' },
-    { id: 'treatment-options', label: 'Treatment Options' },
-    { id: 'faqs', label: 'Frequently Asked Questions' }
-  ];
+  { id: 'understanding-disability', label: 'Understanding Disability for Depression' },
+  { id: 'ssdi-vs-ssi', label: 'SSDI vs SSI Benefits' },
+  { id: 'eligibility-criteria', label: 'Eligibility Criteria' },
+  { id: 'application-process', label: 'Application Process' },
+  { id: 'short-vs-long-term', label: 'Short-Term vs Long-Term Disability' },
+  { id: 'treatment-options', label: 'Treatment Options' },
+  { id: 'faqs', label: 'Frequently Asked Questions' }];
+
 
   useEffect(() => {
     const handleScroll = () => {
@@ -68,67 +68,67 @@ const CanYouGetDisabilityForDepressionBlogPostPage = () => {
   };
 
   const faqs = [
-    {
-      question: 'Can you get disability for depression?',
-      answer: 'Yes, you can get disability benefits for depression if it severely impacts your ability to work and perform daily activities. The Social Security Administration recognizes major depressive disorder as a qualifying condition for SSDI and SSI benefits if it meets specific medical and functional criteria.'
-    },
-    {
-      question: 'How long do you have to be depressed to get disability?',
-      answer: 'To qualify for Social Security Disability benefits, your depression must have lasted or be expected to last at least 12 consecutive months, or result in death. The condition must prevent you from performing substantial gainful activity during this period.'
-    },
-    {
-      question: 'What is the approval rate for depression disability claims?',
-      answer: 'Initial approval rates for depression-based disability claims range from 35-40%. However, many successful claims are approved on appeal. Working with healthcare providers to thoroughly document your condition and functional limitations significantly improves approval chances.'
-    },
-    {
-      question: 'How much disability can you get for depression?',
-      answer: 'SSDI benefit amounts vary based on your work history and earnings record, with average monthly payments around $1,500-$1,900. SSI provides a fixed monthly payment (approximately $914 in 2024) for individuals with limited income and resources. Actual amounts may vary.'
-    },
-    {
-      question: 'What documentation do I need for a depression disability claim?',
-      answer: 'Essential documentation includes comprehensive medical records, psychiatric evaluations, treatment history, medication records, therapy notes, hospitalization records, and detailed statements about how depression limits your daily activities and work capacity from both you and your healthcare providers.'
-    },
-    {
-      question: 'Can I work while receiving disability for depression?',
-      answer: 'Limited work is possible under trial work period provisions. For SSDI, you can earn up to $1,550/month (2024) during a trial work period without losing benefits. For SSI, earnings above certain thresholds reduce benefits. Returning to full-time substantial gainful activity may result in termination of benefits.'
-    },
-    {
-      question: 'Does treatment-resistant depression qualify for disability?',
-      answer: 'Yes, treatment-resistant depression often strengthens disability claims. If you\'ve tried multiple treatments (medications, therapy) without success, this demonstrates the severity and persistence of your condition. Innovative treatments like TMS therapy may provide relief and potentially restore work capacity.'
-    },
-    {
-      question: 'Can TMS therapy help me return to work?',
-      answer: 'TMS therapy has helped many people with treatment-resistant depression significantly improve their symptoms, with 50-60% response rates. Many patients report improved concentration, energy, and productivity after TMS treatment, enabling them to return to work or maintain employment. Unlike medications, TMS has minimal side effects.'
-    }
-  ];
+  {
+    question: 'Can you get disability for depression?',
+    answer: 'Yes, you can get disability benefits for depression if it severely impacts your ability to work and perform daily activities. The Social Security Administration recognizes major depressive disorder as a qualifying condition for SSDI and SSI benefits if it meets specific medical and functional criteria.'
+  },
+  {
+    question: 'How long do you have to be depressed to get disability?',
+    answer: 'To qualify for Social Security Disability benefits, your depression must have lasted or be expected to last at least 12 consecutive months, or result in death. The condition must prevent you from performing substantial gainful activity during this period.'
+  },
+  {
+    question: 'What is the approval rate for depression disability claims?',
+    answer: 'Initial approval rates for depression-based disability claims range from 35-40%. However, many successful claims are approved on appeal. Working with healthcare providers to thoroughly document your condition and functional limitations significantly improves approval chances.'
+  },
+  {
+    question: 'How much disability can you get for depression?',
+    answer: 'SSDI benefit amounts vary based on your work history and earnings record, with average monthly payments around $1,500-$1,900. SSI provides a fixed monthly payment (approximately $914 in 2024) for individuals with limited income and resources. Actual amounts may vary.'
+  },
+  {
+    question: 'What documentation do I need for a depression disability claim?',
+    answer: 'Essential documentation includes comprehensive medical records, psychiatric evaluations, treatment history, medication records, therapy notes, hospitalization records, and detailed statements about how depression limits your daily activities and work capacity from both you and your healthcare providers.'
+  },
+  {
+    question: 'Can I work while receiving disability for depression?',
+    answer: 'Limited work is possible under trial work period provisions. For SSDI, you can earn up to $1,550/month (2024) during a trial work period without losing benefits. For SSI, earnings above certain thresholds reduce benefits. Returning to full-time substantial gainful activity may result in termination of benefits.'
+  },
+  {
+    question: 'Does treatment-resistant depression qualify for disability?',
+    answer: 'Yes, treatment-resistant depression often strengthens disability claims. If you\'ve tried multiple treatments (medications, therapy) without success, this demonstrates the severity and persistence of your condition. Innovative treatments like TMS therapy may provide relief and potentially restore work capacity.'
+  },
+  {
+    question: 'Can TMS therapy help me return to work?',
+    answer: 'TMS therapy has helped many people with treatment-resistant depression significantly improve their symptoms, with 50-60% response rates. Many patients report improved concentration, energy, and productivity after TMS treatment, enabling them to return to work or maintain employment. Unlike medications, TMS has minimal side effects.'
+  }];
+
 
   const relatedPosts = [
-    {
-      title: 'Is Depression a Disability? Understanding Rights and Support',
-      excerpt: 'Learn about legal protections, workplace accommodations, and disability rights for depression.',
-      link: '/blog/is-depression-a-disability',
-      image: 'https://res.cloudinary.com/de4kw1t2i/image/upload/v1765015452/37_kghe3l.png'
-    },
-    {
-      title: 'TMS Therapy for Treatment-Resistant Depression',
-      excerpt: 'Discover how TMS therapy offers hope for depression that hasn\'t responded to other treatments.',
-      link: '/blog/tms-therapy-treatment-resistant-depression',
-      image: 'https://res.cloudinary.com/de4kw1t2i/image/upload/v1764138579/32_og3ayd.png'
-    },
-    {
-      title: 'Does TMS Therapy Work for Anxiety?',
-      excerpt: 'Learn about TMS therapy effectiveness for anxiety disorders and co-occurring conditions.',
-      link: '/blog/does-tms-therapy-work-for-anxiety',
-      image: 'https://res.cloudinary.com/de4kw1t2i/image/upload/v1764569002/34_g1u7jn.png'
-    }
-  ];
+  {
+    title: 'Is Depression a Disability? Understanding Rights and Support',
+    excerpt: 'Learn about legal protections, workplace accommodations, and disability rights for depression.',
+    link: '/blog/is-depression-a-disability',
+    image: 'https://res.cloudinary.com/de4kw1t2i/image/upload/v1765015452/37_kghe3l.png'
+  },
+  {
+    title: 'TMS Therapy for Treatment-Resistant Depression',
+    excerpt: 'Discover how TMS therapy offers hope for depression that hasn\'t responded to other treatments.',
+    link: '/blog/tms-therapy-treatment-resistant-depression',
+    image: 'https://res.cloudinary.com/de4kw1t2i/image/upload/v1764138579/32_og3ayd.png'
+  },
+  {
+    title: 'Does TMS Therapy Work for Anxiety?',
+    excerpt: 'Learn about TMS therapy effectiveness for anxiety disorders and co-occurring conditions.',
+    link: '/blog/does-tms-therapy-work-for-anxiety',
+    image: 'https://res.cloudinary.com/de4kw1t2i/image/upload/v1764569002/34_g1u7jn.png'
+  }];
+
 
   const articleSchema = {
     '@context': 'https://schema.org',
     '@type': 'Article',
     headline: 'Can You Get Disability for Depression? Understanding Your Rights, Benefits, and Treatment Options',
     description: 'Learn if you can get disability for depression. Comprehensive guide covering SSA eligibility, application process, documentation, and treatment options including TMS therapy.',
-    image: 'https://res.cloudinary.com/de4kw1t2i/image/upload/v1765015452/37_kghe3l.png',
+    image: 'https://res.cloudinary.com/de4kw1t2i/image/upload/v1765015453/38_lkmqxw.png',
     author: {
       '@type': 'Person',
       name: 'KarmaTMS Medical Team'
@@ -169,18 +169,18 @@ const CanYouGetDisabilityForDepressionBlogPostPage = () => {
         description="Learn if you can get disability for depression. Comprehensive guide covering SSA eligibility, application process, documentation, and treatment options including TMS therapy."
         keywords="disability for depression, SSDI depression, SSI benefits depression, depression disability benefits, how to get disability for depression, treatment resistant depression, TMS therapy Palm Springs"
         canonical="/blog/can-you-get-disability-for-depression"
-        ogImage="https://res.cloudinary.com/de4kw1t2i/image/upload/v1765015452/37_kghe3l.png"
-        ogType="article"
-      />
+        ogImage="https://res.cloudinary.com/de4kw1t2i/image/upload/v1765015453/38_lkmqxw.png"
+        ogType="article" />
+
 
       <StructuredData
         type="breadcrumb"
         breadcrumbs={[
-          { name: 'Home', url: '/' },
-          { name: 'Blog', url: '/blog' },
-          { name: 'Can You Get Disability for Depression?', url: '/blog/can-you-get-disability-for-depression' }
-        ]}
-      />
+        { name: 'Home', url: '/' },
+        { name: 'Blog', url: '/blog' },
+        { name: 'Can You Get Disability for Depression?', url: '/blog/can-you-get-disability-for-depression' }]
+        } />
+
 
       <script type="application/ld+json">
         {JSON.stringify(articleSchema)}
@@ -264,19 +264,19 @@ const CanYouGetDisabilityForDepressionBlogPostPage = () => {
                 <CardContent className="p-6">
                   <h3 className="font-bold text-lg mb-4 text-[#572670]">Table of Contents</h3>
                   <nav className="space-y-2">
-                    {tocItems.map((item) => (
-                      <button
-                        key={item.id}
-                        onClick={() => scrollToSection(item.id)}
-                        className={`block w-full text-left px-3 py-2 rounded-md text-sm transition-all ${
-                          activeSection === item.id
-                            ? 'bg-[#572670] text-white font-medium'
-                            : 'text-gray-700 hover:bg-[#572670]/10'
-                        }`}
-                      >
+                    {tocItems.map((item) =>
+                    <button
+                      key={item.id}
+                      onClick={() => scrollToSection(item.id)}
+                      className={`block w-full text-left px-3 py-2 rounded-md text-sm transition-all ${
+                      activeSection === item.id ?
+                      'bg-[#572670] text-white font-medium' :
+                      'text-gray-700 hover:bg-[#572670]/10'}`
+                      }>
+
                         {item.label}
                       </button>
-                    ))}
+                    )}
                   </nav>
                   <div className="mt-6 pt-6 border-t">
                     <Button asChild className="w-full bg-[#572670] hover:bg-[#7B3FA0]">
@@ -293,10 +293,10 @@ const CanYouGetDisabilityForDepressionBlogPostPage = () => {
             {/* Introduction */}
             <div className="mb-12">
               <img
-                src="https://res.cloudinary.com/de4kw1t2i/image/upload/v1765015452/37_kghe3l.png"
+                src="https://res.cloudinary.com/de4kw1t2i/image/upload/v1765015453/38_lkmqxw.png"
                 alt="Can you get disability for depression"
-                className="w-full object-cover rounded-lg mb-6"
-              />
+                className="w-full object-cover rounded-lg mb-6" />
+
 
               <p className="text-xl text-gray-700 leading-relaxed">
                 If you're struggling with severe <Link to="/depression" className="text-[#572670] hover:underline font-medium">depression</Link>, you may be wondering: "Can you get disability for depression?" The answer is yes—depression can qualify you for disability benefits through Social Security Disability Insurance (SSDI) or Supplemental Security Income (SSI) if it significantly impairs your ability to work and maintain daily functioning. This comprehensive guide explains eligibility requirements, the application process, necessary documentation, and how innovative treatments like <Link to="/tms-therapy" className="text-[#572670] hover:underline font-medium">TMS therapy</Link> can help you manage symptoms and potentially return to work.
@@ -868,20 +868,20 @@ const CanYouGetDisabilityForDepressionBlogPostPage = () => {
               name="Dr. Keerthy Sunder"
               role="Board-Certified Psychiatrist | Medical Director at KarmaTMS"
               bio="Dr. Keerthy Sunder is a board-certified psychiatrist specializing in TMS therapy for treatment-resistant mental health conditions. With extensive experience in neuroscience and innovative treatment modalities, Dr. Sunder is dedicated to helping individuals overcome depression, anxiety, and PTSD through evidence-based, compassionate care."
-              image="https://www.prtms.com/wp-content/uploads/2023/03/Dr.-Keerthy-Sunder-scaled.jpg"
-            />
+              image="https://www.prtms.com/wp-content/uploads/2023/03/Dr.-Keerthy-Sunder-scaled.jpg" />
+
 
             {/* FAQ Section */}
             <section ref={(el) => sectionsRef.current['faqs'] = el} className="mb-12 mt-12">
               <h2 className="text-3xl font-bold text-[#572670] mb-6">Frequently Asked Questions</h2>
               
               <Accordion type="single" collapsible className="w-full space-y-2">
-                {faqs.map((faq, index) => (
-                  <AccordionItem
-                    key={index}
-                    value={`item-${index}`}
-                    className="border border-gray-200 rounded-lg px-4 data-[state=open]:border-[#572670]"
-                  >
+                {faqs.map((faq, index) =>
+                <AccordionItem
+                  key={index}
+                  value={`item-${index}`}
+                  className="border border-gray-200 rounded-lg px-4 data-[state=open]:border-[#572670]">
+
                     <AccordionTrigger className="text-left font-semibold hover:text-[#572670] hover:no-underline">
                       {faq.question}
                     </AccordionTrigger>
@@ -889,7 +889,7 @@ const CanYouGetDisabilityForDepressionBlogPostPage = () => {
                       {faq.answer}
                     </AccordionContent>
                   </AccordionItem>
-                ))}
+                )}
               </Accordion>
             </section>
 
@@ -917,13 +917,13 @@ const CanYouGetDisabilityForDepressionBlogPostPage = () => {
             <section className="mb-12">
               <h2 className="text-3xl font-bold text-[#572670] mb-6">Related Articles</h2>
               <div className="grid md:grid-cols-3 gap-6">
-                {relatedPosts.map((post, index) => (
-                  <Card key={index} className="border-[#572670]/20 overflow-hidden hover:shadow-lg transition-shadow">
+                {relatedPosts.map((post, index) =>
+                <Card key={index} className="border-[#572670]/20 overflow-hidden hover:shadow-lg transition-shadow">
                     <img
-                      src={post.image}
-                      alt={post.title}
-                      className="w-full h-48 object-cover"
-                    />
+                    src={post.image}
+                    alt={post.title}
+                    className="w-full h-48 object-cover" />
+
                     <CardContent className="p-6">
                       <h3 className="font-bold text-lg mb-2 hover:text-[#572670] transition-colors">
                         <Link to={post.link}>{post.title}</Link>
@@ -936,7 +936,7 @@ const CanYouGetDisabilityForDepressionBlogPostPage = () => {
                       </Button>
                     </CardContent>
                   </Card>
-                ))}
+                )}
               </div>
             </section>
           </article>
@@ -944,8 +944,8 @@ const CanYouGetDisabilityForDepressionBlogPostPage = () => {
       </div>
 
       <FooterSection />
-    </>
-  );
+    </>);
+
 };
 
 export default CanYouGetDisabilityForDepressionBlogPostPage;
