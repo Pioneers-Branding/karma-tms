@@ -244,7 +244,7 @@ const VAVeteransPTSDTMSBlogPostPage = () => {
                 variant="outline"
                 className="border-white text-white hover:bg-white/10">
 
-                <Link to="/contact">Schedule Consultation</Link>
+                
               </Button>
             </div>
           </div>
