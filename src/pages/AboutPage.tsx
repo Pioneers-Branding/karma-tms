@@ -429,10 +429,10 @@ const AboutPage = () => {
               Contact us today to learn more about our innovative TMS treatments and how we can help you reclaim your life.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a href="tel:951-297-8375">
+              <a href="tel:760-760-5675">
                 <Button className="bg-white text-[#572670] hover:bg-gray-100 px-8 py-3 text-lg">
                   <Phone className="mr-2 h-5 w-5" />
-                  Call Now: 951-297-8375
+                  Call Now: 760-760-5675
                 </Button>
               </a>
               <Link to="/contact">

@@ -506,7 +506,7 @@ export default function TMSAnxietyVeteransBlogPostPage() {
                   Schedule Free Consultation
                 </Link>
                 <a
-                  href="tel:760-449-8185"
+                  href="tel:760-760-5675"
                   className="inline-flex items-center justify-center gap-2 bg-blue-700 text-white px-8 py-4 rounded-lg hover:bg-blue-800 transition-colors font-semibold text-lg border-2 border-white">
 
                   <Phone className="h-5 w-5" />
