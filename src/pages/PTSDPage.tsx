@@ -41,9 +41,9 @@ const PTSDPage = () => {
             </div>
             <div className="relative">
               <img
-                src="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/02c362bd-cde2-431d-8820-a07a14939638.webp"
+                src="https://res.cloudinary.com/de4kw1t2i/image/upload/v1761916020/Image_20251021_173516_999_lqfxuz.jpg"
                 alt="PTSD therapy and support"
-                className="rounded-lg shadow-2xl" />
+                className="rounded-lg shadow-2xl h-full w-full max-h-[400px] object-cover" />
 
             </div>
           </div>
