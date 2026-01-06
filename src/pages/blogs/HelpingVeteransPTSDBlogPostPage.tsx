@@ -10,33 +10,33 @@ import {
   BreadcrumbLink,
   BreadcrumbList,
   BreadcrumbPage,
-  BreadcrumbSeparator } from
-'@/components/ui/breadcrumb';
+  BreadcrumbSeparator
+} from '@/components/ui/breadcrumb';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import {
   Accordion,
   AccordionContent,
   AccordionItem,
-  AccordionTrigger } from
-'@/components/ui/accordion';
+  AccordionTrigger
+} from '@/components/ui/accordion';
 import { Calendar, Clock, User, CheckCircle2, ArrowRight, Heart, Phone, MapPin } from 'lucide-react';
 import AuthorBox from '@/components/AuthorBox';
 
 const HelpingVeteransPTSDBlogPostPage = () => {
   const [activeSection, setActiveSection] = useState('');
-  const sectionsRef = useRef<{[key: string]: HTMLElement | null;}>({});
+  const sectionsRef = useRef({});
 
   const tocItems = [
-  { id: 'understanding-ptsd', label: 'Understanding Veteran PTSD' },
-  { id: 'therapy-options', label: 'Therapy Options' },
-  { id: 'tms-for-ptsd', label: 'TMS for PTSD' },
-  { id: 'local-clinics', label: 'Local Karma TMS Clinics' },
-  { id: 'support-resources', label: 'Support Resources' },
-  { id: 'family-support', label: 'How Families Can Help' },
-  { id: 'finding-therapists', label: 'Finding Veteran Therapists' },
-  { id: 'faqs', label: 'Frequently Asked Questions' }];
-
+    { id: 'understanding-ptsd', label: 'Understanding Veteran PTSD' },
+    { id: 'therapy-options', label: 'Therapy Options' },
+    { id: 'tms-for-ptsd', label: 'TMS for PTSD' },
+    { id: 'local-clinics', label: 'Local Karma TMS Clinics' },
+    { id: 'support-resources', label: 'Support Resources' },
+    { id: 'family-support', label: 'How Families Can Help' },
+    { id: 'finding-therapists', label: 'Finding Veteran Therapists' },
+    { id: 'faqs', label: 'Frequently Asked Questions' }
+  ];
 
   useEffect(() => {
     const handleScroll = () => {
@@ -59,7 +59,7 @@ const HelpingVeteransPTSDBlogPostPage = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const scrollToSection = (id: string) => {
+  const scrollToSection = (id) => {
     const section = sectionsRef.current[id];
     if (section) {
       const yOffset = -100;
@@ -69,52 +69,52 @@ const HelpingVeteransPTSDBlogPostPage = () => {
   };
 
   const faqs = [
-  {
-    question: 'How to help PTSD veterans in your life?',
-    answer: 'How to help ptsd veterans starts with education, patience, and support without judgment. Learn about PTSD symptoms, avoid triggers, create a safe environment, encourage professional treatment, be patient with mood changes, offer to accompany them to appointments, and take care of your own mental health. Most importantly, listen without trying to fix everything—sometimes veterans just need to be heard.'
-  },
-  {
-    question: 'How to help veterans with PTSD find treatment?',
-    answer: 'How to help veterans with ptsd access treatment involves: helping them research options like TMS therapy, assisting with VA enrollment or insurance verification, offering to drive them to appointments, helping schedule consultations at facilities like KarmaTMS, connecting them with Veterans Service Organizations, and providing emotional support throughout the treatment process. Practical assistance removing barriers to care makes a significant difference.'
-  },
-  {
-    question: 'What are the best PTSD veterans organizations for support?',
-    answer: 'Top ptsd veterans organizations include: VA Vet Centers (community-based counseling), Wounded Warrior Project (comprehensive support), Team Red White & Blue (community building), Mission 22 (suicide prevention), The Mission Continues (service opportunities), Give an Hour (free mental health services), and local Veterans Service Organizations like VFW and American Legion. These organizations provide peer support, treatment resources, and community connection.'
-  },
-  {
-    question: 'Where can I find a veteran PTSD therapist near me?',
-    answer: 'Finding a veteran ptsd therapist or veteran therapist near me can be done through: VA.gov provider directory, Psychology Today\'s therapist finder (filter for veterans), Give an Hour provider network, local university counseling programs with veteran specializations, and specialized clinics like KarmaTMS that offer veteran-focused mental health care. Look for providers with military cultural competency training and trauma expertise.'
-  },
-  {
-    question: 'Is TMS therapy effective for veteran PTSD?',
-    answer: 'Yes, TMS therapy has shown significant effectiveness for veteran PTSD, with studies indicating 40-50% reduction in PTSD symptoms. TMS is particularly helpful for veterans who haven\'t responded to traditional therapy or medication. It targets the brain regions involved in trauma processing and fear response, offering a drug-free alternative that many veterans prefer.'
-  },
-  {
-    question: 'How can family members support a veteran with PTSD?',
-    answer: 'Family support is crucial for veterans with PTSD. Key ways to help include: educating yourself about PTSD, maintaining routines and stability, being patient with emotional outbursts, avoiding judgment, encouraging treatment, participating in family therapy, taking care of your own mental health, joining support groups for military families, and creating a trauma-sensitive home environment.'
-  }];
-
+    {
+      question: 'How to help PTSD veterans in your life?',
+      answer: 'How to help ptsd veterans starts with education, patience, and support without judgment. Learn about PTSD symptoms, avoid triggers, create a safe environment, encourage professional treatment, be patient with mood changes, offer to accompany them to appointments, and take care of your own mental health. Most importantly, listen without trying to fix everything—sometimes veterans just need to be heard.'
+    },
+    {
+      question: 'How to help veterans with PTSD find treatment?',
+      answer: 'How to help veterans with ptsd access treatment involves: helping them research options like TMS therapy, assisting with VA enrollment or insurance verification, offering to drive them to appointments, helping schedule consultations at facilities like KarmaTMS, connecting them with Veterans Service Organizations, and providing emotional support throughout the treatment process. Practical assistance removing barriers to care makes a significant difference.'
+    },
+    {
+      question: 'What are the best PTSD veterans organizations for support?',
+      answer: 'Top ptsd veterans organizations include: VA Vet Centers (community-based counseling), Wounded Warrior Project (comprehensive support), Team Red White & Blue (community building), Mission 22 (suicide prevention), The Mission Continues (service opportunities), Give an Hour (free mental health services), and local Veterans Service Organizations like VFW and American Legion. These organizations provide peer support, treatment resources, and community connection.'
+    },
+    {
+      question: 'Where can I find a veteran PTSD therapist near me?',
+      answer: 'Finding a veteran ptsd therapist or veteran therapist near me can be done through: VA.gov provider directory, Psychology Today\'s therapist finder (filter for veterans), Give an Hour provider network, local university counseling programs with veteran specializations, and specialized clinics like KarmaTMS that offer veteran-focused mental health care. Look for providers with military cultural competency training and trauma expertise.'
+    },
+    {
+      question: 'Is TMS therapy effective for veteran PTSD?',
+      answer: 'Yes, TMS therapy has shown significant effectiveness for veteran PTSD, with studies indicating 40-50% reduction in PTSD symptoms. TMS is particularly helpful for veterans who haven\'t responded to traditional therapy or medication. It targets the brain regions involved in trauma processing and fear response, offering a drug-free alternative that many veterans prefer.'
+    },
+    {
+      question: 'How can family members support a veteran with PTSD?',
+      answer: 'Family support is crucial for veterans with PTSD. Key ways to help include: educating yourself about PTSD, maintaining routines and stability, being patient with emotional outbursts, avoiding judgment, encouraging treatment, participating in family therapy, taking care of your own mental health, joining support groups for military families, and creating a trauma-sensitive home environment.'
+    }
+  ];
 
   const relatedPosts = [
-  {
-    title: 'How TMS Therapy Helps Veterans Heal',
-    excerpt: 'Comprehensive guide on TMS therapy for veterans with PTSD, depression, and anxiety.',
-    link: '/blog/veterans-tms-therapy',
-    image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/f00dd3f4-cea1-4918-8fec-5976198e195f.webp'
-  },
-  {
-    title: 'VA Disability Benefits for Mental Health',
-    excerpt: 'Learn how to get VA disability for depression, anxiety, and PTSD.',
-    link: '/blog/va-disability-benefits-depression-anxiety-ptsd',
-    image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/2ddc8d69-b09a-4f1d-bd47-6d783ceefbd1.webp'
-  },
-  {
-    title: 'TMS vs Medication for Veterans',
-    excerpt: 'Why veterans are choosing TMS therapy over traditional medication for depression.',
-    link: '/blog/tms-vs-medication-veterans-depression',
-    image: 'https://images.unsplash.com/photo-1750918619848-4a9b0484eea7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MTg3MTl8MHwxfHNlYXJjaHwxfHxBbiUyMGltYWdlJTIwZGVwaWN0aW5nJTIwYSUyMHNlcmVuZSUyMGxhbmRzY2FwZSUyMHdpdGglMjBhJTIwZm9jdXMlMjBvbiUyMG5hdHVyYWwlMjBlbGVtZW50cy58ZW58MHx8fHwxNzYyNzc4Mzc5fDA&ixlib=rb-4.1.0&q=80&w=200$w=800'
-  }];
-
+    {
+      title: 'How TMS Therapy Helps Veterans Heal',
+      excerpt: 'Comprehensive guide on TMS therapy for veterans with PTSD, depression, and anxiety.',
+      link: '/blog/veterans-tms-therapy',
+      image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/f00dd3f4-cea1-4918-8fec-5976198e195f.webp'
+    },
+    {
+      title: 'VA Disability Benefits for Mental Health',
+      excerpt: 'Learn how to get VA disability for depression, anxiety, and PTSD.',
+      link: '/blog/va-disability-benefits-depression-anxiety-ptsd',
+      image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/2ddc8d69-b09a-4f1d-bd47-6d783ceefbd1.webp'
+    },
+    {
+      title: 'TMS vs Medication for Veterans',
+      excerpt: 'Why veterans are choosing TMS therapy over traditional medication for depression.',
+      link: '/blog/tms-vs-medication-veterans-depression',
+      image: 'https://images.unsplash.com/photo-1750918619848-4a9b0484eea7?w=800&auto=format'
+    }
+  ];
 
   const articleSchema = {
     '@context': 'https://schema.org',
@@ -168,17 +168,17 @@ const HelpingVeteransPTSDBlogPostPage = () => {
         keywords="how to help ptsd veterans, how to help veterans with ptsd, ptsd veterans organizations, veteran ptsd therapist, veteran therapist near me, ptsd support for veterans, helping veterans with ptsd"
         canonical="/blog/how-to-help-veterans-ptsd"
         ogImage="https://res.cloudinary.com/de4kw1t2i/image/upload/v1762863799/blog_8_l0irim.png"
-        ogType="article" />
-
+        ogType="article"
+      />
 
       <StructuredData
         type="breadcrumb"
         breadcrumbs={[
-        { name: 'Home', url: '/' },
-        { name: 'Blog', url: '/blog' },
-        { name: 'How to Help Veterans with PTSD', url: '/blog/how-to-help-veterans-ptsd' }]
-        } />
-
+          { name: 'Home', url: '/' },
+          { name: 'Blog', url: '/blog' },
+          { name: 'How to Help Veterans with PTSD', url: '/blog/how-to-help-veterans-ptsd' }
+        ]}
+      />
 
       <script type="application/ld+json">{JSON.stringify(articleSchema)}</script>
       <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>
@@ -254,19 +254,19 @@ const HelpingVeteransPTSDBlogPostPage = () => {
                 <CardContent className="p-6">
                   <h3 className="font-bold text-lg mb-4 text-[#572670]">Table of Contents</h3>
                   <nav className="space-y-2">
-                    {tocItems.map((item) =>
-                    <button
-                      key={item.id}
-                      onClick={() => scrollToSection(item.id)}
-                      className={`block w-full text-left px-3 py-2 rounded-md text-sm transition-all ${
-                      activeSection === item.id ?
-                      'bg-[#572670] text-white font-medium' :
-                      'text-gray-700 hover:bg-[#572670]/10'}`
-                      }>
-
+                    {tocItems.map((item) => (
+                      <button
+                        key={item.id}
+                        onClick={() => scrollToSection(item.id)}
+                        className={`block w-full text-left px-3 py-2 rounded-md text-sm transition-all ${
+                          activeSection === item.id
+                            ? 'bg-[#572670] text-white font-medium'
+                            : 'text-gray-700 hover:bg-[#572670]/10'
+                        }`}
+                      >
                         {item.label}
                       </button>
-                    )}
+                    ))}
                   </nav>
                 </CardContent>
               </Card>
@@ -276,12 +276,12 @@ const HelpingVeteransPTSDBlogPostPage = () => {
           {/* Article Content */}
           <article className="lg:col-span-3 prose prose-lg max-w-none">
             {/* Introduction */}
-            <section ref={(el) => sectionsRef.current['understanding-ptsd'] = el} className="mb-12">
+            <section ref={(el) => (sectionsRef.current['understanding-ptsd'] = el)} className="mb-12">
               <img
                 src="https://res.cloudinary.com/de4kw1t2i/image/upload/v1763033666/4_toy7pb.png"
                 alt="Supporting veterans with PTSD through compassionate care"
-                className="w-full object-cover rounded-lg mb-6" />
-
+                className="w-full h-64 md:h-96 object-cover rounded-lg mb-6"
+              />
 
               <p className="text-xl text-gray-700 leading-relaxed">
                 If you're searching for <strong>how to help veterans with PTSD</strong> or <strong>how to help PTSD veterans</strong> in your life, you're taking an important first step. Post-Traumatic Stress Disorder affects up to 30% of veterans who served in combat zones, and the ripple effects touch families, friends, and communities. This comprehensive guide provides actionable ways to support veterans through PTSD recovery, from finding the right <strong>veteran PTSD therapist</strong> to understanding innovative treatments like TMS therapy available at local clinics.
@@ -342,12 +342,12 @@ const HelpingVeteransPTSDBlogPostPage = () => {
               <img
                 src="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/f00dd3f4-cea1-4918-8fec-5976198e195f.webp"
                 alt="Veterans receiving support for PTSD"
-                className="w-full h-64 object-cover rounded-lg mb-6" />
-
+                className="w-full h-64 md:h-80 object-cover rounded-lg mb-6"
+              />
             </section>
 
             {/* Therapy Options Section */}
-            <section ref={(el) => sectionsRef.current['therapy-options'] = el} className="mb-12">
+            <section ref={(el) => (sectionsRef.current['therapy-options'] = el)} className="mb-12">
               <h2 className="text-3xl font-bold text-[#572670] mb-6">Evidence-Based Therapy Options for Veteran PTSD</h2>
 
               <p className="mb-6">
@@ -406,7 +406,7 @@ const HelpingVeteransPTSDBlogPostPage = () => {
             </section>
 
             {/* TMS for PTSD Section */}
-            <section ref={(el) => sectionsRef.current['tms-for-ptsd'] = el} className="mb-12">
+            <section ref={(el) => (sectionsRef.current['tms-for-ptsd'] = el)} className="mb-12">
               <h2 className="text-3xl font-bold text-[#572670] mb-6">TMS Therapy for PTSD: A Breakthrough Treatment Option</h2>
 
               <p className="mb-6">
@@ -445,9 +445,6 @@ const HelpingVeteransPTSDBlogPostPage = () => {
                 </CardContent>
               </Card>
 
-        
-
-
               <h3 className="text-2xl font-bold text-gray-900 mb-4">What to Expect from TMS Treatment</h3>
 
               <Card className="border-[#572670]/20 mb-6">
@@ -464,8 +461,9 @@ const HelpingVeteransPTSDBlogPostPage = () => {
               </Card>
             </section>
 
+            {/* Continue with remaining sections... */}
             {/* Local Clinics Section */}
-            <section ref={(el) => sectionsRef.current['local-clinics'] = el} className="mb-12">
+            <section ref={(el) => (sectionsRef.current['local-clinics'] = el)} className="mb-12">
               <h2 className="text-3xl font-bold text-[#572670] mb-6">Local Karma TMS Clinics Serving Veterans</h2>
 
               <p className="mb-6">
@@ -543,17 +541,10 @@ const HelpingVeteransPTSDBlogPostPage = () => {
                   </div>
                 </CardContent>
               </Card>
-
-              <div className="bg-gradient-to-r from-[#572670]/10 to-transparent p-6 rounded-lg border-l-4 border-[#572670] mb-6">
-                <p className="font-medium mb-2">Convenient Access for Veterans</p>
-                <p className="text-gray-700">
-                  Both locations offer ample parking, accessible facilities, and a welcoming environment designed to make veterans feel comfortable. We understand that walking into a medical facility can trigger anxiety for some veterans, so our staff is trained to create a calm, respectful atmosphere from the moment you arrive. <Link to="/locations" className="text-[#572670] hover:underline font-medium">View all locations and get directions</Link>.
-                </p>
-              </div>
             </section>
 
             {/* Support Resources Section */}
-            <section ref={(el) => sectionsRef.current['support-resources'] = el} className="mb-12">
+            <section ref={(el) => (sectionsRef.current['support-resources'] = el)} className="mb-12">
               <h2 className="text-3xl font-bold text-[#572670] mb-6">PTSD Veterans Organizations and Support Resources</h2>
 
               <p className="mb-6">
@@ -610,22 +601,11 @@ const HelpingVeteransPTSDBlogPostPage = () => {
                     <p className="text-sm text-[#572670] font-bold">Call 988, then press 1 | Text 838255 | Chat at veteranscrisisline.net</p>
                   </CardContent>
                 </Card>
-
-                <Card className="border-[#572670]/20">
-                  <CardContent className="p-6">
-                    <h4 className="font-bold text-lg mb-2">Local Veterans Service Organizations</h4>
-                    <p className="text-gray-700 mb-2">
-                      VFW, American Legion, and local VSOs provide peer support, benefits assistance, and community connection.
-                    </p>
-                    <p className="text-sm text-[#572670]">Find your local post at vfw.org or legion.org</p>
-                  </CardContent>
-                </Card>
               </div>
-
             </section>
 
             {/* Family Support Section */}
-            <section ref={(el) => sectionsRef.current['family-support'] = el} className="mb-12">
+            <section ref={(el) => (sectionsRef.current['family-support'] = el)} className="mb-12">
               <h2 className="text-3xl font-bold text-[#572670] mb-6">How Families Can Help Veterans with PTSD</h2>
 
               <p className="mb-6">
@@ -666,37 +646,9 @@ const HelpingVeteransPTSDBlogPostPage = () => {
                     <div className="flex items-start gap-3">
                       <Heart className="w-6 h-6 text-[#572670] flex-shrink-0 mt-1" />
                       <div>
-                        <h4 className="font-bold text-lg mb-2">Create a Safe, Predictable Environment</h4>
-                        <p className="text-gray-700">
-                          Maintain routines and communicate about plans. Avoid sudden movements or loud noises when possible. Give the veteran control over their environment—let them choose where to sit in restaurants (usually with back to wall, facing door).
-                        </p>
-                      </div>
-                    </div>
-                  </CardContent>
-                </Card>
-
-                <Card className="border-[#572670]/20">
-                  <CardContent className="p-6">
-                    <div className="flex items-start gap-3">
-                      <Heart className="w-6 h-6 text-[#572670] flex-shrink-0 mt-1" />
-                      <div>
                         <h4 className="font-bold text-lg mb-2">Listen Without Trying to Fix</h4>
                         <p className="text-gray-700">
                           Sometimes veterans just need to be heard. Resist the urge to offer solutions or minimize their pain. Simple statements like "I'm here for you" or "that sounds really hard" can be more helpful than advice.
-                        </p>
-                      </div>
-                    </div>
-                  </CardContent>
-                </Card>
-
-                <Card className="border-[#572670]/20">
-                  <CardContent className="p-6">
-                    <div className="flex items-start gap-3">
-                      <Heart className="w-6 h-6 text-[#572670] flex-shrink-0 mt-1" />
-                      <div>
-                        <h4 className="font-bold text-lg mb-2">Encourage Treatment, Don't Force It</h4>
-                        <p className="text-gray-700">
-                          Share information about treatment options like TMS therapy or therapy. Offer to help schedule appointments or provide transportation. But respect their autonomy—pushing too hard can backfire. Focus on how treatment can help them achieve their goals.
                         </p>
                       </div>
                     </div>
@@ -716,37 +668,11 @@ const HelpingVeteransPTSDBlogPostPage = () => {
                     </div>
                   </CardContent>
                 </Card>
-
-                <Card className="border-[#572670]/20">
-                  <CardContent className="p-6">
-                    <div className="flex items-start gap-3">
-                      <Heart className="w-6 h-6 text-[#572670] flex-shrink-0 mt-1" />
-                      <div>
-                        <h4 className="font-bold text-lg mb-2">Participate in Treatment When Appropriate</h4>
-                        <p className="text-gray-700">
-                          Many therapists offer family sessions. These can help you understand your veteran's treatment, learn communication strategies, and address how PTSD affects the entire family system.
-                        </p>
-                      </div>
-                    </div>
-                  </CardContent>
-                </Card>
               </div>
-
-              <Card className="bg-blue-50 border-blue-200 mb-6">
-                <CardContent className="p-6">
-                  <p className="font-medium text-blue-900 mb-2">Know When to Get Emergency Help</p>
-                  <p className="text-gray-700 mb-3">
-                    If your veteran is expressing suicidal thoughts, has a plan for suicide, is engaging in reckless behavior that could harm themselves or others, or is experiencing severe substance abuse, seek immediate help.
-                  </p>
-                  <p className="text-gray-900 font-bold">
-                    Veterans Crisis Line: Call 988, press 1 | Text 838255 | Available 24/7
-                  </p>
-                </CardContent>
-              </Card>
             </section>
 
             {/* Finding Therapists Section */}
-            <section ref={(el) => sectionsRef.current['finding-therapists'] = el} className="mb-12">
+            <section ref={(el) => (sectionsRef.current['finding-therapists'] = el)} className="mb-12">
               <h2 className="text-3xl font-bold text-[#572670] mb-6">Finding a Veteran PTSD Therapist or Veteran Therapist Near Me</h2>
 
               <p className="mb-6">
@@ -767,49 +693,11 @@ const HelpingVeteransPTSDBlogPostPage = () => {
                     </li>
                     <li className="flex items-start gap-2">
                       <CheckCircle2 className="w-5 h-5 text-green-600 mt-1 flex-shrink-0" />
-                      <span><strong>Give an Hour Provider Network:</strong> Free counseling from providers trained in military mental health</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <CheckCircle2 className="w-5 h-5 text-green-600 mt-1 flex-shrink-0" />
-                      <span><strong>Local Vet Centers:</strong> Provide free counseling and can refer to community providers</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <CheckCircle2 className="w-5 h-5 text-green-600 mt-1 flex-shrink-0" />
                       <span><strong>KarmaTMS Veterans Program:</strong> Board-certified psychiatrists specializing in veteran mental health and TMS therapy. <Link to="/contact" className="text-[#572670] hover:underline">Schedule a consultation</Link></span>
                     </li>
                   </ul>
                 </CardContent>
               </Card>
-
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">What to Look for in a Veteran Therapist</h3>
-
-              <div className="grid md:grid-cols-2 gap-6 mb-6">
-                <Card className="border-[#572670]/20">
-                  <CardContent className="p-6">
-                    <h4 className="font-bold text-lg mb-3">Essential Qualifications</h4>
-                    <ul className="space-y-2 text-gray-700 text-sm">
-                      <li>✓ Licensed mental health professional (PhD, PsyD, LCSW, LPC)</li>
-                      <li>✓ Specialization in PTSD and trauma</li>
-                      <li>✓ Training in evidence-based treatments (CPT, PE, EMDR)</li>
-                      <li>✓ Experience working with veterans</li>
-                      <li>✓ Military cultural competency training</li>
-                    </ul>
-                  </CardContent>
-                </Card>
-
-                <Card className="border-[#572670]/20">
-                  <CardContent className="p-6">
-                    <h4 className="font-bold text-lg mb-3">Important Considerations</h4>
-                    <ul className="space-y-2 text-gray-700 text-sm">
-                      <li>✓ Understanding of military culture and language</li>
-                      <li>✓ Non-judgmental approach to combat trauma</li>
-                      <li>✓ Flexibility with scheduling (understanding of military demands)</li>
-                      <li>✓ Accepts your insurance or offers reasonable rates</li>
-                      <li>✓ Convenient location or telehealth options</li>
-                    </ul>
-                  </CardContent>
-                </Card>
-              </div>
             </section>
 
             {/* Author Box */}
@@ -817,20 +705,20 @@ const HelpingVeteransPTSDBlogPostPage = () => {
               name="Dr. Keerthy Sunder"
               role="Board-Certified Psychiatrist | Medical Director at KarmaTMS"
               bio="Dr. Keerthy Sunder is a board-certified psychiatrist specializing in TMS therapy for veterans and treatment-resistant mental health conditions. With extensive experience in neuroscience and innovative treatment modalities, Dr. Sunder is dedicated to helping veterans overcome PTSD, depression, and anxiety through evidence-based, compassionate care."
-              image="https://www.prtms.com/wp-content/uploads/2023/03/Dr.-Keerthy-Sunder-scaled.jpg" />
-
+              image="https://www.prtms.com/wp-content/uploads/2023/03/Dr.-Keerthy-Sunder-scaled.jpg"
+            />
 
             {/* FAQ Section */}
-            <section ref={(el) => sectionsRef.current['faqs'] = el} className="mb-12 mt-12">
+            <section ref={(el) => (sectionsRef.current['faqs'] = el)} className="mb-12 mt-12">
               <h2 className="text-3xl font-bold text-[#572670] mb-6">Frequently Asked Questions</h2>
               
               <Accordion type="single" collapsible className="w-full space-y-2">
-                {faqs.map((faq, index) =>
-                <AccordionItem
-                  key={index}
-                  value={`item-${index}`}
-                  className="border border-gray-200 rounded-lg px-4 data-[state=open]:border-[#572670]">
-
+                {faqs.map((faq, index) => (
+                  <AccordionItem
+                    key={index}
+                    value={`item-${index}`}
+                    className="border border-gray-200 rounded-lg px-4 data-[state=open]:border-[#572670]"
+                  >
                     <AccordionTrigger className="text-left font-semibold hover:text-[#572670] hover:no-underline">
                       {faq.question}
                     </AccordionTrigger>
@@ -838,7 +726,7 @@ const HelpingVeteransPTSDBlogPostPage = () => {
                       {faq.answer}
                     </AccordionContent>
                   </AccordionItem>
-                )}
+                ))}
               </Accordion>
             </section>
 
@@ -855,7 +743,12 @@ const HelpingVeteransPTSDBlogPostPage = () => {
                   <Button asChild size="lg" className="bg-white text-[#572670] hover:bg-gray-100">
                     <Link to="/contact">Schedule Free Consultation</Link>
                   </Button>
-
+                  <Button asChild size="lg" variant="outline" className="border-white text-white hover:bg-white/10">
+                    <a href="tel:760-449-8185" className="inline-flex items-center gap-2">
+                      <Phone className="w-4 h-4" />
+                      (760) 449-8185
+                    </a>
+                  </Button>
                 </div>
               </CardContent>
             </Card>
@@ -864,13 +757,13 @@ const HelpingVeteransPTSDBlogPostPage = () => {
             <section className="mb-12">
               <h2 className="text-3xl font-bold text-[#572670] mb-6">Related Articles</h2>
               <div className="grid md:grid-cols-3 gap-6">
-                {relatedPosts.map((post, index) =>
-                <Card key={index} className="border-[#572670]/20 overflow-hidden hover:shadow-lg transition-shadow">
+                {relatedPosts.map((post, index) => (
+                  <Card key={index} className="border-[#572670]/20 overflow-hidden hover:shadow-lg transition-shadow">
                     <img
-                    src={post.image}
-                    alt={post.title}
-                    className="w-full h-48 object-cover" />
-
+                      src={post.image}
+                      alt={post.title}
+                      className="w-full h-48 object-cover"
+                    />
                     <CardContent className="p-6">
                       <h3 className="font-bold text-lg mb-2 hover:text-[#572670] transition-colors">
                         <Link to={post.link}>{post.title}</Link>
@@ -883,7 +776,7 @@ const HelpingVeteransPTSDBlogPostPage = () => {
                       </Button>
                     </CardContent>
                   </Card>
-                )}
+                ))}
               </div>
             </section>
           </article>
@@ -891,8 +784,8 @@ const HelpingVeteransPTSDBlogPostPage = () => {
       </div>
 
       <FooterSection />
-    </>);
-
+    </>
+  );
 };
 
 export default HelpingVeteransPTSDBlogPostPage;
