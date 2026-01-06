@@ -118,7 +118,7 @@ const ContactPage = () => {
         {
           name: "Rancho Mirage",
           address: {
-            streetAddress: "35400 Bob Hope Dr. Suite 206-B",
+            streetAddress: "35400 Bob Hope Dr. Suite 206",
             addressLocality: "Rancho Mirage",
             addressRegion: "CA",
             postalCode: "92270"
@@ -128,7 +128,7 @@ const ContactPage = () => {
         {
           name: "Twentynine Palms",
           address: {
-            streetAddress: "72724 29 Palms Hwy. Suite 107-B",
+            streetAddress: "72724 29 Palms Hwy. Suite 107",
             addressLocality: "Twentynine Palms",
             addressRegion: "CA",
             postalCode: "92277"
