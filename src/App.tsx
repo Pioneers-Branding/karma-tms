@@ -76,6 +76,7 @@ import DoesTMSTherapyWorkForAnxiety from "./pages/blogs/DoesTMSTherapyWorkForAnx
 import IsDepressionADisabilityBlogPostPage from "./pages/blogs/IsDepressionADisabilityBlogPostPage";
 import CanYouGetDisabilityForDepressionBlogPostPage from "./pages/blogs/CanYouGetDisabilityForDepressionBlogPostPage";
 import DisclaimerPage from "./pages/DisclaimerPage";
+import ExomindKarmaTMSPage from "./pages/resources/ExomindKarmaTMSPage";
 
 const queryClient = new QueryClient();
 
@@ -203,6 +204,9 @@ const App = () =>
           {/* Veterans & Disclaimer Routes */}
           <Route path="/veterans" element={<VeteransPage />} />
           <Route path="/disclaimer" element={<DisclaimerPage />} />
+          
+          {/* Resources Routes */}
+          <Route path="/resources/exomind-karmatms" element={<ExomindKarmaTMSPage />} />
           
           {/* Catch-all route redirects to home instead of 404 */}
           <Route path="*" element={<Navigate to="/" replace />} />

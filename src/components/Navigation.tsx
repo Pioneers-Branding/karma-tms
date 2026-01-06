@@ -65,6 +65,7 @@ const Navigation = () => {
 
 
   const resourcesLinks = [
+  { name: 'Exomind at KarmaTMS', href: '/resources/exomind-karmatms', icon: Brain },
   { name: 'Testimonials', href: '/testimonials', icon: Users },
   { name: 'Research', href: '/research', icon: BookOpen },
   { name: 'Blog', href: '/blog', icon: FileText },

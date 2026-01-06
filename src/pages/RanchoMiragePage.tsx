@@ -60,7 +60,7 @@ const RanchoMiragePage = () => {
         description="Premier TMS therapy in Rancho Mirage, CA. Advanced depression treatment, anxiety therapy, and psychiatric care. Luxury mental health services in Coachella Valley."
         keywords="TMS therapy Rancho Mirage, depression treatment Rancho Mirage, mental health Rancho Mirage, psychiatrist Rancho Mirage, anxiety treatment Coachella Valley"
         canonical="/rancho-mirage"
-        ogImage="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/b65c46ad-dd56-4c76-bfc8-9fbe25e9b7af.jpg" />
+        ogImage="https://images.unsplash.com/photo-1708312830269-e2e045264c20?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MTg3MTl8MHwxfHNlYXJjaHwxfHxBJTIwc2NlbmljJTIwdmlldyUyMG9mJTIwYSUyMGx1eHVyaW91cyUyMGZhY2lsaXR5JTIwZW50cmFuY2UlMjBzdXJyb3VuZGVkJTIwYnklMjBncmVlbmVyeS58ZW58MHx8fHwxNzY2NzQ5MzQ1fDA&ixlib=rb-4.1.0&q=80&w=200$w=1920" />
 
 
       <StructuredData
