@@ -214,7 +214,7 @@ const PRTMSPage = () => {
             {algorithmSteps.map((step, index) =>
             <div key={index} className="relative">
                 <Card className="h-full bg-gradient-to-br from-white to-purple-50/30 border-0 shadow-xl hover:shadow-2xl transition-all duration-500 group overflow-hidden">
-                  <div className={`absolute top-0 right-0 w-24 h-24 bg-gradient-to-br ${step.color} opacity-10 rounded-full -translate-y-12 translate-x-12`}></div>
+                 
                   
                   <CardHeader className="text-center pb-4 relative">
                     <div className={`w-16 h-16 mx-auto mb-4 bg-gradient-to-br ${step.color} rounded-2xl flex items-center justify-center text-white group-hover:scale-110 transition-transform duration-300`}>
