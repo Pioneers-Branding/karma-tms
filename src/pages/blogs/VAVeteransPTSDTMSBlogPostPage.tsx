@@ -290,7 +290,7 @@ const VAVeteransPTSDTMSBlogPostPage = () => {
             {/* Introduction */}
             <div className="mb-12">
               <img
-                src="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/dd7dd986-540f-4359-99af-39f398491cf0.webp"
+                src="https://res.cloudinary.com/de4kw1t2i/image/upload/v1763033664/1_w61pyl.png"
                 alt="VA veterans PTSD TMS therapy treatment"
                 className="w-full h-64 md:h-96 object-cover rounded-lg mb-6" />
 
