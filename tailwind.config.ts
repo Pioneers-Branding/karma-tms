@@ -1,4 +1,3 @@
-
 import type { Config } from "tailwindcss";
 
 export default {
@@ -66,6 +65,7 @@ export default {
           'light-blue': '#60A5FA',
           'light-purple': '#A78BFA'
         },
+        'blue-magenta': '#572670',
         chart: {
           '1': 'hsl(var(--chart-1))',
           '2': 'hsl(var(--chart-2))',
