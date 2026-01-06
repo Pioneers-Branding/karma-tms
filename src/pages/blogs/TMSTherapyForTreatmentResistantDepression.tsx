@@ -9,8 +9,8 @@ import {
   BreadcrumbLink,
   BreadcrumbList,
   BreadcrumbPage,
-  BreadcrumbSeparator
-} from '@/components/ui/breadcrumb';
+  BreadcrumbSeparator } from
+'@/components/ui/breadcrumb';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Calendar, Clock, User, CheckCircle2, ArrowRight } from 'lucide-react';
@@ -49,17 +49,17 @@ const TMSTherapyForTreatmentResistantDepression = () => {
         description="Comprehensive guide to TMS therapy as an effective treatment for treatment-resistant depression, including success rates, benefits, and what to expect."
         keywords="TMS therapy, treatment resistant depression, TRD, depression treatment, TMS success rates, non-invasive depression treatment"
         canonical="/blogs/TMSTherapyForTreatmentResistantDepression"
-        ogType="article"
-      />
+        ogType="article" />
+
 
       <StructuredData
         type="breadcrumb"
         breadcrumbs={[
-          { name: 'Home', url: '/' },
-          { name: 'Blog', url: '/blog' },
-          { name: 'TMS for Treatment Resistant Depression', url: '/blogs/TMSTherapyForTreatmentResistantDepression' }
-        ]}
-      />
+        { name: 'Home', url: '/' },
+        { name: 'Blog', url: '/blog' },
+        { name: 'TMS for Treatment Resistant Depression', url: '/blogs/TMSTherapyForTreatmentResistantDepression' }]
+        } />
+
 
       <script type="application/ld+json">
         {JSON.stringify(articleSchema)}
@@ -130,8 +130,8 @@ const TMSTherapyForTreatmentResistantDepression = () => {
               <img
                 src="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/e3bc971e-e2ab-4334-ac23-0b9876309934.webp"
                 alt="TMS therapy for treatment resistant depression"
-                className="w-full object-cover rounded-lg mb-6"
-              />
+                className="w-full object-cover rounded-lg mb-6" />
+
 
               <p className="text-xl text-gray-700 leading-relaxed">
                 For millions of people living with depression, traditional treatments like medication and therapy provide significant relief. However, approximately 30-40% of individuals with major depressive disorder experience treatment-resistant depression (TRD), meaning they haven't found adequate relief after trying multiple antidepressants. For these individuals, Transcranial Magnetic Stimulation (TMS) therapy offers a scientifically proven, FDA-approved alternative that's transforming lives.
@@ -171,8 +171,8 @@ const TMSTherapyForTreatmentResistantDepression = () => {
               <img
                 src="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/031012db-9570-41de-bb30-96c6fa482330.png"
                 alt="TMS therapy chair and equipment"
-                className="w-full object-cover rounded-lg mb-6"
-              />
+                className="w-full object-cover rounded-lg mb-6" />
+
 
               <p className="mb-4">
                 <Link to="/tms-therapy" className="text-[#572670] hover:underline font-medium">TMS therapy</Link> uses magnetic pulses to stimulate specific areas of the brain that are underactive in people with depression. Unlike medications that affect your entire body, TMS directly targets the brain regions responsible for mood regulation.
@@ -390,8 +390,8 @@ const TMSTherapyForTreatmentResistantDepression = () => {
               name="karmatmsdev"
               role="Mental Health Content Specialist at KarmaTMS"
               bio="Dedicated to raising awareness about mental health issues and innovative treatment options. Focused on providing comprehensive, evidence-based information to support those seeking mental wellness."
-              image="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=400&fit=crop"
-            />
+              image="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=400&fit=crop" />
+
 
             {/* CTA Section */}
             <Card className="bg-gradient-to-br from-[#572670] to-[#7B3FA0] text-white mb-12 mt-12">
@@ -421,8 +421,8 @@ const TMSTherapyForTreatmentResistantDepression = () => {
                   <img
                     src="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/2ddc8d69-b09a-4f1d-bd47-6d783ceefbd1.webp"
                     alt="Depression Treatment"
-                    className="w-full object-cover h-48"
-                  />
+                    className="w-full object-cover h-48" />
+
                   <CardContent className="p-6">
                     <h3 className="font-bold text-lg mb-2 hover:text-[#572670] transition-colors">
                       <Link to="/depression">Understanding Depression</Link>
@@ -441,8 +441,8 @@ const TMSTherapyForTreatmentResistantDepression = () => {
       </div>
 
       <FooterSection />
-    </>
-  );
+    </>);
+
 };
 
 export default TMSTherapyForTreatmentResistantDepression;

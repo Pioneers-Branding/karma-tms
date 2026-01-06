@@ -9,8 +9,8 @@ import {
   BreadcrumbLink,
   BreadcrumbList,
   BreadcrumbPage,
-  BreadcrumbSeparator
-} from '@/components/ui/breadcrumb';
+  BreadcrumbSeparator } from
+'@/components/ui/breadcrumb';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Calendar, Clock, User, ArrowRight } from 'lucide-react';
@@ -49,17 +49,17 @@ const ExploringTheMultifacetedDynamicsOfSuicideInTheElderlyPopulation = () => {
         description="A comprehensive analysis of suicide risk factors, prevention strategies, and mental health interventions for elderly populations."
         keywords="elderly suicide, geriatric mental health, depression in elderly, suicide prevention, elderly care, mental health awareness"
         canonical="/blogs/ExploringTheMultifacetedDynamicsOfSuicideInTheElderlyPopulation"
-        ogType="article"
-      />
+        ogType="article" />
+
 
       <StructuredData
         type="breadcrumb"
         breadcrumbs={[
-          { name: 'Home', url: '/' },
-          { name: 'Blog', url: '/blog' },
-          { name: 'Suicide in Elderly Population', url: '/blogs/ExploringTheMultifacetedDynamicsOfSuicideInTheElderlyPopulation' }
-        ]}
-      />
+        { name: 'Home', url: '/' },
+        { name: 'Blog', url: '/blog' },
+        { name: 'Suicide in Elderly Population', url: '/blogs/ExploringTheMultifacetedDynamicsOfSuicideInTheElderlyPopulation' }]
+        } />
+
 
       <script type="application/ld+json">
         {JSON.stringify(articleSchema)}
@@ -130,8 +130,8 @@ const ExploringTheMultifacetedDynamicsOfSuicideInTheElderlyPopulation = () => {
               <img
                 src="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/62abea2f-775f-47a7-ad22-2bfc58d01038.webp"
                 alt="Elderly mental health and suicide prevention"
-                className="w-full object-cover rounded-lg mb-6"
-              />
+                className="w-full object-cover rounded-lg mb-6" />
+
 
               <p className="text-xl text-gray-700 leading-relaxed">
                 Suicide among the elderly is a critical public health concern that demands comprehensive understanding and immediate action. As our population ages, recognizing the unique challenges faced by older adults becomes increasingly important in preventing tragic outcomes and promoting mental wellness.
@@ -249,8 +249,8 @@ const ExploringTheMultifacetedDynamicsOfSuicideInTheElderlyPopulation = () => {
               name="karmatmsdev"
               role="Mental Health Content Specialist at KarmaTMS"
               bio="Dedicated to raising awareness about mental health issues and innovative treatment options. Focused on providing comprehensive, evidence-based information to support those seeking mental wellness."
-              image="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=400&fit=crop"
-            />
+              image="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=400&fit=crop" />
+
 
             {/* CTA Section */}
             <Card className="bg-gradient-to-br from-[#572670] to-[#7B3FA0] text-white mb-12 mt-12">
@@ -280,8 +280,8 @@ const ExploringTheMultifacetedDynamicsOfSuicideInTheElderlyPopulation = () => {
                   <img
                     src="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/2ddc8d69-b09a-4f1d-bd47-6d783ceefbd1.webp"
                     alt="Depression Treatment"
-                    className="w-full object-cover h-48"
-                  />
+                    className="w-full object-cover h-48" />
+
                   <CardContent className="p-6">
                     <h3 className="font-bold text-lg mb-2 hover:text-[#572670] transition-colors">
                       <Link to="/depression">Understanding Depression</Link>
@@ -300,8 +300,8 @@ const ExploringTheMultifacetedDynamicsOfSuicideInTheElderlyPopulation = () => {
       </div>
 
       <FooterSection />
-    </>
-  );
+    </>);
+
 };
 
 export default ExploringTheMultifacetedDynamicsOfSuicideInTheElderlyPopulation;

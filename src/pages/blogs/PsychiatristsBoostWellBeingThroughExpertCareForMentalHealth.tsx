@@ -9,8 +9,8 @@ import {
   BreadcrumbLink,
   BreadcrumbList,
   BreadcrumbPage,
-  BreadcrumbSeparator
-} from '@/components/ui/breadcrumb';
+  BreadcrumbSeparator } from
+'@/components/ui/breadcrumb';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Calendar, Clock, User, CheckCircle2, ArrowRight } from 'lucide-react';
@@ -49,17 +49,17 @@ const PsychiatristsBoostWellBeingThroughExpertCareForMentalHealth = () => {
         description="Discover how psychiatrists provide comprehensive mental health care through evidence-based treatments, personalized approaches, and innovative therapies like TMS."
         keywords="psychiatrist, mental health care, psychiatric treatment, TMS therapy, depression treatment, anxiety treatment, mental wellness"
         canonical="/blogs/PsychiatristsBoostWellBeingThroughExpertCareForMentalHealth"
-        ogType="article"
-      />
+        ogType="article" />
+
 
       <StructuredData
         type="breadcrumb"
         breadcrumbs={[
-          { name: 'Home', url: '/' },
-          { name: 'Blog', url: '/blog' },
-          { name: 'Psychiatrists Expert Care', url: '/blogs/PsychiatristsBoostWellBeingThroughExpertCareForMentalHealth' }
-        ]}
-      />
+        { name: 'Home', url: '/' },
+        { name: 'Blog', url: '/blog' },
+        { name: 'Psychiatrists Expert Care', url: '/blogs/PsychiatristsBoostWellBeingThroughExpertCareForMentalHealth' }]
+        } />
+
 
       <script type="application/ld+json">
         {JSON.stringify(articleSchema)}
@@ -130,8 +130,8 @@ const PsychiatristsBoostWellBeingThroughExpertCareForMentalHealth = () => {
               <img
                 src="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/66e6e1ae-8cc3-4469-bfaf-b1f3f3d07006.webp"
                 alt="Psychiatrist providing expert mental health care"
-                className="w-full object-cover rounded-lg mb-6"
-              />
+                className="w-full object-cover rounded-lg mb-6" />
+
 
               <p className="text-xl text-gray-700 leading-relaxed">
                 In an era where mental health awareness is gaining unprecedented attention, psychiatrists stand at the forefront of providing comprehensive, expert care that transforms lives. Their unique combination of medical expertise, psychological insight, and compassionate approach makes them essential partners in the journey toward mental wellness.
@@ -232,8 +232,8 @@ const PsychiatristsBoostWellBeingThroughExpertCareForMentalHealth = () => {
               <img
                 src="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/76caee2d-5629-4dc1-a3b4-8c5cea23ede6.webp"
                 alt="TMS Therapy treatment"
-                className="w-full object-cover rounded-lg mb-6"
-              />
+                className="w-full object-cover rounded-lg mb-6" />
+
 
               <p className="mb-4">
                 Transcranial Magnetic Stimulation represents one of the most significant advances in psychiatric treatment in recent decades. This FDA-approved therapy allows psychiatrists to:
@@ -319,8 +319,8 @@ const PsychiatristsBoostWellBeingThroughExpertCareForMentalHealth = () => {
               name="karmatmsdev"
               role="Mental Health Content Specialist at KarmaTMS"
               bio="Dedicated to raising awareness about mental health issues and innovative treatment options. Focused on providing comprehensive, evidence-based information to support those seeking mental wellness."
-              image="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=400&fit=crop"
-            />
+              image="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=400&fit=crop" />
+
 
             {/* CTA Section */}
             <Card className="bg-gradient-to-br from-[#572670] to-[#7B3FA0] text-white mb-12 mt-12">
@@ -350,8 +350,8 @@ const PsychiatristsBoostWellBeingThroughExpertCareForMentalHealth = () => {
                   <img
                     src="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/76caee2d-5629-4dc1-a3b4-8c5cea23ede6.webp"
                     alt="TMS Therapy"
-                    className="w-full object-cover h-48"
-                  />
+                    className="w-full object-cover h-48" />
+
                   <CardContent className="p-6">
                     <h3 className="font-bold text-lg mb-2 hover:text-[#572670] transition-colors">
                       <Link to="/tms-therapy">Understanding TMS Therapy</Link>
@@ -370,8 +370,8 @@ const PsychiatristsBoostWellBeingThroughExpertCareForMentalHealth = () => {
       </div>
 
       <FooterSection />
-    </>
-  );
+    </>);
+
 };
 
 export default PsychiatristsBoostWellBeingThroughExpertCareForMentalHealth;
