@@ -238,7 +238,7 @@ const BlogPage = () => {
   );
 
   const featuredPost = filteredPosts.find((post) => post.featured);
-  const regularPosts = filteredPosts.filter((post) => !post.featured);
+  const regularPosts = filteredPosts; // Show all posts including featured in tabs
 
   return (
     <div className="min-h-screen bg-white" style={{ fontFamily: 'Outfit, sans-serif' }}>
