@@ -772,7 +772,7 @@ const VAVeteransPTSDTMSBlogPostPage = () => {
 
 
             {/* FAQ Section */}
-            <section ref={(el) => sectionsRef.current['faqs'] = el} className="mb-12">
+            <section ref={(el) => sectionsRef.current['faqs'] = el} className="mb-12 mt-12">
               <h2 className="text-3xl font-bold text-[#572670] mb-6">Frequently Asked Questions</h2>
 
               <Accordion type="single" collapsible className="w-full space-y-2">
