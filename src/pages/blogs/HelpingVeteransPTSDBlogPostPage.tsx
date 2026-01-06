@@ -239,9 +239,6 @@ const HelpingVeteransPTSDBlogPostPage = () => {
               <Button asChild size="lg" className="bg-white text-[#572670] hover:bg-gray-100">
                 <Link to="/contact">Connect with Our Team</Link>
               </Button>
-              <Button asChild size="lg" variant="outline" className="border-white text-white hover:bg-white/10">
-                <Link to="/veterans">Veteran Resources</Link>
-              </Button>
             </div>
           </div>
         </div>
@@ -271,11 +268,6 @@ const HelpingVeteransPTSDBlogPostPage = () => {
                       </button>
                     )}
                   </nav>
-                  <div className="mt-6 pt-6 border-t">
-                    <Button asChild className="w-full bg-[#572670] hover:bg-[#7B3FA0]">
-                      <Link to="/locations">Find Local Support</Link>
-                    </Button>
-                  </div>
                 </CardContent>
               </Card>
             </div>
@@ -871,9 +863,7 @@ const HelpingVeteransPTSDBlogPostPage = () => {
                   <Button asChild size="lg" className="bg-white text-[#572670] hover:bg-gray-100">
                     <Link to="/contact">Schedule Free Consultation</Link>
                   </Button>
-                  <Button asChild size="lg" variant="outline" className="border-white text-white hover:bg-white/10">
-                    <Link to="/veterans">Explore Veterans Program</Link>
-                  </Button>
+
                 </div>
               </CardContent>
             </Card>
