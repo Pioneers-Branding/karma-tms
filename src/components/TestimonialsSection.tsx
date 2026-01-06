@@ -13,7 +13,7 @@ const TestimonialsSection = () => {
     location: "Palm Springs, CA",
     condition: "Treatment-Resistant Depression",
     rating: 5,
-    quote: "After trying multiple medications for years with little success, TMS has given me my life back. The improvement in my mood and energy has been remarkable.",
+    quote: "Depression is a miserable way to deal with life on a daily basis. When the med dont seem to do the trick ,TMS therapy is a sensible addition to treatment that has helped me in the battle.",
     hasVideo: true,
     videoId: "xewffol4oOQ", // Example YouTube ID
     avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=face"
