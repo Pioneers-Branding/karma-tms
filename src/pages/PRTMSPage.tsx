@@ -18,42 +18,42 @@ const PRTMSPage = () => {
     title: 'Brain Mapping Analysis',
     description: 'Advanced qEEG analysis identifies your unique brain patterns and dysfunctional networks',
     icon: <Brain className="w-6 h-6" />,
-    color: 'from-blue-600 to-purple-600'
+    color: 'from-purple-400 to-purple-600'
   },
   {
     step: 2,
     title: 'Symptom Profiling',
     description: 'Comprehensive assessment of depression severity, anxiety levels, and cognitive function',
     icon: <BarChart3 className="w-6 h-6" />,
-    color: 'from-purple-600 to-pink-600'
+    color: 'from-purple-400 to-purple-600'
   },
   {
     step: 3,
     title: 'Treatment History',
     description: 'Analysis of previous medication responses and therapy outcomes to avoid ineffective approaches',
     icon: <FileText className="w-6 h-6" />,
-    color: 'from-pink-600 to-red-600'
+    color: 'from-purple-400 to-purple-600'
   },
   {
     step: 4,
     title: 'AI Algorithm Processing',
     description: 'Machine learning analyzes 50+ variables to determine optimal stimulation parameters',
     icon: <Activity className="w-6 h-6" />,
-    color: 'from-red-600 to-orange-600'
+    color: 'from-purple-400 to-purple-600'
   },
   {
     step: 5,
     title: 'Personalized Protocol',
     description: 'Custom treatment plan with specific frequency, intensity, and target locations',
     icon: <Target className="w-6 h-6" />,
-    color: 'from-orange-600 to-yellow-600'
+    color: 'from-purple-400 to-purple-600'
   },
   {
     step: 6,
     title: 'Continuous Optimization',
     description: 'Real-time adjustments based on treatment response and symptom improvement',
     icon: <Zap className="w-6 h-6" />,
-    color: 'from-yellow-600 to-green-600'
+    color: 'from-purple-400 to-purple-600'
   }];
 
 
@@ -173,7 +173,7 @@ const PRTMSPage = () => {
               <Target className="w-4 h-4 mr-2" />
               Next-Generation Treatment
             </Badge>
-            <h1 className="text-5xl lg:text-7xl font-bold mb-6 bg-gradient-to-r from-[#572670] via-purple-600 to-blue-600 bg-clip-text text-transparent">
+            <h1 className="text-5xl lg:text-7xl font-bold mb-6 bg-gradient-to-r from-[#572670] via-purple-600 to-violet-600 bg-clip-text text-transparent">
               Personalized rTMS
             </h1>
             <p className="text-xl text-gray-600 max-w-4xl mx-auto mb-10 leading-relaxed">
@@ -198,7 +198,7 @@ const PRTMSPage = () => {
       <section className="py-16 px-4 bg-gradient-to-br from-purple-50/50 to-blue-50/50">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
-            <Badge className="mb-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white px-4 py-2">
+            <Badge className="mb-4 bg-gradient-to-r from-violet-600 to-purple-600 text-white px-4 py-2">
               <Activity className="w-4 h-4 mr-2" />
               AI-Powered Personalization
             </Badge>
@@ -305,7 +305,7 @@ const PRTMSPage = () => {
                 
                 <div className="space-y-6">
                   <div>
-                    <Badge className="mb-3 bg-gradient-to-r from-blue-500 to-purple-500 text-white">
+                    <Badge className="mb-3 bg-gradient-to-r from-violet-500 to-purple-500 text-white">
                       {caseStudies[currentSlide].condition}
                     </Badge>
                     <h3 className="text-2xl font-bold text-gray-900 mb-2">
@@ -467,7 +467,7 @@ const PRTMSPage = () => {
           <div className="mt-8 text-center">
             <div className="flex flex-wrap justify-center gap-4">
               <Link to="/tms-therapy">
-                <Button variant="outline" className="border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white rounded-full">
+                <Button variant="outline" className="border-purple-600 text-violet-600 hover:bg-purple-600 hover:text-white rounded-full">
                   Compare with Standard TMS
                   <ArrowRight className="w-4 h-4 ml-2" />
                 </Button>
