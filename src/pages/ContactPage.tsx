@@ -336,34 +336,34 @@ const ContactPage = () => {
 
             {/* Social Media */}
             <Card className="shadow-lg">
-              <CardHeader className="bg-[#572670] text-white">
-                <CardTitle>Connect With Us</CardTitle>
-              </CardHeader>
-              <CardContent className="p-6">
-                <div className="flex gap-4 justify-center">
-                  <Button
-                    variant="outline"
-                    size="icon"
-                    className="rounded-full hover:bg-blue-50 hover:border-blue-300"
-                    onClick={() => window.open('https://facebook.com', '_blank')}>
+              
 
 
-                    <Facebook className="h-5 w-5 text-blue-600" />
-                  </Button>
-                  <Button
-                    variant="outline"
-                    size="icon"
-                    className="rounded-full hover:bg-pink-50 hover:border-pink-300"
-                    onClick={() => window.open('https://instagram.com', '_blank')}>
+              
 
 
-                    <Instagram className="h-5 w-5 text-pink-600" />
-                  </Button>
-                </div>
-                <p className="text-center text-gray-600 mt-4">
-                  Follow us for mental health tips and updates
-                </p>
-              </CardContent>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
             </Card>
 
           </div>
