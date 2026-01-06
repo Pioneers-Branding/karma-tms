@@ -71,6 +71,7 @@ import ExploringTheMultifacetedDynamicsOfSuicideInTheElderlyPopulation from "./p
 import PsychiatristsBoostWellBeingThroughExpertCareForMentalHealth from "./pages/blogs/PsychiatristsBoostWellBeingThroughExpertCareForMentalHealth";
 import TMSTherapyForTreatmentResistantDepression from "./pages/blogs/TMSTherapyForTreatmentResistantDepression";
 import HowDoesADHDTreatmentWorkBlogPostPage from "./pages/blogs/HowDoesADHDTreatmentWorkBlogPostPage";
+import HowToAvoidStressDuringHolidaysBlogPostPage from "./pages/blogs/HowToAvoidStressDuringHolidaysBlogPostPage";
 import DisclaimerPage from "./pages/DisclaimerPage";
 
 const queryClient = new QueryClient();
@@ -156,6 +157,7 @@ const App = () =>
           <Route path="/blogs/PsychiatristsBoostWellBeingThroughExpertCareForMentalHealth" element={<PsychiatristsBoostWellBeingThroughExpertCareForMentalHealth />} />
           <Route path="/blogs/TMSTherapyForTreatmentResistantDepression" element={<TMSTherapyForTreatmentResistantDepression />} />
           <Route path="/blogs/how-does-adhd-treatment-work" element={<HowDoesADHDTreatmentWorkBlogPostPage />} />
+          <Route path="/blogs/how-to-avoid-stress-during-holidays" element={<HowToAvoidStressDuringHolidaysBlogPostPage />} />
           <Route path="/blog" element={<BlogPage />} />
           <Route path="/blog/" element={<BlogPage />} />
           <Route path="/research-and-publications" element={<ResearchPage />} />

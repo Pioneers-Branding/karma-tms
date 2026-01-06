@@ -33,6 +33,22 @@ const blogCategories = [
 // Blog posts - Veterans TMS Therapy with fixed images
 const allBlogPosts: BlogPost[] = [
 {
+  id: 32,
+  title: 'How to Avoid Stress During the Holidays?',
+  excerpt: 'Discover practical strategies to manage holiday stress with 7 actionable tips. Learn how to maintain mental wellness during the holiday season.',
+  category: 'wellness',
+  author: 'Dr. Keerthy Sunder',
+  date: new Date(2025, 10, 22).toLocaleDateString('en-US', {
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric'
+  }),
+  readTime: '10 min read',
+  image: 'https://images.unsplash.com/photo-1512389142860-9c449e58a543?w=1200&h=630&fit=crop',
+  featured: false,
+  rating: 5
+},
+{
   id: 31,
   title: 'How Does ADHD Treatment Work?',
   excerpt: 'Comprehensive guide to ADHD treatment including medication, behavioral therapy, CBT, and lifestyle modifications. Learn how effective ADHD management works.',
@@ -724,6 +740,7 @@ const BlogPage = () => {
                   const postLinks: {[key: number]: string;} = {
                     1: '/blog/veterans-tms-therapy',
                     31: '/blogs/how-does-adhd-treatment-work',
+                    32: '/blogs/how-to-avoid-stress-during-holidays',
                     2: '/blog/va-veterans-ptsd-tms-treatment',
                     3: '/blog/va-disability-benefits-depression-anxiety-ptsd',
                     4: '/blog/tms-vs-medication-veterans-depression',
