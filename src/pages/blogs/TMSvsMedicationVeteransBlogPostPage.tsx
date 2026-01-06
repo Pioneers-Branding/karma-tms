@@ -286,7 +286,7 @@ const TMSvsMedicationVeteransBlogPostPage = () => {
             {/* Introduction */}
             <section ref={(el) => sectionsRef.current['introduction'] = el} className="mb-12">
               <img
-                src="https://res.cloudinary.com/de4kw1t2i/image/upload/v1762863798/blog_5_jt2nzt.png"
+                src="https://www.prtms.com/wp-content/uploads/2023/03/Dr.-Keerthy-Sunder-scaled.jpg"
                 alt="TMS therapy for veterans as alternative to medication"
                 className="w-full h-64 md:h-96 object-cover rounded-lg mb-6" />
 
