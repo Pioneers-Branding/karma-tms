@@ -147,7 +147,7 @@ export const teamMembers: TeamMember[] = [
   title: 'Practice Manager',
   specialization: 'Practice Management',
   category: 'administrative',
-  image: 'https://images.unsplash.com/photo-1701463387028-3947648f1337?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MTg3MTl8MHwxfHNlYXJjaHwxfHxBJTIwcHJvZmVzc2lvbmFsJTIwcG9ydHJhaXQlMjBvZiUyMEpvc2h1YSUyMFNtaXRoJTJDJTIwUHJhY3RpY2UlMjBNYW5hZ2VyJTIwYXQlMjBLYXJtYSUyMFRNUyUyQyUyMHNwZWNpYWxpemluZyUyMGluJTIwUHJhY3RpY2UlMjBNYW5hZ2VtZW50LnxlbnwwfHx8fDE3NTkyMzY2OTR8MA&ixlib=rb-4.1.0&q=80&w=200$w=800', // drjoshua
+  image: 'https://res.cloudinary.com/de4kw1t2i/image/upload/v1759237118/JoshuaSmith-768x770_ai3ese.png', // drjoshua
   bio: 'Joshua Smith manages day-to-day practice operations, patient scheduling, and staff coordination. His attention to detail and commitment to patient care excellence ensures smooth clinic operations and positive patient experiences.',
   credentials: ['Healthcare Administration Certificate', 'Practice Management Specialist'],
   experience: '8+ years in Practice Management',
@@ -162,7 +162,7 @@ export const teamMembers: TeamMember[] = [
   title: 'Social Media Director',
   specialization: 'Digital Marketing & Communications',
   category: 'administrative',
-  image: 'https://images.unsplash.com/photo-1603813425271-6ed9a5720f86?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MTg3MTl8MHwxfHNlYXJjaHwxfHxBJTIwcHJvZmVzc2lvbmFsJTIwcG9ydHJhaXQlMjBvZiUyMEpvdGhzbmElMjBCb2RoYW5hcGF0aSUyQyUyMFNvY2lhbCUyME1lZGlhJTIwRGlyZWN0b3IlMjBhdCUyMEthcm1hJTIwVE1TJTJDJTIwc3BlY2lhbGl6aW5nJTIwaW4lMjBEaWdpdGFsJTIwTWFya2V0aW5nJTIwJTI2JTIwQ29tbXVuaWNhdGlvbnMufGVufDB8fHx8MTc1OTIzNjY5N3ww&ixlib=rb-4.1.0&q=80&w=200$w=800', // drjothsna
+  image: 'https://res.cloudinary.com/de4kw1t2i/image/upload/v1759237098/6411f1204d97b27fa6e2191d-2-1-1-1_q1l5sh.png', // drjothsna
   bio: 'Jothsna Bodhanapati leads our digital marketing efforts and patient education initiatives. She creates engaging content that helps reduce mental health stigma and connects patients with the resources and care they need.',
   credentials: ['Digital Marketing Certified', 'Healthcare Communications Specialist', 'Social Media Expert'],
   experience: '6+ years in Healthcare Marketing',
@@ -177,7 +177,7 @@ export const teamMembers: TeamMember[] = [
   title: 'TMS Neurotechnologist',
   specialization: 'TMS Technology & Patient Care',
   category: 'administrative',
-  image: 'https://images.unsplash.com/photo-1700308433726-303f30fb96c2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MTg3MTl8MHwxfHNlYXJjaHwxfHxBJTIwcHJvZmVzc2lvbmFsJTIwcG9ydHJhaXQlMjBvZiUyMENoYXJsZXMlMjBWaWdpbGlhJTJDJTIwYSUyMFRNUyUyME5ldXJvdGVjaG5vbG9naXN0JTJDJTIwc3BlY2lhbGl6aW5nJTIwaW4lMjBUTVMlMjB0ZWNobm9sb2d5JTIwYW5kJTIwcGF0aWVudCUyMGNhcmUufGVufDB8fHx8MTc1OTIzNjY5OHww&ixlib=rb-4.1.0&q=80&w=200$w=800', // drcharles
+  image: 'https://res.cloudinary.com/de4kw1t2i/image/upload/v1759237096/Charles_dcoc1o.jpg', // drcharles
   bio: 'Charles Vigilia specializes in TMS therapy delivery and patient support throughout treatment. His technical expertise and compassionate care approach ensure patients receive optimal TMS treatments in a comfortable environment.',
   credentials: ['TMS Technician Certified', 'Neurostimulation Specialist', 'Patient Care Certified'],
   experience: '5+ years in TMS Technology',
@@ -192,7 +192,7 @@ export const teamMembers: TeamMember[] = [
   title: 'TMS Neurotechnologist',
   specialization: 'TMS Technology & Patient Support',
   category: 'administrative',
-  image: 'https://images.unsplash.com/photo-1706565029539-d09af5896340?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MTg3MTl8MHwxfHNlYXJjaHwxfHxBJTIwcHJvZmVzc2lvbmFsJTIwcG9ydHJhaXQlMjBvZiUyMEFsZXhhbmRyYSUyME1lbmRvemElMkMlMjBhJTIwVE1TJTIwTmV1cm90ZWNobm9sb2dpc3QlMjBzcGVjaWFsaXppbmclMjBpbiUyMFRNUyUyMHRlY2hub2xvZ3klMjBhbmQlMjBwYXRpZW50JTIwc3VwcG9ydC58ZW58MHx8fHwxNzU5MjM2NzAwfDA&ixlib=rb-4.1.0&q=80&w=200$w=800', // dralexandra
+  image: 'https://res.cloudinary.com/de4kw1t2i/image/upload/v1759237096/64bad1829fa9f71c0b5e41d5-2-1_rnygcg.jpg', // dralexandra
   bio: 'Alexandra Mendoza provides expert TMS treatment delivery and patient education. She ensures each patient understands their treatment process and feels supported throughout their TMS therapy journey.',
   credentials: ['TMS Technician Certified', 'Patient Education Specialist', 'Mental Health Support Certified'],
   experience: '4+ years in TMS Technology',
