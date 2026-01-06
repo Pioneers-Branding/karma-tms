@@ -13,11 +13,10 @@ const AnxietyPage = () => {
   return (
     <div className="min-h-screen">
       <SEO
-        title="TMS Therapy for Anxiety Disorders | KarmaTMS Mental Health Treatment"
-        description="Effective TMS therapy for anxiety disorders. Karma mental health specialists treat GAD, panic disorder, and social anxiety. Non-invasive treatment in Palm Springs."
-        keywords="TMS therapy anxiety, anxiety treatment Palm Springs, KarmaTMS anxiety, generalized anxiety disorder treatment, panic disorder therapy, social anxiety treatment"
-        canonical="/anxiety"
-        ogImage="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/e3bc971e-e2ab-4334-ac23-0b9876309934.webp" />
+        title="Anxiety Treatment Center in Palm Springs | Karma TMS PC"
+        description="Karma TMS PC offers personalized and effective anxiety treatment in Palm Springs using advanced therapy to help you regain calm, balance, and emotional well-being."
+        keywords="anxiety therapy palm springs ca, anxiety treatment palm springs, anxiety treatment center in palm springs"
+        canonical="https://www.karmatms.com/conditions/anxiety" />
 
       <StructuredData
         type="breadcrumb"
