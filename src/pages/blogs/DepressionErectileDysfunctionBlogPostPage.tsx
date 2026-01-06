@@ -238,7 +238,7 @@ const DepressionErectileDysfunctionBlogPostPage = () => {
                 <Link to="/contact">Schedule Consultation</Link>
               </Button>
               <Button asChild size="lg" variant="outline" className="border-white text-white hover:bg-white/10">
-                <Link to="/tms-therapy">Learn About TMS</Link>
+                
               </Button>
             </div>
           </div>
@@ -587,7 +587,7 @@ const DepressionErectileDysfunctionBlogPostPage = () => {
                     <Link to="/contact">Schedule Free Consultation</Link>
                   </Button>
                   <Button asChild size="lg" variant="outline" className="border-white text-white hover:bg-white/10">
-                    <Link to="/tms-therapy">Learn About TMS</Link>
+                    
                   </Button>
                 </div>
               </CardContent>
