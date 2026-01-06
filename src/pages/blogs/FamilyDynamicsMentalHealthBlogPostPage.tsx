@@ -93,24 +93,24 @@ const FamilyDynamicsMentalHealthBlogPostPage = () => {
   }];
 
 
-  const relatedPosts = [
+const relatedPosts = [
   {
-    title: 'Empowering Youth: Strategies for Building Emotional Resilience',
-    excerpt: 'Learn effective strategies for helping young people develop emotional resilience and mental wellness.',
-    link: '/blog/empowering-youth-emotional-resilience',
-    image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/6cfeb881-529d-42c6-875a-321eac7d440c.webp'
+    title: 'TMS for Migraine Relief in Veterans',
+    excerpt: 'Learn how TMS helps veterans with migraines and comorbid conditions like PTSD and depression.',
+    link: '/blogs/tms-migraine-veterans',
+    image: 'https://res.cloudinary.com/de4kw1t2i/image/upload/v1763033673/7_lnxkrv.png'
   },
   {
-    title: 'Managing Anxiety Triggers in Everyday Life',
-    excerpt: 'Discover practical approaches to identifying and managing anxiety triggers in daily situations.',
-    link: '/blog/managing-anxiety-triggers',
-    image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/9705b922-d0fc-4d29-be10-acd507ce308c.webp'
+    title: 'TMS for Anxiety in Veterans',
+    excerpt: 'Discover how TMS helps veterans manage anxiety beyond medication.',
+    link: '/blogs/tms-anxiety-veterans',
+    image: 'https://res.cloudinary.com/de4kw1t2i/image/upload/v1763033666/6_rrkhgo.png'
   },
   {
-    title: 'Mental Health First Aid: How to Help Someone in Crisis',
-    excerpt: 'Essential mental health first aid skills for recognizing crisis signs and providing support.',
-    link: '/blog/mental-health-first-aid',
-    image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/76caee2d-5629-4dc1-a3b4-8c5cea23ede6.webp'
+    title: 'Understanding PTSD in Veterans',
+    excerpt: 'Complete guide to PTSD signs, symptoms, and treatment paths including TMS therapy.',
+    link: '/blogs/understanding-ptsd-veterans',
+    image: 'https://res.cloudinary.com/de4kw1t2i/image/upload/v1763033666/5_kvtlku.png'
   }];
 
 
