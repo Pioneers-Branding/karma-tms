@@ -47,7 +47,6 @@ const Navigation = () => {
   { name: 'TMS Therapy', href: '/tms-therapy', icon: Brain },
   { name: 'PrTMS', href: '/prtms', icon: Stethoscope },
   { name: 'Brain Mapping', href: '/brain-mapping', icon: Brain },
-  { name: 'Neurofeedback', href: '/neurofeedback', icon: FileText },
   { name: 'Medication Management', href: '/medication-management', icon: Shield }];
 
 
