@@ -45,9 +45,9 @@ const HeroSection = () => {
 
 
   return (
-    <div className="py-4 ">
-      <div className="max-w-[1500px] mx-auto w-full">
-        <div className="w-full rounded-2xl lg:rounded-3xl border-purple-900/10 border-2 overflow-hidden">
+    <div className=" ">
+      <div className=" w-full">
+        <div className="w-full overflow-hidden">
           <div className="grid lg:grid-cols-2 xl:grid-cols-5 ">
             
             {/* Left Section - Content */}
