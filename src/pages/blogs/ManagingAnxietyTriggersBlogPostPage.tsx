@@ -93,10 +93,8 @@ const ManagingAnxietyTriggersBlogPostPage = () => {
   }];
 
 
- const relatedPosts = [   
-    {  
-         title: 'Understanding Anxiety Disorders',     excerpt: 'Explore how anxiety develops and effective treatment options including TMS therapy.',     link: '/anxiety',     image: 'https://res.cloudinary.com/de4kw1t2i/image/upload/v1763376737/22_wiizht.png'
-  },
+  const relatedPosts = [
+ 
   {
     title: 'Stress Management: The Four A\'s Approach',
     excerpt: 'Learn practical strategies for managing stress in our digital age.',
@@ -613,7 +611,7 @@ const ManagingAnxietyTriggersBlogPostPage = () => {
                   key={index}
                   className="border-[#572670]/20 overflow-hidden hover:shadow-lg transition-shadow">
 
-                    <img src={post.image} alt={post.title} className="w-full h-48 object-cover" />
+                    <img src={post.image} alt={post.title} className="w-full  object-cover" />
                     <CardContent className="p-6">
                       <h3 className="font-bold text-lg mb-2 hover:text-[#572670] transition-colors">
                         <Link to={post.link}>{post.title}</Link>
