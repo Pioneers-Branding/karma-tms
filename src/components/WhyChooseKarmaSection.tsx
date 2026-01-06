@@ -2,31 +2,31 @@ import React from 'react';
 
 const WhyChooseKarmaSection = () => {
   const commitmentSections = [
-    {
-      title: "Personalized Treatment Plans",
-      description: "Our expert team designs a unique TMS therapy plan tailored to your specific needs, ensuring the most effective and targeted treatment possible.",
-      image: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800&h=600&fit=crop&crop=center",
-      overlay: true
-    },
-    {
-      title: "Experienced and Compassionate Staff",
-      description: "You'll be guided by our highly trained and caring professionals who are dedicated to making your TMS journey comfortable, safe, and successful.",
-      image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&h=600&fit=crop&crop=center",
-      overlay: true
-    },
-    {
-      title: "State-of-the-Art Technology",
-      description: "We use the latest advancements in TMS technology to deliver precise and powerful therapy, maximizing therapeutic benefits with minimal discomfort.",
-      image: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=800&h=600&fit=crop&crop=center",
-      overlay: false
-    },
-    {
-      title: "Holistic and Integrated Care",
-      description: "Our approach extends beyond TMS therapy. We integrate mental health support and resources to promote your overall well-being and long-term recovery.",
-      image: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800&h=600&fit=crop&crop=center",
-      overlay: true
-    }
-  ];
+  {
+    title: "Personalized Treatment Plans",
+    description: "Our expert team designs a unique TMS therapy plan tailored to your specific needs, ensuring the most effective and targeted treatment possible.",
+    image: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800&h=600&fit=crop&crop=center",
+    overlay: true
+  },
+  {
+    title: "Experienced and Compassionate Staff",
+    description: "You'll be guided by our highly trained and caring professionals who are dedicated to making your TMS journey comfortable, safe, and successful.",
+    image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&h=600&fit=crop&crop=center",
+    overlay: true
+  },
+  {
+    title: "State-of-the-Art Technology",
+    description: "We use the latest advancements in TMS technology to deliver precise and powerful therapy, maximizing therapeutic benefits with minimal discomfort.",
+    image: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=800&h=600&fit=crop&crop=center",
+    overlay: false
+  },
+  {
+    title: "Holistic and Integrated Care",
+    description: "Our approach extends beyond TMS therapy. We integrate mental health support and resources to promote your overall well-being and long-term recovery.",
+    image: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800&h=600&fit=crop&crop=center",
+    overlay: true
+  }];
+
 
 
   return (
@@ -43,7 +43,7 @@ const WhyChooseKarmaSection = () => {
         </div>
 
         {/* Image Grid Layout */}
-        <div className="max-w-7xl mx-auto">
+        <div className="container mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 h-auto lg:h-[800px]">
             {/* First large section */}
             <div className="lg:col-span-5 lg:row-span-2 relative group overflow-hidden rounded-2xl">
@@ -114,8 +114,8 @@ const WhyChooseKarmaSection = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>);
+
 };
 
 export default WhyChooseKarmaSection;
