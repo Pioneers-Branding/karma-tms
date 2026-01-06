@@ -150,7 +150,7 @@ const PalmSpringsPage = () => {
               </div>
               <div className="relative h-96 rounded-xl overflow-hidden shadow-2xl">
                 <img
-                  src="https://images.unsplash.com/photo-1731510861193-cb13e86436ac?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MTg3MTl8MHwxfHNlYXJjaHwxfHxBJTIwbW9kZXJuJTIwYnVpbGRpbmclMjBzdXJyb3VuZGVkJTIwYnklMjBncmVlbmVyeSUyQyUyMGNhcHR1cmVkJTIwaW4lMjBhJTIwaGlnaC1yZXNvbHV0aW9uJTIwaW1hZ2UufGVufDB8fHx8MTc2MzcyNjE2NHww&ixlib=rb-4.1.0&q=80&w=200$w=1920"
+                  src="https://res.cloudinary.com/de4kw1t2i/image/upload/v1761742451/IMG_9537_VSCO_uw6qok.jpg"
                   alt="KarmaTMS Palm Springs Facility Entrance"
                   className="w-full h-full object-cover" />
 
