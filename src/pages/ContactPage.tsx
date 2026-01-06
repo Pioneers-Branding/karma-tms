@@ -268,10 +268,8 @@ const ContactPage = () => {
               <CardContent className="p-6 space-y-6">
                 <div>
                   <h3 className="font-bold text-lg text-gray-900 mb-2">Karma TMS</h3>
-                  <p className="text-gray-700 leading-relaxed">
-                    123 Palm Canyon Drive<br />
-                    Suite 200<br />
-                    Palm Springs, CA 92262
+                  <p className="text-gray-700 leading-relaxed">                   
+                    560 S. Paseo Dorotea,<br /> Suite 4-B Palm Springs,<br /> CA 92264
                   </p>
                 </div>
 
