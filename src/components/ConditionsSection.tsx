@@ -1,6 +1,7 @@
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { ArrowRight, Brain, Heart, Shield, Users, Zap, Clock } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const ConditionsSection = () => {
   const conditions = [
@@ -37,7 +38,8 @@ const ConditionsSection = () => {
     title: 'Women\'s Mood Disorders',
     subtitle: 'Perinatal & Hormonal',
     description: 'Safe treatment for postpartum depression, perinatal mood disorders, and hormone-related conditions.',
-    stats: 'Safe during pregnancy'
+    stats: 'Safe during pregnancy',
+    link: '/conditions/womens-mood'
   },
   {
     icon: Clock,
@@ -63,35 +65,40 @@ const ConditionsSection = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {conditions.map((condition, index) => {
             const IconComponent = condition.icon;
+            const CardWrapper = condition.link ? Link : 'div';
             return (
-              <Card key={index} className="group hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border-0 shadow-lg">
-                <CardHeader className="pb-4">
-                  <div className="flex items-center gap-4 mb-4">
-                    <div className="p-3 rounded-lg bg-[#572670]/10 group-hover:bg-[#572670]/20 transition-colors">
-                      <IconComponent className="h-6 w-6 text-[#572670]" />
+              <CardWrapper key={index} to={condition.link} className={condition.link ? 'block' : ''}>
+                <Card className="group hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border-0 shadow-lg h-full">
+                  <CardHeader className="pb-4">
+                    <div className="flex items-center gap-4 mb-4">
+                      <div className="p-3 rounded-lg bg-[#572670]/10 group-hover:bg-[#572670]/20 transition-colors">
+                        <IconComponent className="h-6 w-6 text-[#572670]" />
+                      </div>
+                      <div>
+                        <CardTitle className="text-xl font-bold text-gray-900">{condition.title}</CardTitle>
+                        <p className="text-sm text-[#572670] font-medium">{condition.subtitle}</p>
+                      </div>
                     </div>
-                    <div>
-                      <CardTitle className="text-xl font-bold text-gray-900">{condition.title}</CardTitle>
-                      <p className="text-sm text-[#572670] font-medium">{condition.subtitle}</p>
+                  </CardHeader>
+                  <CardContent className="space-y-4">
+                    <p className="text-gray-600 leading-relaxed">
+                      {condition.description}
+                    </p>
+                    
+                    <div className="flex items-center justify-between pt-4 border-t">
+                      <span className="text-sm font-medium text-[#572670] bg-[#572670]/10 px-3 py-1 rounded-full">
+                        {condition.stats}
+                      </span>
+                      {condition.link && (
+                        <Button variant="ghost" className="text-[#572670] hover:text-[#572670]/80 p-0 h-auto group">
+                          Learn More 
+                          <ArrowRight className="h-4 w-4 ml-1 group-hover:translate-x-1 transition-transform" />
+                        </Button>
+                      )}
                     </div>
-                  </div>
-                </CardHeader>
-                <CardContent className="space-y-4">
-                  <p className="text-gray-600 leading-relaxed">
-                    {condition.description}
-                  </p>
-                  
-                  <div className="flex items-center justify-between pt-4 border-t">
-                    <span className="text-sm font-medium text-[#572670] bg-[#572670]/10 px-3 py-1 rounded-full">
-                      {condition.stats}
-                    </span>
-                    <Button variant="ghost" className="text-[#572670] hover:text-[#572670]/80 p-0 h-auto group">
-                      Learn More 
-                      <ArrowRight className="h-4 w-4 ml-1 group-hover:translate-x-1 transition-transform" />
-                    </Button>
-                  </div>
-                </CardContent>
-              </Card>);
+                  </CardContent>
+                </Card>
+              </CardWrapper>);
 
           })}
         </div>
