@@ -94,7 +94,7 @@ const PalmSpringsPage = () => {
       {/* Hero Section */}
       <div className="relative bg-gradient-to-br from-purple-900 via-purple-800 to-purple-700 text-white py-24 lg:py-32">
         <div className="absolute inset-0 opacity-20">
-          <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1754197530512-20fc23520937?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MTg3MTl8MHwxfHNlYXJjaHwxfHxBJTIwc2NlbmljJTIwdmlldyUyMG9mJTIwYSUyMG1vZGVybiUyMGJ1aWxkaW5nJTIwc3Vycm91bmRlZCUyMGJ5JTIwZ3JlZW5lcnklMkMlMjBjYXB0dXJlZCUyMGluJTIwYSUyMGhpZ2gtcmVzb2x1dGlvbiUyMGltYWdlLnxlbnwwfHx8fDE3NjM3MjYxNTd8MA&ixlib=rb-4.1.0&q=80&w=200$w=1920')] bg-cover bg-center" />
+          <div className="absolute inset-0 bg-[url('https://res.cloudinary.com/de4kw1t2i/image/upload/v1761742451/IMG_9537_VSCO_uw6qok.jpg" />
         </div>
         <div className="container mx-auto px-4 relative z-10">
           <Badge className="mb-4 bg-purple-500/20 text-white border-purple-300">Palm Springs Location</Badge>
