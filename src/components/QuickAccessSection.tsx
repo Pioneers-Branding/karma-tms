@@ -41,7 +41,7 @@ const QuickAccessSection = () => {
             Quick Access Resources for Mental Health in Palm Springs
           </h2>
           <p className="text-lg text-gray-600 leading-relaxed">
-            Everything you need to support your mental health journey at our mental health facilities in palm springs, from research and guides to expert insights from our mental health counselors in palm springs ca.
+            Everything you need to support your mental health journey at our mental health facilities in palm springs, from research and guides to expert insights from our mental health counselors in Palm Springs, CA.
           </p>
         </div>
 
