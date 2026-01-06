@@ -39,7 +39,7 @@ const PTSDPage = () => {
             </div>
             <div className="relative">
               <img
-                src="https://images.unsplash.com/photo-1620148222862-b95cf7405a7b?q=80&w=800"
+                src="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/02c362bd-cde2-431d-8820-a07a14939638.webp"
                 alt="PTSD therapy and support"
                 className="rounded-lg shadow-2xl" />
 
@@ -87,7 +87,7 @@ const PTSDPage = () => {
             </div>
             <div className="relative">
               <img
-                src="https://images.unsplash.com/photo-1703449481095-bb99a6928f1d?q=80&w=800"
+                src="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/0a00bae7-03d4-4867-b6ee-a18528b1c447.webp"
                 alt="Trauma therapy and healing"
                 className="rounded-lg shadow-lg" />
 
@@ -366,7 +366,7 @@ const PTSDPage = () => {
             </div>
             <div className="relative">
               <img
-                src="https://images.unsplash.com/photo-1631558553269-03a775c388b5?q=80&w=800"
+                src="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/9a1c77b8-54bb-4045-996a-4002e008a037.webp"
                 alt="Safe and supportive treatment environment"
                 className="rounded-lg shadow-lg" />
 
