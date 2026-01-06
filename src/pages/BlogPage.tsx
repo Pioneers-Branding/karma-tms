@@ -137,11 +137,11 @@ const BlogPage = () => {
       <Navigation />
       
       {/* Header Section */}
-      <div className="pt-20 pb-8 bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50">
+      <div className="pt-20 pb-8 bg-gradient-to-br from-purple-50 via-violet-50 to-purple-50">
         <div className="container mx-auto px-4">
           <div className="text-center max-w-3xl mx-auto">
             <h1 className="text-5xl font-bold text-gray-900 mb-4">
-              Mental Health <span className="text-blue-600">Insights</span>
+              Mental Health <span className="bg-gradient-to-r from-[#572670] via-[#7B4D9E] to-[#572670] bg-clip-text text-transparent">Insights</span>
             </h1>
             <p className="text-xl text-gray-600 leading-relaxed">
               Stay informed with the latest research, treatments, and expert insights in mental health care from our team of specialists.
@@ -159,7 +159,7 @@ const BlogPage = () => {
               <span className="text-sm font-semibold text-gray-700 uppercase tracking-wide">Featured Article</span>
             </div>
             
-            <Card className="overflow-hidden border-0 shadow-xl bg-gradient-to-r from-blue-600 to-indigo-700 text-white">
+            <Card className="overflow-hidden border-0 shadow-xl bg-gradient-to-r from-[#572670] to-[#7B4D9E] text-white">
               <div className="grid lg:grid-cols-2 gap-0">
                 <div className="p-8 lg:p-12 flex flex-col justify-center">
                   <Badge className="bg-white/20 text-white border-white/30 mb-4 w-fit">
@@ -168,11 +168,11 @@ const BlogPage = () => {
                   <h2 className="text-3xl lg:text-4xl font-bold mb-4 leading-tight">
                     {featuredPost.title}
                   </h2>
-                  <p className="text-blue-100 text-lg mb-6 leading-relaxed">
+                  <p className="text-purple-100 text-lg mb-6 leading-relaxed">
                     {featuredPost.excerpt}
                   </p>
                   
-                  <div className="flex items-center gap-6 mb-6 text-blue-100">
+                  <div className="flex items-center gap-6 mb-6 text-purple-100">
                     <div className="flex items-center gap-2">
                       <User className="h-4 w-4" />
                       <span className="text-sm">{featuredPost.author}</span>
@@ -187,7 +187,7 @@ const BlogPage = () => {
                     </div>
                   </div>
                   
-                  <Button asChild variant="secondary" className="w-fit bg-white text-blue-600 hover:bg-blue-50">
+                  <Button asChild variant="secondary" className="w-fit bg-white text-[#572670] hover:bg-gray-50">
                     <a href="/blog/veterans-tms-therapy">
                       Read Full Article <ArrowRight className="ml-2 h-4 w-4" />
                     </a>
@@ -217,7 +217,7 @@ const BlogPage = () => {
               <TabsTrigger
                 key={category.id}
                 value={category.id}
-                className="text-sm data-[state=active]:bg-blue-600 data-[state=active]:text-white">
+                className="text-sm data-[state=active]:bg-[#572670] data-[state=active]:text-white">
 
                   {category.label}
                 </TabsTrigger>
@@ -230,7 +230,7 @@ const BlogPage = () => {
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
                   {regularPosts.map((post) =>
                 <a key={post.id} href="/blog/veterans-tms-therapy">
-                  <Card className="group cursor-pointer hover:shadow-lg transition-all duration-300 border-gray-200 hover:border-blue-300">
+                  <Card className="group cursor-pointer hover:shadow-lg transition-all duration-300 border-gray-200 hover:border-[#572670]/30">
                       <div className="relative overflow-hidden rounded-t-lg">
                         <img
                         src={post.image}
@@ -245,7 +245,7 @@ const BlogPage = () => {
                       </div>
                       
                       <CardHeader className="pb-2">
-                        <CardTitle className="text-xl group-hover:text-blue-600 transition-colors line-clamp-2">
+                        <CardTitle className="text-xl group-hover:text-[#572670] transition-colors line-clamp-2">
                           {post.title}
                         </CardTitle>
                         <CardDescription className="text-gray-600 line-clamp-2">
@@ -269,7 +269,7 @@ const BlogPage = () => {
                         
                         <div className="flex items-center justify-between">
                           <span className="text-sm text-gray-500">{post.date}</span>
-                          <Button variant="ghost" size="sm" className="text-blue-600 hover:text-blue-700 p-0">
+                          <Button variant="ghost" size="sm" className="text-[#572670] hover:text-[#572670]/80 p-0">
                             Read More <ArrowRight className="ml-1 h-3 w-3" />
                           </Button>
                         </div>
@@ -329,7 +329,7 @@ const BlogPage = () => {
       </div>
 
       {/* Newsletter Signup */}
-      <div className="py-12 bg-gradient-to-br from-blue-50 to-indigo-50">
+      <div className="py-12 bg-gradient-to-br from-purple-50 to-violet-50">
         <div className="container mx-auto px-4 text-center">
           <h3 className="text-2xl font-bold text-gray-900 mb-4">Stay Updated</h3>
           <p className="text-gray-600 mb-6 max-w-2xl mx-auto">
@@ -339,9 +339,9 @@ const BlogPage = () => {
             <input
               type="email"
               placeholder="Enter your email"
-              className="flex-1 px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent" />
+              className="flex-1 px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#572670] focus:border-transparent" />
 
-            <Button className="bg-blue-600 hover:bg-blue-700">
+            <Button className="bg-[#572670] hover:bg-[#572670]/90">
               Subscribe
             </Button>
           </div>
