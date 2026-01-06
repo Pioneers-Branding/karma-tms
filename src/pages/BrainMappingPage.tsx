@@ -104,7 +104,7 @@ const BrainMappingPage = () => {
     title: 'Personalized Protocols',
     description: 'Creates custom treatment parameters based on your unique patterns',
     icon: <Brain className="w-8 h-8" />,
-    color: 'from-purple-500 to-pink-500'
+    color: 'from-purple-500 to-purple-600'
   }];
 
 
