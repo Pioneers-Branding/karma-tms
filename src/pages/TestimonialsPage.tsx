@@ -24,6 +24,7 @@ const TestimonialsPage = () => {
     quote: 'Depression is a miserable way to deal with life on a daily basis. When the med dont seem to do the trick, TMS therapy is a sensible addition to treatment that has helped me in the battle.',
     hasVideo: false,
     videoId: '',
+    videoType: 'youtube',
     avatar: 'https://images.unsplash.com/photo-1738980420952-56cc02acd17f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MTg3MTl8MHwxfHNlYXJjaHwxfHxBJTIwcHJvZmlsZSUyMGF2YXRhciUyMGltYWdlJTIwb2YlMjBhJTIwcGVyc29uJTJDJTIwbGlrZWx5JTIwdXNlZCUyMGZvciUyMHRlc3RpbW9uaWFscyUyMG9yJTIwdXNlciUyMHJlcHJlc2VudGF0aW9uLnxlbnwwfHx8fDE3NTkyMzY3MDd8MA&ixlib=rb-4.1.0&q=80&w=200$w=512',
     date: '2024-01-15'
   },
@@ -36,19 +37,21 @@ const TestimonialsPage = () => {
     quote: 'TMS has helped me incredibly. It took more than half way throughout the sessions to see results but it definitely started to kick in. I highly recommend anyone suffering with depression etc to try TMS.',
     hasVideo: true,
     videoId: 'xewffol4oOQ',
+    videoType: 'youtube',
     avatar: 'https://images.unsplash.com/photo-1739296408127-b6cc9c5c094b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MTg3MTl8MHwxfHNlYXJjaHwxfHxBJTIwcHJvZmlsZSUyMGF2YXRhciUyMGltYWdlJTIwbGlrZWx5JTIwdXNlZCUyMGZvciUyMHRlc3RpbW9uaWFscyUyMG9yJTIwdXNlciUyMHJlcHJlc2VudGF0aW9uLnxlbnwwfHx8fDE3NTkyMzY3MDh8MA&ixlib=rb-4.1.0&q=80&w=200$w=512',
     date: '2024-02-03'
   },
   {
     id: 3,
-    name: 'Benjamin A.',
-    location: 'Cathedral City, CA',
-    condition: 'Anxiety & Depression',
+    name: 'Luis',
+    location: 'Coachella Valley, CA',
+    condition: 'Depression Treatment',
     rating: 5,
-    quote: 'My TMS experience was life changing. I went from being in bed for weeks and months to rejoining life again. The science behind this technology is the hope so many of us need. If you\'re thinking about TMS therapy I highly recommend it.',
+    quote: 'Testimonio en español sobre mi experiencia transformadora con la terapia TMS en Karma TMS.',
     hasVideo: true,
-    videoId: 'dQw4w9WgXcQ',
-    avatar: 'https://images.unsplash.com/photo-1739296408127-b6cc9c5c094b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MTg3MTl8MHwxfHNlYXJjaHwxfHxBJTIwcHJvZmlsZSUyMGF2YXRhciUyMGltYWdlJTIwbGlrZWx5JTIwdXNlZCUyMGZvciUyMHRlc3RpbW9uaWFscyUyMG9yJTIwdXNlciUyMHJlcHJlc2VudGF0aW9uLnxlbnwwfHx8fDE3NTkyMzY3MDh8MA&ixlib=rb-4.1.0&q=80&w=200$w=512',
+    videoId: '1106562016',
+    videoType: 'vimeo',
+    avatar: 'https://images.unsplash.com/photo-1484863137850-59afcfe05386?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     date: '2024-01-28'
   },
   {
@@ -60,19 +63,22 @@ const TestimonialsPage = () => {
     quote: 'TMS therapy changed my life! This was a leap of faith and it worked out for me, TMS saved my life!',
     hasVideo: false,
     videoId: '',
+    videoType: 'youtube',
     avatar: 'https://images.unsplash.com/photo-1739296408127-b6cc9c5c094b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MTg3MTl8MHwxfHNlYXJjaHwxfHxBJTIwcHJvZmlsZSUyMGF2YXRhciUyMGltYWdlJTIwbGlrZWx5JTIwdXNlZCUyMGZvciUyMHRlc3RpbW9uaWFscyUyMG9yJTIwdXNlciUyMHJlcHJlc2VudGF0aW9uLnxlbnwwfHx8fDE3NTkyMzY3MDh8MA&ixlib=rb-4.1.0&q=80&w=200$w=512',
     date: '2024-02-12'
   },
   {
     id: 5,
-    name: 'Lynette I.',
-    location: 'Palm Desert, CA',
-    condition: 'Anxiety Disorder',
+    name: 'Lucia',
+    location: 'Coachella Valley, CA',
+    condition: 'Mental Health Treatment',
     rating: 5,
-    quote: 'I have had treatment-resistant clinical depression since childhood. TMS proved to be a life-changing decision, since after completing the recommended number of treatments, I experienced, for the first time, life without the dark cycles of depression.',
+    quote: 'La terapia TMS ha cambiado mi vida. Recomiendo este tratamiento a cualquier persona que busque una solución efectiva.',
     hasVideo: true,
-    videoId: 'dQw4w9WgXcQ',
-    avatar: 'https://images.unsplash.com/photo-1739296408127-b6cc9c5c094b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MTg3MTl8MHwxfHNlYXJjaHwxfHxBJTIwcHJvZmlsZSUyMGF2YXRhciUyMGltYWdlJTIwbGlrZWx5JTIwdXNlZCUyMGZvciUyMHRlc3RpbW9uaWFscyUyMG9yJTIwdXNlciUyMHJlcHJlc2VudGF0aW9uLnxlbnwwfHx8fDE3NTkyMzY3MDh8MA&ixlib=rb-4.1.0&q=80&w=200$w=512',
+    videoId: '1098237681',
+    videoType: 'vimeo',
+    vimeoHash: 'b204c02062',
+    avatar: 'https://images.unsplash.com/photo-1565979612809-d90c6ca38df9?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     date: '2024-01-20'
   }];
 
@@ -209,15 +215,27 @@ const TestimonialsPage = () => {
               <div className="order-2 lg:order-1">
                 <Card className="overflow-hidden shadow-lg">
                   <div className="aspect-video bg-black">
-                    <iframe
-                    width="100%"
-                    height="100%"
-                    src={`https://www.youtube.com/embed/${videoTestimonials[currentVideoIndex]?.videoId}?controls=1&modestbranding=1`}
-                    title={`${videoTestimonials[currentVideoIndex]?.name} Testimonial`}
-                    frameBorder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowFullScreen />
-
+                    {videoTestimonials[currentVideoIndex]?.videoType === 'vimeo' ?
+                      <div style={{ padding: '56.25% 0 0 0', position: 'relative' }}>
+                        <iframe
+                          src={`https://player.vimeo.com/video/${videoTestimonials[currentVideoIndex]?.videoId}${videoTestimonials[currentVideoIndex]?.vimeoHash ? `?h=${videoTestimonials[currentVideoIndex]?.vimeoHash}&` : '?'}badge=0&autopause=0&player_id=0&app_id=58479`}
+                          frameBorder="0"
+                          allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+                          style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }}
+                          title={`${videoTestimonials[currentVideoIndex]?.name} Testimonial`}
+                        />
+                      </div>
+                      :
+                      <iframe
+                        width="100%"
+                        height="100%"
+                        src={`https://www.youtube.com/embed/${videoTestimonials[currentVideoIndex]?.videoId}?controls=1&modestbranding=1`}
+                        title={`${videoTestimonials[currentVideoIndex]?.name} Testimonial`}
+                        frameBorder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowFullScreen
+                      />
+                    }
                   </div>
                 </Card>
               </div>
