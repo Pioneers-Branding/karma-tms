@@ -365,9 +365,9 @@ const BipolarPage = () => {
               <img
                 src="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/a5282574-816a-449c-bb06-db229b0bf423.webp"
                 alt="Medical monitoring and care"
-                className="rounded-lg shadow-lg" />
+                className="rounded-lg shadow-lg max-h-[600px]" />
 
-              <div className="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent rounded-lg"></div>
+              
             </div>
           </div>
 
