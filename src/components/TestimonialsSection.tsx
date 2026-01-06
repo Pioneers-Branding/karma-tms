@@ -9,7 +9,7 @@ const TestimonialsSection = () => {
 
   const testimonials = [
   {
-    name: "Mark B.",
+    name: "Patricia D.",
     location: "Palm Springs, CA",
     condition: "Treatment-Resistant Depression",
     rating: 5,
