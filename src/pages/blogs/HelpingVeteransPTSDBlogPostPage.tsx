@@ -280,7 +280,7 @@ const HelpingVeteransPTSDBlogPostPage = () => {
               <img
                 src="https://res.cloudinary.com/de4kw1t2i/image/upload/v1763033666/4_toy7pb.png"
                 alt="Supporting veterans with PTSD through compassionate care"
-                className="w-full  md:h-96 object-cover rounded-lg mb-6" />
+                className="w-full md:h-96 object-cover rounded-lg mb-6" />
 
 
               <p className="text-xl text-gray-700 leading-relaxed">
@@ -621,11 +621,6 @@ const HelpingVeteransPTSDBlogPostPage = () => {
                   </CardContent>
                 </Card>
               </div>
-
-              <img
-                src="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/157c49b6-b322-4aa5-b8d6-8ee41dc03a43.webp"
-                alt="Veterans support groups and community resources"
-                className="w-full h-64 object-cover rounded-lg mb-6" />
 
             </section>
 
