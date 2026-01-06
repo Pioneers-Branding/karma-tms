@@ -82,21 +82,21 @@ const TwentyNinePalmsPage = () => {
       <Navigation />
       
       {/* Hero Section */}
-      <div className="relative bg-gradient-to-br from-blue-900 via-blue-800 to-teal-700 text-white py-24 lg:py-32">
+      <div className="relative bg-gradient-to-br from-purple-900 via-purple-800 to-purple-700 text-white py-24 lg:py-32">
         <div className="absolute inset-0 opacity-20">
           <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1706203644358-9a16606dcff7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MTg3MTl8MHwxfHNlYXJjaHwxfHxBJTIwc2NlbmljJTIwdmlldyUyMG9mJTIwYSUyMGRlc2VydCUyMGxhbmRzY2FwZSUyMHdpdGglMjBtb3VudGFpbnMlMjBpbiUyMHRoZSUyMGJhY2tncm91bmQlMjBhbmQlMjBhJTIwY2xlYXIlMjBibHVlJTIwc2t5LnxlbnwwfHx8fDE3NjM3MjYxNTR8MA&ixlib=rb-4.1.0&q=80&w=200$w=1920')] bg-cover bg-center" />
         </div>
         <div className="container mx-auto px-4 relative z-10">
-          <Badge className="mb-4 bg-blue-500/20 text-white border-blue-300">Twentynine Palms Location</Badge>
+          <Badge className="mb-4 bg-purple-500/20 text-white border-purple-300">Twentynine Palms Location</Badge>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
             TMS Therapy in Twentynine Palms, CA
           </h1>
-          <p className="text-xl lg:text-2xl text-blue-100 max-w-3xl mb-8">
+          <p className="text-xl lg:text-2xl text-purple-100 max-w-3xl mb-8">
             Specialized mental health treatment for military families and the High Desert community - PTSD, depression, and anxiety care
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <Link to="/contact">
-              <Button size="lg" className="bg-white text-blue-900 hover:bg-gray-100 text-lg px-8">
+              <Button size="lg" className="bg-white text-purple-900 hover:bg-gray-100 text-lg px-8">
                 Schedule Consultation
               </Button>
             </Link>
@@ -127,12 +127,12 @@ const TwentyNinePalmsPage = () => {
                   Located conveniently on 29 Palms Highway, our facility provides easy access for those stationed at MCAGCC and residents throughout the High Desert. We understand the unique mental health challenges faced by military personnel and their families.
                 </p>
                 <p className="text-lg text-gray-700 mb-6">
-                  Our team has specialized experience treating <Link to="/conditions/ptsd" className="text-blue-600 hover:underline">PTSD</Link>, combat-related trauma, <Link to="/depression" className="text-blue-600 hover:underline">depression</Link>, and <Link to="/anxiety" className="text-blue-600 hover:underline">anxiety</Link> common among service members. We accept Tricare and work seamlessly with military insurance.
+                  Our team has specialized experience treating <Link to="/conditions/ptsd" className="text-purple-600 hover:underline">PTSD</Link>, combat-related trauma, <Link to="/depression" className="text-purple-600 hover:underline">depression</Link>, and <Link to="/anxiety" className="text-purple-600 hover:underline">anxiety</Link> common among service members. We accept Tricare and work seamlessly with military insurance.
                 </p>
                 <div className="grid grid-cols-2 gap-4">
                   {benefits.map((benefit, idx) =>
                   <div key={idx} className="flex items-center gap-2">
-                      <benefit.icon className="w-5 h-5 text-blue-600" />
+                      <benefit.icon className="w-5 h-5 text-purple-600" />
                       <span className="font-medium">{benefit.text}</span>
                     </div>
                   )}
@@ -162,9 +162,9 @@ const TwentyNinePalmsPage = () => {
             </div>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               {treatments.map((treatment, idx) =>
-              <Card key={idx} className="hover:shadow-xl transition-all duration-300 border-t-4 border-t-blue-600">
+              <Card key={idx} className="hover:shadow-xl transition-all duration-300 border-t-4 border-t-purple-600">
                   <CardContent className="p-6">
-                    <CheckCircle className="w-8 h-8 text-blue-600 mb-4" />
+                    <CheckCircle className="w-8 h-8 text-purple-600 mb-4" />
                     <h3 className="text-xl font-bold mb-2">{treatment.name}</h3>
                     <p className="text-gray-600">{treatment.desc}</p>
                   </CardContent>
@@ -173,7 +173,7 @@ const TwentyNinePalmsPage = () => {
             </div>
             <div className="text-center mt-10 space-y-4">
               <Link to="/veterans">
-                <Button size="lg" className="bg-blue-600 hover:bg-blue-700 mr-4">
+                <Button size="lg" className="bg-purple-600 hover:bg-purple-700 mr-4">
                   Veterans Services
                 </Button>
               </Link>
@@ -226,34 +226,34 @@ const TwentyNinePalmsPage = () => {
       </div>
 
       {/* Why Choose Us */}
-      <div className="py-20 bg-gradient-to-br from-blue-50 to-teal-50">
+      <div className="py-20 bg-gradient-to-br from-purple-50 to-purple-50">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl lg:text-4xl font-bold mb-6">Why Twentynine Palms Trusts KarmaTMS</h2>
             <div className="grid md:grid-cols-2 gap-8 text-left mt-12">
               <div className="flex gap-4">
-                <Shield className="w-8 h-8 text-blue-600 flex-shrink-0 mt-1" />
+                <Shield className="w-8 h-8 text-purple-600 flex-shrink-0 mt-1" />
                 <div>
                   <h3 className="text-xl font-bold mb-2">Military-Focused Care</h3>
-                  <p className="text-gray-700">Our team specializes in treating service members and <Link to="/veterans" className="text-blue-600 hover:underline">understands military culture</Link> and the challenges of active duty life.</p>
+                  <p className="text-gray-700">Our team specializes in treating service members and <Link to="/veterans" className="text-purple-600 hover:underline">understands military culture</Link> and the challenges of active duty life.</p>
                 </div>
               </div>
               <div className="flex gap-4">
-                <Award className="w-8 h-8 text-blue-600 flex-shrink-0 mt-1" />
+                <Award className="w-8 h-8 text-purple-600 flex-shrink-0 mt-1" />
                 <div>
                   <h3 className="text-xl font-bold mb-2">Tricare Experts</h3>
-                  <p className="text-gray-700">We handle all <Link to="/insurance-pricing" className="text-blue-600 hover:underline">Tricare authorization and paperwork</Link> to make your care seamless and stress-free.</p>
+                  <p className="text-gray-700">We handle all <Link to="/insurance-pricing" className="text-purple-600 hover:underline">Tricare authorization and paperwork</Link> to make your care seamless and stress-free.</p>
                 </div>
               </div>
               <div className="flex gap-4">
-                <Star className="w-8 h-8 text-blue-600 flex-shrink-0 mt-1" />
+                <Star className="w-8 h-8 text-purple-600 flex-shrink-0 mt-1" />
                 <div>
                   <h3 className="text-xl font-bold mb-2">PTSD Specialists</h3>
                   <p className="text-gray-700">Proven success treating combat trauma, PTSD, and deployment-related mental health conditions with TMS therapy.</p>
                 </div>
               </div>
               <div className="flex gap-4">
-                <CheckCircle className="w-8 h-8 text-blue-600 flex-shrink-0 mt-1" />
+                <CheckCircle className="w-8 h-8 text-purple-600 flex-shrink-0 mt-1" />
                 <div>
                   <h3 className="text-xl font-bold mb-2">Convenient Location</h3>
                   <p className="text-gray-700">Easy access from MCAGCC and throughout the High Desert with ample parking and flexible scheduling.</p>
@@ -273,13 +273,13 @@ const TwentyNinePalmsPage = () => {
             <Card className="overflow-hidden shadow-xl mb-8">
               <CardContent className="p-8">
                 <div className="flex items-center gap-2 mb-6">
-                  <Building2 className="w-6 h-6 text-blue-600" />
+                  <Building2 className="w-6 h-6 text-purple-600" />
                   <h3 className="text-2xl font-bold">Twentynine Palms Office</h3>
                 </div>
                 
                 <div className="space-y-4 mb-6">
                   <div className="flex items-start gap-3">
-                    <MapPin className="w-5 h-5 text-blue-600 mt-1 flex-shrink-0" />
+                    <MapPin className="w-5 h-5 text-purple-600 mt-1 flex-shrink-0" />
                     <div>
                       <p className="font-medium">72724 29 Palms Hwy. Suite 107-B</p>
                       <p className="text-gray-600">Twentynine Palms, CA 92277</p>
@@ -287,14 +287,14 @@ const TwentyNinePalmsPage = () => {
                   </div>
                   
                   <div className="flex items-start gap-3">
-                    <Phone className="w-5 h-5 text-blue-600 mt-1 flex-shrink-0" />
-                    <a href="tel:7607605675" className="hover:text-blue-600 transition-colors font-medium">
+                    <Phone className="w-5 h-5 text-purple-600 mt-1 flex-shrink-0" />
+                    <a href="tel:7607605675" className="hover:text-purple-600 transition-colors font-medium">
                       (760) 760-5675
                     </a>
                   </div>
                   
                   <div className="flex items-start gap-3">
-                    <Clock className="w-5 h-5 text-blue-600 mt-1 flex-shrink-0" />
+                    <Clock className="w-5 h-5 text-purple-600 mt-1 flex-shrink-0" />
                     <div>
                       <p className="font-medium">Monday - Friday: 8:00 AM - 6:00 PM</p>
                       <p className="text-gray-600">Saturday - Sunday: Closed</p>
@@ -302,8 +302,8 @@ const TwentyNinePalmsPage = () => {
                   </div>
                   
                   <div className="flex items-start gap-3">
-                    <Mail className="w-5 h-5 text-blue-600 mt-1 flex-shrink-0" />
-                    <a href="mailto:contact@karmatms.com" className="hover:text-blue-600 transition-colors">
+                    <Mail className="w-5 h-5 text-purple-600 mt-1 flex-shrink-0" />
+                    <a href="mailto:contact@karmatms.com" className="hover:text-purple-600 transition-colors">
                       contact@karmatms.com
                     </a>
                   </div>
@@ -347,7 +347,7 @@ const TwentyNinePalmsPage = () => {
 
             </div>
 
-            <Card className="bg-blue-50 border-blue-200">
+            <Card className="bg-purple-50 border-purple-200">
               <CardContent className="p-8">
                 <h3 className="text-xl font-bold mb-4">Driving Directions</h3>
                 <div className="space-y-3 text-gray-700">
@@ -370,7 +370,7 @@ const TwentyNinePalmsPage = () => {
             <Accordion type="single" collapsible className="space-y-4">
               {faqs.map((faq, idx) =>
               <AccordionItem key={idx} value={`item-${idx}`} className="bg-white rounded-lg px-6 border shadow-sm">
-                  <AccordionTrigger className="text-left font-semibold hover:text-blue-600">
+                  <AccordionTrigger className="text-left font-semibold hover:text-purple-600">
                     {faq.q}
                   </AccordionTrigger>
                   <AccordionContent className="text-gray-700 pt-2">
@@ -389,16 +389,16 @@ const TwentyNinePalmsPage = () => {
       </div>
 
       {/* Final CTA Section */}
-      <div className="py-20 bg-gradient-to-br from-blue-900 via-blue-800 to-teal-700 text-white">
+      <div className="py-20 bg-gradient-to-br from-purple-900 via-purple-800 to-purple-700 text-white">
         <div className="container mx-auto px-4 text-center">
           <Shield className="w-16 h-16 mx-auto mb-6 opacity-80" />
           <h2 className="text-3xl lg:text-4xl font-bold mb-6">Proud to Serve Those Who Serve</h2>
-          <p className="text-xl text-blue-100 mb-10 max-w-2xl mx-auto">
+          <p className="text-xl text-purple-100 mb-10 max-w-2xl mx-auto">
             If you're a service member, veteran, or military family member struggling with PTSD, depression, or anxiety, we're here to help. Schedule your consultation today.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link to="/contact">
-              <Button size="lg" className="bg-white text-blue-900 hover:bg-gray-100 text-lg px-10">
+              <Button size="lg" className="bg-white text-purple-900 hover:bg-gray-100 text-lg px-10">
                 Contact Us Today
               </Button>
             </Link>
@@ -408,7 +408,7 @@ const TwentyNinePalmsPage = () => {
               </Button>
             </Link>
           </div>
-          <p className="mt-8 text-blue-200">
+          <p className="mt-8 text-purple-200">
             <a href="tel:7607605675" className="hover:text-white transition-colors font-semibold text-xl">
               Call (760) 760-5675
             </a>
