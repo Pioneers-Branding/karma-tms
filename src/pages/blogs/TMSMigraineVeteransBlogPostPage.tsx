@@ -504,10 +504,7 @@ export default function TMSMigraineVeteransBlogPostPage() {
             {/* Section 5: Traditional Treatments */}
             <section ref={(el) => sectionsRef.current['traditional-treatments'] = el} className="mb-12">
               <h2 className="text-3xl font-bold text-[#572670] mb-6">Traditional Treatments vs. TMS</h2>
-              <img
-                src="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/2ddc8d69-b09a-4f1d-bd47-6d783ceefbd1.webp"
-                alt="Migraine treatment options"
-                className="w-full h-64 md:h-80 object-cover rounded-lg mb-6" />
+             
 
 
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Conventional Migraine Treatments:</h3>
