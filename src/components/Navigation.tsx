@@ -60,7 +60,7 @@ const Navigation = () => {
 
   const locationsLinks = [
   { name: 'Palm Springs', href: '/palm-springs', icon: MapPin },
-  { name: 'Twenty-Nine Palms', href: '/twenty-nine-palms', icon: MapPin },
+  { name: 'Twenty-Nine Palms', href: '/29-palms', icon: MapPin },
   { name: 'Rancho Mirage', href: '/rancho-mirage', icon: MapPin }];
 
 
