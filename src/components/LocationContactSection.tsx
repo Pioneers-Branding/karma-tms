@@ -78,7 +78,7 @@ const LocationContactSection = () => {
               <div>
                 <h4 className="font-semibold text-gray-900 mb-1">{label}</h4>
                 {href ?
-                  <a href={href} className="text-[16px] hover:underline font-semibold text-lg whitespace-pre-line">
+                  <a href={href} className="font-medium text-[#707070] hover:underline whitespace-pre-line">
                     {value}
                   </a> :
 
