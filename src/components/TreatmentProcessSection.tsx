@@ -5,52 +5,52 @@ import { ClipboardList, CreditCard, FileText, Clock, BarChart3, ArrowRight, Chec
 
 const TreatmentProcessSection = () => {
   const steps = [
-  {
-    step: 1,
-    icon: ClipboardList,
-    title: "Initial Consultation & Evaluation",
-    description: "Comprehensive psychiatric evaluation to determine if TMS is right for you",
-    duration: "60-90 minutes",
-    details: ["Medical history review", "Mental health assessment", "Treatment goals discussion"],
-    color: "from-blue-500/20 to-blue-600/20"
-  },
-  {
-    step: 2,
-    icon: CreditCard,
-    title: "Insurance Verification",
-    description: "We handle all insurance paperwork and pre-authorization processes",
-    duration: "1-3 business days",
-    details: ["Benefit verification", "Prior authorization", "Coverage confirmation"],
-    color: "from-green-500/20 to-green-600/20"
-  },
-  {
-    step: 3,
-    icon: FileText,
-    title: "Personalized Treatment Plan",
-    description: "Custom protocol developed specifically for your condition and needs",
-    duration: "30 minutes",
-    details: ["Brain mapping session", "Treatment parameters set", "Schedule coordination"],
-    color: "from-purple-500/20 to-purple-600/20"
-  },
-  {
-    step: 4,
-    icon: Clock,
-    title: "Daily 20-Minute Sessions",
-    description: "Convenient treatments over 6-8 weeks with no downtime",
-    duration: "6-8 weeks",
-    details: ["36 total sessions", "Monday-Friday schedule", "No anesthesia needed"],
-    color: "from-orange-500/20 to-orange-600/20"
-  },
-  {
-    step: 5,
-    icon: BarChart3,
-    title: "Progress Monitoring & Follow-up",
-    description: "Regular assessments to track improvement and adjust as needed",
-    duration: "Ongoing",
-    details: ["Weekly progress reviews", "Symptom tracking", "Long-term follow-up care"],
-    color: "from-pink-500/20 to-pink-600/20"
-  }];
-
+    {
+      step: 1,
+      icon: ClipboardList,
+      title: "Initial Consultation & Evaluation",
+      description: "Comprehensive psychiatric evaluation to determine if TMS is right for you",
+      duration: "60-90 minutes",
+      details: ["Medical history review", "Mental health assessment", "Treatment goals discussion"],
+      color: "from-blue-500/20 to-blue-600/20"
+    },
+    {
+      step: 2,
+      icon: CreditCard,
+      title: "Insurance Verification",
+      description: "We handle all insurance paperwork and pre-authorization processes",
+      duration: "1-3 business days",
+      details: ["Benefit verification", "Prior authorization", "Coverage confirmation"],
+      color: "from-green-500/20 to-green-600/20"
+    },
+    {
+      step: 3,
+      icon: FileText,
+      title: "Personalized Treatment Plan",
+      description: "Custom protocol developed specifically for your condition and needs",
+      duration: "30 minutes",
+      details: ["Brain mapping session", "Treatment parameters set", "Schedule coordination"],
+      color: "from-purple-500/20 to-purple-600/20"
+    },
+    {
+      step: 4,
+      icon: Clock,
+      title: "Daily 20-Minute Sessions",
+      description: "Convenient treatments over 6-8 weeks with no downtime",
+      duration: "6-8 weeks",
+      details: ["36 total sessions", "Monday-Friday schedule", "No anesthesia needed"],
+      color: "from-orange-500/20 to-orange-600/20"
+    },
+    {
+      step: 5,
+      icon: BarChart3,
+      title: "Progress Monitoring & Follow-up",
+      description: "Regular assessments to track improvement and adjust as needed",
+      duration: "Ongoing",
+      details: ["Weekly progress reviews", "Symptom tracking", "Long-term follow-up care"],
+      color: "from-pink-500/20 to-pink-600/20"
+    }
+  ];
 
   return (
     <section className="py-20 bg-gradient-to-br from-gray-50 via-white to-purple-50/30 relative overflow-hidden">
@@ -77,27 +77,28 @@ const TreatmentProcessSection = () => {
         {/* Steps Timeline */}
         <div className="space-y-8">
           {steps.map((step, index) => {
-            const IconComponent = step.icon;
             const isLast = index === steps.length - 1;
-
+            const IconComponent = step.icon;
             return (
               <div key={index} className="relative">
                 <Card className="border-0 bg-white/80 backdrop-blur-sm shadow-lg hover:shadow-xl transition-all duration-500 group">
                   <CardContent className="p-0">
                     <div className="grid lg:grid-cols-12 gap-0">
-                      {/* Step Number & Icon */}
+                      {/* Step Number & Centered Icon */}
                       <div className={`lg:col-span-3 p-8 bg-gradient-to-br ${step.color} flex flex-col items-center justify-center text-center relative`}>
-                        <div className="mb-4">
-                          <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center shadow-lg mb-4">
-                            <IconComponent className="h-8 w-8 text-[#572670]" />
-                          </div>
-                          <div className="text-3xl font-bold text-gray-900">{step.step}</div>
-                          <Badge variant="outline" className="mt-2 bg-white/80 backdrop-blur-sm">
-                            {step.duration}
-                          </Badge>
+                        <div
+                          className="mb-4 flex items-center justify-center w-16 h-16 rounded-full shadow-lg"
+                          style={{ 
+                            background: `linear-gradient(to bottom right, var(--tw-gradient-from, #fff), var(--tw-gradient-to, #fff))`
+                          }}
+                        >
+                          <IconComponent className="h-8 w-8 text-[#572670]" />
                         </div>
+                        <div className="text-3xl font-bold text-gray-900">{step.step}</div>
+                        <Badge variant="outline" className="mt-2 bg-white/80 backdrop-blur-sm">
+                          {step.duration}
+                        </Badge>
                       </div>
-                      
                       {/* Content */}
                       <div className="lg:col-span-9 p-8 space-y-4">
                         <div>
@@ -108,13 +109,12 @@ const TreatmentProcessSection = () => {
                             {step.description}
                           </p>
                         </div>
-                        
                         <div className="grid sm:grid-cols-3 gap-4">
                           {step.details.map((detail, detailIndex) =>
-                          <div
-                            key={detailIndex}
-                            className="flex items-center gap-3 p-3 bg-gray-50/80 rounded-lg">
-
+                            <div
+                              key={detailIndex}
+                              className="flex items-center gap-3 p-3 bg-gray-50/80 rounded-lg"
+                            >
                               <CheckCircle className="h-4 w-4 text-green-500 flex-shrink-0" />
                               <span className="text-sm text-gray-700">{detail}</span>
                             </div>
@@ -124,18 +124,17 @@ const TreatmentProcessSection = () => {
                     </div>
                   </CardContent>
                 </Card>
-
                 {/* Connecting Arrow (except for last step) */}
-                {!isLast &&
-                <div className="flex justify-center my-6">
+                {!isLast && (
+                  <div className="flex justify-center my-6">
                     <div className="flex flex-col items-center">
                       <ArrowRight className="h-8 w-8 text-[#572670] transform rotate-90" />
                       <div className="w-px h-8 bg-gradient-to-b from-[#572670] to-transparent"></div>
                     </div>
                   </div>
-                }
-              </div>);
-
+                )}
+              </div>
+            );
           })}
         </div>
 
@@ -156,8 +155,8 @@ const TreatmentProcessSection = () => {
           </Card>
         </div>
       </div>
-    </section>);
-
+    </section>
+  );
 };
 
 export default TreatmentProcessSection;
