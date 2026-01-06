@@ -1,257 +1,496 @@
-import { useState } from 'react';
-import { Card, CardContent } from '@/components/ui/card';
+import React, { useState } from 'react';
+import { ArrowRight, Brain, Target, CheckCircle, Clock, Users, Award, ChevronRight, ChevronLeft, Play, FileText, Phone, Star, Zap, Heart, Activity, BarChart3, User } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
-import { ChevronLeft, ChevronRight, Play, Star, Quote } from 'lucide-react';
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { Badge } from '@/components/ui/badge';
+import { Checkbox } from '@/components/ui/checkbox';
+import { Link } from 'react-router-dom';
+import Navigation from '@/components/Navigation';
+import FooterSection from '@/components/FooterSection';
 
-const TestimonialsSection = () => {
-  const [currentTestimonial, setCurrentTestimonial] = useState(0);
+const PRTMSPage = () => {
+  const [currentSlide, setCurrentSlide] = useState(0);
+  const [checkedItems, setCheckedItems] = useState<string[]>([]);
 
-  const testimonials = [
+  const algorithmSteps = [
   {
-    name: "Patricia D.",
-    location: "Palm Springs, CA",
-    condition: "Treatment-Resistant Depression",
-    rating: 5,
-    quote: "Depression is a miserable way to deal with life on a daily basis. When the med dont seem to do the trick ,TMS therapy is a sensible addition to treatment that has helped me in the battle.",
-    hasVideo: false,
-    videoId: "xewffol4oOQ",
-    videoType: "youtube",
-    avatar: "https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=1061&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    step: 1,
+    title: 'Brain Mapping Analysis',
+    description: 'Advanced qEEG analysis identifies your unique brain patterns and dysfunctional networks',
+    icon: <Brain className="w-6 h-6" />,
+    color: 'from-blue-600 to-purple-600'
   },
   {
-    name: "Spanish Patient B",
-    location: "Coachella Valley, CA",
-    condition: "Depression Treatment",
-    rating: 5,
-    quote: "Testimonio en español sobre mi experiencia transformadora con la terapia TMS en Karma TMS.",
-    hasVideo: true,
-    videoId: "1106562016",
-    videoType: "vimeo",
-    avatar: "https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    step: 2,
+    title: 'Symptom Profiling',
+    description: 'Comprehensive assessment of depression severity, anxiety levels, and cognitive function',
+    icon: <BarChart3 className="w-6 h-6" />,
+    color: 'from-purple-600 to-pink-600'
   },
   {
-    name: "Spanish Patient A",
-    location: "Coachella Valley, CA",
-    condition: "Mental Health Treatment",
-    rating: 5,
-    quote: "La terapia TMS ha cambiado mi vida. Recomiendo este tratamiento a cualquier persona que busque una solución efectiva.",
-    hasVideo: true,
-    videoId: "1098237681",
-    videoType: "vimeo",
-    vimeoHash: "b204c02062",
-    avatar: "https://images.unsplash.com/photo-1510511293580-9d525c6d8913?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MTg3MTl8MHwxfHNlYXJjaHwxfHxBJTIwZ2VuZXJpYyUyMGF2YXRhciUyMG9yJTIwcHJvZmlsZSUyMHBpY3R1cmUlMjBvZiUyMGElMjBwZXJzb24ufGVufDB8fHx8MTc1OTIzNzE0OHww&ixlib=rb-4.1.0&q=80&w=200$w=512"
+    step: 3,
+    title: 'Treatment History',
+    description: 'Analysis of previous medication responses and therapy outcomes to avoid ineffective approaches',
+    icon: <FileText className="w-6 h-6" />,
+    color: 'from-pink-600 to-red-600'
   },
   {
-    name: "Thomas M.",
-    location: "Desert Hot Springs, CA",
-    condition: "Major Depression",
-    rating: 5,
-    quote: "TMS has helped me incredibly.It took more then half way throughout the sessions to see results but it definitely started to kick in. I highly recommend anyone sufferings with depression etc to try TMS.",
-    hasVideo: false,
-    videoType: "youtube",
-    avatar: "https://images.unsplash.com/photo-1615843423179-bea071facf96?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MTg3MTl8MHwxfHNlYXJjaHwxfHxBJTIwcGxhY2Vob2xkZXIlMjBpbWFnZSUyMG9mJTIwYSUyMGdlbmVyaWMlMjBhdmF0YXIlMjBvciUyMHByb2ZpbGUlMjBwaWN0dXJlLnxlbnwwfHx8fDE3NTkyMzcxNDR8MA&ixlib=rb-4.1.0&q=80&w=200$w=512"
+    step: 4,
+    title: 'AI Algorithm Processing',
+    description: 'Machine learning analyzes 50+ variables to determine optimal stimulation parameters',
+    icon: <Activity className="w-6 h-6" />,
+    color: 'from-red-600 to-orange-600'
   },
   {
-    name: "Benjamin A.",
-    location: "Cathedral City, CA",
-    condition: "Anxiety & Depression",
-    rating: 5,
-    quote: "My TMS experience was life changing. I went from being in bed for weeks and months to rejoining life again. The science behind this technology is the hope so many of us need.If you’re thinking about TMS therapy I highly recommend it.",
-    hasVideo: false,
-    videoId: "dQw4w9WgXcQ",
-    videoType: "youtube",
-    avatar: "https://images.unsplash.com/photo-1510511293580-9d525c6d8913?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MTg3MTl8MHwxfHNlYXJjaHwxfHxBJTIwZ2VuZXJpYyUyMGF2YXRhciUyMG9yJTIwcHJvZmlsZSUyMHBpY3R1cmUlMjBvZiUyMGElMjBwZXJzb24ufGVufDB8fHx8MTc1OTIzNzE0OHww&ixlib=rb-4.1.0&q=80&w=200$w=512"
+    step: 5,
+    title: 'Personalized Protocol',
+    description: 'Custom treatment plan with specific frequency, intensity, and target locations',
+    icon: <Target className="w-6 h-6" />,
+    color: 'from-orange-600 to-yellow-600'
   },
   {
-    name: "Nicole J.",
-    location: "Rancho Mirage, CA",
-    condition: "Major Depression",
-    rating: 5,
-    quote: "TMS therapy changed my life! This was a leap of faith and it worked out for me, TMS saved my life!",
-    hasVideo: false,
-    videoType: "youtube",
-    avatar: "https://images.unsplash.com/photo-1510511293580-9d525c6d8913?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MTg3MTl8MHwxfHNlYXJjaHwxfHxBJTIwZ2VuZXJpYyUyMGF2YXRhciUyMG9yJTIwcHJvZmlsZSUyMHBpY3R1cmUlMjBvZiUyMGElMjBwZXJzb24ufGVufDB8fHx8MTc1OTIzNzE0OHww&ixlib=rb-4.1.0&q=80&w=200$w=512"
-  },
-  {
-    name: "Lynette I.",
-    location: "Palm Desert, CA",
-    condition: "Anxiety Disorder",
-    rating: 5,
-    quote: "I have had treatment-resistant clinical depression since childhood. [TMS] proved to be a life-changing decision, since after completing the recommended number of treatments, I experienced, for the first time, life without the dark cycles of depression",
-    hasVideo: false,
-    videoId: "dQw4w9WgXcQ",
-    videoType: "youtube",
-    avatar: "https://images.unsplash.com/photo-1510511293580-9d525c6d8913?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MTg3MTl8MHwxfHNlYXJjaHwxfHxBJTIwZ2VuZXJpYyUyMGF2YXRhciUyMG9yJTIwcHJvZmlsZSUyMHBpY3R1cmUlMjBvZiUyMGElMjBwZXJzb24ufGVufDB8fHx8MTc1OTIzNzE0OHww&ixlib=rb-4.1.0&q=80&w=200$w=512"
+    step: 6,
+    title: 'Continuous Optimization',
+    description: 'Real-time adjustments based on treatment response and symptom improvement',
+    icon: <Zap className="w-6 h-6" />,
+    color: 'from-yellow-600 to-green-600'
   }];
 
 
+  const caseStudies = [
+  {
+    id: 1,
+    title: 'Treatment-Resistant Depression Success',
+    patient: 'Sarah, 34',
+    condition: 'Major Depression + Anxiety',
+    background: 'Failed 6 antidepressants over 8 years, severe anxiety, unable to work',
+    treatment: 'Personalized bilateral rTMS protocol based on qEEG findings',
+    outcome: '85% symptom reduction after 4 weeks, returned to work, sustained improvement at 12 months',
+    image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/3a8c8944-5c3c-416d-acf8-9ca9871d172c.webp',
+    metrics: {
+      'PHQ-9 Score': '23 → 4',
+      'GAD-7 Score': '18 → 3',
+      'Treatment Duration': '6 weeks'
+    }
+  },
+  {
+    id: 2,
+    title: 'Bipolar Depression Breakthrough',
+    patient: 'Michael, 42',
+    condition: 'Bipolar II Disorder',
+    background: 'Chronic depressive episodes, medication intolerance, family history',
+    treatment: 'Low-frequency right-sided stimulation with mood stabilizer continuation',
+    outcome: '70% improvement in depressive symptoms, no manic episodes, improved quality of life',
+    image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/0df1c6f4-54ea-43f5-aeab-67608371a640.webp',
+    metrics: {
+      'MADRS Score': '28 → 8',
+      'Quality of Life': '40% → 85%',
+      'Remission Duration': '18+ months'
+    }
+  },
+  {
+    id: 3,
+    title: 'Postpartum Depression Recovery',
+    patient: 'Lisa, 29',
+    condition: 'Postpartum Depression',
+    background: 'Severe depression following childbirth, breastfeeding complications with medications',
+    treatment: 'Accelerated rTMS protocol, medication-free approach',
+    outcome: 'Complete remission in 3 weeks, successful bonding with baby, medication-free',
+    image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/88d0408f-19ff-48a1-80bd-5553928c7047.webp',
+    metrics: {
+      'EPDS Score': '22 → 2',
+      'Bonding Score': '30% → 95%',
+      'Treatment Time': '3 weeks'
+    }
+  }];
 
-  const nextTestimonial = () => {
-    setCurrentTestimonial((prev) => (prev + 1) % testimonials.length);
+
+  const eligibilityChecklist = [
+  {
+    category: 'Clinical Requirements',
+    items: [
+    'Diagnosed with Major Depressive Disorder',
+    'Failed to respond to 2+ antidepressant medications',
+    'Currently experiencing moderate to severe depression',
+    'Stable on current medications (if any) for 4+ weeks']
+
+  },
+  {
+    category: 'Medical Clearance',
+    items: [
+    'No metallic implants in head/neck region',
+    'No history of seizures or epilepsy',
+    'No cochlear implants or hearing aids',
+    'No deep brain stimulators or vagus nerve stimulators']
+
+  },
+  {
+    category: 'Psychological Readiness',
+    items: [
+    'Committed to 6-8 week treatment schedule',
+    'No active substance abuse (sober 30+ days)',
+    'Stable living situation during treatment',
+    'Support system available for treatment period']
+
+  },
+  {
+    category: 'Age & Health Status',
+    items: [
+    'Age 18-70 years old',
+    'No pregnancy (current or planned)',
+    'No severe medical conditions affecting treatment',
+    'Able to sit comfortably for 45-minute sessions']
+
+  }];
+
+
+  const handleCheckItem = (item: string) => {
+    setCheckedItems((prev) =>
+    prev.includes(item) ?
+    prev.filter((i) => i !== item) :
+    [...prev, item]
+    );
   };
 
-  const prevTestimonial = () => {
-    setCurrentTestimonial((prev) => (prev - 1 + testimonials.length) % testimonials.length);
+  const nextSlide = () => {
+    setCurrentSlide((prev) => (prev + 1) % caseStudies.length);
   };
 
-  const currentData = testimonials[currentTestimonial];
+  const prevSlide = () => {
+    setCurrentSlide((prev) => (prev - 1 + caseStudies.length) % caseStudies.length);
+  };
 
   return (
-    <section className="py-20 bg-white">
-      <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-            Real Patient Stories
-          </h2>
-          <p className="text-lg text-gray-600 leading-relaxed">
-            Hear from actual patients across the Coachella Valley who have transformed their lives with TMS therapy at Karma TMS.
-          </p>
+    <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-purple-50">
+      <Navigation />
+      
+      {/* Hero Section */}
+      <section className="relative pt-32 pb-16 px-4 overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-br from-[#572670]/5 via-transparent to-blue-600/5"></div>
+        <div className="max-w-7xl mx-auto relative">
+          <div className="text-center mb-12">
+            <Badge className="mb-6 bg-gradient-to-r from-[#572670] to-purple-600 text-white px-6 py-2 text-sm font-semibold">
+              <Target className="w-4 h-4 mr-2" />
+              Next-Generation Treatment
+            </Badge>
+            <h1 className="text-5xl lg:text-7xl font-bold mb-6 bg-gradient-to-r from-[#572670] via-purple-600 to-blue-600 bg-clip-text text-transparent">
+              Personalized rTMS
+            </h1>
+            <p className="text-xl text-gray-600 max-w-4xl mx-auto mb-10 leading-relaxed">
+              Revolutionary AI-driven repetitive Transcranial Magnetic Stimulation that analyzes your unique brain patterns, treatment history, and symptoms to create a completely personalized treatment protocol with superior outcomes.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Link to="/contact"
+              <Button className="bg-gradient-to-r from-[#572670] to-purple-600 hover:from-purple-700 hover:to-blue-700 text-lg px-8 py-4 rounded-full shadow-lg hover:shadow-xl transition-all duration-300">
+                <Phone className="w-5 h-5 mr-2" />
+                Get Personalized Assessment
+              </Button>
+              </Link>
+
+
+
+            </div>
+          </div>
         </div>
+      </section>
 
-        {/* Main Testimonial Display */}
-        <div className="mx-auto mb-12">
-          <Card className="bg-white shadow-2xl border-0 overflow-hidden">
-            <CardContent className="p-0">
-              <div className="grid lg:grid-cols-2 gap-0">
-                {/* Video/Image Side */}
-                <div className="relative bg-gradient-to-br from-[#572670] to-[#572670]/80 p-8 lg:p-12 flex items-center justify-center">
-                  {currentData.hasVideo ?
-                  <div className="relative w-full max-w-md">
-                      {/* Video Embed */}
-                      <div className="aspect-video bg-black rounded-lg overflow-hidden shadow-2xl">
-                        {currentData.videoType === 'vimeo' ?
-                      <div style={{ padding: '56.25% 0 0 0', position: 'relative' }}>
-                            <iframe
-                          src={`https://player.vimeo.com/video/${currentData.videoId}${currentData.vimeoHash ? `?h=${currentData.vimeoHash}&` : '?'}badge=0&autopause=0&player_id=0&app_id=58479`}
-                          frameBorder="0"
-                          allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
-                          style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }}
-                          title={`${currentData.name} Testimonial`}
-                          className="rounded-lg" />
+      {/* Personalized Algorithm Diagram */}
+      <section className="py-16 px-4 bg-gradient-to-br from-purple-50/50 to-blue-50/50">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-12">
+            <Badge className="mb-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white px-4 py-2">
+              <Activity className="w-4 h-4 mr-2" />
+              AI-Powered Personalization
+            </Badge>
+            <h2 className="text-4xl lg:text-5xl font-bold mb-6 text-gray-900">
+              How Our Algorithm Works
+            </h2>
+            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+              Our proprietary AI algorithm analyzes over 50 variables to create a treatment protocol uniquely tailored to your brain, symptoms, and medical history.
+            </p>
+          </div>
 
-                          </div> :
-
-                      <iframe
-                        width="100%"
-                        height="100%"
-                        src={`https://www.youtube.com/embed/${currentData.videoId}?controls=1&modestbranding=1`}
-                        title={`${currentData.name} Testimonial`}
-                        frameBorder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowFullScreen
-                        className="rounded-lg" />
-
-                      }
-                      </div>
-                      <div className="absolute -bottom-6 left-1/2 transform -translate-x-1/2">
-                        <div className="bg-white text-[#572670] px-4 py-2 rounded-full text-sm font-semibold shadow-lg">
-                          Video Testimonial
-                        </div>
-                      </div>
-                    </div> :
-
-                  <Avatar className="w-48 h-48 lg:w-64 lg:h-64 ">
-                      <AvatarImage src={currentData.avatar} alt={currentData.name} />
-                      <AvatarFallback className="text-4xl bg-white/20 text-white">
-                        {currentData.name.charAt(0)}
-                      </AvatarFallback>
-                    </Avatar>
-                  }
-                </div>
-
-                {/* Content Side */}
-                <div className="p-8 lg:p-12 space-y-6">
-                  <div className="flex items-center gap-2 mb-4">
-                    {[...Array(currentData.rating)].map((_, i) =>
-                    <Star key={i} className="h-5 w-5 fill-yellow-400 text-yellow-400" />
-                    )}
-                  </div>
-
-                  <Quote className="h-8 w-8 text-[#572670]/30" />
+          <div className="grid lg:grid-cols-3 gap-8">
+            {algorithmSteps.map((step, index) =>
+            <div key={index} className="relative">
+                <Card className="h-full bg-gradient-to-br from-white to-purple-50/30 border-0 shadow-xl hover:shadow-2xl transition-all duration-500 group overflow-hidden">
+                  <div className={`absolute top-0 right-0 w-24 h-24 bg-gradient-to-br ${step.color} opacity-10 rounded-full -translate-y-12 translate-x-12`}></div>
                   
-                  <blockquote className="text-lg lg:text-xl text-gray-700 leading-relaxed font-medium">
-                    "{currentData.quote}"
-                  </blockquote>
-
-                  <div className="space-y-2 pt-4 border-t">
-                    <div className="font-bold text-xl text-gray-900">{currentData.name}</div>
-                    <div className="text-[#572670] font-medium">{currentData.location}</div>
-                    <div className="text-sm text-gray-600 bg-gray-100 px-3 py-1 rounded-full inline-block">
-                      {currentData.condition}
+                  <CardHeader className="text-center pb-4 relative">
+                    <div className={`w-16 h-16 mx-auto mb-4 bg-gradient-to-br ${step.color} rounded-2xl flex items-center justify-center text-white group-hover:scale-110 transition-transform duration-300`}>
+                      {step.icon}
+                    </div>
+                    <div className="w-8 h-8 mx-auto mb-3 bg-gradient-to-br from-[#572670] to-purple-600 rounded-full flex items-center justify-center text-white font-bold text-sm">
+                      {step.step}
+                    </div>
+                    <CardTitle className="text-lg font-bold text-gray-900">
+                      {step.title}
+                    </CardTitle>
+                  </CardHeader>
+                  
+                  <CardContent className="text-center">
+                    <p className="text-gray-600 leading-relaxed">
+                      {step.description}
+                    </p>
+                  </CardContent>
+                </Card>
+                
+                {/* Flow arrow */}
+                {index < algorithmSteps.length - 1 && index % 3 !== 2 &&
+              <div className="hidden lg:block absolute top-1/2 -right-4 transform -translate-y-1/2 z-10">
+                    <ChevronRight className="w-6 h-6 text-[#572670] opacity-60" />
+                  </div>
+              }
+                
+                {/* Down arrow for row break */}
+                {index === 2 &&
+              <div className="hidden lg:block absolute -bottom-4 left-1/2 transform -translate-x-1/2 z-10">
+                    <div className="w-6 h-6 rotate-90">
+                      <ChevronRight className="w-6 h-6 text-[#572670] opacity-60" />
                     </div>
                   </div>
-                </div>
+              }
               </div>
-            </CardContent>
-          </Card>
-        </div>
-
-        {/* Navigation */}
-        <div className="flex items-center justify-center gap-4 mb-8">
-          <Button
-            variant="outline"
-            size="icon"
-            onClick={prevTestimonial}
-            className="rounded-full border-[#572670] text-[#572670] hover:bg-[#572670] hover:text-white">
-
-            <ChevronLeft className="h-4 w-4" />
-          </Button>
-
-          <div className="flex gap-2">
-            {testimonials.map((_, index) =>
-            <button
-              key={index}
-              onClick={() => setCurrentTestimonial(index)}
-              className={`w-3 h-3 rounded-full transition-all ${
-              index === currentTestimonial ? 'bg-[#572670]' : 'bg-gray-300'}`
-              } />
-
             )}
           </div>
 
-          <Button
-            variant="outline"
-            size="icon"
-            onClick={nextTestimonial}
-            className="rounded-full border-[#572670] text-[#572670] hover:bg-[#572670] hover:text-white">
-
-            <ChevronRight className="h-4 w-4" />
-          </Button>
+          <div className="text-center mt-12">
+            <div className="bg-gradient-to-r from-[#572670]/10 to-purple-600/10 rounded-3xl p-8 max-w-4xl mx-auto">
+              <h3 className="text-2xl font-bold mb-4 text-gray-900">
+                85% Higher Success Rate
+              </h3>
+              <p className="text-gray-600 mb-6">
+                Personalized rTMS protocols show significantly higher remission rates compared to standard TMS treatments, with faster onset and longer-lasting results.
+              </p>
+              <Link to="/brain-mapping">
+                <Button className="bg-gradient-to-r from-[#572670] to-purple-600 hover:from-purple-700 hover:to-blue-700 rounded-full">
+                  Learn About Brain Mapping Process
+                  <ArrowRight className="w-4 h-4 ml-2" />
+                </Button>
+              </Link>
+            </div>
+          </div>
         </div>
+      </section>
 
-        {/* Thumbnail Grid */}
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 mx-auto mb-8">
-          {testimonials.map((testimonial, index) =>
-          <button
-            key={index}
-            onClick={() => setCurrentTestimonial(index)}
-            className={`relative p-3 rounded-lg transition-all ${
-            index === currentTestimonial ?
-            'bg-[#572670] text-white' :
-            'bg-white hover:bg-gray-50 shadow-md'}`
-            }>
+      {/* Case Study Slider */}
+      <section className="py-16 px-4">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-12">
+            <Badge className="mb-4 bg-gradient-to-r from-green-600 to-blue-600 text-white px-4 py-2">
+              <Star className="w-4 h-4 mr-2" />
+              Real Patient Success Stories
+            </Badge>
+            <h2 className="text-4xl lg:text-5xl font-bold mb-6 text-gray-900">
+              Transformative Results
+            </h2>
+            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+              See how personalized rTMS has changed lives through our documented case studies and patient outcomes.
+            </p>
+          </div>
 
-              <Avatar className="w-12 h-12 mx-auto mb-2">
-                <AvatarImage src={testimonial.avatar} alt={testimonial.name} />
-                <AvatarFallback>{testimonial.name.charAt(0)}</AvatarFallback>
-              </Avatar>
-              <div className="text-xs font-medium">{testimonial.name}</div>
-              {testimonial.hasVideo &&
-            <Play className="h-3 w-3 absolute top-2 right-2 opacity-70" />
-            }
-            </button>
-          )}
+          <div className="relative">
+            <Card className="bg-gradient-to-br from-white to-purple-50/30 border-0 shadow-2xl overflow-hidden">
+              <div className="grid lg:grid-cols-2 gap-8 p-8">
+                <div className="relative">
+                  <img
+                    src={caseStudies[currentSlide].image}
+                    alt="Patient success story"
+                    className="w-full h-64 object-cover rounded-2xl shadow-lg" />
+
+                  <div className="absolute top-4 left-4 bg-gradient-to-r from-[#572670] to-purple-600 text-white px-4 py-2 rounded-full text-sm font-semibold">
+                    Case Study {caseStudies[currentSlide].id}
+                  </div>
+                </div>
+                
+                <div className="space-y-6">
+                  <div>
+                    <Badge className="mb-3 bg-gradient-to-r from-blue-500 to-purple-500 text-white">
+                      {caseStudies[currentSlide].condition}
+                    </Badge>
+                    <h3 className="text-2xl font-bold text-gray-900 mb-2">
+                      {caseStudies[currentSlide].title}
+                    </h3>
+                    <p className="text-[#572670] font-semibold mb-4">
+                      Patient: {caseStudies[currentSlide].patient}
+                    </p>
+                  </div>
+
+                  <div className="space-y-4">
+                    <div>
+                      <h4 className="font-semibold text-gray-900 mb-2">Background:</h4>
+                      <p className="text-gray-600 text-sm">
+                        {caseStudies[currentSlide].background}
+                      </p>
+                    </div>
+                    
+                    <div>
+                      <h4 className="font-semibold text-gray-900 mb-2">Treatment:</h4>
+                      <p className="text-gray-600 text-sm">
+                        {caseStudies[currentSlide].treatment}
+                      </p>
+                    </div>
+                    
+                    <div>
+                      <h4 className="font-semibold text-gray-900 mb-2">Outcome:</h4>
+                      <p className="text-gray-600 text-sm mb-4">
+                        {caseStudies[currentSlide].outcome}
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                    {Object.entries(caseStudies[currentSlide].metrics).map(([key, value]) =>
+                    <div key={key} className="bg-gradient-to-r from-[#572670]/10 to-purple-600/10 rounded-lg p-3 text-center">
+                        <p className="text-xs text-gray-600 mb-1">{key}</p>
+                        <p className="font-bold text-[#572670]">{value}</p>
+                      </div>
+                    )}
+                  </div>
+                </div>
+              </div>
+            </Card>
+
+            {/* Navigation */}
+            <div className="flex justify-center items-center mt-8 space-x-4">
+              <Button
+                variant="outline"
+                size="sm"
+                onClick={prevSlide}
+                className="rounded-full border-[#572670] text-[#572670] hover:bg-[#572670] hover:text-white">
+
+                <ChevronLeft className="w-4 h-4" />
+              </Button>
+              
+              <div className="flex space-x-2">
+                {caseStudies.map((_, index) =>
+                <button
+                  key={index}
+                  onClick={() => setCurrentSlide(index)}
+                  className={`w-3 h-3 rounded-full transition-all duration-300 ${
+                  index === currentSlide ?
+                  'bg-[#572670] w-8' :
+                  'bg-gray-300 hover:bg-gray-400'}`
+                  } />
+
+                )}
+              </div>
+              
+              <Button
+                variant="outline"
+                size="sm"
+                onClick={nextSlide}
+                className="rounded-full border-[#572670] text-[#572670] hover:bg-[#572670] hover:text-white">
+
+                <ChevronRight className="w-4 h-4" />
+              </Button>
+            </div>
+          </div>
         </div>
+      </section>
 
-        <div className="text-center">
-          <Button className="bg-[#572670] hover:bg-[#572670]/90 text-white px-8">
-            Read More Success Stories
-          </Button>
+      {/* Eligibility Checklist */}
+      <section className="py-16 px-4 bg-gradient-to-br from-purple-50/50 to-blue-50/50">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-12">
+            <Badge className="mb-4 bg-gradient-to-r from-[#572670] to-purple-600 text-white px-4 py-2">
+              <CheckCircle className="w-4 h-4 mr-2" />
+              Eligibility Assessment
+            </Badge>
+            <h2 className="text-4xl lg:text-5xl font-bold mb-6 text-gray-900">
+              Are You a Candidate?
+            </h2>
+            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+              Use our comprehensive checklist to assess your eligibility for personalized rTMS therapy. Check all items that apply to you.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-8">
+            {eligibilityChecklist.map((category, categoryIndex) =>
+            <Card key={categoryIndex} className="bg-gradient-to-br from-white to-purple-50/30 border-0 shadow-lg">
+                <CardHeader>
+                  <CardTitle className="text-xl font-bold text-gray-900 flex items-center">
+                    <div className="w-6 h-6 bg-gradient-to-br from-[#572670] to-purple-600 rounded-full flex items-center justify-center text-white text-sm font-bold mr-3">
+                      {categoryIndex + 1}
+                    </div>
+                    {category.category}
+                  </CardTitle>
+                </CardHeader>
+                <CardContent className="space-y-4">
+                  {category.items.map((item, itemIndex) =>
+                <div key={itemIndex} className="flex items-center space-x-3">
+                      <Checkbox
+                    id={`${categoryIndex}-${itemIndex}`}
+                    checked={checkedItems.includes(item)}
+                    onCheckedChange={() => handleCheckItem(item)}
+                    className="data-[state=checked]:bg-[#572670] data-[state=checked]:border-[#572670]" />
+
+                      <label
+                    htmlFor={`${categoryIndex}-${itemIndex}`}
+                    className="text-gray-700 text-sm leading-relaxed cursor-pointer">
+
+                        {item}
+                      </label>
+                    </div>
+                )}
+                </CardContent>
+              </Card>
+            )}
+          </div>
+
+          <div className="mt-12 text-center">
+            <div className="bg-gradient-to-r from-[#572670]/10 to-purple-600/10 rounded-3xl p-8">
+              <h3 className="text-2xl font-bold mb-4 text-gray-900">
+                Checked Items: {checkedItems.length} / {eligibilityChecklist.reduce((sum, category) => sum + category.items.length, 0)}
+              </h3>
+              <p className="text-gray-600 mb-6">
+                {checkedItems.length >= 12 ?
+                'Great! You appear to be an excellent candidate for personalized rTMS therapy. Schedule your consultation to get started.' :
+                checkedItems.length >= 8 ?
+                'You may be a good candidate for personalized rTMS. Our medical team can provide a thorough evaluation.' :
+                'Some criteria may need to be addressed. Our specialists can help determine the best treatment approach for you.'
+                }
+              </p>
+              
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <Link to="/contact">
+                  <Button className="bg-gradient-to-r from-[#572670] to-purple-600 hover:from-purple-700 hover:to-blue-700 text-lg px-8 py-4 rounded-full shadow-lg">
+                    <Phone className="w-5 h-5 mr-2" />
+                    Schedule Professional Assessment
+                  </Button>
+                </Link>
+                <Link to="/tms-quiz">
+                  <Button variant="outline" className="border-[#572670] text-[#572670] hover:bg-[#572670] hover:text-white text-lg px-8 py-4 rounded-full">
+                    Take Detailed TMS Quiz
+                    <ArrowRight className="w-5 h-5 ml-2" />
+                  </Button>
+                </Link>
+              </div>
+            </div>
+          </div>
+
+          <div className="mt-8 text-center">
+            <div className="flex flex-wrap justify-center gap-4">
+              <Link to="/tms-therapy">
+                <Button variant="outline" className="border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white rounded-full">
+                  Compare with Standard TMS
+                  <ArrowRight className="w-4 h-4 ml-2" />
+                </Button>
+              </Link>
+              <Link to="/neurofeedback">
+                <Button variant="outline" className="border-purple-600 text-purple-600 hover:bg-purple-600 hover:text-white rounded-full">
+                  Explore Neurofeedback Options
+                  <ArrowRight className="w-4 h-4 ml-2" />
+                </Button>
+              </Link>
+            </div>
+          </div>
         </div>
-      </div>
-    </section>);
+      </section>
+
+      <FooterSection />
+    </div>);
 
 };
 
-export default TestimonialsSection;
+export default PRTMSPage;
