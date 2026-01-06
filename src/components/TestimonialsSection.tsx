@@ -17,7 +17,7 @@ const TestimonialsSection = () => {
     hasVideo: false,
     videoId: "xewffol4oOQ",
     videoType: "youtube",
-    avatar: "https://images.unsplash.com/photo-1510511293580-9d525c6d8913?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MTg3MTl8MHwxfHNlYXJjaHwxfHxBJTIwZ2VuZXJpYyUyMGF2YXRhciUyMG9yJTIwcHJvZmlsZSUyMHBpY3R1cmUlMjBvZiUyMGElMjBwZXJzb24ufGVufDB8fHx8MTc1OTIzNzE0OHww&ixlib=rb-4.1.0&q=80&w=200$w=512"
+    avatar: "https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
     name: "Spanish Patient B",
