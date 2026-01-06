@@ -277,7 +277,7 @@ const PRTMSPage = () => {
       <section className="py-16 px-4">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
-            <Badge className="mb-4 bg-gradient-to-r from-green-600 to-blue-600 text-white px-4 py-2">
+            <Badge className="mb-4 bg-primary shadow hover:bg-primary/80 mb-6 bg-gradient-to-r from-[#572670] to-purple-600 text-white px-4 py-2">
               <Star className="w-4 h-4 mr-2" />
               Real Patient Success Stories
             </Badge>
