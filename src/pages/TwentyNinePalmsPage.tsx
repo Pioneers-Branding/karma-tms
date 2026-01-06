@@ -314,7 +314,7 @@ const TwentyNinePalmsPage = () => {
                     target="_blank"
                     rel="noopener noreferrer">
 
-                    <Button variant="outline" className="w-full group">
+                    <Button variant="outline" className="w-full group mb-3">
                       <NavIcon className="w-4 h-4 mr-2 group-hover:translate-x-1 transition-transform" />
                       Get Directions
                     </Button>
@@ -335,7 +335,7 @@ const TwentyNinePalmsPage = () => {
 
             <div className="rounded-lg overflow-hidden shadow-xl mb-8">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1062016.4517834329!2d-116.0506014535588!3d34.38433374709146!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dac7321e9b6815%3A0x62c554cae9215d22!2s72724%2029%20Palms%20Hwy%20%23107%2C%20Twentynine%20Palms%2C%20CA%2092277!5e0!3m2!1sen!2sus!4v1756473308013!5m2!1sen!2sus"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d611.8117857393111!2d-116.0759116499806!3d34.13583548893029!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dac751d31242d7%3A0x7d17d9e80e8a6f1a!2sKarma%20TMS%20PC%20-%2029%20Palms!5e1!3m2!1sen!2sin!4v1763983601656!5m2!1sen!2sin"
                 width="100%"
                 height="400"
                 style={{ border: 0 }}
