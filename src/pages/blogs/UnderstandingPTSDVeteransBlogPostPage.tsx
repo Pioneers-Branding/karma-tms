@@ -1,187 +1,438 @@
+import { useState, useEffect, useRef } from 'react';
+import { Link } from 'react-router-dom';
 import Navigation from '@/components/Navigation';
 import FooterSection from '@/components/FooterSection';
 import SEO from '@/components/SEO';
 import StructuredData from '@/components/StructuredData';
+import {
+  Breadcrumb,
+  BreadcrumbItem,
+  BreadcrumbLink,
+  BreadcrumbList,
+  BreadcrumbPage,
+  BreadcrumbSeparator
+} from '@/components/ui/breadcrumb';
+import { Card, CardContent } from '@/components/ui/card';
+import { Button } from '@/components/ui/button';
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger
+} from '@/components/ui/accordion';
+import { Calendar, Clock, User, CheckCircle2, ArrowRight } from 'lucide-react';
 import AuthorBox from '@/components/AuthorBox';
-import { Link } from 'react-router-dom';
-import { ChevronRight, Phone, Calendar } from 'lucide-react';
 
-export default function UnderstandingPTSDVeteransBlogPostPage() {
-  const publishDate = '2025-10-20';
-  const author = {
-    name: 'Dr. Keerthy Sunder',
-    credentials: 'MD, Board-Certified Psychiatrist',
-    image: 'https://www.prtms.com/wp-content/uploads/2023/03/Dr.-Keerthy-Sunder-scaled.jpg',
-    bio: 'Dr. Keerthy Sunder is a board-certified psychiatrist specializing in TMS therapy and treatment-resistant mental health conditions. With extensive experience treating veterans, Dr. Sunder is dedicated to providing innovative, evidence-based care to those who have served our country.'
+const UnderstandingPTSDVeteransBlogPostPage = () => {
+  const [activeSection, setActiveSection] = useState('');
+  const sectionsRef = useRef<{[key: string]: HTMLElement | null;}>({});
+
+  const tocItems = [
+    { id: 'what-is-ptsd', label: 'What Is PTSD for Veterans?' },
+    { id: 'what-looks-like', label: 'What PTSD Looks Like' },
+    { id: 'war-veterans', label: 'PTSD in War Veterans' },
+    { id: 'recognition', label: 'Recognition and Diagnosis' },
+    { id: 'treatment-paths', label: 'Treatment Paths' },
+    { id: 'faqs', label: 'Frequently Asked Questions' }
+  ];
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollPosition = window.scrollY + 150;
+
+      for (const item of tocItems) {
+        const section = sectionsRef.current[item.id];
+        if (section) {
+          const { offsetTop, offsetHeight } = section;
+          if (scrollPosition >= offsetTop && scrollPosition < offsetTop + offsetHeight) {
+            setActiveSection(item.id);
+            break;
+          }
+        }
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    handleScroll();
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  const scrollToSection = (id: string) => {
+    const section = sectionsRef.current[id];
+    if (section) {
+      const yOffset = -100;
+      const y = section.getBoundingClientRect().top + window.pageYOffset + yOffset;
+      window.scrollTo({ top: y, behavior: 'smooth' });
+    }
   };
 
-  const structuredData = {
+  const faqs = [
+    {
+      question: 'How common is PTSD in veterans?',
+      answer: 'Approximately 11-20% of veterans who served in Operations Iraqi Freedom and Enduring Freedom have PTSD in a given year. About 12% of Gulf War veterans have PTSD, and up to 30% of Vietnam veterans have experienced PTSD at some point in their lives.'
+    },
+    {
+      question: 'Can PTSD develop years after service?',
+      answer: 'Yes, PTSD symptoms can emerge months or even years after a traumatic event. Some veterans don\'t experience symptoms until they face triggers or stressors later in life. This is known as delayed-onset PTSD.'
+    },
+    {
+      question: 'What is the difference between PTSD and combat stress?',
+      answer: 'Combat stress is a normal response to the abnormal conditions of war and typically resolves with time and rest. PTSD is a clinical disorder that persists beyond normal adjustment periods and significantly impacts daily functioning.'
+    },
+    {
+      question: 'How effective is TMS for PTSD in veterans?',
+      answer: 'Studies show that TMS can reduce PTSD symptoms by up to 50% in veterans who haven\'t responded to traditional treatments. TMS specifically targets the prefrontal cortex, helping regulate the overactive fear response common in PTSD.'
+    },
+    {
+      question: 'Can PTSD be cured?',
+      answer: 'While PTSD may not be completely "cured," effective treatment can significantly reduce symptoms and help veterans regain quality of life. Many veterans learn to manage their symptoms successfully and live fulfilling lives.'
+    },
+    {
+      question: 'How can family members help a veteran with PTSD?',
+      answer: 'Family members can help by educating themselves about PTSD, being patient and understanding, encouraging treatment, avoiding judgment, and taking care of their own mental health. Professional family therapy can also be beneficial.'
+    }
+  ];
+
+  const relatedPosts = [
+    {
+      title: 'How TMS Therapy Helps Veterans Heal: A New Hope for PTSD',
+      excerpt: 'Comprehensive guide on TMS therapy for veterans with PTSD, depression, and anxiety.',
+      link: '/blog/veterans-tms-therapy',
+      image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/f00dd3f4-cea1-4918-8fec-5976198e195f.webp'
+    },
+    {
+      title: 'VA & Veterans Mental Health Programs',
+      excerpt: 'Learn about VA mental health programs and how to access TMS therapy.',
+      link: '/blog/va-veterans-ptsd-tms-treatment',
+      image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/dd7dd986-540f-4359-99af-39f398491cf0.webp'
+    },
+    {
+      title: 'TMS for Anxiety in Veterans',
+      excerpt: 'Discover how TMS helps veterans manage anxiety beyond medication.',
+      link: '/blog/tms-anxiety-veterans',
+      image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/66e6e1ae-8cc3-4469-bfaf-b1f3f3d07006.webp'
+    }
+  ];
+
+  const articleSchema = {
     '@context': 'https://schema.org',
-    '@type': 'BlogPosting',
+    '@type': 'Article',
     headline: 'Understanding PTSD in Veterans: Signs, Symptoms, and Treatment Paths',
     description: 'A comprehensive guide to understanding PTSD in war veterans, including Vietnam vets. Learn about signs, symptoms, and modern treatment paths including TMS therapy.',
+    image: 'https://res.cloudinary.com/de4kw1t2i/image/upload/v1762863798/blog_2_ahwkma.png',
     author: {
       '@type': 'Person',
-      name: author.name,
-      jobTitle: author.credentials
+      name: 'Dr. Keerthy Sunder',
+      jobTitle: 'Board-Certified Psychiatrist | Medical Director at KarmaTMS',
+      affiliation: {
+        '@type': 'Organization',
+        name: 'KarmaTMS'
+      }
     },
-    datePublished: publishDate,
-    dateModified: publishDate,
     publisher: {
       '@type': 'Organization',
-      name: 'Karma TMS',
+      name: 'KarmaTMS',
       logo: {
         '@type': 'ImageObject',
         url: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/ebadb369-a58d-421c-b937-24f900be5867.png'
       }
     },
-    image: 'https://res.cloudinary.com/de4kw1t2i/image/upload/v1762863798/blog_2_ahwkma.png',
+    datePublished: '2025-10-20',
+    dateModified: '2025-10-20',
     mainEntityOfPage: {
       '@type': 'WebPage',
-      '@id': 'https://www.karmatms.com/blogs/understanding-ptsd-veterans'
+      '@id': 'https://karmatms.com/blog/understanding-ptsd-veterans'
     }
+  };
+
+  const faqSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: faqs.map((faq) => ({
+      '@type': 'Question',
+      name: faq.question,
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: faq.answer
+      }
+    }))
   };
 
   return (
     <>
       <SEO
-        title="Understanding PTSD in Veterans: Signs, Symptoms & Treatment | Karma TMS"
+        title="Understanding PTSD in Veterans: Signs, Symptoms & Treatment | KarmaTMS"
         description="Complete guide to PTSD in war veterans including Vietnam vets. Learn what PTSD looks like in veterans, common signs, symptoms, and effective treatment paths including TMS therapy."
         keywords="what is ptsd for veterans, what does ptsd look like in veterans, ptsd war veterans, ptsd war vets, ptsd vietnam vets, ptsd vietnam war veterans, veteran ptsd symptoms, ptsd treatment for veterans"
-        canonicalUrl="https://www.karmatms.com/blogs/understanding-ptsd-veterans" />
+        canonical="/blog/understanding-ptsd-veterans"
+        ogImage="https://res.cloudinary.com/de4kw1t2i/image/upload/v1762863798/blog_2_ahwkma.png"
+        ogType="article"
+      />
 
-      <StructuredData data={structuredData} />
+      <StructuredData
+        type="breadcrumb"
+        breadcrumbs={[
+          { name: 'Home', url: '/' },
+          { name: 'Blog', url: '/blog' },
+          { name: 'Understanding PTSD in Veterans', url: '/blog/understanding-ptsd-veterans' }
+        ]}
+      />
+
+      <script type="application/ld+json">
+        {JSON.stringify(articleSchema)}
+      </script>
+
+      <script type="application/ld+json">
+        {JSON.stringify(faqSchema)}
+      </script>
+
       <Navigation />
 
-      <main className="min-h-screen bg-gradient-to-b from-slate-50 to-white">
-        {/* Breadcrumbs */}
-        <div className="container mx-auto px-4 pt-24 pb-4">
-          <nav className="flex items-center space-x-2 text-sm text-slate-600">
-            <Link to="/" className="hover:text-purple-600 transition-colors">Home</Link>
-            <ChevronRight className="h-4 w-4" />
-            <Link to="/blog" className="hover:text-purple-600 transition-colors">Blog</Link>
-            <ChevronRight className="h-4 w-4" />
-            <span className="text-purple-600">Understanding PTSD in Veterans</span>
-          </nav>
+      {/* Breadcrumb */}
+      <div className="bg-gray-50 border-b">
+        <div className="container mx-auto px-4 py-4">
+          <Breadcrumb>
+            <BreadcrumbList>
+              <BreadcrumbItem>
+                <BreadcrumbLink asChild>
+                  <Link to="/">Home</Link>
+                </BreadcrumbLink>
+              </BreadcrumbItem>
+              <BreadcrumbSeparator />
+              <BreadcrumbItem>
+                <BreadcrumbLink asChild>
+                  <Link to="/blog">Blog</Link>
+                </BreadcrumbLink>
+              </BreadcrumbItem>
+              <BreadcrumbSeparator />
+              <BreadcrumbItem>
+                <BreadcrumbPage>Understanding PTSD in Veterans</BreadcrumbPage>
+              </BreadcrumbItem>
+            </BreadcrumbList>
+          </Breadcrumb>
         </div>
+      </div>
 
-        {/* Hero Section */}
-        <section className="container mx-auto px-4 py-8">
-          <div className="max-w-4xl mx-auto">
-            <div className="bg-purple-50 text-purple-700 px-4 py-2 rounded-full inline-block text-sm font-semibold mb-6">
-              Mental Health Awareness
+      {/* Hero Section */}
+      <section className="relative bg-gradient-to-br from-[#572670] to-[#7B3FA0] text-white py-20">
+        <div className="absolute inset-0 bg-black/20"></div>
+        <div className="container mx-auto px-4 relative z-10">
+          <div className="max-w-4xl mx-auto text-center">
+            <div className="flex flex-wrap justify-center gap-4 mb-6 text-sm">
+              <span className="flex items-center gap-1 bg-white/10 px-3 py-1 rounded-full backdrop-blur-sm">
+                <Calendar className="w-4 h-4" />
+                October 20, 2025
+              </span>
+              <span className="flex items-center gap-1 bg-white/10 px-3 py-1 rounded-full backdrop-blur-sm">
+                <Clock className="w-4 h-4" />
+                15 min read
+              </span>
+              <span className="flex items-center gap-1 bg-white/10 px-3 py-1 rounded-full backdrop-blur-sm">
+                <User className="w-4 h-4" />
+                Dr. Keerthy Sunder
+              </span>
             </div>
-            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-slate-900 mb-6 leading-tight">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
               Understanding PTSD in Veterans: Signs, Symptoms, and Treatment Paths
             </h1>
-            <div className="flex flex-wrap items-center gap-4 md:gap-6 text-slate-600 mb-8">
-              <div className="flex items-center gap-2">
-                <img
-                  src={author.image}
-                  alt={author.name}
-                  className="w-10 h-10 rounded-full object-cover" />
-                <div>
-                  <p className="font-semibold text-slate-900">{author.name}</p>
-                  <p className="text-sm">{author.credentials}</p>
-                </div>
-              </div>
-              <span className="hidden sm:inline">•</span>
-              <time dateTime={publishDate} className="text-sm">
-                {new Date(publishDate).toLocaleDateString('en-US', {
-                  year: 'numeric',
-                  month: 'long',
-                  day: 'numeric'
-                })}
-              </time>
+            <p className="text-xl md:text-2xl text-white/90 mb-8">
+              A comprehensive guide to recognizing and treating PTSD in war veterans, including Vietnam vets and modern service members
+            </p>
+            <div className="flex flex-wrap justify-center gap-4">
+              <Button asChild size="lg" className="bg-white text-[#572670] hover:bg-gray-100">
+                <Link to="/veterans">Learn About Our Veterans Program</Link>
+              </Button>
+              <Button asChild size="lg" variant="outline" className="border-white text-white hover:bg-white/10">
+                <Link to="/contact">Schedule Consultation</Link>
+              </Button>
             </div>
-            <img
-              src="https://res.cloudinary.com/de4kw1t2i/image/upload/v1763033666/5_kvtlku.png"
-              alt="Understanding PTSD in Veterans"
-              className="w-full h-64 md:h-96 object-cover rounded-2xl shadow-xl mb-12" />
           </div>
-        </section>
+        </div>
+      </section>
 
-        {/* Content */}
-        <article className="container mx-auto px-4 pb-16">
-          <div className="max-w-4xl mx-auto prose prose-lg">
-            
+      {/* Main Content */}
+      <div className="container mx-auto px-4 py-12">
+        <div className="grid lg:grid-cols-4 gap-8">
+          {/* Table of Contents - Sticky Sidebar */}
+          <aside className="lg:col-span-1">
+            <div className="lg:sticky lg:top-24">
+              <Card className="border-[#572670]/20">
+                <CardContent className="p-6">
+                  <h3 className="font-bold text-lg mb-4 text-[#572670]">Table of Contents</h3>
+                  <nav className="space-y-2">
+                    {tocItems.map((item) => (
+                      <button
+                        key={item.id}
+                        onClick={() => scrollToSection(item.id)}
+                        className={`block w-full text-left px-3 py-2 rounded-md text-sm transition-all ${
+                          activeSection === item.id
+                            ? 'bg-[#572670] text-white font-medium'
+                            : 'text-gray-700 hover:bg-[#572670]/10'
+                        }`}
+                      >
+                        {item.label}
+                      </button>
+                    ))}
+                  </nav>
+                  <div className="mt-6 pt-6 border-t">
+                    <Button asChild className="w-full bg-[#572670] hover:bg-[#7B3FA0]">
+                      <Link to="/contact">Schedule Consultation</Link>
+                    </Button>
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
+          </aside>
+
+          {/* Article Content */}
+          <article className="lg:col-span-3 prose prose-lg max-w-none">
             {/* Introduction */}
-            <section className="mb-12">
-              <h2 className="text-2xl md:text-3xl font-bold text-slate-900 mb-6">What Is PTSD for Veterans?</h2>
-              <p className="text-base md:text-lg text-slate-700 leading-relaxed mb-6">
-                Post-Traumatic Stress Disorder (PTSD) is a mental health condition that develops after experiencing or witnessing traumatic events. For veterans, particularly war veterans including Vietnam vets, the experiences of combat, loss of fellow service members, and exposure to life-threatening situations can create lasting psychological impacts that manifest as PTSD.
+            <div className="mb-12">
+              <img
+                src="https://res.cloudinary.com/de4kw1t2i/image/upload/v1763033666/5_kvtlku.png"
+                alt="Understanding PTSD in Veterans"
+                className="w-full h-64 md:h-96 object-cover rounded-lg mb-6"
+              />
+              <p className="text-xl text-gray-700 leading-relaxed">
+                Post-Traumatic Stress Disorder (PTSD) is a mental health condition that develops after experiencing or witnessing traumatic events. For veterans, particularly <strong>war veterans</strong> including <strong>Vietnam vets</strong>, the experiences of combat, loss of fellow service members, and exposure to life-threatening situations can create lasting psychological impacts that manifest as PTSD. Understanding what PTSD looks like in veterans is crucial for recognition, early intervention, and effective treatment.
               </p>
-              <p className="text-base md:text-lg text-slate-700 leading-relaxed mb-6">
-                Understanding what PTSD looks like in veterans is crucial for recognition, early intervention, and effective treatment. This comprehensive guide explores the signs, symptoms, and modern treatment paths available to help veterans reclaim their lives from the grip of trauma.
+            </div>
+
+            {/* Section 1: What Is PTSD */}
+            <section ref={(el) => sectionsRef.current['what-is-ptsd'] = el} className="mb-12">
+              <h2 className="text-3xl font-bold text-[#572670] mb-6">What Is PTSD for Veterans?</h2>
+              
+              <Card className="bg-gradient-to-br from-[#572670]/5 to-transparent border-[#572670]/20 mb-6">
+                <CardContent className="p-6">
+                  <p className="text-lg font-medium text-[#572670] mb-2">Quick Definition</p>
+                  <p className="text-gray-700">
+                    PTSD is a mental health condition triggered by experiencing or witnessing a terrifying event. In veterans, it often stems from combat exposure, military sexual trauma, training accidents, or other service-related traumatic experiences.
+                  </p>
+                </CardContent>
+              </Card>
+
+              <p className="mb-6">
+                Unlike normal stress reactions that fade over time, PTSD symptoms persist for months or years and significantly interfere with daily life. The condition affects not just the veteran but their families, relationships, and ability to function in civilian society.
               </p>
             </section>
 
-            {/* What Does PTSD Look Like */}
-            <section className="mb-12">
-              <h2 className="text-2xl md:text-3xl font-bold text-slate-900 mb-6">What Does PTSD Look Like in Veterans?</h2>
-              <div className="bg-slate-50 rounded-xl p-6 md:p-8 mb-6">
-                <p className="text-base md:text-lg text-slate-700 leading-relaxed mb-6">
-                  PTSD in war veterans and war vets manifests in unique ways, often different from civilian PTSD. The combat experience creates specific triggers and symptoms that require specialized understanding.
-                </p>
-                <h3 className="text-xl md:text-2xl font-bold text-slate-900 mb-4">Core Symptom Clusters:</h3>
-                <div className="space-y-3 md:space-y-4">
-                  <div className="border-l-4 border-purple-500 pl-4 md:pl-6">
-                    <h4 className="text-lg md:text-xl font-semibold text-slate-900 mb-2">1. Intrusive Memories</h4>
-                    <ul className="list-disc pl-5 md:pl-6 text-sm md:text-base text-slate-700 space-y-2">
-                      <li>Recurrent, unwanted memories of traumatic combat experiences</li>
-                      <li>Flashbacks that feel like reliving the event</li>
-                      <li>Nightmares about war experiences</li>
-                      <li>Severe emotional distress or physical reactions to reminders</li>
-                    </ul>
-                  </div>
-                  <div className="border-l-4 border-purple-500 pl-4 md:pl-6">
-                    <h4 className="text-lg md:text-xl font-semibold text-slate-900 mb-2">2. Avoidance Behaviors</h4>
-                    <ul className="list-disc pl-5 md:pl-6 text-sm md:text-base text-slate-700 space-y-2">
-                      <li>Avoiding thoughts or conversations about service</li>
-                      <li>Staying away from places, people, or activities that trigger memories</li>
-                      <li>Emotional numbing and detachment</li>
-                      <li>Difficulty experiencing positive emotions</li>
-                    </ul>
-                  </div>
-                  <div className="border-l-4 border-purple-500 pl-4 md:pl-6">
-                    <h4 className="text-lg md:text-xl font-semibold text-slate-900 mb-2">3. Negative Changes in Thinking and Mood</h4>
-                    <ul className="list-disc pl-5 md:pl-6 text-sm md:text-base text-slate-700 space-y-2">
-                      <li>Negative beliefs about oneself or the world</li>
-                      <li>Persistent guilt or shame (survivor's guilt)</li>
-                      <li>Loss of interest in previously enjoyed activities</li>
-                      <li>Feeling detached from family and friends</li>
-                      <li>Difficulty maintaining close relationships</li>
-                    </ul>
-                  </div>
-                  <div className="border-l-4 border-purple-500 pl-4 md:pl-6">
-                    <h4 className="text-lg md:text-xl font-semibold text-slate-900 mb-2">4. Changes in Physical and Emotional Reactions</h4>
-                    <ul className="list-disc pl-5 md:pl-6 text-sm md:text-base text-slate-700 space-y-2">
-                      <li>Hypervigilance and exaggerated startle response</li>
-                      <li>Difficulty sleeping or concentrating</li>
-                      <li>Irritability, angry outbursts, or aggressive behavior</li>
-                      <li>Overwhelming guilt or self-destructive behavior</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </section>
-
-            {/* PTSD in War Veterans */}
-            <section className="mb-12">
-              <h2 className="text-2xl md:text-3xl font-bold text-slate-900 mb-6">PTSD in War Veterans: Special Considerations</h2>
+            {/* Section 2: What PTSD Looks Like */}
+            <section ref={(el) => sectionsRef.current['what-looks-like'] = el} className="mb-12">
+              <h2 className="text-3xl font-bold text-[#572670] mb-6">What Does PTSD Look Like in Veterans?</h2>
+              
               <img
                 src="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/0a00bae7-03d4-4867-b6ee-a18528b1c447.webp"
                 alt="PTSD in war veterans"
-                className="w-full h-48 md:h-64 object-cover rounded-xl shadow-lg mb-6" />
-              <h3 className="text-xl md:text-2xl font-bold text-slate-900 mb-4">PTSD in Vietnam War Veterans</h3>
-              <p className="text-base md:text-lg text-slate-700 leading-relaxed mb-6">
-                Vietnam vets face unique PTSD challenges. The Vietnam War created specific trauma patterns due to guerrilla warfare, unclear enemy lines, and the difficult homecoming many veterans experienced. Studies show that approximately 30% of Vietnam war veterans have experienced PTSD at some point in their lives.
+                className="w-full h-64 object-cover rounded-lg mb-6"
+              />
+
+              <p className="mb-6">
+                PTSD manifests through four main symptom clusters that create a distinctive pattern in veterans:
               </p>
-              <h3 className="text-xl md:text-2xl font-bold text-slate-900 mb-4">Modern War Veterans</h3>
-              <p className="text-base md:text-lg text-slate-700 leading-relaxed mb-6">
+
+              <div className="grid md:grid-cols-2 gap-4 my-6">
+                <Card className="border-[#572670]/20">
+                  <CardContent className="p-6">
+                    <h4 className="font-bold mb-3 text-[#572670]">Intrusive Memories</h4>
+                    <ul className="space-y-2 text-gray-700">
+                      <li className="flex items-start gap-2">
+                        <CheckCircle2 className="w-5 h-5 text-green-600 mt-1 flex-shrink-0" />
+                        <span>Recurrent, unwanted memories of traumatic combat experiences</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle2 className="w-5 h-5 text-green-600 mt-1 flex-shrink-0" />
+                        <span>Flashbacks that feel like reliving the event</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle2 className="w-5 h-5 text-green-600 mt-1 flex-shrink-0" />
+                        <span>Nightmares about war experiences</span>
+                      </li>
+                    </ul>
+                  </CardContent>
+                </Card>
+
+                <Card className="border-[#572670]/20">
+                  <CardContent className="p-6">
+                    <h4 className="font-bold mb-3 text-[#572670]">Avoidance Behaviors</h4>
+                    <ul className="space-y-2 text-gray-700">
+                      <li className="flex items-start gap-2">
+                        <CheckCircle2 className="w-5 h-5 text-green-600 mt-1 flex-shrink-0" />
+                        <span>Avoiding thoughts or conversations about service</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle2 className="w-5 h-5 text-green-600 mt-1 flex-shrink-0" />
+                        <span>Staying away from places or people that trigger memories</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle2 className="w-5 h-5 text-green-600 mt-1 flex-shrink-0" />
+                        <span>Emotional numbing and detachment</span>
+                      </li>
+                    </ul>
+                  </CardContent>
+                </Card>
+
+                <Card className="border-[#572670]/20">
+                  <CardContent className="p-6">
+                    <h4 className="font-bold mb-3 text-[#572670]">Negative Changes in Thinking</h4>
+                    <ul className="space-y-2 text-gray-700">
+                      <li className="flex items-start gap-2">
+                        <CheckCircle2 className="w-5 h-5 text-green-600 mt-1 flex-shrink-0" />
+                        <span>Negative beliefs about oneself or the world</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle2 className="w-5 h-5 text-green-600 mt-1 flex-shrink-0" />
+                        <span>Persistent guilt or shame (survivor's guilt)</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle2 className="w-5 h-5 text-green-600 mt-1 flex-shrink-0" />
+                        <span>Feeling detached from family and friends</span>
+                      </li>
+                    </ul>
+                  </CardContent>
+                </Card>
+
+                <Card className="border-[#572670]/20">
+                  <CardContent className="p-6">
+                    <h4 className="font-bold mb-3 text-[#572670]">Changes in Reactions</h4>
+                    <ul className="space-y-2 text-gray-700">
+                      <li className="flex items-start gap-2">
+                        <CheckCircle2 className="w-5 h-5 text-green-600 mt-1 flex-shrink-0" />
+                        <span>Hypervigilance and exaggerated startle response</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle2 className="w-5 h-5 text-green-600 mt-1 flex-shrink-0" />
+                        <span>Difficulty sleeping or concentrating</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle2 className="w-5 h-5 text-green-600 mt-1 flex-shrink-0" />
+                        <span>Irritability and angry outbursts</span>
+                      </li>
+                    </ul>
+                  </CardContent>
+                </Card>
+              </div>
+            </section>
+
+            {/* Section 3: War Veterans */}
+            <section ref={(el) => sectionsRef.current['war-veterans'] = el} className="mb-12">
+              <h2 className="text-3xl font-bold text-[#572670] mb-6">PTSD in War Veterans: Special Considerations</h2>
+              
+              <img
+                src="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/dd7dd986-540f-4359-99af-39f398491cf0.webp"
+                alt="Veterans receiving support"
+                className="w-full h-64 object-cover rounded-lg mb-6"
+              />
+
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">PTSD in Vietnam War Veterans</h3>
+              <p className="mb-6">
+                <strong>Vietnam vets</strong> face unique PTSD challenges. The Vietnam War created specific trauma patterns due to guerrilla warfare, unclear enemy lines, and the difficult homecoming many veterans experienced. Studies show that approximately 30% of Vietnam war veterans have experienced PTSD at some point in their lives.
+              </p>
+
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">Modern War Veterans</h3>
+              <p className="mb-4">
                 Veterans from Iraq, Afghanistan, and other recent conflicts face their own distinct challenges, including:
               </p>
-              <ul className="list-disc pl-5 md:pl-6 text-sm md:text-base text-slate-700 space-y-2 mb-6">
+              <ul className="list-disc pl-6 mb-6 space-y-2">
                 <li>Exposure to IEDs (Improvised Explosive Devices)</li>
                 <li>Multiple deployments and prolonged combat exposure</li>
                 <li>Traumatic brain injury (TBI) comorbidity</li>
@@ -189,208 +440,184 @@ export default function UnderstandingPTSDVeteransBlogPostPage() {
               </ul>
             </section>
 
-            {/* Recognition and Diagnosis */}
-            <section className="mb-12">
-              <h2 className="text-2xl md:text-3xl font-bold text-slate-900 mb-6">Recognition and Diagnosis</h2>
-              <p className="text-base md:text-lg text-slate-700 leading-relaxed mb-6">
-                Early recognition of PTSD symptoms is critical for successful treatment. Many veterans don't realize they have PTSD, attributing their struggles to normal adjustment challenges or trying to "tough it out."
-              </p>
-              <div className="bg-purple-50 border-l-4 border-purple-500 p-4 md:p-6 rounded-lg mb-6">
-                <h3 className="text-lg md:text-xl font-bold text-slate-900 mb-3">When to Seek Help</h3>
-                <p className="text-sm md:text-base text-slate-700 mb-4">Consider seeking professional evaluation if you or a veteran you know experiences:</p>
-                <ul className="list-disc pl-5 md:pl-6 text-sm md:text-base text-slate-700 space-y-2">
-                  <li>Symptoms lasting more than one month</li>
-                  <li>Symptoms interfering with work, relationships, or daily functioning</li>
-                  <li>Thoughts of self-harm or suicide</li>
-                  <li>Substance abuse as a coping mechanism</li>
-                  <li>Inability to control emotional responses</li>
-                </ul>
-              </div>
-            </section>
-
-            {/* Treatment Paths */}
-            <section className="mb-12">
-              <h2 className="text-2xl md:text-3xl font-bold text-slate-900 mb-6">Treatment Paths for PTSD in Veterans</h2>
-              <img
-                src="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/dd7dd986-540f-4359-99af-39f398491cf0.webp"
-                alt="TMS therapy for veterans"
-                className="w-full h-48 md:h-64 object-cover rounded-xl shadow-lg mb-6" />
-              <h3 className="text-xl md:text-2xl font-bold text-slate-900 mb-4">Evidence-Based Treatments</h3>
+            {/* Section 4: Recognition */}
+            <section ref={(el) => sectionsRef.current['recognition'] = el} className="mb-12">
+              <h2 className="text-3xl font-bold text-[#572670] mb-6">Recognition and Diagnosis</h2>
               
-              <div className="space-y-6 md:space-y-8">
-                <div className="bg-slate-50 rounded-xl p-4 md:p-6">
-                  <h4 className="text-lg md:text-xl font-semibold text-slate-900 mb-3">1. Psychotherapy</h4>
-                  <p className="text-sm md:text-base text-slate-700 mb-4">
-                    Evidence-based therapies specifically effective for veteran PTSD:
-                  </p>
-                  <ul className="list-disc pl-5 md:pl-6 text-sm md:text-base text-slate-700 space-y-2">
-                    <li><strong>Cognitive Processing Therapy (CPT):</strong> Addresses how trauma has affected thoughts and beliefs</li>
-                    <li><strong>Prolonged Exposure (PE) Therapy:</strong> Gradually confronts trauma-related memories and situations</li>
-                    <li><strong>Eye Movement Desensitization and Reprocessing (EMDR):</strong> Uses eye movements to process traumatic memories</li>
+              <Card className="bg-blue-50 border-blue-200 mb-6">
+                <CardContent className="p-6">
+                  <h3 className="text-xl font-bold mb-4">When to Seek Help</h3>
+                  <p className="mb-4">Consider seeking professional evaluation if you or a veteran you know experiences:</p>
+                  <ul className="space-y-2">
+                    <li className="flex items-start gap-2">
+                      <CheckCircle2 className="w-5 h-5 text-green-600 mt-1 flex-shrink-0" />
+                      <span>Symptoms lasting more than one month</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <CheckCircle2 className="w-5 h-5 text-green-600 mt-1 flex-shrink-0" />
+                      <span>Symptoms interfering with work, relationships, or daily functioning</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <CheckCircle2 className="w-5 h-5 text-green-600 mt-1 flex-shrink-0" />
+                      <span>Thoughts of self-harm or suicide</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <CheckCircle2 className="w-5 h-5 text-green-600 mt-1 flex-shrink-0" />
+                      <span>Substance abuse as a coping mechanism</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <CheckCircle2 className="w-5 h-5 text-green-600 mt-1 flex-shrink-0" />
+                      <span>Inability to control emotional responses</span>
+                    </li>
                   </ul>
-                </div>
+                </CardContent>
+              </Card>
+            </section>
 
-                <div className="bg-slate-50 rounded-xl p-4 md:p-6">
-                  <h4 className="text-lg md:text-xl font-semibold text-slate-900 mb-3">2. Medication Management</h4>
-                  <p className="text-sm md:text-base text-slate-700 mb-4">
-                    Medications can help manage PTSD symptoms, including:
-                  </p>
-                  <ul className="list-disc pl-5 md:pl-6 text-sm md:text-base text-slate-700 space-y-2">
-                    <li>SSRIs (Selective Serotonin Reuptake Inhibitors)</li>
-                    <li>SNRIs (Serotonin-Norepinephrine Reuptake Inhibitors)</li>
-                    <li>Prazosin for nightmares</li>
-                  </ul>
-                </div>
+            {/* Section 5: Treatment Paths */}
+            <section ref={(el) => sectionsRef.current['treatment-paths'] = el} className="mb-12">
+              <h2 className="text-3xl font-bold text-[#572670] mb-6">Treatment Paths for PTSD in Veterans</h2>
+              
+              <img
+                src="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/76caee2d-5629-4dc1-a3b4-8c5cea23ede6.webp"
+                alt="TMS therapy for veterans"
+                className="w-full h-64 object-cover rounded-lg mb-6"
+              />
 
-                <div className="bg-gradient-to-br from-purple-50 to-blue-50 rounded-xl p-6 md:p-8 border-2 border-purple-200">
-                  <h4 className="text-xl md:text-2xl font-semibold text-slate-900 mb-4">3. TMS Therapy: A Revolutionary Option</h4>
-                  <p className="text-sm md:text-base text-slate-700 mb-4">
-                    <strong>Transcranial Magnetic Stimulation (TMS)</strong> represents a breakthrough treatment for PTSD, especially for veterans who haven't responded to traditional therapies.
-                  </p>
-                  <h5 className="text-base md:text-lg font-semibold text-slate-900 mb-3">How TMS Works for PTSD:</h5>
-                  <ul className="list-disc pl-5 md:pl-6 text-sm md:text-base text-slate-700 space-y-2 mb-4">
-                    <li>Non-invasive brain stimulation targeting trauma-affected areas</li>
-                    <li>Helps regulate emotional processing and fear responses</li>
-                    <li>No systemic side effects like medications</li>
-                    <li>Can be combined with therapy for enhanced results</li>
-                    <li>FDA-cleared and backed by clinical research</li>
-                  </ul>
-                  <p className="text-sm md:text-base text-slate-700 mb-4">
-                    TMS has shown particular promise for veterans with treatment-resistant PTSD, offering hope when other interventions have fallen short.
-                  </p>
-                  <Link
-                    to="/services/tms-therapy"
-                    className="inline-block bg-purple-600 text-white px-4 md:px-6 py-2 md:py-3 rounded-lg hover:bg-purple-700 transition-colors font-semibold text-sm md:text-base">
-                    Learn More About TMS for PTSD
-                  </Link>
-                </div>
+              <div className="space-y-6">
+                <Card className="border-[#572670]/20">
+                  <CardContent className="p-6">
+                    <h4 className="text-xl font-bold mb-3">Evidence-Based Psychotherapy</h4>
+                    <ul className="space-y-2">
+                      <li className="flex items-start gap-2">
+                        <CheckCircle2 className="w-5 h-5 text-green-600 mt-1 flex-shrink-0" />
+                        <span><strong>Cognitive Processing Therapy (CPT):</strong> Addresses how trauma has affected thoughts and beliefs</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle2 className="w-5 h-5 text-green-600 mt-1 flex-shrink-0" />
+                        <span><strong>Prolonged Exposure (PE) Therapy:</strong> Gradually confronts trauma-related memories</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle2 className="w-5 h-5 text-green-600 mt-1 flex-shrink-0" />
+                        <span><strong>EMDR:</strong> Uses eye movements to process traumatic memories</span>
+                      </li>
+                    </ul>
+                  </CardContent>
+                </Card>
+
+                <Card className="bg-gradient-to-br from-[#572670]/5 to-transparent border-[#572670]/20">
+                  <CardContent className="p-6">
+                    <h4 className="text-xl font-bold mb-3 text-[#572670]">TMS Therapy: A Revolutionary Option</h4>
+                    <p className="mb-4">
+                      <Link to="/tms-therapy" className="text-[#572670] hover:underline font-medium">Transcranial Magnetic Stimulation (TMS)</Link> represents a breakthrough treatment for PTSD, especially for veterans who haven't responded to traditional therapies.
+                    </p>
+                    <h5 className="font-bold mb-3">How TMS Works for PTSD:</h5>
+                    <ul className="space-y-2 mb-4">
+                      <li className="flex items-start gap-2">
+                        <CheckCircle2 className="w-5 h-5 text-green-600 mt-1 flex-shrink-0" />
+                        <span>Non-invasive brain stimulation targeting trauma-affected areas</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle2 className="w-5 h-5 text-green-600 mt-1 flex-shrink-0" />
+                        <span>Helps regulate emotional processing and fear responses</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle2 className="w-5 h-5 text-green-600 mt-1 flex-shrink-0" />
+                        <span>No systemic side effects like medications</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle2 className="w-5 h-5 text-green-600 mt-1 flex-shrink-0" />
+                        <span>Can be combined with therapy for enhanced results</span>
+                      </li>
+                    </ul>
+                  </CardContent>
+                </Card>
               </div>
             </section>
 
-            {/* Recovery Journey */}
-            <section className="mb-12">
-              <h2 className="text-2xl md:text-3xl font-bold text-slate-900 mb-6">The Recovery Journey</h2>
-              <p className="text-base md:text-lg text-slate-700 leading-relaxed mb-6">
-                Recovery from PTSD is a journey, not a destination. While symptoms may never completely disappear, effective treatment can significantly reduce their impact and help veterans reclaim their quality of life.
-              </p>
-              <div className="bg-blue-50 rounded-xl p-4 md:p-6 mb-6">
-                <h3 className="text-lg md:text-xl font-bold text-slate-900 mb-4">Keys to Successful Recovery:</h3>
-                <ul className="list-disc pl-5 md:pl-6 text-sm md:text-base text-slate-700 space-y-2">
-                  <li><strong>Seek Professional Help:</strong> Don't try to manage PTSD alone</li>
-                  <li><strong>Build a Support Network:</strong> Connect with other veterans and supportive family/friends</li>
-                  <li><strong>Be Patient:</strong> Recovery takes time and progress isn't always linear</li>
-                  <li><strong>Stay Engaged:</strong> Continue with treatment even when feeling better</li>
-                  <li><strong>Practice Self-Care:</strong> Exercise, healthy eating, and stress management are essential</li>
-                  <li><strong>Explore Multiple Treatment Options:</strong> What works for one veteran may not work for another</li>
-                </ul>
-              </div>
-              <p className="text-base md:text-lg text-slate-700 leading-relaxed mb-6">
-                Remember: Seeking help for PTSD is not a sign of weakness—it's a sign of strength and a commitment to healing.
-              </p>
-            </section>
-
-            {/* Supporting Veterans */}
-            <section className="mb-12">
-              <h2 className="text-2xl md:text-3xl font-bold text-slate-900 mb-6">For Families: Supporting Veterans with PTSD</h2>
-              <p className="text-base md:text-lg text-slate-700 leading-relaxed mb-6">
-                Family members and loved ones play a crucial role in supporting veterans with PTSD. Understanding the condition and knowing how to help can make a significant difference.
-              </p>
-              <div className="space-y-3 md:space-y-4">
-                <div className="border-l-4 border-blue-500 pl-4 md:pl-6">
-                  <h4 className="text-base md:text-lg font-semibold text-slate-900 mb-2">Educate Yourself</h4>
-                  <p className="text-sm md:text-base text-slate-700">Learn about PTSD, its symptoms, and treatment options to better understand what your loved one is experiencing.</p>
-                </div>
-                <div className="border-l-4 border-blue-500 pl-4 md:pl-6">
-                  <h4 className="text-base md:text-lg font-semibold text-slate-900 mb-2">Be Patient and Understanding</h4>
-                  <p className="text-sm md:text-base text-slate-700">Recovery takes time. Avoid judgment and provide consistent support.</p>
-                </div>
-                <div className="border-l-4 border-blue-500 pl-4 md:pl-6">
-                  <h4 className="text-base md:text-lg font-semibold text-slate-900 mb-2">Encourage Treatment</h4>
-                  <p className="text-sm md:text-base text-slate-700">Gently encourage your loved one to seek professional help and stay engaged with treatment.</p>
-                </div>
-                <div className="border-l-4 border-blue-500 pl-4 md:pl-6">
-                  <h4 className="text-base md:text-lg font-semibold text-slate-900 mb-2">Take Care of Yourself</h4>
-                  <p className="text-sm md:text-base text-slate-700">Supporting someone with PTSD can be emotionally draining. Ensure you're also getting the support you need.</p>
-                </div>
-              </div>
-            </section>
-
-            {/* Conclusion */}
-            <section className="mb-12">
-              <h2 className="text-2xl md:text-3xl font-bold text-slate-900 mb-6">Moving Forward with Hope</h2>
-              <p className="text-base md:text-lg text-slate-700 leading-relaxed mb-6">
-                PTSD in veterans—whether war veterans, Vietnam vets, or those who served in recent conflicts—is a serious but treatable condition. Understanding what PTSD looks like in veterans is the first step toward healing.
-              </p>
-              <p className="text-base md:text-lg text-slate-700 leading-relaxed mb-6">
-                With advances in treatment, including innovative options like TMS therapy, there is genuine hope for recovery. No veteran should suffer in silence. Help is available, and recovery is possible.
-              </p>
-              <p className="text-base md:text-lg text-slate-700 leading-relaxed mb-6">
-                If you or a veteran you know is struggling with PTSD, reach out for help today. Your service to our country deserves the best care available.
-              </p>
-            </section>
-
-            {/* Related Articles */}
-            <section className="mb-12">
-              <h3 className="text-xl md:text-2xl font-bold text-slate-900 mb-6">Related Articles</h3>
-              <div className="grid sm:grid-cols-2 gap-3 md:gap-4">
-                <Link to="/blogs/va-veterans-ptsd-tms" className="p-4 bg-slate-50 rounded-lg hover:bg-slate-100 transition-colors">
-                  <h4 className="text-sm md:text-base font-semibold text-purple-600 mb-2">VA Approves TMS for Veterans with PTSD</h4>
-                  <p className="text-xs md:text-sm text-slate-600">Learn about VA coverage for TMS therapy and how to access this breakthrough treatment.</p>
-                </Link>
-                <Link to="/blogs/tms-anxiety-veterans" className="p-4 bg-slate-50 rounded-lg hover:bg-slate-100 transition-colors">
-                  <h4 className="text-sm md:text-base font-semibold text-purple-600 mb-2">TMS for Anxiety in Veterans</h4>
-                  <p className="text-xs md:text-sm text-slate-600">Discover how TMS helps veterans manage anxiety beyond medication.</p>
-                </Link>
-              </div>
-            </section>
-
-          </div>
-        </article>
-
-        {/* Author Box */}
-        <div className="container mx-auto px-4 pb-16">
-          <div className="max-w-4xl mx-auto">
+            {/* Author Box */}
             <AuthorBox
-              name={author.name}
-              credentials={author.credentials}
-              image={author.image}
-              bio={author.bio} />
-          </div>
-        </div>
+              name="Dr. Keerthy Sunder"
+              role="Board-Certified Psychiatrist | Medical Director at KarmaTMS"
+              bio="Dr. Keerthy Sunder is a board-certified psychiatrist specializing in TMS therapy for veterans and treatment-resistant mental health conditions. With extensive experience in neuroscience and innovative treatment modalities, Dr. Sunder is dedicated to helping veterans overcome PTSD, depression, and anxiety through evidence-based, compassionate care."
+              image="https://www.prtms.com/wp-content/uploads/2023/03/Dr.-Keerthy-Sunder-scaled.jpg"
+            />
 
-        {/* CTA Section */}
-        <section className="bg-gradient-to-br from-purple-600 to-blue-600 py-12 md:py-16">
-          <div className="container mx-auto px-4">
-            <div className="max-w-4xl mx-auto text-center text-white">
-              <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4 md:mb-6">
-                Ready to Start Your Healing Journey?
-              </h2>
-              <p className="text-lg md:text-xl mb-6 md:mb-8 text-purple-100">
-                At Karma TMS, we specialize in helping veterans overcome PTSD with cutting-edge TMS therapy and compassionate care.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center">
-                <Link
-                  to="/contact"
-                  className="inline-flex items-center justify-center gap-2 bg-white text-purple-600 px-6 md:px-8 py-3 md:py-4 rounded-lg hover:bg-purple-50 transition-colors font-semibold text-base md:text-lg">
-                  <Calendar className="h-5 w-5" />
-                  Schedule Consultation
-                </Link>
-                <a
-                  href="tel:760-449-8185"
-                  className="inline-flex items-center justify-center gap-2 bg-purple-700 text-white px-6 md:px-8 py-3 md:py-4 rounded-lg hover:bg-purple-800 transition-colors font-semibold text-base md:text-lg border-2 border-white">
-                  <Phone className="h-5 w-5" />
-                  (760) 449-8185
-                </a>
+            {/* FAQ Section */}
+            <section ref={(el) => sectionsRef.current['faqs'] = el} className="mb-12 mt-12">
+              <h2 className="text-3xl font-bold text-[#572670] mb-6">Frequently Asked Questions</h2>
+              
+              <Accordion type="single" collapsible className="w-full space-y-2">
+                {faqs.map((faq, index) => (
+                  <AccordionItem
+                    key={index}
+                    value={`item-${index}`}
+                    className="border border-gray-200 rounded-lg px-4 data-[state=open]:border-[#572670]"
+                  >
+                    <AccordionTrigger className="text-left font-semibold hover:text-[#572670] hover:no-underline">
+                      {faq.question}
+                    </AccordionTrigger>
+                    <AccordionContent className="text-gray-700 pt-2 pb-4">
+                      {faq.answer}
+                    </AccordionContent>
+                  </AccordionItem>
+                ))}
+              </Accordion>
+            </section>
+
+            {/* CTA Section */}
+            <Card className="bg-gradient-to-br from-[#572670] to-[#7B3FA0] text-white mb-12">
+              <CardContent className="p-8 text-center">
+                <h3 className="text-2xl md:text-3xl font-bold mb-4">
+                  Ready to Start Your Healing Journey?
+                </h3>
+                <p className="text-lg mb-6 text-white/90">
+                  At KarmaTMS, we specialize in helping veterans overcome PTSD with cutting-edge TMS therapy and compassionate care.
+                </p>
+                <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                  <Button asChild size="lg" className="bg-white text-[#572670] hover:bg-gray-100">
+                    <Link to="/contact">Schedule Free Consultation</Link>
+                  </Button>
+                  <Button asChild size="lg" variant="outline" className="border-white text-white hover:bg-white/10">
+                    <Link to="/veterans">Learn About Veterans Program</Link>
+                  </Button>
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* Related Posts */}
+            <section className="mb-12">
+              <h2 className="text-3xl font-bold text-[#572670] mb-6">Related Articles</h2>
+              <div className="grid md:grid-cols-3 gap-6">
+                {relatedPosts.map((post, index) => (
+                  <Card key={index} className="border-[#572670]/20 overflow-hidden hover:shadow-lg transition-shadow">
+                    <img
+                      src={post.image}
+                      alt={post.title}
+                      className="w-full h-48 object-cover"
+                    />
+                    <CardContent className="p-6">
+                      <h3 className="font-bold text-lg mb-2 hover:text-[#572670] transition-colors">
+                        <Link to={post.link}>{post.title}</Link>
+                      </h3>
+                      <p className="text-gray-600 text-sm mb-4">{post.excerpt}</p>
+                      <Button asChild variant="ghost" className="text-[#572670] p-0 h-auto hover:bg-transparent">
+                        <Link to={post.link} className="inline-flex items-center gap-2">
+                          Read More <ArrowRight className="w-4 h-4" />
+                        </Link>
+                      </Button>
+                    </CardContent>
+                  </Card>
+                ))}
               </div>
-              <p className="mt-4 md:mt-6 text-sm md:text-base text-purple-100">
-                Serving veterans in Palm Springs, Twentynine Palms, and surrounding areas
-              </p>
-            </div>
-          </div>
-        </section>
-      </main>
+            </section>
+          </article>
+        </div>
+      </div>
 
       <FooterSection />
     </>
   );
-}
+};
+
+export default UnderstandingPTSDVeteransBlogPostPage;

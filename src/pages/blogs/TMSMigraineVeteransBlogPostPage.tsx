@@ -1,587 +1,586 @@
+import { useState, useEffect, useRef } from 'react';
+import { Link } from 'react-router-dom';
 import Navigation from '@/components/Navigation';
 import FooterSection from '@/components/FooterSection';
 import SEO from '@/components/SEO';
 import StructuredData from '@/components/StructuredData';
+import {
+  Breadcrumb,
+  BreadcrumbItem,
+  BreadcrumbLink,
+  BreadcrumbList,
+  BreadcrumbPage,
+  BreadcrumbSeparator
+} from '@/components/ui/breadcrumb';
+import { Card, CardContent } from '@/components/ui/card';
+import { Button } from '@/components/ui/button';
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger
+} from '@/components/ui/accordion';
+import { Calendar, Clock, User, CheckCircle2, ArrowRight } from 'lucide-react';
 import AuthorBox from '@/components/AuthorBox';
-import { Link } from 'react-router-dom';
-import { ChevronRight, Phone, Calendar } from 'lucide-react';
 
-export default function TMSMigraineVeteransBlogPostPage() {
-  const publishDate = '2025-11-10';
-  const author = {
-    name: 'Dr. Keerthy Sunder',
-    credentials: 'MD, Board-Certified Psychiatrist',
-    image: 'https://www.prtms.com/wp-content/uploads/2023/03/Dr.-Keerthy-Sunder-scaled.jpg',
-    bio: 'Dr. Keerthy Sunder is a board-certified psychiatrist specializing in TMS therapy and treatment-resistant mental health conditions. With extensive experience treating veterans, Dr. Sunder is dedicated to providing innovative, evidence-based care to those who have served our country.'
+const TMSMigraineVeteransBlogPostPage = () => {
+  const [activeSection, setActiveSection] = useState('');
+  const sectionsRef = useRef<{[key: string]: HTMLElement | null;}>({});
+
+  const tocItems = [
+    { id: 'understanding', label: 'Understanding Migraines in Veterans' },
+    { id: 'va-disability', label: 'VA Disability for Migraines' },
+    { id: 'comorbidity', label: 'Comorbidity with PTSD & Depression' },
+    { id: 'how-tms-helps', label: 'How TMS Helps' },
+    { id: 'clinical-benefits', label: 'Clinical Benefits' },
+    { id: 'faqs', label: 'Frequently Asked Questions' }
+  ];
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollPosition = window.scrollY + 150;
+
+      for (const item of tocItems) {
+        const section = sectionsRef.current[item.id];
+        if (section) {
+          const { offsetTop, offsetHeight } = section;
+          if (scrollPosition >= offsetTop && scrollPosition < offsetTop + offsetHeight) {
+            setActiveSection(item.id);
+            break;
+          }
+        }
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    handleScroll();
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  const scrollToSection = (id: string) => {
+    const section = sectionsRef.current[id];
+    if (section) {
+      const yOffset = -100;
+      const y = section.getBoundingClientRect().top + window.pageYOffset + yOffset;
+      window.scrollTo({ top: y, behavior: 'smooth' });
+    }
   };
 
-  const structuredData = {
+  const faqs = [
+    {
+      question: 'Does the VA cover TMS therapy for migraines?',
+      answer: 'Some VA facilities offer TMS therapy for eligible veterans. Coverage varies by location and individual eligibility. Contact your local VA medical center to inquire about availability. Many veterans choose private providers like KarmaTMS for faster access.'
+    },
+    {
+      question: 'How effective is TMS for migraine relief in veterans?',
+      answer: 'Studies show 40-60% reduction in monthly migraine days with TMS treatment. Veterans often experience reduced frequency, decreased severity, and improved quality of life. TMS is particularly effective for treatment-resistant migraines.'
+    },
+    {
+      question: 'Can TMS help with both migraines and PTSD?',
+      answer: 'Yes! TMS targets brain regions involved in both conditions, making it uniquely effective for veterans with comorbid migraines and PTSD. This dual benefit is one of TMS\'s greatest advantages for veterans.'
+    },
+    {
+      question: 'What is the VA disability rating for migraines?',
+      answer: 'VA disability ratings for migraines range from 0% to 50% based on frequency and severity. Ratings of 10%, 30%, and 50% are available depending on how prostrating attacks are and how often they occur.'
+    },
+    {
+      question: 'How long does TMS treatment take for migraines?',
+      answer: 'A typical TMS course lasts 4-6 weeks with sessions 5 days per week. Each session is 20-40 minutes. Many veterans notice improvement within 2-3 weeks of starting treatment.'
+    },
+    {
+      question: 'Are there side effects of TMS for migraines?',
+      answer: 'TMS is well-tolerated with minimal side effects. The most common is mild scalp discomfort during treatment, which typically subsides quickly. Unlike medications, TMS doesn\'t cause systemic side effects like weight gain or cognitive impairment.'
+    }
+  ];
+
+  const relatedPosts = [
+    {
+      title: 'How TMS Therapy Helps Veterans Heal: A New Hope for PTSD',
+      excerpt: 'Comprehensive guide on TMS therapy for veterans with PTSD, depression, and anxiety.',
+      link: '/blog/veterans-tms-therapy',
+      image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/f00dd3f4-cea1-4918-8fec-5976198e195f.webp'
+    },
+    {
+      title: 'Understanding PTSD in Veterans',
+      excerpt: 'Complete guide to PTSD signs, symptoms, and treatment paths for veterans.',
+      link: '/blog/understanding-ptsd-veterans',
+      image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/02c362bd-cde2-431d-8820-a07a14939638.webp'
+    },
+    {
+      title: 'TMS for Anxiety in Veterans',
+      excerpt: 'Learn how TMS helps veterans manage anxiety beyond medication.',
+      link: '/blog/tms-anxiety-veterans',
+      image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/66e6e1ae-8cc3-4469-bfaf-b1f3f3d07006.webp'
+    }
+  ];
+
+  const articleSchema = {
     '@context': 'https://schema.org',
-    '@type': 'BlogPosting',
+    '@type': 'Article',
     headline: 'TMS for Migraine Relief in Veterans: How Brain Stimulation Is Changing Lives',
     description: 'Learn how TMS therapy helps veterans with migraines and VA disability for migraines. Understand the comorbidity with PTSD and depression, and discover clinical benefits of TMS.',
+    image: 'https://res.cloudinary.com/de4kw1t2i/image/upload/v1762863799/blog_4_hzwvvb.png',
     author: {
       '@type': 'Person',
-      name: author.name,
-      jobTitle: author.credentials
+      name: 'Dr. Keerthy Sunder',
+      jobTitle: 'Board-Certified Psychiatrist | Medical Director at KarmaTMS',
+      affiliation: {
+        '@type': 'Organization',
+        name: 'KarmaTMS'
+      }
     },
-    datePublished: publishDate,
-    dateModified: publishDate,
     publisher: {
       '@type': 'Organization',
-      name: 'Karma TMS',
+      name: 'KarmaTMS',
       logo: {
         '@type': 'ImageObject',
         url: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/ebadb369-a58d-421c-b937-24f900be5867.png'
       }
     },
-    image: 'https://res.cloudinary.com/de4kw1t2i/image/upload/v1762863799/blog_4_hzwvvb.png',
+    datePublished: '2025-11-10',
+    dateModified: '2025-11-10',
     mainEntityOfPage: {
       '@type': 'WebPage',
-      '@id': 'https://www.karmatms.com/blogs/tms-migraine-veterans'
+      '@id': 'https://karmatms.com/blog/tms-migraine-veterans'
     }
+  };
+
+  const faqSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: faqs.map((faq) => ({
+      '@type': 'Question',
+      name: faq.question,
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: faq.answer
+      }
+    }))
   };
 
   return (
     <>
       <SEO
-        title="TMS for Migraine Relief in Veterans: Brain Stimulation Treatment | Karma TMS"
+        title="TMS for Migraine Relief in Veterans: Brain Stimulation Treatment | KarmaTMS"
         description="Discover how TMS helps veterans with migraines. Learn about VA disability for migraines, comorbidity with PTSD and depression, and clinical benefits of brain stimulation therapy."
         keywords="migraines for veterans, migraines veterans disability, migraines veterans, migraines for va disability, va disability for migraines, TMS for migraines, veteran migraine treatment"
-        canonicalUrl="https://www.karmatms.com/blogs/tms-migraine-veterans" />
+        canonical="/blog/tms-migraine-veterans"
+        ogImage="https://res.cloudinary.com/de4kw1t2i/image/upload/v1762863799/blog_4_hzwvvb.png"
+        ogType="article"
+      />
 
-      <StructuredData data={structuredData} />
+      <StructuredData
+        type="breadcrumb"
+        breadcrumbs={[
+          { name: 'Home', url: '/' },
+          { name: 'Blog', url: '/blog' },
+          { name: 'TMS for Migraine Relief in Veterans', url: '/blog/tms-migraine-veterans' }
+        ]}
+      />
+
+      <script type="application/ld+json">
+        {JSON.stringify(articleSchema)}
+      </script>
+
+      <script type="application/ld+json">
+        {JSON.stringify(faqSchema)}
+      </script>
+
       <Navigation />
 
-      <main className="min-h-screen bg-gradient-to-b from-slate-50 to-white">
-        {/* Breadcrumbs */}
-        <div className="container mx-auto px-4 pt-24 pb-4">
-          <nav className="flex items-center space-x-2 text-sm text-slate-600">
-            <Link to="/" className="hover:text-purple-600 transition-colors">Home</Link>
-            <ChevronRight className="h-4 w-4" />
-            <Link to="/blog" className="hover:text-purple-600 transition-colors">Blog</Link>
-            <ChevronRight className="h-4 w-4" />
-            <span className="text-purple-600">TMS for Migraine Relief in Veterans</span>
-          </nav>
+      {/* Breadcrumb */}
+      <div className="bg-gray-50 border-b">
+        <div className="container mx-auto px-4 py-4">
+          <Breadcrumb>
+            <BreadcrumbList>
+              <BreadcrumbItem>
+                <BreadcrumbLink asChild>
+                  <Link to="/">Home</Link>
+                </BreadcrumbLink>
+              </BreadcrumbItem>
+              <BreadcrumbSeparator />
+              <BreadcrumbItem>
+                <BreadcrumbLink asChild>
+                  <Link to="/blog">Blog</Link>
+                </BreadcrumbLink>
+              </BreadcrumbItem>
+              <BreadcrumbSeparator />
+              <BreadcrumbItem>
+                <BreadcrumbPage>TMS for Migraine Relief in Veterans</BreadcrumbPage>
+              </BreadcrumbItem>
+            </BreadcrumbList>
+          </Breadcrumb>
         </div>
+      </div>
 
-        {/* Hero Section */}
-        <section className="container mx-auto px-4 py-8">
-          <div className="max-w-4xl mx-auto">
-            <div className="bg-green-50 text-green-700 px-4 py-2 rounded-full inline-block text-sm font-semibold mb-6">
-              Medical Innovation
+      {/* Hero Section */}
+      <section className="relative bg-gradient-to-br from-[#572670] to-[#7B3FA0] text-white py-20">
+        <div className="absolute inset-0 bg-black/20"></div>
+        <div className="container mx-auto px-4 relative z-10">
+          <div className="max-w-4xl mx-auto text-center">
+            <div className="flex flex-wrap justify-center gap-4 mb-6 text-sm">
+              <span className="flex items-center gap-1 bg-white/10 px-3 py-1 rounded-full backdrop-blur-sm">
+                <Calendar className="w-4 h-4" />
+                November 10, 2025
+              </span>
+              <span className="flex items-center gap-1 bg-white/10 px-3 py-1 rounded-full backdrop-blur-sm">
+                <Clock className="w-4 h-4" />
+                10 min read
+              </span>
+              <span className="flex items-center gap-1 bg-white/10 px-3 py-1 rounded-full backdrop-blur-sm">
+                <User className="w-4 h-4" />
+                Dr. Keerthy Sunder
+              </span>
             </div>
-            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-slate-900 mb-6 leading-tight">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
               TMS for Migraine Relief in Veterans: How Brain Stimulation Is Changing Lives
             </h1>
-            <div className="flex flex-wrap items-center gap-4 md:gap-6 text-slate-600 mb-8">
-              <div className="flex items-center gap-2">
-                <img
-                  src={author.image}
-                  alt={author.name}
-                  className="w-10 h-10 rounded-full object-cover" />
-                <div>
-                  <p className="font-semibold text-slate-900">{author.name}</p>
-                  <p className="text-sm">{author.credentials}</p>
-                </div>
-              </div>
-              <span className="hidden sm:inline">•</span>
-              <time dateTime={publishDate} className="text-sm">
-                {new Date(publishDate).toLocaleDateString('en-US', {
-                  year: 'numeric',
-                  month: 'long',
-                  day: 'numeric'
-                })}
-              </time>
+            <p className="text-xl md:text-2xl text-white/90 mb-8">
+              Discover how TMS therapy offers veterans breakthrough treatment for chronic migraines and comorbid conditions
+            </p>
+            <div className="flex flex-wrap justify-center gap-4">
+              <Button asChild size="lg" className="bg-white text-[#572670] hover:bg-gray-100">
+                <Link to="/veterans">Learn About Our Veterans Program</Link>
+              </Button>
+              <Button asChild size="lg" variant="outline" className="border-white text-white hover:bg-white/10">
+                <Link to="/contact">Schedule Consultation</Link>
+              </Button>
             </div>
-            <img
-              src="https://res.cloudinary.com/de4kw1t2i/image/upload/v1763033673/7_lnxkrv.png"
-              alt="TMS for Migraine Relief in Veterans"
-              className="w-full h-64 md:h-96 object-cover rounded-2xl shadow-xl mb-12" />
-          </div>
-        </section>
-
-        {/* Content */}
-        <article className="container mx-auto px-4 pb-16">
-          <div className="max-w-4xl mx-auto prose prose-lg">
-            
-            {/* Introduction */}
-            <section className="mb-12">
-              <h2 className="text-2xl md:text-3xl font-bold text-slate-900 mb-6">Understanding Migraines in Veterans</h2>
-              <p className="text-base md:text-lg text-slate-700 leading-relaxed mb-6">
-                Migraines affect a significantly higher percentage of veterans compared to the general population. For many veterans, chronic migraines aren't just debilitating headaches—they're often interconnected with other service-related conditions like PTSD, traumatic brain injury (TBI), and depression.
-              </p>
-              <p className="text-base md:text-lg text-slate-700 leading-relaxed mb-6">
-                While traditional migraine treatments offer limited relief for many veterans, Transcranial Magnetic Stimulation (TMS) is emerging as a game-changing intervention that addresses both migraines and their underlying neurological causes, including comorbid mental health conditions.
-              </p>
-            </section>
-
-            {/* Prevalence and Impact */}
-            <section className="mb-12">
-              <h2 className="text-2xl md:text-3xl font-bold text-slate-900 mb-6">The Burden of Migraines for Veterans</h2>
-              <div className="bg-slate-50 rounded-xl p-6 md:p-8 mb-6">
-                <h3 className="text-xl md:text-2xl font-bold text-slate-900 mb-4">Migraine Statistics in Veterans:</h3>
-                <div className="grid sm:grid-cols-2 gap-4 md:gap-6">
-                  <div className="bg-white rounded-lg p-4 md:p-6 shadow-sm">
-                    <div className="text-2xl md:text-3xl font-bold text-purple-600 mb-2">36%</div>
-                    <p className="text-sm md:text-base text-slate-700">of post-9/11 veterans experience migraines, compared to 12% of the general population</p>
-                  </div>
-                  <div className="bg-white rounded-lg p-4 md:p-6 shadow-sm">
-                    <div className="text-2xl md:text-3xl font-bold text-blue-600 mb-2">3x Higher</div>
-                    <p className="text-sm md:text-base text-slate-700">Migraine rates in veterans who served in combat zones</p>
-                  </div>
-                  <div className="bg-white rounded-lg p-4 md:p-6 shadow-sm">
-                    <div className="text-2xl md:text-3xl font-bold text-green-600 mb-2">50%+</div>
-                    <p className="text-sm md:text-base text-slate-700">of veterans with TBI also experience chronic migraines</p>
-                  </div>
-                  <div className="bg-white rounded-lg p-4 md:p-6 shadow-sm">
-                    <div className="text-2xl md:text-3xl font-bold text-orange-600 mb-2">Top 5</div>
-                    <p className="text-sm md:text-base text-slate-700">Migraines rank in the top 5 conditions for VA disability claims</p>
-                  </div>
-                </div>
-              </div>
-            </section>
-
-            {/* VA Disability */}
-            <section className="mb-12">
-              <h2 className="text-2xl md:text-3xl font-bold text-slate-900 mb-6">VA Disability for Migraines</h2>
-              <img
-                src="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/f00dd3f4-cea1-4918-8fec-5976198e195f.webp"
-                alt="VA benefits for veterans with migraines"
-                className="w-full h-48 md:h-64 object-cover rounded-xl shadow-lg mb-6" />
-              <p className="text-base md:text-lg text-slate-700 leading-relaxed mb-6">
-                The VA recognizes migraines as a potentially disabling condition for veterans. Understanding how to navigate VA disability for migraines is crucial for accessing proper care and compensation.
-              </p>
-              <div className="bg-green-50 border-l-4 border-green-500 p-4 md:p-6 rounded-lg mb-6">
-                <h3 className="text-lg md:text-xl font-bold text-slate-900 mb-4">VA Disability Ratings for Migraines:</h3>
-                <div className="space-y-3 md:space-y-4">
-                  <div className="bg-white rounded-lg p-3 md:p-4">
-                    <div className="flex flex-col sm:flex-row sm:items-start gap-2 md:gap-3">
-                      <div className="font-bold text-purple-600 text-base md:text-lg">50%</div>
-                      <div className="text-sm md:text-base text-slate-700">
-                        <strong>Severe:</strong> Very frequent completely prostrating and prolonged attacks productive of severe economic inadaptability
-                      </div>
-                    </div>
-                  </div>
-                  <div className="bg-white rounded-lg p-3 md:p-4">
-                    <div className="flex flex-col sm:flex-row sm:items-start gap-2 md:gap-3">
-                      <div className="font-bold text-purple-600 text-base md:text-lg">30%</div>
-                      <div className="text-sm md:text-base text-slate-700">
-                        <strong>Moderately Severe:</strong> Characteristic prostrating attacks occurring on average once a month over last several months
-                      </div>
-                    </div>
-                  </div>
-                  <div className="bg-white rounded-lg p-3 md:p-4">
-                    <div className="flex flex-col sm:flex-row sm:items-start gap-2 md:gap-3">
-                      <div className="font-bold text-purple-600 text-base md:text-lg">10%</div>
-                      <div className="text-sm md:text-base text-slate-700">
-                        <strong>Moderate:</strong> With characteristic prostrating attacks occurring on average once every 2 months
-                      </div>
-                    </div>
-                  </div>
-                  <div className="bg-white rounded-lg p-3 md:p-4">
-                    <div className="flex flex-col sm:flex-row sm:items-start gap-2 md:gap-3">
-                      <div className="font-bold text-purple-600 text-base md:text-lg">0%</div>
-                      <div className="text-sm md:text-base text-slate-700">
-                        <strong>Mild:</strong> With less frequent attacks
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="bg-blue-50 rounded-xl p-4 md:p-6">
-                <h3 className="text-lg md:text-xl font-bold text-slate-900 mb-3">Filing for VA Disability:</h3>
-                <ul className="list-disc pl-5 md:pl-6 text-sm md:text-base text-slate-700 space-y-2">
-                  <li>Document all migraine episodes, including frequency, duration, and severity</li>
-                  <li>Obtain medical evidence linking migraines to service (service connection)</li>
-                  <li>Get statements from healthcare providers about functional limitations</li>
-                  <li>Note impact on work, daily activities, and quality of life</li>
-                  <li>Consider secondary service connection (e.g., migraines secondary to PTSD or TBI)</li>
-                </ul>
-              </div>
-            </section>
-
-            {/* Comorbidity */}
-            <section className="mb-12">
-              <h2 className="text-2xl md:text-3xl font-bold text-slate-900 mb-6">The Complex Connection: Migraines, PTSD, and Depression</h2>
-              <p className="text-base md:text-lg text-slate-700 leading-relaxed mb-6">
-                One of the most critical aspects of understanding migraines in veterans is recognizing their comorbidity with mental health conditions. These conditions often exist together and can exacerbate each other, creating a challenging cycle.
-              </p>
-              <div className="bg-gradient-to-br from-purple-50 to-blue-50 rounded-xl p-6 md:p-8 mb-6">
-                <h3 className="text-xl md:text-2xl font-bold text-slate-900 mb-6">The Interconnected Nature:</h3>
-                <div className="space-y-4 md:space-y-6">
-                  <div className="bg-white rounded-lg p-4 md:p-6 shadow-sm">
-                    <h4 className="text-lg md:text-xl font-semibold text-slate-900 mb-3 flex items-center gap-2">
-                      <span className="text-purple-600">●</span> Migraines and PTSD
-                    </h4>
-                    <ul className="list-disc pl-5 md:pl-6 text-sm md:text-base text-slate-700 space-y-2">
-                      <li>Veterans with PTSD are 3-5 times more likely to experience migraines</li>
-                      <li>Stress and hyperarousal from PTSD can trigger migraine episodes</li>
-                      <li>Migraines can worsen PTSD symptoms through increased stress and pain</li>
-                      <li>Shared neurobiological mechanisms in brain regions</li>
-                    </ul>
-                  </div>
-                  <div className="bg-white rounded-lg p-4 md:p-6 shadow-sm">
-                    <h4 className="text-lg md:text-xl font-semibold text-slate-900 mb-3 flex items-center gap-2">
-                      <span className="text-blue-600">●</span> Migraines and Depression
-                    </h4>
-                    <ul className="list-disc pl-5 md:pl-6 text-sm md:text-base text-slate-700 space-y-2">
-                      <li>Depression is 2-4 times more common in people with migraines</li>
-                      <li>Chronic pain from migraines can lead to or worsen depression</li>
-                      <li>Depression can lower pain threshold, intensifying migraine symptoms</li>
-                      <li>Both conditions involve serotonin and other neurotransmitter imbalances</li>
-                    </ul>
-                  </div>
-                  <div className="bg-white rounded-lg p-4 md:p-6 shadow-sm">
-                    <h4 className="text-lg md:text-xl font-semibold text-slate-900 mb-3 flex items-center gap-2">
-                      <span className="text-green-600">●</span> Migraines and TBI
-                    </h4>
-                    <ul className="list-disc pl-5 md:pl-6 text-sm md:text-base text-slate-700 space-y-2">
-                      <li>Post-traumatic headaches are common after TBI</li>
-                      <li>Can develop into chronic migraine disorder</li>
-                      <li>May persist for months or years after injury</li>
-                      <li>TBI-related migraines often resistant to traditional treatments</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </section>
-
-            {/* Traditional Treatments */}
-            <section className="mb-12">
-              <h2 className="text-2xl md:text-3xl font-bold text-slate-900 mb-6">Traditional Treatments vs. TMS</h2>
-              <img
-                src="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/2ddc8d69-b09a-4f1d-bd47-6d783ceefbd1.webp"
-                alt="Migraine treatment options"
-                className="w-full h-48 md:h-64 object-cover rounded-xl shadow-lg mb-6" />
-              <h3 className="text-xl md:text-2xl font-bold text-slate-900 mb-4">Conventional Migraine Treatments:</h3>
-              <div className="space-y-3 md:space-y-4 mb-8">
-                <div className="bg-slate-50 rounded-lg p-4 md:p-6">
-                  <h4 className="text-base md:text-lg font-semibold text-slate-900 mb-2">1. Preventive Medications</h4>
-                  <p className="text-sm md:text-base text-slate-700 mb-2">Beta-blockers, antidepressants, anticonvulsants</p>
-                  <div className="text-xs md:text-sm text-slate-600">
-                    <strong>Limitations:</strong> Side effects, limited effectiveness, require daily use
-                  </div>
-                </div>
-                <div className="bg-slate-50 rounded-lg p-4 md:p-6">
-                  <h4 className="text-base md:text-lg font-semibold text-slate-900 mb-2">2. Acute/Abortive Medications</h4>
-                  <p className="text-sm md:text-base text-slate-700 mb-2">Triptans, NSAIDs, pain relievers</p>
-                  <div className="text-xs md:text-sm text-slate-600">
-                    <strong>Limitations:</strong> Only address symptoms, rebound headaches, medication overuse risk
-                  </div>
-                </div>
-                <div className="bg-slate-50 rounded-lg p-4 md:p-6">
-                  <h4 className="text-base md:text-lg font-semibold text-slate-900 mb-2">3. Botox Injections</h4>
-                  <p className="text-sm md:text-base text-slate-700 mb-2">Preventive injections every 12 weeks</p>
-                  <div className="text-xs md:text-sm text-slate-600">
-                    <strong>Limitations:</strong> Invasive, requires repeated treatments, inconsistent results
-                  </div>
-                </div>
-                <div className="bg-slate-50 rounded-lg p-4 md:p-6">
-                  <h4 className="text-base md:text-lg font-semibold text-slate-900 mb-2">4. CGRP Inhibitors</h4>
-                  <p className="text-sm md:text-base text-slate-700 mb-2">Newer preventive medications</p>
-                  <div className="text-xs md:text-sm text-slate-600">
-                    <strong>Limitations:</strong> Expensive, limited long-term data, doesn't address comorbid conditions
-                  </div>
-                </div>
-              </div>
-            </section>
-
-            {/* How TMS Helps */}
-            <section className="mb-12">
-              <h2 className="text-2xl md:text-3xl font-bold text-slate-900 mb-6">How TMS Helps with Migraines</h2>
-              <p className="text-base md:text-lg text-slate-700 leading-relaxed mb-6">
-                TMS offers a fundamentally different approach to migraine treatment by addressing the neurological dysfunction that underlies both migraines and comorbid mental health conditions.
-              </p>
-              <div className="bg-gradient-to-br from-purple-50 to-blue-50 rounded-xl p-6 md:p-8 mb-6 border-2 border-purple-200">
-                <h3 className="text-xl md:text-2xl font-bold text-slate-900 mb-6">TMS Mechanisms for Migraine Relief:</h3>
-                <div className="space-y-3 md:space-y-4">
-                  <div className="border-l-4 border-purple-500 pl-4 md:pl-6">
-                    <h4 className="text-lg md:text-xl font-semibold text-slate-900 mb-2">1. Cortical Excitability Regulation</h4>
-                    <p className="text-sm md:text-base text-slate-700">
-                      TMS normalizes abnormal cortical excitability that underlies migraine susceptibility. It helps stabilize the brain's electrical activity, reducing the likelihood of migraine triggers.
-                    </p>
-                  </div>
-                  <div className="border-l-4 border-blue-500 pl-4 md:pl-6">
-                    <h4 className="text-lg md:text-xl font-semibold text-slate-900 mb-2">2. Neurotransmitter Modulation</h4>
-                    <p className="text-sm md:text-base text-slate-700">
-                      TMS influences serotonin, dopamine, and other neurotransmitters involved in both migraines and mood disorders, addressing multiple conditions simultaneously.
-                    </p>
-                  </div>
-                  <div className="border-l-4 border-green-500 pl-4 md:pl-6">
-                    <h4 className="text-lg md:text-xl font-semibold text-slate-900 mb-2">3. Pain Processing Normalization</h4>
-                    <p className="text-sm md:text-base text-slate-700">
-                      TMS modulates pain perception pathways in the brain, helping to reduce both the frequency and intensity of migraine attacks.
-                    </p>
-                  </div>
-                  <div className="border-l-4 border-yellow-500 pl-4 md:pl-6">
-                    <h4 className="text-lg md:text-xl font-semibold text-slate-900 mb-2">4. Addressing Comorbid Conditions</h4>
-                    <p className="text-sm md:text-base text-slate-700">
-                      Unlike traditional migraine treatments, TMS can simultaneously treat depression, anxiety, and PTSD—conditions that often coexist with and exacerbate migraines.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </section>
-
-            {/* Clinical Benefits */}
-            <section className="mb-12">
-              <h2 className="text-2xl md:text-3xl font-bold text-slate-900 mb-6">Clinical Benefits and Research</h2>
-              <img
-                src="https://images.unsplash.com/photo-1649770942197-d7f638a930fd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MTg3MTl8MHwxfHNlYXJjaHwxfHxBJTIwY2xpbmljYWwlMjByZXNlYXJjaCUyMGltYWdlJTIwcmVsYXRlZCUyMHRvJTIwVE1TJTIwdGhlcmFweS58ZW58MHx8fHwxNzYyNzgxMjkyfDA&ixlib=rb-4.1.0&q=80&w=200$w=1920"
-                alt="TMS therapy clinical research"
-                className="w-full h-48 md:h-64 object-cover rounded-xl shadow-lg mb-6" />
-              <p className="text-base md:text-lg text-slate-700 leading-relaxed mb-6">
-                Growing clinical evidence supports the effectiveness of TMS for migraine treatment, particularly for veterans with treatment-resistant migraines and comorbid conditions.
-              </p>
-              <div className="bg-slate-50 rounded-xl p-6 md:p-8 mb-6">
-                <h3 className="text-xl md:text-2xl font-bold text-slate-900 mb-6">Research Findings:</h3>
-                <div className="space-y-3 md:space-y-4">
-                  <div className="bg-white rounded-lg p-4 md:p-6 shadow-sm">
-                    <h4 className="text-base md:text-lg font-semibold text-slate-900 mb-2">Migraine Frequency Reduction</h4>
-                    <p className="text-sm md:text-base text-slate-700 mb-2">Studies show 40-60% reduction in monthly migraine days with TMS treatment</p>
-                    <div className="text-xs md:text-sm text-purple-600 font-semibold">Evidence Level: Strong</div>
-                  </div>
-                  <div className="bg-white rounded-lg p-4 md:p-6 shadow-sm">
-                    <h4 className="text-base md:text-lg font-semibold text-slate-900 mb-2">Pain Intensity Decrease</h4>
-                    <p className="text-sm md:text-base text-slate-700 mb-2">Significant reduction in average pain intensity during migraine attacks</p>
-                    <div className="text-xs md:text-sm text-purple-600 font-semibold">Evidence Level: Moderate to Strong</div>
-                  </div>
-                  <div className="bg-white rounded-lg p-4 md:p-6 shadow-sm">
-                    <h4 className="text-base md:text-lg font-semibold text-slate-900 mb-2">Medication Reduction</h4>
-                    <p className="text-sm md:text-base text-slate-700 mb-2">Many patients able to reduce or eliminate preventive and acute migraine medications</p>
-                    <div className="text-xs md:text-sm text-purple-600 font-semibold">Evidence Level: Moderate</div>
-                  </div>
-                  <div className="bg-white rounded-lg p-4 md:p-6 shadow-sm">
-                    <h4 className="text-base md:text-lg font-semibold text-slate-900 mb-2">Quality of Life Improvement</h4>
-                    <p className="text-sm md:text-base text-slate-700 mb-2">Substantial improvements in daily functioning, work productivity, and social engagement</p>
-                    <div className="text-xs md:text-sm text-purple-600 font-semibold">Evidence Level: Strong</div>
-                  </div>
-                  <div className="bg-white rounded-lg p-4 md:p-6 shadow-sm">
-                    <h4 className="text-base md:text-lg font-semibold text-slate-900 mb-2">Comorbid Condition Benefits</h4>
-                    <p className="text-sm md:text-base text-slate-700 mb-2">Simultaneous improvement in depression, anxiety, and PTSD symptoms</p>
-                    <div className="text-xs md:text-sm text-purple-600 font-semibold">Evidence Level: Strong</div>
-                  </div>
-                </div>
-              </div>
-            </section>
-
-            {/* Real World Results */}
-            <section className="mb-12">
-              <h2 className="text-2xl md:text-3xl font-bold text-slate-900 mb-6">Life-Changing Results for Veterans</h2>
-              <div className="bg-gradient-to-br from-green-50 to-blue-50 rounded-xl p-6 md:p-8 mb-6">
-                <h3 className="text-lg md:text-xl font-bold text-slate-900 mb-4">What Veterans Experience with TMS:</h3>
-                <div className="grid sm:grid-cols-2 gap-3 md:gap-4">
-                  <div className="space-y-2 md:space-y-3">
-                    <div className="flex items-start gap-2">
-                      <span className="text-green-500 text-lg md:text-xl flex-shrink-0">✓</span>
-                      <p className="text-sm md:text-base text-slate-700">Fewer migraine days per month</p>
-                    </div>
-                    <div className="flex items-start gap-2">
-                      <span className="text-green-500 text-lg md:text-xl flex-shrink-0">✓</span>
-                      <p className="text-sm md:text-base text-slate-700">Reduced severity when migraines do occur</p>
-                    </div>
-                    <div className="flex items-start gap-2">
-                      <span className="text-green-500 text-lg md:text-xl flex-shrink-0">✓</span>
-                      <p className="text-sm md:text-base text-slate-700">Less reliance on pain medications</p>
-                    </div>
-                    <div className="flex items-start gap-2">
-                      <span className="text-green-500 text-lg md:text-xl flex-shrink-0">✓</span>
-                      <p className="text-sm md:text-base text-slate-700">Improved ability to work and function</p>
-                    </div>
-                  </div>
-                  <div className="space-y-2 md:space-y-3">
-                    <div className="flex items-start gap-2">
-                      <span className="text-green-500 text-lg md:text-xl flex-shrink-0">✓</span>
-                      <p className="text-sm md:text-base text-slate-700">Better sleep quality</p>
-                    </div>
-                    <div className="flex items-start gap-2">
-                      <span className="text-green-500 text-lg md:text-xl flex-shrink-0">✓</span>
-                      <p className="text-sm md:text-base text-slate-700">Reduction in comorbid depression and anxiety</p>
-                    </div>
-                    <div className="flex items-start gap-2">
-                      <span className="text-green-500 text-lg md:text-xl flex-shrink-0">✓</span>
-                      <p className="text-sm md:text-base text-slate-700">Enhanced overall quality of life</p>
-                    </div>
-                    <div className="flex items-start gap-2">
-                      <span className="text-green-500 text-lg md:text-xl flex-shrink-0">✓</span>
-                      <p className="text-sm md:text-base text-slate-700">Renewed hope and engagement in life</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="bg-blue-50 border-l-4 border-blue-500 p-4 md:p-6 rounded-lg">
-                <p className="text-base md:text-lg text-slate-700 italic">
-                  "For the first time in years, I'm not living in fear of the next migraine. TMS didn't just reduce my headaches—it gave me my life back. My depression improved, I sleep better, and I can actually make plans with my family again."
-                </p>
-                <p className="text-sm md:text-base text-slate-600 mt-3">— Marine Corps Veteran, Karma TMS Patient</p>
-              </div>
-            </section>
-
-            {/* Advantages for Veterans */}
-            <section className="mb-12">
-              <h2 className="text-2xl md:text-3xl font-bold text-slate-900 mb-6">Why TMS Is Ideal for Veterans with Migraines</h2>
-              <div className="space-y-3 md:space-y-4">
-                <div className="bg-purple-50 rounded-lg p-4 md:p-6">
-                  <h4 className="text-lg md:text-xl font-semibold text-slate-900 mb-2">Non-Invasive and Well-Tolerated</h4>
-                  <p className="text-sm md:text-base text-slate-700">
-                    No surgery, no anesthesia, no needles. Veterans can drive themselves to and from appointments and maintain their daily routines.
-                  </p>
-                </div>
-                <div className="bg-blue-50 rounded-lg p-4 md:p-6">
-                  <h4 className="text-lg md:text-xl font-semibold text-slate-900 mb-2">No Systemic Side Effects</h4>
-                  <p className="text-sm md:text-base text-slate-700">
-                    Unlike medications, TMS doesn't cause weight gain, cognitive impairment, or other systemic effects that interfere with daily life.
-                  </p>
-                </div>
-                <div className="bg-green-50 rounded-lg p-4 md:p-6">
-                  <h4 className="text-lg md:text-xl font-semibold text-slate-900 mb-2">Treats Multiple Conditions</h4>
-                  <p className="text-sm md:text-base text-slate-700">
-                    Addresses migraines, depression, PTSD, and anxiety simultaneously—crucial for veterans with comorbid conditions.
-                  </p>
-                </div>
-                <div className="bg-yellow-50 rounded-lg p-4 md:p-6">
-                  <h4 className="text-lg md:text-xl font-semibold text-slate-900 mb-2">Long-Lasting Results</h4>
-                  <p className="text-sm md:text-base text-slate-700">
-                    Many veterans experience sustained improvement months after completing treatment, unlike daily medications.
-                  </p>
-                </div>
-                <div className="bg-orange-50 rounded-lg p-4 md:p-6">
-                  <h4 className="text-lg md:text-xl font-semibold text-slate-900 mb-2">Evidence-Based and FDA-Cleared</h4>
-                  <p className="text-sm md:text-base text-slate-700">
-                    TMS is backed by rigorous research and FDA clearance for depression, with growing evidence for migraine treatment.
-                  </p>
-                </div>
-              </div>
-            </section>
-
-            {/* Treatment Process */}
-            <section className="mb-12">
-              <h2 className="text-2xl md:text-3xl font-bold text-slate-900 mb-6">The TMS Treatment Journey for Migraines</h2>
-              <div className="bg-purple-50 rounded-xl p-6 md:p-8">
-                <ol className="space-y-4 md:space-y-6">
-                  <li className="flex flex-col sm:flex-row gap-3 md:gap-4">
-                    <span className="flex-shrink-0 w-10 h-10 bg-purple-600 text-white rounded-full flex items-center justify-center font-bold text-base md:text-lg">1</span>
-                    <div>
-                      <h4 className="text-base md:text-lg font-semibold text-slate-900 mb-2">Comprehensive Evaluation</h4>
-                      <p className="text-sm md:text-base text-slate-700">Detailed assessment of migraine history, patterns, triggers, and comorbid conditions</p>
-                    </div>
-                  </li>
-                  <li className="flex flex-col sm:flex-row gap-3 md:gap-4">
-                    <span className="flex-shrink-0 w-10 h-10 bg-purple-600 text-white rounded-full flex items-center justify-center font-bold text-base md:text-lg">2</span>
-                    <div>
-                      <h4 className="text-base md:text-lg font-semibold text-slate-900 mb-2">Brain Mapping</h4>
-                      <p className="text-sm md:text-base text-slate-700">Precise identification of treatment areas using advanced neuroimaging technology</p>
-                    </div>
-                  </li>
-                  <li className="flex flex-col sm:flex-row gap-3 md:gap-4">
-                    <span className="flex-shrink-0 w-10 h-10 bg-purple-600 text-white rounded-full flex items-center justify-center font-bold text-base md:text-lg">3</span>
-                    <div>
-                      <h4 className="text-base md:text-lg font-semibold text-slate-900 mb-2">Customized Treatment Plan</h4>
-                      <p className="text-sm md:text-base text-slate-700">Personalized protocol addressing both migraines and any comorbid conditions</p>
-                    </div>
-                  </li>
-                  <li className="flex flex-col sm:flex-row gap-3 md:gap-4">
-                    <span className="flex-shrink-0 w-10 h-10 bg-purple-600 text-white rounded-full flex items-center justify-center font-bold text-base md:text-lg">4</span>
-                    <div>
-                      <h4 className="text-base md:text-lg font-semibold text-slate-900 mb-2">Treatment Sessions</h4>
-                      <p className="text-sm md:text-base text-slate-700">20-40 minute sessions, typically 5 days per week for 4-6 weeks</p>
-                    </div>
-                  </li>
-                  <li className="flex flex-col sm:flex-row gap-3 md:gap-4">
-                    <span className="flex-shrink-0 w-10 h-10 bg-purple-600 text-white rounded-full flex items-center justify-center font-bold text-base md:text-lg">5</span>
-                    <div>
-                      <h4 className="text-base md:text-lg font-semibold text-slate-900 mb-2">Monitoring and Adjustment</h4>
-                      <p className="text-sm md:text-base text-slate-700">Regular tracking of migraine frequency, severity, and overall improvement</p>
-                    </div>
-                  </li>
-                  <li className="flex flex-col sm:flex-row gap-3 md:gap-4">
-                    <span className="flex-shrink-0 w-10 h-10 bg-purple-600 text-white rounded-full flex items-center justify-center font-bold text-base md:text-lg">6</span>
-                    <div>
-                      <h4 className="text-base md:text-lg font-semibold text-slate-900 mb-2">Maintenance and Follow-Up</h4>
-                      <p className="text-sm md:text-base text-slate-700">Ongoing support and potential maintenance sessions to sustain benefits</p>
-                    </div>
-                  </li>
-                </ol>
-              </div>
-            </section>
-
-            {/* Conclusion */}
-            <section className="mb-12">
-              <h2 className="text-2xl md:text-3xl font-bold text-slate-900 mb-6">A Revolutionary Approach to Migraine Relief</h2>
-              <p className="text-base md:text-lg text-slate-700 leading-relaxed mb-6">
-                For veterans struggling with migraines—especially those with comorbid PTSD, depression, or TBI—TMS represents a paradigm shift in treatment. Rather than simply masking symptoms with medications or managing pain, TMS addresses the underlying neurological dysfunction that causes both migraines and related mental health conditions.
-              </p>
-              <p className="text-base md:text-lg text-slate-700 leading-relaxed mb-6">
-                The ability to treat multiple conditions simultaneously, without systemic side effects, makes TMS particularly valuable for veterans who deserve comprehensive, effective care without additional burden.
-              </p>
-              <p className="text-base md:text-lg text-slate-700 leading-relaxed mb-6">
-                If you're a veteran with migraines for veterans disability consideration or simply seeking relief from chronic migraines that haven't responded to traditional treatments, TMS may be the breakthrough you've been searching for.
-              </p>
-            </section>
-
-            {/* Related Articles */}
-            <section className="mb-12">
-              <h3 className="text-xl md:text-2xl font-bold text-slate-900 mb-6">Related Articles</h3>
-              <div className="grid sm:grid-cols-2 gap-3 md:gap-4">
-                <Link to="/blogs/understanding-ptsd-veterans" className="p-4 bg-slate-50 rounded-lg hover:bg-slate-100 transition-colors">
-                  <h4 className="text-sm md:text-base font-semibold text-purple-600 mb-2">Understanding PTSD in Veterans</h4>
-                  <p className="text-xs md:text-sm text-slate-600">Comprehensive guide to PTSD symptoms and treatment options.</p>
-                </Link>
-                <Link to="/blogs/tms-anxiety-veterans" className="p-4 bg-slate-50 rounded-lg hover:bg-slate-100 transition-colors">
-                  <h4 className="text-sm md:text-base font-semibold text-purple-600 mb-2">TMS for Anxiety in Veterans</h4>
-                  <p className="text-xs md:text-sm text-slate-600">Learn how TMS helps with veteran anxiety beyond medication.</p>
-                </Link>
-              </div>
-            </section>
-
-          </div>
-        </article>
-
-        {/* Author Box */}
-        <div className="container mx-auto px-4 pb-16">
-          <div className="max-w-4xl mx-auto">
-            <AuthorBox
-              name={author.name}
-              credentials={author.credentials}
-              image={author.image}
-              bio={author.bio} />
           </div>
         </div>
+      </section>
 
-        {/* CTA Section */}
-        <section className="bg-gradient-to-br from-purple-600 to-blue-600 py-12 md:py-16">
-          <div className="container mx-auto px-4">
-            <div className="max-w-4xl mx-auto text-center text-white">
-              <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4 md:mb-6">
-                Find Relief from Chronic Migraines with TMS
-              </h2>
-              <p className="text-lg md:text-xl mb-6 md:mb-8 text-purple-100">
-                Stop living in fear of the next migraine. Discover how TMS can provide lasting relief for veterans with chronic migraines and comorbid conditions.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center">
-                <Link
-                  to="/contact"
-                  className="inline-flex items-center justify-center gap-2 bg-white text-purple-600 px-6 md:px-8 py-3 md:py-4 rounded-lg hover:bg-purple-50 transition-colors font-semibold text-base md:text-lg">
-                  <Calendar className="h-5 w-5" />
-                  Schedule Free Consultation
-                </Link>
-                <a
-                  href="tel:760-449-8185"
-                  className="inline-flex items-center justify-center gap-2 bg-purple-700 text-white px-6 md:px-8 py-3 md:py-4 rounded-lg hover:bg-purple-800 transition-colors font-semibold text-base md:text-lg border-2 border-white">
-                  <Phone className="h-5 w-5" />
-                  (760) 449-8185
-                </a>
-              </div>
-              <p className="mt-4 md:mt-6 text-sm md:text-base text-purple-100">
-                Specialized veteran care in Palm Springs and Twentynine Palms
+      {/* Main Content */}
+      <div className="container mx-auto px-4 py-12">
+        <div className="grid lg:grid-cols-4 gap-8">
+          {/* Table of Contents - Sticky Sidebar */}
+          <aside className="lg:col-span-1">
+            <div className="lg:sticky lg:top-24">
+              <Card className="border-[#572670]/20">
+                <CardContent className="p-6">
+                  <h3 className="font-bold text-lg mb-4 text-[#572670]">Table of Contents</h3>
+                  <nav className="space-y-2">
+                    {tocItems.map((item) => (
+                      <button
+                        key={item.id}
+                        onClick={() => scrollToSection(item.id)}
+                        className={`block w-full text-left px-3 py-2 rounded-md text-sm transition-all ${
+                          activeSection === item.id
+                            ? 'bg-[#572670] text-white font-medium'
+                            : 'text-gray-700 hover:bg-[#572670]/10'
+                        }`}
+                      >
+                        {item.label}
+                      </button>
+                    ))}
+                  </nav>
+                  <div className="mt-6 pt-6 border-t">
+                    <Button asChild className="w-full bg-[#572670] hover:bg-[#7B3FA0]">
+                      <Link to="/contact">Schedule Consultation</Link>
+                    </Button>
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
+          </aside>
+
+          {/* Article Content */}
+          <article className="lg:col-span-3 prose prose-lg max-w-none">
+            {/* Introduction */}
+            <div className="mb-12">
+              <img
+                src="https://res.cloudinary.com/de4kw1t2i/image/upload/v1763033673/7_lnxkrv.png"
+                alt="TMS for Migraine Relief in Veterans"
+                className="w-full h-64 md:h-96 object-cover rounded-lg mb-6"
+              />
+              <p className="text-xl text-gray-700 leading-relaxed">
+                Migraines affect a significantly higher percentage of veterans compared to the general population. For many veterans, chronic migraines aren't just debilitating headaches—they're often interconnected with other service-related conditions like PTSD, traumatic brain injury (TBI), and depression. While traditional migraine treatments offer limited relief for many veterans, Transcranial Magnetic Stimulation (TMS) is emerging as a game-changing intervention that addresses both migraines and their underlying neurological causes.
               </p>
             </div>
-          </div>
-        </section>
-      </main>
+
+            {/* Section 1: Understanding Migraines in Veterans */}
+            <section ref={(el) => sectionsRef.current['understanding'] = el} className="mb-12">
+              <h2 className="text-3xl font-bold text-[#572670] mb-6">Understanding Migraines in Veterans</h2>
+              
+              <Card className="bg-gradient-to-br from-[#572670]/5 to-transparent border-[#572670]/20 mb-6">
+                <CardContent className="p-6">
+                  <h3 className="text-2xl font-bold mb-4">Migraine Statistics in Veterans</h3>
+                  <div className="grid md:grid-cols-2 gap-4">
+                    <div className="bg-white rounded-lg p-4 shadow-sm">
+                      <div className="text-3xl font-bold text-[#572670] mb-2">36%</div>
+                      <p className="text-gray-700">of post-9/11 veterans experience migraines, compared to 12% of the general population</p>
+                    </div>
+                    <div className="bg-white rounded-lg p-4 shadow-sm">
+                      <div className="text-3xl font-bold text-blue-600 mb-2">3x Higher</div>
+                      <p className="text-gray-700">Migraine rates in veterans who served in combat zones</p>
+                    </div>
+                    <div className="bg-white rounded-lg p-4 shadow-sm">
+                      <div className="text-3xl font-bold text-green-600 mb-2">50%+</div>
+                      <p className="text-gray-700">of veterans with TBI also experience chronic migraines</p>
+                    </div>
+                    <div className="bg-white rounded-lg p-4 shadow-sm">
+                      <div className="text-3xl font-bold text-orange-600 mb-2">Top 5</div>
+                      <p className="text-gray-700">Migraines rank in the top 5 conditions for VA disability claims</p>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+
+              <img
+                src="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/f00dd3f4-cea1-4918-8fec-5976198e195f.webp"
+                alt="Veterans receiving care"
+                className="w-full h-64 object-cover rounded-lg mb-6"
+              />
+            </section>
+
+            {/* Section 2: VA Disability */}
+            <section ref={(el) => sectionsRef.current['va-disability'] = el} className="mb-12">
+              <h2 className="text-3xl font-bold text-[#572670] mb-6">VA Disability for Migraines</h2>
+              
+              <p className="mb-6">
+                The VA recognizes migraines as a potentially disabling condition for veterans. Understanding how to navigate <strong>VA disability for migraines</strong> is crucial for accessing proper care and compensation.
+              </p>
+
+              <Card className="bg-green-50 border-green-200 mb-6">
+                <CardContent className="p-6">
+                  <h3 className="text-xl font-bold mb-4">VA Disability Ratings for Migraines</h3>
+                  <div className="space-y-4">
+                    <div className="bg-white rounded-lg p-4">
+                      <div className="flex items-start gap-3">
+                        <div className="font-bold text-[#572670] text-lg">50%</div>
+                        <div className="text-gray-700">
+                          <strong>Severe:</strong> Very frequent completely prostrating and prolonged attacks productive of severe economic inadaptability
+                        </div>
+                      </div>
+                    </div>
+                    <div className="bg-white rounded-lg p-4">
+                      <div className="flex items-start gap-3">
+                        <div className="font-bold text-[#572670] text-lg">30%</div>
+                        <div className="text-gray-700">
+                          <strong>Moderately Severe:</strong> Characteristic prostrating attacks occurring on average once a month over last several months
+                        </div>
+                      </div>
+                    </div>
+                    <div className="bg-white rounded-lg p-4">
+                      <div className="flex items-start gap-3">
+                        <div className="font-bold text-[#572670] text-lg">10%</div>
+                        <div className="text-gray-700">
+                          <strong>Moderate:</strong> With characteristic prostrating attacks occurring on average once every 2 months
+                        </div>
+                      </div>
+                    </div>
+                    <div className="bg-white rounded-lg p-4">
+                      <div className="flex items-start gap-3">
+                        <div className="font-bold text-[#572670] text-lg">0%</div>
+                        <div className="text-gray-700">
+                          <strong>Mild:</strong> With less frequent attacks
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+            </section>
+
+            {/* Section 3: Comorbidity */}
+            <section ref={(el) => sectionsRef.current['comorbidity'] = el} className="mb-12">
+              <h2 className="text-3xl font-bold text-[#572670] mb-6">The Complex Connection: Migraines, PTSD, and Depression</h2>
+              
+              <p className="mb-6">
+                One of the most critical aspects of understanding migraines in veterans is recognizing their comorbidity with mental health conditions. These conditions often exist together and can exacerbate each other, creating a challenging cycle.
+              </p>
+
+              <img
+                src="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/2ddc8d69-b09a-4f1d-bd47-6d783ceefbd1.webp"
+                alt="Treatment options"
+                className="w-full h-64 object-cover rounded-lg mb-6"
+              />
+
+              <div className="grid md:grid-cols-3 gap-4 my-6">
+                <Card className="border-[#572670]/20">
+                  <CardContent className="p-6">
+                    <h4 className="font-bold mb-2 text-[#572670]">Migraines and PTSD</h4>
+                    <p className="text-sm text-gray-600">Veterans with PTSD are 3-5 times more likely to experience migraines</p>
+                  </CardContent>
+                </Card>
+                <Card className="border-[#572670]/20">
+                  <CardContent className="p-6">
+                    <h4 className="font-bold mb-2 text-[#572670]">Migraines and Depression</h4>
+                    <p className="text-sm text-gray-600">Depression is 2-4 times more common in people with migraines</p>
+                  </CardContent>
+                </Card>
+                <Card className="border-[#572670]/20">
+                  <CardContent className="p-6">
+                    <h4 className="font-bold mb-2 text-[#572670]">Migraines and TBI</h4>
+                    <p className="text-sm text-gray-600">Over 50% of veterans with TBI experience chronic migraines</p>
+                  </CardContent>
+                </Card>
+              </div>
+            </section>
+
+            {/* Section 4: How TMS Helps */}
+            <section ref={(el) => sectionsRef.current['how-tms-helps'] = el} className="mb-12">
+              <h2 className="text-3xl font-bold text-[#572670] mb-6">How TMS Helps with Migraines</h2>
+              
+              <p className="mb-6">
+                TMS offers a fundamentally different approach to migraine treatment by addressing the neurological dysfunction that underlies both migraines and comorbid mental health conditions.
+              </p>
+
+              <Card className="bg-gradient-to-br from-[#572670]/5 to-transparent border-[#572670]/20 mb-6">
+                <CardContent className="p-6">
+                  <h3 className="text-2xl font-bold mb-4">TMS Mechanisms for Migraine Relief</h3>
+                  <div className="space-y-4">
+                    <div className="border-l-4 border-[#572670] pl-6">
+                      <h4 className="font-bold mb-2">Cortical Excitability Regulation</h4>
+                      <p className="text-gray-700">TMS normalizes abnormal cortical excitability that underlies migraine susceptibility</p>
+                    </div>
+                    <div className="border-l-4 border-blue-500 pl-6">
+                      <h4 className="font-bold mb-2">Neurotransmitter Modulation</h4>
+                      <p className="text-gray-700">TMS influences serotonin, dopamine, and other neurotransmitters involved in both migraines and mood disorders</p>
+                    </div>
+                    <div className="border-l-4 border-green-500 pl-6">
+                      <h4 className="font-bold mb-2">Pain Processing Normalization</h4>
+                      <p className="text-gray-700">TMS modulates pain perception pathways in the brain</p>
+                    </div>
+                    <div className="border-l-4 border-yellow-500 pl-6">
+                      <h4 className="font-bold mb-2">Addressing Comorbid Conditions</h4>
+                      <p className="text-gray-700">Unlike traditional treatments, TMS can simultaneously treat depression, anxiety, and PTSD</p>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+            </section>
+
+            {/* Section 5: Clinical Benefits */}
+            <section ref={(el) => sectionsRef.current['clinical-benefits'] = el} className="mb-12">
+              <h2 className="text-3xl font-bold text-[#572670] mb-6">Clinical Benefits and Research</h2>
+              
+              <img
+                src="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/76caee2d-5629-4dc1-a3b4-8c5cea23ede6.webp"
+                alt="TMS therapy"
+                className="w-full h-64 object-cover rounded-lg mb-6"
+              />
+
+              <Card className="bg-blue-50 border-blue-200 mb-6">
+                <CardContent className="p-6">
+                  <h3 className="text-xl font-bold mb-4">Research Findings</h3>
+                  <div className="grid md:grid-cols-2 gap-4">
+                    <div className="space-y-3">
+                      <div className="flex items-start gap-2">
+                        <CheckCircle2 className="w-5 h-5 text-green-600 mt-1 flex-shrink-0" />
+                        <span>40-60% reduction in monthly migraine days</span>
+                      </div>
+                      <div className="flex items-start gap-2">
+                        <CheckCircle2 className="w-5 h-5 text-green-600 mt-1 flex-shrink-0" />
+                        <span>Significant decrease in pain intensity</span>
+                      </div>
+                      <div className="flex items-start gap-2">
+                        <CheckCircle2 className="w-5 h-5 text-green-600 mt-1 flex-shrink-0" />
+                        <span>Reduced medication dependence</span>
+                      </div>
+                    </div>
+                    <div className="space-y-3">
+                      <div className="flex items-start gap-2">
+                        <CheckCircle2 className="w-5 h-5 text-green-600 mt-1 flex-shrink-0" />
+                        <span>Improved quality of life</span>
+                      </div>
+                      <div className="flex items-start gap-2">
+                        <CheckCircle2 className="w-5 h-5 text-green-600 mt-1 flex-shrink-0" />
+                        <span>Better sleep quality</span>
+                      </div>
+                      <div className="flex items-start gap-2">
+                        <CheckCircle2 className="w-5 h-5 text-green-600 mt-1 flex-shrink-0" />
+                        <span>Improvement in comorbid conditions</span>
+                      </div>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+            </section>
+
+            {/* Author Box */}
+            <AuthorBox
+              name="Dr. Keerthy Sunder"
+              role="Board-Certified Psychiatrist | Medical Director at KarmaTMS"
+              bio="Dr. Keerthy Sunder is a board-certified psychiatrist specializing in TMS therapy for veterans and treatment-resistant mental health conditions. With extensive experience in neuroscience and innovative treatment modalities, Dr. Sunder is dedicated to helping veterans overcome PTSD, depression, and anxiety through evidence-based, compassionate care."
+              image="https://www.prtms.com/wp-content/uploads/2023/03/Dr.-Keerthy-Sunder-scaled.jpg"
+            />
+
+            {/* FAQ Section */}
+            <section ref={(el) => sectionsRef.current['faqs'] = el} className="mb-12 mt-12">
+              <h2 className="text-3xl font-bold text-[#572670] mb-6">Frequently Asked Questions</h2>
+              
+              <Accordion type="single" collapsible className="w-full space-y-2">
+                {faqs.map((faq, index) => (
+                  <AccordionItem
+                    key={index}
+                    value={`item-${index}`}
+                    className="border border-gray-200 rounded-lg px-4 data-[state=open]:border-[#572670]"
+                  >
+                    <AccordionTrigger className="text-left font-semibold hover:text-[#572670] hover:no-underline">
+                      {faq.question}
+                    </AccordionTrigger>
+                    <AccordionContent className="text-gray-700 pt-2 pb-4">
+                      {faq.answer}
+                    </AccordionContent>
+                  </AccordionItem>
+                ))}
+              </Accordion>
+            </section>
+
+            {/* CTA Section */}
+            <Card className="bg-gradient-to-br from-[#572670] to-[#7B3FA0] text-white mb-12">
+              <CardContent className="p-8 text-center">
+                <h3 className="text-2xl md:text-3xl font-bold mb-4">
+                  Ready to Find Relief from Chronic Migraines?
+                </h3>
+                <p className="text-lg mb-6 text-white/90">
+                  Join the veterans who have found lasting relief with TMS therapy. Our team is ready to help you reclaim your life.
+                </p>
+                <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                  <Button asChild size="lg" className="bg-white text-[#572670] hover:bg-gray-100">
+                    <Link to="/contact">Schedule Free Consultation</Link>
+                  </Button>
+                  <Button asChild size="lg" variant="outline" className="border-white text-white hover:bg-white/10">
+                    <Link to="/veterans">Learn About Veterans Program</Link>
+                  </Button>
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* Related Posts */}
+            <section className="mb-12">
+              <h2 className="text-3xl font-bold text-[#572670] mb-6">Related Articles</h2>
+              <div className="grid md:grid-cols-3 gap-6">
+                {relatedPosts.map((post, index) => (
+                  <Card key={index} className="border-[#572670]/20 overflow-hidden hover:shadow-lg transition-shadow">
+                    <img
+                      src={post.image}
+                      alt={post.title}
+                      className="w-full h-48 object-cover"
+                    />
+                    <CardContent className="p-6">
+                      <h3 className="font-bold text-lg mb-2 hover:text-[#572670] transition-colors">
+                        <Link to={post.link}>{post.title}</Link>
+                      </h3>
+                      <p className="text-gray-600 text-sm mb-4">{post.excerpt}</p>
+                      <Button asChild variant="ghost" className="text-[#572670] p-0 h-auto hover:bg-transparent">
+                        <Link to={post.link} className="inline-flex items-center gap-2">
+                          Read More <ArrowRight className="w-4 h-4" />
+                        </Link>
+                      </Button>
+                    </CardContent>
+                  </Card>
+                ))}
+              </div>
+            </section>
+          </article>
+        </div>
+      </div>
 
       <FooterSection />
     </>
   );
-}
+};
+
+export default TMSMigraineVeteransBlogPostPage;
