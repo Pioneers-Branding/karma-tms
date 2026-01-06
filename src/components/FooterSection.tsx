@@ -160,7 +160,7 @@ const FooterSection = () => {
 
               <div className="p-4 rounded-lg bg-white/5 border border-[#572670]/20 hover:border-[#572670]/40 transition-all duration-300">
                 <div className="flex items-start gap-3">
-                  <MapPin className="h-5 w-5 text-[#572670] mt-0.5 flex-shrink-0" />
+                  <MapPin className="h-5 w-5 text-white mt-0.5 flex-shrink-0" size={24} strokeWidth={2} stroke="currentColor" />
                   <div>
                     <div className="text-sm font-bold text-white mb-1">Twentynine Palms</div>
                     <div className="text-xs text-gray-300 leading-relaxed">
