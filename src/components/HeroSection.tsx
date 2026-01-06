@@ -51,7 +51,7 @@ const HeroSection = () => {
           <div className="grid lg:grid-cols-2 xl:grid-cols-5 ">
             
             {/* Left Section - Content */}
-            <div className="xl:col-span-3 p-4  bg-blue-magenta/5  lg:p-6 xl:p-8 flex flex-col justify-center">
+            <div className="xl:col-span-3 p-4 lg:p-6 xl:p-8 flex flex-col justify-center">
               <div className="space-y-6 lg:space-y-8">
                 
                 {/* Heading */}
@@ -125,7 +125,7 @@ const HeroSection = () => {
             </div>
 
             {/* Right Section - Form & Stats */}
-            <div className="xl:col-span-2 bg-gradient-to-br from-blue-magenta via-blue-magenta/70 to-blue-magenta rounded-2xl m-2 p-2 sm:p-2 md:p-2 lg:p-4 xl:p-6 flex flex-col">
+            <div className="xl:col-span-2 bg-gradient-to-br from-blue-magenta via-blue-magenta/70 to-blue-magenta rounded-3xl m-2 p-2 sm:p-2 md:p-2 lg:p-4 xl:p-6 flex flex-col">
               
               {/* Contact Form */}
               <div className="bg-white/95 backdrop-blur-lg rounded-3xl p-4 shadow-2xl flex-grow border border-white/20">
