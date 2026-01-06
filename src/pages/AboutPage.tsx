@@ -78,7 +78,7 @@ const AboutPage = () => {
   const technologies = [
   {
     icon: Zap,
-    title: "NeuroStar TMS",
+    title: "Apollo TMS",
     description: "FDA-approved advanced TMS technology for precise, effective treatment of depression and anxiety disorders.",
     features: ["Precise targeting", "Proven efficacy", "Non-invasive"]
   },
@@ -243,8 +243,7 @@ const AboutPage = () => {
                           What started as a small clinic has grown into a leading center for innovative 
                           mental health care, treating over 5,000 patients and maintaining a 95% success 
                           rate. We've expanded our services to include <Link to="/brain-mapping" className="text-[#572670] hover:underline">brain mapping</Link>, 
-                          and comprehensive 
-                          <Link to="/medication-management" className="text-[#572670] hover:underline ml-1">medication management</Link>.
+                          and comprehensive <Link to="/medication-management" className="text-[#572670] hover:underline ml-1">medication management</Link>.
                         </p>
                         <div className="flex items-start gap-3">
                           <Sparkles className="h-6 w-6 text-[#572670] flex-shrink-0 mt-1" />
