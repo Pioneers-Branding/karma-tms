@@ -143,7 +143,7 @@ const TMSTherapyPage = () => {
       
       {/* Hero Section */}
       <section className="pt-24 pb-16 px-4">
-        <div className="max-w-7xl flex flex-col mx-auto">
+        <div className="max-w-7xl flex flex-row mx-auto">
           <motion.div
             initial="hidden"
             animate="visible"
