@@ -110,10 +110,10 @@ const TeamPage: React.FC = () => {
               Schedule a consultation to discuss your treatment options with our experienced medical professionals.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a href="tel:760-760-5675">
+              <a href="tel:951-297-8375">
                 <Button className="bg-[#572670] hover:bg-[#572670]/90 px-8 py-3 text-lg">
                   <Phone className="mr-2 h-5 w-5" />
-                  Call Now: 760-760-5675
+                  Call Now: 951-297-8375
                 </Button>
               </a>
               <Link to="/contact">
