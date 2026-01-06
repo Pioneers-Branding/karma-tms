@@ -287,7 +287,7 @@ const HowSuccessfulTMSTreatmentBlogPostPage = () => {
               <img
                 src="https://res.cloudinary.com/de4kw1t2i/image/upload/v1763376733/15_ym6n6b.png"
                 alt="TMS therapy success and effectiveness"
-                className="w-full  md:h-96 object-cover rounded-lg mb-6" />
+                className="w-full md:h-96 object-cover rounded-lg mb-6" />
 
               <p className="text-xl text-gray-700 leading-relaxed">
                 When considering any medical treatment, success rates matter. If you're exploring <Link to="/tms-therapy" className="text-[#572670] hover:underline font-medium">TMS therapy</Link>, you're likely wondering: "How successful is TMS treatment?" The answer is encouraging. With response rates of 50-60% and remission rates of 30-40% for treatment-resistant depression, TMS offers real hope—particularly for those who haven't found relief with traditional treatments.
@@ -360,10 +360,7 @@ const HowSuccessfulTMSTreatmentBlogPostPage = () => {
                 <Link to="/depression" className="text-[#572670] hover:underline font-medium">Depression</Link> is the most extensively studied condition for TMS therapy, with the strongest evidence base.
               </p>
 
-              <img
-                src="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/2ddc8d69-b09a-4f1d-bd47-6d783ceefbd1.webp"
-                alt="Depression treatment success with TMS"
-                className="w-full h-64 object-cover rounded-lg mb-6" />
+             
 
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Clinical Trial Results</h3>
 
