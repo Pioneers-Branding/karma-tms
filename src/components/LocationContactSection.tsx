@@ -31,15 +31,15 @@ const LocationContactSection = () => {
             {[
                 {
                   label: "Address 1",
-                  lines: ["560 S. Paseo Dorotea, Suite 4-B", "Palm Springs, CA 92264"]
+                  lines: ["560 S. Paseo Dorotea Suite 4-B", "Palm Springs, CA 92264"]
                 },
                 {
                   label: "Address 2",
-                  lines: ["35400 Bob Hope Dr Ste #206", "Rancho Mirage, CA 92270"]
+                  lines: ["35400 Bob Hope Dr. Suite 206-B", "Rancho Mirage, CA 92270"]
                 },
                 {
                   label: "Address 3",
-                  lines: ["72724 29 Palms Hwy Ste 107", "Twentynine Palms, CA 92277"]
+                  lines: ["560 S. Paseo Dorotea, Suite 4-B", "Twentynine Palms, CA 92277"]
                 }].
                 map((addr, idx) =>
                 <div key={idx} className="flex items-start gap-4">
