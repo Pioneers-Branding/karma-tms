@@ -22,7 +22,7 @@ const HeroSection = () => {
     alt: 'KarmaTMS mental health center entrance in Palm Springs offering advanced TMS therapy for depression treatment'
   },
   {
-    title: 'Find us in Palm Springs',
+    title: 'Find us in Twenty Nine Palms',
     image:
     'https://res.cloudinary.com/de4kw1t2i/image/upload/v1763039658/2_miiwgx.jpg',
     alt: 'Palm Springs California location for KarmaTMS depression and anxiety treatment center'
