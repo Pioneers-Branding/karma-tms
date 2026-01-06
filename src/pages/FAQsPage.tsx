@@ -303,7 +303,7 @@ const FAQsPage = () => {
               <Button
                 size="lg"
                 variant="outline"
-                className="border-white text-white hover:bg-white hover:text-blue-600 px-8">
+                className="border-white text-white hover:bg-white hover:text-blue-600 px-8 bg-white text-[#2563eb]">
 
                 Contact Us
               </Button>
