@@ -7,22 +7,22 @@ const HeroSection = () => {
   const slides = [
   {
     title: "Advanced TMS at KarmaTMS",
-    image: "https://images.unsplash.com/photo-1655732329737-6e5596a5421c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MTg3MTl8MHwxfHNlYXJjaHwxfHxBJTIwbW9kZXJuJTIwYW5kJTIwd2VsY29taW5nJTIwZW50cmFuY2UlMjB0byUyMEthcm1hJTIwVE1TJTJDJTIwc2hvd2Nhc2luZyUyMGl0cyUyMGFkdmFuY2VkJTIwZmFjaWxpdGllcy58ZW58MHx8fHwxNzU5MjM2NjYzfDA&ixlib=rb-4.1.0&q=80&w=200$w=1920",
+    image: "https://res.cloudinary.com/de4kw1t2i/image/upload/v1759239428/ktms_irodne.jpg",
     alt: "Karma TMS entrance"
   },
   {
     title: "Find us in Palm Springs",
-    image: "https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/b65c46ad-dd56-4c76-bfc8-9fbe25e9b7af.jpg",
+    image: "https://res.cloudinary.com/de4kw1t2i/image/upload/v1759239436/palmsprings_zzllua.jpg",
     alt: "Palm Springs view"
   },
   {
     title: "Best TMS in Palm Springs",
-    image: "https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/ab4091f6-2a9f-4462-909c-148d587ba88f.jpg",
+    image: "https://res.cloudinary.com/de4kw1t2i/image/upload/v1759239508/pssunset_zbbsur.jpg",
     alt: "Palm Springs"
   },
   {
     title: "Advanced TMS Setup",
-    image: "https://images.unsplash.com/photo-1719150006679-fa515f9372ae?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MTg3MTl8MHwxfHNlYXJjaHwxfHxBJTIwbW9kZXJuJTIwYW5kJTIwY29tZm9ydGFibGUlMjBUTVMlMjB0aGVyYXB5JTIwY2hhaXIlMjBzZXR1cCUyMGluJTIwYSUyMGNsaW5pY2FsJTIwZW52aXJvbm1lbnQufGVufDB8fHx8MTc1OTIzNzE0Nnww&ixlib=rb-4.1.0&q=80&w=200$w=1920",
+    image: "https://res.cloudinary.com/de4kw1t2i/image/upload/v1759239473/TMS_Chair_jgdar0.png",
     alt: "TMS-Chair"
   }];
 
