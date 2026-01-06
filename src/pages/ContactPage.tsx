@@ -276,7 +276,7 @@ const ContactPage = () => {
                     variant="outline"
                     size="sm"
                     className="w-full mt-3"
-                    onClick={() => window.open('https://www.google.com/maps/place/Karma+TMS+PC+-+Palm+Springs/@33.814262642884565,-116.50032412577016,17z', '_blank')}>
+                    onClick={() => window.open('https://share.google/5d1EU2i2b6WbjZLQc', '_blank')}>
                     Get Directions
                     <ChevronRight className="ml-2 h-3 w-3" />
                   </Button>
@@ -293,7 +293,7 @@ const ContactPage = () => {
                     variant="outline"
                     size="sm"
                     className="w-full mt-3"
-                    onClick={() => window.open('https://www.google.com/maps/search/35400+Bob+Hope+Dr.+Suite+206+Rancho+Mirage,+CA+92270', '_blank')}>
+                    onClick={() => window.open('https://maps.app.goo.gl/6wyxkwnGZ5g2ua1a7', '_blank')}>
                     Get Directions
                     <ChevronRight className="ml-2 h-3 w-3" />
                   </Button>
@@ -310,7 +310,7 @@ const ContactPage = () => {
                     variant="outline"
                     size="sm"
                     className="w-full mt-3"
-                    onClick={() => window.open('https://www.google.com/maps/search/72724+29+Palms+Hwy.+Suite+107+Twentynine+Palms,+CA+92277', '_blank')}>
+                    onClick={() => window.open('https://share.google/e8yhlNFFaLaN8z1d1', '_blank')}>
                     Get Directions
                     <ChevronRight className="ml-2 h-3 w-3" />
                   </Button>
