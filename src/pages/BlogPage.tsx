@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef, useMemo } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import Navigation from '@/components/Navigation';
 import FooterSection from '@/components/FooterSection';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
@@ -30,32 +30,8 @@ const blogCategories = [
 { id: 'wellness', label: 'Wellness Tips' }];
 
 
-// Nine blog thumbnail images from static resources
-const BLOG_THUMBNAILS = [
-'https://res.cloudinary.com/de4kw1t2i/image/upload/v1762863798/blog_6_z1bbda.png', // viteren-intro
-'https://res.cloudinary.com/de4kw1t2i/image/upload/v1762863799/blog_10_bcw7ze.png', // viteran-tms
-'https://res.cloudinary.com/de4kw1t2i/image/upload/v1762863799/blog_9_oe8iur.png', // viterna-dipression
-'https://res.cloudinary.com/de4kw1t2i/image/upload/v1762863799/blog_8_l0irim.png', // dipresseion-treatment
-'https://res.cloudinary.com/de4kw1t2i/image/upload/v1762863798/blog_2_ahwkma.png', // karm-tms
-'https://res.cloudinary.com/de4kw1t2i/image/upload/v1762863799/blog_11_uaebq0.png', // what-is
-'https://res.cloudinary.com/de4kw1t2i/image/upload/v1762863798/blog_5_jt2nzt.png', // Anxiety-disorder
-'https://res.cloudinary.com/de4kw1t2i/image/upload/v1762863799/blog_4_hzwvvb.png', // expert-during
-'https://res.cloudinary.com/de4kw1t2i/image/upload/v1762863797/blog_12_jatazr.png' // during-ocd
-];
-
-// Fisher-Yates shuffle algorithm
-const shuffleArray = <T,>(array: T[]): T[] => {
-  const shuffled = [...array];
-  for (let i = shuffled.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
-  }
-  return shuffled;
-};
-
-// Blog posts - Veterans TMS Therapy
-const generateUniqueBlogPosts = (shuffledThumbnails: string[]): BlogPost[] => {
-  const posts: BlogPost[] = [
+// Blog posts - Veterans TMS Therapy with fixed images
+const allBlogPosts: BlogPost[] = [
   {
     id: 1,
     title: 'How TMS Therapy Helps Veterans Heal: A New Hope for PTSD, Depression & Anxiety',
@@ -68,7 +44,7 @@ const generateUniqueBlogPosts = (shuffledThumbnails: string[]): BlogPost[] => {
       day: 'numeric'
     }),
     readTime: '12 min read',
-    image: shuffledThumbnails[0],
+    image: 'https://res.cloudinary.com/de4kw1t2i/image/upload/v1762863798/blog_6_z1bbda.png',
     featured: true,
     rating: 5
   },
@@ -84,7 +60,7 @@ const generateUniqueBlogPosts = (shuffledThumbnails: string[]): BlogPost[] => {
       day: 'numeric'
     }),
     readTime: '15 min read',
-    image: shuffledThumbnails[1],
+    image: 'https://res.cloudinary.com/de4kw1t2i/image/upload/v1762863799/blog_10_bcw7ze.png',
     featured: false,
     rating: 5
   },
@@ -100,7 +76,7 @@ const generateUniqueBlogPosts = (shuffledThumbnails: string[]): BlogPost[] => {
       day: 'numeric'
     }),
     readTime: '18 min read',
-    image: shuffledThumbnails[2],
+    image: 'https://res.cloudinary.com/de4kw1t2i/image/upload/v1762863799/blog_9_oe8iur.png',
     featured: false,
     rating: 5
   },
@@ -116,7 +92,7 @@ const generateUniqueBlogPosts = (shuffledThumbnails: string[]): BlogPost[] => {
       day: 'numeric'
     }),
     readTime: '16 min read',
-    image: shuffledThumbnails[3],
+    image: 'https://res.cloudinary.com/de4kw1t2i/image/upload/v1762863799/blog_8_l0irim.png',
     featured: false,
     rating: 5
   },
@@ -132,7 +108,7 @@ const generateUniqueBlogPosts = (shuffledThumbnails: string[]): BlogPost[] => {
       day: 'numeric'
     }),
     readTime: '17 min read',
-    image: shuffledThumbnails[4],
+    image: 'https://res.cloudinary.com/de4kw1t2i/image/upload/v1762863798/blog_2_ahwkma.png',
     featured: false,
     rating: 5
   },
@@ -148,7 +124,7 @@ const generateUniqueBlogPosts = (shuffledThumbnails: string[]): BlogPost[] => {
       day: 'numeric'
     }),
     readTime: '14 min read',
-    image: shuffledThumbnails[5],
+    image: 'https://res.cloudinary.com/de4kw1t2i/image/upload/v1762863799/blog_11_uaebq0.png',
     featured: false,
     rating: 5
   },
@@ -164,7 +140,7 @@ const generateUniqueBlogPosts = (shuffledThumbnails: string[]): BlogPost[] => {
       day: 'numeric'
     }),
     readTime: '13 min read',
-    image: shuffledThumbnails[6],
+    image: 'https://res.cloudinary.com/de4kw1t2i/image/upload/v1762863798/blog_5_jt2nzt.png',
     featured: false,
     rating: 5
   },
@@ -180,21 +156,14 @@ const generateUniqueBlogPosts = (shuffledThumbnails: string[]): BlogPost[] => {
       day: 'numeric'
     }),
     readTime: '15 min read',
-    image: shuffledThumbnails[7],
+    image: 'https://res.cloudinary.com/de4kw1t2i/image/upload/v1762863799/blog_4_hzwvvb.png',
     featured: false,
     rating: 5
-  }];
-
-  return posts;
-};
+  }
+];
 
 const BlogPage = () => {
   const [activeCategory, setActiveCategory] = useState('all');
-
-  // Shuffle thumbnails once on component mount using useMemo
-  const shuffledThumbnails = useMemo(() => shuffleArray(BLOG_THUMBNAILS), []);
-
-  const [allPosts] = useState<BlogPost[]>(generateUniqueBlogPosts(shuffledThumbnails));
   const [displayedPosts, setDisplayedPosts] = useState<BlogPost[]>([]);
   const [loading, setLoading] = useState(false);
   const [hasMore, setHasMore] = useState(true);
@@ -204,16 +173,16 @@ const BlogPage = () => {
 
   // Initialize with first batch of posts
   useEffect(() => {
-    const initialPosts = allPosts.slice(0, POSTS_PER_LOAD);
+    const initialPosts = allBlogPosts.slice(0, POSTS_PER_LOAD);
     setDisplayedPosts(initialPosts);
-    setHasMore(initialPosts.length < allPosts.length);
+    setHasMore(initialPosts.length < allBlogPosts.length);
   }, []);
 
   // Reset displayed posts when category changes
   useEffect(() => {
     const filteredPosts = activeCategory === 'all' ?
-    allPosts :
-    allPosts.filter((post) => post.category === activeCategory);
+    allBlogPosts :
+    allBlogPosts.filter((post) => post.category === activeCategory);
 
     const initialPosts = filteredPosts.slice(0, POSTS_PER_LOAD);
     setDisplayedPosts(initialPosts);
@@ -246,8 +215,8 @@ const BlogPage = () => {
     // Simulate API call
     setTimeout(() => {
       const filteredPosts = activeCategory === 'all' ?
-      allPosts :
-      allPosts.filter((post) => post.category === activeCategory);
+      allBlogPosts :
+      allBlogPosts.filter((post) => post.category === activeCategory);
 
       const currentCount = displayedPosts.length;
       const nextPosts = filteredPosts.slice(currentCount, currentCount + POSTS_PER_LOAD);
@@ -335,10 +304,10 @@ const BlogPage = () => {
                 
                 <div className="relative h-64 lg:h-auto">
                   <img
-                  src={featuredPost.image}
-                  alt={featuredPost.title}
-                  className="absolute inset-0 w-full h-full object-cover" />
-
+                    src={featuredPost.image}
+                    alt={featuredPost.title}
+                    className="absolute inset-0 w-full h-full object-cover"
+                  />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent lg:hidden"></div>
                 </div>
               </div>
@@ -384,12 +353,12 @@ const BlogPage = () => {
                       href={postLinks[post.id] || '/blog'}>
 
                   <Card className="group cursor-pointer hover:shadow-lg transition-all duration-300 border-gray-200 hover:border-[#572670]/30 overflow-hidden">
-                      <div className="relative overflow-hidden aspect-[16/9]">
+                      <div className="relative overflow-hidden" style={{ aspectRatio: '1200/628' }}>
                         <img
-                            src={post.image}
-                            alt={post.title}
-                            className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
-
+                          src={post.image}
+                          alt={post.title}
+                          className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                        />
                         <div className="absolute top-4 left-4 z-10">
                           <Badge variant="secondary" className="bg-white/90 text-gray-700 backdrop-blur-sm">
                             {blogCategories.find((cat) => cat.id === post.category)?.label}
