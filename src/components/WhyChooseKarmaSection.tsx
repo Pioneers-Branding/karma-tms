@@ -23,7 +23,7 @@ const WhyChooseKarmaSection = () => {
   {
     title: "Holistic and Integrated Care",
     description: "Our approach extends beyond TMS therapy at our mental health facilities in palm springs. We integrate mental health support and resources to promote your overall well-being and long-term recovery.",
-    image: "https://images.unsplash.com/photo-1567990064565-f1dababb97b8?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    image: "https://res.cloudinary.com/de4kw1t2i/image/upload/v1761742435/IMG_5128_fci7xz.jpg",
     overlay: true
   }];
 
