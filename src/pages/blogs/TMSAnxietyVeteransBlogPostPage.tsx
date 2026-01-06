@@ -236,10 +236,10 @@ export default function TMSAnxietyVeteransBlogPostPage() {
                 <Link to="/contact">Schedule Free Consultation</Link>
               </Button>
               <Button asChild size="lg" variant="outline" className="border-white text-white hover:bg-white/10">
-                <a href="tel:760-449-8185" className="inline-flex items-center gap-2">
-                  <Phone className="w-4 h-4" />
-                  (760) 449-8185
-                </a>
+                
+
+
+
               </Button>
             </div>
           </div>
@@ -793,10 +793,10 @@ export default function TMSAnxietyVeteransBlogPostPage() {
                     </Link>
                   </Button>
                   <Button asChild size="lg" variant="outline" className="border-white text-white hover:bg-white/10">
-                    <a href="tel:760-449-8185" className="inline-flex items-center gap-2">
-                      <Phone className="h-5 w-5" />
-                      (760) 449-8185
-                    </a>
+                    
+
+
+
                   </Button>
                 </div>
                 <p className="mt-6 text-white/90">
