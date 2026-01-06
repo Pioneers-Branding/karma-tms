@@ -281,7 +281,7 @@ const RanchoMiragePage = () => {
                   <div className="flex items-start gap-3">
                     <MapPin className="w-5 h-5 text-purple-600 mt-1 flex-shrink-0" />
                     <div>
-                      <p className="font-medium">35400 Bob Hope Dr. Suite 206-B</p>
+                      <p className="font-medium">35400 Bob Hope Dr. Suite 206</p>
                       <p className="text-gray-600">Rancho Mirage, CA 92270</p>
                     </div>
                   </div>
