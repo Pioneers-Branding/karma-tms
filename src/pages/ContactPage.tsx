@@ -261,42 +261,75 @@ const ContactPage = () => {
               <CardHeader className="bg-[#572670] text-white">
                 <CardTitle className="flex items-center gap-2">
                   <MapPin className="h-5 w-5" />
-                  Location & Hours
+                  Our Locations
                 </CardTitle>
               </CardHeader>
               <CardContent className="p-6 space-y-6">
-                <div>
-                  <h3 className="font-bold text-lg text-gray-900 mb-2">Karma TMS</h3>
-                  <p className="text-gray-700 leading-relaxed">                   
-                    560 S. Paseo Dorotea, Suite 4-B Palm Springs, CA 92264
+                {/* Location 1 - Palm Springs */}
+                <div className="pb-4 border-b">
+                  <h3 className="font-bold text-base text-[#572670] mb-2">Palm Springs Office</h3>
+                  <p className="text-gray-700 text-sm leading-relaxed">
+                    560 S. Paseo Dorotea, Suite 4-B<br />
+                    Palm Springs, CA 92264
                   </p>
+                  <Button
+                    variant="outline"
+                    size="sm"
+                    className="w-full mt-3"
+                    onClick={() => window.open('https://www.google.com/maps/place/Karma+TMS+PC+-+Palm+Springs/@33.814262642884565,-116.50032412577016,17z', '_blank')}>
+                    Get Directions
+                    <ChevronRight className="ml-2 h-3 w-3" />
+                  </Button>
                 </div>
 
+                {/* Location 2 - Rancho Mirage */}
+                <div className="pb-4 border-b">
+                  <h3 className="font-bold text-base text-[#572670] mb-2">Rancho Mirage Office</h3>
+                  <p className="text-gray-700 text-sm leading-relaxed">
+                    35400 Bob Hope Dr. Suite 206<br />
+                    Rancho Mirage, CA 92270
+                  </p>
+                  <Button
+                    variant="outline"
+                    size="sm"
+                    className="w-full mt-3"
+                    onClick={() => window.open('https://www.google.com/maps/search/35400+Bob+Hope+Dr.+Suite+206+Rancho+Mirage,+CA+92270', '_blank')}>
+                    Get Directions
+                    <ChevronRight className="ml-2 h-3 w-3" />
+                  </Button>
+                </div>
+
+                {/* Location 3 - Twentynine Palms */}
+                <div className="pb-4 border-b">
+                  <h3 className="font-bold text-base text-[#572670] mb-2">Twentynine Palms Office</h3>
+                  <p className="text-gray-700 text-sm leading-relaxed">
+                    72724 29 Palms Hwy. Suite 107<br />
+                    Twentynine Palms, CA 92277
+                  </p>
+                  <Button
+                    variant="outline"
+                    size="sm"
+                    className="w-full mt-3"
+                    onClick={() => window.open('https://www.google.com/maps/search/72724+29+Palms+Hwy.+Suite+107+Twentynine+Palms,+CA+92277', '_blank')}>
+                    Get Directions
+                    <ChevronRight className="ml-2 h-3 w-3" />
+                  </Button>
+                </div>
+
+                {/* Business Hours */}
                 <div>
                   <h4 className="font-semibold text-gray-900 mb-3 flex items-center gap-2">
                     <Clock className="h-4 w-4" />
-                    Business Hours
+                    Business Hours (All Locations)
                   </h4>
                   <div className="space-y-2">
                     {businessHours.map((schedule, index) =>
                     <div key={index} className="flex justify-between items-center py-1">
-                        <span className="text-gray-700">{schedule.day}</span>
-                        <span className="font-medium text-[#572670]">{schedule.hours}</span>
+                        <span className="text-gray-700 text-sm">{schedule.day}</span>
+                        <span className="font-medium text-[#572670] text-sm">{schedule.hours}</span>
                       </div>
                     )}
                   </div>
-                </div>
-
-                <div className="pt-4 border-t">
-                  <Button
-                    variant="outline"
-                    className="w-full"
-                    onClick={() => window.open('https://maps.google.com', '_blank')}>
-
-
-                    Get Directions
-                    <ChevronRight className="ml-2 h-4 w-4" />
-                  </Button>
                 </div>
               </CardContent>
             </Card>
