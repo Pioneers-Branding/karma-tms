@@ -1,5 +1,4 @@
 
-import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Phone, Mail, MapPin, Clock, Facebook, Instagram, MessageSquare, Calendar, ChevronRight, Send } from 'lucide-react';
 import Navigation from '@/components/Navigation';
@@ -11,51 +10,8 @@ import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { Textarea } from '@/components/ui/textarea';
-import { useToast } from '@/hooks/use-toast';
 
 const ContactPage = () => {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    phone: '',
-    subject: '',
-    message: '',
-    preferredContact: 'phone',
-    urgency: 'normal'
-  });
-  const [isSubmitting, setIsSubmitting] = useState(false);
-  const { toast } = useToast();
-
-  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
-    setFormData((prev) => ({
-      ...prev,
-      [e.target.name]: e.target.value
-    }));
-  };
-
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    setIsSubmitting(true);
-
-    // Simulate form submission
-    setTimeout(() => {
-      toast({
-        title: "Message Sent Successfully!",
-        description: "We'll get back to you within 24 hours."
-      });
-      setFormData({
-        name: '',
-        email: '',
-        phone: '',
-        subject: '',
-        message: '',
-        preferredContact: 'phone',
-        urgency: 'normal'
-      });
-      setIsSubmitting(false);
-    }, 2000);
-  };
-
   const businessHours = [
   { day: 'Monday - Friday', hours: '8:00 AM - 6:00 PM' },
   { day: 'Saturday', hours: '9:00 AM - 2:00 PM' },
@@ -163,7 +119,8 @@ const ContactPage = () => {
             <Button
               key={index}
               onClick={action.action}
-              className={`${action.color} text-white p-6 h-auto flex flex-col items-center gap-3 transition-transform hover:scale-105`}>
+              className={`${action.color} text-white p-6 h-auto flex flex-col items-center gap-3 transition-transform hover:scale-105`}
+            >
 
                 <action.icon className="h-8 w-8" />
                 <div className="text-center">
@@ -188,15 +145,13 @@ const ContactPage = () => {
                 </CardTitle>
               </CardHeader>
               <CardContent className="p-6">
-                <form onSubmit={handleSubmit} className="space-y-6">
+                <form method="post" action="#" autoComplete="on" className="space-y-6">
                   <div className="grid md:grid-cols-2 gap-4">
                     <div>
                       <Label htmlFor="name">Full Name *</Label>
                       <Input
                         id="name"
                         name="name"
-                        value={formData.name}
-                        onChange={handleInputChange}
                         required
                         placeholder="Your full name"
                         className="mt-1" />
@@ -208,8 +163,6 @@ const ContactPage = () => {
                         id="email"
                         name="email"
                         type="email"
-                        value={formData.email}
-                        onChange={handleInputChange}
                         required
                         placeholder="your@email.com"
                         className="mt-1" />
@@ -224,8 +177,6 @@ const ContactPage = () => {
                         id="phone"
                         name="phone"
                         type="tel"
-                        value={formData.phone}
-                        onChange={handleInputChange}
                         placeholder="(760) 123-4567"
                         className="mt-1" />
 
@@ -235,10 +186,9 @@ const ContactPage = () => {
                       <select
                         id="subject"
                         name="subject"
-                        value={formData.subject}
-                        onChange={handleInputChange}
                         required
-                        className="mt-1 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50">
+                        className="mt-1 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+                      >
 
                         <option value="">Select a subject</option>
                         <option value="consultation">Free Consultation</option>
@@ -255,8 +205,6 @@ const ContactPage = () => {
                     <Textarea
                       id="message"
                       name="message"
-                      value={formData.message}
-                      onChange={handleInputChange}
                       required
                       placeholder="Please tell us how we can help you..."
                       rows={5}
@@ -270,9 +218,8 @@ const ContactPage = () => {
                       <select
                         id="preferredContact"
                         name="preferredContact"
-                        value={formData.preferredContact}
-                        onChange={handleInputChange}
-                        className="mt-1 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50">
+                        className="mt-1 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+                      >
 
                         <option value="phone">Phone Call</option>
                         <option value="email">Email</option>
@@ -284,9 +231,8 @@ const ContactPage = () => {
                       <select
                         id="urgency"
                         name="urgency"
-                        value={formData.urgency}
-                        onChange={handleInputChange}
-                        className="mt-1 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50">
+                        className="mt-1 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+                      >
 
                         <option value="normal">Normal</option>
                         <option value="urgent">Urgent</option>
@@ -297,10 +243,10 @@ const ContactPage = () => {
 
                   <Button
                     type="submit"
-                    disabled={isSubmitting}
-                    className="w-full bg-[#572670] hover:bg-[#572670]/90 text-white py-3">
+                    className="w-full bg-[#572670] hover:bg-[#572670]/90 text-white py-3"
+                  >
 
-                    {isSubmitting ? 'Sending...' : 'Send Message'}
+                    Send Message
                     <Send className="ml-2 h-4 w-4" />
                   </Button>
                 </form>
@@ -347,7 +293,8 @@ const ContactPage = () => {
                   <Button
                     variant="outline"
                     className="w-full"
-                    onClick={() => window.open('https://maps.google.com', '_blank')}>
+                    onClick={() => window.open('https://maps.google.com', '_blank')}
+                  >
 
                     Get Directions
                     <ChevronRight className="ml-2 h-4 w-4" />
@@ -367,7 +314,8 @@ const ContactPage = () => {
                     variant="outline"
                     size="icon"
                     className="rounded-full hover:bg-blue-50 hover:border-blue-300"
-                    onClick={() => window.open('https://facebook.com', '_blank')}>
+                    onClick={() => window.open('https://facebook.com', '_blank')}
+                  >
 
                     <Facebook className="h-5 w-5 text-blue-600" />
                   </Button>
@@ -375,7 +323,8 @@ const ContactPage = () => {
                     variant="outline"
                     size="icon"
                     className="rounded-full hover:bg-pink-50 hover:border-pink-300"
-                    onClick={() => window.open('https://instagram.com', '_blank')}>
+                    onClick={() => window.open('https://instagram.com', '_blank')}
+                  >
 
                     <Instagram className="h-5 w-5 text-pink-600" />
                   </Button>

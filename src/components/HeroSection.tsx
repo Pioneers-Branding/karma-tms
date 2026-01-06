@@ -70,7 +70,8 @@ const HeroSection = () => {
                   href="https://share.google/5d1EU2i2b6WbjZLQc"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-white text-[11px] flex flex-row bg-blue-magenta p-1 px-4 rounded-xl w-fit items-center hover:scale-105 hover:shadow-lg transition-all duration-300 cursor-pointer">
+                  className="text-white text-[11px] flex flex-row bg-blue-magenta p-1 px-4 rounded-xl w-fit items-center hover:scale-105 hover:shadow-lg transition-all duration-300 cursor-pointer"
+                >
 
                   <MapPin className="w-5 h-5 text-white mr-2" />
                   Palm Springs, CA
@@ -79,7 +80,8 @@ const HeroSection = () => {
                   href="https://share.google/e8yhlNFFaLaN8z1d1"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-white text-[11px] flex flex-row bg-blue-magenta p-1 px-4 rounded-xl w-fit items-center hover:scale-105 hover:shadow-lg transition-all duration-300 cursor-pointer">
+                  className="text-white text-[11px] flex flex-row bg-blue-magenta p-1 px-4 rounded-xl w-fit items-center hover:scale-105 hover:shadow-lg transition-all duration-300 cursor-pointer"
+                >
 
                   <MapPin className="w-5 h-5 text-white mr-2" />
                   TwentyNine Palms
@@ -88,7 +90,8 @@ const HeroSection = () => {
                   href="https://maps.app.goo.gl/6wyxkwnGZ5g2ua1a7"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-white text-[11px] flex flex-row bg-blue-magenta p-1 px-4 rounded-xl w-fit items-center hover:scale-105 hover:shadow-lg transition-all duration-300 cursor-pointer">
+                  className="text-white text-[11px] flex flex-row bg-blue-magenta p-1 px-4 rounded-xl w-fit items-center hover:scale-105 hover:shadow-lg transition-all duration-300 cursor-pointer"
+                >
 
                   <MapPin className="w-5 h-5 text-white mr-2" />
                   Rancho Mirage
@@ -128,13 +131,15 @@ const HeroSection = () => {
               {/* Slider Controls */}
               <button
                 onClick={prevSlide}
-                className="absolute left-4 top-1/2 -translate-y-1/2 bg-white/95 hover:bg-white rounded-full p-3 shadow-xl transition-all duration-300 hover:scale-110 hover:shadow-2xl backdrop-blur-sm">
+                className="absolute left-4 top-1/2 -translate-y-1/2 bg-white/95 hover:bg-white rounded-full p-3 shadow-xl transition-all duration-300 hover:scale-110 hover:shadow-2xl backdrop-blur-sm"
+              >
 
                 <ChevronLeft className="w-5 h-5 text-indigo-600" />
               </button>
               <button
                 onClick={nextSlide}
-                className="absolute right-4 top-1/2 -translate-y-1/2 bg-white/95 hover:bg-white rounded-full p-3 shadow-xl transition-all duration-300 hover:scale-110 hover:shadow-2xl backdrop-blur-sm">
+                className="absolute right-4 top-1/2 -translate-y-1/2 bg-white/95 hover:bg-white rounded-full p-3 shadow-xl transition-all duration-300 hover:scale-110 hover:shadow-2xl backdrop-blur-sm"
+              >
 
                 <ChevronRight className="w-5 h-5 text-indigo-600" />
               </button>
@@ -168,40 +173,54 @@ const HeroSection = () => {
             <div className="w-full flex flex-col ">
               <div className="bg-gradient-to-br from-blue-magenta via-blue-magenta/70 to-blue-magenta rounded-3xl max-w-xl w-full ml-auto p-6 flex flex-col">
                 {/* Contact Form */}
-                <div className="bg-white/95 backdrop-blur-lg rounded-3xl w-full p-6 shadow-2xl border border-white/20">
+                <form method="post" action="#" autoComplete="on" className="bg-white/95 backdrop-blur-lg rounded-3xl w-full p-6 shadow-2xl border border-white/20">
                   <div className="flex justify-between items-center mb-4 lg:mb-6">
                     <h2 className="text-xl lg:text-2xl font-bold text-gray-900 flex items-center">
                       <Heart className="w-5 h-5 lg:w-6 lg:h-6 text-violet-600 mr-2" />
                       Get In Touch
                     </h2>
-                    <Link to="/contact">
-                      <button className="bg-gradient-to-r from-blue-magenta via-blue-magenta/70 to-blue-magenta text-white font-semibold py-2 px-4 lg:px-6 rounded-full transform hover:-translate-y-0.5 transition-all duration-300 text-sm lg:text-base hover:scale-105">
-                        Send
-                      </button>
-                    </Link>
+                    <button type="submit" className="bg-gradient-to-r from-blue-magenta via-blue-magenta/70 to-blue-magenta text-white font-semibold py-2 px-4 lg:px-6 rounded-full transform hover:-translate-y-0.5 transition-all duration-300 text-sm lg:text-base hover:scale-105">
+                      Send
+                    </button>
                   </div>
                   <div className="space-y-4 lg:space-y-5">
                     <div>
+                      <label htmlFor="hero-full-name" className="sr-only">Full Name</label>
                       <input
+                        id="hero-full-name"
+                        name="fullName"
                         type="text"
                         placeholder="Full Name"
+                        required
                         className="w-full px-4 lg:px-5 py-3 lg:py-4 border border-gray-200 rounded-2xl focus:ring-2 focus:ring-violet-500 focus:border-transparent outline-none transition-all duration-300 bg-white/90 backdrop-blur-sm hover:bg-white text-sm lg:text-base" />
 
                     </div>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                      <input
-                        type="email"
-                        placeholder="Email Address"
-                        className="w-full px-4 lg:px-5 py-3 lg:py-4 border border-gray-200 rounded-2xl focus:ring-2 focus:ring-violet-500 focus:border-transparent outline-none transition-all duration-300 bg-white/90 backdrop-blur-sm hover:bg-white text-sm lg:text-base" />
+                      <div>
+                        <label htmlFor="hero-email" className="sr-only">Email Address</label>
+                        <input
+                          id="hero-email"
+                          name="email"
+                          type="email"
+                          placeholder="Email Address"
+                          required
+                          className="w-full px-4 lg:px-5 py-3 lg:py-4 border border-gray-200 rounded-2xl focus:ring-2 focus:ring-violet-500 focus:border-transparent outline-none transition-all duration-300 bg-white/90 backdrop-blur-sm hover:bg-white text-sm lg:text-base" />
 
-                      <input
-                        type="tel"
-                        placeholder="Phone Number"
-                        className="w-full px-4 lg:px-5 py-3 lg:py-4 border border-gray-200 rounded-2xl focus:ring-2 focus:ring-violet-500 focus:border-transparent outline-none transition-all duration-300 bg-white/90 backdrop-blur-sm hover:bg-white text-sm lg:text-base" />
+                      </div>
+                      <div>
+                        <label htmlFor="hero-phone" className="sr-only">Phone Number</label>
+                        <input
+                          id="hero-phone"
+                          name="phone"
+                          type="tel"
+                          placeholder="Phone Number"
+                          className="w-full px-4 lg:px-5 py-3 lg:py-4 border border-gray-200 rounded-2xl focus:ring-2 focus:ring-violet-500 focus:border-transparent outline-none transition-all duration-300 bg-white/90 backdrop-blur-sm hover:bg-white text-sm lg:text-base" />
 
+                      </div>
                     </div>
                     <div>
-                      <select className="w-full px-4 lg:px-5 py-3 lg:py-4 border border-gray-200 rounded-2xl focus:ring-2 focus:ring-violet-500 focus:border-transparent outline-none transition-all duration-300 bg-white/90 backdrop-blur-sm hover:bg-white text-sm lg:text-base">
+                      <label htmlFor="hero-condition" className="sr-only">Condition</label>
+                      <select id="hero-condition" name="condition" className="w-full px-4 lg:px-5 py-3 lg:py-4 border border-gray-200 rounded-2xl focus:ring-2 focus:ring-violet-500 focus:border-transparent outline-none transition-all duration-300 bg-white/90 backdrop-blur-sm hover:bg-white text-sm lg:text-base">
                         <option value="">Select Condition</option>
                         {conditions.map((condition, index) =>
                         <option key={index} value={condition}>
@@ -211,14 +230,18 @@ const HeroSection = () => {
                       </select>
                     </div>
                     <div>
+                      <label htmlFor="hero-message" className="sr-only">Message</label>
                       <textarea
+                        id="hero-message"
+                        name="message"
                         placeholder="Tell us about your situation and how we can help. Our mental health counselors in Palm Springs, CA are here to support you..."
+                        required
                         rows={4}
                         className="w-full px-4 lg:px-5 py-3 lg:py-4 border border-gray-200 rounded-2xl focus:ring-2 focus:ring-violet-500 focus:border-transparent outline-none transition-all duration-300 resize-none bg-white/90 backdrop-blur-sm hover:bg-white text-sm lg:text-base">
                       </textarea>
                     </div>
                   </div>
-                </div>
+                </form>
                 {/* Stats Section */}
                 <div className="w-full mt-4 space-y-4 lg:space-y-6">
                   <div className="grid grid-cols-2 gap-4 lg:gap-6">
