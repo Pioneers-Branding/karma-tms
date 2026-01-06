@@ -243,7 +243,8 @@ const VAVeteransPTSDTMSBlogPostPage = () => {
                 size="lg"
                 variant="outline"
                 className="border-white text-white hover:bg-white/10">
-                <Link to="/contact">Call (760) 449-8185</Link>
+
+                
               </Button>
             </div>
           </div>
@@ -809,6 +810,7 @@ const VAVeteransPTSDTMSBlogPostPage = () => {
                     size="lg"
                     variant="outline"
                     className="border-white text-white hover:bg-white/10">
+
                     <Link to="/veterans">Learn About Veterans Program</Link>
                   </Button>
                 </div>
@@ -834,6 +836,7 @@ const VAVeteransPTSDTMSBlogPostPage = () => {
                       asChild
                       variant="ghost"
                       className="text-[#572670] p-0 h-auto hover:bg-transparent">
+
                         <Link to={post.link} className="inline-flex items-center gap-2">
                           Read More <ArrowRight className="w-4 h-4" />
                         </Link>
