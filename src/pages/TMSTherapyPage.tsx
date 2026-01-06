@@ -142,7 +142,7 @@ const TMSTherapyPage = () => {
 
       
       {/* Hero Section */}
-      <section className="pt-24 pb-16 px-4">
+      <section className="pt-24 bg-gradient-to-r from-purple-100 to-violet-100 pb-16 px-4">
         <div className="max-w-7xl flex flex-row mx-auto">
           <motion.div
             initial="hidden"
