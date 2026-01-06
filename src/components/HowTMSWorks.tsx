@@ -38,7 +38,7 @@ const HowTMSWorks = () => {
                 <strong>About 50% experience complete remission of symptoms</strong>
               </p>
               <p className="text-gray-600">
-                75% of patients show clinically meaningful improvement in their depression scores.
+                85% of patients show clinically meaningful improvement in their depression scores.
               </p>
             </CardContent>
           </Card>
