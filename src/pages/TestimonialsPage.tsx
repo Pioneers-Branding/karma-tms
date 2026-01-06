@@ -291,6 +291,7 @@ const TestimonialsPage = () => {
                 <p className="text-white/90 mb-6">
                   Based on {testimonials.length}+ verified patient reviews
                 </p>
+                <Link to="/contact">
                 <Button
                   variant="secondary"
                   className="bg-white text-[#572670] hover:bg-gray-100">
@@ -298,6 +299,7 @@ const TestimonialsPage = () => {
                   Schedule Your Free Consultation
                   <ChevronRight className="ml-2 h-4 w-4" />
                 </Button>
+                </Link>
               </div>
             </CardContent>
           </Card>
