@@ -58,7 +58,7 @@ const ConditionsSection = () => {
             Conditions We Treat for Mental Health in Palm Springs
           </h2>
           <p className="text-lg text-gray-600 leading-relaxed">
-            Our TMS therapy programs at our mental health facilities in palm springs are designed to treat various mental health conditions with personalized, evidence-based approaches delivered by expert mental health counselors in palm springs ca who deliver real results.
+            Our TMS therapy programs at our mental health facilities in Palm Springs are designed to treat various mental health conditions with personalized, evidence-based approaches delivered by expert mental health counselors in Palm Springs, CA who deliver real results.
           </p>
         </div>
 
