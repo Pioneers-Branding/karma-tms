@@ -76,7 +76,7 @@ const FooterSection = () => {
           <div className="space-y-6">
             <div className="flex items-center gap-3">
               <img
-                src="https://images.unsplash.com/photo-1696001470179-b333bfb74671?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MTg3MTl8MHwxfHNlYXJjaHwxfHxBJTIwbG9nbyUyMGltYWdlJTIwZm9yJTIwS2FybWElMjBUTVMlMkMlMjBhJTIwbGVhZGluZyUyMFRNUyUyMHRoZXJhcHklMjBwcm92aWRlciUyMGluJTIwUGFsbSUyMFNwcmluZ3MufGVufDB8fHx8MTc1OTIzNjY3Mnww&ixlib=rb-4.1.0&q=80&w=200$w=500"
+                src="https://karmatms.com/wp-content/uploads/2024/09/logo-1536x352.png"
                 alt="Karma TMS"
                 className="h-12 w-auto brightness-0 invert" />
 
