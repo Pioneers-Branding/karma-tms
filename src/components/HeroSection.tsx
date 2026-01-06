@@ -55,18 +55,33 @@ const HeroSection = () => {
           {/* Heading with Locations */}
           <div className="space-y-4 lg:space-y-6">
             <div className="flex flex-row gap-2">
-              <div className="flex flex-row bg-blue-magenta text-white p-2 px-4 rounded-3xl w-fit items-center">
+              <a 
+                href="https://maps.app.goo.gl/GMpLXnCToXK9c5Kk6" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="flex flex-row bg-blue-magenta text-white p-2 px-4 rounded-3xl w-fit items-center hover:scale-105 hover:shadow-lg transition-all duration-300 cursor-pointer"
+              >
                 <MapPin className="w-5 h-5 text-white mr-2" />
                 Palm Springs, CA
-              </div>
-              <div className="flex flex-row bg-blue-magenta text-white p-2 px-4 rounded-3xl w-fit items-center">
+              </a>
+              <a 
+                href="https://maps.app.goo.gl/39Ep5D1cGtLvPAsw7" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="flex flex-row bg-blue-magenta text-white p-2 px-4 rounded-3xl w-fit items-center hover:scale-105 hover:shadow-lg transition-all duration-300 cursor-pointer"
+              >
                 <MapPin className="w-5 h-5 text-white mr-2" />
                 TwentyNine Palms
-              </div>
-              <div className="flex flex-row bg-blue-magenta text-white p-2 px-4 rounded-3xl w-fit items-center">
+              </a>
+              <a 
+                href="https://maps.app.goo.gl/oKxXT5Jyhh8VoE3G9" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="flex flex-row bg-blue-magenta text-white p-2 px-4 rounded-3xl w-fit items-center hover:scale-105 hover:shadow-lg transition-all duration-300 cursor-pointer"
+              >
                 <MapPin className="w-5 h-5 text-white mr-2" />
                 Rancho Mirage
-              </div>
+              </a>
             </div>
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-5xl xl:text-6xl font-bold text-gray-900 leading-tight"> 
               Effective<span className="bg-gradient-to-r from-blue-magenta via-blue-magenta/70 to-blue-magenta bg-clip-text text-transparent">TMS Therapy </span> for Mental Health in Palm Springs
