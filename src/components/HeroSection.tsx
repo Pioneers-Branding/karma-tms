@@ -46,7 +46,7 @@ const HeroSection = () => {
 
   return (
     <div className=" bg-gradient-to-br from-violet-50 to-indigo-50 py-4 sm:py-6 lg:py-8 ">
-      <div className="container w-full">
+      <div className="max-w-[1500px] w-full">
         <div className="bg-white w-full rounded-3xl shadow-2xl overflow-hidden">
           <div className="grid lg:grid-cols-2 xl:grid-cols-5 min-h-[800px] lg:min-h-[900px]">
             
