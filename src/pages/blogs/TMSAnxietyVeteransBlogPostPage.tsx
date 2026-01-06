@@ -73,26 +73,25 @@ export default function TMSAnxietyVeteransBlogPostPage() {
   }];
 
 
-  const relatedPosts = [
-  {
-    title: 'Understanding PTSD in Veterans',
-    excerpt: 'Learn about PTSD signs, symptoms, and treatment paths for veterans.',
-    link: '/blogs/understanding-ptsd-veterans',
-    image: 'https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=800&auto=format'
-  },
-  {
-    title: 'VA Approves TMS for Veterans',
-    excerpt: 'Discover how to access TMS therapy through VA benefits.',
-    link: '/blogs/va-veterans-ptsd-tms',
-    image: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=800&auto=format'
-  },
+ const relatedPosts = [
   {
     title: 'TMS for Migraine Relief in Veterans',
-    excerpt: 'Learn how TMS helps veterans with migraines and comorbid conditions.',
+    excerpt: 'Learn how TMS helps veterans with migraines and comorbid conditions like PTSD and depression.',
     link: '/blogs/tms-migraine-veterans',
-    image: 'https://images.unsplash.com/photo-1559757175-0eb30cd8c063?w=800&auto=format'
+    image: 'https://res.cloudinary.com/de4kw1t2i/image/upload/v1763033673/7_lnxkrv.png'
+  },
+  {
+    title: 'TMS for Anxiety in Veterans',
+    excerpt: 'Discover how TMS helps veterans manage anxiety beyond medication.',
+    link: '/blogs/tms-anxiety-veterans',
+    image: 'https://res.cloudinary.com/de4kw1t2i/image/upload/v1763033666/6_rrkhgo.png'
+  },
+  {
+    title: 'Understanding PTSD in Veterans',
+    excerpt: 'Complete guide to PTSD signs, symptoms, and treatment paths including TMS therapy.',
+    link: '/blogs/understanding-ptsd-veterans',
+    image: 'https://res.cloudinary.com/de4kw1t2i/image/upload/v1763033666/5_kvtlku.png'
   }];
-
 
   const structuredData = {
     '@context': 'https://schema.org',
@@ -814,7 +813,7 @@ export default function TMSAnxietyVeteransBlogPostPage() {
                     <img
                     src={post.image}
                     alt={post.title}
-                    className="w-full h-48 object-cover" />
+                    className="w-full  object-cover" />
 
                     <CardContent className="p-6">
                       <h3 className="font-bold text-lg mb-2 hover:text-[#572670] transition-colors">
