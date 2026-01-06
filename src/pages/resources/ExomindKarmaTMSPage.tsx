@@ -145,53 +145,58 @@ const ExomindKarmaTMSPage = () => {
             </p>
           </div>
 
-          <Carousel className="w-full max-w-5xl mx-auto">
-            <CarouselContent>
-              {[
-              {
-                name: 'Gwyneth Paltrow',
-                title: 'Wellness Icon & Entrepreneur',
-                condition: 'Brain Fog & Burnout',
-                quote: 'Revolutionary approach to mental clarity and cognitive wellness',
-                videoPlaceholder: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=800&h=600&fit=crop'
-              },
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
+            {[
               {
                 name: 'Serena Williams',
                 title: 'Champion Athlete',
                 condition: 'Performance Optimization',
-                quote: 'Game-changing technology for mental resilience and focus',
-                videoPlaceholder: 'https://images.unsplash.com/photo-1587691592099-24045742c181?w=800&h=600&fit=crop'
+                videoUrl: 'https://play.gumlet.io/embed/694e80a6f1ad267a0668472d'
               },
               {
-                name: 'Wellness Leader',
-                title: 'Health Advocate',
-                condition: 'Perimenopausal Anxiety',
-                quote: 'Natural solution for hormonal mood changes and anxiety',
-                videoPlaceholder: 'https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=800&h=600&fit=crop'
-              }].
-              map((testimonial, index) =>
-              <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
-                  <Card className="h-full">
-                    <CardContent className="p-6">
-                      <div className="aspect-video bg-gradient-to-br from-purple-100 to-indigo-100 rounded-lg mb-4 flex items-center justify-center overflow-hidden">
-                        <img
-                        src={testimonial.videoPlaceholder}
-                        alt={testimonial.name}
-                        className="w-full h-full object-cover" />
-
-                      </div>
-                      <Badge className="mb-3">{testimonial.condition}</Badge>
-                      <h3 className="font-bold text-lg mb-1">{testimonial.name}</h3>
-                      <p className="text-sm text-gray-600 mb-3">{testimonial.title}</p>
-                      <p className="text-gray-700 italic">"{testimonial.quote}"</p>
-                    </CardContent>
-                  </Card>
-                </CarouselItem>
-              )}
-            </CarouselContent>
-            <CarouselPrevious className="hidden md:flex" />
-            <CarouselNext className="hidden md:flex" />
-          </Carousel>
+                name: 'Lil Jon',
+                title: 'Music Icon',
+                condition: 'Mental Wellness',
+                videoUrl: 'https://play.gumlet.io/embed/694e80a6f1ad267a06684727'
+              },
+              {
+                name: 'Gwyneth Paltrow',
+                title: 'Wellness Icon & Entrepreneur',
+                condition: 'Brain Fog & Burnout',
+                videoUrl: 'https://play.gumlet.io/embed/694e80a6f1ad267a06684727'
+              },
+              {
+                name: 'Ashlee Simpson',
+                title: 'Entertainment Star',
+                condition: 'Cognitive Enhancement',
+                videoUrl: 'https://play.gumlet.io/embed/694e80a6b122cbf1765d2e37'
+              }
+            ].map((celebrity, index) => (
+              <div key={index} className="flex flex-col">
+                <Card className="h-full flex flex-col">
+                  <CardContent className="p-4 flex-1 flex flex-col">
+                    {/* 9:16 Aspect Ratio Video Container */}
+                    <div className="relative w-full mb-4" style={{ aspectRatio: '9/16' }}>
+                      <iframe
+                        src={celebrity.videoUrl}
+                        loading="lazy"
+                        className="absolute top-0 left-0 w-full h-full rounded-lg"
+                        style={{ border: 0 }}
+                        allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture"
+                        allowFullScreen
+                        title={`${celebrity.name} - Exomind TMS`}
+                      />
+                    </div>
+                    <div className="flex-1 flex flex-col">
+                      <Badge className="mb-3 w-fit">{celebrity.condition}</Badge>
+                      <h3 className="font-bold text-lg mb-1">{celebrity.name}</h3>
+                      <p className="text-sm text-gray-600">{celebrity.title}</p>
+                    </div>
+                  </CardContent>
+                </Card>
+              </div>
+            ))}
+          </div>
 
           <div className="text-center mt-8">
             <p className="text-sm text-gray-600">
