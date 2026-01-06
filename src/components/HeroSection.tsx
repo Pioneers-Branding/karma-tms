@@ -58,7 +58,7 @@ const HeroSection = () => {
                 <div className="space-y-4 lg:space-y-6">
                   
                   <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-5xl xl:text-6xl font-bold text-gray-900 leading-tight">
-                    Advanced <span className="bg-gradient-to-r from-indigo-600 via-violet-600 to-purple-600 bg-clip-text text-transparent">Deep TMS</span> Therapy
+                    Advanced <span className="bg-gradient-to-r from-blue-magenta via-blue-magenta/70 to-blue-magenta bg-clip-text text-transparent">Deep TMS</span> Therapy
                   </h1>
                   <p className="text-base sm:text-lg lg:text-xl text-gray-700 leading-relaxed max-w-2xl">
                     Revolutionary FDA-approved treatment for depression, anxiety, OCD, and PTSD. Experience breakthrough results with our advanced Deep TMS technology at Karma TMS.
