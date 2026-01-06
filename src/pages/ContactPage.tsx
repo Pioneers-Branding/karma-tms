@@ -1,8 +1,11 @@
 
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { Phone, Mail, MapPin, Clock, Facebook, Instagram, MessageSquare, Calendar, ChevronRight, Send } from 'lucide-react';
 import Navigation from '@/components/Navigation';
 import FooterSection from '@/components/FooterSection';
+import SEO from '@/components/SEO';
+import StructuredData from '@/components/StructuredData';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -93,13 +96,54 @@ const ContactPage = () => {
 
   return (
     <div className="min-h-screen bg-white">
+      <SEO 
+        title="Contact KarmaTMS | TMS Therapy in Palm Springs | (760) 760-5675"
+        description="Contact KarmaTMS for depression treatment & mental health services in Palm Springs. Call (760) 760-5675. Multiple locations serving Southern California."
+        keywords="contact KarmaTMS, TMS therapy Palm Springs, mental health consultation, KarmaTMS locations, depression treatment contact"
+        canonical="/contact"
+      />
+      <StructuredData 
+        type="localBusiness"
+        locations={[
+          {
+            name: "Palm Springs",
+            address: {
+              streetAddress: "560 S. Paseo Dorotea Suite 4-B",
+              addressLocality: "Palm Springs",
+              addressRegion: "CA",
+              postalCode: "92264"
+            },
+            telephone: "+1-760-760-5675"
+          },
+          {
+            name: "Rancho Mirage",
+            address: {
+              streetAddress: "35400 Bob Hope Dr. Suite 206-B",
+              addressLocality: "Rancho Mirage",
+              addressRegion: "CA",
+              postalCode: "92270"
+            },
+            telephone: "+1-760-760-5675"
+          },
+          {
+            name: "Twentynine Palms",
+            address: {
+              streetAddress: "72724 29 Palms Hwy. Suite 107-B",
+              addressLocality: "Twentynine Palms",
+              addressRegion: "CA",
+              postalCode: "92277"
+            },
+            telephone: "+1-760-760-5675"
+          }
+        ]}
+      />
       <Navigation />
       
       {/* Hero Section */}
       <section className="pt-24 pb-8 bg-gradient-to-br from-[#572670] to-[#572670]/80">
         <div className="container mx-auto px-4 text-center">
           <h1 className="text-4xl lg:text-6xl font-bold text-white mb-4">
-            Contact Karma TMS
+            Contact KarmaTMS Mental Health Center
           </h1>
           <p className="text-xl text-white/90 max-w-3xl mx-auto">
             Get in touch with our team of mental health professionals
@@ -346,11 +390,32 @@ const ContactPage = () => {
         </div>
       </div>
 
+      {/* Quick Links Section */}
+      <section className="py-12 bg-white">
+        <div className="container mx-auto px-4">
+          <h2 className="text-2xl font-bold text-center mb-8">Learn More About KarmaTMS</h2>
+          <div className="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+            <Link to="/depression" className="p-6 bg-gray-50 rounded-lg text-center hover:shadow-lg transition-shadow">
+              <h3 className="font-bold text-lg text-blue-600 mb-2">Depression Treatment</h3>
+              <p className="text-sm text-gray-600">Learn about our TMS therapy for depression</p>
+            </Link>
+            <Link to="/locations" className="p-6 bg-gray-50 rounded-lg text-center hover:shadow-lg transition-shadow">
+              <h3 className="font-bold text-lg text-blue-600 mb-2">All Locations</h3>
+              <p className="text-sm text-gray-600">Find the KarmaTMS center nearest you</p>
+            </Link>
+            <Link to="/tms-quiz" className="p-6 bg-gray-50 rounded-lg text-center hover:shadow-lg transition-shadow">
+              <h3 className="font-bold text-lg text-blue-600 mb-2">TMS Assessment</h3>
+              <p className="text-sm text-gray-600">See if TMS therapy is right for you</p>
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* Map Section */}
       <section className="py-12 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-8">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">Find Us</h2>
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">Find KarmaTMS in Palm Springs</h2>
             <p className="text-gray-600">Conveniently located in the heart of Palm Springs</p>
           </div>
 

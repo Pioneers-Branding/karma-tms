@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
@@ -8,19 +9,19 @@ import { MapPin, Mail, Phone, Calendar, Award, Stethoscope, User, ChevronRight }
 
 export interface TeamMember {
   id: string;
+  slug: string;
   name: string;
   title: string;
-  specialization: string;
-  category: 'medical' | 'administrative';
+  credentials: string;
+  role: string;
+  category: 'doctor' | 'staff' | 'provider';
   image: string;
+  specialties: string[];
   bio: string;
-  credentials: string[];
-  experience: string;
-  education: string;
-  languages: string[];
-  location: string;
-  email?: string;
-  phone?: string;
+  education?: string[];
+  certifications?: string[];
+  experience?: string;
+  approach?: string;
 }
 
 interface TeamMemberCardProps {
@@ -32,13 +33,15 @@ const TeamMemberCard: React.FC<TeamMemberCardProps> = ({ member, index }) => {
   const [isHovered, setIsHovered] = useState(false);
 
   const categoryColors = {
-    medical: 'from-[#572670] to-purple-600',
-    administrative: 'from-teal-500 to-cyan-600'
+    doctor: 'from-[#572670] to-purple-600',
+    provider: 'from-purple-500 to-pink-600',
+    staff: 'from-teal-500 to-cyan-600'
   };
 
   const categoryIcons = {
-    medical: Stethoscope,
-    administrative: User
+    doctor: Stethoscope,
+    provider: Stethoscope,
+    staff: User
   };
 
   const Icon = categoryIcons[member.category];
@@ -91,10 +94,10 @@ const TeamMemberCard: React.FC<TeamMemberCardProps> = ({ member, index }) => {
 
           {/* Content */}
           <div className="p-6 space-y-4">
-            {/* Specialization Badge */}
+            {/* Role Badge */}
             <Badge className={`w-full justify-center bg-gradient-to-r ${categoryColors[member.category]} 
                               text-white hover:opacity-90 transition-opacity`}>
-              {member.specialization}
+              {member.role}
             </Badge>
 
             {/* Bio Preview */}
@@ -106,26 +109,34 @@ const TeamMemberCard: React.FC<TeamMemberCardProps> = ({ member, index }) => {
             <div className="space-y-2 pt-2 border-t border-gray-100">
               <div className="flex items-center gap-2 text-xs text-gray-500">
                 <Calendar size={14} />
-                <span>{member.experience}</span>
+                <span>{member.experience || 'Experienced Professional'}</span>
               </div>
               <div className="flex items-center gap-2 text-xs text-gray-500">
                 <MapPin size={14} />
-                <span>{member.location}</span>
+                <span>Palm Springs, CA</span>
               </div>
             </div>
 
-            {/* Credentials Preview */}
+            {/* Specialties Preview */}
             <div className="flex flex-wrap gap-1 pt-2">
-              {member.credentials.slice(0, 2).map((credential, idx) =>
-              <Badge key={idx} variant="outline" className="text-xs border-[#572670]/30 text-[#572670]">
-                  {credential}
+              {member.specialties && member.specialties.length > 0 ? (
+                <>
+                  {member.specialties.slice(0, 2).map((specialty, idx) => (
+                    <Badge key={idx} variant="outline" className="text-xs border-[#572670]/30 text-[#572670]">
+                      {specialty}
+                    </Badge>
+                  ))}
+                  {member.specialties.length > 2 && (
+                    <Badge variant="outline" className="text-xs border-gray-300 text-gray-500">
+                      +{member.specialties.length - 2} more
+                    </Badge>
+                  )}
+                </>
+              ) : (
+                <Badge variant="outline" className="text-xs border-[#572670]/30 text-[#572670]">
+                  {member.credentials}
                 </Badge>
               )}
-              {member.credentials.length > 2 &&
-              <Badge variant="outline" className="text-xs border-gray-300 text-gray-500">
-                  +{member.credentials.length - 2} more
-                </Badge>
-              }
             </div>
 
             {/* View Profile Button */}
@@ -163,18 +174,21 @@ const TeamMemberCard: React.FC<TeamMemberCardProps> = ({ member, index }) => {
                   </div>
 
                   <div className="grid md:grid-cols-2 gap-6">
-                    {/* Credentials */}
+                    {/* Credentials/Certifications */}
                     <div>
                       <h4 className="font-semibold text-gray-900 mb-3 flex items-center gap-2">
                         <Award size={18} className="text-[#572670]" />
                         Credentials
                       </h4>
                       <div className="space-y-2">
-                        {member.credentials.map((credential, idx) =>
-                        <Badge key={idx} variant="outline" className="mr-2 mb-2 border-[#572670]/30 text-[#572670]">
-                            {credential}
+                        <Badge variant="outline" className="mr-2 mb-2 border-[#572670]/30 text-[#572670]">
+                          {member.credentials}
+                        </Badge>
+                        {member.certifications && member.certifications.map((cert, idx) => (
+                          <Badge key={idx} variant="outline" className="mr-2 mb-2 border-[#572670]/30 text-[#572670]">
+                            {cert}
                           </Badge>
-                        )}
+                        ))}
                       </div>
                     </div>
 
@@ -184,22 +198,30 @@ const TeamMemberCard: React.FC<TeamMemberCardProps> = ({ member, index }) => {
                         <Calendar size={18} className="text-[#572670]" />
                         Experience
                       </h4>
-                      <p className="text-gray-700">{member.experience}</p>
+                      <p className="text-gray-700">{member.experience || 'Contact for details'}</p>
                     </div>
 
                     {/* Education */}
                     <div>
                       <h4 className="font-semibold text-gray-900 mb-3">Education</h4>
-                      <p className="text-gray-700">{member.education}</p>
+                      {member.education && member.education.length > 0 ? (
+                        <ul className="space-y-1 text-sm text-gray-700">
+                          {member.education.map((edu, idx) => (
+                            <li key={idx}>• {edu}</li>
+                          ))}
+                        </ul>
+                      ) : (
+                        <p className="text-gray-700 text-sm">Contact for details</p>
+                      )}
                     </div>
 
-                    {/* Languages */}
+                    {/* Specialties */}
                     <div>
-                      <h4 className="font-semibold text-gray-900 mb-3">Languages</h4>
+                      <h4 className="font-semibold text-gray-900 mb-3">Specialties</h4>
                       <div className="flex flex-wrap gap-1">
-                        {member.languages.map((language, idx) =>
+                        {member.specialties && member.specialties.map((specialty, idx) =>
                         <Badge key={idx} variant="secondary" className="text-xs bg-gray-100">
-                            {language}
+                            {specialty}
                           </Badge>
                         )}
                       </div>
@@ -212,24 +234,20 @@ const TeamMemberCard: React.FC<TeamMemberCardProps> = ({ member, index }) => {
                     <div className="space-y-2">
                       <div className="flex items-center gap-3 text-sm text-gray-600">
                         <MapPin size={16} className="text-[#572670]" />
-                        <span>{member.location}</span>
+                        <span>Palm Springs, CA</span>
                       </div>
-                      {member.email &&
                       <div className="flex items-center gap-3 text-sm text-gray-600">
-                          <Mail size={16} className="text-[#572670]" />
-                          <a href={`mailto:${member.email}`} className="hover:text-[#572670] transition-colors">
-                            {member.email}
-                          </a>
-                        </div>
-                      }
-                      {member.phone &&
+                        <Mail size={16} className="text-[#572670]" />
+                        <a href="mailto:info@karmatms.com" className="hover:text-[#572670] transition-colors">
+                          info@karmatms.com
+                        </a>
+                      </div>
                       <div className="flex items-center gap-3 text-sm text-gray-600">
-                          <Phone size={16} className="text-[#572670]" />
-                          <a href={`tel:${member.phone}`} className="hover:text-[#572670] transition-colors">
-                            {member.phone}
-                          </a>
-                        </div>
-                      }
+                        <Phone size={16} className="text-[#572670]" />
+                        <a href="tel:+17603220080" className="hover:text-[#572670] transition-colors">
+                          (760) 322-0080
+                        </a>
+                      </div>
                     </div>
                   </div>
 
@@ -240,14 +258,12 @@ const TeamMemberCard: React.FC<TeamMemberCardProps> = ({ member, index }) => {
                       onClick={() => window.open('/book', '_self')}>
                       Book Appointment
                     </Button>
-                    {member.email &&
                     <Button
                       variant="outline"
                       className="border-[#572670] text-[#572670] hover:bg-[#572670]/10"
-                      onClick={() => window.open(`mailto:${member.email}`, '_self')}>
-                        <Mail className="h-4 w-4" />
-                      </Button>
-                    }
+                      onClick={() => window.open('mailto:info@karmatms.com', '_self')}>
+                      <Mail className="h-4 w-4" />
+                    </Button>
                   </div>
                 </div>
               </DialogContent>

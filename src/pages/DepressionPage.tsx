@@ -5,11 +5,28 @@ import { Badge } from '@/components/ui/badge';
 import { Link } from 'react-router-dom';
 import Navigation from '@/components/Navigation';
 import FooterSection from '@/components/FooterSection';
+import SEO from '@/components/SEO';
+import StructuredData from '@/components/StructuredData';
 import { Brain, Heart, CheckCircle, ArrowRight, Calendar, Shield, Award, Users } from 'lucide-react';
 
 const DepressionPage = () => {
   return (
     <div className="min-h-screen">
+      <SEO 
+        title="TMS Therapy for Depression Treatment | KarmaTMS Palm Springs"
+        description="FDA-approved TMS therapy for treatment-resistant depression. 60-70% success rate with KarmaTMS. Non-invasive depression treatment in Palm Springs. Call now."
+        keywords="TMS therapy depression, depression treatment Palm Springs, treatment-resistant depression, KarmaTMS depression, transcranial magnetic stimulation depression"
+        canonical="/depression"
+        ogImage="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/e3bc971e-e2ab-4334-ac23-0b9876309934.webp"
+      />
+      <StructuredData 
+        type="breadcrumb"
+        breadcrumbs={[
+          { name: "Home", url: "/" },
+          { name: "Conditions", url: "/conditions" },
+          { name: "Depression Treatment", url: "/depression" }
+        ]}
+      />
       <Navigation />
       
       {/* Hero Section */}
@@ -19,7 +36,7 @@ const DepressionPage = () => {
             <div>
               <Badge className="bg-white/20 text-white mb-4">Depression Treatment</Badge>
               <h1 className="text-4xl lg:text-5xl font-bold mb-6">
-                TMS Therapy for Depression
+                KarmaTMS Therapy for Depression Treatment
               </h1>
               <p className="text-xl text-white/90 mb-8">
                 FDA-approved, non-invasive treatment that offers new hope for those with treatment-resistant depression.
@@ -39,7 +56,7 @@ const DepressionPage = () => {
             <div className="relative">
               <img
                 src="https://images.unsplash.com/photo-1590564310808-f93b5f8d662d?q=80&w=800"
-                alt="Depression therapy session"
+                alt="KarmaTMS depression therapy session with TMS therapy equipment for treatment-resistant depression"
                 className="rounded-lg shadow-2xl" />
 
             </div>
@@ -384,6 +401,31 @@ const DepressionPage = () => {
                 </Button>
               </Link>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Internal Links Section */}
+      <section className="py-12 bg-gray-50">
+        <div className="max-w-6xl mx-auto px-4">
+          <h2 className="text-2xl font-bold text-center mb-8">Explore More KarmaTMS Services</h2>
+          <div className="grid md:grid-cols-4 gap-4">
+            <Link to="/anxiety" className="p-4 bg-white rounded-lg shadow hover:shadow-lg transition-shadow">
+              <h3 className="font-semibold text-blue-600 mb-2">Anxiety Treatment</h3>
+              <p className="text-sm text-gray-600">TMS therapy for anxiety disorders</p>
+            </Link>
+            <Link to="/conditions" className="p-4 bg-white rounded-lg shadow hover:shadow-lg transition-shadow">
+              <h3 className="font-semibold text-blue-600 mb-2">All Conditions</h3>
+              <p className="text-sm text-gray-600">View all mental health conditions we treat</p>
+            </Link>
+            <Link to="/palm-springs" className="p-4 bg-white rounded-lg shadow hover:shadow-lg transition-shadow">
+              <h3 className="font-semibold text-blue-600 mb-2">Palm Springs Location</h3>
+              <p className="text-sm text-gray-600">Visit our Coachella Valley center</p>
+            </Link>
+            <Link to="/contact" className="p-4 bg-white rounded-lg shadow hover:shadow-lg transition-shadow">
+              <h3 className="font-semibold text-blue-600 mb-2">Contact Us</h3>
+              <p className="text-sm text-gray-600">Schedule your consultation today</p>
+            </Link>
           </div>
         </div>
       </section>

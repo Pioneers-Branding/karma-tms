@@ -50,7 +50,8 @@ const TeamPage: React.FC = () => {
             <TeamMemberCard
               key={member.id}
               member={member}
-              index={index} />
+              index={index}
+              slug={member.slug} />
 
             )}
           </motion.div>

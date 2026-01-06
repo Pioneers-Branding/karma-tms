@@ -9,10 +9,19 @@ import TreatmentProcessSection from '@/components/TreatmentProcessSection';
 import LocationContactSection from '@/components/LocationContactSection';
 import QuickAccessSection from '@/components/QuickAccessSection';
 import FooterSection from '@/components/FooterSection';
+import SEO from '@/components/SEO';
+import StructuredData from '@/components/StructuredData';
 
 const HomePage = () => {
   return (
     <div className="min-h-screen">
+      <SEO 
+        title="KarmaTMS | TMS Therapy for Depression & Mental Health | Palm Springs, CA"
+        description="Leading TMS therapy center in Palm Springs. FDA-approved depression treatment, anxiety therapy & mental health services. 85% success rate. Call (760) 760-5675."
+        keywords="KarmaTMS, Karma mental health, TMS therapy Palm Springs, depression treatment California, anxiety treatment, mental health Palm Springs, transcranial magnetic stimulation"
+        canonical="/"
+      />
+      <StructuredData type="organization" />
       <Navigation />
       {/* Hero - Dark background with images */}
       <HeroSection />

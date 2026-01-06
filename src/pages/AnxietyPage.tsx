@@ -5,11 +5,28 @@ import { Badge } from '@/components/ui/badge';
 import { Link } from 'react-router-dom';
 import Navigation from '@/components/Navigation';
 import FooterSection from '@/components/FooterSection';
+import SEO from '@/components/SEO';
+import StructuredData from '@/components/StructuredData';
 import { Brain, Shield, CheckCircle, ArrowRight, Calendar, Heart, Award, Zap } from 'lucide-react';
 
 const AnxietyPage = () => {
   return (
     <div className="min-h-screen">
+      <SEO 
+        title="TMS Therapy for Anxiety Disorders | KarmaTMS Mental Health Treatment"
+        description="Effective TMS therapy for anxiety disorders. Karma mental health specialists treat GAD, panic disorder, and social anxiety. Non-invasive treatment in Palm Springs."
+        keywords="TMS therapy anxiety, anxiety treatment Palm Springs, KarmaTMS anxiety, generalized anxiety disorder treatment, panic disorder therapy, social anxiety treatment"
+        canonical="/anxiety"
+        ogImage="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/e3bc971e-e2ab-4334-ac23-0b9876309934.webp"
+      />
+      <StructuredData 
+        type="breadcrumb"
+        breadcrumbs={[
+          { name: "Home", url: "/" },
+          { name: "Conditions", url: "/conditions" },
+          { name: "Anxiety Treatment", url: "/anxiety" }
+        ]}
+      />
       <Navigation />
       
       {/* Hero Section */}
@@ -19,7 +36,7 @@ const AnxietyPage = () => {
             <div>
               <Badge className="bg-white/20 text-white mb-4">Anxiety Treatment</Badge>
               <h1 className="text-4xl lg:text-5xl font-bold mb-6">
-                TMS Therapy for Anxiety Disorders
+                KarmaTMS Therapy for Anxiety Disorders
               </h1>
               <p className="text-xl text-white/90 mb-8">
                 Innovative, non-invasive treatment that targets the root causes of anxiety in the brain, 
@@ -40,7 +57,7 @@ const AnxietyPage = () => {
             <div className="relative">
               <img
                 src="https://images.unsplash.com/photo-1740645581682-bc1e8e37b0f3?q=80&w=800"
-                alt="Anxiety therapy and treatment"
+                alt="KarmaTMS anxiety therapy and treatment with advanced TMS technology"
                 className="rounded-lg shadow-2xl" />
 
             </div>
@@ -387,6 +404,31 @@ const AnxietyPage = () => {
                 </Button>
               </Link>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Internal Links Section */}
+      <section className="py-12 bg-white">
+        <div className="max-w-6xl mx-auto px-4">
+          <h2 className="text-2xl font-bold text-center mb-8">Related Karma Mental Health Services</h2>
+          <div className="grid md:grid-cols-4 gap-4">
+            <Link to="/depression" className="p-4 bg-gray-50 rounded-lg shadow hover:shadow-lg transition-shadow">
+              <h3 className="font-semibold text-blue-600 mb-2">Depression Treatment</h3>
+              <p className="text-sm text-gray-600">TMS therapy for major depression</p>
+            </Link>
+            <Link to="/conditions/ptsd" className="p-4 bg-gray-50 rounded-lg shadow hover:shadow-lg transition-shadow">
+              <h3 className="font-semibold text-blue-600 mb-2">PTSD Treatment</h3>
+              <p className="text-sm text-gray-600">Specialized care for trauma</p>
+            </Link>
+            <Link to="/29-palms" className="p-4 bg-gray-50 rounded-lg shadow hover:shadow-lg transition-shadow">
+              <h3 className="font-semibold text-blue-600 mb-2">Twentynine Palms</h3>
+              <p className="text-sm text-gray-600">Serving military families</p>
+            </Link>
+            <Link to="/veterans" className="p-4 bg-gray-50 rounded-lg shadow hover:shadow-lg transition-shadow">
+              <h3 className="font-semibold text-blue-600 mb-2">Veterans Services</h3>
+              <p className="text-sm text-gray-600">Specialized veteran care</p>
+            </Link>
           </div>
         </div>
       </section>

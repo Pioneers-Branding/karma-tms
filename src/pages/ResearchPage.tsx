@@ -173,24 +173,35 @@ const ResearchPage = () => {
             </p>
           </div>
 
-          {/* PubMed Embed */}
+          {/* PubMed Link */}
           <Card className="mb-12 overflow-hidden">
             <CardHeader className="bg-[#572670] text-white">
               <CardTitle className="flex items-center gap-2">
                 <Globe className="h-5 w-5" />
-                Live PubMed Research Feed
+                PubMed Research Database
               </CardTitle>
             </CardHeader>
-            <CardContent className="p-0">
-              <div className="h-96 bg-gray-50 flex items-center justify-center">
-                <iframe
-                  src="https://pubmed.ncbi.nlm.nih.gov/?"
-                  width="100%"
-                  height="384"
-                  frameBorder="0"
-                  className="w-full h-full"
-                  title="PubMed Research Database" />
-
+            <CardContent className="p-6">
+              <div className="text-center space-y-4">
+                <p className="text-gray-600">
+                  Access thousands of peer-reviewed studies on TMS therapy and mental health treatment through PubMed, 
+                  the National Library of Medicine's database of biomedical literature.
+                </p>
+                <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                  <Button
+                    className="bg-[#572670] hover:bg-[#572670]/90"
+                    onClick={() => window.open('https://pubmed.ncbi.nlm.nih.gov/?term=transcranial+magnetic+stimulation', '_blank')}>
+                    <Search className="mr-2 h-4 w-4" />
+                    Search TMS Research
+                  </Button>
+                  <Button
+                    variant="outline"
+                    className="border-[#572670] text-[#572670] hover:bg-[#572670]/10"
+                    onClick={() => window.open('https://pubmed.ncbi.nlm.nih.gov/?term=depression+treatment', '_blank')}>
+                    <Search className="mr-2 h-4 w-4" />
+                    Search Depression Treatment
+                  </Button>
+                </div>
               </div>
             </CardContent>
           </Card>
