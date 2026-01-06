@@ -114,21 +114,21 @@ export const teamMembers: TeamMember[] = [
   location: 'Palm Springs, CA',
   email: 'jsmith@karmatms.com'
 },
-{
-  id: 'charles-vigilia',
-  name: 'Charles Vigilia',
-  title: 'TMS Neurotechnologist',
-  specialization: 'TMS Technology & Patient Care',
-  category: 'administrative',
-  image: 'https://res.cloudinary.com/de4kw1t2i/image/upload/v1759237096/Charles_dcoc1o.jpg', // drcharles
-  bio: 'Charles Vigilia specializes in TMS therapy delivery and patient support throughout treatment. His technical expertise and compassionate care approach ensure patients receive optimal TMS treatments in a comfortable environment.',
-  credentials: ['TMS Technician Certified', 'Neurostimulation Specialist', 'Patient Care Certified'],
-  experience: '5+ years in TMS Technology',
-  education: 'Desert Regional Medical Center Training Program',
-  languages: ['English', 'Spanish'],
-  location: 'Palm Springs, CA',
-  email: 'cvigilia@karmatms.com'
-},
+// {
+//   id: 'charles-vigilia',
+//   name: 'Charles Vigilia',
+//   title: 'TMS Neurotechnologist',
+//   specialization: 'TMS Technology & Patient Care',
+//   category: 'administrative',
+//   image: 'https://res.cloudinary.com/de4kw1t2i/image/upload/v1759237096/Charles_dcoc1o.jpg', // drcharles
+//   bio: 'Charles Vigilia specializes in TMS therapy delivery and patient support throughout treatment. His technical expertise and compassionate care approach ensure patients receive optimal TMS treatments in a comfortable environment.',
+//   credentials: ['TMS Technician Certified', 'Neurostimulation Specialist', 'Patient Care Certified'],
+//   experience: '5+ years in TMS Technology',
+//   education: 'Desert Regional Medical Center Training Program',
+//   languages: ['English', 'Spanish'],
+//   location: 'Palm Springs, CA',
+//   email: 'cvigilia@karmatms.com'
+// },
 {
   id: 'charles',
   name: 'Charles Vigilia',
