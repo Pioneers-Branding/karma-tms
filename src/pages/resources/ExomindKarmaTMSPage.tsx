@@ -258,7 +258,7 @@ const ExomindKarmaTMSPage = () => {
               <h3 className="text-2xl font-bold text-gray-900 mb-6">Clinical Outcomes</h3>
               <Card>
                 <CardContent className="p-6">
-                  <div className="space-y-6">
+                  <div className="space-y-4">
                     <div className="text-center pb-6 border-b">
                       <div className="text-5xl font-bold text-purple-600 mb-2">90%</div>
                       <div className="text-sm text-gray-600">Improved Mental Well-Being</div>
