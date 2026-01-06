@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ChevronLeft, ChevronRight, Pin, Star, Users, Award, TrendingUp, Brain, Shield, Clock, Heart } from 'lucide-react';
+import { ChevronLeft, ChevronRight, MapPin, Star, Users, Award, TrendingUp, Brain, Shield, Clock, Heart } from 'lucide-react';
 
 const HeroSection = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -56,8 +56,8 @@ const HeroSection = () => {
                 
                 {/* Heading */}
                 <div className="space-y-4 lg:space-y-6">
-                  <div className="bg-blue-magenta/50 p-2">
-                  <MapPin className="w-5 h-5 text-violet-500" /> Palm Springs , CA
+                  <div className="flex flex-row bg-blue-magenta/50 p-2">
+                  <MapPin className="w-5 h-5 text-violet-500" />Palm Springs , CA
                   </div>
 
                   <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-5xl xl:text-6xl font-bold text-gray-900 leading-tight">
