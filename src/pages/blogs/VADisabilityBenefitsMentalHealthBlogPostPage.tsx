@@ -79,7 +79,7 @@ const VADisabilityBenefitsMentalHealthBlogPostPage = () => {
   },
   {
     question: 'How much does VA pay for depression?',
-    answer: 'VA compensation for depression depends on your disability rating percentage. As of 2024, monthly payments range from $171.23 for a 10% rating to $3,737.85 for a 100% rating. Most veterans with depression receive ratings between 30% ($524.31/month) and 70% ($1,716.28/month), depending on severity. Additional compensation may be available for dependents.'
+    answer: 'VA compensation for depression depends on your disability rating percentage. As of 2025, monthly payments range from $171.23 for a 10% rating to $3,737.85 for a 100% rating. Most veterans with depression receive ratings between 30% ($524.31/month) and 70% ($1,716.28/month), depending on severity. Additional compensation may be available for dependents.'
   },
   {
     question: 'Does the VA give disability for depression?',
@@ -139,8 +139,8 @@ const VADisabilityBenefitsMentalHealthBlogPostPage = () => {
         url: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/ebadb369-a58d-421c-b937-24f900be5867.png'
       }
     },
-    datePublished: '2024-09-29',
-    dateModified: '2024-09-29',
+    datePublished: '2025-09-29',
+    dateModified: '2025-09-29',
     mainEntityOfPage: {
       '@type': 'WebPage',
       '@id': 'https://karmatms.com/blog/va-disability-benefits-depression-anxiety-ptsd'
@@ -218,7 +218,7 @@ const VADisabilityBenefitsMentalHealthBlogPostPage = () => {
             <div className="flex flex-wrap justify-center gap-4 mb-6 text-sm">
               <span className="flex items-center gap-1 bg-white/10 px-3 py-1 rounded-full backdrop-blur-sm">
                 <Calendar className="w-4 h-4" />
-                September 29, 2024
+                September 29, 2025
               </span>
               <span className="flex items-center gap-1 bg-white/10 px-3 py-1 rounded-full backdrop-blur-sm">
                 <Clock className="w-4 h-4" />
@@ -357,7 +357,7 @@ const VADisabilityBenefitsMentalHealthBlogPostPage = () => {
                 Understanding <strong>how much does VA pay for depression</strong> requires knowledge of the VA rating system. Mental health conditions are rated under the General Rating Formula for Mental Disorders, with ratings at 0%, 10%, 30%, 50%, 70%, or 100%.
               </p>
 
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">2024 VA Disability Payment Rates</h3>
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">2025 VA Disability Payment Rates</h3>
 
               <div className="overflow-x-auto mb-6">
                 <table className="w-full border-collapse">
@@ -365,7 +365,7 @@ const VADisabilityBenefitsMentalHealthBlogPostPage = () => {
                     <tr className="bg-[#572670] text-white">
                       <th className="border border-gray-300 p-3 text-left">Rating</th>
                       <th className="border border-gray-300 p-3 text-left">Symptoms & Functional Impact</th>
-                      <th className="border border-gray-300 p-3 text-left">Monthly Payment (2024)</th>
+                      <th className="border border-gray-300 p-3 text-left">Monthly Payment (2025)</th>
                     </tr>
                   </thead>
                   <tbody>
