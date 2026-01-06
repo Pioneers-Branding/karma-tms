@@ -127,7 +127,7 @@ const App = () =>
           <Route path="/blog/four-as-stress-management" element={<StressManagementFourAsBlogPostPage />} />
           <Route path="/blog/is-tms-therapy-permanent" element={<IsTMSTherapyPermanentBlogPostPage />} />
           <Route path="/blog/is-tms-therapy-legitimate" element={<IsTMSTherapyLegitimateBlogPostPage />} />
-          <Route path="/blog/how-successful-is-tms-treatment" element={<HowSuccessfulTMSTreatmentBlogPostPage />} />
+          <Route path="/blog/how-successful-tms-treatment" element={<HowSuccessfulTMSTreatmentBlogPostPage />} />
           <Route path="/blog/screen-time-mental-health" element={<ScreenTimeMentalHealthBlogPostPage />} />
           <Route path="/blog/mindfulness-stress-management" element={<MindfulnessStressManagementBlogPostPage />} />
           <Route path="/blog/tech-mental-health-impact" element={<TechMentalHealthBlogPostPage />} />
