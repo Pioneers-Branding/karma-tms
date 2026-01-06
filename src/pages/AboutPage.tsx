@@ -134,7 +134,7 @@ const AboutPage = () => {
                     Our Services <ArrowRight className="ml-2 h-5 w-5" />
                   </Button>
                 </Link>
-                <Link to="/book">
+                <Link to="/contact">
                   <Button variant="outline" className="border-[#572670] text-[#572670] hover:bg-[#572670]/10 px-8 py-3 text-lg">
                     Schedule Consultation
                   </Button>
@@ -398,10 +398,12 @@ const AboutPage = () => {
               </div>
 
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="mailto:careers@karmatms.com">
                 <Button className="bg-[#572670] hover:bg-[#572670]/90 px-8 py-3 text-lg">
                   <Mail className="mr-2 h-5 w-5" />
                   View Open Positions
                 </Button>
+              </a>
                 <Link to="/interns">
                   <Button variant="outline" className="border-[#572670] text-[#572670] hover:bg-[#572670]/10 px-8 py-3 text-lg">
                     Internship Program
@@ -428,11 +430,13 @@ const AboutPage = () => {
               Contact us today to learn more about our innovative TMS treatments and how we can help you reclaim your life.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button className="bg-white text-[#572670] hover:bg-gray-100 px-8 py-3 text-lg">
-                <Phone className="mr-2 h-5 w-5" />
-                Call Now: 760-760-5675
-              </Button>
-              <Link to="/book">
+              <a href="tel:760-760-5675">
+                <Button className="bg-white text-[#572670] hover:bg-gray-100 px-8 py-3 text-lg">
+                  <Phone className="mr-2 h-5 w-5" />
+                  Call Now: 760-760-5675
+                </Button>
+              </a>
+              <Link to="/contact">
                 <Button variant="outline" className="border-white text-white hover:bg-white/10 px-8 py-3 text-lg bg-black text-white">
                   Schedule Consultation
                 </Button>

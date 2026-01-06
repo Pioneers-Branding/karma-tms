@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { ChevronLeft, ChevronRight, MapPin, Star, Users, Award, TrendingUp, Brain, Shield, Clock, Heart } from 'lucide-react';
 
 const HeroSection = () => {
@@ -134,12 +135,16 @@ const HeroSection = () => {
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 lg:gap-6">
-            <button className="flex-1 bg-gradient-to-r from-blue-magenta via-blue-magenta/70 to-blue-magenta text-white font-semibold py-2 lg:py-3 px-4 rounded-full  transform hover:-translate-y-1 transition-all duration-300 text-center text-base lg:text-lg hover:scale-[1.02]">
-              Take Mental Health Quiz
-            </button>
-            <button className="flex-1 bg-white border-2 border-blue-magenta text-blue-magenta font-semibold py-2 lg:py-3 px-4 rounded-full transform hover:-translate-y-1 transition-all duration-300 text-center text-base lg:text-lg hover:scale-[1.02] hover:border-blue-magenta/30 hover:text-white hover:bg-blue-magenta/70">
-              View Treatments
-            </button>
+            <Link to="/quiz" className="flex-1">
+              <button className="w-full bg-gradient-to-r from-blue-magenta via-blue-magenta/70 to-blue-magenta text-white font-semibold py-2 lg:py-3 px-4 rounded-full  transform hover:-translate-y-1 transition-all duration-300 text-center text-base lg:text-lg hover:scale-[1.02]">
+                Take Mental Health Quiz
+              </button>
+            </Link>
+            <Link to="/conditions" className="flex-1">
+              <button className="w-full bg-white border-2 border-blue-magenta text-blue-magenta font-semibold py-2 lg:py-3 px-4 rounded-full transform hover:-translate-y-1 transition-all duration-300 text-center text-base lg:text-lg hover:scale-[1.02] hover:border-blue-magenta/30 hover:text-white hover:bg-blue-magenta/70">
+                View Treatments
+              </button>
+            </Link>
           </div>
         </div>
       </div>
@@ -153,9 +158,11 @@ const HeroSection = () => {
               <Heart className="w-5 h-5 lg:w-6 lg:h-6 text-violet-600 mr-2" />
               Get In Touch
             </h2>
-            <button className="bg-gradient-to-r from-blue-magenta via-blue-magenta/70 to-blue-magenta text-white font-semibold py-2 px-4 lg:px-6 rounded-full  transform hover:-translate-y-0.5 transition-all duration-300 text-sm lg:text-base hover:scale-105">
-              Send
-            </button>
+            <Link to="/contact">
+              <button className="bg-gradient-to-r from-blue-magenta via-blue-magenta/70 to-blue-magenta text-white font-semibold py-2 px-4 lg:px-6 rounded-full  transform hover:-translate-y-0.5 transition-all duration-300 text-sm lg:text-base hover:scale-105">
+                Send
+              </button>
+            </Link>
           </div>
           <div className="space-y-4 lg:space-y-5">
             <div>

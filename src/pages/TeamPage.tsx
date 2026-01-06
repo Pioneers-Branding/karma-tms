@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 import Navigation from '@/components/Navigation';
 import FooterSection from '@/components/FooterSection';
 import TeamMemberCard from '@/components/TeamMemberCard';
@@ -109,17 +110,20 @@ const TeamPage: React.FC = () => {
               Schedule a consultation to discuss your treatment options with our experienced medical professionals.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button className="bg-[#572670] hover:bg-[#572670]/90 px-8 py-3 text-lg">
-                <Phone className="mr-2 h-5 w-5" />
-                Call Now: 760-760-5675
-              </Button>
-              <Button
-                variant="outline"
-                className="border-[#572670] text-[#572670] hover:bg-[#572670]/10 px-8 py-3 text-lg"
-                onClick={() => window.open('/book', '_self')}>
-                <Building2 className="mr-2 h-5 w-5" />
-                Book Consultation
-              </Button>
+              <a href="tel:760-760-5675">
+                <Button className="bg-[#572670] hover:bg-[#572670]/90 px-8 py-3 text-lg">
+                  <Phone className="mr-2 h-5 w-5" />
+                  Call Now: 760-760-5675
+                </Button>
+              </a>
+              <Link to="/contact">
+                <Button
+                  variant="outline"
+                  className="border-[#572670] text-[#572670] hover:bg-[#572670]/10 px-8 py-3 text-lg">
+                  <Building2 className="mr-2 h-5 w-5" />
+                  Book Consultation
+                </Button>
+              </Link>
             </div>
           </motion.div>
         </div>

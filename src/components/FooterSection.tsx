@@ -1,5 +1,6 @@
 import { Button } from '@/components/ui/button';
 import { Separator } from '@/components/ui/separator';
+import { Link } from 'react-router-dom';
 import { Phone, Mail, MapPin, ExternalLink, Calendar, Clock } from 'lucide-react';
 
 const FooterSection = () => {
@@ -143,9 +144,9 @@ const FooterSection = () => {
               <ul className="space-y-3">
                 {quickLinks.map((link, index) =>
                 <li key={index}>
-                    <a href={link.href} className="text-gray-300 hover:text-[#572670] transition-colors text-sm">
+                    <Link to={link.href} className="text-gray-300 hover:text-[#572670] transition-colors text-sm">
                       {link.name}
-                    </a>
+                    </Link>
                   </li>
                 )}
               </ul>
@@ -156,9 +157,9 @@ const FooterSection = () => {
               <ul className="space-y-2">
                 {services.map((link, index) =>
                 <li key={index}>
-                    <a href={link.href} className="text-sm text-gray-400 hover:text-[#572670] transition-colors">
+                    <Link to={link.href} className="text-sm text-gray-400 hover:text-[#572670] transition-colors">
                       {link.name}
-                    </a>
+                    </Link>
                   </li>
                 )}
               </ul>
@@ -172,9 +173,9 @@ const FooterSection = () => {
               <ul className="space-y-3">
                 {conditions.map((link, index) =>
                 <li key={index}>
-                    <a href={link.href} className="text-gray-300 hover:text-[#572670] transition-colors text-sm">
+                    <Link to={link.href} className="text-gray-300 hover:text-[#572670] transition-colors text-sm">
                       {link.name}
-                    </a>
+                    </Link>
                   </li>
                 )}
               </ul>
@@ -185,9 +186,9 @@ const FooterSection = () => {
               <ul className="space-y-2">
                 {resources.map((link, index) =>
                 <li key={index}>
-                    <a href={link.href} className="text-sm text-gray-400 hover:text-[#572670] transition-colors">
+                    <Link to={link.href} className="text-sm text-gray-400 hover:text-[#572670] transition-colors">
                       {link.name}
-                    </a>
+                    </Link>
                   </li>
                 )}
               </ul>
@@ -201,9 +202,9 @@ const FooterSection = () => {
               <ul className="space-y-3">
                 {businessLinks.map((link, index) =>
                 <li key={index}>
-                    <a href={link.href} className="text-gray-300 hover:text-[#572670] transition-colors text-sm">
+                    <Link to={link.href} className="text-gray-300 hover:text-[#572670] transition-colors text-sm">
                       {link.name}
-                    </a>
+                    </Link>
                   </li>
                 )}
               </ul>
@@ -214,9 +215,9 @@ const FooterSection = () => {
               <ul className="space-y-2">
                 {legalLinks.map((link, index) =>
                 <li key={index}>
-                    <a href={link.href} className="text-sm text-gray-400 hover:text-[#572670] transition-colors">
+                    <Link to={link.href} className="text-sm text-gray-400 hover:text-[#572670] transition-colors">
                       {link.name}
-                    </a>
+                    </Link>
                   </li>
                 )}
               </ul>
@@ -236,11 +237,11 @@ const FooterSection = () => {
               <span className="text-xs text-gray-500">
                 FDA-Approved Treatment | Board-Certified Psychiatrist
               </span>
-              <a
-                href="#"
+              <Link
+                to="/conditions"
                 className="text-xs text-gray-400 hover:text-[#572670] transition-colors flex items-center gap-1">
                 Site Map <ExternalLink className="h-3 w-3" />
-              </a>
+              </Link>
             </div>
           </div>
         </div>

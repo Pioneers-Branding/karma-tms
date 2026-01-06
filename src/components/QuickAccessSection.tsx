@@ -1,5 +1,6 @@
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
+import { Link } from 'react-router-dom';
 import { BookOpen, FileText, Brain, ExternalLink } from 'lucide-react';
 
 const QuickAccessSection = () => {
@@ -10,7 +11,8 @@ const QuickAccessSection = () => {
     description: "Access published research and clinical studies on TMS therapy effectiveness",
     cta: "View Research",
     highlight: "Peer-reviewed studies",
-    color: "bg-blue-500"
+    color: "bg-blue-500",
+    link: "/research"
   },
   {
     icon: FileText,
@@ -18,7 +20,8 @@ const QuickAccessSection = () => {
     description: "Treatment guides, FAQs, and preparation materials for your TMS journey",
     cta: "Download Guides",
     highlight: "Free resources",
-    color: "bg-green-500"
+    color: "bg-green-500",
+    link: "/faqs"
   },
   {
     icon: BookOpen,
@@ -26,7 +29,8 @@ const QuickAccessSection = () => {
     description: "Latest insights, tips, and news about mental health and TMS therapy",
     cta: "Read Articles",
     highlight: "Weekly updates",
-    color: "bg-purple-500"
+    color: "bg-purple-500",
+    link: "/blog"
   }];
 
   return (
@@ -61,13 +65,15 @@ const QuickAccessSection = () => {
                   <p className="text-gray-600 text-sm leading-relaxed">
                     {resource.description}
                   </p>
-                  <Button
-                    variant="outline"
-                    className="w-full border-[#572670] text-[#572670] hover:bg-[#572670] hover:text-white group-hover:shadow-md transition-all">
+                  <Link to={resource.link} className="w-full">
+                    <Button
+                      variant="outline"
+                      className="w-full border-[#572670] text-[#572670] hover:bg-[#572670] hover:text-white group-hover:shadow-md transition-all">
 
-                    {resource.cta}
-                    <ExternalLink className="h-4 w-4 ml-2" />
-                  </Button>
+                      {resource.cta}
+                      <ExternalLink className="h-4 w-4 ml-2" />
+                    </Button>
+                  </Link>
                 </CardContent>
               </Card>);
 

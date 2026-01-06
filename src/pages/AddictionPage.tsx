@@ -33,10 +33,12 @@ const AddictionPage = () => {
                 the neural circuits involved in cravings, decision-making, and impulse control.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <Button size="lg" className="bg-white text-[#572670] hover:bg-gray-100">
-                  <Calendar className="h-5 w-5 mr-2" />
-                  Schedule Consultation
-                </Button>
+                <Link to="/contact">
+                  <Button size="lg" className="bg-white text-[#572670] hover:bg-gray-100">
+                    <Calendar className="h-5 w-5 mr-2" />
+                    Schedule Consultation
+                  </Button>
+                </Link>
                 <Link to="/tms-quiz">
                   <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-[#572670] bg-black text-white">
                     Take Assessment
@@ -384,10 +386,12 @@ const AddictionPage = () => {
               can complement your recovery program and help strengthen your path to lasting wellness.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="bg-[#572670] hover:bg-[#572670]/90">
-                <Calendar className="h-5 w-5 mr-2" />
-                Schedule Your Consultation
-              </Button>
+              <Link to="/contact">
+                <Button size="lg" className="bg-[#572670] hover:bg-[#572670]/90">
+                  <Calendar className="h-5 w-5 mr-2" />
+                  Schedule Your Consultation
+                </Button>
+              </Link>
               <Link to="/tms-quiz">
                 <Button size="lg" variant="outline">
                   <ArrowRight className="h-5 w-5 mr-2" />
