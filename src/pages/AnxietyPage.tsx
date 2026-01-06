@@ -57,7 +57,7 @@ const AnxietyPage = () => {
             </div>
             <div className="relative">
               <img
-                src="https://res.cloudinary.com/de4kw1t2i/image/upload/v1761916023/Image_20251021_173517_696_amecqm.jpg"
+                src="https://res.cloudinary.com/de4kw1t2i/image/upload/v1763029483/Exomind_PIC_Unit_0095_ENUS100_ldgsng.jpg"
                 alt="KarmaTMS anxiety therapy and treatment with advanced TMS technology"
                 className="rounded-lg shadow-2xl h-full w-full max-h-[400px] object-cover" />
 
