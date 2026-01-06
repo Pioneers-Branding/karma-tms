@@ -242,7 +242,7 @@ const PsychiatristsBoostWellBeingThroughExpertCareForMentalHealth = () => {
                 <Link to="/contact">Schedule Consultation</Link>
               </Button>
               <Button asChild size="lg" variant="outline" className="border-white text-white hover:bg-white/10">
-                <Link to="/team">Meet Our Team</Link>
+                
               </Button>
             </div>
           </div>
@@ -510,7 +510,7 @@ const PsychiatristsBoostWellBeingThroughExpertCareForMentalHealth = () => {
                     <Link to="/contact">Schedule Consultation</Link>
                   </Button>
                   <Button asChild size="lg" variant="outline" className="border-white text-white hover:bg-white/10">
-                    <Link to="/team">Meet Our Team</Link>
+                    
                   </Button>
                 </div>
               </CardContent>
