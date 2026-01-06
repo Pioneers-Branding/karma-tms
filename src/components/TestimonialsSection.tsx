@@ -21,7 +21,7 @@ const TestimonialsSection = () => {
   {
     name: "Thomas M.",
     location: "Desert Hot Springs, CA",
-    condition: "Postpartum Depression",
+    condition: "Major Depression",
     rating: 5,
     quote: "TMS has helped me incredibly.It took more then half way throughout the sessions to see results but it definitely started to kick in. I highly recommend anyone sufferings with depression etc to try TMS.",
     hasVideo: false,

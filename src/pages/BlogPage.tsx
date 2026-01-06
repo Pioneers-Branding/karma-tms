@@ -22,33 +22,33 @@ interface BlogPost {
 }
 
 const blogCategories = [
-  { id: 'all', label: 'All Posts' },
-  { id: 'tms-therapy', label: 'TMS Therapy' },
-  { id: 'mental-health', label: 'Mental Health' },
-  { id: 'research', label: 'Research' },
-  { id: 'patient-stories', label: 'Patient Stories' },
-  { id: 'wellness', label: 'Wellness Tips' }
-];
+{ id: 'all', label: 'All Posts' },
+{ id: 'tms-therapy', label: 'TMS Therapy' },
+{ id: 'mental-health', label: 'Mental Health' },
+{ id: 'research', label: 'Research' },
+{ id: 'patient-stories', label: 'Patient Stories' },
+{ id: 'wellness', label: 'Wellness Tips' }];
+
 
 // Sample blog data
 const generateBlogPosts = (count: number): BlogPost[] => {
   const posts: BlogPost[] = [];
   const titles = [
-    'Understanding TMS Therapy: A Comprehensive Guide',
-    'Breaking the Stigma: Mental Health Awareness',
-    'Latest Research in Depression Treatment',
-    'Success Stories: Real Patient Experiences',
-    'Managing Anxiety in Daily Life',
-    'The Science Behind TMS Technology',
-    'Holistic Approaches to Mental Wellness',
-    'Seasonal Affective Disorder: Signs and Solutions',
-    'Building Resilience Through Difficult Times',
-    'The Role of Family Support in Recovery'
-  ];
-  
+  'Understanding TMS Therapy: A Comprehensive Guide',
+  'Breaking the Stigma: Mental Health Awareness',
+  'Latest Research in Depression Treatment',
+  'Success Stories: Real Patient Experiences',
+  'Managing Anxiety in Daily Life',
+  'The Science Behind TMS Technology',
+  'Holistic Approaches to Mental Wellness',
+  'Seasonal Affective Disorder: Signs and Solutions',
+  'Building Resilience Through Difficult Times',
+  'The Role of Family Support in Recovery'];
+
+
   const categories = ['tms-therapy', 'mental-health', 'research', 'patient-stories', 'wellness'];
   const authors = ['Dr. Thomas Lim', 'Dr. Apollo Leung', 'Dr. Benjamin Eylul', 'Lyn Hanshaw', 'Nicole Zozaya'];
-  
+
   for (let i = 0; i < count; i++) {
     posts.push({
       id: i + 1,
@@ -56,18 +56,18 @@ const generateBlogPosts = (count: number): BlogPost[] => {
       excerpt: 'Discover the latest insights and breakthrough treatments in mental health care. Our comprehensive approach combines cutting-edge technology with compassionate care.',
       category: categories[i % categories.length],
       author: authors[i % authors.length],
-      date: new Date(2024, 0, 1 + i).toLocaleDateString('en-US', { 
-        year: 'numeric', 
-        month: 'long', 
-        day: 'numeric' 
+      date: new Date(2024, 0, 1 + i).toLocaleDateString('en-US', {
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric'
       }),
-      readTime: `${3 + (i % 8)} min read`,
+      readTime: `${3 + i % 8} min read`,
       image: `https://picsum.photos/400/250?random=${i + 1}`,
       featured: i === 0,
       rating: i < 5 ? 5 : 4
     });
   }
-  
+
   return posts;
 };
 
@@ -105,34 +105,34 @@ const BlogPage = () => {
 
   const loadMorePosts = async () => {
     if (loading) return;
-    
+
     setLoading(true);
-    
+
     // Simulate API call
     setTimeout(() => {
-      const newPosts = generateBlogPosts(6).map(post => ({
+      const newPosts = generateBlogPosts(6).map((post) => ({
         ...post,
         id: post.id + posts.length,
         featured: false
       }));
-      
-      setPosts(prev => [...prev, ...newPosts]);
-      setPage(prev => prev + 1);
-      
-      if (page >= 5) { // Limit to 5 pages for demo
+
+      setPosts((prev) => [...prev, ...newPosts]);
+      setPage((prev) => prev + 1);
+
+      if (page >= 5) {// Limit to 5 pages for demo
         setHasMore(false);
       }
-      
+
       setLoading(false);
     }, 1000);
   };
 
-  const filteredPosts = posts.filter(post => 
-    activeCategory === 'all' || post.category === activeCategory
+  const filteredPosts = posts.filter((post) =>
+  activeCategory === 'all' || post.category === activeCategory
   );
 
-  const featuredPost = posts.find(post => post.featured);
-  const regularPosts = filteredPosts.filter(post => !post.featured);
+  const featuredPost = posts.find((post) => post.featured);
+  const regularPosts = filteredPosts.filter((post) => !post.featured);
 
   return (
     <div className="min-h-screen bg-white" style={{ fontFamily: 'Outfit, sans-serif' }}>
@@ -153,8 +153,8 @@ const BlogPage = () => {
       </div>
 
       {/* Featured Article */}
-      {featuredPost && (
-        <div className="py-8 bg-white border-b border-gray-100">
+      {featuredPost &&
+      <div className="py-8 bg-white border-b border-gray-100">
           <div className="container mx-auto px-4">
             <div className="flex items-center gap-2 mb-6">
               <Star className="h-5 w-5 text-yellow-500 fill-current" />
@@ -165,7 +165,7 @@ const BlogPage = () => {
               <div className="grid lg:grid-cols-2 gap-0">
                 <div className="p-8 lg:p-12 flex flex-col justify-center">
                   <Badge className="bg-white/20 text-white border-white/30 mb-4 w-fit">
-                    {blogCategories.find(cat => cat.id === featuredPost.category)?.label}
+                    {blogCategories.find((cat) => cat.id === featuredPost.category)?.label}
                   </Badge>
                   <h2 className="text-3xl lg:text-4xl font-bold mb-4 leading-tight">
                     {featuredPost.title}
@@ -195,50 +195,50 @@ const BlogPage = () => {
                 </div>
                 
                 <div className="relative h-64 lg:h-auto">
-                  <img 
-                    src={featuredPost.image} 
-                    alt={featuredPost.title}
-                    className="absolute inset-0 w-full h-full object-cover"
-                  />
+                  <img
+                  src={featuredPost.image}
+                  alt={featuredPost.title}
+                  className="absolute inset-0 w-full h-full object-cover" />
+
                   <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent lg:hidden"></div>
                 </div>
               </div>
             </Card>
           </div>
         </div>
-      )}
+      }
 
       {/* Category Tabs and Posts */}
       <div className="py-8">
         <div className="container mx-auto px-4">
           <Tabs value={activeCategory} onValueChange={setActiveCategory} className="w-full">
             <TabsList className="grid w-full grid-cols-3 lg:grid-cols-6 mb-8 bg-gray-50">
-              {blogCategories.map((category) => (
-                <TabsTrigger 
-                  key={category.id} 
-                  value={category.id}
-                  className="text-sm data-[state=active]:bg-blue-600 data-[state=active]:text-white"
-                >
+              {blogCategories.map((category) =>
+              <TabsTrigger
+                key={category.id}
+                value={category.id}
+                className="text-sm data-[state=active]:bg-blue-600 data-[state=active]:text-white">
+
                   {category.label}
                 </TabsTrigger>
-              ))}
+              )}
             </TabsList>
 
-            {blogCategories.map((category) => (
-              <TabsContent key={category.id} value={category.id} className="mt-0">
+            {blogCategories.map((category) =>
+            <TabsContent key={category.id} value={category.id} className="mt-0">
                 {/* Posts Grid */}
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
-                  {regularPosts.map((post) => (
-                    <Card key={post.id} className="group cursor-pointer hover:shadow-lg transition-all duration-300 border-gray-200 hover:border-blue-300">
+                  {regularPosts.map((post) =>
+                <Card key={post.id} className="group cursor-pointer hover:shadow-lg transition-all duration-300 border-gray-200 hover:border-blue-300">
                       <div className="relative overflow-hidden rounded-t-lg">
-                        <img 
-                          src={post.image} 
-                          alt={post.title}
-                          className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
-                        />
+                        <img
+                      src={post.image}
+                      alt={post.title}
+                      className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300" />
+
                         <div className="absolute top-4 left-4">
                           <Badge variant="secondary" className="bg-white/90 text-gray-700">
-                            {blogCategories.find(cat => cat.id === post.category)?.label}
+                            {blogCategories.find((cat) => cat.id === post.category)?.label}
                           </Badge>
                         </div>
                       </div>
@@ -274,14 +274,14 @@ const BlogPage = () => {
                         </div>
                       </CardContent>
                     </Card>
-                  ))}
+                )}
                 </div>
 
                 {/* Loading Skeletons */}
-                {loading && (
-                  <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
-                    {Array.from({ length: 6 }).map((_, i) => (
-                      <Card key={i} className="overflow-hidden">
+                {loading &&
+              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
+                    {Array.from({ length: 6 }).map((_, i) =>
+                <Card key={i} className="overflow-hidden">
                         <Skeleton className="w-full h-48" />
                         <CardHeader>
                           <Skeleton className="h-6 w-3/4" />
@@ -295,27 +295,27 @@ const BlogPage = () => {
                           </div>
                         </CardContent>
                       </Card>
-                    ))}
-                  </div>
                 )}
+                  </div>
+              }
 
                 {/* Infinite Scroll Trigger */}
-                {hasMore && (
-                  <div ref={observerRef} className="h-10 flex items-center justify-center">
+                {hasMore &&
+              <div ref={observerRef} className="h-10 flex items-center justify-center">
                     <div className="text-gray-500 text-sm">Loading more posts...</div>
                   </div>
-                )}
+              }
 
-                {!hasMore && regularPosts.length > 0 && (
-                  <div className="text-center py-8">
+                {!hasMore && regularPosts.length > 0 &&
+              <div className="text-center py-8">
                     <p className="text-gray-600 mb-4">You've reached the end of our blog posts!</p>
                     <Button variant="outline" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
                       Back to Top
                     </Button>
                   </div>
-                )}
+              }
               </TabsContent>
-            ))}
+            )}
           </Tabs>
         </div>
       </div>
@@ -328,11 +328,11 @@ const BlogPage = () => {
             Subscribe to our newsletter for the latest mental health insights, research updates, and expert advice delivered to your inbox.
           </p>
           <div className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
-            <input 
-              type="email" 
+            <input
+              type="email"
               placeholder="Enter your email"
-              className="flex-1 px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-            />
+              className="flex-1 px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent" />
+
             <Button className="bg-blue-600 hover:bg-blue-700">
               Subscribe
             </Button>
@@ -341,8 +341,8 @@ const BlogPage = () => {
       </div>
 
       <FooterSection />
-    </div>
-  );
+    </div>);
+
 };
 
 export default BlogPage;

@@ -21,8 +21,8 @@ import {
   Info,
   Scale,
   BookOpen,
-  UserCheck
-} from 'lucide-react';
+  UserCheck } from
+'lucide-react';
 
 const HIPAAPage = () => {
   const fadeInUp = {
@@ -43,133 +43,133 @@ const HIPAAPage = () => {
   };
 
   const hipaaRights = [
-    {
-      title: "Access Your Health Information",
-      icon: Eye,
-      description: "You have the right to inspect and obtain copies of your health records, with some limited exceptions.",
-      details: [
-        "Request copies of medical records, billing records, and other health information",
-        "We may charge a reasonable fee for copying and mailing costs",
-        "We will respond to your request within 30 days",
-        "In certain circumstances, we may deny access but will provide written explanation"
-      ]
-    },
-    {
-      title: "Request Amendments",
-      icon: FileText,
-      description: "You can ask us to amend health information that you believe is incorrect or incomplete.",
-      details: [
-        "Submit amendment requests in writing with supporting documentation",
-        "We will respond within 60 days of receiving your request",
-        "If denied, you have the right to file a statement of disagreement",
-        "Approved amendments will be shared with relevant parties"
-      ]
-    },
-    {
-      title: "Request Restrictions",
-      icon: Lock,
-      description: "You may request limits on how we use or disclose your health information.",
-      details: [
-        "Request restrictions on disclosures to family members or friends",
-        "Limit information shared for treatment, payment, or operations",
-        "We are not required to agree to all restrictions",
-        "Any agreed restrictions will be documented and followed"
-      ]
-    },
-    {
-      title: "Alternative Communications",
-      icon: Mail,
-      description: "You can request that we contact you in a specific way or at a certain location.",
-      details: [
-        "Request communications at alternative addresses or phone numbers",
-        "Specify preferred method of contact (phone, email, mail)",
-        "We will accommodate reasonable requests",
-        "May require information about how payment will be handled"
-      ]
-    },
-    {
-      title: "Accounting of Disclosures",
-      icon: BookOpen,
-      description: "You can receive a list of certain disclosures we have made of your health information.",
-      details: [
-        "Covers disclosures made for purposes other than treatment, payment, or operations",
-        "Includes dates, recipients, and purposes of disclosures",
-        "First accounting in any 12-month period is free",
-        "Additional requests may incur reasonable fees"
-      ]
-    },
-    {
-      title: "File Complaints",
-      icon: AlertCircle,
-      description: "You have the right to file complaints about our privacy practices.",
-      details: [
-        "File complaints with us or with the Secretary of Health and Human Services",
-        "We will not retaliate against you for filing a complaint",
-        "Complaints should be submitted in writing when possible",
-        "We will investigate and respond to all complaints promptly"
-      ]
-    }
-  ];
+  {
+    title: "Access Your Health Information",
+    icon: Eye,
+    description: "You have the right to inspect and obtain copies of your health records, with some limited exceptions.",
+    details: [
+    "Request copies of medical records, billing records, and other health information",
+    "We may charge a reasonable fee for copying and mailing costs",
+    "We will respond to your request within 30 days",
+    "In certain circumstances, we may deny access but will provide written explanation"]
+
+  },
+  {
+    title: "Request Amendments",
+    icon: FileText,
+    description: "You can ask us to amend health information that you believe is incorrect or incomplete.",
+    details: [
+    "Submit amendment requests in writing with supporting documentation",
+    "We will respond within 60 days of receiving your request",
+    "If denied, you have the right to file a statement of disagreement",
+    "Approved amendments will be shared with relevant parties"]
+
+  },
+  {
+    title: "Request Restrictions",
+    icon: Lock,
+    description: "You may request limits on how we use or disclose your health information.",
+    details: [
+    "Request restrictions on disclosures to family members or friends",
+    "Limit information shared for treatment, payment, or operations",
+    "We are not required to agree to all restrictions",
+    "Any agreed restrictions will be documented and followed"]
+
+  },
+  {
+    title: "Alternative Communications",
+    icon: Mail,
+    description: "You can request that we contact you in a specific way or at a certain location.",
+    details: [
+    "Request communications at alternative addresses or phone numbers",
+    "Specify preferred method of contact (phone, email, mail)",
+    "We will accommodate reasonable requests",
+    "May require information about how payment will be handled"]
+
+  },
+  {
+    title: "Accounting of Disclosures",
+    icon: BookOpen,
+    description: "You can receive a list of certain disclosures we have made of your health information.",
+    details: [
+    "Covers disclosures made for purposes other than treatment, payment, or operations",
+    "Includes dates, recipients, and purposes of disclosures",
+    "First accounting in any 12-month period is free",
+    "Additional requests may incur reasonable fees"]
+
+  },
+  {
+    title: "File Complaints",
+    icon: AlertCircle,
+    description: "You have the right to file complaints about our privacy practices.",
+    details: [
+    "File complaints with us or with the Secretary of Health and Human Services",
+    "We will not retaliate against you for filing a complaint",
+    "Complaints should be submitted in writing when possible",
+    "We will investigate and respond to all complaints promptly"]
+
+  }];
+
 
   const howWeUseInfo = [
-    {
-      category: "Treatment",
-      icon: Users,
-      examples: [
-        "Coordinating your care among healthcare providers",
-        "Consulting with specialists about your condition",
-        "Sharing information with healthcare team members",
-        "Emergency treatment situations"
-      ]
-    },
-    {
-      category: "Payment",
-      icon: Scale,
-      examples: [
-        "Processing insurance claims and authorizations",
-        "Billing and collection activities",
-        "Determining coverage and benefits",
-        "Utilization review and quality assurance"
-      ]
-    },
-    {
-      category: "Healthcare Operations",
-      icon: Shield,
-      examples: [
-        "Quality assessment and improvement activities",
-        "Staff training and competency evaluation",
-        "Business planning and development",
-        "Compliance and regulatory oversight"
-      ]
-    }
-  ];
+  {
+    category: "Treatment",
+    icon: Users,
+    examples: [
+    "Coordinating your care among healthcare providers",
+    "Consulting with specialists about your condition",
+    "Sharing information with healthcare team members",
+    "Emergency treatment situations"]
+
+  },
+  {
+    category: "Payment",
+    icon: Scale,
+    examples: [
+    "Processing insurance claims and authorizations",
+    "Billing and collection activities",
+    "Determining coverage and benefits",
+    "Utilization review and quality assurance"]
+
+  },
+  {
+    category: "Healthcare Operations",
+    icon: Shield,
+    examples: [
+    "Quality assessment and improvement activities",
+    "Staff training and competency evaluation",
+    "Business planning and development",
+    "Compliance and regulatory oversight"]
+
+  }];
+
 
   const specialSituations = [
-    {
-      title: "Required by Law",
-      description: "We may disclose health information when required by federal, state, or local law."
-    },
-    {
-      title: "Public Health Activities",
-      description: "Reporting communicable diseases, adverse drug reactions, or product recalls to public health authorities."
-    },
-    {
-      title: "Abuse or Neglect",
-      description: "Reporting suspected abuse, neglect, or domestic violence to appropriate authorities as required by law."
-    },
-    {
-      title: "Legal Proceedings",
-      description: "Responding to court orders, subpoenas, or administrative requests in legal proceedings."
-    },
-    {
-      title: "Law Enforcement",
-      description: "Limited disclosures to law enforcement for specific purposes as permitted by law."
-    },
-    {
-      title: "Serious Threats",
-      description: "Preventing or lessening a serious and imminent threat to health or safety."
-    }
-  ];
+  {
+    title: "Required by Law",
+    description: "We may disclose health information when required by federal, state, or local law."
+  },
+  {
+    title: "Public Health Activities",
+    description: "Reporting communicable diseases, adverse drug reactions, or product recalls to public health authorities."
+  },
+  {
+    title: "Abuse or Neglect",
+    description: "Reporting suspected abuse, neglect, or domestic violence to appropriate authorities as required by law."
+  },
+  {
+    title: "Legal Proceedings",
+    description: "Responding to court orders, subpoenas, or administrative requests in legal proceedings."
+  },
+  {
+    title: "Law Enforcement",
+    description: "Limited disclosures to law enforcement for specific purposes as permitted by law."
+  },
+  {
+    title: "Serious Threats",
+    description: "Preventing or lessening a serious and imminent threat to health or safety."
+  }];
+
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-purple-50">
@@ -209,7 +209,7 @@ const HIPAAPage = () => {
               </div>
             </div>
             <div className="flex flex-wrap justify-center gap-4">
-              <Button 
+              <Button
                 onClick={handlePDFDownload}
                 className="bg-[#572670] hover:bg-[#572670]/90 px-8 py-3 text-lg">
                 <Download className="mr-2 h-5 w-5" />
@@ -334,7 +334,7 @@ const HIPAAPage = () => {
                       
                       <ul className="space-y-3">
                         {category.examples.map((example, idx) =>
-                          <li key={idx} className="flex items-start gap-3">
+                        <li key={idx} className="flex items-start gap-3">
                             <div className="w-2 h-2 bg-[#572670] rounded-full mt-2 flex-shrink-0"></div>
                             <span className="text-gray-600 text-sm">{example}</span>
                           </li>
@@ -342,8 +342,8 @@ const HIPAAPage = () => {
                       </ul>
                     </CardContent>
                   </Card>
-                </motion.div>
-              );
+                </motion.div>);
+
             })}
           </div>
 
@@ -367,12 +367,12 @@ const HIPAAPage = () => {
                   We may also use or disclose your health information in the following special situations:
                 </p>
                 <div className="grid md:grid-cols-2 gap-6">
-                  {specialSituations.map((situation, index) => (
-                    <div key={index} className="p-4 border-l-4 border-l-[#572670] bg-gray-50 rounded-r-lg">
+                  {specialSituations.map((situation, index) =>
+                  <div key={index} className="p-4 border-l-4 border-l-[#572670] bg-gray-50 rounded-r-lg">
                       <h4 className="font-bold text-gray-900 mb-2">{situation.title}</h4>
                       <p className="text-gray-600 text-sm">{situation.description}</p>
                     </div>
-                  ))}
+                  )}
                 </div>
               </CardContent>
             </Card>
@@ -420,19 +420,19 @@ const HIPAAPage = () => {
                           <h3 className="text-2xl font-bold text-gray-900 mb-3">{right.title}</h3>
                           <p className="text-gray-600 mb-6">{right.description}</p>
                           <div className="grid md:grid-cols-2 gap-4">
-                            {right.details.map((detail, idx) => (
-                              <div key={idx} className="flex items-start gap-3">
+                            {right.details.map((detail, idx) =>
+                            <div key={idx} className="flex items-start gap-3">
                                 <Info className="h-4 w-4 text-[#572670] flex-shrink-0 mt-1" />
                                 <span className="text-gray-600 text-sm">{detail}</span>
                               </div>
-                            ))}
+                            )}
                           </div>
                         </div>
                       </div>
                     </CardContent>
                   </Card>
-                </motion.div>
-              );
+                </motion.div>);
+
             })}
           </div>
         </div>
@@ -522,9 +522,9 @@ const HIPAAPage = () => {
                   <Mail className="mr-2 h-4 w-4" />
                   privacy@karmatms.com
                 </Button>
-                <Button 
+                <Button
                   onClick={handlePDFDownload}
-                  variant="outline" 
+                  variant="outline"
                   className="border-[#572670] text-[#572670] hover:bg-[#572670]/10 px-6 py-3">
                   <Download className="mr-2 h-4 w-4" />
                   Download Full Notice
@@ -580,8 +580,8 @@ const HIPAAPage = () => {
       </section>
 
       <FooterSection />
-    </div>
-  );
+    </div>);
+
 };
 
 export default HIPAAPage;
