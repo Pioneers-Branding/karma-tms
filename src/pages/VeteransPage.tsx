@@ -157,7 +157,7 @@ const VeteransPage = () => {
               </div>
               <div className="relative h-96 rounded-lg overflow-hidden shadow-xl">
                 <img
-                  src="https://images.unsplash.com/photo-1570105954248-fa0c1376edfe?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MTg3MTl8MHwxfHNlYXJjaHwxfHxBJTIwVE1TJTIwdHJlYXRtZW50JTIwY2hhaXIlMjBpbiUyMGElMjBjbGluaWNhbCUyMHNldHRpbmclMkMlMjBzaG93Y2FzaW5nJTIwYSUyMGNvbWZvcnRhYmxlJTIwYW5kJTIwcHJvZmVzc2lvbmFsJTIwZW52aXJvbm1lbnQlMjBmb3IlMjB0aGVyYXB5JTIwc2Vzc2lvbnMufGVufDB8fHx8MTc2MjQ5OTYyM3ww&ixlib=rb-4.1.0&q=80&w=200$w=1920"
+                  src="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/157c49b6-b322-4aa5-b8d6-8ee41dc03a43.webp"
                   alt="TMS Treatment Chair"
                   className="w-full h-full object-cover" />
 
