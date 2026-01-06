@@ -10,16 +10,16 @@ import {
   BreadcrumbLink,
   BreadcrumbList,
   BreadcrumbPage,
-  BreadcrumbSeparator
-} from '@/components/ui/breadcrumb';
+  BreadcrumbSeparator } from
+'@/components/ui/breadcrumb';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import {
   Accordion,
   AccordionContent,
   AccordionItem,
-  AccordionTrigger
-} from '@/components/ui/accordion';
+  AccordionTrigger } from
+'@/components/ui/accordion';
 import { Calendar, Clock, User, CheckCircle2, ArrowRight, Smartphone, AlertTriangle } from 'lucide-react';
 import AuthorBox from '@/components/AuthorBox';
 
@@ -28,13 +28,13 @@ const TechMentalHealthBlogPostPage = () => {
   const sectionsRef = useRef<{[key: string]: HTMLElement | null;}>({});
 
   const tocItems = [
-    { id: 'digital-age', label: 'The Digital Age and Mental Health' },
-    { id: 'positive-impacts', label: 'Positive Impacts of Technology' },
-    { id: 'negative-impacts', label: 'Negative Impacts of Technology' },
-    { id: 'social-media-effects', label: 'Social Media and Mental Health' },
-    { id: 'healthy-balance', label: 'Creating a Healthy Balance' },
-    { id: 'faqs', label: 'Frequently Asked Questions' }
-  ];
+  { id: 'digital-age', label: 'The Digital Age and Mental Health' },
+  { id: 'positive-impacts', label: 'Positive Impacts of Technology' },
+  { id: 'negative-impacts', label: 'Negative Impacts of Technology' },
+  { id: 'social-media-effects', label: 'Social Media and Mental Health' },
+  { id: 'healthy-balance', label: 'Creating a Healthy Balance' },
+  { id: 'faqs', label: 'Frequently Asked Questions' }];
+
 
   useEffect(() => {
     const handleScroll = () => {
@@ -67,52 +67,52 @@ const TechMentalHealthBlogPostPage = () => {
   };
 
   const faqs = [
-    {
-      question: 'How much technology use is too much for mental health?',
-      answer: 'While there\'s no universal threshold, research suggests that more than 2 hours of recreational screen time daily (excluding work/school) is associated with increased mental health risks. Quality matters as much as quantity—passive social media scrolling is more harmful than active, purposeful technology use. Monitor your emotional state: if technology leaves you feeling anxious, depressed, or disconnected, it\'s time to reduce usage.'
-    },
-    {
-      question: 'Can technology help with mental health treatment?',
-      answer: 'Absolutely! Digital mental health tools include therapy apps, meditation platforms, mood trackers, and teletherapy services that increase access to care. However, these should complement—not replace—professional treatment for serious conditions. Technology works best when integrated into a comprehensive mental health plan.'
-    },
-    {
-      question: 'Why does social media make me feel worse about myself?',
-      answer: 'Social media platforms often showcase curated highlights of others\' lives, triggering social comparison and feelings of inadequacy. The "like" culture can tie self-worth to external validation. Additionally, cyberbullying, FOMO (fear of missing out), and the addictive design of platforms can negatively impact mental health.'
-    },
-    {
-      question: 'What are signs that technology is affecting my mental health?',
-      answer: 'Warning signs include: feeling anxious when separated from devices, checking phones compulsively, experiencing FOMO, comparing yourself negatively to others online, sleep disruptions, decreased in-person social connections, reduced productivity, feelings of depression after social media use, and physical symptoms like eye strain or headaches.'
-    },
-    {
-      question: 'How can I reduce technology\'s negative impact without giving it up entirely?',
-      answer: 'Start with boundaries: set specific times for checking devices, remove social media apps from phones, use website blockers during focus time, implement phone-free zones (bedroom, dining table), practice digital sabbaths (one day per week), curate your online content to be positive and educational, and regularly audit which platforms truly add value to your life.'
-    },
-    {
-      question: 'Can virtual reality and AI help mental health treatment?',
-      answer: 'Yes! VR is being used successfully for exposure therapy (treating phobias and PTSD), pain management, and meditation experiences. AI-powered chatbots provide 24/7 emotional support, though they can\'t replace human therapists. These emerging technologies show promise but should be used under professional guidance for serious mental health conditions.'
-    }
-  ];
+  {
+    question: 'How much technology use is too much for mental health?',
+    answer: 'While there\'s no universal threshold, research suggests that more than 2 hours of recreational screen time daily (excluding work/school) is associated with increased mental health risks. Quality matters as much as quantity—passive social media scrolling is more harmful than active, purposeful technology use. Monitor your emotional state: if technology leaves you feeling anxious, depressed, or disconnected, it\'s time to reduce usage.'
+  },
+  {
+    question: 'Can technology help with mental health treatment?',
+    answer: 'Absolutely! Digital mental health tools include therapy apps, meditation platforms, mood trackers, and teletherapy services that increase access to care. However, these should complement—not replace—professional treatment for serious conditions. Technology works best when integrated into a comprehensive mental health plan.'
+  },
+  {
+    question: 'Why does social media make me feel worse about myself?',
+    answer: 'Social media platforms often showcase curated highlights of others\' lives, triggering social comparison and feelings of inadequacy. The "like" culture can tie self-worth to external validation. Additionally, cyberbullying, FOMO (fear of missing out), and the addictive design of platforms can negatively impact mental health.'
+  },
+  {
+    question: 'What are signs that technology is affecting my mental health?',
+    answer: 'Warning signs include: feeling anxious when separated from devices, checking phones compulsively, experiencing FOMO, comparing yourself negatively to others online, sleep disruptions, decreased in-person social connections, reduced productivity, feelings of depression after social media use, and physical symptoms like eye strain or headaches.'
+  },
+  {
+    question: 'How can I reduce technology\'s negative impact without giving it up entirely?',
+    answer: 'Start with boundaries: set specific times for checking devices, remove social media apps from phones, use website blockers during focus time, implement phone-free zones (bedroom, dining table), practice digital sabbaths (one day per week), curate your online content to be positive and educational, and regularly audit which platforms truly add value to your life.'
+  },
+  {
+    question: 'Can virtual reality and AI help mental health treatment?',
+    answer: 'Yes! VR is being used successfully for exposure therapy (treating phobias and PTSD), pain management, and meditation experiences. AI-powered chatbots provide 24/7 emotional support, though they can\'t replace human therapists. These emerging technologies show promise but should be used under professional guidance for serious mental health conditions.'
+  }];
+
 
   const relatedPosts = [
-    {
-      title: 'The Impact of Screen Time on Mental Health',
-      excerpt: 'Explore research on how screen time affects depression, anxiety, and overall wellbeing.',
-      link: '/blog/screen-time-mental-health',
-      image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/6cfeb881-529d-42c6-875a-321eac7d440c.webp'
-    },
-    {
-      title: 'Mindfulness Practices for Stress Management',
-      excerpt: 'Learn evidence-based mindfulness techniques to reduce stress in our digital world.',
-      link: '/blog/mindfulness-stress-management',
-      image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/6cfeb881-529d-42c6-875a-321eac7d440c.webp'
-    },
-    {
-      title: 'Understanding Anxiety Disorders',
-      excerpt: 'Comprehensive guide to anxiety symptoms and modern treatment options.',
-      link: '/anxiety',
-      image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/9705b922-d0fc-4d29-be10-acd507ce308c.webp'
-    }
-  ];
+  {
+    title: 'The Impact of Screen Time on Mental Health',
+    excerpt: 'Explore research on how screen time affects depression, anxiety, and overall wellbeing.',
+    link: '/blog/screen-time-mental-health',
+    image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/6cfeb881-529d-42c6-875a-321eac7d440c.webp'
+  },
+  {
+    title: 'Mindfulness Practices for Stress Management',
+    excerpt: 'Learn evidence-based mindfulness techniques to reduce stress in our digital world.',
+    link: '/blog/mindfulness-stress-management',
+    image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/6cfeb881-529d-42c6-875a-321eac7d440c.webp'
+  },
+  {
+    title: 'Understanding Anxiety Disorders',
+    excerpt: 'Comprehensive guide to anxiety symptoms and modern treatment options.',
+    link: '/anxiety',
+    image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/9705b922-d0fc-4d29-be10-acd507ce308c.webp'
+  }];
+
 
   const articleSchema = {
     '@context': 'https://schema.org',
@@ -165,17 +165,17 @@ const TechMentalHealthBlogPostPage = () => {
         keywords="technology and mental health, digital wellbeing, social media mental health, tech addiction, digital wellness, screen time effects"
         canonical="/blog/tech-mental-health-impact"
         ogImage="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/6cfeb881-529d-42c6-875a-321eac7d440c.webp"
-        ogType="article"
-      />
+        ogType="article" />
+
 
       <StructuredData
         type="breadcrumb"
         breadcrumbs={[
-          { name: 'Home', url: '/' },
-          { name: 'Blog', url: '/blog' },
-          { name: 'Tech and Mental Health', url: '/blog/tech-mental-health-impact' }
-        ]}
-      />
+        { name: 'Home', url: '/' },
+        { name: 'Blog', url: '/blog' },
+        { name: 'Tech and Mental Health', url: '/blog/tech-mental-health-impact' }]
+        } />
+
 
       <script type="application/ld+json">
         {JSON.stringify(articleSchema)}
@@ -259,19 +259,19 @@ const TechMentalHealthBlogPostPage = () => {
                 <CardContent className="p-6">
                   <h3 className="font-bold text-lg mb-4 text-[#572670]">Table of Contents</h3>
                   <nav className="space-y-2">
-                    {tocItems.map((item) => (
-                      <button
-                        key={item.id}
-                        onClick={() => scrollToSection(item.id)}
-                        className={`block w-full text-left px-3 py-2 rounded-md text-sm transition-all ${
-                          activeSection === item.id
-                            ? 'bg-[#572670] text-white font-medium'
-                            : 'text-gray-700 hover:bg-[#572670]/10'
-                        }`}
-                      >
+                    {tocItems.map((item) =>
+                    <button
+                      key={item.id}
+                      onClick={() => scrollToSection(item.id)}
+                      className={`block w-full text-left px-3 py-2 rounded-md text-sm transition-all ${
+                      activeSection === item.id ?
+                      'bg-[#572670] text-white font-medium' :
+                      'text-gray-700 hover:bg-[#572670]/10'}`
+                      }>
+
                         {item.label}
                       </button>
-                    ))}
+                    )}
                   </nav>
                   <div className="mt-6 pt-6 border-t">
                     <Button asChild className="w-full bg-[#572670] hover:bg-[#7B3FA0]">
@@ -290,8 +290,8 @@ const TechMentalHealthBlogPostPage = () => {
               <img
                 src="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/6cfeb881-529d-42c6-875a-321eac7d440c.webp"
                 alt="Technology and mental health connection"
-                className="w-full h-64 md:h-96 object-cover rounded-lg mb-6"
-              />
+                className="w-full h-64 md:h-96 object-cover rounded-lg mb-6" />
+
 
               <p className="text-xl text-gray-700 leading-relaxed">
                 Technology has fundamentally transformed how we live, work, connect, and experience the world. From smartphones that keep us perpetually connected to AI assistants that manage our lives, digital technology offers unprecedented convenience and opportunity. But this revolution comes with a hidden cost: profound impacts on our mental health that we're only beginning to understand.
@@ -610,20 +610,20 @@ const TechMentalHealthBlogPostPage = () => {
               name="karmatms"
               role="Mental Health Editorial Team at KarmaTMS"
               bio="The KarmaTMS team includes board-certified psychiatrists, psychologists, and mental health advocates dedicated to promoting mental wellness through evidence-based information and compassionate care."
-              image="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/ebadb369-a58d-421c-b937-24f900be5867.png"
-            />
+              image="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/ebadb369-a58d-421c-b937-24f900be5867.png" />
+
 
             {/* FAQ Section */}
             <section ref={(el) => sectionsRef.current['faqs'] = el} className="mb-12 mt-12">
               <h2 className="text-3xl font-bold text-[#572670] mb-6">Frequently Asked Questions</h2>
               
               <Accordion type="single" collapsible className="w-full space-y-2">
-                {faqs.map((faq, index) => (
-                  <AccordionItem
-                    key={index}
-                    value={`item-${index}`}
-                    className="border border-gray-200 rounded-lg px-4 data-[state=open]:border-[#572670]"
-                  >
+                {faqs.map((faq, index) =>
+                <AccordionItem
+                  key={index}
+                  value={`item-${index}`}
+                  className="border border-gray-200 rounded-lg px-4 data-[state=open]:border-[#572670]">
+
                     <AccordionTrigger className="text-left font-semibold hover:text-[#572670] hover:no-underline">
                       {faq.question}
                     </AccordionTrigger>
@@ -631,7 +631,7 @@ const TechMentalHealthBlogPostPage = () => {
                       {faq.answer}
                     </AccordionContent>
                   </AccordionItem>
-                ))}
+                )}
               </Accordion>
             </section>
 
@@ -659,13 +659,13 @@ const TechMentalHealthBlogPostPage = () => {
             <section className="mb-12">
               <h2 className="text-3xl font-bold text-[#572670] mb-6">Related Articles</h2>
               <div className="grid md:grid-cols-3 gap-6">
-                {relatedPosts.map((post, index) => (
-                  <Card key={index} className="border-[#572670]/20 overflow-hidden hover:shadow-lg transition-shadow">
+                {relatedPosts.map((post, index) =>
+                <Card key={index} className="border-[#572670]/20 overflow-hidden hover:shadow-lg transition-shadow">
                     <img
-                      src={post.image}
-                      alt={post.title}
-                      className="w-full h-48 object-cover"
-                    />
+                    src={post.image}
+                    alt={post.title}
+                    className="w-full h-48 object-cover" />
+
                     <CardContent className="p-6">
                       <h3 className="font-bold text-lg mb-2 hover:text-[#572670] transition-colors">
                         <Link to={post.link}>{post.title}</Link>
@@ -678,7 +678,7 @@ const TechMentalHealthBlogPostPage = () => {
                       </Button>
                     </CardContent>
                   </Card>
-                ))}
+                )}
               </div>
             </section>
           </article>
@@ -686,8 +686,8 @@ const TechMentalHealthBlogPostPage = () => {
       </div>
 
       <FooterSection />
-    </>
-  );
+    </>);
+
 };
 
 export default TechMentalHealthBlogPostPage;

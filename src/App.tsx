@@ -57,6 +57,9 @@ import ScreenTimeMentalHealthBlogPostPage from "./pages/blogs/ScreenTimeMentalHe
 import MindfulnessStressManagementBlogPostPage from "./pages/blogs/MindfulnessStressManagementBlogPostPage";
 import TechMentalHealthBlogPostPage from "./pages/blogs/TechMentalHealthBlogPostPage";
 import MentalHealthFirstAidBlogPostPage from "./pages/blogs/MentalHealthFirstAidBlogPostPage";
+import EmpoweringYouthBlogPostPage from "./pages/blogs/EmpoweringYouthBlogPostPage";
+import FamilyDynamicsMentalHealthBlogPostPage from "./pages/blogs/FamilyDynamicsMentalHealthBlogPostPage";
+import ManagingAnxietyTriggersBlogPostPage from "./pages/blogs/ManagingAnxietyTriggersBlogPostPage";
 import DisclaimerPage from "./pages/DisclaimerPage";
 
 const queryClient = new QueryClient();
@@ -129,6 +132,9 @@ const App = () =>
           <Route path="/blog/mindfulness-stress-management" element={<MindfulnessStressManagementBlogPostPage />} />
           <Route path="/blog/tech-mental-health-impact" element={<TechMentalHealthBlogPostPage />} />
           <Route path="/blog/mental-health-first-aid" element={<MentalHealthFirstAidBlogPostPage />} />
+          <Route path="/blog/empowering-youth-emotional-resilience" element={<EmpoweringYouthBlogPostPage />} />
+          <Route path="/blog/family-dynamics-mental-health" element={<FamilyDynamicsMentalHealthBlogPostPage />} />
+          <Route path="/blog/managing-anxiety-triggers" element={<ManagingAnxietyTriggersBlogPostPage />} />
           <Route path="/blog" element={<BlogPage />} />
           <Route path="/blog/" element={<BlogPage />} />
           <Route path="/research-and-publications" element={<ResearchPage />} />

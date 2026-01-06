@@ -10,16 +10,16 @@ import {
   BreadcrumbLink,
   BreadcrumbList,
   BreadcrumbPage,
-  BreadcrumbSeparator
-} from '@/components/ui/breadcrumb';
+  BreadcrumbSeparator } from
+'@/components/ui/breadcrumb';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import {
   Accordion,
   AccordionContent,
   AccordionItem,
-  AccordionTrigger
-} from '@/components/ui/accordion';
+  AccordionTrigger } from
+'@/components/ui/accordion';
 import { Calendar, Clock, User, CheckCircle2, ArrowRight, Heart } from 'lucide-react';
 import AuthorBox from '@/components/AuthorBox';
 
@@ -28,13 +28,13 @@ const MindfulnessStressManagementBlogPostPage = () => {
   const sectionsRef = useRef<{[key: string]: HTMLElement | null;}>({});
 
   const tocItems = [
-    { id: 'what-is-mindfulness', label: 'What is Mindfulness?' },
-    { id: 'benefits', label: 'Benefits for Stress Management' },
-    { id: 'breathing-techniques', label: 'Breathing Techniques' },
-    { id: 'meditation-practices', label: 'Meditation Practices' },
-    { id: 'daily-integration', label: 'Daily Integration' },
-    { id: 'faqs', label: 'Frequently Asked Questions' }
-  ];
+  { id: 'what-is-mindfulness', label: 'What is Mindfulness?' },
+  { id: 'benefits', label: 'Benefits for Stress Management' },
+  { id: 'breathing-techniques', label: 'Breathing Techniques' },
+  { id: 'meditation-practices', label: 'Meditation Practices' },
+  { id: 'daily-integration', label: 'Daily Integration' },
+  { id: 'faqs', label: 'Frequently Asked Questions' }];
+
 
   useEffect(() => {
     const handleScroll = () => {
@@ -67,52 +67,52 @@ const MindfulnessStressManagementBlogPostPage = () => {
   };
 
   const faqs = [
-    {
-      question: 'How long does it take to see benefits from mindfulness practice?',
-      answer: 'Many people report feeling calmer and more centered within just a few sessions of mindfulness practice. However, research shows that consistent practice over 8-12 weeks leads to significant, lasting changes in stress levels, anxiety, and overall wellbeing. The key is regular practice—even 5-10 minutes daily is more beneficial than occasional longer sessions.'
-    },
-    {
-      question: 'Do I need to meditate for hours to benefit from mindfulness?',
-      answer: 'Absolutely not! While extended meditation sessions can be beneficial, research shows that even brief mindfulness practices of 5-10 minutes daily can reduce stress and improve mental health. The most important factor is consistency rather than duration. Start small and gradually increase as you feel comfortable.'
-    },
-    {
-      question: 'Can mindfulness help with anxiety and depression?',
-      answer: 'Yes, extensive research demonstrates that mindfulness practices can significantly reduce symptoms of anxiety and depression. Mindfulness-Based Stress Reduction (MBSR) and Mindfulness-Based Cognitive Therapy (MBCT) are evidence-based treatments that have been shown to be as effective as medication for some individuals.'
-    },
-    {
-      question: 'What if I can\'t stop my thoughts during meditation?',
-      answer: 'Having thoughts during meditation is completely normal and expected! Mindfulness isn\'t about stopping thoughts but rather observing them without judgment and gently redirecting your attention. Every time you notice your mind wandering and bring it back, you\'re successfully practicing mindfulness.'
-    },
-    {
-      question: 'Can mindfulness replace therapy or medication?',
-      answer: 'Mindfulness is a powerful tool that complements professional mental health treatment but shouldn\'t replace it for serious conditions. If you\'re experiencing significant anxiety, depression, or other mental health concerns, mindfulness works best alongside therapy and/or medication under professional guidance.'
-    },
-    {
-      question: 'How do I stay consistent with mindfulness practice?',
-      answer: 'Consistency comes from making mindfulness convenient and appealing. Set a specific time each day, start with just 5 minutes, use guided meditation apps, create a dedicated peaceful space, and track your practice. Remember that missing a day doesn\'t mean failure—simply resume the next day without judgment.'
-    }
-  ];
+  {
+    question: 'How long does it take to see benefits from mindfulness practice?',
+    answer: 'Many people report feeling calmer and more centered within just a few sessions of mindfulness practice. However, research shows that consistent practice over 8-12 weeks leads to significant, lasting changes in stress levels, anxiety, and overall wellbeing. The key is regular practice—even 5-10 minutes daily is more beneficial than occasional longer sessions.'
+  },
+  {
+    question: 'Do I need to meditate for hours to benefit from mindfulness?',
+    answer: 'Absolutely not! While extended meditation sessions can be beneficial, research shows that even brief mindfulness practices of 5-10 minutes daily can reduce stress and improve mental health. The most important factor is consistency rather than duration. Start small and gradually increase as you feel comfortable.'
+  },
+  {
+    question: 'Can mindfulness help with anxiety and depression?',
+    answer: 'Yes, extensive research demonstrates that mindfulness practices can significantly reduce symptoms of anxiety and depression. Mindfulness-Based Stress Reduction (MBSR) and Mindfulness-Based Cognitive Therapy (MBCT) are evidence-based treatments that have been shown to be as effective as medication for some individuals.'
+  },
+  {
+    question: 'What if I can\'t stop my thoughts during meditation?',
+    answer: 'Having thoughts during meditation is completely normal and expected! Mindfulness isn\'t about stopping thoughts but rather observing them without judgment and gently redirecting your attention. Every time you notice your mind wandering and bring it back, you\'re successfully practicing mindfulness.'
+  },
+  {
+    question: 'Can mindfulness replace therapy or medication?',
+    answer: 'Mindfulness is a powerful tool that complements professional mental health treatment but shouldn\'t replace it for serious conditions. If you\'re experiencing significant anxiety, depression, or other mental health concerns, mindfulness works best alongside therapy and/or medication under professional guidance.'
+  },
+  {
+    question: 'How do I stay consistent with mindfulness practice?',
+    answer: 'Consistency comes from making mindfulness convenient and appealing. Set a specific time each day, start with just 5 minutes, use guided meditation apps, create a dedicated peaceful space, and track your practice. Remember that missing a day doesn\'t mean failure—simply resume the next day without judgment.'
+  }];
+
 
   const relatedPosts = [
-    {
-      title: 'Stress Management: The Four A\'s Approach',
-      excerpt: 'Learn practical strategies for managing stress through Avoid, Alter, Adapt, and Accept.',
-      link: '/blog/four-as-stress-management',
-      image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/76caee2d-5629-4dc1-a3b4-8c5cea23ede6.webp'
-    },
-    {
-      title: 'Understanding Anxiety Disorders',
-      excerpt: 'Explore anxiety symptoms and treatment options including TMS therapy.',
-      link: '/anxiety',
-      image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/9705b922-d0fc-4d29-be10-acd507ce308c.webp'
-    },
-    {
-      title: 'The Impact of Screen Time on Mental Health',
-      excerpt: 'Learn how digital habits affect your mental wellbeing and how to create balance.',
-      link: '/blog/screen-time-mental-health',
-      image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/6cfeb881-529d-42c6-875a-321eac7d440c.webp'
-    }
-  ];
+  {
+    title: 'Stress Management: The Four A\'s Approach',
+    excerpt: 'Learn practical strategies for managing stress through Avoid, Alter, Adapt, and Accept.',
+    link: '/blog/four-as-stress-management',
+    image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/76caee2d-5629-4dc1-a3b4-8c5cea23ede6.webp'
+  },
+  {
+    title: 'Understanding Anxiety Disorders',
+    excerpt: 'Explore anxiety symptoms and treatment options including TMS therapy.',
+    link: '/anxiety',
+    image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/9705b922-d0fc-4d29-be10-acd507ce308c.webp'
+  },
+  {
+    title: 'The Impact of Screen Time on Mental Health',
+    excerpt: 'Learn how digital habits affect your mental wellbeing and how to create balance.',
+    link: '/blog/screen-time-mental-health',
+    image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/6cfeb881-529d-42c6-875a-321eac7d440c.webp'
+  }];
+
 
   const articleSchema = {
     '@context': 'https://schema.org',
@@ -165,17 +165,17 @@ const MindfulnessStressManagementBlogPostPage = () => {
         keywords="mindfulness for stress, meditation for anxiety, breathing techniques, stress management, mindfulness practices, reduce stress naturally"
         canonical="/blog/mindfulness-stress-management"
         ogImage="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/6cfeb881-529d-42c6-875a-321eac7d440c.webp"
-        ogType="article"
-      />
+        ogType="article" />
+
 
       <StructuredData
         type="breadcrumb"
         breadcrumbs={[
-          { name: 'Home', url: '/' },
-          { name: 'Blog', url: '/blog' },
-          { name: 'Mindfulness Stress Management', url: '/blog/mindfulness-stress-management' }
-        ]}
-      />
+        { name: 'Home', url: '/' },
+        { name: 'Blog', url: '/blog' },
+        { name: 'Mindfulness Stress Management', url: '/blog/mindfulness-stress-management' }]
+        } />
+
 
       <script type="application/ld+json">
         {JSON.stringify(articleSchema)}
@@ -259,19 +259,19 @@ const MindfulnessStressManagementBlogPostPage = () => {
                 <CardContent className="p-6">
                   <h3 className="font-bold text-lg mb-4 text-[#572670]">Table of Contents</h3>
                   <nav className="space-y-2">
-                    {tocItems.map((item) => (
-                      <button
-                        key={item.id}
-                        onClick={() => scrollToSection(item.id)}
-                        className={`block w-full text-left px-3 py-2 rounded-md text-sm transition-all ${
-                          activeSection === item.id
-                            ? 'bg-[#572670] text-white font-medium'
-                            : 'text-gray-700 hover:bg-[#572670]/10'
-                        }`}
-                      >
+                    {tocItems.map((item) =>
+                    <button
+                      key={item.id}
+                      onClick={() => scrollToSection(item.id)}
+                      className={`block w-full text-left px-3 py-2 rounded-md text-sm transition-all ${
+                      activeSection === item.id ?
+                      'bg-[#572670] text-white font-medium' :
+                      'text-gray-700 hover:bg-[#572670]/10'}`
+                      }>
+
                         {item.label}
                       </button>
-                    ))}
+                    )}
                   </nav>
                   <div className="mt-6 pt-6 border-t">
                     <Button asChild className="w-full bg-[#572670] hover:bg-[#7B3FA0]">
@@ -290,8 +290,8 @@ const MindfulnessStressManagementBlogPostPage = () => {
               <img
                 src="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/6cfeb881-529d-42c6-875a-321eac7d440c.webp"
                 alt="Peaceful mindfulness meditation practice"
-                className="w-full h-64 md:h-96 object-cover rounded-lg mb-6"
-              />
+                className="w-full h-64 md:h-96 object-cover rounded-lg mb-6" />
+
 
               <p className="text-xl text-gray-700 leading-relaxed">
                 In our fast-paced, constantly connected world, stress has become a daily companion for millions. But what if you could access a powerful stress-relief tool anytime, anywhere, without medication or special equipment? Mindfulness practices offer exactly that—a scientifically proven way to calm your mind, reduce anxiety, and navigate life's challenges with greater ease.
@@ -615,20 +615,20 @@ const MindfulnessStressManagementBlogPostPage = () => {
               name="karmatms"
               role="Mental Health Editorial Team at KarmaTMS"
               bio="The KarmaTMS team includes board-certified psychiatrists, psychologists, and mental health advocates dedicated to promoting mental wellness through evidence-based information and compassionate care."
-              image="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/ebadb369-a58d-421c-b937-24f900be5867.png"
-            />
+              image="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/ebadb369-a58d-421c-b937-24f900be5867.png" />
+
 
             {/* FAQ Section */}
             <section ref={(el) => sectionsRef.current['faqs'] = el} className="mb-12 mt-12">
               <h2 className="text-3xl font-bold text-[#572670] mb-6">Frequently Asked Questions</h2>
               
               <Accordion type="single" collapsible className="w-full space-y-2">
-                {faqs.map((faq, index) => (
-                  <AccordionItem
-                    key={index}
-                    value={`item-${index}`}
-                    className="border border-gray-200 rounded-lg px-4 data-[state=open]:border-[#572670]"
-                  >
+                {faqs.map((faq, index) =>
+                <AccordionItem
+                  key={index}
+                  value={`item-${index}`}
+                  className="border border-gray-200 rounded-lg px-4 data-[state=open]:border-[#572670]">
+
                     <AccordionTrigger className="text-left font-semibold hover:text-[#572670] hover:no-underline">
                       {faq.question}
                     </AccordionTrigger>
@@ -636,7 +636,7 @@ const MindfulnessStressManagementBlogPostPage = () => {
                       {faq.answer}
                     </AccordionContent>
                   </AccordionItem>
-                ))}
+                )}
               </Accordion>
             </section>
 
@@ -664,13 +664,13 @@ const MindfulnessStressManagementBlogPostPage = () => {
             <section className="mb-12">
               <h2 className="text-3xl font-bold text-[#572670] mb-6">Related Articles</h2>
               <div className="grid md:grid-cols-3 gap-6">
-                {relatedPosts.map((post, index) => (
-                  <Card key={index} className="border-[#572670]/20 overflow-hidden hover:shadow-lg transition-shadow">
+                {relatedPosts.map((post, index) =>
+                <Card key={index} className="border-[#572670]/20 overflow-hidden hover:shadow-lg transition-shadow">
                     <img
-                      src={post.image}
-                      alt={post.title}
-                      className="w-full h-48 object-cover"
-                    />
+                    src={post.image}
+                    alt={post.title}
+                    className="w-full h-48 object-cover" />
+
                     <CardContent className="p-6">
                       <h3 className="font-bold text-lg mb-2 hover:text-[#572670] transition-colors">
                         <Link to={post.link}>{post.title}</Link>
@@ -683,7 +683,7 @@ const MindfulnessStressManagementBlogPostPage = () => {
                       </Button>
                     </CardContent>
                   </Card>
-                ))}
+                )}
               </div>
             </section>
           </article>
@@ -691,8 +691,8 @@ const MindfulnessStressManagementBlogPostPage = () => {
       </div>
 
       <FooterSection />
-    </>
-  );
+    </>);
+
 };
 
 export default MindfulnessStressManagementBlogPostPage;

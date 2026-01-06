@@ -33,6 +33,54 @@ const blogCategories = [
 // Blog posts - Veterans TMS Therapy with fixed images
 const allBlogPosts: BlogPost[] = [
 {
+  id: 19,
+  title: 'Empowering Youth: Strategies for Building Emotional Resilience',
+  excerpt: 'Discover proven strategies for building emotional resilience in young people. Learn practical tools and techniques to help youth develop mental wellness.',
+  category: 'mental-health',
+  author: 'karmatms',
+  date: new Date(2024, 11, 28).toLocaleDateString('en-US', {
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric'
+  }),
+  readTime: '10 min read',
+  image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/6cfeb881-529d-42c6-875a-321eac7d440c.webp',
+  featured: false,
+  rating: 5
+},
+{
+  id: 20,
+  title: 'The Role of Family Dynamics in Mental Health Recovery',
+  excerpt: 'Discover how family relationships and dynamics influence mental health outcomes and recovery processes. Learn strategies for creating supportive family environments.',
+  category: 'mental-health',
+  author: 'karmatms',
+  date: new Date(2024, 11, 19).toLocaleDateString('en-US', {
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric'
+  }),
+  readTime: '12 min read',
+  image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/6cfeb881-529d-42c6-875a-321eac7d440c.webp',
+  featured: false,
+  rating: 5
+},
+{
+  id: 21,
+  title: 'Managing Anxiety Triggers in Everyday Life',
+  excerpt: 'Learn practical strategies to identify and manage anxiety triggers effectively in your daily routine. Master techniques for lasting anxiety relief.',
+  category: 'mental-health',
+  author: 'karmatms',
+  date: new Date(2024, 11, 18).toLocaleDateString('en-US', {
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric'
+  }),
+  readTime: '11 min read',
+  image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/9705b922-d0fc-4d29-be10-acd507ce308c.webp',
+  featured: false,
+  rating: 5
+},
+{
   id: 1,
   title: 'How TMS Therapy Helps Veterans Heal: A New Hope for PTSD, Depression & Anxiety',
   excerpt: 'Discover how TMS therapy offers new hope for veterans struggling with PTSD, depression, and anxiety. Learn about VA hospital availability and treatment success rates.',
@@ -514,7 +562,10 @@ const BlogPage = () => {
                     15: '/blog/screen-time-mental-health',
                     16: '/blog/mindfulness-stress-management',
                     17: '/blog/tech-mental-health-impact',
-                    18: '/blog/mental-health-first-aid'
+                    18: '/blog/mental-health-first-aid',
+                    19: '/blog/empowering-youth-emotional-resilience',
+                    20: '/blog/family-dynamics-mental-health',
+                    21: '/blog/managing-anxiety-triggers'
                   };
                   return (
                     <a
