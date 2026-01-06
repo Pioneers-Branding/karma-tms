@@ -379,8 +379,6 @@ const DepressionPage = () => {
                 src="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/2ddc8d69-b09a-4f1d-bd47-6d783ceefbd1.webp"
                 alt="TMS treatment chair"
                 className="rounded-lg shadow-lg max-h-[600px] w-fit" />
-
-              <div className="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent rounded-lg"></div>
             </div>
           </div>
 
