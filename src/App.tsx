@@ -45,6 +45,9 @@ import VAVeteransPTSDTMSBlogPostPage from "./pages/blogs/VAVeteransPTSDTMSBlogPo
 import VADisabilityBenefitsMentalHealthBlogPostPage from "./pages/blogs/VADisabilityBenefitsMentalHealthBlogPostPage";
 import TMSvsMedicationVeteransBlogPostPage from "./pages/blogs/TMSvsMedicationVeteransBlogPostPage";
 import HelpingVeteransPTSDBlogPostPage from "./pages/blogs/HelpingVeteransPTSDBlogPostPage";
+import UnderstandingPTSDVeteransBlogPostPage from "./pages/blogs/UnderstandingPTSDVeteransBlogPostPage";
+import TMSAnxietyVeteransBlogPostPage from "./pages/blogs/TMSAnxietyVeteransBlogPostPage";
+import TMSMigraineVeteransBlogPostPage from "./pages/blogs/TMSMigraineVeteransBlogPostPage";
 import DisclaimerPage from "./pages/DisclaimerPage";
 
 const queryClient = new QueryClient();
@@ -138,6 +141,10 @@ const App = () =>
           
           {/* Veterans & Disclaimer Routes */}
           <Route path="/veterans" element={<VeteransPage />} />
+          <Route path="/blogs/helping-veterans-ptsd" element={<HelpingVeteransPTSDBlogPostPage />} />
+          <Route path="/blogs/understanding-ptsd-veterans" element={<UnderstandingPTSDVeteransBlogPostPage />} />
+          <Route path="/blogs/tms-anxiety-veterans" element={<TMSAnxietyVeteransBlogPostPage />} />
+          <Route path="/blogs/tms-migraine-veterans" element={<TMSMigraineVeteransBlogPostPage />} />
           <Route path="/disclaimer" element={<DisclaimerPage />} />
           
           {/* Catch-all route redirects to home instead of 404 */}

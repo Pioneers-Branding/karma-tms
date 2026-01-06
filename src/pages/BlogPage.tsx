@@ -112,6 +112,54 @@ const generateUniqueBlogPosts = (): BlogPost[] => {
     image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/02c362bd-cde2-431d-8820-a07a14939638.webp',
     featured: false,
     rating: 5
+  },
+  {
+    id: 6,
+    title: 'Understanding PTSD in Veterans: Signs, Symptoms, and Treatment Paths',
+    excerpt: 'A comprehensive guide to recognizing PTSD in war veterans and Vietnam vets, with modern treatment options including TMS therapy.',
+    category: 'mental-health',
+    author: 'Dr. Keerthy Sunder',
+    date: new Date(2024, 1, 5).toLocaleDateString('en-US', {
+      year: 'numeric',
+      month: 'long',
+      day: 'numeric'
+    }),
+    readTime: '14 min read',
+    image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/02c362bd-cde2-431d-8820-a07a14939638.webp',
+    featured: false,
+    rating: 5
+  },
+  {
+    id: 7,
+    title: 'TMS for Anxiety in Veterans: A Promising Path Beyond Medication',
+    excerpt: 'Discover how TMS therapy helps veterans manage anxiety through brain regulation, offering hope beyond traditional medications.',
+    category: 'tms-therapy',
+    author: 'Dr. Keerthy Sunder',
+    date: new Date(2024, 1, 8).toLocaleDateString('en-US', {
+      year: 'numeric',
+      month: 'long',
+      day: 'numeric'
+    }),
+    readTime: '13 min read',
+    image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/9705b922-d0fc-4d29-be10-acd507ce308c.webp',
+    featured: false,
+    rating: 5
+  },
+  {
+    id: 8,
+    title: 'TMS for Migraine Relief in Veterans: How Brain Stimulation Is Changing Lives',
+    excerpt: 'Learn how TMS addresses chronic migraines in veterans, including comorbidity with PTSD and depression, plus VA disability information.',
+    category: 'tms-therapy',
+    author: 'Dr. Keerthy Sunder',
+    date: new Date(2024, 1, 12).toLocaleDateString('en-US', {
+      year: 'numeric',
+      month: 'long',
+      day: 'numeric'
+    }),
+    readTime: '15 min read',
+    image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/76caee2d-5629-4dc1-a3b4-8c5cea23ede6.webp',
+    featured: false,
+    rating: 5
   }];
 
   return posts;
@@ -298,7 +346,10 @@ const BlogPage = () => {
                     2: '/blog/va-veterans-ptsd-tms-treatment',
                     3: '/blog/va-disability-benefits-depression-anxiety-ptsd',
                     4: '/blog/tms-vs-medication-veterans-depression',
-                    5: '/blog/how-to-help-veterans-ptsd'
+                    5: '/blog/how-to-help-veterans-ptsd',
+                    6: '/blogs/understanding-ptsd-veterans',
+                    7: '/blogs/tms-anxiety-veterans',
+                    8: '/blogs/tms-migraine-veterans'
                   };
                   return (
                     <a
