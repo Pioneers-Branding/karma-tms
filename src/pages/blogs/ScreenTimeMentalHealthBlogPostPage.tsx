@@ -28,13 +28,13 @@ const ScreenTimeMentalHealthBlogPostPage = () => {
   const sectionsRef = useRef<{[key: string]: HTMLElement | null;}>({});
 
   const tocItems = [
-    { id: 'the-problem', label: 'The Screen Time Problem' },
-    { id: 'mental-health-effects', label: 'Effects on Mental Health' },
-    { id: 'biological-mechanisms', label: 'How Screen Time Affects the Brain' },
-    { id: 'healthy-limits', label: 'Establishing Healthy Limits' },
-    { id: 'digital-wellness', label: 'Digital Wellness Strategies' },
-    { id: 'faqs', label: 'Frequently Asked Questions' }
-  ];
+  { id: 'the-problem', label: 'The Screen Time Problem' },
+  { id: 'mental-health-effects', label: 'Effects on Mental Health' },
+  { id: 'biological-mechanisms', label: 'How Screen Time Affects the Brain' },
+  { id: 'healthy-limits', label: 'Establishing Healthy Limits' },
+  { id: 'digital-wellness', label: 'Digital Wellness Strategies' },
+  { id: 'faqs', label: 'Frequently Asked Questions' }];
+
 
   useEffect(() => {
     const handleScroll = () => {
@@ -67,52 +67,52 @@ const ScreenTimeMentalHealthBlogPostPage = () => {
   };
 
   const faqs = [
-    {
-      question: 'How much screen time is too much for mental health?',
-      answer: 'Research suggests that more than 2 hours of recreational screen time per day is associated with increased risk of depression and anxiety, especially in adolescents. For adults, excessive screen time (5+ hours daily) correlates with poorer mental health outcomes. However, quality matters as much as quantity—social media use tends to be more harmful than educational or creative screen activities.'
-    },
-    {
-      question: 'Can excessive screen time cause depression?',
-      answer: 'While screen time alone doesn\'t directly cause depression, research shows a strong correlation between excessive use (particularly social media) and depressive symptoms. The relationship is bidirectional: excessive screen time can worsen mood, and people experiencing depression may turn to screens as a coping mechanism, creating a harmful cycle.'
-    },
-    {
-      question: 'Does screen time before bed affect mental health?',
-      answer: 'Yes, significantly. Blue light from screens suppresses melatonin production, disrupting sleep patterns. Poor sleep is a major risk factor for depression, anxiety, and other mental health conditions. Using screens within 1-2 hours of bedtime can reduce sleep quality and duration, negatively impacting mental health.'
-    },
-    {
-      question: 'Is social media worse for mental health than other screen activities?',
-      answer: 'Yes, research consistently shows that social media use has stronger negative associations with mental health than other screen activities. Social comparison, cyberbullying, FOMO (fear of missing out), and the addictive nature of social platforms contribute to increased anxiety and depression, particularly in young people.'
-    },
-    {
-      question: 'Can reducing screen time improve mental health?',
-      answer: 'Absolutely. Studies show that reducing screen time, especially social media use, can lead to significant improvements in mood, anxiety levels, sleep quality, and overall well-being. Even a one-week break from social media has been shown to reduce depression and anxiety symptoms.'
-    },
-    {
-      question: 'What are signs that screen time is affecting my mental health?',
-      answer: 'Warning signs include: feeling anxious or depressed after using social media, difficulty sleeping, reduced in-person social interactions, neglecting responsibilities or hobbies, feeling unable to reduce screen time despite wanting to, physical symptoms like eye strain or headaches, and worsening mood or irritability.'
-    }
-  ];
+  {
+    question: 'How much screen time is too much for mental health?',
+    answer: 'Research suggests that more than 2 hours of recreational screen time per day is associated with increased risk of depression and anxiety, especially in adolescents. For adults, excessive screen time (5+ hours daily) correlates with poorer mental health outcomes. However, quality matters as much as quantity—social media use tends to be more harmful than educational or creative screen activities.'
+  },
+  {
+    question: 'Can excessive screen time cause depression?',
+    answer: 'While screen time alone doesn\'t directly cause depression, research shows a strong correlation between excessive use (particularly social media) and depressive symptoms. The relationship is bidirectional: excessive screen time can worsen mood, and people experiencing depression may turn to screens as a coping mechanism, creating a harmful cycle.'
+  },
+  {
+    question: 'Does screen time before bed affect mental health?',
+    answer: 'Yes, significantly. Blue light from screens suppresses melatonin production, disrupting sleep patterns. Poor sleep is a major risk factor for depression, anxiety, and other mental health conditions. Using screens within 1-2 hours of bedtime can reduce sleep quality and duration, negatively impacting mental health.'
+  },
+  {
+    question: 'Is social media worse for mental health than other screen activities?',
+    answer: 'Yes, research consistently shows that social media use has stronger negative associations with mental health than other screen activities. Social comparison, cyberbullying, FOMO (fear of missing out), and the addictive nature of social platforms contribute to increased anxiety and depression, particularly in young people.'
+  },
+  {
+    question: 'Can reducing screen time improve mental health?',
+    answer: 'Absolutely. Studies show that reducing screen time, especially social media use, can lead to significant improvements in mood, anxiety levels, sleep quality, and overall well-being. Even a one-week break from social media has been shown to reduce depression and anxiety symptoms.'
+  },
+  {
+    question: 'What are signs that screen time is affecting my mental health?',
+    answer: 'Warning signs include: feeling anxious or depressed after using social media, difficulty sleeping, reduced in-person social interactions, neglecting responsibilities or hobbies, feeling unable to reduce screen time despite wanting to, physical symptoms like eye strain or headaches, and worsening mood or irritability.'
+  }];
+
 
   const relatedPosts = [
-    {
-      title: 'How TMS Therapy Helps with Depression',
-      excerpt: 'Learn how TMS therapy can help treat depression that may be exacerbated by modern lifestyle factors.',
-      link: '/depression',
-      image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/2ddc8d69-b09a-4f1d-bd47-6d783ceefbd1.webp'
-    },
-    {
-      title: 'Understanding Anxiety Disorders',
-      excerpt: 'Explore how anxiety develops and effective treatment options including TMS therapy.',
-      link: '/anxiety',
-      image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/9705b922-d0fc-4d29-be10-acd507ce308c.webp'
-    },
-    {
-      title: 'Stress Management: The Four A\'s Approach',
-      excerpt: 'Learn practical strategies for managing stress in our digital age.',
-      link: '/blog/four-as-stress-management',
-      image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/76caee2d-5629-4dc1-a3b4-8c5cea23ede6.webp'
-    }
-  ];
+  {
+    title: 'How TMS Therapy Helps with Depression',
+    excerpt: 'Learn how TMS therapy can help treat depression that may be exacerbated by modern lifestyle factors.',
+    link: '/depression',
+    image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/2ddc8d69-b09a-4f1d-bd47-6d783ceefbd1.webp'
+  },
+  {
+    title: 'Understanding Anxiety Disorders',
+    excerpt: 'Explore how anxiety develops and effective treatment options including TMS therapy.',
+    link: '/anxiety',
+    image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/9705b922-d0fc-4d29-be10-acd507ce308c.webp'
+  },
+  {
+    title: 'Stress Management: The Four A\'s Approach',
+    excerpt: 'Learn practical strategies for managing stress in our digital age.',
+    link: '/blog/four-as-stress-management',
+    image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/76caee2d-5629-4dc1-a3b4-8c5cea23ede6.webp'
+  }];
+
 
   const articleSchema = {
     '@context': 'https://schema.org',
@@ -170,10 +170,10 @@ const ScreenTimeMentalHealthBlogPostPage = () => {
       <StructuredData
         type="breadcrumb"
         breadcrumbs={[
-          { name: 'Home', url: '/' },
-          { name: 'Blog', url: '/blog' },
-          { name: 'Screen Time and Mental Health', url: '/blog/screen-time-mental-health' }
-        ]} />
+        { name: 'Home', url: '/' },
+        { name: 'Blog', url: '/blog' },
+        { name: 'Screen Time and Mental Health', url: '/blog/screen-time-mental-health' }]
+        } />
 
       <script type="application/ld+json">
         {JSON.stringify(articleSchema)}
@@ -258,14 +258,14 @@ const ScreenTimeMentalHealthBlogPostPage = () => {
                   <h3 className="font-bold text-lg mb-4 text-[#572670]">Table of Contents</h3>
                   <nav className="space-y-2">
                     {tocItems.map((item) =>
-                      <button
-                        key={item.id}
-                        onClick={() => scrollToSection(item.id)}
-                        className={`block w-full text-left px-3 py-2 rounded-md text-sm transition-all ${
-                          activeSection === item.id ?
-                            'bg-[#572670] text-white font-medium' :
-                            'text-gray-700 hover:bg-[#572670]/10'
-                        }`}>
+                    <button
+                      key={item.id}
+                      onClick={() => scrollToSection(item.id)}
+                      className={`block w-full text-left px-3 py-2 rounded-md text-sm transition-all ${
+                      activeSection === item.id ?
+                      'bg-[#572670] text-white font-medium' :
+                      'text-gray-700 hover:bg-[#572670]/10'}`
+                      }>
                         {item.label}
                       </button>
                     )}
@@ -702,10 +702,10 @@ const ScreenTimeMentalHealthBlogPostPage = () => {
               
               <Accordion type="single" collapsible className="w-full space-y-2">
                 {faqs.map((faq, index) =>
-                  <AccordionItem
-                    key={index}
-                    value={`item-${index}`}
-                    className="border border-gray-200 rounded-lg px-4 data-[state=open]:border-[#572670]">
+                <AccordionItem
+                  key={index}
+                  value={`item-${index}`}
+                  className="border border-gray-200 rounded-lg px-4 data-[state=open]:border-[#572670]">
                     <AccordionTrigger className="text-left font-semibold hover:text-[#572670] hover:no-underline">
                       {faq.question}
                     </AccordionTrigger>
@@ -742,11 +742,11 @@ const ScreenTimeMentalHealthBlogPostPage = () => {
               <h2 className="text-3xl font-bold text-[#572670] mb-6">Related Articles</h2>
               <div className="grid md:grid-cols-3 gap-6">
                 {relatedPosts.map((post, index) =>
-                  <Card key={index} className="border-[#572670]/20 overflow-hidden hover:shadow-lg transition-shadow">
+                <Card key={index} className="border-[#572670]/20 overflow-hidden hover:shadow-lg transition-shadow">
                     <img
-                      src={post.image}
-                      alt={post.title}
-                      className="w-full h-48 object-cover" />
+                    src={post.image}
+                    alt={post.title}
+                    className="w-full h-48 object-cover" />
                     <CardContent className="p-6">
                       <h3 className="font-bold text-lg mb-2 hover:text-[#572670] transition-colors">
                         <Link to={post.link}>{post.title}</Link>
@@ -767,8 +767,8 @@ const ScreenTimeMentalHealthBlogPostPage = () => {
       </div>
 
       <FooterSection />
-    </>
-  );
+    </>);
+
 };
 
 export default ScreenTimeMentalHealthBlogPostPage;

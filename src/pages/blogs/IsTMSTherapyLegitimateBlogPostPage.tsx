@@ -28,13 +28,13 @@ const IsTMSTherapyLegitimateBlogPostPage = () => {
   const sectionsRef = useRef<{[key: string]: HTMLElement | null;}>({});
 
   const tocItems = [
-    { id: 'fda-approval', label: 'FDA Approval and Regulation' },
-    { id: 'scientific-evidence', label: 'Scientific Evidence' },
-    { id: 'clinical-studies', label: 'Major Clinical Studies' },
-    { id: 'insurance-coverage', label: 'Insurance Coverage' },
-    { id: 'expert-endorsements', label: 'Professional Endorsements' },
-    { id: 'faqs', label: 'Frequently Asked Questions' }
-  ];
+  { id: 'fda-approval', label: 'FDA Approval and Regulation' },
+  { id: 'scientific-evidence', label: 'Scientific Evidence' },
+  { id: 'clinical-studies', label: 'Major Clinical Studies' },
+  { id: 'insurance-coverage', label: 'Insurance Coverage' },
+  { id: 'expert-endorsements', label: 'Professional Endorsements' },
+  { id: 'faqs', label: 'Frequently Asked Questions' }];
+
 
   useEffect(() => {
     const handleScroll = () => {
@@ -67,52 +67,52 @@ const IsTMSTherapyLegitimateBlogPostPage = () => {
   };
 
   const faqs = [
-    {
-      question: 'Is TMS therapy FDA approved?',
-      answer: 'Yes, TMS therapy has been FDA-cleared since 2008 for treatment-resistant depression. Since then, the FDA has expanded approval to include obsessive-compulsive disorder (OCD) in 2018 and anxious depression (depression with comorbid anxiety) in 2019. FDA clearance means TMS has undergone rigorous testing and proven both safe and effective.'
-    },
-    {
-      question: 'Is TMS therapy scientifically proven?',
-      answer: 'Absolutely. TMS therapy is supported by over 30 years of research, including hundreds of peer-reviewed studies and multiple large-scale clinical trials. The scientific evidence consistently demonstrates TMS\'s effectiveness for depression, with success rates of 50-60% in treatment-resistant cases.'
-    },
-    {
-      question: 'Do major medical organizations recognize TMS therapy?',
-      answer: 'Yes. TMS therapy is recognized and endorsed by the American Psychiatric Association, American Academy of Neurology, and numerous international psychiatric organizations. It\'s included in major depression treatment guidelines as an evidence-based option.'
-    },
-    {
-      question: 'Will my insurance cover TMS therapy?',
-      answer: 'Most major insurance plans, including Medicare, now cover TMS therapy for treatment-resistant depression. This widespread insurance coverage reflects recognition of TMS as a legitimate, medically necessary treatment. Coverage requirements and criteria vary by insurer.'
-    },
-    {
-      question: 'How does TMS compare to other depression treatments?',
-      answer: 'TMS offers comparable or superior effectiveness to antidepressants for treatment-resistant depression, but without systemic side effects. Studies show TMS produces more durable results than medications alone, and it\'s less invasive than ECT while offering similar efficacy.'
-    },
-    {
-      question: 'Are there any risks or side effects with TMS?',
-      answer: 'TMS therapy has an excellent safety profile. The most common side effect is mild scalp discomfort during treatment, which typically resolves within a week. Serious side effects are extremely rare (seizure risk <0.1%). Unlike medications, TMS doesn\'t cause weight gain, sexual dysfunction, or cognitive issues.'
-    }
-  ];
+  {
+    question: 'Is TMS therapy FDA approved?',
+    answer: 'Yes, TMS therapy has been FDA-cleared since 2008 for treatment-resistant depression. Since then, the FDA has expanded approval to include obsessive-compulsive disorder (OCD) in 2018 and anxious depression (depression with comorbid anxiety) in 2019. FDA clearance means TMS has undergone rigorous testing and proven both safe and effective.'
+  },
+  {
+    question: 'Is TMS therapy scientifically proven?',
+    answer: 'Absolutely. TMS therapy is supported by over 30 years of research, including hundreds of peer-reviewed studies and multiple large-scale clinical trials. The scientific evidence consistently demonstrates TMS\'s effectiveness for depression, with success rates of 50-60% in treatment-resistant cases.'
+  },
+  {
+    question: 'Do major medical organizations recognize TMS therapy?',
+    answer: 'Yes. TMS therapy is recognized and endorsed by the American Psychiatric Association, American Academy of Neurology, and numerous international psychiatric organizations. It\'s included in major depression treatment guidelines as an evidence-based option.'
+  },
+  {
+    question: 'Will my insurance cover TMS therapy?',
+    answer: 'Most major insurance plans, including Medicare, now cover TMS therapy for treatment-resistant depression. This widespread insurance coverage reflects recognition of TMS as a legitimate, medically necessary treatment. Coverage requirements and criteria vary by insurer.'
+  },
+  {
+    question: 'How does TMS compare to other depression treatments?',
+    answer: 'TMS offers comparable or superior effectiveness to antidepressants for treatment-resistant depression, but without systemic side effects. Studies show TMS produces more durable results than medications alone, and it\'s less invasive than ECT while offering similar efficacy.'
+  },
+  {
+    question: 'Are there any risks or side effects with TMS?',
+    answer: 'TMS therapy has an excellent safety profile. The most common side effect is mild scalp discomfort during treatment, which typically resolves within a week. Serious side effects are extremely rare (seizure risk <0.1%). Unlike medications, TMS doesn\'t cause weight gain, sexual dysfunction, or cognitive issues.'
+  }];
+
 
   const relatedPosts = [
-    {
-      title: 'How Successful is TMS Treatment?',
-      excerpt: 'Explore detailed success rates and effectiveness data for TMS therapy across different conditions.',
-      link: '/blog/how-successful-is-tms-treatment',
-      image: 'https://images.unsplash.com/photo-1701120285820-976b36f4e5a4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MTg3MTl8MHwxfHNlYXJjaHwxfHxBJTIwaGlnaC1xdWFsaXR5JTIwaW1hZ2UlMjBvZiUyMGElMjBUTVMlMjB0aGVyYXB5JTIwbWVkaWNhbCUyMGRldmljZSUyQyUyMHNob3djYXNpbmclMjBpdHMlMjBkZXNpZ24lMjBhbmQlMjBmdW5jdGlvbmFsaXR5LnxlbnwwfHx8fDE3NjMzNjU0ODl8MA&ixlib=rb-4.1.0&q=80&w=200$w=1920'
-    },
-    {
-      title: 'Is TMS Therapy Permanent?',
-      excerpt: 'Learn about the duration of TMS results and strategies for maintaining long-term benefits.',
-      link: '/blog/is-tms-therapy-permanent',
-      image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/76caee2d-5629-4dc1-a3b4-8c5cea23ede6.webp'
-    },
-    {
-      title: 'TMS Therapy: A Complete Guide',
-      excerpt: 'Everything you need to know about Transcranial Magnetic Stimulation therapy.',
-      link: '/tms-therapy',
-      image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/d3a1f368-2c44-4046-8568-532988b95c6d.webp'
-    }
-  ];
+  {
+    title: 'How Successful is TMS Treatment?',
+    excerpt: 'Explore detailed success rates and effectiveness data for TMS therapy across different conditions.',
+    link: '/blog/how-successful-is-tms-treatment',
+    image: 'https://images.unsplash.com/photo-1701120285820-976b36f4e5a4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MTg3MTl8MHwxfHNlYXJjaHwxfHxBJTIwaGlnaC1xdWFsaXR5JTIwaW1hZ2UlMjBvZiUyMGElMjBUTVMlMjB0aGVyYXB5JTIwbWVkaWNhbCUyMGRldmljZSUyQyUyMHNob3djYXNpbmclMjBpdHMlMjBkZXNpZ24lMjBhbmQlMjBmdW5jdGlvbmFsaXR5LnxlbnwwfHx8fDE3NjMzNjU0ODl8MA&ixlib=rb-4.1.0&q=80&w=200$w=1920'
+  },
+  {
+    title: 'Is TMS Therapy Permanent?',
+    excerpt: 'Learn about the duration of TMS results and strategies for maintaining long-term benefits.',
+    link: '/blog/is-tms-therapy-permanent',
+    image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/76caee2d-5629-4dc1-a3b4-8c5cea23ede6.webp'
+  },
+  {
+    title: 'TMS Therapy: A Complete Guide',
+    excerpt: 'Everything you need to know about Transcranial Magnetic Stimulation therapy.',
+    link: '/tms-therapy',
+    image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/d3a1f368-2c44-4046-8568-532988b95c6d.webp'
+  }];
+
 
   const articleSchema = {
     '@context': 'https://schema.org',
@@ -170,10 +170,10 @@ const IsTMSTherapyLegitimateBlogPostPage = () => {
       <StructuredData
         type="breadcrumb"
         breadcrumbs={[
-          { name: 'Home', url: '/' },
-          { name: 'Blog', url: '/blog' },
-          { name: 'Is TMS Therapy Legitimate?', url: '/blog/is-tms-therapy-legitimate' }
-        ]} />
+        { name: 'Home', url: '/' },
+        { name: 'Blog', url: '/blog' },
+        { name: 'Is TMS Therapy Legitimate?', url: '/blog/is-tms-therapy-legitimate' }]
+        } />
 
       <script type="application/ld+json">
         {JSON.stringify(articleSchema)}
@@ -258,14 +258,14 @@ const IsTMSTherapyLegitimateBlogPostPage = () => {
                   <h3 className="font-bold text-lg mb-4 text-[#572670]">Table of Contents</h3>
                   <nav className="space-y-2">
                     {tocItems.map((item) =>
-                      <button
-                        key={item.id}
-                        onClick={() => scrollToSection(item.id)}
-                        className={`block w-full text-left px-3 py-2 rounded-md text-sm transition-all ${
-                          activeSection === item.id ?
-                            'bg-[#572670] text-white font-medium' :
-                            'text-gray-700 hover:bg-[#572670]/10'
-                        }`}>
+                    <button
+                      key={item.id}
+                      onClick={() => scrollToSection(item.id)}
+                      className={`block w-full text-left px-3 py-2 rounded-md text-sm transition-all ${
+                      activeSection === item.id ?
+                      'bg-[#572670] text-white font-medium' :
+                      'text-gray-700 hover:bg-[#572670]/10'}`
+                      }>
                         {item.label}
                       </button>
                     )}
@@ -633,10 +633,10 @@ const IsTMSTherapyLegitimateBlogPostPage = () => {
               
               <Accordion type="single" collapsible className="w-full space-y-2">
                 {faqs.map((faq, index) =>
-                  <AccordionItem
-                    key={index}
-                    value={`item-${index}`}
-                    className="border border-gray-200 rounded-lg px-4 data-[state=open]:border-[#572670]">
+                <AccordionItem
+                  key={index}
+                  value={`item-${index}`}
+                  className="border border-gray-200 rounded-lg px-4 data-[state=open]:border-[#572670]">
                     <AccordionTrigger className="text-left font-semibold hover:text-[#572670] hover:no-underline">
                       {faq.question}
                     </AccordionTrigger>
@@ -673,11 +673,11 @@ const IsTMSTherapyLegitimateBlogPostPage = () => {
               <h2 className="text-3xl font-bold text-[#572670] mb-6">Related Articles</h2>
               <div className="grid md:grid-cols-3 gap-6">
                 {relatedPosts.map((post, index) =>
-                  <Card key={index} className="border-[#572670]/20 overflow-hidden hover:shadow-lg transition-shadow">
+                <Card key={index} className="border-[#572670]/20 overflow-hidden hover:shadow-lg transition-shadow">
                     <img
-                      src={post.image}
-                      alt={post.title}
-                      className="w-full h-48 object-cover" />
+                    src={post.image}
+                    alt={post.title}
+                    className="w-full h-48 object-cover" />
                     <CardContent className="p-6">
                       <h3 className="font-bold text-lg mb-2 hover:text-[#572670] transition-colors">
                         <Link to={post.link}>{post.title}</Link>
@@ -698,8 +698,8 @@ const IsTMSTherapyLegitimateBlogPostPage = () => {
       </div>
 
       <FooterSection />
-    </>
-  );
+    </>);
+
 };
 
 export default IsTMSTherapyLegitimateBlogPostPage;

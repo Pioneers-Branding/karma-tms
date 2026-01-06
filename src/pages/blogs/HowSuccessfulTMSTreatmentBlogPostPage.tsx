@@ -28,13 +28,13 @@ const HowSuccessfulTMSTreatmentBlogPostPage = () => {
   const sectionsRef = useRef<{[key: string]: HTMLElement | null;}>({});
 
   const tocItems = [
-    { id: 'success-rates', label: 'TMS Success Rates' },
-    { id: 'depression-effectiveness', label: 'Effectiveness for Depression' },
-    { id: 'other-conditions', label: 'Success with Other Conditions' },
-    { id: 'factors-influencing', label: 'Factors That Influence Success' },
-    { id: 'real-world-outcomes', label: 'Real-World Outcomes' },
-    { id: 'faqs', label: 'Frequently Asked Questions' }
-  ];
+  { id: 'success-rates', label: 'TMS Success Rates' },
+  { id: 'depression-effectiveness', label: 'Effectiveness for Depression' },
+  { id: 'other-conditions', label: 'Success with Other Conditions' },
+  { id: 'factors-influencing', label: 'Factors That Influence Success' },
+  { id: 'real-world-outcomes', label: 'Real-World Outcomes' },
+  { id: 'faqs', label: 'Frequently Asked Questions' }];
+
 
   useEffect(() => {
     const handleScroll = () => {
@@ -67,52 +67,52 @@ const HowSuccessfulTMSTreatmentBlogPostPage = () => {
   };
 
   const faqs = [
-    {
-      question: 'What is the success rate of TMS therapy for depression?',
-      answer: 'TMS therapy has a 50-60% response rate for treatment-resistant depression, meaning that more than half of patients experience significant symptom improvement. Additionally, 30-40% of patients achieve complete remission (no symptoms). These rates are particularly impressive given that patients typically try TMS after medications have failed.'
-    },
-    {
-      question: 'How does TMS success compare to antidepressants?',
-      answer: 'For treatment-resistant depression, TMS shows comparable or superior success rates to trying another antidepressant medication. Studies show TMS produces response rates of 50-60%, while switching to a new medication after previous failures typically yields 20-30% response rates. TMS also avoids the systemic side effects of medications.'
-    },
-    {
-      question: 'What percentage of people benefit from TMS therapy?',
-      answer: 'Approximately 70-80% of patients experience some degree of improvement with TMS therapy. About 50-60% achieve clinically significant response (50% or greater symptom reduction), and 30-40% reach full remission. Even patients who don\'t achieve full remission often report meaningful quality of life improvements.'
-    },
-    {
-      question: 'Does TMS work for anxiety disorders?',
-      answer: 'Yes, TMS has shown good success for anxiety disorders. Studies report 50-70% response rates for generalized anxiety disorder, with many patients experiencing substantial reduction in anxiety symptoms. The FDA has approved TMS for anxious depression, validating its effectiveness for anxiety symptoms.'
-    },
-    {
-      question: 'Why doesn\'t TMS work for everyone?',
-      answer: 'TMS effectiveness varies based on individual brain chemistry, depression severity, duration of illness, and other factors. Some people have brain differences that make them less responsive to magnetic stimulation. However, non-responders to standard TMS may benefit from advanced protocols, higher doses, or targeting different brain regions.'
-    },
-    {
-      question: 'Can TMS be tried again if it doesn\'t work the first time?',
-      answer: 'Yes, TMS can be repeated with different parameters. Some patients who don\'t respond to standard protocols may benefit from extended treatment courses, higher intensity stimulation, or targeting additional brain regions. Many clinics offer advanced TMS protocols that show promise for initial non-responders.'
-    }
-  ];
+  {
+    question: 'What is the success rate of TMS therapy for depression?',
+    answer: 'TMS therapy has a 50-60% response rate for treatment-resistant depression, meaning that more than half of patients experience significant symptom improvement. Additionally, 30-40% of patients achieve complete remission (no symptoms). These rates are particularly impressive given that patients typically try TMS after medications have failed.'
+  },
+  {
+    question: 'How does TMS success compare to antidepressants?',
+    answer: 'For treatment-resistant depression, TMS shows comparable or superior success rates to trying another antidepressant medication. Studies show TMS produces response rates of 50-60%, while switching to a new medication after previous failures typically yields 20-30% response rates. TMS also avoids the systemic side effects of medications.'
+  },
+  {
+    question: 'What percentage of people benefit from TMS therapy?',
+    answer: 'Approximately 70-80% of patients experience some degree of improvement with TMS therapy. About 50-60% achieve clinically significant response (50% or greater symptom reduction), and 30-40% reach full remission. Even patients who don\'t achieve full remission often report meaningful quality of life improvements.'
+  },
+  {
+    question: 'Does TMS work for anxiety disorders?',
+    answer: 'Yes, TMS has shown good success for anxiety disorders. Studies report 50-70% response rates for generalized anxiety disorder, with many patients experiencing substantial reduction in anxiety symptoms. The FDA has approved TMS for anxious depression, validating its effectiveness for anxiety symptoms.'
+  },
+  {
+    question: 'Why doesn\'t TMS work for everyone?',
+    answer: 'TMS effectiveness varies based on individual brain chemistry, depression severity, duration of illness, and other factors. Some people have brain differences that make them less responsive to magnetic stimulation. However, non-responders to standard TMS may benefit from advanced protocols, higher doses, or targeting different brain regions.'
+  },
+  {
+    question: 'Can TMS be tried again if it doesn\'t work the first time?',
+    answer: 'Yes, TMS can be repeated with different parameters. Some patients who don\'t respond to standard protocols may benefit from extended treatment courses, higher intensity stimulation, or targeting additional brain regions. Many clinics offer advanced TMS protocols that show promise for initial non-responders.'
+  }];
+
 
   const relatedPosts = [
-    {
-      title: 'Is TMS Therapy Permanent?',
-      excerpt: 'Learn about the duration of TMS results and how to maintain long-term benefits.',
-      link: '/blog/is-tms-therapy-permanent',
-      image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/76caee2d-5629-4dc1-a3b4-8c5cea23ede6.webp'
-    },
-    {
-      title: 'Is TMS Therapy Legitimate?',
-      excerpt: 'Discover the FDA approval, scientific evidence, and expert endorsements behind TMS therapy.',
-      link: '/blog/is-tms-therapy-legitimate',
-      image: 'https://images.unsplash.com/photo-1620148222862-b95cf7405a7b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MTg3MTl8MHwxfHNlYXJjaHwxfHxBbiUyMGltYWdlJTIwZGVwaWN0aW5nJTIwdGhlJTIwc3VjY2VzcyUyMGFuZCUyMGVmZmVjdGl2ZW5lc3MlMjBvZiUyMFRNUyUyMHRoZXJhcHkufGVufDB8fHx8MTc2MzM2NTQ5MXww&ixlib=rb-4.1.0&q=80&w=200$w=800'
-    },
-    {
-      title: 'TMS Therapy: A Complete Guide',
-      excerpt: 'Everything you need to know about Transcranial Magnetic Stimulation therapy.',
-      link: '/tms-therapy',
-      image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/d3a1f368-2c44-4046-8568-532988b95c6d.webp'
-    }
-  ];
+  {
+    title: 'Is TMS Therapy Permanent?',
+    excerpt: 'Learn about the duration of TMS results and how to maintain long-term benefits.',
+    link: '/blog/is-tms-therapy-permanent',
+    image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/76caee2d-5629-4dc1-a3b4-8c5cea23ede6.webp'
+  },
+  {
+    title: 'Is TMS Therapy Legitimate?',
+    excerpt: 'Discover the FDA approval, scientific evidence, and expert endorsements behind TMS therapy.',
+    link: '/blog/is-tms-therapy-legitimate',
+    image: 'https://images.unsplash.com/photo-1620148222862-b95cf7405a7b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MTg3MTl8MHwxfHNlYXJjaHwxfHxBbiUyMGltYWdlJTIwZGVwaWN0aW5nJTIwdGhlJTIwc3VjY2VzcyUyMGFuZCUyMGVmZmVjdGl2ZW5lc3MlMjBvZiUyMFRNUyUyMHRoZXJhcHkufGVufDB8fHx8MTc2MzM2NTQ5MXww&ixlib=rb-4.1.0&q=80&w=200$w=800'
+  },
+  {
+    title: 'TMS Therapy: A Complete Guide',
+    excerpt: 'Everything you need to know about Transcranial Magnetic Stimulation therapy.',
+    link: '/tms-therapy',
+    image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/d3a1f368-2c44-4046-8568-532988b95c6d.webp'
+  }];
+
 
   const articleSchema = {
     '@context': 'https://schema.org',
@@ -170,10 +170,10 @@ const HowSuccessfulTMSTreatmentBlogPostPage = () => {
       <StructuredData
         type="breadcrumb"
         breadcrumbs={[
-          { name: 'Home', url: '/' },
-          { name: 'Blog', url: '/blog' },
-          { name: 'How Successful is TMS Treatment?', url: '/blog/how-successful-is-tms-treatment' }
-        ]} />
+        { name: 'Home', url: '/' },
+        { name: 'Blog', url: '/blog' },
+        { name: 'How Successful is TMS Treatment?', url: '/blog/how-successful-is-tms-treatment' }]
+        } />
 
       <script type="application/ld+json">
         {JSON.stringify(articleSchema)}
@@ -258,14 +258,14 @@ const HowSuccessfulTMSTreatmentBlogPostPage = () => {
                   <h3 className="font-bold text-lg mb-4 text-[#572670]">Table of Contents</h3>
                   <nav className="space-y-2">
                     {tocItems.map((item) =>
-                      <button
-                        key={item.id}
-                        onClick={() => scrollToSection(item.id)}
-                        className={`block w-full text-left px-3 py-2 rounded-md text-sm transition-all ${
-                          activeSection === item.id ?
-                            'bg-[#572670] text-white font-medium' :
-                            'text-gray-700 hover:bg-[#572670]/10'
-                        }`}>
+                    <button
+                      key={item.id}
+                      onClick={() => scrollToSection(item.id)}
+                      className={`block w-full text-left px-3 py-2 rounded-md text-sm transition-all ${
+                      activeSection === item.id ?
+                      'bg-[#572670] text-white font-medium' :
+                      'text-gray-700 hover:bg-[#572670]/10'}`
+                      }>
                         {item.label}
                       </button>
                     )}
@@ -636,10 +636,10 @@ const HowSuccessfulTMSTreatmentBlogPostPage = () => {
               
               <Accordion type="single" collapsible className="w-full space-y-2">
                 {faqs.map((faq, index) =>
-                  <AccordionItem
-                    key={index}
-                    value={`item-${index}`}
-                    className="border border-gray-200 rounded-lg px-4 data-[state=open]:border-[#572670]">
+                <AccordionItem
+                  key={index}
+                  value={`item-${index}`}
+                  className="border border-gray-200 rounded-lg px-4 data-[state=open]:border-[#572670]">
                     <AccordionTrigger className="text-left font-semibold hover:text-[#572670] hover:no-underline">
                       {faq.question}
                     </AccordionTrigger>
@@ -676,11 +676,11 @@ const HowSuccessfulTMSTreatmentBlogPostPage = () => {
               <h2 className="text-3xl font-bold text-[#572670] mb-6">Related Articles</h2>
               <div className="grid md:grid-cols-3 gap-6">
                 {relatedPosts.map((post, index) =>
-                  <Card key={index} className="border-[#572670]/20 overflow-hidden hover:shadow-lg transition-shadow">
+                <Card key={index} className="border-[#572670]/20 overflow-hidden hover:shadow-lg transition-shadow">
                     <img
-                      src={post.image}
-                      alt={post.title}
-                      className="w-full h-48 object-cover" />
+                    src={post.image}
+                    alt={post.title}
+                    className="w-full h-48 object-cover" />
                     <CardContent className="p-6">
                       <h3 className="font-bold text-lg mb-2 hover:text-[#572670] transition-colors">
                         <Link to={post.link}>{post.title}</Link>
@@ -701,8 +701,8 @@ const HowSuccessfulTMSTreatmentBlogPostPage = () => {
       </div>
 
       <FooterSection />
-    </>
-  );
+    </>);
+
 };
 
 export default HowSuccessfulTMSTreatmentBlogPostPage;

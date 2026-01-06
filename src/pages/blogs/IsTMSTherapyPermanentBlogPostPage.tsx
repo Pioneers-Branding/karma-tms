@@ -28,13 +28,13 @@ const IsTMSTherapyPermanentBlogPostPage = () => {
   const sectionsRef = useRef<{[key: string]: HTMLElement | null;}>({});
 
   const tocItems = [
-    { id: 'what-is-tms', label: 'What is TMS Therapy?' },
-    { id: 'duration-of-results', label: 'How Long Do TMS Results Last?' },
-    { id: 'factors-affecting-longevity', label: 'Factors That Affect Results' },
-    { id: 'maintaining-results', label: 'Maintaining Your Results' },
-    { id: 'research-findings', label: 'Research on Long-Term Outcomes' },
-    { id: 'faqs', label: 'Frequently Asked Questions' }
-  ];
+  { id: 'what-is-tms', label: 'What is TMS Therapy?' },
+  { id: 'duration-of-results', label: 'How Long Do TMS Results Last?' },
+  { id: 'factors-affecting-longevity', label: 'Factors That Affect Results' },
+  { id: 'maintaining-results', label: 'Maintaining Your Results' },
+  { id: 'research-findings', label: 'Research on Long-Term Outcomes' },
+  { id: 'faqs', label: 'Frequently Asked Questions' }];
+
 
   useEffect(() => {
     const handleScroll = () => {
@@ -67,52 +67,52 @@ const IsTMSTherapyPermanentBlogPostPage = () => {
   };
 
   const faqs = [
-    {
-      question: 'Is TMS therapy a permanent cure for depression?',
-      answer: 'TMS therapy is not a permanent cure, but it can provide long-lasting relief from depression symptoms. Clinical studies show that many patients maintain their improvements for 12 months or longer after completing treatment. Some patients experience sustained remission for years, while others may benefit from maintenance sessions to preserve their results.'
-    },
-    {
-      question: 'How long do the effects of TMS therapy last?',
-      answer: 'Research indicates that 60-70% of patients who respond to TMS therapy maintain their improvements for at least one year. Some studies show benefits lasting 2-3 years or longer. The duration varies based on individual factors, lifestyle choices, and whether maintenance treatments are pursued.'
-    },
-    {
-      question: 'Do I need maintenance TMS sessions after my initial treatment?',
-      answer: 'Not everyone needs maintenance sessions. Many patients maintain their results without additional treatment. However, some individuals benefit from periodic booster sessions, typically ranging from one session per month to quarterly treatments, to sustain their improvements and prevent relapse.'
-    },
-    {
-      question: 'What happens if my depression symptoms return after TMS?',
-      answer: 'If symptoms return, you can safely undergo additional TMS treatment. Many patients who experience recurrence respond well to maintenance sessions or another full course of treatment. Your healthcare provider will work with you to develop an appropriate plan based on your individual needs.'
-    },
-    {
-      question: 'Can TMS therapy prevent future depression episodes?',
-      answer: 'While TMS doesn\'t provide absolute prevention, research suggests it can reduce the frequency and severity of future episodes. Combining TMS with ongoing therapy, lifestyle modifications, and stress management techniques provides the best protection against recurrence.'
-    },
-    {
-      question: 'How does TMS compare to antidepressants for long-term results?',
-      answer: 'Unlike antidepressants that require continuous use, TMS can provide lasting benefits after treatment ends. Studies show comparable or superior long-term outcomes with TMS, without the side effects of ongoing medication. However, some patients benefit most from a combination of both treatments.'
-    }
-  ];
+  {
+    question: 'Is TMS therapy a permanent cure for depression?',
+    answer: 'TMS therapy is not a permanent cure, but it can provide long-lasting relief from depression symptoms. Clinical studies show that many patients maintain their improvements for 12 months or longer after completing treatment. Some patients experience sustained remission for years, while others may benefit from maintenance sessions to preserve their results.'
+  },
+  {
+    question: 'How long do the effects of TMS therapy last?',
+    answer: 'Research indicates that 60-70% of patients who respond to TMS therapy maintain their improvements for at least one year. Some studies show benefits lasting 2-3 years or longer. The duration varies based on individual factors, lifestyle choices, and whether maintenance treatments are pursued.'
+  },
+  {
+    question: 'Do I need maintenance TMS sessions after my initial treatment?',
+    answer: 'Not everyone needs maintenance sessions. Many patients maintain their results without additional treatment. However, some individuals benefit from periodic booster sessions, typically ranging from one session per month to quarterly treatments, to sustain their improvements and prevent relapse.'
+  },
+  {
+    question: 'What happens if my depression symptoms return after TMS?',
+    answer: 'If symptoms return, you can safely undergo additional TMS treatment. Many patients who experience recurrence respond well to maintenance sessions or another full course of treatment. Your healthcare provider will work with you to develop an appropriate plan based on your individual needs.'
+  },
+  {
+    question: 'Can TMS therapy prevent future depression episodes?',
+    answer: 'While TMS doesn\'t provide absolute prevention, research suggests it can reduce the frequency and severity of future episodes. Combining TMS with ongoing therapy, lifestyle modifications, and stress management techniques provides the best protection against recurrence.'
+  },
+  {
+    question: 'How does TMS compare to antidepressants for long-term results?',
+    answer: 'Unlike antidepressants that require continuous use, TMS can provide lasting benefits after treatment ends. Studies show comparable or superior long-term outcomes with TMS, without the side effects of ongoing medication. However, some patients benefit most from a combination of both treatments.'
+  }];
+
 
   const relatedPosts = [
-    {
-      title: 'How Successful is TMS Treatment?',
-      excerpt: 'Explore the success rates and effectiveness of TMS therapy for depression and other mental health conditions.',
-      link: '/blog/how-successful-is-tms-treatment',
-      image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/76caee2d-5629-4dc1-a3b4-8c5cea23ede6.webp'
-    },
-    {
-      title: 'Is TMS Therapy Legitimate?',
-      excerpt: 'Learn about the scientific evidence, FDA approval, and clinical validation behind TMS therapy.',
-      link: '/blog/is-tms-therapy-legitimate',
-      image: 'https://images.unsplash.com/photo-1620077399971-431e7ea0cf0c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MTg3MTl8MHwxfHNlYXJjaHwxfHxBJTIwd2ViJTIwaW1hZ2UlMjByZWxhdGVkJTIwdG8lMjBUTVMlMjB0aGVyYXB5LnxlbnwwfHx8fDE3NjMzNjU0ODh8MA&ixlib=rb-4.1.0&q=80&w=200$w=800'
-    },
-    {
-      title: 'TMS Therapy: A Complete Guide',
-      excerpt: 'Everything you need to know about Transcranial Magnetic Stimulation therapy and how it works.',
-      link: '/tms-therapy',
-      image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/d3a1f368-2c44-4046-8568-532988b95c6d.webp'
-    }
-  ];
+  {
+    title: 'How Successful is TMS Treatment?',
+    excerpt: 'Explore the success rates and effectiveness of TMS therapy for depression and other mental health conditions.',
+    link: '/blog/how-successful-is-tms-treatment',
+    image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/76caee2d-5629-4dc1-a3b4-8c5cea23ede6.webp'
+  },
+  {
+    title: 'Is TMS Therapy Legitimate?',
+    excerpt: 'Learn about the scientific evidence, FDA approval, and clinical validation behind TMS therapy.',
+    link: '/blog/is-tms-therapy-legitimate',
+    image: 'https://images.unsplash.com/photo-1620077399971-431e7ea0cf0c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MTg3MTl8MHwxfHNlYXJjaHwxfHxBJTIwd2ViJTIwaW1hZ2UlMjByZWxhdGVkJTIwdG8lMjBUTVMlMjB0aGVyYXB5LnxlbnwwfHx8fDE3NjMzNjU0ODh8MA&ixlib=rb-4.1.0&q=80&w=200$w=800'
+  },
+  {
+    title: 'TMS Therapy: A Complete Guide',
+    excerpt: 'Everything you need to know about Transcranial Magnetic Stimulation therapy and how it works.',
+    link: '/tms-therapy',
+    image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/d3a1f368-2c44-4046-8568-532988b95c6d.webp'
+  }];
+
 
   const articleSchema = {
     '@context': 'https://schema.org',
@@ -170,10 +170,10 @@ const IsTMSTherapyPermanentBlogPostPage = () => {
       <StructuredData
         type="breadcrumb"
         breadcrumbs={[
-          { name: 'Home', url: '/' },
-          { name: 'Blog', url: '/blog' },
-          { name: 'Is TMS Therapy Permanent?', url: '/blog/is-tms-therapy-permanent' }
-        ]} />
+        { name: 'Home', url: '/' },
+        { name: 'Blog', url: '/blog' },
+        { name: 'Is TMS Therapy Permanent?', url: '/blog/is-tms-therapy-permanent' }]
+        } />
 
       <script type="application/ld+json">
         {JSON.stringify(articleSchema)}
@@ -258,14 +258,14 @@ const IsTMSTherapyPermanentBlogPostPage = () => {
                   <h3 className="font-bold text-lg mb-4 text-[#572670]">Table of Contents</h3>
                   <nav className="space-y-2">
                     {tocItems.map((item) =>
-                      <button
-                        key={item.id}
-                        onClick={() => scrollToSection(item.id)}
-                        className={`block w-full text-left px-3 py-2 rounded-md text-sm transition-all ${
-                          activeSection === item.id ?
-                            'bg-[#572670] text-white font-medium' :
-                            'text-gray-700 hover:bg-[#572670]/10'
-                        }`}>
+                    <button
+                      key={item.id}
+                      onClick={() => scrollToSection(item.id)}
+                      className={`block w-full text-left px-3 py-2 rounded-md text-sm transition-all ${
+                      activeSection === item.id ?
+                      'bg-[#572670] text-white font-medium' :
+                      'text-gray-700 hover:bg-[#572670]/10'}`
+                      }>
                         {item.label}
                       </button>
                     )}
@@ -599,10 +599,10 @@ const IsTMSTherapyPermanentBlogPostPage = () => {
               
               <Accordion type="single" collapsible className="w-full space-y-2">
                 {faqs.map((faq, index) =>
-                  <AccordionItem
-                    key={index}
-                    value={`item-${index}`}
-                    className="border border-gray-200 rounded-lg px-4 data-[state=open]:border-[#572670]">
+                <AccordionItem
+                  key={index}
+                  value={`item-${index}`}
+                  className="border border-gray-200 rounded-lg px-4 data-[state=open]:border-[#572670]">
                     <AccordionTrigger className="text-left font-semibold hover:text-[#572670] hover:no-underline">
                       {faq.question}
                     </AccordionTrigger>
@@ -639,11 +639,11 @@ const IsTMSTherapyPermanentBlogPostPage = () => {
               <h2 className="text-3xl font-bold text-[#572670] mb-6">Related Articles</h2>
               <div className="grid md:grid-cols-3 gap-6">
                 {relatedPosts.map((post, index) =>
-                  <Card key={index} className="border-[#572670]/20 overflow-hidden hover:shadow-lg transition-shadow">
+                <Card key={index} className="border-[#572670]/20 overflow-hidden hover:shadow-lg transition-shadow">
                     <img
-                      src={post.image}
-                      alt={post.title}
-                      className="w-full h-48 object-cover" />
+                    src={post.image}
+                    alt={post.title}
+                    className="w-full h-48 object-cover" />
                     <CardContent className="p-6">
                       <h3 className="font-bold text-lg mb-2 hover:text-[#572670] transition-colors">
                         <Link to={post.link}>{post.title}</Link>
@@ -664,8 +664,8 @@ const IsTMSTherapyPermanentBlogPostPage = () => {
       </div>
 
       <FooterSection />
-    </>
-  );
+    </>);
+
 };
 
 export default IsTMSTherapyPermanentBlogPostPage;

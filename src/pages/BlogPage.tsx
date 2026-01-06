@@ -161,6 +161,54 @@ const allBlogPosts: BlogPost[] = [
   rating: 5
 },
 {
+  id: 16,
+  title: 'Mindfulness Practices for Stress Management',
+  excerpt: 'Discover evidence-based mindfulness practices for stress management. Learn meditation techniques, breathing exercises, and daily practices to reduce anxiety.',
+  category: 'wellness',
+  author: 'karmatms',
+  date: new Date(2025, 0, 28).toLocaleDateString('en-US', {
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric'
+  }),
+  readTime: '12 min read',
+  image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/6cfeb881-529d-42c6-875a-321eac7d440c.webp',
+  featured: false,
+  rating: 5
+},
+{
+  id: 17,
+  title: 'Tech And Mental Health: The Impact Of Technology On Mental Health',
+  excerpt: 'Explore how technology affects mental health—both positively and negatively. Learn about social media impacts and digital wellbeing strategies.',
+  category: 'mental-health',
+  author: 'karmatms',
+  date: new Date(2025, 0, 22).toLocaleDateString('en-US', {
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric'
+  }),
+  readTime: '13 min read',
+  image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/6cfeb881-529d-42c6-875a-321eac7d440c.webp',
+  featured: false,
+  rating: 5
+},
+{
+  id: 18,
+  title: 'Mental Health First Aid: How to Help Someone in Crisis',
+  excerpt: 'Learn essential mental health first aid skills. Recognize crisis signs, provide immediate support, and connect people to professional help.',
+  category: 'mental-health',
+  author: 'karmatms',
+  date: new Date(2025, 0, 19).toLocaleDateString('en-US', {
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric'
+  }),
+  readTime: '15 min read',
+  image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/76caee2d-5629-4dc1-a3b4-8c5cea23ede6.webp',
+  featured: false,
+  rating: 5
+},
+{
   id: 2,
   title: 'Inside the VA & Veterans\' Mental Health: How TMS Fits Into Modern PTSD Treatment',
   excerpt: 'Educational guide explaining the relationship between VA programs and TMS therapy, and how veterans can access care through VA-approved or private options.',
@@ -463,7 +511,10 @@ const BlogPage = () => {
                     12: '/blog/is-tms-therapy-permanent',
                     13: '/blog/is-tms-therapy-legitimate',
                     14: '/blog/how-successful-tms-treatment',
-                    15: '/blog/screen-time-mental-health'
+                    15: '/blog/screen-time-mental-health',
+                    16: '/blog/mindfulness-stress-management',
+                    17: '/blog/tech-mental-health-impact',
+                    18: '/blog/mental-health-first-aid'
                   };
                   return (
                     <a

@@ -54,6 +54,9 @@ import IsTMSTherapyPermanentBlogPostPage from "./pages/blogs/IsTMSTherapyPermane
 import IsTMSTherapyLegitimateBlogPostPage from "./pages/blogs/IsTMSTherapyLegitimateBlogPostPage";
 import HowSuccessfulTMSTreatmentBlogPostPage from "./pages/blogs/HowSuccessfulTMSTreatmentBlogPostPage";
 import ScreenTimeMentalHealthBlogPostPage from "./pages/blogs/ScreenTimeMentalHealthBlogPostPage";
+import MindfulnessStressManagementBlogPostPage from "./pages/blogs/MindfulnessStressManagementBlogPostPage";
+import TechMentalHealthBlogPostPage from "./pages/blogs/TechMentalHealthBlogPostPage";
+import MentalHealthFirstAidBlogPostPage from "./pages/blogs/MentalHealthFirstAidBlogPostPage";
 import DisclaimerPage from "./pages/DisclaimerPage";
 
 const queryClient = new QueryClient();
@@ -123,6 +126,9 @@ const App = () =>
           <Route path="/blog/is-tms-therapy-legitimate" element={<IsTMSTherapyLegitimateBlogPostPage />} />
           <Route path="/blog/how-successful-is-tms-treatment" element={<HowSuccessfulTMSTreatmentBlogPostPage />} />
           <Route path="/blog/screen-time-mental-health" element={<ScreenTimeMentalHealthBlogPostPage />} />
+          <Route path="/blog/mindfulness-stress-management" element={<MindfulnessStressManagementBlogPostPage />} />
+          <Route path="/blog/tech-mental-health-impact" element={<TechMentalHealthBlogPostPage />} />
+          <Route path="/blog/mental-health-first-aid" element={<MentalHealthFirstAidBlogPostPage />} />
           <Route path="/blog" element={<BlogPage />} />
           <Route path="/blog/" element={<BlogPage />} />
           <Route path="/research-and-publications" element={<ResearchPage />} />
