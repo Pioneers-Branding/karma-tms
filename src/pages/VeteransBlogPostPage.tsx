@@ -631,13 +631,13 @@ const VeteransBlogPostPage = () => {
               <CardContent className="p-8">
                 <div className="flex flex-col md:flex-row gap-6 items-start">
                   <img
-                    src="https://images.unsplash.com/photo-1748288166888-f1bd5d6ef9ed?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MTg3MTl8MHwxfHNlYXJjaHwxfHxBJTIwcHJvZmVzc2lvbmFsJTIwcG9ydHJhaXQlMjBvZiUyMERyLiUyMEFwb2xsbyUyMFRob21hcyUyQyUyMGElMjBib2FyZC1jZXJ0aWZpZWQlMjBwc3ljaGlhdHJpc3QlMjBhbmQlMjBtZWRpY2FsJTIwZGlyZWN0b3IlMkMlMjBkZXBpY3RlZCUyMGluJTIwYSUyMGZvcm1hbCUyMHNldHRpbmcufGVufDB8fHx8MTc2MjQ5OTYyMXww&ixlib=rb-4.1.0&q=80&w=200$w=800"
+                    src="https://www.prtms.com/wp-content/uploads/2023/03/Dr.-Keerthy-Sunder-scaled.jpg"
                     alt="Dr. Apollo Thomas, Medical Director"
                     className="w-32 h-32 rounded-full object-cover border-4 border-[#572670]/20" />
 
                   <div className="flex-1">
                     <h3 className="text-2xl font-bold text-[#572670] mb-2">About the Author</h3>
-                    <p className="text-xl font-semibold mb-2">Dr. Apollo Thomas, MD</p>
+                    <p className="text-xl font-semibold mb-2">Dr. Keerthy , MD</p>
                     <p className="text-gray-600 mb-4">
                       Board-Certified Psychiatrist | Medical Director at KarmaTMS
                     </p>
