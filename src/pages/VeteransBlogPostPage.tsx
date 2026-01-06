@@ -291,7 +291,7 @@ const VeteransBlogPostPage = () => {
             {/* Introduction */}
             <div className="mb-12">
               <img
-                src="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/157c49b6-b322-4aa5-b8d6-8ee41dc03a43.webp"
+                src="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/f00dd3f4-cea1-4918-8fec-5976198e195f.webp"
                 alt="Veteran receiving TMS therapy for PTSD treatment"
                 className="w-full h-64 md:h-96 object-cover rounded-lg mb-6" />
 
