@@ -70,7 +70,7 @@ const HeroSection = () => {
                   href="https://share.google/5d1EU2i2b6WbjZLQc"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex flex-row bg-blue-magenta text-white p-1 px-4 rounded-xl w-fit items-center hover:scale-105 hover:shadow-lg transition-all duration-300 cursor-pointer">
+                  className="text-[12px] flex flex-row bg-blue-magenta p-1 px-4 rounded-xl w-fit items-center hover:scale-105 hover:shadow-lg transition-all duration-300 cursor-pointer">
 
                   <MapPin className="w-5 h-5 text-white mr-2" />
                   Palm Springs, CA
@@ -79,7 +79,7 @@ const HeroSection = () => {
                   href="https://share.google/e8yhlNFFaLaN8z1d1"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex flex-row bg-blue-magenta text-white p-2 px-4 rounded-3xl w-fit items-center hover:scale-105 hover:shadow-lg transition-all duration-300 cursor-pointer">
+                  className="text-[10px] flex flex-row bg-blue-magenta p-2 px-4 rounded-3xl w-fit items-center hover:scale-105 hover:shadow-lg transition-all duration-300 cursor-pointer">
 
                   <MapPin className="w-5 h-5 text-white mr-2" />
                   TwentyNine Palms
@@ -88,7 +88,7 @@ const HeroSection = () => {
                   href="https://maps.app.goo.gl/6wyxkwnGZ5g2ua1a7"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex flex-row bg-blue-magenta text-white p-1 px-4 rounded-xl w-fit items-center hover:scale-105 hover:shadow-lg transition-all duration-300 cursor-pointer">
+                  className="text-[11px] flex flex-row bg-blue-magenta p-1 px-4 rounded-xl w-fit items-center hover:scale-105 hover:shadow-lg transition-all duration-300 cursor-pointer">
 
                   <MapPin className="w-5 h-5 text-white mr-2" />
                   Rancho Mirage
@@ -102,7 +102,7 @@ const HeroSection = () => {
                 </span>
                 for Mental Health in Palm Springs
               </h1>
-              <p className="text-base sm:text-lg lg:text-xl text-gray-700 leading-relaxed max-w-2xl">
+              <p className="text-[16px] text-base sm:text-lg lg:text-xl max-w-2xl">
                 Revolutionary FDA-cleared treatment for depression, anxiety, OCD,
                 and PTSD. Our mental health facilities in Palm Springs provide
                 breakthrough results with advanced TMS technology, offering
