@@ -238,6 +238,11 @@ const ExomindKarmaTMSPage = () => {
                   icon: Shield,
                   title: 'Craving Control',
                   description: 'Reduce impulse-driven behaviors and gain better control over cravings and urges'
+                },
+                {
+                  icon: Zap,
+                  title: 'Energy & Motivation',
+                  description: 'Restore natural vitality and drive, combating fatigue and burnout for sustained mental clarity'
                 }].
                 map((benefit, index) =>
                 <div key={index} className="flex gap-4 items-start p-4 bg-gray-50 rounded-lg">
