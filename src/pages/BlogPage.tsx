@@ -97,6 +97,70 @@ const allBlogPosts: BlogPost[] = [
   rating: 5
 },
 {
+  id: 12,
+  title: 'Is TMS Therapy Permanent?',
+  excerpt: 'Explore the long-term effectiveness of TMS therapy and understand how this innovative treatment can provide lasting relief from depression and other mental health conditions.',
+  category: 'tms-therapy',
+  author: 'KarmatmsAdmin',
+  date: new Date(2025, 5, 24).toLocaleDateString('en-US', {
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric'
+  }),
+  readTime: '10 min read',
+  image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/76caee2d-5629-4dc1-a3b4-8c5cea23ede6.webp',
+  featured: false,
+  rating: 5
+},
+{
+  id: 13,
+  title: 'Is TMS Therapy Legitimate?',
+  excerpt: 'Learn about the scientific evidence and FDA approval behind TMS therapy, and discover why it has become a trusted treatment for depression and mental health conditions.',
+  category: 'tms-therapy',
+  author: 'KarmatmsAdmin',
+  date: new Date(2025, 5, 5).toLocaleDateString('en-US', {
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric'
+  }),
+  readTime: '8 min read',
+  image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/76caee2d-5629-4dc1-a3b4-8c5cea23ede6.webp',
+  featured: false,
+  rating: 5
+},
+{
+  id: 14,
+  title: 'How Successful is TMS Treatment?',
+  excerpt: 'Discover the success rates of TMS treatment based on clinical research and real patient outcomes. Learn what factors contribute to effective TMS therapy results.',
+  category: 'tms-therapy',
+  author: 'KarmatmsAdmin',
+  date: new Date(2025, 4, 28).toLocaleDateString('en-US', {
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric'
+  }),
+  readTime: '9 min read',
+  image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/76caee2d-5629-4dc1-a3b4-8c5cea23ede6.webp',
+  featured: false,
+  rating: 5
+},
+{
+  id: 15,
+  title: 'The Impact of Screen Time on Mental Health',
+  excerpt: 'Understand how excessive screen time affects mental health and well-being. Learn practical strategies to balance digital life with mental wellness.',
+  category: 'mental-health',
+  author: 'karmatms',
+  date: new Date(2025, 1, 4).toLocaleDateString('en-US', {
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric'
+  }),
+  readTime: '11 min read',
+  image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/6cfeb881-529d-42c6-875a-321eac7d440c.webp',
+  featured: false,
+  rating: 5
+},
+{
   id: 2,
   title: 'Inside the VA & Veterans\' Mental Health: How TMS Fits Into Modern PTSD Treatment',
   excerpt: 'Educational guide explaining the relationship between VA programs and TMS therapy, and how veterans can access care through VA-approved or private options.',
@@ -395,7 +459,11 @@ const BlogPage = () => {
                     8: '/blogs/tms-migraine-veterans',
                     9: '/blog/veterans-tms-therapy',
                     10: '/blog/why-tms-requires-multiple-sessions',
-                    11: '/blog/four-as-stress-management'
+                    11: '/blog/four-as-stress-management',
+                    12: '/blog/is-tms-therapy-permanent',
+                    13: '/blog/is-tms-therapy-legitimate',
+                    14: '/blog/how-successful-tms-treatment',
+                    15: '/blog/screen-time-mental-health'
                   };
                   return (
                     <a

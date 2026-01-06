@@ -10,16 +10,16 @@ import {
   BreadcrumbLink,
   BreadcrumbList,
   BreadcrumbPage,
-  BreadcrumbSeparator
-} from '@/components/ui/breadcrumb';
+  BreadcrumbSeparator } from
+'@/components/ui/breadcrumb';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import {
   Accordion,
   AccordionContent,
   AccordionItem,
-  AccordionTrigger
-} from '@/components/ui/accordion';
+  AccordionTrigger } from
+'@/components/ui/accordion';
 import { Calendar, Clock, User, CheckCircle2, ArrowRight, AlertCircle } from 'lucide-react';
 import AuthorBox from '@/components/AuthorBox';
 
@@ -28,14 +28,14 @@ const StressManagementFourAsBlogPostPage = () => {
   const sectionsRef = useRef<{[key: string]: HTMLElement | null;}>({});
 
   const tocItems = [
-    { id: 'introduction', label: 'Understanding the 4 A\'s' },
-    { id: 'avoid', label: 'Avoid: Eliminating Stressors' },
-    { id: 'alter', label: 'Alter: Changing Situations' },
-    { id: 'adapt', label: 'Adapt: Adjusting Standards' },
-    { id: 'accept', label: 'Accept: Letting Go' },
-    { id: 'implementation', label: 'Putting It Into Practice' },
-    { id: 'faqs', label: 'Frequently Asked Questions' }
-  ];
+  { id: 'introduction', label: 'Understanding the 4 A\'s' },
+  { id: 'avoid', label: 'Avoid: Eliminating Stressors' },
+  { id: 'alter', label: 'Alter: Changing Situations' },
+  { id: 'adapt', label: 'Adapt: Adjusting Standards' },
+  { id: 'accept', label: 'Accept: Letting Go' },
+  { id: 'implementation', label: 'Putting It Into Practice' },
+  { id: 'faqs', label: 'Frequently Asked Questions' }];
+
 
   useEffect(() => {
     const handleScroll = () => {
@@ -68,52 +68,52 @@ const StressManagementFourAsBlogPostPage = () => {
   };
 
   const faqs = [
-    {
-      question: 'Which of the 4 A\'s should I use first?',
-      answer: 'Start with Avoid—see if you can eliminate unnecessary stressors. Then try to Alter situations you can\'t avoid. If neither works, move to Adapt (changing your perspective) or Accept (letting go of what you can\'t control). Often you\'ll use multiple strategies for different stressors.'
-    },
-    {
-      question: 'Can I use more than one "A" at a time?',
-      answer: 'Absolutely! The 4 A\'s work best when combined. For example, you might Avoid some aspects of a stressful situation while Altering others and Accepting what you can\'t change. The key is recognizing which strategy fits which situation.'
-    },
-    {
-      question: 'What if stress management strategies aren\'t enough?',
-      answer: 'If stress is significantly impacting your daily life, causing physical symptoms, or leading to depression or anxiety, professional help is important. Therapies like cognitive-behavioral therapy (CBT), medication management, or innovative treatments like TMS therapy can provide additional support.'
-    },
-    {
-      question: 'How long does it take to see results from stress management?',
-      answer: 'Some strategies provide immediate relief (like deep breathing during a stressful moment), while others take weeks of consistent practice to become habitual. Most people notice improvements within 2-4 weeks of regularly applying the 4 A\'s framework.'
-    },
-    {
-      question: 'Is chronic stress dangerous?',
-      answer: 'Yes, chronic stress can lead to serious health problems including cardiovascular disease, weakened immune system, digestive issues, sleep disorders, anxiety, and depression. That\'s why learning effective stress management is so important for long-term health.'
-    },
-    {
-      question: 'Can stress management replace therapy or medication?',
-      answer: 'Stress management techniques are valuable tools, but they\'re not always sufficient for clinical conditions like anxiety disorders or depression. Think of them as complementary strategies that work alongside professional treatment when needed, not as replacements.'
-    }
-  ];
+  {
+    question: 'Which of the 4 A\'s should I use first?',
+    answer: 'Start with Avoid—see if you can eliminate unnecessary stressors. Then try to Alter situations you can\'t avoid. If neither works, move to Adapt (changing your perspective) or Accept (letting go of what you can\'t control). Often you\'ll use multiple strategies for different stressors.'
+  },
+  {
+    question: 'Can I use more than one "A" at a time?',
+    answer: 'Absolutely! The 4 A\'s work best when combined. For example, you might Avoid some aspects of a stressful situation while Altering others and Accepting what you can\'t change. The key is recognizing which strategy fits which situation.'
+  },
+  {
+    question: 'What if stress management strategies aren\'t enough?',
+    answer: 'If stress is significantly impacting your daily life, causing physical symptoms, or leading to depression or anxiety, professional help is important. Therapies like cognitive-behavioral therapy (CBT), medication management, or innovative treatments like TMS therapy can provide additional support.'
+  },
+  {
+    question: 'How long does it take to see results from stress management?',
+    answer: 'Some strategies provide immediate relief (like deep breathing during a stressful moment), while others take weeks of consistent practice to become habitual. Most people notice improvements within 2-4 weeks of regularly applying the 4 A\'s framework.'
+  },
+  {
+    question: 'Is chronic stress dangerous?',
+    answer: 'Yes, chronic stress can lead to serious health problems including cardiovascular disease, weakened immune system, digestive issues, sleep disorders, anxiety, and depression. That\'s why learning effective stress management is so important for long-term health.'
+  },
+  {
+    question: 'Can stress management replace therapy or medication?',
+    answer: 'Stress management techniques are valuable tools, but they\'re not always sufficient for clinical conditions like anxiety disorders or depression. Think of them as complementary strategies that work alongside professional treatment when needed, not as replacements.'
+  }];
+
 
   const relatedPosts = [
-    {
-      title: 'Stress Management: Complete Guide',
-      excerpt: 'Comprehensive guide to understanding and managing stress with proven techniques and strategies.',
-      link: '/stress-management',
-      image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/6cfeb881-529d-42c6-875a-321eac7d440c.webp'
-    },
-    {
-      title: 'Understanding Anxiety Treatment',
-      excerpt: 'Learn about anxiety disorders and evidence-based treatment options including therapy and TMS.',
-      link: '/anxiety',
-      image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/9705b922-d0fc-4d29-be10-acd507ce308c.webp'
-    },
-    {
-      title: 'Depression Treatment Options',
-      excerpt: 'Comprehensive guide to depression treatment including therapy, medication, and innovative treatments.',
-      link: '/depression',
-      image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/7ace98a6-9efe-4403-aacf-892346fb07a8.webp'
-    }
-  ];
+  {
+    title: 'Stress Management: Complete Guide',
+    excerpt: 'Comprehensive guide to understanding and managing stress with proven techniques and strategies.',
+    link: '/stress-management',
+    image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/6cfeb881-529d-42c6-875a-321eac7d440c.webp'
+  },
+  {
+    title: 'Understanding Anxiety Treatment',
+    excerpt: 'Learn about anxiety disorders and evidence-based treatment options including therapy and TMS.',
+    link: '/anxiety',
+    image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/9705b922-d0fc-4d29-be10-acd507ce308c.webp'
+  },
+  {
+    title: 'Depression Treatment Options',
+    excerpt: 'Comprehensive guide to depression treatment including therapy, medication, and innovative treatments.',
+    link: '/depression',
+    image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/7ace98a6-9efe-4403-aacf-892346fb07a8.webp'
+  }];
+
 
   const articleSchema = {
     '@context': 'https://schema.org',
@@ -167,17 +167,17 @@ const StressManagementFourAsBlogPostPage = () => {
         keywords="stress management, 4 as of stress, stress reduction, stress relief, coping strategies, mental health, anxiety management, stress techniques"
         canonical="/blog/four-as-stress-management"
         ogImage="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/6cfeb881-529d-42c6-875a-321eac7d440c.webp"
-        ogType="article"
-      />
+        ogType="article" />
+
 
       <StructuredData
         type="breadcrumb"
         breadcrumbs={[
-          { name: 'Home', url: '/' },
-          { name: 'Blog', url: '/blog' },
-          { name: '4 A\'s of Stress Management', url: '/blog/four-as-stress-management' }
-        ]}
-      />
+        { name: 'Home', url: '/' },
+        { name: 'Blog', url: '/blog' },
+        { name: '4 A\'s of Stress Management', url: '/blog/four-as-stress-management' }]
+        } />
+
 
       <script type="application/ld+json">
         {JSON.stringify(articleSchema)}
@@ -261,19 +261,19 @@ const StressManagementFourAsBlogPostPage = () => {
                 <CardContent className="p-6">
                   <h3 className="font-bold text-lg mb-4 text-[#572670]">Table of Contents</h3>
                   <nav className="space-y-2">
-                    {tocItems.map((item) => (
-                      <button
-                        key={item.id}
-                        onClick={() => scrollToSection(item.id)}
-                        className={`block w-full text-left px-3 py-2 rounded-md text-sm transition-all ${
-                          activeSection === item.id ?
-                          'bg-[#572670] text-white font-medium' :
-                          'text-gray-700 hover:bg-[#572670]/10'
-                        }`}
-                      >
+                    {tocItems.map((item) =>
+                    <button
+                      key={item.id}
+                      onClick={() => scrollToSection(item.id)}
+                      className={`block w-full text-left px-3 py-2 rounded-md text-sm transition-all ${
+                      activeSection === item.id ?
+                      'bg-[#572670] text-white font-medium' :
+                      'text-gray-700 hover:bg-[#572670]/10'}`
+                      }>
+
                         {item.label}
                       </button>
-                    ))}
+                    )}
                   </nav>
                   <div className="mt-6 pt-6 border-t">
                     <Button asChild className="w-full bg-[#572670] hover:bg-[#7B3FA0]">
@@ -292,8 +292,8 @@ const StressManagementFourAsBlogPostPage = () => {
               <img
                 src="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/6cfeb881-529d-42c6-875a-321eac7d440c.webp"
                 alt="Stress management techniques and strategies"
-                className="w-full h-64 md:h-96 object-cover rounded-lg mb-6"
-              />
+                className="w-full h-64 md:h-96 object-cover rounded-lg mb-6" />
+
               <p className="text-xl text-gray-700 leading-relaxed mb-6">
                 Stress is inevitable—it's how we respond to it that matters. The <strong>4 A's of stress management</strong>—Avoid, Alter, Adapt, and Accept—provide a simple yet powerful framework for handling life's pressures. Whether you're dealing with work stress, relationship challenges, or general overwhelm, understanding these four strategies can transform how you navigate difficult situations.
               </p>
@@ -583,20 +583,20 @@ const StressManagementFourAsBlogPostPage = () => {
               name="Dr. Keerthy Sunder"
               role="Board-Certified Psychiatrist | Medical Director at KarmaTMS"
               bio="Dr. Keerthy Sunder is a board-certified psychiatrist specializing in stress management, anxiety, and depression treatment. With expertise in both traditional therapeutic approaches and innovative treatments like TMS therapy, Dr. Sunder helps patients develop effective coping strategies for lasting mental wellness."
-              image="https://www.prtms.com/wp-content/uploads/2023/03/Dr.-Keerthy-Sunder-scaled.jpg"
-            />
+              image="https://www.prtms.com/wp-content/uploads/2023/03/Dr.-Keerthy-Sunder-scaled.jpg" />
+
 
             {/* FAQ Section */}
             <section ref={(el) => sectionsRef.current['faqs'] = el} className="mb-12 mt-12">
               <h2 className="text-3xl font-bold text-[#572670] mb-6">Frequently Asked Questions</h2>
               
               <Accordion type="single" collapsible className="w-full space-y-2">
-                {faqs.map((faq, index) => (
-                  <AccordionItem
-                    key={index}
-                    value={`item-${index}`}
-                    className="border border-gray-200 rounded-lg px-4 data-[state=open]:border-[#572670]"
-                  >
+                {faqs.map((faq, index) =>
+                <AccordionItem
+                  key={index}
+                  value={`item-${index}`}
+                  className="border border-gray-200 rounded-lg px-4 data-[state=open]:border-[#572670]">
+
                     <AccordionTrigger className="text-left font-semibold hover:text-[#572670] hover:no-underline">
                       {faq.question}
                     </AccordionTrigger>
@@ -604,7 +604,7 @@ const StressManagementFourAsBlogPostPage = () => {
                       {faq.answer}
                     </AccordionContent>
                   </AccordionItem>
-                ))}
+                )}
               </Accordion>
             </section>
 
@@ -632,13 +632,13 @@ const StressManagementFourAsBlogPostPage = () => {
             <section className="mb-12">
               <h2 className="text-3xl font-bold text-[#572670] mb-6">Related Articles</h2>
               <div className="grid md:grid-cols-3 gap-6">
-                {relatedPosts.map((post, index) => (
-                  <Card key={index} className="border-[#572670]/20 overflow-hidden hover:shadow-lg transition-shadow">
+                {relatedPosts.map((post, index) =>
+                <Card key={index} className="border-[#572670]/20 overflow-hidden hover:shadow-lg transition-shadow">
                     <img
-                      src={post.image}
-                      alt={post.title}
-                      className="w-full h-48 object-cover"
-                    />
+                    src={post.image}
+                    alt={post.title}
+                    className="w-full h-48 object-cover" />
+
                     <CardContent className="p-6">
                       <h3 className="font-bold text-lg mb-2 hover:text-[#572670] transition-colors">
                         <Link to={post.link}>{post.title}</Link>
@@ -651,7 +651,7 @@ const StressManagementFourAsBlogPostPage = () => {
                       </Button>
                     </CardContent>
                   </Card>
-                ))}
+                )}
               </div>
             </section>
           </article>
@@ -659,8 +659,8 @@ const StressManagementFourAsBlogPostPage = () => {
       </div>
 
       <FooterSection />
-    </>
-  );
+    </>);
+
 };
 
 export default StressManagementFourAsBlogPostPage;

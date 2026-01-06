@@ -50,6 +50,10 @@ import TMSAnxietyVeteransBlogPostPage from "./pages/blogs/TMSAnxietyVeteransBlog
 import TMSMigraineVeteransBlogPostPage from "./pages/blogs/TMSMigraineVeteransBlogPostPage";
 import TMSMultipleSessionsBlogPostPage from "./pages/blogs/TMSMultipleSessionsBlogPostPage";
 import StressManagementFourAsBlogPostPage from "./pages/blogs/StressManagementFourAsBlogPostPage";
+import IsTMSTherapyPermanentBlogPostPage from "./pages/blogs/IsTMSTherapyPermanentBlogPostPage";
+import IsTMSTherapyLegitimateBlogPostPage from "./pages/blogs/IsTMSTherapyLegitimateBlogPostPage";
+import HowSuccessfulTMSTreatmentBlogPostPage from "./pages/blogs/HowSuccessfulTMSTreatmentBlogPostPage";
+import ScreenTimeMentalHealthBlogPostPage from "./pages/blogs/ScreenTimeMentalHealthBlogPostPage";
 import DisclaimerPage from "./pages/DisclaimerPage";
 
 const queryClient = new QueryClient();
@@ -115,6 +119,10 @@ const App = () =>
           <Route path="/blog/how-to-help-veterans-ptsd" element={<HelpingVeteransPTSDBlogPostPage />} />
           <Route path="/blog/why-tms-requires-multiple-sessions" element={<TMSMultipleSessionsBlogPostPage />} />
           <Route path="/blog/four-as-stress-management" element={<StressManagementFourAsBlogPostPage />} />
+          <Route path="/blog/is-tms-therapy-permanent" element={<IsTMSTherapyPermanentBlogPostPage />} />
+          <Route path="/blog/is-tms-therapy-legitimate" element={<IsTMSTherapyLegitimateBlogPostPage />} />
+          <Route path="/blog/how-successful-is-tms-treatment" element={<HowSuccessfulTMSTreatmentBlogPostPage />} />
+          <Route path="/blog/screen-time-mental-health" element={<ScreenTimeMentalHealthBlogPostPage />} />
           <Route path="/blog" element={<BlogPage />} />
           <Route path="/blog/" element={<BlogPage />} />
           <Route path="/research-and-publications" element={<ResearchPage />} />

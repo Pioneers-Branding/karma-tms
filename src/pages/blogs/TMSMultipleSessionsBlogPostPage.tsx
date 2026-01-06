@@ -10,16 +10,16 @@ import {
   BreadcrumbLink,
   BreadcrumbList,
   BreadcrumbPage,
-  BreadcrumbSeparator
-} from '@/components/ui/breadcrumb';
+  BreadcrumbSeparator } from
+'@/components/ui/breadcrumb';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import {
   Accordion,
   AccordionContent,
   AccordionItem,
-  AccordionTrigger
-} from '@/components/ui/accordion';
+  AccordionTrigger } from
+'@/components/ui/accordion';
 import { Calendar, Clock, User, CheckCircle2, ArrowRight } from 'lucide-react';
 import AuthorBox from '@/components/AuthorBox';
 
@@ -28,13 +28,13 @@ const TMSMultipleSessionsBlogPostPage = () => {
   const sectionsRef = useRef<{[key: string]: HTMLElement | null;}>({});
 
   const tocItems = [
-    { id: 'understanding-brain-changes', label: 'Understanding Brain Changes' },
-    { id: 'how-tms-works', label: 'How TMS Works Over Time' },
-    { id: 'session-frequency', label: 'Session Frequency & Duration' },
-    { id: 'what-to-expect', label: 'What to Expect' },
-    { id: 'treatment-timeline', label: 'Treatment Timeline' },
-    { id: 'faqs', label: 'Frequently Asked Questions' }
-  ];
+  { id: 'understanding-brain-changes', label: 'Understanding Brain Changes' },
+  { id: 'how-tms-works', label: 'How TMS Works Over Time' },
+  { id: 'session-frequency', label: 'Session Frequency & Duration' },
+  { id: 'what-to-expect', label: 'What to Expect' },
+  { id: 'treatment-timeline', label: 'Treatment Timeline' },
+  { id: 'faqs', label: 'Frequently Asked Questions' }];
+
 
   useEffect(() => {
     const handleScroll = () => {
@@ -67,52 +67,52 @@ const TMSMultipleSessionsBlogPostPage = () => {
   };
 
   const faqs = [
-    {
-      question: 'Why can\'t I just have one TMS session?',
-      answer: 'A single TMS session doesn\'t provide lasting neuroplastic changes. Think of it like physical therapy - one session might feel good, but lasting change requires consistent, repeated stimulation to create new neural pathways and strengthen beneficial brain connections.'
-    },
-    {
-      question: 'How many TMS sessions do I need?',
-      answer: 'Most patients require 30-36 sessions over 6 weeks (5 sessions per week). However, some may need fewer or more depending on their condition severity and response. Your treatment team will monitor your progress and adjust accordingly.'
-    },
-    {
-      question: 'Can I skip sessions or spread them out?',
-      answer: 'Consistency is critical for TMS effectiveness. Missing sessions can delay results and reduce overall effectiveness. The 5-days-per-week protocol is based on research showing this frequency optimizes neuroplastic changes while allowing the brain to consolidate improvements.'
-    },
-    {
-      question: 'When will I start seeing results?',
-      answer: 'Most patients begin noticing improvements around weeks 2-3, though some may see changes earlier or later. Full benefits typically emerge by week 4-6. The gradual improvement reflects the time needed for neuroplastic changes to accumulate and stabilize.'
-    },
-    {
-      question: 'What happens if I stop treatment early?',
-      answer: 'Stopping TMS before completing the full course often results in incomplete symptom relief. While some improvement may remain, you likely won\'t experience the full therapeutic benefits. If you\'re considering stopping early, discuss with your provider about maintenance protocols or treatment modifications.'
-    },
-    {
-      question: 'Will I need maintenance sessions after completing treatment?',
-      answer: 'Some patients maintain their improvements without additional sessions, while others benefit from periodic maintenance treatments (monthly or quarterly) to sustain results. Your provider will help develop a personalized maintenance plan based on your response to treatment.'
-    }
-  ];
+  {
+    question: 'Why can\'t I just have one TMS session?',
+    answer: 'A single TMS session doesn\'t provide lasting neuroplastic changes. Think of it like physical therapy - one session might feel good, but lasting change requires consistent, repeated stimulation to create new neural pathways and strengthen beneficial brain connections.'
+  },
+  {
+    question: 'How many TMS sessions do I need?',
+    answer: 'Most patients require 30-36 sessions over 6 weeks (5 sessions per week). However, some may need fewer or more depending on their condition severity and response. Your treatment team will monitor your progress and adjust accordingly.'
+  },
+  {
+    question: 'Can I skip sessions or spread them out?',
+    answer: 'Consistency is critical for TMS effectiveness. Missing sessions can delay results and reduce overall effectiveness. The 5-days-per-week protocol is based on research showing this frequency optimizes neuroplastic changes while allowing the brain to consolidate improvements.'
+  },
+  {
+    question: 'When will I start seeing results?',
+    answer: 'Most patients begin noticing improvements around weeks 2-3, though some may see changes earlier or later. Full benefits typically emerge by week 4-6. The gradual improvement reflects the time needed for neuroplastic changes to accumulate and stabilize.'
+  },
+  {
+    question: 'What happens if I stop treatment early?',
+    answer: 'Stopping TMS before completing the full course often results in incomplete symptom relief. While some improvement may remain, you likely won\'t experience the full therapeutic benefits. If you\'re considering stopping early, discuss with your provider about maintenance protocols or treatment modifications.'
+  },
+  {
+    question: 'Will I need maintenance sessions after completing treatment?',
+    answer: 'Some patients maintain their improvements without additional sessions, while others benefit from periodic maintenance treatments (monthly or quarterly) to sustain results. Your provider will help develop a personalized maintenance plan based on your response to treatment.'
+  }];
+
 
   const relatedPosts = [
-    {
-      title: 'TMS Therapy: A Complete Guide',
-      excerpt: 'Everything you need to know about Transcranial Magnetic Stimulation therapy and how it works.',
-      link: '/tms-therapy',
-      image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/76caee2d-5629-4dc1-a3b4-8c5cea23ede6.webp'
-    },
-    {
-      title: 'How TMS Therapy Helps Veterans',
-      excerpt: 'Discover how TMS therapy offers new hope for veterans struggling with PTSD, depression, and anxiety.',
-      link: '/blog/veterans-tms-therapy',
-      image: 'https://res.cloudinary.com/de4kw1t2i/image/upload/v1763036078/0_zutd9g.png'
-    },
-    {
-      title: 'Understanding Depression Treatment',
-      excerpt: 'Comprehensive guide to depression treatment options including therapy, medication, and innovative treatments.',
-      link: '/depression',
-      image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/7ace98a6-9efe-4403-aacf-892346fb07a8.webp'
-    }
-  ];
+  {
+    title: 'TMS Therapy: A Complete Guide',
+    excerpt: 'Everything you need to know about Transcranial Magnetic Stimulation therapy and how it works.',
+    link: '/tms-therapy',
+    image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/76caee2d-5629-4dc1-a3b4-8c5cea23ede6.webp'
+  },
+  {
+    title: 'How TMS Therapy Helps Veterans',
+    excerpt: 'Discover how TMS therapy offers new hope for veterans struggling with PTSD, depression, and anxiety.',
+    link: '/blog/veterans-tms-therapy',
+    image: 'https://res.cloudinary.com/de4kw1t2i/image/upload/v1763036078/0_zutd9g.png'
+  },
+  {
+    title: 'Understanding Depression Treatment',
+    excerpt: 'Comprehensive guide to depression treatment options including therapy, medication, and innovative treatments.',
+    link: '/depression',
+    image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/7ace98a6-9efe-4403-aacf-892346fb07a8.webp'
+  }];
+
 
   const articleSchema = {
     '@context': 'https://schema.org',
@@ -166,17 +166,17 @@ const TMSMultipleSessionsBlogPostPage = () => {
         keywords="tms therapy sessions, tms treatment duration, how many tms sessions, tms therapy timeline, neuroplasticity, brain stimulation, depression treatment"
         canonical="/blog/why-tms-requires-multiple-sessions"
         ogImage="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/76caee2d-5629-4dc1-a3b4-8c5cea23ede6.webp"
-        ogType="article"
-      />
+        ogType="article" />
+
 
       <StructuredData
         type="breadcrumb"
         breadcrumbs={[
-          { name: 'Home', url: '/' },
-          { name: 'Blog', url: '/blog' },
-          { name: 'Why TMS Requires Multiple Sessions', url: '/blog/why-tms-requires-multiple-sessions' }
-        ]}
-      />
+        { name: 'Home', url: '/' },
+        { name: 'Blog', url: '/blog' },
+        { name: 'Why TMS Requires Multiple Sessions', url: '/blog/why-tms-requires-multiple-sessions' }]
+        } />
+
 
       <script type="application/ld+json">
         {JSON.stringify(articleSchema)}
@@ -260,19 +260,19 @@ const TMSMultipleSessionsBlogPostPage = () => {
                 <CardContent className="p-6">
                   <h3 className="font-bold text-lg mb-4 text-[#572670]">Table of Contents</h3>
                   <nav className="space-y-2">
-                    {tocItems.map((item) => (
-                      <button
-                        key={item.id}
-                        onClick={() => scrollToSection(item.id)}
-                        className={`block w-full text-left px-3 py-2 rounded-md text-sm transition-all ${
-                          activeSection === item.id ?
-                          'bg-[#572670] text-white font-medium' :
-                          'text-gray-700 hover:bg-[#572670]/10'
-                        }`}
-                      >
+                    {tocItems.map((item) =>
+                    <button
+                      key={item.id}
+                      onClick={() => scrollToSection(item.id)}
+                      className={`block w-full text-left px-3 py-2 rounded-md text-sm transition-all ${
+                      activeSection === item.id ?
+                      'bg-[#572670] text-white font-medium' :
+                      'text-gray-700 hover:bg-[#572670]/10'}`
+                      }>
+
                         {item.label}
                       </button>
-                    ))}
+                    )}
                   </nav>
                   <div className="mt-6 pt-6 border-t">
                     <Button asChild className="w-full bg-[#572670] hover:bg-[#7B3FA0]">
@@ -291,8 +291,8 @@ const TMSMultipleSessionsBlogPostPage = () => {
               <img
                 src="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/76caee2d-5629-4dc1-a3b4-8c5cea23ede6.webp"
                 alt="TMS therapy session showing treatment process"
-                className="w-full h-64 md:h-96 object-cover rounded-lg mb-6"
-              />
+                className="w-full h-64 md:h-96 object-cover rounded-lg mb-6" />
+
               <p className="text-xl text-gray-700 leading-relaxed">
                 One of the most common questions we hear from patients considering <Link to="/tms-therapy" className="text-[#572670] hover:underline font-medium">TMS therapy</Link> is: "Why do I need so many sessions?" It's a fair question, especially when you're investing time and resources into treatment. The answer lies in understanding how the brain changes and heals—a process called <strong>neuroplasticity</strong>.
               </p>
@@ -430,8 +430,8 @@ const TMSMultipleSessionsBlogPostPage = () => {
               <img
                 src="https://images.unsplash.com/photo-1664902273035-82c35762a0b1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MTg3MTl8MHwxfHNlYXJjaHwxfHxBbiUyMGltYWdlJTIwc2hvd2luZyUyMGElMjBUTVMlMjB0cmVhdG1lbnQlMjBjaGFpciUyMGFuZCUyMGVxdWlwbWVudCUyMHNldHVwLnxlbnwwfHx8fDE3NjMzNjI2OTd8MA&ixlib=rb-4.1.0&q=80&w=200$w=800"
                 alt="TMS treatment chair and equipment"
-                className="w-full h-64 object-cover rounded-lg mb-6"
-              />
+                className="w-full h-64 object-cover rounded-lg mb-6" />
+
             </section>
 
             {/* Section 4: What to Expect */}
@@ -494,20 +494,20 @@ const TMSMultipleSessionsBlogPostPage = () => {
               name="Dr. Keerthy Sunder"
               role="Board-Certified Psychiatrist | Medical Director at KarmaTMS"
               bio="Dr. Keerthy Sunder is a board-certified psychiatrist specializing in TMS therapy and innovative treatments for depression and anxiety. With extensive training in neuroscience and brain stimulation techniques, Dr. Sunder is dedicated to helping patients achieve lasting mental health through evidence-based, personalized care."
-              image="https://www.prtms.com/wp-content/uploads/2023/03/Dr.-Keerthy-Sunder-scaled.jpg"
-            />
+              image="https://www.prtms.com/wp-content/uploads/2023/03/Dr.-Keerthy-Sunder-scaled.jpg" />
+
 
             {/* FAQ Section */}
             <section ref={(el) => sectionsRef.current['faqs'] = el} className="mb-12 mt-12">
               <h2 className="text-3xl font-bold text-[#572670] mb-6">Frequently Asked Questions</h2>
               
               <Accordion type="single" collapsible className="w-full space-y-2">
-                {faqs.map((faq, index) => (
-                  <AccordionItem
-                    key={index}
-                    value={`item-${index}`}
-                    className="border border-gray-200 rounded-lg px-4 data-[state=open]:border-[#572670]"
-                  >
+                {faqs.map((faq, index) =>
+                <AccordionItem
+                  key={index}
+                  value={`item-${index}`}
+                  className="border border-gray-200 rounded-lg px-4 data-[state=open]:border-[#572670]">
+
                     <AccordionTrigger className="text-left font-semibold hover:text-[#572670] hover:no-underline">
                       {faq.question}
                     </AccordionTrigger>
@@ -515,7 +515,7 @@ const TMSMultipleSessionsBlogPostPage = () => {
                       {faq.answer}
                     </AccordionContent>
                   </AccordionItem>
-                ))}
+                )}
               </Accordion>
             </section>
 
@@ -543,13 +543,13 @@ const TMSMultipleSessionsBlogPostPage = () => {
             <section className="mb-12">
               <h2 className="text-3xl font-bold text-[#572670] mb-6">Related Articles</h2>
               <div className="grid md:grid-cols-3 gap-6">
-                {relatedPosts.map((post, index) => (
-                  <Card key={index} className="border-[#572670]/20 overflow-hidden hover:shadow-lg transition-shadow">
+                {relatedPosts.map((post, index) =>
+                <Card key={index} className="border-[#572670]/20 overflow-hidden hover:shadow-lg transition-shadow">
                     <img
-                      src={post.image}
-                      alt={post.title}
-                      className="w-full h-48 object-cover"
-                    />
+                    src={post.image}
+                    alt={post.title}
+                    className="w-full h-48 object-cover" />
+
                     <CardContent className="p-6">
                       <h3 className="font-bold text-lg mb-2 hover:text-[#572670] transition-colors">
                         <Link to={post.link}>{post.title}</Link>
@@ -562,7 +562,7 @@ const TMSMultipleSessionsBlogPostPage = () => {
                       </Button>
                     </CardContent>
                   </Card>
-                ))}
+                )}
               </div>
             </section>
           </article>
@@ -570,8 +570,8 @@ const TMSMultipleSessionsBlogPostPage = () => {
       </div>
 
       <FooterSection />
-    </>
-  );
+    </>);
+
 };
 
 export default TMSMultipleSessionsBlogPostPage;
