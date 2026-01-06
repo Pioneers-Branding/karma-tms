@@ -204,7 +204,7 @@ const RanchoMiragePage = () => {
               </div>
               <div className="relative h-72 rounded-xl overflow-hidden shadow-lg group">
                 <img
-                  src="https://i.ibb.co/675zy4wB/treatment.webp"
+                  src="https://i.ibb.co/390nnPrv/Female-Model5-0299-ENUS100.webp"
                   alt="Premium TMS therapy equipment in Rancho Mirage"
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" />
 
