@@ -127,7 +127,7 @@ const DoctorSection = () => {
               </h2>
 
               <p className="text-xl text-gray-600 leading-relaxed">
-                Dr. Sunder brings a wealth of expertise in integrative psychiatry, leading our mental health counselors in Palm Springs, CA in providing exceptional mental health in palm springs. His philosophy centers on treating the whole person at our mental health facilities in palm springs, not just symptoms.
+                Dr. Sunder brings a wealth of expertise in integrative psychiatry, leading our team of mental health counselors in Palm Springs, CA, to provide exceptional, patient-centered care. His philosophy focuses on treating the whole person not just the symptoms through compassionate, evidence-based care at our mental health facilities in Palm Springs.
               </p>
 
               <div className="p-6 bg-gradient-to-r from-[#572670]/5 to-purple-100/20 rounded-2xl border-l-4 border-[#572670]">
