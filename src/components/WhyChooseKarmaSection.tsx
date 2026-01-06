@@ -11,7 +11,7 @@ const WhyChooseKarmaSection = () => {
   {
     title: "Experienced and Compassionate Staff",
     description: "You'll be guided by our highly trained and caring professionals who are dedicated to making your TMS journey comfortable, safe, and successful.",
-    image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&h=600&fit=crop&crop=center",
+    image: "https://images.unsplash.com/photo-1682352689072-7b2c0b8580c2?q=80&w=2065&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     overlay: true
   },
   {
