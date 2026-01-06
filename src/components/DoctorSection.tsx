@@ -127,7 +127,7 @@ const DoctorSection = () => {
 
               <p className="text-xl text-gray-600 leading-relaxed">
                 Dr. Sunder brings a wealth of expertise in integrative psychiatry, combining advanced 
-                medical training with a holistic approach to mental wellness. Her philosophy centers on 
+                medical training with a holistic approach to mental wellness. His philosophy centers on 
                 treating the whole person, not just symptoms.
               </p>
 
