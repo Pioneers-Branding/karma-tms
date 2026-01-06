@@ -88,7 +88,7 @@ const HeroSection = () => {
                   href="https://maps.app.goo.gl/6wyxkwnGZ5g2ua1a7"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex flex-row bg-blue-magenta text-white p-2 px-4 rounded-3xl w-fit items-center hover:scale-105 hover:shadow-lg transition-all duration-300 cursor-pointer">
+                  className="flex flex-row bg-blue-magenta text-white p-1 px-4 rounded-xl w-fit items-center hover:scale-105 hover:shadow-lg transition-all duration-300 cursor-pointer">
 
                   <MapPin className="w-5 h-5 text-white mr-2" />
                   Rancho Mirage
