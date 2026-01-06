@@ -219,24 +219,24 @@ const Navigation = () => {
               </a>
               
               {/* Tablet+ Phone Button - shows phone number */}
-              <a href="tel:760-760-5675" className="hidden md:flex lg:hidden">
+              <a href="tel:951-297-8375" className="hidden md:flex lg:hidden">
                 <Button
                   variant="outline"
                   size="sm"
                   className="border-white/30 text-white bg-white/5 hover:bg-white hover:text-[#572670] hover:border-white transition-all duration-300 px-2.5 py-1 h-9 text-xs whitespace-nowrap bg-black text-white">
                   <Phone className="h-3.5 w-3.5 mr-1.5" />
-                  <span>760-760-5675</span>
+                  <span>951-297-8375</span>
                 </Button>
               </a>
               
               {/* Desktop Phone Button - full size */}
-              <a href="tel:760-760-5675" className="hidden lg:flex">
+              <a href="tel:951-297-8375" className="hidden lg:flex">
                 <Button
                   variant="outline"
                   size="sm"
                   className="border-white/30 text-white bg-white/5 hover:bg-white hover:text-[#572670] hover:border-white transition-all duration-300 px-4 xl:px-6 py-2 h-10 text-sm whitespace-nowrap">
                   <Phone className="h-4 w-4 mr-2" />
-                  <span>760-760-5675</span>
+                  <span>951-297-8375</span>
                 </Button>
               </a>
             </div>
