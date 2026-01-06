@@ -238,7 +238,7 @@ const ConnectingTeensMentalWellnessBlogPostPage = () => {
                 <Link to="/contact">Get Professional Support</Link>
               </Button>
               <Button asChild size="lg" variant="outline" className="border-white text-white hover:bg-white/10">
-                <Link to="/conditions">Mental Health Resources</Link>
+                
               </Button>
             </div>
           </div>
@@ -659,7 +659,7 @@ const ConnectingTeensMentalWellnessBlogPostPage = () => {
                     <Link to="/contact">Schedule Consultation</Link>
                   </Button>
                   <Button asChild size="lg" variant="outline" className="border-white text-white hover:bg-white/10">
-                    <Link to="/conditions">View Mental Health Resources</Link>
+                    
                   </Button>
                 </div>
               </CardContent>
