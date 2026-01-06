@@ -287,7 +287,7 @@ const ScreenTimeMentalHealthBlogPostPage = () => {
               <img
                 src="https://res.cloudinary.com/de4kw1t2i/image/upload/v1763376734/16_ekice5.png"
                 alt="Person using smartphone with mental health concerns"
-                className="w-full  md:h-96 object-cover rounded-lg mb-6" />
+                className="w-full   object-cover rounded-lg mb-6" />
 
               <p className="text-xl text-gray-700 leading-relaxed">
                 We live in an era of unprecedented digital connectivity. The average American spends over 7 hours daily on screens—more time than we spend sleeping. While technology brings countless benefits, mounting research reveals a troubling connection between excessive screen time and declining mental health. Understanding this relationship is crucial for protecting our psychological wellbeing in the digital age.
