@@ -285,7 +285,7 @@ const TMSvsMedicationVeteransBlogPostPage = () => {
               <img
                 src="https://res.cloudinary.com/de4kw1t2i/image/upload/v1763033665/3_zl830g.png"
                 alt="TMS therapy for veterans as alternative to medication"
-                className="w-full h-48 md:h-64 lg:h-96 object-cover rounded-lg mb-4 md:mb-6" />
+                className="w-full  lg:h-96 object-cover rounded-lg mb-4 md:mb-6" />
 
 
               <p className="text-base md:text-xl text-gray-700 leading-relaxed">
@@ -374,7 +374,7 @@ const TMSvsMedicationVeteransBlogPostPage = () => {
               <img
                 src="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/7ace98a6-9efe-4403-aacf-892346fb07a8.webp"
                 alt="Veteran struggling with depression medication side effects"
-                className="w-full h-48 md:h-64 lg:h-auto object-cover rounded-lg mb-4 md:mb-6" />
+                className="w-full  lg:h-auto object-cover rounded-lg mb-4 md:mb-6" />
 
 
               <Card className="bg-blue-50 border-blue-200 mb-4 md:mb-6">
