@@ -35,7 +35,7 @@ const AnxietyPage = () => {
             <div>
               <Badge className="bg-white/20 text-white mb-4">Anxiety Treatment</Badge>
               <h1 className="text-4xl lg:text-5xl font-bold mb-6">
-                Therapy for Anxiety Disorders 
+                Therapy for Anxiety Disorders in KarmaTMS 
               </h1>
               <p className="text-xl text-white/90 mb-8">
                 Innovative, non-invasive treatment that targets the root causes of anxiety in the brain, 
