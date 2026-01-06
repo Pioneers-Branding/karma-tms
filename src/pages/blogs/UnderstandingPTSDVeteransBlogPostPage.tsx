@@ -96,7 +96,7 @@ export default function UnderstandingPTSDVeteransBlogPostPage() {
               </time>
             </div>
             <img
-              src="https://res.cloudinary.com/de4kw1t2i/image/upload/v1762863798/blog_2_ahwkma.png"
+              src="https://res.cloudinary.com/de4kw1t2i/image/upload/v1763033666/5_kvtlku.png"
               alt="Understanding PTSD in Veterans"
               className="w-full h-[400px] object-cover rounded-2xl shadow-xl mb-12" />
 
