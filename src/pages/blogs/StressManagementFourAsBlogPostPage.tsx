@@ -96,22 +96,22 @@ const StressManagementFourAsBlogPostPage = () => {
 
   const relatedPosts = [
   {
-    title: 'Stress Management: Complete Guide',
-    excerpt: 'Comprehensive guide to understanding and managing stress with proven techniques and strategies.',
-    link: '/stress-management',
-    image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/6cfeb881-529d-42c6-875a-321eac7d440c.webp'
+    title: 'TMS for Migraine Relief in Veterans',
+    excerpt: 'Learn how TMS helps veterans with migraines and comorbid conditions like PTSD and depression.',
+    link: '/blogs/tms-migraine-veterans',
+    image: 'https://res.cloudinary.com/de4kw1t2i/image/upload/v1763033673/7_lnxkrv.png'
   },
   {
-    title: 'Understanding Anxiety Treatment',
-    excerpt: 'Learn about anxiety disorders and evidence-based treatment options including therapy and TMS.',
-    link: '/anxiety',
-    image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/9705b922-d0fc-4d29-be10-acd507ce308c.webp'
+    title: 'TMS for Anxiety in Veterans',
+    excerpt: 'Discover how TMS helps veterans manage anxiety beyond medication.',
+    link: '/blogs/tms-anxiety-veterans',
+    image: 'https://res.cloudinary.com/de4kw1t2i/image/upload/v1763033666/6_rrkhgo.png'
   },
   {
-    title: 'Depression Treatment Options',
-    excerpt: 'Comprehensive guide to depression treatment including therapy, medication, and innovative treatments.',
-    link: '/depression',
-    image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/7ace98a6-9efe-4403-aacf-892346fb07a8.webp'
+    title: 'Understanding PTSD in Veterans',
+    excerpt: 'Complete guide to PTSD signs, symptoms, and treatment paths including TMS therapy.',
+    link: '/blogs/understanding-ptsd-veterans',
+    image: 'https://res.cloudinary.com/de4kw1t2i/image/upload/v1763033666/5_kvtlku.png'
   }];
 
 
@@ -292,7 +292,7 @@ const StressManagementFourAsBlogPostPage = () => {
               <img
                 src="https://res.cloudinary.com/de4kw1t2i/image/upload/v1763376733/12_t62v1m.png"
                 alt="Stress management techniques and strategies"
-                className="w-full h-64 md:h-96 object-cover rounded-lg mb-6" />
+                className="w-full  md:h-96 object-cover rounded-lg mb-6" />
 
               <p className="text-xl text-gray-700 leading-relaxed mb-6">
                 Stress is inevitable—it's how we respond to it that matters. The <strong>4 A's of stress management</strong>—Avoid, Alter, Adapt, and Accept—provide a simple yet powerful framework for handling life's pressures. Whether you're dealing with work stress, relationship challenges, or general overwhelm, understanding these four strategies can transform how you navigate difficult situations.
@@ -637,7 +637,7 @@ const StressManagementFourAsBlogPostPage = () => {
                     <img
                     src={post.image}
                     alt={post.title}
-                    className="w-full h-48 object-cover" />
+                    className="w-full  object-cover" />
 
                     <CardContent className="p-6">
                       <h3 className="font-bold text-lg mb-2 hover:text-[#572670] transition-colors">
