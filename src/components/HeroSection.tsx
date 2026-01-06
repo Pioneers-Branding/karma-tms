@@ -1,241 +1,248 @@
-import { useState, useEffect } from 'react';
-import { Button } from '@/components/ui/button';
-import { Card, CardContent } from '@/components/ui/card';
-import { Badge } from '@/components/ui/badge';
-import { Input } from '@/components/ui/input';
-import { Label } from '@/components/ui/label';
-import { Textarea } from '@/components/ui/textarea';
-import { Checkbox } from '@/components/ui/checkbox';
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
-import { ArrowRight, CheckCircle, Shield, Clock, Users, Star, Zap, Play, User, Phone as PhoneIcon, Mail, MessageCircle } from 'lucide-react';
+import React, { useState } from 'react';
+import { ChevronLeft, ChevronRight, Star, Users, Award, TrendingUp, Brain, Shield, Clock, Heart } from 'lucide-react';
 
 const HeroSection = () => {
-  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const [currentSlide, setCurrentSlide] = useState(0);
+  
+  const slides = [
+    {
+      title: "Advanced Deep TMS Technology",
+      image: "/api/placeholder/400/300",
+      alt: "Deep TMS treatment session"
+    },
+    {
+      title: "Comfortable Treatment Environment", 
+      image: "/api/placeholder/400/300",
+      alt: "Modern TMS clinic interior"
+    },
+    {
+      title: "FDA-Approved Treatment",
+      image: "/api/placeholder/400/300", 
+      alt: "TMS device and certification"
+    },
+    {
+      title: "Expert Medical Team",
+      image: "/api/placeholder/400/300",
+      alt: "Professional medical staff"
+    }
+  ];
 
-  const backgroundImages = [
-  'https://karmatms.com/wp-content/uploads/2024/09/64f25e1d7ad0910405ab506b-2.jpeg',
-  'https://content.r9cdn.net/rimg/dimg/bb/85/130e54d5-city-35219-16bfbb46ea8.jpg?crop=true&width=1020&height=498'];
+  const nextSlide = () => {
+    setCurrentSlide((prev) => (prev + 1) % slides.length);
+  };
 
+  const prevSlide = () => {
+    setCurrentSlide((prev) => (prev - 1 + slides.length) % slides.length);
+  };
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentImageIndex((prev) => (prev + 1) % backgroundImages.length);
-    }, 5000);
-    return () => clearInterval(interval);
-  }, [backgroundImages.length]);
+  const conditions = [
+    "Depression (Treatment-Resistant)",
+    "Anxiety Disorders", 
+    "OCD (Obsessive Compulsive Disorder)",
+    "PTSD (Post-Traumatic Stress)",
+    "Bipolar Depression",
+    "Addiction Recovery Support"
+  ];
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Dynamic Background Images */}
-      <div className="absolute inset-0">
-        {backgroundImages.map((image, index) =>
-        <div
-          key={index}
-          className={`absolute inset-0 transition-all duration-1000 ease-in-out ${
-          index === currentImageIndex ? 'opacity-100 scale-100' : 'opacity-0 scale-105'}`
-          }
-          style={{
-            backgroundImage: `url(${image})`,
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
-            backgroundRepeat: 'no-repeat'
-          }} />
-
-        )}
-        
-        {/* Gradient Overlays */}
-        <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-transparent" />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
-        <div className="absolute inset-0 bg-[#572670]/30" />
-      </div>
-      
-      {/* Content */}
-      <div className="relative z-10 container mx-auto px-4 py-20">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
-          {/* Left Column - Main Content */}
-          <div className="text-white space-y-8">
-            <div className="space-y-6">
-              <div className="flex items-center gap-3 flex-wrap">
-                <Badge className="bg-white/20 text-white border-white/30 hover:bg-white/30 backdrop-blur-sm px-4 py-2">
-                  <Shield className="h-4 w-4 mr-2" />
-                  FDA-Approved Treatment
-                </Badge>
-                <Badge className="bg-green-500/20 text-green-100 border-green-400/30 backdrop-blur-sm px-4 py-2">
-                  <Star className="h-4 w-4 mr-2" />
-                  75% Success Rate
-                </Badge>
-              </div>
-              
-              <h1 className="text-4xl lg:text-6xl xl:text-7xl font-bold leading-none tracking-tight">
-                Advanced TMS Therapy
-                <span className="block bg-gradient-to-r from-white via-purple-200 to-white bg-clip-text text-transparent">
-                  in Palm Springs
-                </span>
-              </h1>
-              
-              <p className="text-lg lg:text-xl text-gray-200 leading-relaxed max-w-2xl">
-                Empowering minds, enhancing lives. FDA-approved treatment for depression, 
-                anxiety, and mental health conditions with <strong className="text-white">clinically proven results.</strong>
-              </p>
-              
-              {/* Compact Stats */}
-              <div className="flex items-center gap-6 text-sm">
-                <div className="text-center">
-                  <div className="text-2xl font-bold text-green-400">75%</div>
-                  <div className="text-gray-300">Success Rate</div>
+    <div className="min-h-screen bg-gradient-to-br from-violet-50 to-indigo-50 py-4 sm:py-6 lg:py-8 px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto">
+        <div className="bg-white rounded-3xl shadow-2xl overflow-hidden">
+          <div className="grid lg:grid-cols-2 xl:grid-cols-5 min-h-[800px] lg:min-h-[900px]">
+            
+            {/* Left Section - Content */}
+            <div className="xl:col-span-3 bg-gradient-to-br from-violet-50 via-indigo-50 to-purple-50 p-4 sm:p-6 md:p-8 lg:p-10 xl:p-12 flex flex-col justify-center">
+              <div className="space-y-6 lg:space-y-8">
+                
+                {/* Heading */}
+                <div className="space-y-4 lg:space-y-6">
+                  <div className="flex items-center space-x-3 mb-4">
+                    <div className="w-12 h-12 bg-gradient-to-br from-indigo-600 to-violet-700 rounded-2xl flex items-center justify-center shadow-lg">
+                      <Brain className="w-6 h-6 text-white" />
+                    </div>
+                    <span className="text-indigo-700 font-semibold text-lg">Karma TMS</span>
+                  </div>
+                  <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-5xl xl:text-6xl font-bold text-gray-900 leading-tight">
+                    Advanced <span className="bg-gradient-to-r from-indigo-600 via-violet-600 to-purple-600 bg-clip-text text-transparent">Deep TMS</span> Therapy
+                  </h1>
+                  <p className="text-base sm:text-lg lg:text-xl text-gray-700 leading-relaxed max-w-2xl">
+                    Revolutionary FDA-approved treatment for depression, anxiety, OCD, and PTSD. Experience breakthrough results with our advanced Deep TMS technology at Karma TMS.
+                  </p>
                 </div>
-                <div className="text-center">
-                  <div className="text-2xl font-bold text-blue-400">20min</div>
-                  <div className="text-gray-300">Sessions</div>
-                </div>
-                <div className="text-center">
-                  <div className="text-2xl font-bold text-purple-400">✓</div>
-                  <div className="text-gray-300">Insurance Covered</div>
-                </div>
-              </div>
-            </div>
 
-            {/* CTA */}
-            <div className="flex flex-col sm:flex-row gap-4">
-              <Button
-                size="lg"
-                className="bg-gradient-to-r from-[#572670] to-[#7c3d90] hover:from-[#7c3d90] hover:to-[#572670] text-white font-semibold px-8 py-4 text-lg shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-300">
-
-                <Zap className="h-5 w-5 mr-2" />
-                Take Our TMS Quiz
-                <ArrowRight className="h-5 w-5 ml-2" />
-              </Button>
-            </div>
-          </div>
-
-          {/* Right Column - Contact Form */}
-          <div className="space-y-6">
-            {/* Contact Form with Glassmorphism */}
-            <Card className="bg-white/10 backdrop-blur-lg border-white/20 shadow-2xl">
-              <CardContent className="p-8">
-                <div className="space-y-6">
-                  <div className="text-center text-white">
-                    <h3 className="text-2xl font-bold mb-2">Get Your Free Consultation</h3>
-                    <p className="text-gray-200 text-sm">Take the first step toward better mental health</p>
+                {/* Image Slider */}
+                <div className="relative bg-white rounded-3xl shadow-xl overflow-hidden group">
+                  <div className="relative h-48 sm:h-64 lg:h-72 xl:h-80">
+                    <img 
+                      src={slides[currentSlide].image}
+                      alt={slides[currentSlide].alt}
+                      className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent" />
+                    <div className="absolute bottom-4 left-4 right-4">
+                      <h3 className="text-white font-semibold text-lg lg:text-xl drop-shadow-lg">
+                        {slides[currentSlide].title}
+                      </h3>
+                    </div>
                   </div>
                   
-                  <form className="space-y-4">
-                    <div className="space-y-2">
-                      <Label htmlFor="name" className="text-white text-sm font-medium">Full Name</Label>
-                      <Input
-                        id="name"
-                        placeholder="Enter your full name"
-                        className="bg-white/20 border-white/30 text-white placeholder-white/70 focus:bg-white/30 focus:border-white/50" />
-
-                    </div>
-                    
-                    <div className="grid grid-cols-2 gap-4">
-                      <div className="space-y-2">
-                        <Label htmlFor="phone" className="text-white text-sm font-medium">Phone</Label>
-                        <Input
-                          id="phone"
-                          type="tel"
-                          placeholder="(760) 123-4567"
-                          className="bg-white/20 border-white/30 text-white placeholder-white/70 focus:bg-white/30 focus:border-white/50" />
-
-                      </div>
-                      <div className="space-y-2">
-                        <Label htmlFor="email" className="text-white text-sm font-medium">Email</Label>
-                        <Input
-                          id="email"
-                          type="email"
-                          placeholder="your@email.com"
-                          className="bg-white/20 border-white/30 text-white placeholder-white/70 focus:bg-white/30 focus:border-white/50" />
-
-                      </div>
-                    </div>
-                    
-                    <div className="space-y-2">
-                      <Label htmlFor="condition" className="text-white text-sm font-medium">Primary Condition</Label>
-                      <Select>
-                        <SelectTrigger className="bg-white/20 border-white/30 text-white focus:bg-white/30 focus:border-white/50">
-                          <SelectValue placeholder="Select your primary concern" />
-                        </SelectTrigger>
-                        <SelectContent className="bg-white/95 backdrop-blur-md">
-                          <SelectItem value="depression">Depression</SelectItem>
-                          <SelectItem value="anxiety">Anxiety</SelectItem>
-                          <SelectItem value="ptsd">PTSD</SelectItem>
-                          <SelectItem value="ocd">OCD</SelectItem>
-                          <SelectItem value="stress">Stress/Adjustment Disorders</SelectItem>
-                          <SelectItem value="womens-mood">Women's Mood Disorders</SelectItem>
-                        </SelectContent>
-                      </Select>
-                    </div>
-                    
-                    <div className="space-y-2">
-                      <Label htmlFor="message" className="text-white text-sm font-medium">Message (Optional)</Label>
-                      <Textarea
-                        id="message"
-                        placeholder="Tell us more about how we can help you..."
-                        className="bg-white/20 border-white/30 text-white placeholder-white/70 focus:bg-white/30 focus:border-white/50 resize-none"
-                        rows={3} />
-
-                    </div>
-                    
-                    <div className="flex items-center space-x-2">
-                      <Checkbox
-                        id="consent"
-                        className="border-white/30 data-[state=checked]:bg-white data-[state=checked]:text-[#572670]" />
-
-                      <Label htmlFor="consent" className="text-white text-xs leading-4">
-                        I consent to be contacted by Karma TMS and authorize the use of this data for clinical evaluation and treatment recommendations.
-                      </Label>
-                    </div>
-                    
-                    <Button
-                      type="submit"
-                      className="w-full bg-white text-[#572670] hover:bg-white/90 font-semibold py-3 transition-all duration-300 shadow-lg hover:shadow-xl">
-                      Schedule Your Consultation
-                      <ArrowRight className="h-4 w-4 ml-2" />
-                    </Button>
-                  </form>
+                  {/* Slider Controls */}
+                  <button 
+                    onClick={prevSlide}
+                    className="absolute left-4 top-1/2 -translate-y-1/2 bg-white/95 hover:bg-white rounded-full p-3 shadow-xl transition-all duration-300 hover:scale-110 hover:shadow-2xl backdrop-blur-sm"
+                  >
+                    <ChevronLeft className="w-5 h-5 text-indigo-600" />
+                  </button>
+                  <button 
+                    onClick={nextSlide}
+                    className="absolute right-4 top-1/2 -translate-y-1/2 bg-white/95 hover:bg-white rounded-full p-3 shadow-xl transition-all duration-300 hover:scale-110 hover:shadow-2xl backdrop-blur-sm"
+                  >
+                    <ChevronRight className="w-5 h-5 text-indigo-600" />
+                  </button>
+                  
+                  {/* Slide Indicators */}
+                  <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex space-x-2">
+                    {slides.map((_, index) => (
+                      <button
+                        key={index}
+                        onClick={() => setCurrentSlide(index)}
+                        className={`w-2.5 h-2.5 rounded-full transition-all duration-300 ${
+                          index === currentSlide 
+                            ? 'bg-white scale-125 shadow-lg' 
+                            : 'bg-white/60 hover:bg-white/80'
+                        }`}
+                      />
+                    ))}
+                  </div>
                 </div>
-              </CardContent>
-            </Card>
 
-            {/* Quick Benefits */}
-            <div className="grid grid-cols-2 gap-4">
-              <Card className="bg-white/10 backdrop-blur-md border-white/20 hover:bg-white/20 transition-all duration-300">
-                <CardContent className="p-4 text-white text-center">
-                  <CheckCircle className="h-6 w-6 text-green-400 mx-auto mb-2" />
-                  <h4 className="font-semibold text-sm">Non-Invasive</h4>
-                  <p className="text-xs text-gray-300">No surgery required</p>
-                </CardContent>
-              </Card>
+                {/* CTA Buttons */}
+                <div className="flex flex-col sm:flex-row gap-4 lg:gap-6">
+                  <button className="flex-1 bg-gradient-to-r from-indigo-600 via-violet-600 to-purple-600 text-white font-semibold py-4 lg:py-5 px-8 rounded-full shadow-xl hover:shadow-2xl transform hover:-translate-y-1 transition-all duration-300 text-center text-base lg:text-lg hover:scale-[1.02]">
+                    Take Mental Health Quiz
+                  </button>
+                  <button className="flex-1 bg-white border-2 border-violet-200 text-violet-700 font-semibold py-4 lg:py-5 px-8 rounded-full shadow-xl hover:shadow-2xl transform hover:-translate-y-1 transition-all duration-300 text-center text-base lg:text-lg hover:scale-[1.02] hover:border-violet-300 hover:bg-violet-50">
+                    View Treatments
+                  </button>
+                </div>
 
-              <Card className="bg-white/10 backdrop-blur-md border-white/20 hover:bg-white/20 transition-all duration-300">
-                <CardContent className="p-4 text-white text-center">
-                  <Clock className="h-6 w-6 text-blue-400 mx-auto mb-2" />
-                  <h4 className="font-semibold text-sm">Quick Sessions</h4>
-                  <p className="text-xs text-gray-300">20-minute treatments</p>
-                </CardContent>
-              </Card>
+              </div>
             </div>
+
+            {/* Right Section - Form & Stats */}
+            <div className="xl:col-span-2 bg-gradient-to-br from-indigo-600 via-violet-600 to-purple-700 p-4 sm:p-6 md:p-8 lg:p-10 xl:p-12 flex flex-col">
+              
+              {/* Contact Form */}
+              <div className="bg-white/95 backdrop-blur-lg rounded-3xl p-6 lg:p-8 shadow-2xl flex-grow border border-white/20">
+                <div className="flex justify-between items-center mb-6 lg:mb-8">
+                  <h2 className="text-xl lg:text-2xl font-bold text-gray-900 flex items-center">
+                    <Heart className="w-5 h-5 lg:w-6 lg:h-6 text-violet-600 mr-2" />
+                    Get In Touch
+                  </h2>
+                  <button className="bg-gradient-to-r from-indigo-600 to-violet-600 text-white font-semibold py-2.5 lg:py-3 px-6 lg:px-8 rounded-full shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all duration-300 text-sm lg:text-base hover:scale-105">
+                    Send
+                  </button>
+                </div>
+                
+                <div className="space-y-4 lg:space-y-5">
+                  <div>
+                    <input
+                      type="text"
+                      placeholder="Full Name"
+                      className="w-full px-4 lg:px-5 py-3 lg:py-4 border border-gray-200 rounded-2xl focus:ring-2 focus:ring-violet-500 focus:border-transparent outline-none transition-all duration-300 bg-white/90 backdrop-blur-sm hover:bg-white text-sm lg:text-base"
+                    />
+                  </div>
+                  
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <input
+                      type="email"
+                      placeholder="Email Address"
+                      className="w-full px-4 lg:px-5 py-3 lg:py-4 border border-gray-200 rounded-2xl focus:ring-2 focus:ring-violet-500 focus:border-transparent outline-none transition-all duration-300 bg-white/90 backdrop-blur-sm hover:bg-white text-sm lg:text-base"
+                    />
+                    <input
+                      type="tel"
+                      placeholder="Phone Number"
+                      className="w-full px-4 lg:px-5 py-3 lg:py-4 border border-gray-200 rounded-2xl focus:ring-2 focus:ring-violet-500 focus:border-transparent outline-none transition-all duration-300 bg-white/90 backdrop-blur-sm hover:bg-white text-sm lg:text-base"
+                    />
+                  </div>
+                  
+                  <div>
+                    <select className="w-full px-4 lg:px-5 py-3 lg:py-4 border border-gray-200 rounded-2xl focus:ring-2 focus:ring-violet-500 focus:border-transparent outline-none transition-all duration-300 bg-white/90 backdrop-blur-sm hover:bg-white text-sm lg:text-base">
+                      <option value="">Select Condition</option>
+                      {conditions.map((condition, index) => (
+                        <option key={index} value={condition}>{condition}</option>
+                      ))}
+                    </select>
+                  </div>
+                  
+                  <div>
+                    <textarea
+                      placeholder="Tell us about your situation and how we can help..."
+                      rows={4}
+                      className="w-full px-4 lg:px-5 py-3 lg:py-4 border border-gray-200 rounded-2xl focus:ring-2 focus:ring-violet-500 focus:border-transparent outline-none transition-all duration-300 resize-none bg-white/90 backdrop-blur-sm hover:bg-white text-sm lg:text-base"
+                    ></textarea>
+                  </div>
+                </div>
+              </div>
+
+              {/* Stats Section */}
+              <div className="mt-6 lg:mt-8 space-y-4 lg:space-y-6">
+                
+                {/* Main Stats */}
+                <div className="grid grid-cols-2 gap-4 lg:gap-6">
+                  <div className="bg-white/90 backdrop-blur-lg rounded-2xl lg:rounded-3xl p-4 lg:p-6 text-center shadow-xl border border-white/20 hover:bg-white/95 transition-all duration-300 hover:scale-105">
+                    <div className="text-2xl lg:text-3xl xl:text-4xl font-bold bg-gradient-to-r from-indigo-600 to-violet-600 bg-clip-text text-transparent">85%</div>
+                    <div className="text-xs lg:text-sm font-semibold text-gray-700 mt-1 lg:mt-2">Success Rate</div>
+                  </div>
+                  <div className="bg-white/90 backdrop-blur-lg rounded-2xl lg:rounded-3xl p-4 lg:p-6 text-center shadow-xl border border-white/20 hover:bg-white/95 transition-all duration-300 hover:scale-105">
+                    <div className="text-2xl lg:text-3xl xl:text-4xl font-bold bg-gradient-to-r from-violet-600 to-purple-600 bg-clip-text text-transparent">10K+</div>
+                    <div className="text-xs lg:text-sm font-semibold text-gray-700 mt-1 lg:mt-2">Patients Treated</div>
+                  </div>
+                </div>
+
+                {/* Additional Stats */}
+                <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 lg:gap-4">
+                  <div className="bg-white/80 backdrop-blur-lg rounded-xl lg:rounded-2xl p-3 lg:p-4 text-center shadow-lg border border-white/10 hover:bg-white/90 transition-all duration-300 hover:scale-105">
+                    <div className="flex items-center justify-center mb-1 lg:mb-2">
+                      <Star className="w-3 h-3 lg:w-4 lg:h-4 text-yellow-500 mr-1" />
+                      <span className="text-base lg:text-lg font-bold text-gray-800">4.9</span>
+                    </div>
+                    <div className="text-[10px] lg:text-xs font-medium text-gray-600">Rating</div>
+                  </div>
+                  
+                  <div className="bg-white/80 backdrop-blur-lg rounded-xl lg:rounded-2xl p-3 lg:p-4 text-center shadow-lg border border-white/10 hover:bg-white/90 transition-all duration-300 hover:scale-105">
+                    <div className="flex items-center justify-center mb-1 lg:mb-2">
+                      <Shield className="w-3 h-3 lg:w-4 lg:h-4 text-green-500 mr-1" />
+                      <span className="text-base lg:text-lg font-bold text-gray-800">FDA</span>
+                    </div>
+                    <div className="text-[10px] lg:text-xs font-medium text-gray-600">Approved</div>
+                  </div>
+                  
+                  <div className="bg-white/80 backdrop-blur-lg rounded-xl lg:rounded-2xl p-3 lg:p-4 text-center shadow-lg border border-white/10 hover:bg-white/90 transition-all duration-300 hover:scale-105">
+                    <div className="flex items-center justify-center mb-1 lg:mb-2">
+                      <Clock className="w-3 h-3 lg:w-4 lg:h-4 text-indigo-500 mr-1" />
+                      <span className="text-base lg:text-lg font-bold text-gray-800">15+</span>
+                    </div>
+                    <div className="text-[10px] lg:text-xs font-medium text-gray-600">Years Exp.</div>
+                  </div>
+                  
+                  <div className="bg-white/80 backdrop-blur-lg rounded-xl lg:rounded-2xl p-3 lg:p-4 text-center shadow-lg border border-white/10 hover:bg-white/90 transition-all duration-300 hover:scale-105">
+                    <div className="flex items-center justify-center mb-1 lg:mb-2">
+                      <TrendingUp className="w-3 h-3 lg:w-4 lg:h-4 text-violet-500 mr-1" />
+                      <span className="text-base lg:text-lg font-bold text-gray-800">92%</span>
+                    </div>
+                    <div className="text-[10px] lg:text-xs font-medium text-gray-600">Satisfaction</div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
           </div>
         </div>
       </div>
-
-      {/* Image Indicators */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex space-x-2 z-10">
-        {backgroundImages.map((_, index) =>
-        <button
-          key={index}
-          onClick={() => setCurrentImageIndex(index)}
-          className={`w-3 h-3 rounded-full transition-all duration-300 ${
-          index === currentImageIndex ?
-          'bg-white scale-125' :
-          'bg-white/50 hover:bg-white/75'}`
-          } />
-
-        )}
-      </div>
-    </section>);
-
+    </div>
+  );
 };
 
 export default HeroSection;
