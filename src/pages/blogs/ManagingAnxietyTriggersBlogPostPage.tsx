@@ -282,7 +282,7 @@ const ManagingAnxietyTriggersBlogPostPage = () => {
               <img
                 src="https://res.cloudinary.com/de4kw1t2i/image/upload/v1763376737/22_wiizht.png"
                 alt="Person managing anxiety in daily life"
-                className="w-full h-64 md:h-96 object-cover rounded-lg mb-6" />
+                className="w-full md:h-96 object-cover rounded-lg mb-6" />
 
               <p className="text-xl text-gray-700 leading-relaxed">
                 Anxiety doesn't appear out of nowhere—it's usually triggered by specific situations, thoughts, or experiences. Understanding what triggers your <Link to="/anxiety" className="text-[#572670] hover:underline font-medium">anxiety</Link> is the first step toward managing it effectively. Whether you're dealing with occasional anxious moments or a diagnosed anxiety disorder, learning to recognize and respond to your triggers can dramatically improve your quality of life.
