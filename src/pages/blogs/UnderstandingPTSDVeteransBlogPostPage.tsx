@@ -75,23 +75,24 @@ export default function UnderstandingPTSDVeteransBlogPostPage() {
 
   const relatedPosts = [
   {
-    title: 'VA Approves TMS for Veterans with PTSD',
-    excerpt: 'Learn about VA coverage for TMS therapy and how to access this breakthrough treatment.',
-    link: '/blogs/va-veterans-ptsd-tms',
-    image: 'https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=800&auto=format'
+    title: 'TMS for Migraine Relief in Veterans',
+    excerpt: 'Learn how TMS helps veterans with migraines and comorbid conditions like PTSD and depression.',
+    link: '/blogs/tms-migraine-veterans',
+    image: 'https://res.cloudinary.com/de4kw1t2i/image/upload/v1762863799/blog_4_hzwvvb.png'
   },
   {
     title: 'TMS for Anxiety in Veterans',
     excerpt: 'Discover how TMS helps veterans manage anxiety beyond medication.',
     link: '/blogs/tms-anxiety-veterans',
-    image: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=800&auto=format'
+    image: 'https://res.cloudinary.com/de4kw1t2i/image/upload/v1762863798/blog_6_z1bbda.png'
   },
   {
-    title: 'TMS for Migraine Relief in Veterans',
-    excerpt: 'Learn how TMS helps veterans with migraines and comorbid conditions.',
-    link: '/blogs/tms-migraine-veterans',
-    image: 'https://images.unsplash.com/photo-1559757175-0eb30cd8c063?w=800&auto=format'
-  }];
+    title: 'Understanding PTSD in Veterans',
+    excerpt: 'Complete guide to PTSD signs, symptoms, and treatment paths including TMS therapy.',
+    link: '/blogs/understanding-ptsd-veterans',
+    image: 'https://res.cloudinary.com/de4kw1t2i/image/upload/v1762863798/blog_2_ahwkma.png'
+  }
+];
 
 
   const structuredData = {
@@ -287,7 +288,7 @@ export default function UnderstandingPTSDVeteransBlogPostPage() {
               <img
                 src="https://res.cloudinary.com/de4kw1t2i/image/upload/v1763033666/5_kvtlku.png"
                 alt="Understanding PTSD in Veterans"
-                className="w-full h-64 md:h-96 object-cover rounded-lg mb-6" />
+                className="w-full md:h-96 object-cover rounded-lg mb-6" />
 
             </div>
 
@@ -415,7 +416,7 @@ export default function UnderstandingPTSDVeteransBlogPostPage() {
               <img
                 src="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/0a00bae7-03d4-4867-b6ee-a18528b1c447.webp"
                 alt="PTSD in war veterans"
-                className="w-full h-64 md:h-80 object-cover rounded-lg mb-6" />
+                className="w-full  md:h-80 object-cover rounded-lg mb-6" />
 
 
               <Card className="border-l-4 border-[#572670] mb-6">
@@ -495,11 +496,7 @@ export default function UnderstandingPTSDVeteransBlogPostPage() {
             {/* Section 5: Treatment Paths */}
             <section ref={(el) => sectionsRef.current['treatment-paths'] = el} className="mb-12">
               <h2 className="text-3xl font-bold text-[#572670] mb-6">Treatment Paths for PTSD in Veterans</h2>
-              <img
-                src="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/dd7dd986-540f-4359-99af-39f398491cf0.webp"
-                alt="TMS therapy for veterans"
-                className="w-full h-64 md:h-80 object-cover rounded-lg mb-6" />
-
+              
 
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Evidence-Based Treatments</h3>
               
