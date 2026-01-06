@@ -82,7 +82,7 @@ const FooterSection = () => {
             </div>
 
             <p className="text-gray-300 leading-relaxed">
-              Leading mental health facilities in Palm Springs, Rancho  Mirage and transforming lives through advanced TMS therapy and comprehensive mental health in Palm Springs with expert mental health counselors in Palm Springs, CA providing exceptional care.
+              Leading mental health facilities in Palm Springs,  Rancho Mirage and Twentynine Palms transforming lives through advanced TMS therapy and comprehensive mental health in Palm Springs with expert mental health counselors in Palm Springs, CA providing exceptional care.
             </p>
           </div>
 
