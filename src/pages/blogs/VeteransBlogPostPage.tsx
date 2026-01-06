@@ -294,7 +294,7 @@ const VeteransBlogPostPage = () => {
               <img
                 src="https://res.cloudinary.com/de4kw1t2i/image/upload/v1763036078/0_zutd9g.png"
                 alt="Veteran receiving TMS therapy for PTSD treatment"
-                className="w-full h-64 md:h-96 object-cover rounded-lg mb-6" />
+                className="w-full  md:h-96 object-cover rounded-lg mb-6" />
 
               <p className="text-xl text-gray-700 leading-relaxed">
                 For too long, veterans returning from service have faced limited options when dealing with combat-related PTSD, depression, and anxiety. Traditional treatments don't work for everyone, and many veterans experience debilitating side effects from medications. But there's new hope: <strong>TMS therapy for veterans</strong> is emerging as a game-changing treatment that's helping thousands of service members reclaim their lives.
@@ -320,7 +320,7 @@ const VeteransBlogPostPage = () => {
               <img
                 src="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/dd7dd986-540f-4359-99af-39f398491cf0.webp"
                 alt="TMS therapy equipment and treatment process"
-                className="w-full h-64 object-cover rounded-lg mb-6" />
+                className="w-full  object-cover rounded-lg mb-6" />
 
 
               <div className="grid md:grid-cols-2 gap-4 my-6">
@@ -390,10 +390,7 @@ const VeteransBlogPostPage = () => {
                 <Link to="/depression" className="text-[#572670] hover:underline font-medium">Depression</Link> is the most common mental health condition affecting veterans, often co-occurring with PTSD. <strong>Veterans Administration TMS</strong> programs have shown remarkable success in treating treatment-resistant depression.
               </p>
 
-              <img
-                src="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/7ace98a6-9efe-4403-aacf-892346fb07a8.webp"
-                alt="Depression treatment for veterans using TMS therapy"
-                className="w-full h-64 object-cover rounded-lg mb-6" />
+             
 
 
               <p className="mb-6">
@@ -689,7 +686,7 @@ const VeteransBlogPostPage = () => {
                     <img
                     src={post.image}
                     alt={post.title}
-                    className="w-full h-48 object-cover" />
+                    className="w-full  object-cover" />
 
                     <CardContent className="p-6">
                       <h3 className="font-bold text-lg mb-2 hover:text-[#572670] transition-colors">

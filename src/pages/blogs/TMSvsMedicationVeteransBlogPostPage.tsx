@@ -10,33 +10,33 @@ import {
   BreadcrumbLink,
   BreadcrumbList,
   BreadcrumbPage,
-  BreadcrumbSeparator,
-} from '@/components/ui/breadcrumb';
+  BreadcrumbSeparator } from
+'@/components/ui/breadcrumb';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import {
   Accordion,
   AccordionContent,
   AccordionItem,
-  AccordionTrigger,
-} from '@/components/ui/accordion';
+  AccordionTrigger } from
+'@/components/ui/accordion';
 import { Calendar, Clock, User, CheckCircle2, ArrowRight, XCircle, Shield } from 'lucide-react';
 import AuthorBox from '@/components/AuthorBox';
 
 const TMSvsMedicationVeteransBlogPostPage = () => {
   const [activeSection, setActiveSection] = useState('');
-  const sectionsRef = useRef<{[key: string]: HTMLElement | null}>({});
+  const sectionsRef = useRef<{[key: string]: HTMLElement | null;}>({});
 
   const tocItems = [
-    { id: 'introduction', label: 'Why Veterans Are Choosing TMS' },
-    { id: 'medication-challenges', label: 'Medication Challenges' },
-    { id: 'what-is-tms', label: 'What is TMS?' },
-    { id: 'comparison', label: 'TMS vs Medication' },
-    { id: 'success-stories', label: 'Veteran Success Stories' },
-    { id: 'va-coverage', label: 'VA Coverage for TMS' },
-    { id: 'why-prefer-tms', label: 'Why Veterans Prefer TMS' },
-    { id: 'faqs', label: 'Frequently Asked Questions' },
-  ];
+  { id: 'introduction', label: 'Why Veterans Are Choosing TMS' },
+  { id: 'medication-challenges', label: 'Medication Challenges' },
+  { id: 'what-is-tms', label: 'What is TMS?' },
+  { id: 'comparison', label: 'TMS vs Medication' },
+  { id: 'success-stories', label: 'Veteran Success Stories' },
+  { id: 'va-coverage', label: 'VA Coverage for TMS' },
+  { id: 'why-prefer-tms', label: 'Why Veterans Prefer TMS' },
+  { id: 'faqs', label: 'Frequently Asked Questions' }];
+
 
   useEffect(() => {
     const handleScroll = () => {
@@ -69,52 +69,52 @@ const TMSvsMedicationVeteransBlogPostPage = () => {
   };
 
   const faqs = [
-    {
-      question: 'Is TMS therapy effective for veterans with depression?',
-      answer: 'Yes, clinical studies show that TMS therapy is highly effective for depression treatment for veterans. Approximately 60-70% of veterans with treatment-resistant depression experience significant symptom improvement, and about one-third achieve complete remission. TMS veterans often report better outcomes than with medication alone, especially when traditional antidepressants haven\'t worked.',
-    },
-    {
-      question: 'Do veterans get free mental health care including TMS?',
-      answer: 'The answer to "do veterans get free mental health care" depends on your eligibility and enrollment status. Veterans enrolled in VA healthcare may receive mental health services at no cost, including TMS therapy at select VA facilities. However, availability is limited and wait times can be long. Many veterans choose to use their VA benefits or private insurance at facilities like KarmaTMS for faster access to care.',
-    },
-    {
-      question: 'Do veterans get free therapy outside the VA?',
-      answer: 'Do veterans get free therapy? Veterans enrolled in VA healthcare receive free mental health services through the VA system. For care outside the VA, coverage depends on your specific benefits and insurance. The VA Community Care program may cover treatment at private facilities if VA services aren\'t available or accessible. Many veterans use a combination of VA benefits and private insurance to access TMS therapy at specialized clinics.',
-    },
-    {
-      question: 'How does TMS compare to antidepressant medication?',
-      answer: 'TMS offers several advantages over medication: no systemic side effects (no weight gain, sexual dysfunction, or cognitive fog), directly targets brain regions involved in depression, effective when medications have failed, no chemical dependency or withdrawal issues, and lasting results that continue after treatment ends. However, TMS requires a time commitment (daily sessions for 4-6 weeks) while medication is taken daily at home.',
-    },
-    {
-      question: 'Can I do TMS therapy while still taking my medications?',
-      answer: 'Yes, many veterans continue their psychiatric medications during TMS therapy. In fact, combining TMS with medication can sometimes enhance outcomes. Your treatment team will work with you to determine the best approach. Some veterans are able to reduce or discontinue medications after successful TMS treatment, but this should only be done under medical supervision.',
-    },
-    {
-      question: 'How quickly does TMS work compared to medication changes?',
-      answer: 'Many TMS veterans notice improvements within 2-3 weeks of starting treatment, compared to 4-8 weeks for medication changes to take full effect. Because TMS doesn\'t require the trial-and-error approach common with medications, veterans often reach relief faster. Additionally, there\'s no adjustment period or side effects to manage while waiting for TMS to work.',
-    },
-  ];
+  {
+    question: 'Is TMS therapy effective for veterans with depression?',
+    answer: 'Yes, clinical studies show that TMS therapy is highly effective for depression treatment for veterans. Approximately 60-70% of veterans with treatment-resistant depression experience significant symptom improvement, and about one-third achieve complete remission. TMS veterans often report better outcomes than with medication alone, especially when traditional antidepressants haven\'t worked.'
+  },
+  {
+    question: 'Do veterans get free mental health care including TMS?',
+    answer: 'The answer to "do veterans get free mental health care" depends on your eligibility and enrollment status. Veterans enrolled in VA healthcare may receive mental health services at no cost, including TMS therapy at select VA facilities. However, availability is limited and wait times can be long. Many veterans choose to use their VA benefits or private insurance at facilities like KarmaTMS for faster access to care.'
+  },
+  {
+    question: 'Do veterans get free therapy outside the VA?',
+    answer: 'Do veterans get free therapy? Veterans enrolled in VA healthcare receive free mental health services through the VA system. For care outside the VA, coverage depends on your specific benefits and insurance. The VA Community Care program may cover treatment at private facilities if VA services aren\'t available or accessible. Many veterans use a combination of VA benefits and private insurance to access TMS therapy at specialized clinics.'
+  },
+  {
+    question: 'How does TMS compare to antidepressant medication?',
+    answer: 'TMS offers several advantages over medication: no systemic side effects (no weight gain, sexual dysfunction, or cognitive fog), directly targets brain regions involved in depression, effective when medications have failed, no chemical dependency or withdrawal issues, and lasting results that continue after treatment ends. However, TMS requires a time commitment (daily sessions for 4-6 weeks) while medication is taken daily at home.'
+  },
+  {
+    question: 'Can I do TMS therapy while still taking my medications?',
+    answer: 'Yes, many veterans continue their psychiatric medications during TMS therapy. In fact, combining TMS with medication can sometimes enhance outcomes. Your treatment team will work with you to determine the best approach. Some veterans are able to reduce or discontinue medications after successful TMS treatment, but this should only be done under medical supervision.'
+  },
+  {
+    question: 'How quickly does TMS work compared to medication changes?',
+    answer: 'Many TMS veterans notice improvements within 2-3 weeks of starting treatment, compared to 4-8 weeks for medication changes to take full effect. Because TMS doesn\'t require the trial-and-error approach common with medications, veterans often reach relief faster. Additionally, there\'s no adjustment period or side effects to manage while waiting for TMS to work.'
+  }];
+
 
   const relatedPosts = [
-    {
-      title: 'How TMS Therapy Helps Veterans Heal',
-      excerpt: 'Comprehensive guide on TMS therapy for veterans with PTSD, depression, and anxiety.',
-      link: '/blog/veterans-tms-therapy',
-      image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/f00dd3f4-cea1-4918-8fec-5976198e195f.webp',
-    },
-    {
-      title: 'VA Disability Benefits for Mental Health',
-      excerpt: 'Learn how to get VA disability for depression, anxiety, and PTSD.',
-      link: '/blog/va-disability-benefits-depression-anxiety-ptsd',
-      image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/2ddc8d69-b09a-4f1d-bd47-6d783ceefbd1.webp',
-    },
-    {
-      title: 'Inside the VA & Veterans\' Mental Health',
-      excerpt: 'Understanding VA programs and accessing TMS therapy through VA or private options.',
-      link: '/blog/va-veterans-ptsd-tms-treatment',
-      image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/dd7dd986-540f-4359-99af-39f398491cf0.webp',
-    },
-  ];
+  {
+    title: 'How TMS Therapy Helps Veterans Heal',
+    excerpt: 'Comprehensive guide on TMS therapy for veterans with PTSD, depression, and anxiety.',
+    link: '/blog/veterans-tms-therapy',
+    image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/f00dd3f4-cea1-4918-8fec-5976198e195f.webp'
+  },
+  {
+    title: 'VA Disability Benefits for Mental Health',
+    excerpt: 'Learn how to get VA disability for depression, anxiety, and PTSD.',
+    link: '/blog/va-disability-benefits-depression-anxiety-ptsd',
+    image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/2ddc8d69-b09a-4f1d-bd47-6d783ceefbd1.webp'
+  },
+  {
+    title: 'Inside the VA & Veterans\' Mental Health',
+    excerpt: 'Understanding VA programs and accessing TMS therapy through VA or private options.',
+    link: '/blog/va-veterans-ptsd-tms-treatment',
+    image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/dd7dd986-540f-4359-99af-39f398491cf0.webp'
+  }];
+
 
   const articleSchema = {
     '@context': 'https://schema.org',
@@ -128,23 +128,23 @@ const TMSvsMedicationVeteransBlogPostPage = () => {
       jobTitle: 'Board-Certified Psychiatrist | Medical Director at KarmaTMS',
       affiliation: {
         '@type': 'Organization',
-        name: 'KarmaTMS',
-      },
+        name: 'KarmaTMS'
+      }
     },
     publisher: {
       '@type': 'Organization',
       name: 'KarmaTMS',
       logo: {
         '@type': 'ImageObject',
-        url: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/ebadb369-a58d-421c-b937-24f900be5867.png',
-      },
+        url: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/ebadb369-a58d-421c-b937-24f900be5867.png'
+      }
     },
     datePublished: '2025-10-06',
     dateModified: '2025-10-06',
     mainEntityOfPage: {
       '@type': 'WebPage',
-      '@id': 'https://karmatms.com/blog/tms-vs-medication-veterans-depression',
-    },
+      '@id': 'https://karmatms.com/blog/tms-vs-medication-veterans-depression'
+    }
   };
 
   const faqSchema = {
@@ -155,9 +155,9 @@ const TMSvsMedicationVeteransBlogPostPage = () => {
       name: faq.question,
       acceptedAnswer: {
         '@type': 'Answer',
-        text: faq.answer,
-      },
-    })),
+        text: faq.answer
+      }
+    }))
   };
 
   return (
@@ -168,17 +168,17 @@ const TMSvsMedicationVeteransBlogPostPage = () => {
         keywords="tms veterans, depression treatment for veterans, do veterans get free mental health care, do veterans get free therapy, tms vs medication, veteran mental health treatment, va tms therapy"
         canonical="/blog/tms-vs-medication-veterans-depression"
         ogImage="https://res.cloudinary.com/de4kw1t2i/image/upload/v1762863798/blog_5_jt2nzt.png"
-        ogType="article"
-      />
+        ogType="article" />
+
 
       <StructuredData
         type="breadcrumb"
         breadcrumbs={[
-          { name: 'Home', url: '/' },
-          { name: 'Blog', url: '/blog' },
-          { name: 'TMS vs Medication for Veterans', url: '/blog/tms-vs-medication-veterans-depression' },
-        ]}
-      />
+        { name: 'Home', url: '/' },
+        { name: 'Blog', url: '/blog' },
+        { name: 'TMS vs Medication for Veterans', url: '/blog/tms-vs-medication-veterans-depression' }]
+        } />
+
 
       <script type="application/ld+json">{JSON.stringify(articleSchema)}</script>
       <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>
@@ -254,19 +254,19 @@ const TMSvsMedicationVeteransBlogPostPage = () => {
                 <CardContent className="p-4 md:p-6">
                   <h3 className="font-bold text-base md:text-lg mb-3 md:mb-4 text-[#572670]">Table of Contents</h3>
                   <nav className="space-y-1 md:space-y-2">
-                    {tocItems.map((item) => (
-                      <button
-                        key={item.id}
-                        onClick={() => scrollToSection(item.id)}
-                        className={`block w-full text-left px-2 md:px-3 py-2 rounded-md text-xs md:text-sm transition-all ${
-                          activeSection === item.id
-                            ? 'bg-[#572670] text-white font-medium'
-                            : 'text-gray-700 hover:bg-[#572670]/10'
-                        }`}
-                      >
+                    {tocItems.map((item) =>
+                    <button
+                      key={item.id}
+                      onClick={() => scrollToSection(item.id)}
+                      className={`block w-full text-left px-2 md:px-3 py-2 rounded-md text-xs md:text-sm transition-all ${
+                      activeSection === item.id ?
+                      'bg-[#572670] text-white font-medium' :
+                      'text-gray-700 hover:bg-[#572670]/10'}`
+                      }>
+
                         {item.label}
                       </button>
-                    ))}
+                    )}
                   </nav>
                   <div className="mt-4 md:mt-6 pt-4 md:pt-6 border-t">
                     <Button asChild className="w-full bg-[#572670] hover:bg-[#7B3FA0] text-sm md:text-base">
@@ -281,12 +281,12 @@ const TMSvsMedicationVeteransBlogPostPage = () => {
           {/* Article Content - Mobile Optimized */}
           <article className="lg:col-span-3 order-1 lg:order-2 prose prose-sm md:prose-lg max-w-none">
             {/* Introduction */}
-            <section ref={(el) => (sectionsRef.current['introduction'] = el)} className="mb-8 md:mb-12">
+            <section ref={(el) => sectionsRef.current['introduction'] = el} className="mb-8 md:mb-12">
               <img
                 src="https://res.cloudinary.com/de4kw1t2i/image/upload/v1763033665/3_zl830g.png"
                 alt="TMS therapy for veterans as alternative to medication"
-                className="w-full h-48 md:h-64 lg:h-96 object-cover rounded-lg mb-4 md:mb-6"
-              />
+                className="w-full h-48 md:h-64 lg:h-96 object-cover rounded-lg mb-4 md:mb-6" />
+
 
               <p className="text-base md:text-xl text-gray-700 leading-relaxed">
                 For decades, antidepressant medication has been the frontline treatment for veterans struggling with depression. But a growing number of <strong>TMS veterans</strong> are discovering a powerful alternative that offers relief without pills, without side effects, and often without the frustration of failed medication trials. <strong>Depression treatment for veterans</strong> is evolving, and Transcranial Magnetic Stimulation (TMS) is leading the revolution.
@@ -294,7 +294,7 @@ const TMSvsMedicationVeteransBlogPostPage = () => {
             </section>
 
             {/* Medication Challenges Section - Mobile Optimized */}
-            <section ref={(el) => (sectionsRef.current['medication-challenges'] = el)} className="mb-8 md:mb-12">
+            <section ref={(el) => sectionsRef.current['medication-challenges'] = el} className="mb-8 md:mb-12">
               <h2 className="text-2xl md:text-3xl font-bold text-[#572670] mb-4 md:mb-6">The Challenge with Traditional Antidepressant Medications</h2>
 
               <p className="mb-4 md:mb-6 text-sm md:text-base">
@@ -374,8 +374,8 @@ const TMSvsMedicationVeteransBlogPostPage = () => {
               <img
                 src="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/7ace98a6-9efe-4403-aacf-892346fb07a8.webp"
                 alt="Veteran struggling with depression medication side effects"
-                className="w-full h-48 md:h-64 lg:h-auto object-cover rounded-lg mb-4 md:mb-6"
-              />
+                className="w-full h-48 md:h-64 lg:h-auto object-cover rounded-lg mb-4 md:mb-6" />
+
 
               <Card className="bg-blue-50 border-blue-200 mb-4 md:mb-6">
                 <CardContent className="p-4 md:p-6">
@@ -388,7 +388,7 @@ const TMSvsMedicationVeteransBlogPostPage = () => {
             </section>
 
             {/* What is TMS Section - Mobile Optimized */}
-            <section ref={(el) => (sectionsRef.current['what-is-tms'] = el)} className="mb-8 md:mb-12">
+            <section ref={(el) => sectionsRef.current['what-is-tms'] = el} className="mb-8 md:mb-12">
               <h2 className="text-2xl md:text-3xl font-bold text-[#572670] mb-4 md:mb-6">What is TMS Therapy?</h2>
 
               <p className="mb-4 md:mb-6 text-sm md:text-base">
@@ -432,7 +432,7 @@ const TMSvsMedicationVeteransBlogPostPage = () => {
             </section>
 
             {/* Comparison Section - Mobile Optimized Table */}
-            <section ref={(el) => (sectionsRef.current['comparison'] = el)} className="mb-8 md:mb-12">
+            <section ref={(el) => sectionsRef.current['comparison'] = el} className="mb-8 md:mb-12">
               <h2 className="text-2xl md:text-3xl font-bold text-[#572670] mb-4 md:mb-6">TMS vs Medication: A Direct Comparison</h2>
 
               <p className="mb-4 md:mb-6 text-sm md:text-base">
@@ -499,7 +499,7 @@ const TMSvsMedicationVeteransBlogPostPage = () => {
             </section>
 
             {/* Success Stories Section - Mobile Optimized */}
-            <section ref={(el) => (sectionsRef.current['success-stories'] = el)} className="mb-8 md:mb-12">
+            <section ref={(el) => sectionsRef.current['success-stories'] = el} className="mb-8 md:mb-12">
               <h2 className="text-2xl md:text-3xl font-bold text-[#572670] mb-4 md:mb-6">Veteran Success Stories: From Medication Struggles to TMS Breakthroughs</h2>
 
               <p className="mb-6 md:mb-8 text-sm md:text-base">
@@ -575,7 +575,7 @@ const TMSvsMedicationVeteransBlogPostPage = () => {
             </section>
 
             {/* VA Coverage Section - Mobile Optimized */}
-            <section ref={(el) => (sectionsRef.current['va-coverage'] = el)} className="mb-8 md:mb-12">
+            <section ref={(el) => sectionsRef.current['va-coverage'] = el} className="mb-8 md:mb-12">
               <h2 className="text-2xl md:text-3xl font-bold text-[#572670] mb-4 md:mb-6">Do Veterans Get Free Mental Health Care? Understanding VA Coverage for TMS</h2>
 
               <p className="mb-4 md:mb-6 text-sm md:text-base">
@@ -674,7 +674,7 @@ const TMSvsMedicationVeteransBlogPostPage = () => {
             </section>
 
             {/* Why Veterans Prefer TMS - Mobile Optimized */}
-            <section ref={(el) => (sectionsRef.current['why-prefer-tms'] = el)} className="mb-8 md:mb-12">
+            <section ref={(el) => sectionsRef.current['why-prefer-tms'] = el} className="mb-8 md:mb-12">
               <h2 className="text-2xl md:text-3xl font-bold text-[#572670] mb-4 md:mb-6">Why More Veterans Are Choosing TMS Over Medication</h2>
 
               <p className="mb-4 md:mb-6 text-sm md:text-base">
@@ -743,26 +743,26 @@ const TMSvsMedicationVeteransBlogPostPage = () => {
               name="Dr. Keerthy Sunder"
               role="Board-Certified Psychiatrist | Medical Director at KarmaTMS"
               bio="Dr. Keerthy Sunder is a board-certified psychiatrist specializing in TMS therapy for veterans and treatment-resistant mental health conditions. With extensive experience in neuroscience and innovative treatment modalities, Dr. Sunder is dedicated to helping veterans overcome PTSD, depression, and anxiety through evidence-based, compassionate care."
-              image="https://www.prtms.com/wp-content/uploads/2023/03/Dr.-Keerthy-Sunder-scaled.jpg"
-            />
+              image="https://www.prtms.com/wp-content/uploads/2023/03/Dr.-Keerthy-Sunder-scaled.jpg" />
+
 
             {/* FAQ Section - Mobile Optimized */}
-            <section ref={(el) => (sectionsRef.current['faqs'] = el)} className="mb-8 md:mb-12 mt-8 md:mt-12">
+            <section ref={(el) => sectionsRef.current['faqs'] = el} className="mb-8 md:mb-12 mt-8 md:mt-12">
               <h2 className="text-2xl md:text-3xl font-bold text-[#572670] mb-4 md:mb-6">Frequently Asked Questions</h2>
 
               <Accordion type="single" collapsible className="w-full space-y-2">
-                {faqs.map((faq, index) => (
-                  <AccordionItem
-                    key={index}
-                    value={`item-${index}`}
-                    className="border border-gray-200 rounded-lg px-3 md:px-4 data-[state=open]:border-[#572670]"
-                  >
+                {faqs.map((faq, index) =>
+                <AccordionItem
+                  key={index}
+                  value={`item-${index}`}
+                  className="border border-gray-200 rounded-lg px-3 md:px-4 data-[state=open]:border-[#572670]">
+
                     <AccordionTrigger className="text-left text-sm md:text-base font-semibold hover:text-[#572670] hover:no-underline">
                       {faq.question}
                     </AccordionTrigger>
                     <AccordionContent className="text-gray-700 text-xs md:text-sm pt-2 pb-4">{faq.answer}</AccordionContent>
                   </AccordionItem>
-                ))}
+                )}
               </Accordion>
             </section>
 
@@ -785,8 +785,8 @@ const TMSvsMedicationVeteransBlogPostPage = () => {
             <section className="mb-8 md:mb-12">
               <h2 className="text-2xl md:text-3xl font-bold text-[#572670] mb-4 md:mb-6">Related Articles</h2>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
-                {relatedPosts.map((post, index) => (
-                  <Card key={index} className="border-[#572670]/20 overflow-hidden hover:shadow-lg transition-shadow">
+                {relatedPosts.map((post, index) =>
+                <Card key={index} className="border-[#572670]/20 overflow-hidden hover:shadow-lg transition-shadow">
                     <img src={post.image} alt={post.title} className="w-full h-40 md:h-48 object-cover" />
 
                     <CardContent className="p-4 md:p-6">
@@ -801,7 +801,7 @@ const TMSvsMedicationVeteransBlogPostPage = () => {
                       </Button>
                     </CardContent>
                   </Card>
-                ))}
+                )}
               </div>
             </section>
           </article>
@@ -809,8 +809,8 @@ const TMSvsMedicationVeteransBlogPostPage = () => {
       </div>
 
       <FooterSection />
-    </>
-  );
+    </>);
+
 };
 
 export default TMSvsMedicationVeteransBlogPostPage;
