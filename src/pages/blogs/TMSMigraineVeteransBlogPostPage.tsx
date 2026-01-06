@@ -23,7 +23,7 @@ export default function TMSMigraineVeteransBlogPostPage() {
     author: {
       '@type': 'Person',
       name: author.name,
-      jobTitle: author.credentials,
+      jobTitle: author.credentials
     },
     datePublished: publishDate,
     dateModified: publishDate,
@@ -32,14 +32,14 @@ export default function TMSMigraineVeteransBlogPostPage() {
       name: 'Karma TMS',
       logo: {
         '@type': 'ImageObject',
-        url: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/ebadb369-a58d-421c-b937-24f900be5867.png',
-      },
+        url: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/ebadb369-a58d-421c-b937-24f900be5867.png'
+      }
     },
     image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/76caee2d-5629-4dc1-a3b4-8c5cea23ede6.webp',
     mainEntityOfPage: {
       '@type': 'WebPage',
-      '@id': 'https://www.karmatms.com/blogs/tms-migraine-veterans',
-    },
+      '@id': 'https://www.karmatms.com/blogs/tms-migraine-veterans'
+    }
   };
 
   return (
@@ -48,8 +48,8 @@ export default function TMSMigraineVeteransBlogPostPage() {
         title="TMS for Migraine Relief in Veterans: Brain Stimulation Treatment | Karma TMS"
         description="Discover how TMS helps veterans with migraines. Learn about VA disability for migraines, comorbidity with PTSD and depression, and clinical benefits of brain stimulation therapy."
         keywords="migraines for veterans, migraines veterans disability, migraines veterans, migraines for va disability, va disability for migraines, TMS for migraines, veteran migraine treatment"
-        canonicalUrl="https://www.karmatms.com/blogs/tms-migraine-veterans"
-      />
+        canonicalUrl="https://www.karmatms.com/blogs/tms-migraine-veterans" />
+
       <StructuredData data={structuredData} />
       <Navigation />
 
@@ -79,8 +79,8 @@ export default function TMSMigraineVeteransBlogPostPage() {
                 <img
                   src={author.image}
                   alt={author.name}
-                  className="w-10 h-10 rounded-full object-cover"
-                />
+                  className="w-10 h-10 rounded-full object-cover" />
+
                 <div>
                   <p className="font-semibold text-slate-900">{author.name}</p>
                   <p className="text-sm">{author.credentials}</p>
@@ -91,15 +91,15 @@ export default function TMSMigraineVeteransBlogPostPage() {
                 {new Date(publishDate).toLocaleDateString('en-US', {
                   year: 'numeric',
                   month: 'long',
-                  day: 'numeric',
+                  day: 'numeric'
                 })}
               </time>
             </div>
             <img
               src="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/76caee2d-5629-4dc1-a3b4-8c5cea23ede6.webp"
               alt="TMS for Migraine Relief in Veterans"
-              className="w-full h-[400px] object-cover rounded-2xl shadow-xl mb-12"
-            />
+              className="w-full h-[400px] object-cover rounded-2xl shadow-xl mb-12" />
+
           </div>
         </section>
 
@@ -150,8 +150,8 @@ export default function TMSMigraineVeteransBlogPostPage() {
               <img
                 src="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/f00dd3f4-cea1-4918-8fec-5976198e195f.webp"
                 alt="VA benefits for veterans with migraines"
-                className="w-full h-[300px] object-cover rounded-xl shadow-lg mb-6"
-              />
+                className="w-full h-[300px] object-cover rounded-xl shadow-lg mb-6" />
+
               <p className="text-lg text-slate-700 leading-relaxed mb-6">
                 The VA recognizes migraines as a potentially disabling condition for veterans. Understanding how to navigate VA disability for migraines is crucial for accessing proper care and compensation.
               </p>
@@ -256,8 +256,8 @@ export default function TMSMigraineVeteransBlogPostPage() {
               <img
                 src="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/2ddc8d69-b09a-4f1d-bd47-6d783ceefbd1.webp"
                 alt="Migraine treatment options"
-                className="w-full h-[300px] object-cover rounded-xl shadow-lg mb-6"
-              />
+                className="w-full h-[300px] object-cover rounded-xl shadow-lg mb-6" />
+
               <h3 className="text-2xl font-bold text-slate-900 mb-4">Conventional Migraine Treatments:</h3>
               <div className="space-y-4 mb-8">
                 <div className="bg-slate-50 rounded-lg p-6">
@@ -334,8 +334,8 @@ export default function TMSMigraineVeteransBlogPostPage() {
               <img
                 src="https://images.unsplash.com/photo-1649770942197-d7f638a930fd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MTg3MTl8MHwxfHNlYXJjaHwxfHxBJTIwY2xpbmljYWwlMjByZXNlYXJjaCUyMGltYWdlJTIwcmVsYXRlZCUyMHRvJTIwVE1TJTIwdGhlcmFweS58ZW58MHx8fHwxNzYyNzgxMjkyfDA&ixlib=rb-4.1.0&q=80&w=200$w=1920"
                 alt="TMS therapy clinical research"
-                className="w-full h-[300px] object-cover rounded-xl shadow-lg mb-6"
-              />
+                className="w-full h-[300px] object-cover rounded-xl shadow-lg mb-6" />
+
               <p className="text-lg text-slate-700 leading-relaxed mb-6">
                 Growing clinical evidence supports the effectiveness of TMS for migraine treatment, particularly for veterans with treatment-resistant migraines and comorbid conditions.
               </p>
@@ -550,8 +550,8 @@ export default function TMSMigraineVeteransBlogPostPage() {
               name={author.name}
               credentials={author.credentials}
               image={author.image}
-              bio={author.bio}
-            />
+              bio={author.bio} />
+
           </div>
         </div>
 
@@ -568,15 +568,15 @@ export default function TMSMigraineVeteransBlogPostPage() {
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link
                   to="/contact"
-                  className="inline-flex items-center justify-center gap-2 bg-white text-green-600 px-8 py-4 rounded-lg hover:bg-green-50 transition-colors font-semibold text-lg"
-                >
+                  className="inline-flex items-center justify-center gap-2 bg-white text-green-600 px-8 py-4 rounded-lg hover:bg-green-50 transition-colors font-semibold text-lg">
+
                   <Calendar className="h-5 w-5" />
                   Schedule Free Consultation
                 </Link>
                 <a
                   href="tel:760-449-8185"
-                  className="inline-flex items-center justify-center gap-2 bg-green-700 text-white px-8 py-4 rounded-lg hover:bg-green-800 transition-colors font-semibold text-lg border-2 border-white"
-                >
+                  className="inline-flex items-center justify-center gap-2 bg-green-700 text-white px-8 py-4 rounded-lg hover:bg-green-800 transition-colors font-semibold text-lg border-2 border-white">
+
                   <Phone className="h-5 w-5" />
                   (760) 449-8185
                 </a>
@@ -590,6 +590,6 @@ export default function TMSMigraineVeteransBlogPostPage() {
       </main>
 
       <FooterSection />
-    </>
-  );
+    </>);
+
 }

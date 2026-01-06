@@ -23,7 +23,7 @@ export default function UnderstandingPTSDVeteransBlogPostPage() {
     author: {
       '@type': 'Person',
       name: author.name,
-      jobTitle: author.credentials,
+      jobTitle: author.credentials
     },
     datePublished: publishDate,
     dateModified: publishDate,
@@ -32,14 +32,14 @@ export default function UnderstandingPTSDVeteransBlogPostPage() {
       name: 'Karma TMS',
       logo: {
         '@type': 'ImageObject',
-        url: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/ebadb369-a58d-421c-b937-24f900be5867.png',
-      },
+        url: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/ebadb369-a58d-421c-b937-24f900be5867.png'
+      }
     },
     image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/02c362bd-cde2-431d-8820-a07a14939638.webp',
     mainEntityOfPage: {
       '@type': 'WebPage',
-      '@id': 'https://www.karmatms.com/blogs/understanding-ptsd-veterans',
-    },
+      '@id': 'https://www.karmatms.com/blogs/understanding-ptsd-veterans'
+    }
   };
 
   return (
@@ -48,8 +48,8 @@ export default function UnderstandingPTSDVeteransBlogPostPage() {
         title="Understanding PTSD in Veterans: Signs, Symptoms & Treatment | Karma TMS"
         description="Complete guide to PTSD in war veterans including Vietnam vets. Learn what PTSD looks like in veterans, common signs, symptoms, and effective treatment paths including TMS therapy."
         keywords="what is ptsd for veterans, what does ptsd look like in veterans, ptsd war veterans, ptsd war vets, ptsd vietnam vets, ptsd vietnam war veterans, veteran ptsd symptoms, ptsd treatment for veterans"
-        canonicalUrl="https://www.karmatms.com/blogs/understanding-ptsd-veterans"
-      />
+        canonicalUrl="https://www.karmatms.com/blogs/understanding-ptsd-veterans" />
+
       <StructuredData data={structuredData} />
       <Navigation />
 
@@ -79,8 +79,8 @@ export default function UnderstandingPTSDVeteransBlogPostPage() {
                 <img
                   src={author.image}
                   alt={author.name}
-                  className="w-10 h-10 rounded-full object-cover"
-                />
+                  className="w-10 h-10 rounded-full object-cover" />
+
                 <div>
                   <p className="font-semibold text-slate-900">{author.name}</p>
                   <p className="text-sm">{author.credentials}</p>
@@ -91,15 +91,15 @@ export default function UnderstandingPTSDVeteransBlogPostPage() {
                 {new Date(publishDate).toLocaleDateString('en-US', {
                   year: 'numeric',
                   month: 'long',
-                  day: 'numeric',
+                  day: 'numeric'
                 })}
               </time>
             </div>
             <img
               src="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/02c362bd-cde2-431d-8820-a07a14939638.webp"
               alt="Understanding PTSD in Veterans"
-              className="w-full h-[400px] object-cover rounded-2xl shadow-xl mb-12"
-            />
+              className="w-full h-[400px] object-cover rounded-2xl shadow-xl mb-12" />
+
           </div>
         </section>
 
@@ -174,8 +174,8 @@ export default function UnderstandingPTSDVeteransBlogPostPage() {
               <img
                 src="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/0a00bae7-03d4-4867-b6ee-a18528b1c447.webp"
                 alt="PTSD in war veterans"
-                className="w-full h-[300px] object-cover rounded-xl shadow-lg mb-6"
-              />
+                className="w-full h-[300px] object-cover rounded-xl shadow-lg mb-6" />
+
               <h3 className="text-2xl font-bold text-slate-900 mb-4">PTSD in Vietnam War Veterans</h3>
               <p className="text-lg text-slate-700 leading-relaxed mb-6">
                 Vietnam vets face unique PTSD challenges. The Vietnam War created specific trauma patterns due to guerrilla warfare, unclear enemy lines, and the difficult homecoming many veterans experienced. Studies show that approximately 30% of Vietnam war veterans have experienced PTSD at some point in their lives.
@@ -217,8 +217,8 @@ export default function UnderstandingPTSDVeteransBlogPostPage() {
               <img
                 src="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/dd7dd986-540f-4359-99af-39f398491cf0.webp"
                 alt="TMS therapy for veterans"
-                className="w-full h-[300px] object-cover rounded-xl shadow-lg mb-6"
-              />
+                className="w-full h-[300px] object-cover rounded-xl shadow-lg mb-6" />
+
               <h3 className="text-2xl font-bold text-slate-900 mb-4">Evidence-Based Treatments</h3>
               
               <div className="space-y-8">
@@ -264,8 +264,8 @@ export default function UnderstandingPTSDVeteransBlogPostPage() {
                   </p>
                   <Link
                     to="/services/tms-therapy"
-                    className="inline-block bg-purple-600 text-white px-6 py-3 rounded-lg hover:bg-purple-700 transition-colors font-semibold"
-                  >
+                    className="inline-block bg-purple-600 text-white px-6 py-3 rounded-lg hover:bg-purple-700 transition-colors font-semibold">
+
                     Learn More About TMS for PTSD
                   </Link>
                 </div>
@@ -359,8 +359,8 @@ export default function UnderstandingPTSDVeteransBlogPostPage() {
               name={author.name}
               credentials={author.credentials}
               image={author.image}
-              bio={author.bio}
-            />
+              bio={author.bio} />
+
           </div>
         </div>
 
@@ -377,15 +377,15 @@ export default function UnderstandingPTSDVeteransBlogPostPage() {
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link
                   to="/contact"
-                  className="inline-flex items-center justify-center gap-2 bg-white text-purple-600 px-8 py-4 rounded-lg hover:bg-purple-50 transition-colors font-semibold text-lg"
-                >
+                  className="inline-flex items-center justify-center gap-2 bg-white text-purple-600 px-8 py-4 rounded-lg hover:bg-purple-50 transition-colors font-semibold text-lg">
+
                   <Calendar className="h-5 w-5" />
                   Schedule Consultation
                 </Link>
                 <a
                   href="tel:760-449-8185"
-                  className="inline-flex items-center justify-center gap-2 bg-purple-700 text-white px-8 py-4 rounded-lg hover:bg-purple-800 transition-colors font-semibold text-lg border-2 border-white"
-                >
+                  className="inline-flex items-center justify-center gap-2 bg-purple-700 text-white px-8 py-4 rounded-lg hover:bg-purple-800 transition-colors font-semibold text-lg border-2 border-white">
+
                   <Phone className="h-5 w-5" />
                   (760) 449-8185
                 </a>
@@ -399,6 +399,6 @@ export default function UnderstandingPTSDVeteransBlogPostPage() {
       </main>
 
       <FooterSection />
-    </>
-  );
+    </>);
+
 }

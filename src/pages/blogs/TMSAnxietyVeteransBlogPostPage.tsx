@@ -23,7 +23,7 @@ export default function TMSAnxietyVeteransBlogPostPage() {
     author: {
       '@type': 'Person',
       name: author.name,
-      jobTitle: author.credentials,
+      jobTitle: author.credentials
     },
     datePublished: publishDate,
     dateModified: publishDate,
@@ -32,14 +32,14 @@ export default function TMSAnxietyVeteransBlogPostPage() {
       name: 'Karma TMS',
       logo: {
         '@type': 'ImageObject',
-        url: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/ebadb369-a58d-421c-b937-24f900be5867.png',
-      },
+        url: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/ebadb369-a58d-421c-b937-24f900be5867.png'
+      }
     },
     image: 'https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/9705b922-d0fc-4d29-be10-acd507ce308c.webp',
     mainEntityOfPage: {
       '@type': 'WebPage',
-      '@id': 'https://www.karmatms.com/blogs/tms-anxiety-veterans',
-    },
+      '@id': 'https://www.karmatms.com/blogs/tms-anxiety-veterans'
+    }
   };
 
   return (
@@ -48,8 +48,8 @@ export default function TMSAnxietyVeteransBlogPostPage() {
         title="TMS for Anxiety in Veterans: Beyond Medication Treatment | Karma TMS"
         description="Learn how TMS therapy helps veterans with anxiety disorders. Discover how brain stimulation regulates anxiety centers beyond traditional medication. VA anxiety support available."
         keywords="va anxiety, veteran anxiety, veterans with anxiety, anxiety for veterans, TMS for anxiety, veteran anxiety treatment, anxiety disorder veterans"
-        canonicalUrl="https://www.karmatms.com/blogs/tms-anxiety-veterans"
-      />
+        canonicalUrl="https://www.karmatms.com/blogs/tms-anxiety-veterans" />
+
       <StructuredData data={structuredData} />
       <Navigation />
 
@@ -79,8 +79,8 @@ export default function TMSAnxietyVeteransBlogPostPage() {
                 <img
                   src={author.image}
                   alt={author.name}
-                  className="w-10 h-10 rounded-full object-cover"
-                />
+                  className="w-10 h-10 rounded-full object-cover" />
+
                 <div>
                   <p className="font-semibold text-slate-900">{author.name}</p>
                   <p className="text-sm">{author.credentials}</p>
@@ -91,15 +91,15 @@ export default function TMSAnxietyVeteransBlogPostPage() {
                 {new Date(publishDate).toLocaleDateString('en-US', {
                   year: 'numeric',
                   month: 'long',
-                  day: 'numeric',
+                  day: 'numeric'
                 })}
               </time>
             </div>
             <img
               src="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/9705b922-d0fc-4d29-be10-acd507ce308c.webp"
               alt="TMS for Anxiety in Veterans"
-              className="w-full h-[400px] object-cover rounded-2xl shadow-xl mb-12"
-            />
+              className="w-full h-[400px] object-cover rounded-2xl shadow-xl mb-12" />
+
           </div>
         </section>
 
@@ -153,8 +153,8 @@ export default function TMSAnxietyVeteransBlogPostPage() {
               <img
                 src="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/66e6e1ae-8cc3-4469-bfaf-b1f3f3d07006.webp"
                 alt="Understanding anxiety in veterans"
-                className="w-full h-[300px] object-cover rounded-xl shadow-lg mb-6"
-              />
+                className="w-full h-[300px] object-cover rounded-xl shadow-lg mb-6" />
+
               <div className="grid md:grid-cols-2 gap-6 mb-6">
                 <div className="bg-blue-50 rounded-xl p-6">
                   <h3 className="text-xl font-bold text-slate-900 mb-4">Physical Symptoms</h3>
@@ -206,8 +206,8 @@ export default function TMSAnxietyVeteransBlogPostPage() {
               <img
                 src="https://images.unsplash.com/photo-1662596594694-a7ec7c2f8979?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MTg3MTl8MHwxfHNlYXJjaHwxfHxBbiUyMGltYWdlJTIwZGVwaWN0aW5nJTIwVE1TJTIwdGhlcmFweSUyMGZvciUyMGFueGlldHklMkMlMjBzaG93Y2FzaW5nJTIwYSUyMHNlcmVuZSUyMGFuZCUyMGNhbG1pbmclMjBlbnZpcm9ubWVudC58ZW58MHx8fHwxNzYyNzgxMjg4fDA&ixlib=rb-4.1.0&q=80&w=200$w=800"
                 alt="TMS therapy for anxiety"
-                className="w-full h-[300px] object-cover rounded-xl shadow-lg mb-6"
-              />
+                className="w-full h-[300px] object-cover rounded-xl shadow-lg mb-6" />
+
               <p className="text-lg text-slate-700 leading-relaxed mb-6">
                 Transcranial Magnetic Stimulation (TMS) is a non-invasive treatment that uses magnetic pulses to stimulate specific areas of the brain involved in mood regulation and anxiety processing.
               </p>
@@ -482,8 +482,8 @@ export default function TMSAnxietyVeteransBlogPostPage() {
               name={author.name}
               credentials={author.credentials}
               image={author.image}
-              bio={author.bio}
-            />
+              bio={author.bio} />
+
           </div>
         </div>
 
@@ -500,15 +500,15 @@ export default function TMSAnxietyVeteransBlogPostPage() {
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link
                   to="/contact"
-                  className="inline-flex items-center justify-center gap-2 bg-white text-blue-600 px-8 py-4 rounded-lg hover:bg-blue-50 transition-colors font-semibold text-lg"
-                >
+                  className="inline-flex items-center justify-center gap-2 bg-white text-blue-600 px-8 py-4 rounded-lg hover:bg-blue-50 transition-colors font-semibold text-lg">
+
                   <Calendar className="h-5 w-5" />
                   Schedule Free Consultation
                 </Link>
                 <a
                   href="tel:760-449-8185"
-                  className="inline-flex items-center justify-center gap-2 bg-blue-700 text-white px-8 py-4 rounded-lg hover:bg-blue-800 transition-colors font-semibold text-lg border-2 border-white"
-                >
+                  className="inline-flex items-center justify-center gap-2 bg-blue-700 text-white px-8 py-4 rounded-lg hover:bg-blue-800 transition-colors font-semibold text-lg border-2 border-white">
+
                   <Phone className="h-5 w-5" />
                   (760) 449-8185
                 </a>
@@ -522,6 +522,6 @@ export default function TMSAnxietyVeteransBlogPostPage() {
       </main>
 
       <FooterSection />
-    </>
-  );
+    </>);
+
 }
