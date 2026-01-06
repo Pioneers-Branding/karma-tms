@@ -286,7 +286,7 @@ const IsTMSTherapyLegitimateBlogPostPage = () => {
               <img
                 src="https://res.cloudinary.com/de4kw1t2i/image/upload/v1763376733/14_dszfwi.png"
                 alt="TMS therapy medical device"
-                className="w-full  md:h-96 object-cover rounded-lg mb-6" />
+                className="w-full   object-cover rounded-lg mb-6" />
 
               <p className="text-xl text-gray-700 leading-relaxed">
                 With so many treatment options claiming to help with depression and mental health conditions, it's natural to question: "Is <Link to="/tms-therapy" className="text-[#572670] hover:underline font-medium">TMS therapy</Link> legitimate?" The short answer is a resounding yes. TMS (Transcranial Magnetic Stimulation) is an FDA-approved, scientifically validated treatment backed by decades of research and endorsed by major medical organizations worldwide. Let's examine the evidence.
