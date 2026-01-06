@@ -164,8 +164,8 @@ const HeroSection = () => {
           </div>
 
           {/* Right Section */}
-          <div className="xl:col-span-2 flex flex-col items-center justify-center min-h-[75vh]">
-            <div className="w-full flex flex-col items-center">
+          <div className="xl:col-span-2 flex flex-col justify-center min-h-[75vh]">
+            <div className="w-full flex flex-col ">
               <div className="bg-gradient-to-br from-blue-magenta via-blue-magenta/70 to-blue-magenta rounded-3xl max-w-lg w-full mx-auto p-6 flex flex-col">
                 {/* Contact Form */}
                 <div className="bg-white/95 backdrop-blur-lg rounded-3xl w-full p-6 shadow-2xl border border-white/20">
