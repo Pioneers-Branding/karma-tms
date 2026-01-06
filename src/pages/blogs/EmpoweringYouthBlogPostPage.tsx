@@ -282,7 +282,7 @@ const EmpoweringYouthBlogPostPage = () => {
               <img
                 src="https://res.cloudinary.com/de4kw1t2i/image/upload/v1763376734/20_xdad6g.png"
                 alt="Young people building emotional resilience"
-                className="w-full h-64 md:h-96 object-cover rounded-lg mb-6" />
+                className="w-full  md:h-96 object-cover rounded-lg mb-6" />
 
               <p className="text-xl text-gray-700 leading-relaxed">
                 In an era marked by unprecedented challenges—from academic pressures to social media comparison, climate anxiety to economic uncertainty—today's youth face unique stressors that can impact their mental health. Building <strong>emotional resilience</strong> is no longer optional; it's essential for helping young people not just survive, but thrive in an increasingly complex world.
