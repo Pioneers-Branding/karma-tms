@@ -60,7 +60,7 @@ const TwentyNinePalmsPage = () => {
         description="TMS therapy in Twentynine Palms, CA near MCAGCC. Specialized PTSD treatment for veterans and active military. Depression and anxiety care. Tricare accepted."
         keywords="TMS therapy 29 Palms, Twentynine Palms mental health, PTSD treatment Marines, veterans TMS therapy, Tricare TMS, MCAGCC mental health"
         canonical="/29-palms"
-        ogImage="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/b65c46ad-dd56-4c76-bfc8-9fbe25e9b7af.jpg" />
+        ogImage="https://images.unsplash.com/photo-1706203644358-9a16606dcff7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MTg3MTl8MHwxfHNlYXJjaHwxfHxBJTIwc2NlbmljJTIwdmlldyUyMG9mJTIwYSUyMGRlc2VydCUyMGxhbmRzY2FwZSUyMHdpdGglMjBtb3VudGFpbnMlMjBpbiUyMHRoZSUyMGJhY2tncm91bmQlMjBhbmQlMjBhJTIwY2xlYXIlMjBibHVlJTIwc2t5LnxlbnwwfHx8fDE3NjM3MjYxNTR8MA&ixlib=rb-4.1.0&q=80&w=200$w=1920" />
 
 
       <StructuredData
@@ -84,7 +84,7 @@ const TwentyNinePalmsPage = () => {
       {/* Hero Section */}
       <div className="relative bg-gradient-to-br from-blue-900 via-blue-800 to-teal-700 text-white py-24 lg:py-32">
         <div className="absolute inset-0 opacity-20">
-          <div className="absolute inset-0 bg-[url('https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/b65c46ad-dd56-4c76-bfc8-9fbe25e9b7af.jpg')] bg-cover bg-center" />
+          <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1706203644358-9a16606dcff7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MTg3MTl8MHwxfHNlYXJjaHwxfHxBJTIwc2NlbmljJTIwdmlldyUyMG9mJTIwYSUyMGRlc2VydCUyMGxhbmRzY2FwZSUyMHdpdGglMjBtb3VudGFpbnMlMjBpbiUyMHRoZSUyMGJhY2tncm91bmQlMjBhbmQlMjBhJTIwY2xlYXIlMjBibHVlJTIwc2t5LnxlbnwwfHx8fDE3NjM3MjYxNTR8MA&ixlib=rb-4.1.0&q=80&w=200$w=1920')] bg-cover bg-center" />
         </div>
         <div className="container mx-auto px-4 relative z-10">
           <Badge className="mb-4 bg-blue-500/20 text-white border-blue-300">Twentynine Palms Location</Badge>

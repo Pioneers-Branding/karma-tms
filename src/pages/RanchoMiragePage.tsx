@@ -84,7 +84,7 @@ const RanchoMiragePage = () => {
       {/* Hero Section */}
       <div className="relative bg-gradient-to-br from-blue-900 via-blue-800 to-teal-700 text-white py-24 lg:py-32">
         <div className="absolute inset-0 opacity-20">
-          <div className="absolute inset-0 bg-[url('https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/ab4091f6-2a9f-4462-909c-148d587ba88f.jpg')] bg-cover bg-center" />
+          <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1754197530512-20fc23520937?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MTg3MTl8MHwxfHNlYXJjaHwxfHxBJTIwc2NlbmljJTIwdmlldyUyMG9mJTIwYSUyMGx1eHVyaW91cyUyMGZhY2lsaXR5JTIwc3Vycm91bmRlZCUyMGJ5JTIwZ3JlZW5lcnklMjBhbmQlMjBhJTIwY2xlYXIlMjBibHVlJTIwc2t5LnxlbnwwfHx8fDE3NjM3Mjg5OTZ8MA&ixlib=rb-4.1.0&q=80&w=200$w=1920')] bg-cover bg-center" />
         </div>
         <div className="container mx-auto px-4 relative z-10">
           <Badge className="mb-4 bg-blue-500/20 text-white border-blue-300">Rancho Mirage Location</Badge>
@@ -213,7 +213,7 @@ const RanchoMiragePage = () => {
               </div>
               <div className="relative h-72 rounded-xl overflow-hidden shadow-lg group">
                 <img
-                  src="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/e3bc971e-e2ab-4334-ac23-0b9876309934.webp"
+                  src="https://images.unsplash.com/photo-1665231795856-769fb08a90bc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MTg3MTl8MHwxfHNlYXJjaHwxfHxDb21mb3J0YWJsZSUyMHByaXZhdGUlMjB0cmVhdG1lbnQlMjByb29tJTIwZm9yJTIwVE1TJTIwdGhlcmFweXxlbnwwfHx8fDE3NjM3Mjg5OTl8MA&ixlib=rb-4.1.0&q=80&w=200$w=1920"
                   alt="Comfortable private treatment room for TMS therapy"
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" />
 

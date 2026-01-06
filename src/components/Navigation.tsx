@@ -21,7 +21,8 @@ import {
   Award,
   HelpCircle,
   Heart,
-  Shield } from
+  Shield,
+  MapPin } from
 'lucide-react';
 
 const Navigation = () => {
@@ -55,6 +56,12 @@ const Navigation = () => {
   { name: 'Bipolar Depression', href: '/conditions/bipolar', icon: Brain },
   { name: 'Addiction Recovery', href: '/conditions/addiction', icon: Heart },
   { name: "Women's Mood", href: '/conditions/womens-mood', icon: Heart }];
+
+
+  const locationsLinks = [
+  { name: 'Palm Springs', href: '/palm-springs', icon: MapPin },
+  { name: 'Twenty-Nine Palms', href: '/twenty-nine-palms', icon: MapPin },
+  { name: 'Rancho Mirage', href: '/rancho-mirage', icon: MapPin }];
 
 
   const resourcesLinks = [
@@ -132,6 +139,26 @@ const Navigation = () => {
                 </DropdownMenuTrigger>
                 <DropdownMenuContent className="w-56 p-2 bg-white/95 backdrop-blur-md border-gray-200/50 shadow-xl">
                   {conditionsLinks.map((link) => {
+                    const IconComponent = link.icon;
+                    return (
+                      <Link key={link.href} to={link.href}>
+                        <DropdownMenuItem className="cursor-pointer p-3 rounded-md hover:bg-[#572670]/10 transition-all duration-200 group">
+                          <IconComponent className="h-4 w-4 mr-3 text-[#572670] group-hover:scale-110 transition-transform" />
+                          <span className="font-medium">{link.name}</span>
+                        </DropdownMenuItem>
+                      </Link>);
+                  })}
+                </DropdownMenuContent>
+              </DropdownMenu>
+
+              <DropdownMenu>
+                <DropdownMenuTrigger asChild>
+                  <Button variant="ghost" className="text-white hover:text-white/80 hover:bg-white/10 flex items-center gap-1 transition-colors text-xs xl:text-sm px-2 xl:px-3">
+                    Locations <ChevronDown className="h-4 w-4" />
+                  </Button>
+                </DropdownMenuTrigger>
+                <DropdownMenuContent className="w-56 p-2 bg-white/95 backdrop-blur-md border-gray-200/50 shadow-xl">
+                  {locationsLinks.map((link) => {
                     const IconComponent = link.icon;
                     return (
                       <Link key={link.href} to={link.href}>
@@ -277,6 +304,24 @@ const Navigation = () => {
                       <h3 className="font-semibold text-[#572670] text-sm uppercase tracking-wide">Conditions</h3>
                       <div className="space-y-1">
                         {conditionsLinks.map((link) => {
+                          const IconComponent = link.icon;
+                          return (
+                            <Link key={link.href} to={link.href} onClick={handleLinkClick}>
+                              <Button variant="ghost" className="w-full justify-start text-sm py-2.5 pl-4 hover:bg-[#572670]/5">
+                                <IconComponent className="h-4 w-4 mr-3 text-[#572670]/70" />
+                                {link.name}
+                              </Button>
+                            </Link>);
+                        })}
+                      </div>
+                    </div>
+
+                    <Separator />
+
+                    <div className="space-y-3">
+                      <h3 className="font-semibold text-[#572670] text-sm uppercase tracking-wide">Locations</h3>
+                      <div className="space-y-1">
+                        {locationsLinks.map((link) => {
                           const IconComponent = link.icon;
                           return (
                             <Link key={link.href} to={link.href} onClick={handleLinkClick}>
