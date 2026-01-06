@@ -84,7 +84,7 @@ const TwentyNinePalmsPage = () => {
       {/* Hero Section */}
       <div className="relative bg-gradient-to-br from-purple-900 via-purple-800 to-purple-700 text-white py-24 lg:py-32">
         <div className="absolute inset-0 opacity-20">
-          <div className="absolute inset-0 bg-[url('https://res.cloudinary.com/de4kw1t2i/image/upload/v1763039658/2_miiwgx.jpg" />
+          <div className="absolute inset-0 bg-[url('https://i.ibb.co/ZtXDgxm/4188f2c2-city-909-15b5d69d8f7.jpg" />
         </div>
         <div className="container mx-auto px-4 relative z-10">
           <Badge className="mb-4 bg-purple-500/20 text-white border-purple-300">Twentynine Palms Location</Badge>
@@ -140,7 +140,7 @@ const TwentyNinePalmsPage = () => {
               </div>
               <div className="relative h-96 rounded-xl overflow-hidden shadow-2xl">
                 <img
-                  src="https://images.unsplash.com/photo-1664902265139-934219cee42f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MTg3MTl8MHwxfHNlYXJjaHwxfHxBbiUyMGFkdmFuY2VkJTIwVE1TJTIwdGhlcmFweSUyMGVxdWlwbWVudCUyMHNldHVwJTIwaW4lMjBhJTIwY2xpbmljYWwlMjBlbnZpcm9ubWVudC58ZW58MHx8fHwxNzYzNzI2MTY3fDA&ixlib=rb-4.1.0&q=80&w=200$w=1920"
+                  src="https://res.cloudinary.com/de4kw1t2i/image/upload/v1763039658/2_miiwgx.jpg"
                   alt="Advanced TMS therapy equipment at Twentynine Palms facility"
                   className="w-full h-full object-cover" />
 
