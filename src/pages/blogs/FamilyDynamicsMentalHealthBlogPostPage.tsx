@@ -282,7 +282,7 @@ const FamilyDynamicsMentalHealthBlogPostPage = () => {
               <img
                 src="https://res.cloudinary.com/de4kw1t2i/image/upload/v1763376735/21_tyzclt.png"
                 alt="Family supporting mental health recovery"
-                className="w-full h-64 md:h-96 object-cover rounded-lg mb-6" />
+                className="w-full  md:h-96 object-cover rounded-lg mb-6" />
 
               <p className="text-xl text-gray-700 leading-relaxed">
                 Mental health doesn't exist in a vacuum—it's deeply intertwined with our relationships, particularly those within our families. Whether you're navigating <Link to="/depression" className="text-[#572670] hover:underline font-medium">depression</Link>, <Link to="/anxiety" className="text-[#572670] hover:underline font-medium">anxiety</Link>, or another mental health condition, the dynamics within your family system can either accelerate your healing journey or present significant obstacles to recovery.
