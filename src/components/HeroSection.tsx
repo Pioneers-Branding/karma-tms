@@ -67,7 +67,7 @@ const HeroSection = () => {
 
                 {/* Image Slider */}
                 <div className="relative bg-white rounded-3xl overflow-hidden group">
-                  <div className="relative h-48 sm:h-64 lg:h-72 xl:h-80">
+                  <div className="relative h-64 sm:h-72 lg:h-80 xl:h-96">
                     <img
                       src={slides[currentSlide].image}
                       alt={slides[currentSlide].alt}
