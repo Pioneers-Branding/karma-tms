@@ -167,8 +167,8 @@ const InsurancePricingPage = () => {
 
       {/* Insurance Verification Widget - removed as requested */}
       {/*
-                                                                                                                                                                                                               <section className="py-20 bg-white"> ... </section>
-                                                                                                                                                                                                               */}
+                                                                                                                                                                                                                 <section className="py-20 bg-white"> ... </section>
+                                                                                                                                                                                                                 */}
 
       {/* Accepted Insurance */}
       <section className="py-20 bg-gradient-to-br from-slate-50 to-purple-50">
@@ -229,8 +229,8 @@ const InsurancePricingPage = () => {
 
       {/* Self-Pay Pricing - removed as requested */}
       {/*
-                                                                                                                                                                                                               <section className="py-20 bg-white"> ... </section>
-                                                                                                                                                                                                               */}
+                                                                                                                                                                                                                 <section className="py-20 bg-white"> ... </section>
+                                                                                                                                                                                                                 */}
 
       {/* Financing Options Banner */}
       <section className="py-20 bg-gradient-to-r from-[#572670] to-purple-600">
