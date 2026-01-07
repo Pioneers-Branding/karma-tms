@@ -395,7 +395,7 @@ const allBlogPosts: BlogPost[] = [
       "Discover how TMS therapy offers new hope for veterans struggling with PTSD, depression, and anxiety. Learn about VA hospital availability and treatment success rates.",
     category: "tms-therapy",
     author: "Dr. Keerthy Sunder",
-    date: new Date(2025, 8, 15).toLocaleDateString("en-US", {
+    date: new Date(2025, 11, 20).toLocaleDateString("en-US", {
       year: "numeric",
       month: "long",
       day: "numeric",
