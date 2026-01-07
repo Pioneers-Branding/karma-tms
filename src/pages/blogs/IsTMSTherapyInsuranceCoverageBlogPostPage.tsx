@@ -140,7 +140,7 @@ const IsTMSTherapyInsuranceCoverageBlogPostPage = () => {
       "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=1200",
     author: {
       "@type": "Person",
-      name: "KarmaTMS PC",
+      name: "Dr. Keerthy Sunder",
       affiliation: {
         "@type": "Organization",
         name: "KarmaTMS",
@@ -247,7 +247,7 @@ const IsTMSTherapyInsuranceCoverageBlogPostPage = () => {
               </span>
               <span className="flex items-center gap-1 bg-white/10 px-3 py-1 rounded-full backdrop-blur-sm">
                 <User className="w-4 h-4" />
-                Karma TMS PC
+                Dr. Keerthy Sunder
               </span>
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
@@ -621,19 +621,18 @@ const IsTMSTherapyInsuranceCoverageBlogPostPage = () => {
                 helps patients move forward with confidence.
               </p>
               <p className="mb-4">
-                If you are considering TMS Therapy in Palm Springs, Karma TMS
-                PC, the best next step is a comprehensive psychiatric
-                consultation and insurance verification. With the right
-                guidance, many patients find that TMS therapy is not only
-                clinically meaningful but also financially accessible through
-                their insurance plan.
+                If you are considering TMS Therapy in Palm Springs, Karma TMS ,
+                the best next step is a comprehensive psychiatric consultation
+                and insurance verification. With the right guidance, many
+                patients find that TMS therapy is not only clinically meaningful
+                but also financially accessible through their insurance plan.
               </p>
             </section>
 
             <AuthorBox
-              name="Karma TMS PC"
+              name="Dr. Keerthy Sunder"
               role="Mental Health Clinic"
-              bio="Karma TMS PC is a leading mental health clinic specializing in TMS therapy and other advanced treatments for depression, anxiety, and PTSD."
+              bio="Dr. Keerthy Sunder is a board-certified psychiatrist with over 15 years of experience in treating depression, anxiety, and PTSD."
               image="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/ebadb369-a58d-421c-b937-24f900be5867.png" // Placeholder, maybe use logo or default
             />
 
