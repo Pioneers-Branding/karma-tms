@@ -185,7 +185,7 @@ const WhoIsAGoodCandidateForTMSTherapyBlogPostPage = () => {
         description="Learn who is a good candidate for TMS therapy, eligibility criteria, benefits, risks, and how to know if TMS treatment is right for you."
         keywords="who is a good candidate for tms therapy, tms therapy eligibility, tms treatment candidates, tms therapy for depression, transcranial magnetic stimulation, treatment resistant depression, non invasive depression treatment, mental health clinic palm springs, tms therapy benefits, tms therapy safety, alternatives to antidepressants, advanced depression treatment"
         canonical="/blog/who-is-a-good-candidate-for-tms-therapy"
-        ogImage="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=1200"
+        ogImage="https://res.cloudinary.com/de4kw1t2i/image/upload/v1767775415/36_sqhczb.png"
         ogType="article"
       />
 
@@ -314,7 +314,7 @@ const WhoIsAGoodCandidateForTMSTherapyBlogPostPage = () => {
           <article className="lg:col-span-3 prose prose-lg max-w-none">
             <div className="mb-12">
               <img
-                src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=1200"
+                src="https://res.cloudinary.com/de4kw1t2i/image/upload/v1767775415/36_sqhczb.png"
                 alt="Who is a good candidate for TMS therapy receiving non-invasive treatment at a mental health clinic"
                 className="w-full object-cover rounded-lg mb-6"
               />
