@@ -45,14 +45,14 @@ const allBlogPosts: BlogPost[] = [
       "Is TMS therapy covered by insurance? Learn eligibility, approval criteria, costs, and coverage details to access effective TMS treatment.",
     category: "tms-therapy",
     author: "Dr. Keerthy Sunder",
-    date: new Date(2026, 10, 1).toLocaleDateString("en-US", {
+    date: new Date(2026, 0, 1).toLocaleDateString("en-US", {
       year: "numeric",
       month: "long",
       day: "numeric",
     }),
     readTime: "15 min read",
     image:
-      "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=1200",
+      "https://res.cloudinary.com/de4kw1t2i/image/upload/v1767775408/37_l0hdbk.png",
     featured: false,
     rating: 5,
   },

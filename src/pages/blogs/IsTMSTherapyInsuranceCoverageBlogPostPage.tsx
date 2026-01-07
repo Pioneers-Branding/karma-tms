@@ -154,8 +154,8 @@ const IsTMSTherapyInsuranceCoverageBlogPostPage = () => {
         url: "https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/ebadb369-a58d-421c-b937-24f900be5867.png",
       },
     },
-    datePublished: "2026-11-01",
-    dateModified: "2026-11-01",
+    datePublished: "2026-01-01",
+    dateModified: "2026-01-01",
     mainEntityOfPage: {
       "@type": "WebPage",
       "@id": "https://karmatms.com/blog/is-tms-therapy-covered-by-insurance",
@@ -182,7 +182,7 @@ const IsTMSTherapyInsuranceCoverageBlogPostPage = () => {
         description="Is TMS therapy covered by insurance? Learn eligibility, approval criteria, costs, and coverage details to access effective TMS treatment."
         keywords="is tms therapy covered by insurance, does insurance cover tms therapy, mental health insurance coverage for tms, tms therapy insurance coverage, tms therapy cost with insurance, tms therapy insurance approval, tms for depression insurance, transcranial magnetic stimulation insurance, tms therapy covered by medicare, tms therapy coverage criteria, tms therapy palm springs"
         canonical="/blog/is-tms-therapy-covered-by-insurance"
-        ogImage="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=1200"
+        ogImage="https://res.cloudinary.com/de4kw1t2i/image/upload/v1767775408/37_l0hdbk.png"
         ogType="article"
       />
 
@@ -239,7 +239,7 @@ const IsTMSTherapyInsuranceCoverageBlogPostPage = () => {
             <div className="flex flex-wrap justify-center gap-4 mb-6 text-sm">
               <span className="flex items-center gap-1 bg-white/10 px-3 py-1 rounded-full backdrop-blur-sm">
                 <Calendar className="w-4 h-4" />
-                November 01, 2026
+                January 01, 2026
               </span>
               <span className="flex items-center gap-1 bg-white/10 px-3 py-1 rounded-full backdrop-blur-sm">
                 <Clock className="w-4 h-4" />
@@ -311,7 +311,7 @@ const IsTMSTherapyInsuranceCoverageBlogPostPage = () => {
           <article className="lg:col-span-3 prose prose-lg max-w-none">
             <div className="mb-12">
               <img
-                src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=1200"
+                src="https://res.cloudinary.com/de4kw1t2i/image/upload/v1767775408/37_l0hdbk.png"
                 alt="Is TMS therapy covered by insurance? Patient receiving TMS treatment in a clinic"
                 className="w-full object-cover rounded-lg mb-6"
               />
