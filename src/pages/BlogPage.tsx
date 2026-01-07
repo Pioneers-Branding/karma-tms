@@ -51,7 +51,8 @@ const allBlogPosts: BlogPost[] = [
       day: "numeric",
     }),
     readTime: "12 min read",
-    image: "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=1200",
+    image:
+      "https://res.cloudinary.com/de4kw1t2i/image/upload/v1767775415/36_sqhczb.png",
     featured: false,
     rating: 5,
   },
