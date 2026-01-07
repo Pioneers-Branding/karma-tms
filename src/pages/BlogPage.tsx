@@ -39,6 +39,23 @@ const blogCategories = [
 // Blog posts - Veterans TMS Therapy with fixed images
 const allBlogPosts: BlogPost[] = [
   {
+    id: 37,
+    title: "Who Is a Good Candidate for TMS Therapy? Complete Guide",
+    excerpt:
+      "Learn who is a good candidate for TMS therapy, eligibility criteria, benefits, risks, and how to know if TMS treatment is right for you.",
+    category: "tms-therapy",
+    author: "Dr. Keerthy Sunder",
+    date: new Date(2026, 0, 7).toLocaleDateString("en-US", {
+      year: "numeric",
+      month: "long",
+      day: "numeric",
+    }),
+    readTime: "12 min read",
+    image: "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=1200",
+    featured: false,
+    rating: 5,
+  },
+  {
     id: 36,
     title: "Is TMS Therapy Covered by Insurance? What You Should Know",
     excerpt:
@@ -931,6 +948,7 @@ const BlogPage = () => {
                       34: "/blog/is-depression-a-disability",
                       35: "/blog/can-you-get-disability-for-depression",
                       36: "/blog/is-tms-therapy-covered-by-insurance",
+                      37: "/blog/who-is-a-good-candidate-for-tms-therapy",
                       2: "/blog/va-veterans-ptsd-tms-treatment",
                       3: "/blog/va-disability-benefits-depression-anxiety-ptsd",
                       4: "/blog/tms-vs-medication-veterans-depression",

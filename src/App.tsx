@@ -76,6 +76,7 @@ import DoesTMSTherapyWorkForAnxiety from "./pages/blogs/DoesTMSTherapyWorkForAnx
 import IsDepressionADisabilityBlogPostPage from "./pages/blogs/IsDepressionADisabilityBlogPostPage";
 import CanYouGetDisabilityForDepressionBlogPostPage from "./pages/blogs/CanYouGetDisabilityForDepressionBlogPostPage";
 import IsTMSTherapyInsuranceCoverageBlogPostPage from "./pages/blogs/IsTMSTherapyInsuranceCoverageBlogPostPage";
+import WhoIsAGoodCandidateForTMSTherapyBlogPostPage from "./pages/blogs/WhoIsAGoodCandidateForTMSTherapyBlogPostPage";
 import DisclaimerPage from "./pages/DisclaimerPage";
 import ExomindKarmaTMSPage from "./pages/resources/ExomindKarmaTMSPage";
 import PatientOnboardingPage from "./pages/PatientOnboardingPage";
@@ -278,6 +279,10 @@ const App = () => (
           <Route
             path="/blog/can-you-get-disability-for-depression"
             element={<CanYouGetDisabilityForDepressionBlogPostPage />}
+          />
+          <Route
+            path="/blog/who-is-a-good-candidate-for-tms-therapy"
+            element={<WhoIsAGoodCandidateForTMSTherapyBlogPostPage />}
           />
           <Route
             path="/blog/is-tms-therapy-covered-by-insurance"
