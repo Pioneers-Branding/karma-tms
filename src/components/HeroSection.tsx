@@ -15,6 +15,11 @@ const HeroSection = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
 
   const slides = [
+    {
+    image:
+    'https://res.cloudinary.com/de4kw1t2i/image/upload/v1764156032/Exomind_PIC_Female-Model3_0342_ENUS100_qx29w9_cwycfn.jpg',
+    alt: 'Advanced TMS therapy chair for depression treatment at KarmaTMS mental health center'
+  },
   {
     image:
     'https://res.cloudinary.com/de4kw1t2i/image/upload/v1765537416/-7261_itcxch.png',
@@ -29,12 +34,8 @@ const HeroSection = () => {
     image:
     'https://res.cloudinary.com/de4kw1t2i/image/upload/v1766054048/apollo-consultation_1_peyxur_1_fuidsc.png',
     alt: 'Apollo TMS Device'
-  },
-  {
-    image:
-    'https://res.cloudinary.com/de4kw1t2i/image/upload/v1764156032/Exomind_PIC_Female-Model3_0342_ENUS100_qx29w9_cwycfn.jpg',
-    alt: 'Advanced TMS therapy chair for depression treatment at KarmaTMS mental health center'
-  }];
+  }
+  ];
 
 
   const nextSlide = () => {
