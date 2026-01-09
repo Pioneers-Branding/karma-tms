@@ -83,8 +83,8 @@ import PatientOnboardingPage from "./pages/PatientOnboardingPage";
 
 const queryClient = new QueryClient();
 
-const App = () => (
-  <QueryClientProvider client={queryClient}>
+const App = () =>
+<QueryClientProvider client={queryClient}>
     <TooltipProvider>
       <Toaster />
       <BrowserRouter>
@@ -111,9 +111,9 @@ const App = () => (
           <Route path="/brain-mapping/" element={<BrainMappingPage />} />
           <Route path="/neurofeedback" element={<NeurofeedbackPage />} />
           <Route
-            path="/medication-management"
-            element={<MedicationManagementPage />}
-          />
+          path="/medication-management"
+          element={<MedicationManagementPage />} />
+
 
           {/* Conditions Routes - Sitemap URLs */}
           <Route path="/conditions" element={<ConditionsPage />} />
@@ -141,160 +141,160 @@ const App = () => (
           <Route path="/testimonials" element={<TestimonialsPage />} />
           <Route path="/testimonials/" element={<TestimonialsPage />} />
           <Route
-            path="/blog/veterans-tms-therapy"
-            element={<VeteransBlogPostPage />}
-          />
+          path="/blog/veterans-tms-therapy"
+          element={<VeteransBlogPostPage />} />
+
           <Route
-            path="/blog/va-veterans-ptsd-tms-treatment"
-            element={<VAVeteransPTSDTMSBlogPostPage />}
-          />
+          path="/blog/va-veterans-ptsd-tms-treatment"
+          element={<VAVeteransPTSDTMSBlogPostPage />} />
+
           <Route
-            path="/blog/va-disability-benefits-depression-anxiety-ptsd"
-            element={<VADisabilityBenefitsMentalHealthBlogPostPage />}
-          />
+          path="/blog/va-disability-benefits-depression-anxiety-ptsd"
+          element={<VADisabilityBenefitsMentalHealthBlogPostPage />} />
+
           <Route
-            path="/blog/tms-vs-medication-veterans-depression"
-            element={<TMSvsMedicationVeteransBlogPostPage />}
-          />
+          path="/blog/tms-vs-medication-veterans-depression"
+          element={<TMSvsMedicationVeteransBlogPostPage />} />
+
           <Route
-            path="/blog/how-to-help-veterans-ptsd"
-            element={<HelpingVeteransPTSDBlogPostPage />}
-          />
+          path="/blog/how-to-help-veterans-ptsd"
+          element={<HelpingVeteransPTSDBlogPostPage />} />
+
           <Route
-            path="/blog/understanding-ptsd-veterans"
-            element={<UnderstandingPTSDVeteransBlogPostPage />}
-          />
+          path="/blog/understanding-ptsd-veterans"
+          element={<UnderstandingPTSDVeteransBlogPostPage />} />
+
           <Route
-            path="/blog/tms-anxiety-veterans"
-            element={<TMSAnxietyVeteransBlogPostPage />}
-          />
+          path="/blog/tms-anxiety-veterans"
+          element={<TMSAnxietyVeteransBlogPostPage />} />
+
           <Route
-            path="/blog/tms-migraine-veterans"
-            element={<TMSMigraineVeteransBlogPostPage />}
-          />
+          path="/blog/tms-migraine-veterans"
+          element={<TMSMigraineVeteransBlogPostPage />} />
+
           <Route
-            path="/blog/why-tms-requires-multiple-sessions"
-            element={<TMSMultipleSessionsBlogPostPage />}
-          />
+          path="/blog/why-tms-requires-multiple-sessions"
+          element={<TMSMultipleSessionsBlogPostPage />} />
+
           <Route
-            path="/blog/four-as-stress-management"
-            element={<StressManagementFourAsBlogPostPage />}
-          />
+          path="/blog/four-as-stress-management"
+          element={<StressManagementFourAsBlogPostPage />} />
+
           <Route
-            path="/blog/is-tms-therapy-permanent"
-            element={<IsTMSTherapyPermanentBlogPostPage />}
-          />
+          path="/blog/is-tms-therapy-permanent"
+          element={<IsTMSTherapyPermanentBlogPostPage />} />
+
           <Route
-            path="/blog/is-tms-therapy-legitimate"
-            element={<IsTMSTherapyLegitimateBlogPostPage />}
-          />
+          path="/blog/is-tms-therapy-legitimate"
+          element={<IsTMSTherapyLegitimateBlogPostPage />} />
+
           <Route
-            path="/blog/how-successful-tms-treatment"
-            element={<HowSuccessfulTMSTreatmentBlogPostPage />}
-          />
+          path="/blog/how-successful-tms-treatment"
+          element={<HowSuccessfulTMSTreatmentBlogPostPage />} />
+
           <Route
-            path="/blog/screen-time-mental-health"
-            element={<ScreenTimeMentalHealthBlogPostPage />}
-          />
+          path="/blog/screen-time-mental-health"
+          element={<ScreenTimeMentalHealthBlogPostPage />} />
+
           <Route
-            path="/blog/mindfulness-stress-management"
-            element={<MindfulnessStressManagementBlogPostPage />}
-          />
+          path="/blog/mindfulness-stress-management"
+          element={<MindfulnessStressManagementBlogPostPage />} />
+
           <Route
-            path="/blog/tech-mental-health-impact"
-            element={<TechMentalHealthBlogPostPage />}
-          />
+          path="/blog/tech-mental-health-impact"
+          element={<TechMentalHealthBlogPostPage />} />
+
           <Route
-            path="/blog/mental-health-first-aid"
-            element={<MentalHealthFirstAidBlogPostPage />}
-          />
+          path="/blog/mental-health-first-aid"
+          element={<MentalHealthFirstAidBlogPostPage />} />
+
           <Route
-            path="/blog/empowering-youth-emotional-resilience"
-            element={<EmpoweringYouthBlogPostPage />}
-          />
+          path="/blog/empowering-youth-emotional-resilience"
+          element={<EmpoweringYouthBlogPostPage />} />
+
           <Route
-            path="/blog/family-dynamics-mental-health"
-            element={<FamilyDynamicsMentalHealthBlogPostPage />}
-          />
+          path="/blog/family-dynamics-mental-health"
+          element={<FamilyDynamicsMentalHealthBlogPostPage />} />
+
           <Route
-            path="/blog/managing-anxiety-triggers"
-            element={<ManagingAnxietyTriggersBlogPostPage />}
-          />
+          path="/blog/managing-anxiety-triggers"
+          element={<ManagingAnxietyTriggersBlogPostPage />} />
+
           <Route
-            path="/blog/depression-erectile-dysfunction"
-            element={<DepressionErectileDysfunctionBlogPostPage />}
-          />
+          path="/blog/depression-erectile-dysfunction"
+          element={<DepressionErectileDysfunctionBlogPostPage />} />
+
           <Route
-            path="/blog/connecting-teens-mental-wellness"
-            element={<ConnectingTeensMentalWellnessBlogPostPage />}
-          />
+          path="/blog/connecting-teens-mental-wellness"
+          element={<ConnectingTeensMentalWellnessBlogPostPage />} />
+
           <Route
-            path="/blog/mental-health-community-violence"
-            element={<MentalHealthCommunityViolenceBlogPostPage />}
-          />
+          path="/blog/mental-health-community-violence"
+          element={<MentalHealthCommunityViolenceBlogPostPage />} />
+
           <Route
-            path="/blog/rural-mental-healthcare"
-            element={<RuralMentalHealthcareBlogPostPage />}
-          />
+          path="/blog/rural-mental-healthcare"
+          element={<RuralMentalHealthcareBlogPostPage />} />
+
           <Route
-            path="/blog/social-media-mental-wellbeing"
-            element={<SocialMediaMentalWellbeingBlogPostPage />}
-          />
+          path="/blog/social-media-mental-wellbeing"
+          element={<SocialMediaMentalWellbeingBlogPostPage />} />
+
           <Route
-            path="/blog/common-reasons-psychotherapy"
-            element={<CommonReasonsPsychotherapyBlogPostPage />}
-          />
+          path="/blog/common-reasons-psychotherapy"
+          element={<CommonReasonsPsychotherapyBlogPostPage />} />
+
           <Route
-            path="/blog/exploring-multifaceted-dynamics-suicide-elderly-population"
-            element={
-              <ExploringTheMultifacetedDynamicsOfSuicideInTheElderlyPopulation />
-            }
-          />
+          path="/blog/exploring-multifaceted-dynamics-suicide-elderly-population"
+          element={
+          <ExploringTheMultifacetedDynamicsOfSuicideInTheElderlyPopulation />
+          } />
+
           <Route
-            path="/blog/psychiatrists-boost-well-being-expert-care-mental-health"
-            element={
-              <PsychiatristsBoostWellBeingThroughExpertCareForMentalHealth />
-            }
-          />
+          path="/blog/psychiatrists-boost-well-being-expert-care-mental-health"
+          element={
+          <PsychiatristsBoostWellBeingThroughExpertCareForMentalHealth />
+          } />
+
           <Route
-            path="/blog/tms-therapy-treatment-resistant-depression"
-            element={<TMSTherapyForTreatmentResistantDepression />}
-          />
+          path="/blog/tms-therapy-treatment-resistant-depression"
+          element={<TMSTherapyForTreatmentResistantDepression />} />
+
           <Route
-            path="/blog/how-does-adhd-treatment-work"
-            element={<HowDoesADHDTreatmentWorkBlogPostPage />}
-          />
+          path="/blog/how-does-adhd-treatment-work"
+          element={<HowDoesADHDTreatmentWorkBlogPostPage />} />
+
           <Route
-            path="/blog/how-to-avoid-stress-during-holidays"
-            element={<HowToAvoidStressDuringHolidaysBlogPostPage />}
-          />
+          path="/blog/how-to-avoid-stress-during-holidays"
+          element={<HowToAvoidStressDuringHolidaysBlogPostPage />} />
+
           <Route
-            path="/blog/does-tms-therapy-work-for-anxiety"
-            element={<DoesTMSTherapyWorkForAnxiety />}
-          />
+          path="/blog/does-tms-therapy-work-for-anxiety"
+          element={<DoesTMSTherapyWorkForAnxiety />} />
+
           <Route
-            path="/blog/is-depression-a-disability"
-            element={<IsDepressionADisabilityBlogPostPage />}
-          />
+          path="/blog/is-depression-a-disability"
+          element={<IsDepressionADisabilityBlogPostPage />} />
+
           <Route
-            path="/blog/can-you-get-disability-for-depression"
-            element={<CanYouGetDisabilityForDepressionBlogPostPage />}
-          />
+          path="/blog/can-you-get-disability-for-depression"
+          element={<CanYouGetDisabilityForDepressionBlogPostPage />} />
+
           <Route
-            path="/blog/who-is-a-good-candidate-for-tms-therapy"
-            element={<WhoIsAGoodCandidateForTMSTherapyBlogPostPage />}
-          />
+          path="/blog/who-is-a-good-candidate-for-tms-therapy"
+          element={<WhoIsAGoodCandidateForTMSTherapyBlogPostPage />} />
+
           <Route
-            path="/blog/is-tms-therapy-covered-by-insurance"
-            element={<IsTMSTherapyInsuranceCoverageBlogPostPage />}
-          />
+          path="/blog/is-tms-therapy-covered-by-insurance"
+          element={<IsTMSTherapyInsuranceCoverageBlogPostPage />} />
+
           <Route path="/blog" element={<BlogPage />} />
           <Route path="/blog/" element={<BlogPage />} />
           <Route path="/research-and-publications" element={<ResearchPage />} />
           <Route
-            path="/research-and-publications/"
-            element={<ResearchPage />}
-          />
+          path="/research-and-publications/"
+          element={<ResearchPage />} />
+
           {/* Keep old route for backwards compatibility */}
           <Route path="/research" element={<ResearchPage />} />
           <Route path="/faqs" element={<FAQsPage />} />
@@ -308,9 +308,9 @@ const App = () => (
           <Route path="/tms-quiz" element={<TMSQuizPage />} />
           <Route path="/thank-you" element={<ThankYouPage />} />
           <Route
-            path="/patient-onboarding"
-            element={<PatientOnboardingPage />}
-          />
+          path="/patient-onboarding"
+          element={<PatientOnboardingPage />} />
+
 
           {/* Legal Routes - Sitemap URLs */}
           <Route path="/hipaa" element={<HIPAAPage />} />
@@ -334,16 +334,16 @@ const App = () => (
 
           {/* Resources Routes */}
           <Route
-            path="/resources/exomind-karmatms"
-            element={<ExomindKarmaTMSPage />}
-          />
+          path="/resources/exomind-karmatms"
+          element={<ExomindKarmaTMSPage />} />
+
 
           {/* Catch-all route redirects to home instead of 404 */}
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </BrowserRouter>
     </TooltipProvider>
-  </QueryClientProvider>
-);
+  </QueryClientProvider>;
+
 
 export default App;

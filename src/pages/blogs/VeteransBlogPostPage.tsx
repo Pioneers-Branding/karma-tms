@@ -10,38 +10,38 @@ import {
   BreadcrumbLink,
   BreadcrumbList,
   BreadcrumbPage,
-  BreadcrumbSeparator,
-} from "@/components/ui/breadcrumb";
+  BreadcrumbSeparator } from
+"@/components/ui/breadcrumb";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import {
   Accordion,
   AccordionContent,
   AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
+  AccordionTrigger } from
+"@/components/ui/accordion";
 import {
   Calendar,
   Clock,
   User,
   CheckCircle2,
   ArrowRight,
-  Phone,
-} from "lucide-react";
+  Phone } from
+"lucide-react";
 import AuthorBox from "@/components/AuthorBox";
 
 const VeteransBlogPostPage = () => {
   const [activeSection, setActiveSection] = useState("");
-  const sectionsRef = useRef<{ [key: string]: HTMLElement | null }>({});
+  const sectionsRef = useRef<{[key: string]: HTMLElement | null;}>({});
 
   const tocItems = [
-    { id: "what-is-tms", label: "What is TMS Therapy?" },
-    { id: "how-tms-helps", label: "How TMS Helps Veterans" },
-    { id: "va-availability", label: "VA Hospital Availability" },
-    { id: "success-stories", label: "Success Stories" },
-    { id: "treatment-process", label: "Treatment Process" },
-    { id: "faqs", label: "Frequently Asked Questions" },
-  ];
+  { id: "what-is-tms", label: "What is TMS Therapy?" },
+  { id: "how-tms-helps", label: "How TMS Helps Veterans" },
+  { id: "va-availability", label: "VA Hospital Availability" },
+  { id: "success-stories", label: "Success Stories" },
+  { id: "treatment-process", label: "Treatment Process" },
+  { id: "faqs", label: "Frequently Asked Questions" }];
+
 
   useEffect(() => {
     const handleScroll = () => {
@@ -52,9 +52,9 @@ const VeteransBlogPostPage = () => {
         if (section) {
           const { offsetTop, offsetHeight } = section;
           if (
-            scrollPosition >= offsetTop &&
-            scrollPosition < offsetTop + offsetHeight
-          ) {
+          scrollPosition >= offsetTop &&
+          scrollPosition < offsetTop + offsetHeight)
+          {
             setActiveSection(item.id);
             break;
           }
@@ -72,104 +72,104 @@ const VeteransBlogPostPage = () => {
     if (section) {
       const yOffset = -100;
       const y =
-        section.getBoundingClientRect().top + window.pageYOffset + yOffset;
+      section.getBoundingClientRect().top + window.pageYOffset + yOffset;
       window.scrollTo({ top: y, behavior: "smooth" });
     }
   };
 
   const faqs = [
-    {
-      question: "Does the VA cover TMS therapy for veterans?",
-      answer:
-        "Many VA hospitals now offer TMS therapy for eligible veterans with treatment-resistant depression and PTSD. Coverage varies by location and individual eligibility. Contact your local VA medical center or Veterans Affairs TMS program to inquire about availability and coverage in your area.",
-    },
-    {
-      question: "How long does TMS treatment take for veterans with PTSD?",
-      answer:
-        "A typical TMS treatment course for PTSD and depression lasts 4-6 weeks, with sessions occurring 5 days per week. Each session takes about 20-40 minutes. Many veterans begin noticing improvements within 2-3 weeks of starting treatment.",
-    },
-    {
-      question:
-        "Is TMS therapy safe for veterans with traumatic brain injury (TBI)?",
-      answer:
-        "TMS therapy is generally considered safe for veterans with mild to moderate TBI. However, each case must be evaluated individually by a qualified physician. TMS has shown promise in treating both TBI-related symptoms and concurrent mental health conditions common in veterans.",
-    },
-    {
-      question: "What is the success rate of TMS for veterans with depression?",
-      answer:
-        "Clinical studies show that 50-60% of veterans with treatment-resistant depression experience significant symptom improvement with TMS therapy, and about one-third achieve complete remission. Success rates are particularly encouraging for veterans who haven't responded to traditional antidepressant medications.",
-    },
-    {
-      question: "Can TMS help with service-related anxiety disorders?",
-      answer:
-        "Yes, TMS therapy has shown effectiveness in treating various anxiety disorders common among veterans, including generalized anxiety disorder, panic disorder, and anxiety symptoms associated with PTSD. The FDA has approved TMS for anxiety disorders, and research specific to veteran populations continues to show promising results.",
-    },
-    {
-      question: "Are there any side effects of TMS therapy for veterans?",
-      answer:
-        "TMS therapy is well-tolerated with minimal side effects. The most common side effect is mild scalp discomfort or headache during or after treatment, which typically subsides within a week. Unlike medications, TMS doesn't cause weight gain, sexual dysfunction, or cognitive impairment, making it an attractive option for veterans.",
-    },
-  ];
+  {
+    question: "Does the VA cover TMS therapy for veterans?",
+    answer:
+    "Many VA hospitals now offer TMS therapy for eligible veterans with treatment-resistant depression and PTSD. Coverage varies by location and individual eligibility. Contact your local VA medical center or Veterans Affairs TMS program to inquire about availability and coverage in your area."
+  },
+  {
+    question: "How long does TMS treatment take for veterans with PTSD?",
+    answer:
+    "A typical TMS treatment course for PTSD and depression lasts 4-6 weeks, with sessions occurring 5 days per week. Each session takes about 20-40 minutes. Many veterans begin noticing improvements within 2-3 weeks of starting treatment."
+  },
+  {
+    question:
+    "Is TMS therapy safe for veterans with traumatic brain injury (TBI)?",
+    answer:
+    "TMS therapy is generally considered safe for veterans with mild to moderate TBI. However, each case must be evaluated individually by a qualified physician. TMS has shown promise in treating both TBI-related symptoms and concurrent mental health conditions common in veterans."
+  },
+  {
+    question: "What is the success rate of TMS for veterans with depression?",
+    answer:
+    "Clinical studies show that 50-60% of veterans with treatment-resistant depression experience significant symptom improvement with TMS therapy, and about one-third achieve complete remission. Success rates are particularly encouraging for veterans who haven't responded to traditional antidepressant medications."
+  },
+  {
+    question: "Can TMS help with service-related anxiety disorders?",
+    answer:
+    "Yes, TMS therapy has shown effectiveness in treating various anxiety disorders common among veterans, including generalized anxiety disorder, panic disorder, and anxiety symptoms associated with PTSD. The FDA has approved TMS for anxiety disorders, and research specific to veteran populations continues to show promising results."
+  },
+  {
+    question: "Are there any side effects of TMS therapy for veterans?",
+    answer:
+    "TMS therapy is well-tolerated with minimal side effects. The most common side effect is mild scalp discomfort or headache during or after treatment, which typically subsides within a week. Unlike medications, TMS doesn't cause weight gain, sexual dysfunction, or cognitive impairment, making it an attractive option for veterans."
+  }];
+
 
   const relatedPosts = [
-    {
-      title: "TMS for Migraine Relief in Veterans",
-      excerpt:
-        "Learn how TMS helps veterans with migraines and comorbid conditions like PTSD and depression.",
-      link: "/blogs/tms-migraine-veterans",
-      image:
-        "https://res.cloudinary.com/de4kw1t2i/image/upload/v1763033673/7_lnxkrv.png",
-    },
-    {
-      title: "TMS for Anxiety in Veterans",
-      excerpt:
-        "Discover how TMS helps veterans manage anxiety beyond medication.",
-      link: "/blogs/tms-anxiety-veterans",
-      image:
-        "https://res.cloudinary.com/de4kw1t2i/image/upload/v1763033666/6_rrkhgo.png",
-    },
-    {
-      title: "Understanding PTSD in Veterans",
-      excerpt:
-        "Complete guide to PTSD signs, symptoms, and treatment paths including TMS therapy.",
-      link: "/blogs/understanding-ptsd-veterans",
-      image:
-        "https://res.cloudinary.com/de4kw1t2i/image/upload/v1763033666/5_kvtlku.png",
-    },
-  ];
+  {
+    title: "TMS for Migraine Relief in Veterans",
+    excerpt:
+    "Learn how TMS helps veterans with migraines and comorbid conditions like PTSD and depression.",
+    link: "/blogs/tms-migraine-veterans",
+    image:
+    "https://res.cloudinary.com/de4kw1t2i/image/upload/v1763033673/7_lnxkrv.png"
+  },
+  {
+    title: "TMS for Anxiety in Veterans",
+    excerpt:
+    "Discover how TMS helps veterans manage anxiety beyond medication.",
+    link: "/blogs/tms-anxiety-veterans",
+    image:
+    "https://res.cloudinary.com/de4kw1t2i/image/upload/v1763033666/6_rrkhgo.png"
+  },
+  {
+    title: "Understanding PTSD in Veterans",
+    excerpt:
+    "Complete guide to PTSD signs, symptoms, and treatment paths including TMS therapy.",
+    link: "/blogs/understanding-ptsd-veterans",
+    image:
+    "https://res.cloudinary.com/de4kw1t2i/image/upload/v1763033666/5_kvtlku.png"
+  }];
+
 
   const articleSchema = {
     "@context": "https://schema.org",
     "@type": "Article",
     headline:
-      "How TMS Therapy Helps Veterans Heal: A New Hope for PTSD, Depression & Anxiety",
+    "How TMS Therapy Helps Veterans Heal: A New Hope for PTSD, Depression & Anxiety",
     description:
-      "Comprehensive guide on how TMS therapy helps veterans overcome PTSD, depression, and anxiety. Learn about VA hospital availability, success stories, and treatment options for veterans.",
+    "Comprehensive guide on how TMS therapy helps veterans overcome PTSD, depression, and anxiety. Learn about VA hospital availability, success stories, and treatment options for veterans.",
     image:
-      "https://www.prtms.com/wp-content/uploads/2023/03/Dr.-Keerthy-Sunder-scaled.jpg",
+    "https://www.prtms.com/wp-content/uploads/2023/03/Dr.-Keerthy-Sunder-scaled.jpg",
     author: {
       "@type": "Person",
       name: "Dr. Keerthy Sunder",
       jobTitle: "Board-Certified Psychiatrist | Medical Director at KarmaTMS",
       affiliation: {
         "@type": "Organization",
-        name: "KarmaTMS",
-      },
+        name: "KarmaTMS"
+      }
     },
     publisher: {
       "@type": "Organization",
       name: "KarmaTMS",
       logo: {
         "@type": "ImageObject",
-        url: "https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/ebadb369-a58d-421c-b937-24f900be5867.png",
-      },
+        url: "https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/ebadb369-a58d-421c-b937-24f900be5867.png"
+      }
     },
     datePublished: "2025-12-20",
     dateModified: "2025-12-20",
     mainEntityOfPage: {
       "@type": "WebPage",
-      "@id": "https://karmatms.com/blog/veterans-tms-therapy",
-    },
+      "@id": "https://karmatms.com/blog/veterans-tms-therapy"
+    }
   };
 
   const faqSchema = {
@@ -180,9 +180,9 @@ const VeteransBlogPostPage = () => {
       name: faq.question,
       acceptedAnswer: {
         "@type": "Answer",
-        text: faq.answer,
-      },
-    })),
+        text: faq.answer
+      }
+    }))
   };
 
   return (
@@ -193,20 +193,20 @@ const VeteransBlogPostPage = () => {
         keywords="tms veterans, tms for veterans, veteran affairs tms, va hospital tms, veterans administration tms, depression treatment for veterans, va anxiety, ptsd treatment veterans, tms therapy veterans"
         canonical="/blog/veterans-tms-therapy"
         ogImage="https://res.cloudinary.com/de4kw1t2i/image/upload/v1762863798/blog_3_piba73.png"
-        ogType="article"
-      />
+        ogType="article" />
+
 
       <StructuredData
         type="breadcrumb"
         breadcrumbs={[
-          { name: "Home", url: "/" },
-          { name: "Blog", url: "/blog" },
-          {
-            name: "TMS Therapy for Veterans",
-            url: "/blog/veterans-tms-therapy",
-          },
-        ]}
-      />
+        { name: "Home", url: "/" },
+        { name: "Blog", url: "/blog" },
+        {
+          name: "TMS Therapy for Veterans",
+          url: "/blog/veterans-tms-therapy"
+        }]
+        } />
+
 
       <script type="application/ld+json">
         {JSON.stringify(articleSchema)}
@@ -273,16 +273,16 @@ const VeteransBlogPostPage = () => {
               <Button
                 asChild
                 size="lg"
-                className="bg-white text-[#572670] hover:bg-gray-100"
-              >
+                className="bg-white text-[#572670] hover:bg-gray-100">
+
                 <Link to="/veterans">Learn About Our Veterans Program</Link>
               </Button>
               <Button
                 asChild
                 size="lg"
                 variant="outline"
-                className="border-white text-white hover:bg-white/10"
-              ></Button>
+                className="border-white text-white hover:bg-white/10">
+              </Button>
             </div>
           </div>
         </div>
@@ -300,25 +300,25 @@ const VeteransBlogPostPage = () => {
                     Table of Contents
                   </h3>
                   <nav className="space-y-2">
-                    {tocItems.map((item) => (
-                      <button
-                        key={item.id}
-                        onClick={() => scrollToSection(item.id)}
-                        className={`block w-full text-left px-3 py-2 rounded-md text-sm transition-all ${
-                          activeSection === item.id
-                            ? "bg-[#572670] text-white font-medium"
-                            : "text-gray-700 hover:bg-[#572670]/10"
-                        }`}
-                      >
+                    {tocItems.map((item) =>
+                    <button
+                      key={item.id}
+                      onClick={() => scrollToSection(item.id)}
+                      className={`block w-full text-left px-3 py-2 rounded-md text-sm transition-all ${
+                      activeSection === item.id ?
+                      "bg-[#572670] text-white font-medium" :
+                      "text-gray-700 hover:bg-[#572670]/10"}`
+                      }>
+
                         {item.label}
                       </button>
-                    ))}
+                    )}
                   </nav>
                   <div className="mt-6 pt-6 border-t">
                     <Button
                       asChild
-                      className="w-full bg-[#572670] hover:bg-[#7B3FA0]"
-                    >
+                      className="w-full bg-[#572670] hover:bg-[#7B3FA0]">
+
                       <Link to="/contact">Schedule Consultation</Link>
                     </Button>
                   </div>
@@ -334,8 +334,8 @@ const VeteransBlogPostPage = () => {
               <img
                 src="https://res.cloudinary.com/de4kw1t2i/image/upload/v1763036078/0_zutd9g.png"
                 alt="Veteran receiving TMS therapy for PTSD treatment"
-                className="w-full   object-cover rounded-lg mb-6"
-              />
+                className="w-full   object-cover rounded-lg mb-6" />
+
 
               <p className="text-xl text-gray-700 leading-relaxed">
                 For too long, veterans returning from service have faced limited
@@ -351,9 +351,9 @@ const VeteransBlogPostPage = () => {
 
             {/* Section 1: What is TMS Therapy */}
             <section
-              ref={(el) => (sectionsRef.current["what-is-tms"] = el)}
-              className="mb-12"
-            >
+              ref={(el) => sectionsRef.current["what-is-tms"] = el}
+              className="mb-12">
+
               <h2 className="text-3xl font-bold text-[#572670] mb-6">
                 What is TMS Therapy?
               </h2>
@@ -376,8 +376,8 @@ const VeteransBlogPostPage = () => {
                 your entire body,{" "}
                 <Link
                   to="/tms-therapy"
-                  className="text-[#572670] hover:underline font-medium"
-                >
+                  className="text-[#572670] hover:underline font-medium">
+
                   TMS therapy
                 </Link>{" "}
                 directly targets the brain regions responsible for depression,
@@ -389,8 +389,8 @@ const VeteransBlogPostPage = () => {
               <img
                 src="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/dd7dd986-540f-4359-99af-39f398491cf0.webp"
                 alt="TMS therapy equipment and treatment process"
-                className="w-full  object-cover rounded-lg mb-6"
-              />
+                className="w-full  object-cover rounded-lg mb-6" />
+
 
               <div className="grid md:grid-cols-2 gap-4 my-6">
                 <Card className="border-[#572670]/20">
@@ -434,9 +434,9 @@ const VeteransBlogPostPage = () => {
 
             {/* Section 2: How TMS Helps Veterans */}
             <section
-              ref={(el) => (sectionsRef.current["how-tms-helps"] = el)}
-              className="mb-12"
-            >
+              ref={(el) => sectionsRef.current["how-tms-helps"] = el}
+              className="mb-12">
+
               <h2 className="text-3xl font-bold text-[#572670] mb-6">
                 How TMS Helps Veterans with PTSD, Depression & Anxiety
               </h2>
@@ -455,8 +455,8 @@ const VeteransBlogPostPage = () => {
               <p className="mb-4">
                 <Link
                   to="/ptsd"
-                  className="text-[#572670] hover:underline font-medium"
-                >
+                  className="text-[#572670] hover:underline font-medium">
+
                   Post-Traumatic Stress Disorder (PTSD)
                 </Link>{" "}
                 affects up to 30% of veterans who served in combat zones.
@@ -493,8 +493,8 @@ const VeteransBlogPostPage = () => {
               <p className="mb-4">
                 <Link
                   to="/depression"
-                  className="text-[#572670] hover:underline font-medium"
-                >
+                  className="text-[#572670] hover:underline font-medium">
+
                   Depression
                 </Link>{" "}
                 is the most common mental health condition affecting veterans,
@@ -525,8 +525,8 @@ const VeteransBlogPostPage = () => {
               <p className="mb-4">
                 <Link
                   to="/anxiety"
-                  className="text-[#572670] hover:underline font-medium"
-                >
+                  className="text-[#572670] hover:underline font-medium">
+
                   Anxiety disorders
                 </Link>{" "}
                 affect nearly 20% of veterans. Whether generalized anxiety,
@@ -538,9 +538,9 @@ const VeteransBlogPostPage = () => {
 
             {/* Section 3: VA Hospital Availability */}
             <section
-              ref={(el) => (sectionsRef.current["va-availability"] = el)}
-              className="mb-12"
-            >
+              ref={(el) => sectionsRef.current["va-availability"] = el}
+              className="mb-12">
+
               <h2 className="text-3xl font-bold text-[#572670] mb-6">
                 VA Hospital TMS Availability
               </h2>
@@ -597,8 +597,8 @@ const VeteransBlogPostPage = () => {
                   private facilities like{" "}
                   <Link
                     to="/veterans"
-                    className="text-[#572670] hover:underline font-medium"
-                  >
+                    className="text-[#572670] hover:underline font-medium">
+
                     KarmaTMS
                   </Link>
                   , where we offer specialized programs for veterans with
@@ -609,9 +609,9 @@ const VeteransBlogPostPage = () => {
 
             {/* Section 4: Success Stories */}
             <section
-              ref={(el) => (sectionsRef.current["success-stories"] = el)}
-              className="mb-12"
-            >
+              ref={(el) => sectionsRef.current["success-stories"] = el}
+              className="mb-12">
+
               <h2 className="text-3xl font-bold text-[#572670] mb-6">
                 Success Stories: Veterans Who Found Hope
               </h2>
@@ -713,9 +713,9 @@ const VeteransBlogPostPage = () => {
 
             {/* Section 5: Treatment Process */}
             <section
-              ref={(el) => (sectionsRef.current["treatment-process"] = el)}
-              className="mb-12"
-            >
+              ref={(el) => sectionsRef.current["treatment-process"] = el}
+              className="mb-12">
+
               <h2 className="text-3xl font-bold text-[#572670] mb-6">
                 The TMS Treatment Process for Veterans
               </h2>
@@ -854,25 +854,25 @@ const VeteransBlogPostPage = () => {
               name="Dr. Keerthy Sunder"
               role="Board-Certified Psychiatrist | Medical Director at KarmaTMS"
               bio="Dr. Keerthy Sunder is a board-certified psychiatrist specializing in TMS therapy for veterans and treatment-resistant mental health conditions. With extensive experience in neuroscience and innovative treatment modalities, Dr. Sunder is dedicated to helping veterans overcome PTSD, depression, and anxiety through evidence-based, compassionate care."
-              image="https://www.prtms.com/wp-content/uploads/2023/03/Dr.-Keerthy-Sunder-scaled.jpg"
-            />
+              image="https://www.prtms.com/wp-content/uploads/2023/03/Dr.-Keerthy-Sunder-scaled.jpg" />
+
 
             {/* FAQ Section */}
             <section
-              ref={(el) => (sectionsRef.current["faqs"] = el)}
-              className="mb-12 mt-12"
-            >
+              ref={(el) => sectionsRef.current["faqs"] = el}
+              className="mb-12 mt-12">
+
               <h2 className="text-3xl font-bold text-[#572670] mb-6">
                 Frequently Asked Questions
               </h2>
 
               <Accordion type="single" collapsible className="w-full space-y-2">
-                {faqs.map((faq, index) => (
-                  <AccordionItem
-                    key={index}
-                    value={`item-${index}`}
-                    className="border border-gray-200 rounded-lg px-4 data-[state=open]:border-[#572670]"
-                  >
+                {faqs.map((faq, index) =>
+                <AccordionItem
+                  key={index}
+                  value={`item-${index}`}
+                  className="border border-gray-200 rounded-lg px-4 data-[state=open]:border-[#572670]">
+
                     <AccordionTrigger className="text-left font-semibold hover:text-[#572670] hover:no-underline">
                       {faq.question}
                     </AccordionTrigger>
@@ -880,7 +880,7 @@ const VeteransBlogPostPage = () => {
                       {faq.answer}
                     </AccordionContent>
                   </AccordionItem>
-                ))}
+                )}
               </Accordion>
             </section>
 
@@ -898,16 +898,16 @@ const VeteransBlogPostPage = () => {
                   <Button
                     asChild
                     size="lg"
-                    className="bg-white text-[#572670] hover:bg-gray-100"
-                  >
+                    className="bg-white text-[#572670] hover:bg-gray-100">
+
                     <Link to="/contact">Schedule Free Consultation</Link>
                   </Button>
                   <Button
                     asChild
                     size="lg"
                     variant="outline"
-                    className="border-white text-white hover:bg-white/10"
-                  ></Button>
+                    className="border-white text-white hover:bg-white/10">
+                  </Button>
                 </div>
               </CardContent>
             </Card>
@@ -918,16 +918,16 @@ const VeteransBlogPostPage = () => {
                 Related Articles
               </h2>
               <div className="grid md:grid-cols-3 gap-6">
-                {relatedPosts.map((post, index) => (
-                  <Card
-                    key={index}
-                    className="border-[#572670]/20 overflow-hidden hover:shadow-lg transition-shadow"
-                  >
+                {relatedPosts.map((post, index) =>
+                <Card
+                  key={index}
+                  className="border-[#572670]/20 overflow-hidden hover:shadow-lg transition-shadow">
+
                     <img
-                      src={post.image}
-                      alt={post.title}
-                      className="w-full  object-cover"
-                    />
+                    src={post.image}
+                    alt={post.title}
+                    className="w-full  object-cover" />
+
 
                     <CardContent className="p-6">
                       <h3 className="font-bold text-lg mb-2 hover:text-[#572670] transition-colors">
@@ -937,20 +937,20 @@ const VeteransBlogPostPage = () => {
                         {post.excerpt}
                       </p>
                       <Button
-                        asChild
-                        variant="ghost"
-                        className="text-[#572670] p-0 h-auto hover:bg-transparent"
-                      >
+                      asChild
+                      variant="ghost"
+                      className="text-[#572670] p-0 h-auto hover:bg-transparent">
+
                         <Link
-                          to={post.link}
-                          className="inline-flex items-center gap-2"
-                        >
+                        to={post.link}
+                        className="inline-flex items-center gap-2">
+
                           Read More <ArrowRight className="w-4 h-4" />
                         </Link>
                       </Button>
                     </CardContent>
                   </Card>
-                ))}
+                )}
               </div>
             </section>
           </article>
@@ -958,8 +958,8 @@ const VeteransBlogPostPage = () => {
       </div>
 
       <FooterSection />
-    </>
-  );
+    </>);
+
 };
 
 export default VeteransBlogPostPage;

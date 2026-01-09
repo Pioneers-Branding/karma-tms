@@ -16,25 +16,21 @@ const HeroSection = () => {
 
   const slides = [
   {
-    title: 'Find us in Twenty Nine Palms',
     image:
     'https://res.cloudinary.com/de4kw1t2i/image/upload/v1765537416/-7261_itcxch.png',
     alt: 'Palm Springs California location for KarmaTMS depression and anxiety treatment center'
   },
   {
-    title: 'Advanced TMS at KarmaTMS',
     image:
     'https://res.cloudinary.com/de4kw1t2i/image/upload/v1761742451/IMG_9537_VSCO_uw6qok.jpg',
     alt: 'KarmaTMS mental health center entrance in Palm Springs offering advanced TMS therapy for depression treatment'
   },
   {
-    title: 'Industry Best Devices',
     image:
     'https://res.cloudinary.com/de4kw1t2i/image/upload/v1766054048/apollo-consultation_1_peyxur_1_fuidsc.png',
     alt: 'Apollo TMS Device'
   },
   {
-    title: 'Advanced TMS Setup',
     image:
     'https://res.cloudinary.com/de4kw1t2i/image/upload/v1764156032/Exomind_PIC_Female-Model3_0342_ENUS100_qx29w9_cwycfn.jpg',
     alt: 'Advanced TMS therapy chair for depression treatment at KarmaTMS mental health center'
@@ -122,11 +118,6 @@ const HeroSection = () => {
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
 
                 <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent" />
-                <div className="absolute bottom-4 left-4 right-4">
-                  <h3 className="text-white font-semibold text-lg lg:text-xl drop-shadow-lg">
-                    {slides[currentSlide].title}
-                  </h3>
-                </div>
               </div>
               {/* Slider Controls */}
               <button
