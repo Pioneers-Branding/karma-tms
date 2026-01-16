@@ -73,7 +73,7 @@ const Navigation = () => {
 
   const wellnessLinks = [
     {
-      name: "Exomind at KarmaTMS",
+      name: "Exomind",
       href: "/resources/exomind-karmatms",
       icon: Sparkles,
     },
@@ -166,7 +166,7 @@ const Navigation = () => {
               <NavDropdown label="About Us" links={aboutLinks} />
 
               {/* RENAMED: Services to Brain TMS */}
-              <NavDropdown label="Brain" links={servicesLinks} />
+              <NavDropdown label="Services" links={servicesLinks} />
 
               {/* NEW: Wellness TMS Dropdown */}
               <NavDropdown label="Wellness" links={wellnessLinks} />
