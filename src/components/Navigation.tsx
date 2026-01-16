@@ -169,7 +169,7 @@ const Navigation = () => {
               <NavDropdown label="Services" links={servicesLinks} />
 
               {/* NEW: Wellness TMS Dropdown */}
-              <NavDropdown label="Wellness" links={wellnessLinks} />
+              <NavDropdown label="Exomind" links={wellnessLinks} />
 
               <NavDropdown label="Conditions" links={conditionsLinks} />
               <NavDropdown label="Locations" links={locationsLinks} />
