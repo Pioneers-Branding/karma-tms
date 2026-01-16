@@ -10,38 +10,38 @@ import {
   BreadcrumbLink,
   BreadcrumbList,
   BreadcrumbPage,
-  BreadcrumbSeparator,
-} from "@/components/ui/breadcrumb";
+  BreadcrumbSeparator } from
+"@/components/ui/breadcrumb";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import {
   Accordion,
   AccordionContent,
   AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
+  AccordionTrigger } from
+"@/components/ui/accordion";
 import { Calendar, Clock, User, ArrowRight, CheckCircle2 } from "lucide-react";
 import AuthorBox from "@/components/AuthorBox";
 
 const WhoIsAGoodCandidateForTMSTherapyBlogPostPage = () => {
   const [activeSection, setActiveSection] = useState("");
-  const sectionsRef = useRef<{ [key: string]: HTMLElement | null }>({});
+  const sectionsRef = useRef<{[key: string]: HTMLElement | null;}>({});
 
   const tocItems = [
-    { id: "understanding-tms", label: "Understanding TMS Therapy" },
-    { id: "why-candidacy-matters", label: "Why Candidacy Matters" },
-    { id: "treatment-resistant", label: "Treatment-Resistant Depression" },
-    { id: "medication-intolerance", label: "Medication Intolerance" },
-    { id: "mdd-diagnosis", label: "MDD Diagnosis" },
-    { id: "other-conditions", label: "Anxiety, PTSD, & OCD" },
-    { id: "non-invasive-appeal", label: "Non-Invasive Appeal" },
-    { id: "safety-factors", label: "Medical & Safety Factors" },
-    { id: "evaluation-role", label: "Psychiatric Evaluation" },
-    { id: "commitment", label: "Commitment & Expectations" },
-    { id: "who-is-not", label: "Who Is Not a Candidate" },
-    { id: "future-care", label: "Future of Mental Health" },
-    { id: "faqs", label: "FAQs" },
-  ];
+  { id: "understanding-tms", label: "Understanding TMS Therapy" },
+  { id: "why-candidacy-matters", label: "Why Candidacy Matters" },
+  { id: "treatment-resistant", label: "Treatment-Resistant Depression" },
+  { id: "medication-intolerance", label: "Medication Intolerance" },
+  { id: "mdd-diagnosis", label: "MDD Diagnosis" },
+  { id: "other-conditions", label: "Anxiety, PTSD, & OCD" },
+  { id: "non-invasive-appeal", label: "Non-Invasive Appeal" },
+  { id: "safety-factors", label: "Medical & Safety Factors" },
+  { id: "evaluation-role", label: "Psychiatric Evaluation" },
+  { id: "commitment", label: "Commitment & Expectations" },
+  { id: "who-is-not", label: "Who Is Not a Candidate" },
+  { id: "future-care", label: "Future of Mental Health" },
+  { id: "faqs", label: "FAQs" }];
+
 
   useEffect(() => {
     const handleScroll = () => {
@@ -52,9 +52,9 @@ const WhoIsAGoodCandidateForTMSTherapyBlogPostPage = () => {
         if (section) {
           const { offsetTop, offsetHeight } = section;
           if (
-            scrollPosition >= offsetTop &&
-            scrollPosition < offsetTop + offsetHeight
-          ) {
+          scrollPosition >= offsetTop &&
+          scrollPosition < offsetTop + offsetHeight)
+          {
             setActiveSection(item.id);
             break;
           }
@@ -72,97 +72,97 @@ const WhoIsAGoodCandidateForTMSTherapyBlogPostPage = () => {
     if (section) {
       const yOffset = -100;
       const y =
-        section.getBoundingClientRect().top + window.pageYOffset + yOffset;
+      section.getBoundingClientRect().top + window.pageYOffset + yOffset;
       window.scrollTo({ top: y, behavior: "smooth" });
     }
   };
 
   const faqs = [
-    {
-      question: "Who is a good candidate for TMS therapy?",
-      answer:
-        "A good candidate for TMS therapy is typically an adult diagnosed with depression who has not experienced sufficient relief from antidepressant medications. People who cannot tolerate medication side effects or prefer a non-invasive treatment may also qualify. A psychiatric evaluation is essential to confirm TMS therapy eligibility.",
-    },
-    {
-      question: "How do doctors determine TMS therapy eligibility?",
-      answer:
-        "Doctors assess TMS therapy eligibility through a comprehensive evaluation that includes diagnosis, severity of symptoms, treatment history, medication response, and medical safety factors. This process helps identify whether someone is an appropriate TMS treatment candidate and ensures the therapy is both safe and effective.",
-    },
-    {
-      question:
-        "Can someone with anxiety or PTSD be a TMS treatment candidate?",
-      answer:
-        "Yes, in some cases. While TMS therapy is primarily approved for depression, individuals with anxiety, PTSD, or OCD may be considered TMS treatment candidates, especially if depression is also present. Eligibility depends on symptoms, prior treatments, and clinical judgment.",
-    },
-    {
-      question: "Who should not consider TMS therapy?",
-      answer:
-        "People with certain metal implants in or near the head, uncontrolled seizure disorders, or unstable medical conditions may not be good candidates for TMS therapy. A full medical history review is necessary to rule out safety concerns and determine the most appropriate treatment option.",
-    },
-    {
-      question: "How long does it take to know if TMS therapy is working?",
-      answer:
-        "Most patients begin noticing improvements after a few weeks of consistent treatment. Because results are gradual, commitment to the full treatment schedule is important. Individuals who meet TMS therapy eligibility criteria often experience continued improvement as sessions progress.",
-    },
-  ];
+  {
+    question: "Who is a good candidate for TMS therapy?",
+    answer:
+    "A good candidate for TMS therapy is typically an adult diagnosed with depression who has not experienced sufficient relief from antidepressant medications. People who cannot tolerate medication side effects or prefer a non-invasive treatment may also qualify. A psychiatric evaluation is essential to confirm TMS therapy eligibility."
+  },
+  {
+    question: "How do doctors determine TMS therapy eligibility?",
+    answer:
+    "Doctors assess TMS therapy eligibility through a comprehensive evaluation that includes diagnosis, severity of symptoms, treatment history, medication response, and medical safety factors. This process helps identify whether someone is an appropriate TMS treatment candidate and ensures the therapy is both safe and effective."
+  },
+  {
+    question:
+    "Can someone with anxiety or PTSD be a TMS treatment candidate?",
+    answer:
+    "Yes, in some cases. While TMS therapy is primarily approved for depression, individuals with anxiety, PTSD, or OCD may be considered TMS treatment candidates, especially if depression is also present. Eligibility depends on symptoms, prior treatments, and clinical judgment."
+  },
+  {
+    question: "Who should not consider TMS therapy?",
+    answer:
+    "People with certain metal implants in or near the head, uncontrolled seizure disorders, or unstable medical conditions may not be good candidates for TMS therapy. A full medical history review is necessary to rule out safety concerns and determine the most appropriate treatment option."
+  },
+  {
+    question: "How long does it take to know if TMS therapy is working?",
+    answer:
+    "Most patients begin noticing improvements after a few weeks of consistent treatment. Because results are gradual, commitment to the full treatment schedule is important. Individuals who meet TMS therapy eligibility criteria often experience continued improvement as sessions progress."
+  }];
+
 
   const relatedPosts = [
-    {
-      title: "Is TMS Therapy Covered by Insurance?",
-      excerpt:
-        "Learn eligibility, approval criteria, costs, and coverage details to access effective TMS treatment.",
-      link: "/blog/is-tms-therapy-covered-by-insurance",
-      image:
-        "https://res.cloudinary.com/de4kw1t2i/image/upload/v1767775408/37_l0hdbk.png",
-    },
-    {
-      title: "How Successful is TMS Treatment?",
-      excerpt:
-        "Learn about TMS therapy success rates based on clinical research and real patient outcomes.",
-      link: "/blog/how-successful-tms-treatment",
-      image:
-        "https://res.cloudinary.com/de4kw1t2i/image/upload/v1763376733/15_ym6n6b.png",
-    },
-    {
-      title: "Is TMS Therapy Permanent?",
-      excerpt:
-        "Discover how long TMS therapy results last and what factors influence the longevity of treatment benefits.",
-      link: "/blog/is-tms-therapy-permanent",
-      image:
-        "https://res.cloudinary.com/de4kw1t2i/image/upload/v1763376733/13_nl6y75.png",
-    },
-  ];
+  {
+    title: "Is TMS Therapy Covered by Insurance?",
+    excerpt:
+    "Learn eligibility, approval criteria, costs, and coverage details to access effective TMS treatment.",
+    link: "/blog/is-tms-therapy-covered-by-insurance",
+    image:
+    "https://res.cloudinary.com/de4kw1t2i/image/upload/v1767775408/37_l0hdbk.png"
+  },
+  {
+    title: "How Successful is TMS Treatment?",
+    excerpt:
+    "Learn about TMS therapy success rates based on clinical research and real patient outcomes.",
+    link: "/blog/how-successful-tms-treatment",
+    image:
+    "https://res.cloudinary.com/de4kw1t2i/image/upload/v1763376733/15_ym6n6b.png"
+  },
+  {
+    title: "Is TMS Therapy Permanent?",
+    excerpt:
+    "Discover how long TMS therapy results last and what factors influence the longevity of treatment benefits.",
+    link: "/blog/is-tms-therapy-permanent",
+    image:
+    "https://res.cloudinary.com/de4kw1t2i/image/upload/v1763376733/13_nl6y75.png"
+  }];
+
 
   const articleSchema = {
     "@context": "https://schema.org",
     "@type": "Article",
     headline: "Who Is a Good Candidate for TMS Therapy? Complete Guide",
     description:
-      "Learn who is a good candidate for TMS therapy, eligibility criteria, benefits, risks, and how to know if TMS treatment is right for you.",
+    "Learn who is a good candidate for TMS therapy, eligibility criteria, benefits, risks, and how to know if TMS treatment is right for you.",
     image: "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=1200", // Generic medical consultation image
     author: {
       "@type": "Person",
       name: "Dr. Keerthy Sunder",
       affiliation: {
         "@type": "Organization",
-        name: "KarmaTMS",
-      },
+        name: "KarmaTMS"
+      }
     },
     publisher: {
       "@type": "Organization",
       name: "KarmaTMS",
       logo: {
         "@type": "ImageObject",
-        url: "https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/ebadb369-a58d-421c-b937-24f900be5867.png",
-      },
+        url: "https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/ebadb369-a58d-421c-b937-24f900be5867.png"
+      }
     },
     datePublished: "2026-01-07",
     dateModified: "2026-01-07",
     mainEntityOfPage: {
       "@type": "WebPage",
       "@id":
-        "https://karmatms.com/blog/who-is-a-good-candidate-for-tms-therapy",
-    },
+      "https://karmatms.com/blog/who-is-a-good-candidate-for-tms-therapy"
+    }
   };
 
   const faqSchema = {
@@ -173,9 +173,9 @@ const WhoIsAGoodCandidateForTMSTherapyBlogPostPage = () => {
       name: faq.question,
       acceptedAnswer: {
         "@type": "Answer",
-        text: faq.answer,
-      },
-    })),
+        text: faq.answer
+      }
+    }))
   };
 
   return (
@@ -186,20 +186,20 @@ const WhoIsAGoodCandidateForTMSTherapyBlogPostPage = () => {
         keywords="who is a good candidate for tms therapy, tms therapy eligibility, tms treatment candidates, tms therapy for depression, transcranial magnetic stimulation, treatment resistant depression, non invasive depression treatment, mental health clinic palm springs, tms therapy benefits, tms therapy safety, alternatives to antidepressants, advanced depression treatment"
         canonical="/blog/who-is-a-good-candidate-for-tms-therapy"
         ogImage="https://res.cloudinary.com/de4kw1t2i/image/upload/v1767775415/36_sqhczb.png"
-        ogType="article"
-      />
+        ogType="article" />
+
 
       <StructuredData
         type="breadcrumb"
         breadcrumbs={[
-          { name: "Home", url: "/" },
-          { name: "Blog", url: "/blog" },
-          {
-            name: "Who Is a Good Candidate for TMS Therapy?",
-            url: "/blog/who-is-a-good-candidate-for-tms-therapy",
-          },
-        ]}
-      />
+        { name: "Home", url: "/" },
+        { name: "Blog", url: "/blog" },
+        {
+          name: "Who Is a Good Candidate for TMS Therapy?",
+          url: "/blog/who-is-a-good-candidate-for-tms-therapy"
+        }]
+        } />
+
 
       <script type="application/ld+json">
         {JSON.stringify(articleSchema)}
@@ -265,8 +265,8 @@ const WhoIsAGoodCandidateForTMSTherapyBlogPostPage = () => {
               <Button
                 asChild
                 size="lg"
-                className="bg-white text-[#572670] hover:bg-gray-100"
-              >
+                className="bg-white text-[#572670] hover:bg-gray-100">
+
                 <Link to="/contact">Schedule Consultation</Link>
               </Button>
             </div>
@@ -284,25 +284,25 @@ const WhoIsAGoodCandidateForTMSTherapyBlogPostPage = () => {
                     Table of Contents
                   </h3>
                   <nav className="space-y-2">
-                    {tocItems.map((item) => (
-                      <button
-                        key={item.id}
-                        onClick={() => scrollToSection(item.id)}
-                        className={`block w-full text-left px-3 py-2 rounded-md text-sm transition-all ${
-                          activeSection === item.id
-                            ? "bg-[#572670] text-white font-medium"
-                            : "text-gray-700 hover:bg-[#572670]/10"
-                        }`}
-                      >
+                    {tocItems.map((item) =>
+                    <button
+                      key={item.id}
+                      onClick={() => scrollToSection(item.id)}
+                      className={`block w-full text-left px-3 py-2 rounded-md text-sm transition-all ${
+                      activeSection === item.id ?
+                      "bg-[#572670] text-white font-medium" :
+                      "text-gray-700 hover:bg-[#572670]/10"}`
+                      }>
+
                         {item.label}
                       </button>
-                    ))}
+                    )}
                   </nav>
                   <div className="mt-6 pt-6 border-t">
                     <Button
                       asChild
-                      className="w-full bg-[#572670] hover:bg-[#7B3FA0]"
-                    >
+                      className="w-full bg-[#572670] hover:bg-[#7B3FA0]">
+
                       <Link to="/contact">Check Eligibility</Link>
                     </Button>
                   </div>
@@ -316,8 +316,8 @@ const WhoIsAGoodCandidateForTMSTherapyBlogPostPage = () => {
               <img
                 src="https://res.cloudinary.com/de4kw1t2i/image/upload/v1767775415/36_sqhczb.png"
                 alt="Who is a good candidate for TMS therapy receiving non-invasive treatment at a mental health clinic"
-                className="w-full object-cover rounded-lg mb-6"
-              />
+                className="w-full object-cover rounded-lg mb-6" />
+
 
               <p className="text-xl text-gray-700 leading-relaxed">
                 If you are researching who is a good candidate for TMS therapy,
@@ -334,9 +334,9 @@ const WhoIsAGoodCandidateForTMSTherapyBlogPostPage = () => {
             </div>
 
             <section
-              ref={(el) => (sectionsRef.current["understanding-tms"] = el)}
-              className="mb-12"
-            >
+              ref={(el) => sectionsRef.current["understanding-tms"] = el}
+              className="mb-12">
+
               <h2 className="text-3xl font-bold text-[#572670] mb-6">
                 Understanding TMS Therapy from a Medical Perspective
               </h2>
@@ -361,9 +361,9 @@ const WhoIsAGoodCandidateForTMSTherapyBlogPostPage = () => {
             </section>
 
             <section
-              ref={(el) => (sectionsRef.current["why-candidacy-matters"] = el)}
-              className="mb-12"
-            >
+              ref={(el) => sectionsRef.current["why-candidacy-matters"] = el}
+              className="mb-12">
+
               <h2 className="text-3xl font-bold text-[#572670] mb-6">
                 Why Knowing Who Is a Good Candidate for TMS Therapy Matters
               </h2>
@@ -386,9 +386,9 @@ const WhoIsAGoodCandidateForTMSTherapyBlogPostPage = () => {
             </section>
 
             <section
-              ref={(el) => (sectionsRef.current["treatment-resistant"] = el)}
-              className="mb-12"
-            >
+              ref={(el) => sectionsRef.current["treatment-resistant"] = el}
+              className="mb-12">
+
               <h2 className="text-3xl font-bold text-[#572670] mb-6">
                 Adults with Treatment-Resistant Depression
               </h2>
@@ -411,9 +411,9 @@ const WhoIsAGoodCandidateForTMSTherapyBlogPostPage = () => {
             </section>
 
             <section
-              ref={(el) => (sectionsRef.current["medication-intolerance"] = el)}
-              className="mb-12"
-            >
+              ref={(el) => sectionsRef.current["medication-intolerance"] = el}
+              className="mb-12">
+
               <h2 className="text-3xl font-bold text-[#572670] mb-6">
                 Individuals Who Cannot Tolerate Antidepressant Side Effects
               </h2>
@@ -436,9 +436,9 @@ const WhoIsAGoodCandidateForTMSTherapyBlogPostPage = () => {
             </section>
 
             <section
-              ref={(el) => (sectionsRef.current["mdd-diagnosis"] = el)}
-              className="mb-12"
-            >
+              ref={(el) => sectionsRef.current["mdd-diagnosis"] = el}
+              className="mb-12">
+
               <h2 className="text-3xl font-bold text-[#572670] mb-6">
                 Patients Diagnosed with Major Depressive Disorder
               </h2>
@@ -461,9 +461,9 @@ const WhoIsAGoodCandidateForTMSTherapyBlogPostPage = () => {
             </section>
 
             <section
-              ref={(el) => (sectionsRef.current["other-conditions"] = el)}
-              className="mb-12"
-            >
+              ref={(el) => sectionsRef.current["other-conditions"] = el}
+              className="mb-12">
+
               <h2 className="text-3xl font-bold text-[#572670] mb-6">
                 TMS Therapy Eligibility for Anxiety, PTSD, and OCD
               </h2>
@@ -485,9 +485,9 @@ const WhoIsAGoodCandidateForTMSTherapyBlogPostPage = () => {
             </section>
 
             <section
-              ref={(el) => (sectionsRef.current["non-invasive-appeal"] = el)}
-              className="mb-12"
-            >
+              ref={(el) => sectionsRef.current["non-invasive-appeal"] = el}
+              className="mb-12">
+
               <h2 className="text-3xl font-bold text-[#572670] mb-6">
                 The Appeal of a Non-Invasive and Outpatient Treatment
               </h2>
@@ -509,9 +509,9 @@ const WhoIsAGoodCandidateForTMSTherapyBlogPostPage = () => {
             </section>
 
             <section
-              ref={(el) => (sectionsRef.current["safety-factors"] = el)}
-              className="mb-12"
-            >
+              ref={(el) => sectionsRef.current["safety-factors"] = el}
+              className="mb-12">
+
               <h2 className="text-3xl font-bold text-[#572670] mb-6">
                 Medical and Safety Factors That Affect Candidacy
               </h2>
@@ -534,9 +534,9 @@ const WhoIsAGoodCandidateForTMSTherapyBlogPostPage = () => {
             </section>
 
             <section
-              ref={(el) => (sectionsRef.current["evaluation-role"] = el)}
-              className="mb-12"
-            >
+              ref={(el) => sectionsRef.current["evaluation-role"] = el}
+              className="mb-12">
+
               <h2 className="text-3xl font-bold text-[#572670] mb-6">
                 The Role of a Comprehensive Psychiatric Evaluation
               </h2>
@@ -557,9 +557,9 @@ const WhoIsAGoodCandidateForTMSTherapyBlogPostPage = () => {
             </section>
 
             <section
-              ref={(el) => (sectionsRef.current["commitment"] = el)}
-              className="mb-12"
-            >
+              ref={(el) => sectionsRef.current["commitment"] = el}
+              className="mb-12">
+
               <h2 className="text-3xl font-bold text-[#572670] mb-6">
                 Commitment, Readiness, and Realistic Expectations
               </h2>
@@ -580,9 +580,9 @@ const WhoIsAGoodCandidateForTMSTherapyBlogPostPage = () => {
             </section>
 
             <section
-              ref={(el) => (sectionsRef.current["who-is-not"] = el)}
-              className="mb-12"
-            >
+              ref={(el) => sectionsRef.current["who-is-not"] = el}
+              className="mb-12">
+
               <h2 className="text-3xl font-bold text-[#572670] mb-6">
                 Who May Not Be an Ideal Candidate for TMS Therapy
               </h2>
@@ -603,9 +603,9 @@ const WhoIsAGoodCandidateForTMSTherapyBlogPostPage = () => {
             </section>
 
             <section
-              ref={(el) => (sectionsRef.current["future-care"] = el)}
-              className="mb-12"
-            >
+              ref={(el) => sectionsRef.current["future-care"] = el}
+              className="mb-12">
+
               <h2 className="text-3xl font-bold text-[#572670] mb-6">
                 How TMS Therapy Is Shaping the Future of Mental Health Care
               </h2>
@@ -645,23 +645,23 @@ const WhoIsAGoodCandidateForTMSTherapyBlogPostPage = () => {
               name="Dr. Keerthy Sunder"
               role="Board-Certified Psychiatrist"
               bio="Dr. Keerthy Sunder is a board-certified psychiatrist with over 15 years of experience in treating depression, anxiety, and PTSD."
-              image="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/ebadb369-a58d-421c-b937-24f900be5867.png"
-            />
+              image="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/ebadb369-a58d-421c-b937-24f900be5867.png" />
+
 
             <section
-              ref={(el) => (sectionsRef.current["faqs"] = el)}
-              className="mb-12 mt-12"
-            >
+              ref={(el) => sectionsRef.current["faqs"] = el}
+              className="mb-12 mt-12">
+
               <h2 className="text-3xl font-bold text-[#572670] mb-6">
                 Frequently Asked Questions
               </h2>
               <Accordion type="single" collapsible className="w-full space-y-2">
-                {faqs.map((faq, index) => (
-                  <AccordionItem
-                    key={index}
-                    value={`item-${index}`}
-                    className="border border-gray-200 rounded-lg px-4 data-[state=open]:border-[#572670]"
-                  >
+                {faqs.map((faq, index) =>
+                <AccordionItem
+                  key={index}
+                  value={`item-${index}`}
+                  className="border border-gray-200 rounded-lg px-4 data-[state=open]:border-[#572670]">
+
                     <AccordionTrigger className="text-left font-semibold hover:text-[#572670] hover:no-underline">
                       {faq.question}
                     </AccordionTrigger>
@@ -669,7 +669,7 @@ const WhoIsAGoodCandidateForTMSTherapyBlogPostPage = () => {
                       {faq.answer}
                     </AccordionContent>
                   </AccordionItem>
-                ))}
+                )}
               </Accordion>
             </section>
 
@@ -686,8 +686,8 @@ const WhoIsAGoodCandidateForTMSTherapyBlogPostPage = () => {
                   <Button
                     asChild
                     size="lg"
-                    className="bg-white text-[#572670] hover:bg-gray-100"
-                  >
+                    className="bg-white text-[#572670] hover:bg-gray-100">
+
                     <Link to="/contact">Schedule Free Consultation</Link>
                   </Button>
                 </div>
@@ -699,16 +699,16 @@ const WhoIsAGoodCandidateForTMSTherapyBlogPostPage = () => {
                 Related Articles
               </h2>
               <div className="grid md:grid-cols-3 gap-6">
-                {relatedPosts.map((post, index) => (
-                  <Card
-                    key={index}
-                    className="border-[#572670]/20 overflow-hidden hover:shadow-lg transition-shadow"
-                  >
+                {relatedPosts.map((post, index) =>
+                <Card
+                  key={index}
+                  className="border-[#572670]/20 overflow-hidden hover:shadow-lg transition-shadow">
+
                     <img
-                      src={post.image}
-                      alt={post.title}
-                      className="w-full object-cover"
-                    />
+                    src={post.image}
+                    alt={post.title}
+                    className="w-full object-cover" />
+
                     <CardContent className="p-6">
                       <h3 className="font-bold text-lg mb-2 hover:text-[#572670] transition-colors">
                         <Link to={post.link}>{post.title}</Link>
@@ -717,20 +717,20 @@ const WhoIsAGoodCandidateForTMSTherapyBlogPostPage = () => {
                         {post.excerpt}
                       </p>
                       <Button
-                        asChild
-                        variant="ghost"
-                        className="text-[#572670] p-0 h-auto hover:bg-transparent"
-                      >
+                      asChild
+                      variant="ghost"
+                      className="text-[#572670] p-0 h-auto hover:bg-transparent">
+
                         <Link
-                          to={post.link}
-                          className="inline-flex items-center gap-2"
-                        >
+                        to={post.link}
+                        className="inline-flex items-center gap-2">
+
                           Read More <ArrowRight className="w-4 h-4" />
                         </Link>
                       </Button>
                     </CardContent>
                   </Card>
-                ))}
+                )}
               </div>
             </section>
           </article>
@@ -738,8 +738,8 @@ const WhoIsAGoodCandidateForTMSTherapyBlogPostPage = () => {
       </div>
 
       <FooterSection />
-    </>
-  );
+    </>);
+
 };
 
 export default WhoIsAGoodCandidateForTMSTherapyBlogPostPage;

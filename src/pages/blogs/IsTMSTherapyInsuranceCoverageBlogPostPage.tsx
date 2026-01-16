@@ -10,36 +10,36 @@ import {
   BreadcrumbLink,
   BreadcrumbList,
   BreadcrumbPage,
-  BreadcrumbSeparator,
-} from "@/components/ui/breadcrumb";
+  BreadcrumbSeparator } from
+"@/components/ui/breadcrumb";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import {
   Accordion,
   AccordionContent,
   AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
+  AccordionTrigger } from
+"@/components/ui/accordion";
 import { Calendar, Clock, User, ArrowRight, CheckCircle2 } from "lucide-react";
 import AuthorBox from "@/components/AuthorBox";
 
 const IsTMSTherapyInsuranceCoverageBlogPostPage = () => {
   const [activeSection, setActiveSection] = useState("");
-  const sectionsRef = useRef<{ [key: string]: HTMLElement | null }>({});
+  const sectionsRef = useRef<{[key: string]: HTMLElement | null;}>({});
 
   const tocItems = [
-    { id: "understanding-tms", label: "Understanding TMS & Coverage" },
-    { id: "is-covered-us", label: "Is TMS Covered in US?" },
-    { id: "depression-coverage", label: "Coverage for Depression" },
-    { id: "insurance-criteria", label: "Insurance Criteria" },
-    { id: "approval-process", label: "Approval Process" },
-    { id: "out-of-pocket", label: "Out-of-Pocket Costs" },
-    { id: "denial-help", label: "If Coverage Denied" },
-    { id: "beyond-depression", label: "Beyond Depression" },
-    { id: "provider-experience", label: "Provider Experience" },
-    { id: "is-worth-it", label: "Is It Worth It?" },
-    { id: "faqs", label: "FAQs" },
-  ];
+  { id: "understanding-tms", label: "Understanding TMS & Coverage" },
+  { id: "is-covered-us", label: "Is TMS Covered in US?" },
+  { id: "depression-coverage", label: "Coverage for Depression" },
+  { id: "insurance-criteria", label: "Insurance Criteria" },
+  { id: "approval-process", label: "Approval Process" },
+  { id: "out-of-pocket", label: "Out-of-Pocket Costs" },
+  { id: "denial-help", label: "If Coverage Denied" },
+  { id: "beyond-depression", label: "Beyond Depression" },
+  { id: "provider-experience", label: "Provider Experience" },
+  { id: "is-worth-it", label: "Is It Worth It?" },
+  { id: "faqs", label: "FAQs" }];
+
 
   useEffect(() => {
     const handleScroll = () => {
@@ -50,9 +50,9 @@ const IsTMSTherapyInsuranceCoverageBlogPostPage = () => {
         if (section) {
           const { offsetTop, offsetHeight } = section;
           if (
-            scrollPosition >= offsetTop &&
-            scrollPosition < offsetTop + offsetHeight
-          ) {
+          scrollPosition >= offsetTop &&
+          scrollPosition < offsetTop + offsetHeight)
+          {
             setActiveSection(item.id);
             break;
           }
@@ -70,96 +70,96 @@ const IsTMSTherapyInsuranceCoverageBlogPostPage = () => {
     if (section) {
       const yOffset = -100;
       const y =
-        section.getBoundingClientRect().top + window.pageYOffset + yOffset;
+      section.getBoundingClientRect().top + window.pageYOffset + yOffset;
       window.scrollTo({ top: y, behavior: "smooth" });
     }
   };
 
   const faqs = [
-    {
-      question: "Is TMS therapy covered by insurance?",
-      answer:
-        "In many cases, yes. Most insurance providers cover TMS therapy for major depressive disorder when standard treatments have not worked.",
-    },
-    {
-      question: "Does insurance cover TMS therapy for everyone?",
-      answer:
-        "Coverage depends on your diagnosis, treatment history, and specific insurance plan. Prior authorization is usually required.",
-    },
-    {
-      question: "What insurance plans usually cover TMS therapy?",
-      answer:
-        "Many private insurers and Medicare cover TMS therapy. Medicaid coverage varies by state and individual plan.",
-    },
-    {
-      question: "What costs might I pay even if insurance covers TMS?",
-      answer:
-        "You may still have deductibles, copays, or coinsurance based on your policy, even with approved coverage.",
-    },
-    {
-      question: "What if my insurance denies TMS therapy?",
-      answer:
-        "Denials can often be appealed with additional medical documentation or a peer-to-peer review by your provider.",
-    },
-  ];
+  {
+    question: "Is TMS therapy covered by insurance?",
+    answer:
+    "In many cases, yes. Most insurance providers cover TMS therapy for major depressive disorder when standard treatments have not worked."
+  },
+  {
+    question: "Does insurance cover TMS therapy for everyone?",
+    answer:
+    "Coverage depends on your diagnosis, treatment history, and specific insurance plan. Prior authorization is usually required."
+  },
+  {
+    question: "What insurance plans usually cover TMS therapy?",
+    answer:
+    "Many private insurers and Medicare cover TMS therapy. Medicaid coverage varies by state and individual plan."
+  },
+  {
+    question: "What costs might I pay even if insurance covers TMS?",
+    answer:
+    "You may still have deductibles, copays, or coinsurance based on your policy, even with approved coverage."
+  },
+  {
+    question: "What if my insurance denies TMS therapy?",
+    answer:
+    "Denials can often be appealed with additional medical documentation or a peer-to-peer review by your provider."
+  }];
+
 
   const relatedPosts = [
-    {
-      title: "Is TMS Therapy Permanent?",
-      excerpt:
-        "Discover how long TMS therapy results last and what factors influence the longevity of treatment benefits.",
-      link: "/blog/is-tms-therapy-permanent",
-      image:
-        "https://res.cloudinary.com/de4kw1t2i/image/upload/v1763376733/13_nl6y75.png",
-    },
-    {
-      title: "How Successful is TMS Treatment?",
-      excerpt:
-        "Learn about TMS therapy success rates based on clinical research and real patient outcomes.",
-      link: "/blog/how-successful-tms-treatment",
-      image:
-        "https://res.cloudinary.com/de4kw1t2i/image/upload/v1763376733/15_ym6n6b.png",
-    },
-    {
-      title: "Is TMS Therapy Legitimate?",
-      excerpt:
-        "Explore the scientific evidence and FDA approval behind TMS therapy for mental health treatment.",
-      link: "/blog/is-tms-therapy-legitimate",
-      image:
-        "https://res.cloudinary.com/de4kw1t2i/image/upload/v1763376733/14_dszfwi.png",
-    },
-  ];
+  {
+    title: "Is TMS Therapy Permanent?",
+    excerpt:
+    "Discover how long TMS therapy results last and what factors influence the longevity of treatment benefits.",
+    link: "/blog/is-tms-therapy-permanent",
+    image:
+    "https://res.cloudinary.com/de4kw1t2i/image/upload/v1763376733/13_nl6y75.png"
+  },
+  {
+    title: "How Successful is TMS Treatment?",
+    excerpt:
+    "Learn about TMS therapy success rates based on clinical research and real patient outcomes.",
+    link: "/blog/how-successful-tms-treatment",
+    image:
+    "https://res.cloudinary.com/de4kw1t2i/image/upload/v1763376733/15_ym6n6b.png"
+  },
+  {
+    title: "Is TMS Therapy Legitimate?",
+    excerpt:
+    "Explore the scientific evidence and FDA approval behind TMS therapy for mental health treatment.",
+    link: "/blog/is-tms-therapy-legitimate",
+    image:
+    "https://res.cloudinary.com/de4kw1t2i/image/upload/v1763376733/14_dszfwi.png"
+  }];
+
 
   const articleSchema = {
     "@context": "https://schema.org",
     "@type": "Article",
     headline: "Is TMS Therapy Covered by Insurance? What You Should Know",
     description:
-      "Is TMS therapy covered by insurance? Learn eligibility, approval criteria, costs, and coverage details to access effective TMS treatment.",
+    "Is TMS therapy covered by insurance? Learn eligibility, approval criteria, costs, and coverage details to access effective TMS treatment.",
     image:
-      "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=1200",
+    "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=1200",
     author: {
       "@type": "Person",
       name: "Dr. Keerthy Sunder",
       affiliation: {
         "@type": "Organization",
-        name: "KarmaTMS",
-      },
+        name: "KarmaTMS"
+      }
     },
     publisher: {
       "@type": "Organization",
       name: "KarmaTMS",
       logo: {
         "@type": "ImageObject",
-        url: "https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/ebadb369-a58d-421c-b937-24f900be5867.png",
-      },
+        url: "https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/17785/ebadb369-a58d-421c-b937-24f900be5867.png"
+      }
     },
     datePublished: "2026-01-01",
     dateModified: "2026-01-01",
     mainEntityOfPage: {
       "@type": "WebPage",
-      "@id": "https://karmatms.com/blog/is-tms-therapy-covered-by-insurance",
-    },
+      "@id": "https://karmatms.com/blog/is-tms-therapy-covered-by-insurance"
+    }
   };
 
   const faqSchema = {
@@ -170,9 +170,9 @@ const IsTMSTherapyInsuranceCoverageBlogPostPage = () => {
       name: faq.question,
       acceptedAnswer: {
         "@type": "Answer",
-        text: faq.answer,
-      },
-    })),
+        text: faq.answer
+      }
+    }))
   };
 
   return (
@@ -183,20 +183,20 @@ const IsTMSTherapyInsuranceCoverageBlogPostPage = () => {
         keywords="is tms therapy covered by insurance, does insurance cover tms therapy, mental health insurance coverage for tms, tms therapy insurance coverage, tms therapy cost with insurance, tms therapy insurance approval, tms for depression insurance, transcranial magnetic stimulation insurance, tms therapy covered by medicare, tms therapy coverage criteria, tms therapy palm springs"
         canonical="/blog/is-tms-therapy-covered-by-insurance"
         ogImage="https://res.cloudinary.com/de4kw1t2i/image/upload/v1767775408/37_l0hdbk.png"
-        ogType="article"
-      />
+        ogType="article" />
+
 
       <StructuredData
         type="breadcrumb"
         breadcrumbs={[
-          { name: "Home", url: "/" },
-          { name: "Blog", url: "/blog" },
-          {
-            name: "Is TMS Therapy Covered by Insurance?",
-            url: "/blog/is-tms-therapy-covered-by-insurance",
-          },
-        ]}
-      />
+        { name: "Home", url: "/" },
+        { name: "Blog", url: "/blog" },
+        {
+          name: "Is TMS Therapy Covered by Insurance?",
+          url: "/blog/is-tms-therapy-covered-by-insurance"
+        }]
+        } />
+
 
       <script type="application/ld+json">
         {JSON.stringify(articleSchema)}
@@ -262,8 +262,8 @@ const IsTMSTherapyInsuranceCoverageBlogPostPage = () => {
               <Button
                 asChild
                 size="lg"
-                className="bg-white text-[#572670] hover:bg-gray-100"
-              >
+                className="bg-white text-[#572670] hover:bg-gray-100">
+
                 <Link to="/contact">Schedule Consultation</Link>
               </Button>
             </div>
@@ -281,25 +281,25 @@ const IsTMSTherapyInsuranceCoverageBlogPostPage = () => {
                     Table of Contents
                   </h3>
                   <nav className="space-y-2">
-                    {tocItems.map((item) => (
-                      <button
-                        key={item.id}
-                        onClick={() => scrollToSection(item.id)}
-                        className={`block w-full text-left px-3 py-2 rounded-md text-sm transition-all ${
-                          activeSection === item.id
-                            ? "bg-[#572670] text-white font-medium"
-                            : "text-gray-700 hover:bg-[#572670]/10"
-                        }`}
-                      >
+                    {tocItems.map((item) =>
+                    <button
+                      key={item.id}
+                      onClick={() => scrollToSection(item.id)}
+                      className={`block w-full text-left px-3 py-2 rounded-md text-sm transition-all ${
+                      activeSection === item.id ?
+                      "bg-[#572670] text-white font-medium" :
+                      "text-gray-700 hover:bg-[#572670]/10"}`
+                      }>
+
                         {item.label}
                       </button>
-                    ))}
+                    )}
                   </nav>
                   <div className="mt-6 pt-6 border-t">
                     <Button
                       asChild
-                      className="w-full bg-[#572670] hover:bg-[#7B3FA0]"
-                    >
+                      className="w-full bg-[#572670] hover:bg-[#7B3FA0]">
+
                       <Link to="/contact">Check Your Coverage</Link>
                     </Button>
                   </div>
@@ -313,8 +313,8 @@ const IsTMSTherapyInsuranceCoverageBlogPostPage = () => {
               <img
                 src="https://res.cloudinary.com/de4kw1t2i/image/upload/v1767775408/37_l0hdbk.png"
                 alt="Is TMS therapy covered by insurance? Patient receiving TMS treatment in a clinic"
-                className="w-full object-cover rounded-lg mb-6"
-              />
+                className="w-full object-cover rounded-lg mb-6" />
+
 
               <p className="text-xl text-gray-700 leading-relaxed">
                 Is TMS therapy covered by insurance is one of the most searched
@@ -340,9 +340,9 @@ const IsTMSTherapyInsuranceCoverageBlogPostPage = () => {
             </div>
 
             <section
-              ref={(el) => (sectionsRef.current["understanding-tms"] = el)}
-              className="mb-12"
-            >
+              ref={(el) => sectionsRef.current["understanding-tms"] = el}
+              className="mb-12">
+
               <h2 className="text-3xl font-bold text-[#572670] mb-6">
                 Understanding TMS Therapy and Why Insurance Coverage Matters
               </h2>
@@ -366,9 +366,9 @@ const IsTMSTherapyInsuranceCoverageBlogPostPage = () => {
             </section>
 
             <section
-              ref={(el) => (sectionsRef.current["is-covered-us"] = el)}
-              className="mb-12"
-            >
+              ref={(el) => sectionsRef.current["is-covered-us"] = el}
+              className="mb-12">
+
               <h2 className="text-3xl font-bold text-[#572670] mb-6">
                 Is TMS Therapy Covered by Insurance in the United States
               </h2>
@@ -398,9 +398,9 @@ const IsTMSTherapyInsuranceCoverageBlogPostPage = () => {
             </section>
 
             <section
-              ref={(el) => (sectionsRef.current["depression-coverage"] = el)}
-              className="mb-12"
-            >
+              ref={(el) => sectionsRef.current["depression-coverage"] = el}
+              className="mb-12">
+
               <h2 className="text-3xl font-bold text-[#572670] mb-6">
                 Does Insurance Cover TMS Therapy for Depression
               </h2>
@@ -427,9 +427,9 @@ const IsTMSTherapyInsuranceCoverageBlogPostPage = () => {
             </section>
 
             <section
-              ref={(el) => (sectionsRef.current["insurance-criteria"] = el)}
-              className="mb-12"
-            >
+              ref={(el) => sectionsRef.current["insurance-criteria"] = el}
+              className="mb-12">
+
               <h2 className="text-3xl font-bold text-[#572670] mb-6">
                 Insurance Criteria and Medical Documentation Requirements
               </h2>
@@ -456,9 +456,9 @@ const IsTMSTherapyInsuranceCoverageBlogPostPage = () => {
             </section>
 
             <section
-              ref={(el) => (sectionsRef.current["approval-process"] = el)}
-              className="mb-12"
-            >
+              ref={(el) => sectionsRef.current["approval-process"] = el}
+              className="mb-12">
+
               <h2 className="text-3xl font-bold text-[#572670] mb-6">
                 How the Insurance Approval Process Works
               </h2>
@@ -485,9 +485,9 @@ const IsTMSTherapyInsuranceCoverageBlogPostPage = () => {
             </section>
 
             <section
-              ref={(el) => (sectionsRef.current["out-of-pocket"] = el)}
-              className="mb-12"
-            >
+              ref={(el) => sectionsRef.current["out-of-pocket"] = el}
+              className="mb-12">
+
               <h2 className="text-3xl font-bold text-[#572670] mb-6">
                 What Out of Pocket Costs May Still Apply
               </h2>
@@ -511,9 +511,9 @@ const IsTMSTherapyInsuranceCoverageBlogPostPage = () => {
             </section>
 
             <section
-              ref={(el) => (sectionsRef.current["denial-help"] = el)}
-              className="mb-12"
-            >
+              ref={(el) => sectionsRef.current["denial-help"] = el}
+              className="mb-12">
+
               <h2 className="text-3xl font-bold text-[#572670] mb-6">
                 What to Do If Insurance Denies Coverage
               </h2>
@@ -539,9 +539,9 @@ const IsTMSTherapyInsuranceCoverageBlogPostPage = () => {
             </section>
 
             <section
-              ref={(el) => (sectionsRef.current["beyond-depression"] = el)}
-              className="mb-12"
-            >
+              ref={(el) => sectionsRef.current["beyond-depression"] = el}
+              className="mb-12">
+
               <h2 className="text-3xl font-bold text-[#572670] mb-6">
                 Mental Health Insurance Coverage for TMS Beyond Depression
               </h2>
@@ -563,9 +563,9 @@ const IsTMSTherapyInsuranceCoverageBlogPostPage = () => {
             </section>
 
             <section
-              ref={(el) => (sectionsRef.current["provider-experience"] = el)}
-              className="mb-12"
-            >
+              ref={(el) => sectionsRef.current["provider-experience"] = el}
+              className="mb-12">
+
               <h2 className="text-3xl font-bold text-[#572670] mb-6">
                 Why Provider Experience Matters for Insurance Approval
               </h2>
@@ -585,9 +585,9 @@ const IsTMSTherapyInsuranceCoverageBlogPostPage = () => {
             </section>
 
             <section
-              ref={(el) => (sectionsRef.current["is-worth-it"] = el)}
-              className="mb-12"
-            >
+              ref={(el) => sectionsRef.current["is-worth-it"] = el}
+              className="mb-12">
+
               <h2 className="text-3xl font-bold text-[#572670] mb-6">
                 Is TMS Therapy Worth It When Insurance Covers It
               </h2>
@@ -637,19 +637,19 @@ const IsTMSTherapyInsuranceCoverageBlogPostPage = () => {
             />
 
             <section
-              ref={(el) => (sectionsRef.current["faqs"] = el)}
-              className="mb-12 mt-12"
-            >
+              ref={(el) => sectionsRef.current["faqs"] = el}
+              className="mb-12 mt-12">
+
               <h2 className="text-3xl font-bold text-[#572670] mb-6">
                 Frequently Asked Questions
               </h2>
               <Accordion type="single" collapsible className="w-full space-y-2">
-                {faqs.map((faq, index) => (
-                  <AccordionItem
-                    key={index}
-                    value={`item-${index}`}
-                    className="border border-gray-200 rounded-lg px-4 data-[state=open]:border-[#572670]"
-                  >
+                {faqs.map((faq, index) =>
+                <AccordionItem
+                  key={index}
+                  value={`item-${index}`}
+                  className="border border-gray-200 rounded-lg px-4 data-[state=open]:border-[#572670]">
+
                     <AccordionTrigger className="text-left font-semibold hover:text-[#572670] hover:no-underline">
                       {faq.question}
                     </AccordionTrigger>
@@ -657,7 +657,7 @@ const IsTMSTherapyInsuranceCoverageBlogPostPage = () => {
                       {faq.answer}
                     </AccordionContent>
                   </AccordionItem>
-                ))}
+                )}
               </Accordion>
             </section>
 
@@ -674,8 +674,8 @@ const IsTMSTherapyInsuranceCoverageBlogPostPage = () => {
                   <Button
                     asChild
                     size="lg"
-                    className="bg-white text-[#572670] hover:bg-gray-100"
-                  >
+                    className="bg-white text-[#572670] hover:bg-gray-100">
+
                     <Link to="/contact">Schedule Free Consultation</Link>
                   </Button>
                 </div>
@@ -687,16 +687,16 @@ const IsTMSTherapyInsuranceCoverageBlogPostPage = () => {
                 Related Articles
               </h2>
               <div className="grid md:grid-cols-3 gap-6">
-                {relatedPosts.map((post, index) => (
-                  <Card
-                    key={index}
-                    className="border-[#572670]/20 overflow-hidden hover:shadow-lg transition-shadow"
-                  >
+                {relatedPosts.map((post, index) =>
+                <Card
+                  key={index}
+                  className="border-[#572670]/20 overflow-hidden hover:shadow-lg transition-shadow">
+
                     <img
-                      src={post.image}
-                      alt={post.title}
-                      className="w-full object-cover"
-                    />
+                    src={post.image}
+                    alt={post.title}
+                    className="w-full object-cover" />
+
                     <CardContent className="p-6">
                       <h3 className="font-bold text-lg mb-2 hover:text-[#572670] transition-colors">
                         <Link to={post.link}>{post.title}</Link>
@@ -705,20 +705,20 @@ const IsTMSTherapyInsuranceCoverageBlogPostPage = () => {
                         {post.excerpt}
                       </p>
                       <Button
-                        asChild
-                        variant="ghost"
-                        className="text-[#572670] p-0 h-auto hover:bg-transparent"
-                      >
+                      asChild
+                      variant="ghost"
+                      className="text-[#572670] p-0 h-auto hover:bg-transparent">
+
                         <Link
-                          to={post.link}
-                          className="inline-flex items-center gap-2"
-                        >
+                        to={post.link}
+                        className="inline-flex items-center gap-2">
+
                           Read More <ArrowRight className="w-4 h-4" />
                         </Link>
                       </Button>
                     </CardContent>
                   </Card>
-                ))}
+                )}
               </div>
             </section>
           </article>
@@ -726,8 +726,8 @@ const IsTMSTherapyInsuranceCoverageBlogPostPage = () => {
       </div>
 
       <FooterSection />
-    </>
-  );
+    </>);
+
 };
 
 export default IsTMSTherapyInsuranceCoverageBlogPostPage;
