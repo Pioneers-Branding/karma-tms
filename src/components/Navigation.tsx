@@ -169,7 +169,15 @@ const Navigation = () => {
               <NavDropdown label="Services" links={servicesLinks} />
 
               {/* NEW: Wellness TMS Dropdown */}
-              <NavDropdown label="Exomind" links={wellnessLinks} />
+              <Link to="www.braintunetms.com" target="_blank">
+                <Button
+                  variant="ghost"
+                  className="text-white hover:text-white/80 hover:bg-white/10 transition-colors text-xs xl:text-sm px-2 xl:px-3"
+                >
+                  <Home className="h-3.5 w-3.5 xl:h-4 xl:w-4 mr-1.5 xl:mr-2" />
+                  Brain tune Exomind
+                </Button>
+              </Link>
 
               <NavDropdown label="Conditions" links={conditionsLinks} />
               <NavDropdown label="Locations" links={locationsLinks} />
@@ -327,7 +335,16 @@ const Navigation = () => {
                     <Separator />
 
                     {/* Mobile Section: Wellness TMS */}
-                    <div className="space-y-3">
+                    <Link to="www.braintunetms.com" target="_blank">
+                      <Button
+                        variant="ghost"
+                        className="w-full justify-start text-base py-3 hover:bg-[#572670]/10"
+                      >
+                        <Home className="h-5 w-5 mr-3 text-[#572670]" />
+                        Brain tune Exomind
+                      </Button>
+                    </Link>
+                    {/* <div className="space-y-3">
                       <h3 className="font-semibold text-[#572670] text-sm uppercase tracking-wide">
                         Wellness
                       </h3>
@@ -348,7 +365,7 @@ const Navigation = () => {
                           </Link>
                         ))}
                       </div>
-                    </div>
+                    </div> */}
 
                     <Separator />
 
