@@ -178,8 +178,8 @@ const Navigation = () => {
                   variant="ghost"
                   className="text-white hover:text-white/80 hover:bg-white/10 transition-colors text-xs xl:text-sm px-2 xl:px-3"
                 >
-                  <Sparkles className="h-3.5 w-3.5 xl:h-4 xl:w-4 mr-1.5 xl:mr-2" />
-                  Brain tune Exomind
+                  <Sparkles className="h-3.5 w-3.5 xl:h-4 xl:w-4 mr-1.5" />
+                  Brain Tune Exomind
                 </Button>
               </a>
 
@@ -348,8 +348,8 @@ const Navigation = () => {
                         variant="ghost"
                         className="w-full justify-start text-base py-3 hover:bg-[#572670]/10"
                       >
-                        <Home className="h-5 w-5 mr-3 text-[#572670]" />
-                        Brain tune Exomind
+                        <Sparkles className="h-5 w-5 mr-3 text-[#572670]" />
+                        Brain Tune Exomind
                       </Button>
                     </a>
                     {/* <div className="space-y-3">
