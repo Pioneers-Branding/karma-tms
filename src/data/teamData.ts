@@ -166,7 +166,7 @@ export const teamMembers: TeamMember[] = [
     specialization: "TMS Technology & Patient Care",
     category: "administrative",
     image:
-      "https://res.cloudinary.com/de4kw1t2i/image/upload/v1763966185/amber-nt_b8nwo0.jpg", // amber
+      "https://res.cloudinary.com/de4kw1t2i/image/upload/v1770035167/amber_p288ll.png", // amber
     bio: "Amber specializes in TMS therapy delivery and patient support throughout treatment. Her technical expertise and compassionate care approach ensure patients receive optimal TMS treatments in a comfortable environment.",
     credentials: [
       "TMS Technician Certified",
